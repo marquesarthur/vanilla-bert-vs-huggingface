@@ -1,0 +1,24 @@
+{
+  "session_uid": "Deeksha",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2858",
+      "tag": "SPAN",
+      "text": "The notification priority, set by setPriority().",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2859",
+      "tag": "SPAN",
+      "text": "The priority determines how intrusive the notification should be on Android 7.1\nand lower.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "This parameter\ndetermines how to interrupt the user for any notification that belongs to this\nchannel—though you must also set the priority with setPriority() to\nsupport Android 7.1 and lower (as shown above).",
+      "href": "Create a Notification  |  Android Developers"
+    }
+  ]
+}

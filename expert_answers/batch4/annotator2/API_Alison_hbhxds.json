@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "Specifically, use the\n  fused\n  location provider to retrieve the device's last known location.",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-4",
+      "tag": "SPAN",
+      "text": "The fused\n  location provider is one of the location APIs in Google Play services.",
+      "href": "Get the last known location  |  Android Developers"
+    }
+  ]
+}

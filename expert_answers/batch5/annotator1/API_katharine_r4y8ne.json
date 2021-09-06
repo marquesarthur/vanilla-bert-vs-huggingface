@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "Follow these steps to add a method to the MainActivity class that's called when the\n  Send button is tapped:",
+      "href": "Start another activity  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2914",
+      "tag": "SPAN",
+      "text": "Return to the activity_main.xml file to call the method from the button:\n    \n      Select the button in the Layout Editor.\n      In the Attributes window, locate the onClick property and select\n        sendMessage [MainActivity] from its drop-down list.\n    \n    Now when the button is tapped, the system calls the sendMessage() method.\n    Take note of the details in this method.\nThey're required for the system to recognize the\n      method as compatible with the\n      android:onClick\n      attribute.\nSpecifically, the method has the following characteristics:\n    \n      Public access.\n      A void or, in Kotlin, an implicit\n        unit\n        return value.\n      A View as the only parameter.\n        This is the View object you clicked\n        at the end of Step 1.\n    \n  ",
+      "href": "Start another activity  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "Now when the button is tapped, the system calls the sendMessage() method.",
+      "href": "Start another activity  |  Android Developers"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Dagger 2 is a dependency injection (DI) framework.",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "It helps us by removing a lot of the boilerplate code we usually end up with when implementing DI (such as factory classes and convenience constructors).",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "Importantly, it is a compile-time DI framework.",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-160",
+      "tag": "SPAN",
+      "text": "@Inject fields: tell Dagger to set these fields for us",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-161",
+      "tag": "SPAN",
+      "text": "@Inject constructors: tell Dagger to use this constructor when trying to instantiate the class",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-162",
+      "tag": "SPAN",
+      "text": "@Provides & @Binds methods: tell Dagger how to satisfy our dependencies",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-163",
+      "tag": "SPAN",
+      "text": "@Module classes: contain the various @Provides & @Binds methods",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-164",
+      "tag": "SPAN",
+      "text": "@Component class: binds all @Module classes into a dependency graph",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-39",
+      "tag": "SPAN",
+      "text": "First up, we have to tell Dagger that we want our activity to be injectable.",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "That can be achieved by creating a @Module class with an abstract @ContributesAndroidInjector method:",
+      "href": "Android: Dagger 2 Isn’t Hard. Implementing Dagger 2 in Android apps… | by Mike Johnston | DVT Software Engineering | Medium"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-240",
+      "tag": "SPAN",
+      "text": "\n          We have a protocol where all JSON objects contain a _type field that indicates what the JSON represents.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-240",
+      "tag": "SPAN",
+      "text": "If we define a defaultImpl class as a catch-all for unknown types, deserialization fails for any protocol objects that contain other protocol objects if the reference to those objects is null.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "It appears that Jackson attempts to substitute the null with an instance of the default class.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "In the meantime I think that you will need to annotate your child classes with @JsonTypeInfo and @JsonSubTypes to override the inherited annotations.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "I think the key piece of information I was missing is that the annotations are inherited by the child classes, which makes the default class apply to all of the subclasses and not just the base class.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": " Your technique of overriding the annotations in each of the child classes makes sense now that I understand that.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-246",
+      "tag": "SPAN",
+      "text": "When I updated your sample with these annotations, Jackson correctly deserialized each object to the expected subclass.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    }
+  ]
+}

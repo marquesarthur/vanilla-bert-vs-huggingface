@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Note that LinearLayout is a ViewGroup which in turn is a View.",
+      "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "That is, you may very well call, for instance, myLinearLayout.setVisibility(View.VISIBLE).",
+      "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+    }
+  ]
+}

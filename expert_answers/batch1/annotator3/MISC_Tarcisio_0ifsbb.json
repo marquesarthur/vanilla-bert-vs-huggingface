@@ -1,0 +1,84 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "An adapter loads the information to be displayed from a data source, such as an array or database query, and creates a view for each item.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "The ListView asks the adapter what it should display, and the adapter jumps into action: \n",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-396",
+      "tag": "SPAN",
+      "text": "It fetches the items to be displayed from the data source",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-397",
+      "tag": "SPAN",
+      "text": "It decides how they should be displayed",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-398",
+      "tag": "SPAN",
+      "text": "It passes this information on to the ListView",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-405",
+      "tag": "SPAN",
+      "text": "Here you define what information shows and where it sits within the ListView.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-135",
+      "tag": "SPAN",
+      "text": "These repeated calls can seriously harm the ListView’s performance, especially if your app is running on limited resources and/or you have a very large list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-136",
+      "tag": "SPAN",
+      "text": "You can avoid this problem by using the View Holder Pattern.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-142",
+      "tag": "SPAN",
+      "text": "With:",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-431",
+      "tag": "SPAN",
+      "text": "Create a new ViewHolder with subviews initialized by using findViewById().",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-432",
+      "tag": "SPAN",
+      "text": "Hang onto this holder for future recycling by using setTag() to set the tag property of the view that the holder belongs to.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-433",
+      "tag": "SPAN",
+      "text": "Skip all the expensive inflation steps and just get the holder you already made.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-434",
+      "tag": "SPAN",
+      "text": "Get relevant subviews of the row view.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    }
+  ]
+}

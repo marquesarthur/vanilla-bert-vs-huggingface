@@ -1,0 +1,144 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-59",
+      "tag": "SPAN",
+      "text": " You can use a class prefixed with Dagger (i.e. DaggerTwitterApiComponent.java) that will be responsible for instantiating an instance of our dependency graph and using it to perform the injection work for fields annotated with @Inject.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-60",
+      "tag": "SPAN",
+      "text": " See the setup guide.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-61",
+      "tag": "SPAN",
+      "text": "We should do all this work within a specialization of the Application class since these instances should be declared only once throughout the entire lifespan of the application:",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-62",
+      "tag": "SPAN",
+      "text": "Make sure to rebuild the project (in Android Studio, select Build > Rebuild Project) if you cannot reference the Dagger component.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-65",
+      "tag": "SPAN",
+      "text": "Within our activity, we simply need to get access to these components and call inject().",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-67",
+      "tag": "SPAN",
+      "text": "",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-68",
+      "tag": "SPAN",
+      "text": "If we need two different objects of the same return type, we can use the @Named qualifier annotation.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-69",
+      "tag": "SPAN",
+      "text": " You will define it both where you provide the singletons (@Provides annotation), and where you inject them (@Inject annotations):",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-70",
+      "tag": "SPAN",
+      "text": "Injection will also require these named annotations too:",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-71",
+      "tag": "SPAN",
+      "text": "@Named is a qualifier that is pre-defined by dagger, but you can create your own qualifier annotations as well:",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-73",
+      "tag": "SPAN",
+      "text": "In Dagger 2, you can define how components should be encapsulated by defining custom scopes.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-76",
+      "tag": "SPAN",
+      "text": " You can define any number of custom scope annotations in your application by declaring them as a public @interface:",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-77",
+      "tag": "SPAN",
+      "text": "Even though Dagger 2 does not rely on the annotation at runtime, keeping the RetentionPolicy at RUNTIME is useful in allowing you to inspect your modules later.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-151",
+      "tag": "SPAN",
+      "text": "\nDependent components require the parent component to explicitly list out what dependencies can be injected downstream, while subcomponents do not.   For parent components, you would need to expose to the downstream component by specifying the type and a method:",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-87",
+      "tag": "SPAN",
+      "text": "If you forget to add this line, you will likely see an error about an injection target missing.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-88",
+      "tag": "SPAN",
+      "text": " Similar to how private/public variables are managed, using a parent component allows more explicit control and better encapsulation, but using subcomponents makes dependency injection easier to manage at the expense of less encapsulation.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-90",
+      "tag": "SPAN",
+      "text": "Two dependent components cannot share the same scope.  For instance, two components cannot both be scoped as @Singleton.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-91",
+      "tag": "SPAN",
+      "text": " This restriction is imposed because of reasons described here.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-153",
+      "tag": "SPAN",
+      "text": "While Dagger 2 also enables the ability to create scoped instances, the responsibility rests on you to create and delete references that are consistent with the intended behavior.  Dagger 2 does not know anything about the underlying implementation.\n See this Stack Overflow discussion for more details.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-93",
+      "tag": "SPAN",
+      "text": "While Dagger 2 also enables the ability to create scoped instances, the responsibility rests on you to create and delete references that are consistent with the intended behavior.  Dagger 2 does not know anything about the underlying implementation.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-110",
+      "tag": "SPAN",
+      "text": "Another major difference is that subcomponents simply need to be declared in the parent component.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-123",
+      "tag": "SPAN",
+      "text": " This new builder must be added to the parent component graph using a \"binder\" module with a \"subcomponents\" parameter:",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-125",
+      "tag": "SPAN",
+      "text": "Dagger 2 should work out of box without ProGuard, but if you start seeing library class dagger.producers.monitoring.internal.Monitors$1 extends or implements program class javax.inject.Provider, make sure your Gradle configuration uses the annotationProcessor declaration instead of provided.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    }
+  ]
+}

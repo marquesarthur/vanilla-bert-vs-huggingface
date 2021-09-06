@@ -1,0 +1,30 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "The ScaleGestureDetector does all the work by analyzing the gesture data and reporting the final scale factor through the onScale() callback.",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "We get the actual scale factor by calling getScaleFactor() on ScaleGestureDetector .",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "We use an ImageView with the application icon(you can use any image of choice) to provide a visual representation of the scaling by setting the ImageView scale using the scale factor returned from ScaleGestureDetector .",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "To prevent the scaling from becoming too large or too small, we added the following check:",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    }
+  ]
+}

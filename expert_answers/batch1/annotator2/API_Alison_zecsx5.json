@@ -1,0 +1,36 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-5",
+      "tag": "SPAN",
+      "text": "Volley provides the following classes for JSON requests:",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2751",
+      "tag": "SPAN",
+      "text": "JsonArrayRequest—A request for retrieving a\n  JSONArray\n  response body at a given URL.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2752",
+      "tag": "SPAN",
+      "text": "JsonObjectRequest—A request for retrieving a\n  JSONObject\n  response body at a given URL, allowing for an optional\n  JSONObject\n  to be passed in as part of the request body.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "You use them\nfollowing the same basic pattern you use for other types of requests.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "For example, this\nsnippet fetches a JSON feed and displays it as text in the UI:",
+      "href": "Make a standard request  |  Android Developers"
+    }
+  ]
+}

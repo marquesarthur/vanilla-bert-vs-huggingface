@@ -1,0 +1,72 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "Now you need to add a Toolbar to your Activity layout file.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "Below we place the toolbar at the top of a LinearLayout like the standard ActionBar:",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-20",
+            "tag": "SPAN",
+            "text": "Note: You'll want to add android:fitsSystemWindows=\"true\" (learn more) to the parent layout of the Toolbar to ensure that the height of the activity is calculated correctly.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "As Toolbar is just a ViewGroup and can be styled and positioned like any other view.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "Note that this means if you are in a RelativeLayout, you need to ensure that all other views are positioned below the toolbar explicitly.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-24",
+            "tag": "SPAN",
+            "text": "The toolbar is not given any special treatment as a view.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "Next, in your Activity or Fragment, set the Toolbar to act as the ActionBar by calling the  setSupportActionBar(Toolbar) method:",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "Note: When using the support library, make sure that you are importing android.support.v7.widget.Toolbar and not android.widget.Toolbar.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "uid-290",
+            "tag": "PRE",
+            "text": "import androidx.appcompat.app.AppCompatActivity;\nimport androidx.appcompat.widget.Toolbar;\n\npublic class MyActivity extends AppCompatActivity {\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_my);\n\n        // Find the toolbar view inside the activity layout\n        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);\n        // Sets the Toolbar to act as the ActionBar for this Activity window.\n        // Make sure the toolbar exists in the activity and is not null\n        setSupportActionBar(toolbar);\n    }\n\n    // Menu icons are inflated just as they were with actionbar\n    @Override\n    public boolean onCreateOptionsMenu(Menu menu) {\n        // Inflate the menu; this adds items to the action bar if it is present.\n        getMenuInflater().inflate(R.menu.menu_main, menu);\n        return true;\n    }\n}",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "uid-380",
+            "tag": "PRE",
+            "text": "<menu xmlns:android=\"http://schemas.android.com/apk/res/android\"\n      xmlns:app=\"http://schemas.android.com/apk/res-auto\">\n    <item\n        android:id=\"@+id/miCompose\"\n        android:icon=\"@drawable/ic_compose\"\n        app:showAsAction=\"ifRoom\"\n        android:title=\"Compose\">\n    </item>\n    <item\n        android:id=\"@+id/miProfile\"\n        android:icon=\"@drawable/ic_profile\"\n        app:showAsAction=\"ifRoom|withText\"\n        android:title=\"Profile\">\n    </item>\n</menu>",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-94",
+            "tag": "SPAN",
+            "text": "One of the biggest advantages of using the Toolbar widget is that you can place the view anywhere within your layout.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        }
+    ]
+}

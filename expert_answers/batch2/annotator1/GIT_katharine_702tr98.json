@@ -1,0 +1,19 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "Those recording sources may only be used by system apps.",
+      "href": "Using oboe to record incoming and outgoing voice/telephony calls · Issue #447 · google/oboe"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "This is designed to prevent apps from eavesdropping on telephone conversations.",
+      "href": "Using oboe to record incoming and outgoing voice/telephony calls · Issue #447 · google/oboe"
+    }
+  ]
+}

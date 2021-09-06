@@ -1,0 +1,24 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "I had the same error and traced it to a bug with DrawableCompat.wrap() in 23.4.0 that doesn't exist in earlier & later versions of the support library.",
+      "href": "android - IllegalArgumentException: width and height must be > 0 in activity - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "This bug incorrectly sets the drawable bounds to 0 (or negative in the case of an inset drawable).",
+      "href": "android - IllegalArgumentException: width and height must be > 0 in activity - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "I didn't see a specific issue opened for this, but looking at the code for DrawableWrapperDonut/DrawableWrapperGingerbread, I can see that the problem was introduced around 23.4.0 and later fixed, so if you were using the buggy version, switching to a good version should fix this crash.",
+      "href": "android - IllegalArgumentException: width and height must be > 0 in activity - Stack Overflow"
+    }
+  ]
+}

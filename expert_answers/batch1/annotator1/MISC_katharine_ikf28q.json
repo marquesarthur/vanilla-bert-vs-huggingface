@@ -1,0 +1,102 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Any time you need to display a lot of data and make it easy to navigate, you’ve got a job for Android’s ListView, which handily creates scrollable lists.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-55",
+      "tag": "SPAN",
+      "text": "The adapter acts as the middle man between the ListView and data source, or its provider.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-57",
+      "tag": "SPAN",
+      "text": "The ListView asks the adapter what it should display, and the adapter jumps into action: \n",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-399",
+      "tag": "SPAN",
+      "text": "It fetches the items to be displayed from the data source",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-400",
+      "tag": "SPAN",
+      "text": "It decides how they should be displayed",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-401",
+      "tag": "SPAN",
+      "text": "It passes this information on to the ListView",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-58",
+      "tag": "SPAN",
+      "text": "In short, The ListView isn’t very smart, but when given the right inputs it does a fine job.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-59",
+      "tag": "SPAN",
+      "text": "It fully relies on the adapter to tell it what to display and how to display it.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-407",
+      "tag": "SPAN",
+      "text": "Finally, getView() creates a view to be used as a row in the list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-409",
+      "tag": "SPAN",
+      "text": "You also inflate a custom view from the XML layout defined in res/layout/list_item_recipe.xml — more on this in the next section.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-134",
+      "tag": "SPAN",
+      "text": "Whenever you scroll the ListView, its adapter’s getView() method is called in order to create a row and display it on screen.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-136",
+      "tag": "SPAN",
+      "text": "These repeated calls can seriously harm the ListView’s performance, especially if your app is running on limited resources and/or you have a very large list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-137",
+      "tag": "SPAN",
+      "text": "You can avoid this problem by using the View Holder Pattern.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-140",
+      "tag": "SPAN",
+      "text": "The ViewHolder class stores each of the row’s subviews, and in turn is stored inside the tag field of the layout.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-143",
+      "tag": "SPAN",
+      "text": "With:",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-436",
+      "tag": "SPAN",
+      "text": "Skip all the expensive inflation steps and just get the holder you already made.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-215",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-30",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-216",
+            "tag": "SPAN",
+            "text": "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.\nUse EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.\nFor large tables, a full table scan is bad and you probably want an index.\nOnly one index will be used on any given query.\nIf you have multiple predicates, then the index that will be used is the one that is expected to reduce the result set the most (based on ANALYZE).\nYou can have indexes that contain multiple columns (to assist queries with multiple predicates).\nIf you have indexes with multiple columns, they are usable only if the predicates fit the index from left to right with no gaps (but unused columns at the end are fine).\nIf you use an ordering predicate (<, <=, > etc) then that needs to be in the last used column of the index.\nUsing both WHERE predicates and ORDER BY both require an index and SQLite can only use one, so that can be a point where performance suffers.\nThe more indexes you have, the slower your INSERTs will be, so you will have to work out the best trade-off for your situation.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-31",
+            "tag": "SPAN",
+            "text": "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-32",
+            "tag": "SPAN",
+            "text": "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-35",
+            "tag": "SPAN",
+            "text": "If you have multiple predicates, then the index that will be used is the one that is expected to reduce the result set the most (based on ANALYZE).",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-39",
+            "tag": "SPAN",
+            "text": "Using both WHERE predicates and ORDER BY both require an index and SQLite can only use one, so that can be a point where performance suffers.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-40",
+            "tag": "SPAN",
+            "text": "The more indexes you have, the slower your INSERTs will be, so you will have to work out the best trade-off for your situation.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-217",
+            "tag": "SPAN",
+            "text": "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-41",
+            "tag": "SPAN",
+            "text": "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-50",
+            "tag": "SPAN",
+            "text": "Here's a bit of code to get EXPLAIN QUERY PLAN results into Android logcat from a running Android app.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-77",
+            "tag": "SPAN",
+            "text": "Pin down exactly which queries you need to optimize.\nGrab a copy of a typical database and use the REPL to time queries.\nUse this to benchmark any gains as you optimize.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-21",
+            "tag": "SPAN",
+            "text": "Pin down exactly which queries you need to optimize.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-6",
+            "tag": "SPAN",
+            "text": "Pin down exactly which queries you need to optimize.\nGrab a copy of a typical database and use the REPL to time queries.\nUse this to benchmark any gains as you optimize.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-84",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.\noff course it is a little tedious to write raw query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-39",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-65",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.\nyou can search in google for the exact speed improvements.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-100",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-32",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.\noff course it is a little tedious to write raw query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-57",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.\nyou can search in google for the exact speed improvements.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-82",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-50",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.\noff course it is a little tedious to write raw query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-6",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-89",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.\nyou can search in google for the exact speed improvements.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-89",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.\noff course it is a little tedious to write raw query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-8",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-81",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.\nyou can search in google for the exact speed improvements.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-32",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        }
+    ]
+}

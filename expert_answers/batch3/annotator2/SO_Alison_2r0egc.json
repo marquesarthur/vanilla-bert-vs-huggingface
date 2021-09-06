@@ -1,0 +1,30 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "I'm interested in incorporating the Android UI pattern called \"Quick Action\".",
+      "href": "Android Quick Actions UI Pattern - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Till the official Twitter app is open sourced by Google, you may want to take a look at this implementation:\nhttp://www.londatiga.net/it/how-to-create-quickaction-dialog-in-android/",
+      "href": "Android Quick Actions UI Pattern - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Android uses this pattern in their Contacts-App.",
+      "href": "Android Quick Actions UI Pattern - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "You can get the source using git: ",
+      "href": "Android Quick Actions UI Pattern - Stack Overflow"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "First of all your Animal class with the Json Annotations for the subclasses.",
+            "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "As you can see, there is nothing special for Cat and Dog, the only one that know about them is the abstract class Animal, so when deserializing, you'll target to Animal and the ObjectMapper will return the actual instance as you can see in the following test:",
+            "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-33",
+            "tag": "SPAN",
+            "text": "I'd still recommend to use use = JsonTypeInfo.Id.NAME, as the new way may throw an exception in complex cases when it has no way to determine which subtype to use.",
+            "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-34",
+            "tag": "SPAN",
+            "text": "Now you can simply write",
+            "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-28",
+            "tag": "SPAN",
+            "text": "This line means: add a meta-property on serialization or read a meta-property on deserialization (include = JsonTypeInfo.As.PROPERTY) called \"@class\" (property = \"@class\") that holds the fully-qualified Java class name (use = JsonTypeInfo.Id.CLASS).",
+            "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-83",
+            "tag": "SPAN",
+            "text": "This line means: add a meta-property on serialization or read a meta-property on deserialization (include = JsonTypeInfo.As.PROPERTY) called \"@class\" (property = \"@class\") that holds the fully-qualified Java class name (use = JsonTypeInfo.Id.CLASS).",
+            "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+        }
+    ]
+}

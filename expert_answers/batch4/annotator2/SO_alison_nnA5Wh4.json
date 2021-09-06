@@ -1,0 +1,30 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-80",
+            "tag": "SPAN",
+            "text": "Android-Lollipop (api 21) introduce a new API : PdfRenderer",
+            "href": "java - How to render PDF in Android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-97",
+            "tag": "SPAN",
+            "text": "Android-Lollipop (api 21) introduce a new API : PdfRenderer",
+            "href": "java - How to render PDF in Android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-69",
+            "tag": "SPAN",
+            "text": "get a seekable file descriptor from your pdf document :",
+            "href": "java - How to render PDF in Android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-79",
+            "tag": "SPAN",
+            "text": "Android-Lollipop (api 21) introduce a new API : PdfRenderer",
+            "href": "java - How to render PDF in Android - Stack Overflow"
+        }
+    ]
+}

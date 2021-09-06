@@ -1,0 +1,48 @@
+{
+    "https://developer.android.com/guide/topics/providers/content-provider-creating": {
+        "apiref": [
+            "You don't need a provider to use databases or other types of persistent storage if the use is entirely within your own application and you don't need any of the features listed above.",
+            "Note: If you make a change to your repository that isn't backwards-compatible, you need to mark the repository with a new version number.",
+            "For example, if your Android package name is com.example.",
+            "For example, if you have two tables table1 and table2, you combine the authority from the previous example to yield the content URIs com.example.",
+            "The provider also recognizes these content URIs if they have a row ID appended to them, as for example content: / / com.example.app.provider / table3/1 for the row identified by 1 in table3.",
+            "The ContentProvider.query ( ) method must return a Cursor object, or if it fails, throw an Exception.",
+            "You should return null only if an internal error occurred during the query process.",
+            "For example, if a provider's authority is com.example.app.provider, and it exposes a table named table1, the MIME type for multiple rows in table1 is:",
+            "The class establishes a contract between the provider and other applications by ensuring that the provider can be correctly accessed even if there are changes to the actual values of URIs, column names, and so forth.",
+            "All applications can read from or write to your provider, even if the underlying data is private, because by default your provider does not have permissions set.",
+            "Decide if you need a content provider.",
+            "You need to build a content provider if you want to provide one or more of the following features: You want to offer complex data or files to other applications.",
+            "You can mix and match several different types of storage, and expose them using a single content provider if necessary.",
+            "IllegalArgumentException ( You may choose to throw this if your provider receives an invalid content URI )",
+            "Subtype part: If the URI pattern is for a single row: android.cursor.item / If the URI pattern is for more than one row: android.cursor.dir /"
+        ]
+    },
+    "https://stackoverflow.com/questions/40168601": {
+        "ansbot": []
+    },
+    "https://github.com/invertase/react-native-firebase/issues/302": {
+        "hurried": [
+            "I will close this issue for now and track it as well as other issues collectively over on the Storage improvements proposal to be addressed in a future release.",
+            "Let me know @chrisbianca if you need more details still in setting up a reproducible test case.",
+            "@fungilation Sorry, things have been a bit hectic our end, but this is very much on my list as soon as we get v3 out of the door in the next couple of weeks ...",
+            "@fungilation Are you able to upload a full example somewhere so that we can help you debug it ?",
+            "I am uploading an image using RNFirebase v 3.0.2 and instead of the content of the image, the server uploads a jSON with `` name'', `` size'' and `` contentType'' keys.",
+            "FYI, it's not my security rules being the issue, I haven't changed the default rules ( below ) and I have firebase.auth ( ).",
+            "Ok I've updated my original post with how exactly I generate the sha3 hash for path name, with the jsSHA package, and pasted a sample result object ( stringified ) which is the text to be stored in Firebase.",
+            "If so, I should test against that, in giving you a more full and isolated test case."
+        ]
+    },
+    "https://medium.com/@nayantala259/android-how-to-read-and-write-parse-data-from-json-file-226f821e957a": {
+        "lexrank": [
+            "Nayan TalaMar 15, 2020 \u00b7 4 min readHow to Insert, Update and Delete the data available in JSON File in Android ?",
+            "Android -- How to Read and Write ( Parse ) data from JSON File ?"
+        ]
+    },
+    "http://amyamyzhu.github.io/2018/06/28/Read-and-Store-Json-Files-in-Internal-Storage": {
+        "lexrank": [
+            "Understanding the storages in an Android device, you can easily check or transfer files in both directions: your app and the device.",
+            "Open the device file browser by clicking View > Tool Windows > Device File Explorer."
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "When the user stops scrubbing the SeekBar the onStopTrackingTouch is triggered in which using the seekTo method we update the song position on the MediaPlayer instance.",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        },
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "Once the song is completed, we update the position of the SeekBar back to the initial and clear the MediaPlayer instance.",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": "seekTo(position) \u2013 This will be used with the SeekBar",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        }
+    ]
+}

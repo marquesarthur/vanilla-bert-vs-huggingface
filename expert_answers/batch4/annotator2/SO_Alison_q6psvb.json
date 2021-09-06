@@ -1,0 +1,18 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-29",
+            "tag": "SPAN",
+            "text": "Read about java.awt.event.KeyListener",
+            "href": "eclipse - How to detect a key press in Java - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-58",
+            "tag": "SPAN",
+            "text": "java.awt.event.KeyListener",
+            "href": "eclipse - How to detect a key press in Java - Stack Overflow"
+        }
+    ]
+}

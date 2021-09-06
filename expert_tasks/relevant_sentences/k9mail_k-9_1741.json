@@ -1,0 +1,37 @@
+{
+    "https://developer.android.com/training/notify-user/build-notification": {
+        "apiref": [
+            "Remember to save the notification ID that you pass to NotificationManagerCompat.notify ( ) because you'll need it later if you want to update or remove the notification.",
+            "Caution: If you re-use a PendingIntent, a user may reply to a different conversation than the one they thought they did.",
+            "After you've processed the text, you must update the notification by calling NotificationManagerCompat.notify ( ) with the same ID and tag ( if used ).",
+            "However, if you're building a messaging app, you should create a messaging-style notification and append the new message to the conversation.",
+            "However, you are not required to set a system-wide category and should only do so if your notifications match one of the categories defined by in NotificationCompat.",
+            "Kotlin Java Caution: If you re-use a PendingIntent, a user may reply to a different conversation than the one they thought they did.",
+            "A good conversation title might be the name of the group chat or, if it doesn't have a specific name, a list of the participants in the conversation."
+        ]
+    },
+    "https://stackoverflow.com/questions/3059155": {
+        "ansbot": [
+            "I you google for LINK, there are a lot of images that show exactly the kind of menu that you want, so it seems likely that it is indeed called QuickContact in that context."
+        ]
+    },
+    "https://github.com/light-launcher/Light-Android-Launcher/issues/16": {
+        "hurried": [
+            "@jancborchardt Only problem is that it requires that you add android.permission.WRITE _ SECURE_SETTINGS via adb, so plugging it into a computer and running commands, not a huge issue but might cause some problems.",
+            "But this is too nerdy, we can't require people to install adb and connect to their computer.",
+            "Hello, as @jancborchardt and @snug mentioned, WRITE_SECURE_SETTINGS is needed to be able to change one of the developer settings that enables the greyscale",
+            "Tiles makes use of the new Quick Settings Tile API ( https://developer.android.com/about/versions/nougat/android-7.0.html#tile_api ) to provide new tiles that can be added to Quick Settings to change system settings and take quick actions without leaving the context of the current app.",
+            "The instructions I wrote above at # 16 ( comment ) work even when you only have your phone, and don't require you to install anything new.",
+            "Shortcut to enable greyscale, or view describing how to do it \u00b7 Issue # 16 \u00b7 light-launcher/Light-Android-Launcher \u00b7 GitHub",
+            "For reference, there's also a new app on F-Droid specifically converting the display to greyscale, Monochromatic by @RichyHBM."
+        ]
+    },
+    "https://medium.com/@andreworobator/implementing-android-app-shortcuts-74feb524959b": {
+        "lexrank": [
+            "If disabled, the shortcut will not appear in the list of shortcuts when a user long presses on your app icon in their launcher.",
+            "For example, if you were writing a messaging app, you might provide shortcuts for the most recent conversations.This next best practice is important if you allow the user to back up your app via android: allowBackup = `` true'' in the manifest.",
+            "If you prefer using the command line, you can execute the following command: And with that you should be well on your way to implementing Android 7.1's new feature App Shortcuts !",
+            "I'll be going through the source code of Konstellations as I explain how to implement App Shortcuts, so you can get your hands on a real world example.Static ShortcutsThe first kind of shortcut we'll implement is a static shortcut."
+        ]
+    }
+}

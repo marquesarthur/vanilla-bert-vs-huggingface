@@ -1,0 +1,173 @@
+{
+    "task": "TS shows numbers instead of contact names in notifications",
+    "description": "When I get a new message it shows the phone number of the contact in the notification and not the name. If I click on it, it opens TS and the number changes to the name...\nNexus 4, 5.1.1, TS 2.17.0\n\n```\nW/MessageRetrievalService( 2810): Looping...\nW/MessageRetrievalService( 2810): Waiting for websocket state change....\nW/MessageRetrievalService( 2810): Network requirement: true, active activities: 0, push pending: 0\nW/OkHttpClientWrapper( 2810): onClose(1000, OK)\nW/WebSocketConnection( 2810): onClose()...\nW/IInputConnectionWrapper( 2810): showStatusIcon on inactive InputConnection\nE/WindowManager( 2810): \nE/WindowManager( 2810): android.view.WindowLeaked: Activity org.thoughtcrime.securesms.LogSubmitActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{11f94164 V.E..... R......D 0,0-729,322} that was originally added here\nE/WindowManager( 2810):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:363)\nE/WindowManager( 2810):     at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:271)\nE/WindowManager( 2810):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:85)\nE/WindowManager( 2810):     at android.app.Dialog.show(Dialog.java:298)\nE/WindowManager( 2810):     at android.app.ProgressDialog.show(ProgressDialog.java:116)\nE/WindowManager( 2810):     at android.app.ProgressDialog.show(ProgressDialog.java:99)\nE/WindowManager( 2810):     at org.whispersystems.libpastelog.util.ProgressDialogAsyncTask.onPreExecute(ProgressDialogAsyncTask.java:43)\nE/WindowManager( 2810):     at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:591)\nE/WindowManager( 2810):     at android.os.AsyncTask.execute(AsyncTask.java:539)\nE/WindowManager( 2810):     at org.whispersystems.libpastelog.SubmitLogFragment$1.onClick(SubmitLogFragment.java:169)\nE/WindowManager( 2810):     at android.view.View.performClick(View.java:4780)\nE/WindowManager( 2810):     at android.view.View$PerformClick.run(View.java:19866)\nE/WindowManager( 2810):     at android.os.Handler.handleCallback(Handler.java:739)\nE/WindowManager( 2810):     at android.os.Handler.dispatchMessage(Handler.java:95)\nE/WindowManager( 2810):     at android.os.Looper.loop(Looper.java:135)\nE/WindowManager( 2810):     at android.app.ActivityThread.main(ActivityThread.java:5254)\nE/WindowManager( 2810):     at java.lang.reflect.Method.invoke(Native Method)\nE/WindowManager( 2810):     at java.lang.reflect.Method.invoke(Method.java:372)\nE/WindowManager( 2810):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)\nE/WindowManager( 2810):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)\nE/WindowManager( 2810):     at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:117)\nW/PassphraseRequiredActionBarActivity( 2810): routeApplicationState(), state: 0\nW/PassphraseRequiredActionBarActivity( 2810): initializeClearKeyReceiver()\nW/DirectoryRefreshListener( 2810): Scheduling for: 1433952602640\nW/ResourcesManager( 2810): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.\nW/KeyCachingService( 2810): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT\nW/KeyCachingService( 2810): Incrementing activity count...\nW/MessageRetrievalService( 2810): Active Count: 1\nW/MessageRetrievalService( 2810): Network requirement: true, active activities: 1, push pending: 0\nW/MessageRetrievalService( 2810): Making websocket connection....\nW/WebSocketConnection( 2810): WSC connect()...\nW/OkHttpClientWrapper( 2810): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s\nW/MessageRetrievalService( 2810): Network requirement: true, active activities: 1, push pending: 0\nW/MessageRetrievalService( 2810): Reading message...\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/BitmapUtil( 2810): rough scale 720x720 => 180x180\nW/BitmapUtil( 2810): fine scale 180x180 => 128x128\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/BitmapUtil( 2810): rough scale 720x720 => 180x180\nW/BitmapUtil( 2810): fine scale 180x180 => 128x128\nW/RecipientProvider( 2810): Cache miss [ASYNC]!\nW/BitmapUtil( 2810): rough scale 720x720 => 180x180\nW/BitmapUtil( 2810): fine scale 180x180 => 128x128\nW/BitmapUtil( 2810): rough scale 309x309 => 155x155\nW/BitmapUtil( 2810): fine scale 155x155 => 128x128\nW/BitmapUtil( 2810): rough scale 96x96 => 96x96\nW/KeyCachingService( 2810): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT\nW/KeyCachingService( 2810): Decrementing activity count...\nW/MessageRetrievalService( 2810): Active Count: 0\nW/WebSocketConnection( 2810): onConnected()\nW/ConversationListActivity( 2810): detected android contact data changed, refreshing cache\nW/WebSocketConnection( 2810): Sending keep alive...\nD/AndroidRuntime( 2810): Shutting down VM\n--------- beginning of crash\nE/AndroidRuntime( 2810): FATAL EXCEPTION: main\nE/AndroidRuntime( 2810): Process: org.thoughtcrime.securesms, PID: 2810\nE/AndroidRuntime( 2810): java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{11f94164 V.E..... R......D 0,0-729,322} not attached to window manager\nE/AndroidRuntime( 2810):    at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:396)\nE/AndroidRuntime( 2810):    at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:322)\nE/AndroidRuntime( 2810):    at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:116)\nE/AndroidRuntime( 2810):    at android.app.Dialog.dismissDialog(Dialog.java:341)\nE/AndroidRuntime( 2810):    at android.app.Dialog.dismiss(Dialog.java:324)\nE/AndroidRuntime( 2810):    at org.whispersystems.libpastelog.util.ProgressDialogAsyncTask.onPostExecute(ProgressDialogAsyncTask.java:48)\nE/AndroidRuntime( 2810):    at org.whispersystems.libpastelog.SubmitLogFragment$SubmitToPastebinAsyncTask.onPostExecute(SubmitLogFragment.java:387)\nE/AndroidRuntime( 2810):    at org.whispersystems.libpastelog.SubmitLogFragment$SubmitToPastebinAsyncTask.onPostExecute(SubmitLogFragment.java:330)\nE/AndroidRuntime( 2810):    at android.os.AsyncTask.finish(AsyncTask.java:636)\nE/AndroidRuntime( 2810):    at android.os.AsyncTask.access$500(AsyncTask.java:177)\nE/AndroidRuntime( 2810):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)\nE/AndroidRuntime( 2810):    at android.os.Handler.dispatchMessage(Handler.java:102)\nE/AndroidRuntime( 2810):    at android.os.Looper.loop(Looper.java:135)\nE/AndroidRuntime( 2810):    at android.app.ActivityThread.main(ActivityThread.java:5254)\nE/AndroidRuntime( 2810):    at java.lang.reflect.Method.invoke(Native Method)\nE/AndroidRuntime( 2810):    at java.lang.reflect.Method.invoke(Method.java:372)\nE/AndroidRuntime( 2810):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)\nE/AndroidRuntime( 2810):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)\nE/AndroidRuntime( 2810):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:117)\nI/Process ( 2810): Sending signal. PID: 2810 SIG: 9\nW/PartProvider(14047): onCreate()\nW/MessageRetrievalService(14047): Waiting for websocket state change....\nW/MessageRetrievalService(14047): Network requirement: true, active activities: 0, push pending: 0\nW/PassphraseRequiredActionBarActivity(14047): routeApplicationState(), state: 2\nD/OpenGLRenderer(14047): Use EGL_SWAP_BEHAVIOR_PRESERVED: true\nD/Atlas   (14047): Validating map...\n```\n\n```\nW/MessageRetrievalService(14047): Retrieved envelope! +***********73\nW/PushReceivedJob(14047): Received receipt: (XXXXX, 1433951464000)\nW/MmsDatabase(14047): org.whispersystems.textsecure.api.util.InvalidNumberException: No valid characters found.\nW/MmsDatabase(14047):   at org.whispersystems.textsecure.api.util.PhoneNumberFormatter.formatNumber(PhoneNumberFormatter.java:82)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.util.Util.canonicalizeNumber(Util.java:146)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.util.Util.canonicalizeNumberOrGroup(Util.java:153)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.database.MmsDatabase.incrementDeliveryReceiptCount(MmsDatabase.java:231)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.database.MmsSmsDatabase.incrementDeliveryReceiptCount(MmsSmsDatabase.java:139)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.jobs.PushReceivedJob.handleReceipt(PushReceivedJob.java:51)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.jobs.PushReceivedJob.handle(PushReceivedJob.java:32)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.service.MessageRetrievalService$1.onMessage(MessageRetrievalService.java:89)\nW/MmsDatabase(14047):   at org.whispersystems.textsecure.api.TextSecureMessagePipe.read(TextSecureMessagePipe.java:80)\nW/MmsDatabase(14047):   at org.thoughtcrime.securesms.service.MessageRetrievalService.run(MessageRetrievalService.java:82)\nW/MmsDatabase(14047):   at java.lang.Thread.run(Thread.java:818)\nW/MessageRetrievalService(14047): Network requirement: true, active activities: 1, push pending: 0\nW/MessageRetrievalService(14047): Reading message...\n```\n\nI'm not sure if this is the part of the log that matters, so here's the [full debug log](https://gist.github.com/anonymous/e89078411db31d90df7b)\n",
+    "type": "GIT",
+    "link": "https://github.com/signalapp/Signal-Android/issues/3387",
+    "question_id": "3387",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/notify-user/expanded",
+                "type": "android",
+                "content": [
+                    "A basic notification usually includes a title, a line of text, and one or more actions the user can perform in response.",
+                    "To provide even more information, you can also create large, expandable notifications by applying one of several notification templates as described on this page.",
+                    "To start, build a notification with all the basic content as described in Create a Notification.",
+                    "Then, call setStyle ( ) with a style object and supply information corresponding to each template, as shown below.",
+                    "To add an image in your notification, pass an instance of NotificationCompat.BigPictureStyle to setStyle ( ).",
+                    "To make the image appear as a thumbnail only while the notification is collapsed ( as shown in figure 1 ), call setLargeIcon ( ) and pass it the image, but also call BigPictureStyle.bigLargeIcon ( ) and pass it null so the large icon goes away when the notification is expanded:",
+                    "Apply NotificationCompat.BigTextStyle to display text in the expanded content area of the notification:",
+                    "Tip: To add formatting in your text ( bold, italic, line breaks, and so on ), you can add styling with HTML markup.",
+                    "Apply NotificationCompat.InboxStyle to a notification if you want to add multiple short summary lines, such as snippets from incoming emails.",
+                    "This allows you to add multiple pieces of content text that are each truncated to one line, instead of one continuous line of text provided by NotificationCompat.BigTextStyle.",
+                    "To add a new line, call addLine ( ) up to 6 times.",
+                    "If you add more than 6 lines, only the first 6 are visible.",
+                    "Tip: You can distinguish the message's subject and message in each line by adding styling with HTML markup ( such as bolding the subject ).",
+                    "Apply NotificationCompat.MessagingStyle to display sequential messages between any number of people.",
+                    "This is ideal for messaging apps because it provides a consistent layout for each message by handling the sender name and message text separately, and each message can be multiple lines long.",
+                    "To add a new message, call addMessage ( ), passing the message text, the time received, and the sender name.",
+                    "You can also pass this information as a NotificationCompat.MessagingStyle.Message object.",
+                    "Optionally, you can call setConversationTitle ( ) to add a title that appears above the conversation.",
+                    "This might be the user-created name of the group or, if it doesn't have a specific name, a list of the participants in the conversation.",
+                    "Do not set a conversation title for one-on-one chats, because the system uses the existence of this field as a hint that the conversation is a group.",
+                    "This style applies only on devices running Android 7.0 ( API level 24 ) and up.",
+                    "When using the compatibility library ( NotificationCompat ) as demonstrated above, notifications with MessagingStyle will fallback automatically to a supported expanded notification style.",
+                    "When building a notification like this for a chat conversation, you should also add a direct reply action.",
+                    "Apply NotificationCompat.MediaStyle to display media playback controls and track information.",
+                    "Call addAction ( ) up to five times to display up to five separate icon buttons.",
+                    "And call setLargeIcon ( ) to set the album artwork.",
+                    "Unlike the other notification styles, MediaStyle allows you to also modify the collapsed-size content view by specifying three action buttons that should also appear in the collapsed view.",
+                    "To do so, provide the action button indices to setShowActionsInCompactView ( ).",
+                    "If the notification represents an active media session, also attach a MediaSession.Token to the notification using setMediaSession ( ).",
+                    "Android then identifies this as a notification representing an active media session and respond accordingly ( by showing album artwork in the lock screen, for example ).",
+                    "For more information, also read Using MediaStyle notifications with a foreground service.",
+                    "For sample code that uses notifications, see the Android Notifications Sample.",
+                    ""
+                ],
+                "title": "Create an Expandable Notification \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/signalapp/Signal-Android/issues/3376",
+                "content": [
+                    "TS shows number instead of contacts names in the main screen \u00b7 Issue # 3376 \u00b7 signalapp/Signal-Android \u00b7 GitHub",
+                    "TS shows number instead of contacts names in the main screen",
+                    "When I open textsecure in the main screen, it displays the number/contacts names just like a flash, every second it displays numbers or contacts names.",
+                    "Device: Honor 3C Jelly Bean 4.2.2 Emotion UI 2.0",
+                    "Here is a debug log: https://gist.github.com/anonymous/cc03830f4322e1c1a1f4",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "message notifications appear not until I open TS",
+                    "I will try to disable thoses managers this evening and give a feedback !",
+                    "@ 2-4601 The only manager that I have allow me to specify if an app can send push notification to the notifications bar ( options = Not authorized/Authorized/Notify ) also if an app is authorized to startup with android and if an app is allowed l working when the screen is locked ( for battery saving ).",
+                    "I gave all authorizations but the pictures/names/phone numbers stil flickering.",
+                    "I tried to disable the huawei phone manager but I'm not allowed.",
+                    "I think this is a limitation of this version of EmotionUI/Android jelly bean.",
+                    "My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.",
+                    "@ 5boro Does your friend has the same device with the same version of Emotion UI ?",
+                    "In the configuration panel I didn't find any privacy settings for the contacts.",
+                    "I will post screenshot of the configuration panel as soon as possible.",
+                    "It's actually an Huawei Honor 6, with EMUI 3.0.",
+                    "Here screenshots of the phone manager, there is no privacy settings for apps.",
+                    "Also I can't disable the phone manager:",
+                    "@ahamrani Apparemment les param\u00e8tres dont je parlait ont \u00e9t\u00e9 impl\u00e9ment\u00e9s dans la version 3.0 d'EmotionUI: http://www.anandtech.com/show/8655/the-huawei-ascend-mate-7-review/2 ( derni\u00e8re partie de l'article )",
+                    "Je reste convaincu que c'est un param\u00e8tre de s\u00e9curit\u00e9 de l'os qui emp\u00e8che l'acc\u00e8s aux contacts, tun'utilise pas Xprivacy ou App Ops ?",
+                    "@ 5boro please discuss in english so everybody can understand what you say, not just french speaking people ; )",
+                    "`` Apparently the settings I talked about were implemented in version 3.0 of Emotion UI: http://www.anandtech.com/show/8655/the-huawei-ascend-mate-7-review/2 ( last part of the article )",
+                    "I'm still convinced that there are some security settings in the OS that deny the access to the contacts.",
+                    "You don't use Xprivacy or App Ops ?''",
+                    "@Mihahn \ud83d\udc4d You should join the French translation team",
+                    "@ 5boro nah, I'm not a native speaker and I'm just learning french at school ...",
+                    "and I'm not really good at it \ud83d\ude48",
+                    "The device is not rooted, so can not install Xprivacy or App Ops.",
+                    "That's what I thought, I think I will have to wait that Honor deploy an update for the european version of my device or I will have to root it.",
+                    "I found a huawei home made privacy gard in the app manager, but unfortunatly I can not disable it and it hasn't control panel for app settings, it's shame.",
+                    "P.S: Honor est r\u00e9ellement une sous-marque de huawei ...",
+                    "It does seem to exist though: https://youtu.be/swrT6ePAvlo?t=60",
+                    "Dans ta derni\u00e8re capture, `` Applis prot\u00e9g\u00e9es'', c'est quoi ?",
+                    "In the panel `` Applis prot\u00e9g\u00e9es'' there is the list of apps allowed to run when the screen is locked.",
+                    "I think this is for battery optimisation.",
+                    "I already Allowed TextSecure without any change in the behavior.",
+                    "Yes it's strange that in the video there is a permissions manager, but believe me I didn't find it in mine, maybe it's a feature for the EMUI 2.3 ?",
+                    "If the permission manager is not installed, there is no reason for TSecure not to be able to access your contacts.",
+                    "It has to be present, maybe it's only accessible to root users ...",
+                    "@ 5boro Yeah you're right, I think I don't have choice, I'll have to root it.",
+                    "Since there is no other solutions than root my device or wait for an update from Honor, I guess it's better to close this issue.",
+                    "@ahamrani If I were you I would go ask on Huawei/EmUI related forums before voiding my warranty ...",
+                    "A friend of mine ( owning a Huawei P6 with Android 4.4.2 and EmotionUI 2.3 ) has the same problem.",
+                    "Contacts are kind of flashing every few seconds and he only receives messages on opening TextSecure.",
+                    "There has to be a solution without rooting the phone ...",
+                    "@ 5boro This morning I called Huawei/Honor support center, they told me that my device is not produced anymore, that they don't know if an update will be deployed for the European version and if it is, it will be available automatically on my device.",
+                    "In xdadevelopers forums ( http://forum.xda-developers.com/t/honor-3c ), there are some guides showing how to update to another version, but this is not official ...",
+                    "@Mihahn I thought that Emui 2.3 has the permissions manager ?",
+                    "The real question is why the home made permissions/privacy manager doesn't allow TextSecure accessing contact properly ?",
+                    "Does TextSecure behavior is considered as malware/bloatware ?",
+                    "No contact names pictures appearing",
+                    "I have a good news and a bad news, good news is that pictures/names/numbers aren't flickering anymore since the latest update 2.18.2.",
+                    "Bad news is that the app is very slow.",
+                    "I will open a new issue and close this one.",
+                    "TS very slow since update 2.18.2",
+                    ""
+                ],
+                "title": "TS shows number instead of contacts names in the main screen \u00b7 Issue # 3376 \u00b7 signalapp/Signal-Android \u00b7 GitHub"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "45376300",
+                "link": "https://stackoverflow.com/questions/45376300",
+                "title": "How do I show text in android system status bar",
+                "answers": [
+                    {
+                        "uid": 45376679,
+                        "score": 0,
+                        "text": [
+                            "You can find your answer in the doc, here: LINK",
+                            "Edit:: Well, the answer is in the doc.",
+                            "However, after a good bit of research and digging, it seems as though the consensus amongst the community is that this is not possible for just any application.",
+                            "Only specific icons can be placed on the right side of the status bar -LRB- i.e. Clock, Weather, System info, etc..",
+                            ". -RRB-",
+                            ".",
+                            "I'm sorry there isn't a more exciting answer, but at least you can stop stressing out about why you can't figure it out.",
+                            "Edit 2:: Apparently, pre-lollipop devices had access to private apis that allowed you to work with system icons -LRB- again, think about the alarm icon -RRB-.",
+                            "Afterward, the apis were removed.",
+                            "This LINK goes over the whole situation pretty extensively.",
+                            "Edit 3:: If you can live with placing you icon on the left side of the status bar you can convert text to bitmap like this:"
+                        ]
+                    },
+                    {
+                        "uid": 45392031,
+                        "score": 4,
+                        "text": [
+                            "I do found a solution, the keyword is overlay with a floating window."
+                        ]
+                    },
+                    {
+                        "uid": 65155581,
+                        "score": 2,
+                        "text": [
+                            "Well, I did it.",
+                            "I used the way of converting text to an icon and then displaying it on the status bar.",
+                            "some members are trying to overlay the status bar which android does not allow -LRB- SDK > = 22 -RRB-, I don't know if that worked for someone or not.",
+                            "But converting text to an icon worked for me perfectly.",
+                            "Tested it on Oreo",
+                            "Pseudo code",
+                            "Output",
+                            "LINK",
+                            "Here is the code:",
+                            "If someone knows other than this way then please do mention"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "notifications",
+                    "overlay",
+                    "android-statusbar"
+                ]
+            }
+        ],
+        "other": []
+    },
+    "parsed": true
+}

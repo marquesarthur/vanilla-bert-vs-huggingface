@@ -1,0 +1,42 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-42",
+            "tag": "SPAN",
+            "text": "The cool thing about the new Google Recaptcha is that the validation is now completely encapsulated in the widget.",
+            "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "That means, that the widget will take care of asking questions, validating responses all the way till it determines that a user is actually a human, only then you get a g-recaptcha-response value.",
+            "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-77",
+            "tag": "SPAN",
+            "text": "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
+            "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-97",
+            "tag": "SPAN",
+            "text": "But that does not keep your site safe from HTTP client request forgery.",
+            "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-10",
+            "tag": "SPAN",
+            "text": "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
+            "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-88",
+            "tag": "SPAN",
+            "text": "In human speech it would be like,",
+            "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+        }
+    ]
+}

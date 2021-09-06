@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Dagger 2 analyzes these dependencies for you and generates code to help wire them together.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": " Calling inject() will cause Dagger 2 to locate the singletons in the dependency graph to try to find a matching return type.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": " If it finds one, it assigns the references to the respective fields.",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "Note that the activities, services, or fragments that are allowed to request the dependencies declared by the modules (by means of the @Inject annotation) should be declared in this class with individual inject() methods: ",
+      "href": "Dependency Injection with Dagger 2 | CodePath Android Cliffnotes"
+    }
+  ]
+}

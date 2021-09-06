@@ -1,0 +1,72 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-5",
+      "tag": "SPAN",
+      "text": "But what if we want to render a PDF Document in our app itself.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "We will use android support library PdfRenderer (Added in API level 21).",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Let’s learn how to use PdfRenderer library :",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-98",
+      "tag": "SPAN",
+      "text": "Create a simple android project named as PdfRender",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-99",
+      "tag": "SPAN",
+      "text": "Name your Activity as PdfRenderActivity (The activity where we want to render a PDF Document)",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-100",
+      "tag": "SPAN",
+      "text": "Create a assets folder(res →New →Folder →Assets Folder) and put your PDF Document inside it.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-101",
+      "tag": "SPAN",
+      "text": "If you want to use FloatingActionButton for navigating through multiple pages of PDF Document then you have to add design library in build.gradle(Module:app) file.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Now create a layout.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "Add following code in your layout file.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Now add the following code in your PdfRenderActivity —",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "Now Run your app & you will see your PDF Document will render in android app itself.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "\n The following code sample shows a typical use, with an XML layout\n and code to modify the contents of the text view:\n ",
+      "href": "TextView  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "\n This code sample demonstrates how to modify the contents of the text view\n defined in the previous XML layout:\n ",
+      "href": "TextView  |  Android Developers"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "You set this text view a width of \"wrap_content\"  it means,  what ever the text is, the view take the size of the text.",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "and in the LinearLayout , the default gravity (used here) is 'center'",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "you should try this : ",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "99% of the time, not working properly == not used properly.",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "gravity is the way the text will align itself in the TextView.",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "The TextView being in wrap_content this does nothing, as the TextView is exactly the size of the text.",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "layout_gravity is the way the TextView will align itself in its parent, in your case in the vertical LinearLayout",
+      "href": "java - Textview Gravity not working properly in android - Stack Overflow"
+    }
+  ]
+}

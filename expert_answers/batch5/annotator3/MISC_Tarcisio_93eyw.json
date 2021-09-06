@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "",
+      "tag": "PRE",
+      "text": "<ImageViewandroid:id=\"@+id/imageView\"android:layout_width=\"wrap_content\"android:layout_height=\"wrap_content\"android:src=\"@mipmap/ic_launcher\"android:layout_centerVertical=\"true\"android:layout_centerHorizontal=\"true\" />",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "",
+      "tag": "PRE",
+      "text": "private ScaleGestureDetector mScaleGestureDetector;private float mScaleFactor = 1.0f;private ImageView mImageView;",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "",
+      "tag": "PRE",
+      "text": "public boolean onTouchEvent(MotionEvent motionEvent) {mScaleGestureDetector.onTouchEvent(motionEvent);return true;   }",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "",
+      "tag": "PRE",
+      "text": "private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {@Overridepublic boolean onScale(ScaleGestureDetector scaleGestureDetector){mScaleFactor *= scaleGestureDetector.getScaleFactor();mScaleFactor = Math.max(0.1f,Math.min(mScaleFactor, 10.0f));mImageView.setScaleX(mScaleFactor);mImageView.setScaleY(mScaleFactor);return true;    }}",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "",
+      "tag": "PRE",
+      "text": "mImageView=(ImageView)findViewById(R.id.imageView);mScaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    },
+    {
+      "id": "c688",
+      "tag": "H1",
+      "text": "How the code works…",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    }
+  ]
+}

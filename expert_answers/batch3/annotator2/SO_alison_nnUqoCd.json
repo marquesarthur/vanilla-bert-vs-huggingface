@@ -1,0 +1,12 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-52",
+            "tag": "SPAN",
+            "text": "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        }
+    ]
+}

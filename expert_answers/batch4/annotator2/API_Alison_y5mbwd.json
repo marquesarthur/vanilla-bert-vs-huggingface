@@ -1,0 +1,24 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "Swipe views allow you to navigate between sibling screens, such as tabs, with a\nhorizontal finger gesture, or swipe.",
+      "href": "Create swipe views with tabs using ViewPager2  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "To insert child views that represent each page, you need to hook this layout to\na FragmentStateAdapter.",
+      "href": "Create swipe views with tabs using ViewPager2  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "Here's how you might use it to swipe across a collection of Fragment objects:",
+      "href": "Create swipe views with tabs using ViewPager2  |  Android Developers"
+    }
+  ]
+}

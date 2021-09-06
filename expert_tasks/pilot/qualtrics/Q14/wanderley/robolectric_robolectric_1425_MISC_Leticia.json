@@ -1,0 +1,42 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Google Location Services API, also known as FusedLocationProviderApi, is Google’s recommended way of getting a user’s location.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "To access Google APIs, we just need to perform one more step: create an instance of GoogleApiClient.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "I usually call this code from “onCreate” method of the activity:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "The interface implementation, in this case “this”, will receive response to the asynchronous “connect()” method when the connection to Google Play Services succeed, fail, or become suspended.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-60",
+      "tag": "SPAN",
+      "text": "This callback is fired when Google Play Services is connected, which means by then we should have the last known location.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "After you invoke “getLastLocation”, you might want to request periodic updates from the Fused Location Provider.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    }
+  ]
+}

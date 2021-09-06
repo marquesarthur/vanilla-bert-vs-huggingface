@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2636",
+      "tag": "SPAN",
+      "text": "Specifies how to align the text by the view's x- and/or y-axis\n when the text is smaller than the view.",
+      "href": "TextView  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2638",
+      "tag": "SPAN",
+      "text": "Must be one or more (separated by '|') of the following constant values.",
+      "href": "TextView  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-13787",
+      "tag": "SPAN",
+      "text": "Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.",
+      "href": "TextView  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-4101",
+      "tag": "SPAN",
+      "text": "Sets the horizontal alignment of the text and the\n vertical gravity that will be used when there is extra space\n in the TextView beyond what is required for the text itself.",
+      "href": "TextView  |  Android Developers"
+    }
+  ]
+}

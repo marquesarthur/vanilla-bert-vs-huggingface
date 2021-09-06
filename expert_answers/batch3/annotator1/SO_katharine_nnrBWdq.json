@@ -1,0 +1,24 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-38",
+            "tag": "SPAN",
+            "text": "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-78",
+            "tag": "SPAN",
+            "text": "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-85",
+            "tag": "SPAN",
+            "text": "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        }
+    ]
+}

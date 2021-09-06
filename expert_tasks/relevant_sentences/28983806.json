@@ -1,0 +1,26 @@
+{
+    "https://stackoverflow.com/questions/30362446": {
+        "ansbot": [
+            "As promised, I'm putting an example for how to use annotations to serialize/deserialize polymorphic objects, I based this example in the Animal class from the tutorial you were reading.",
+            "As you can see, there is nothing special for Cat and Dog, the only one that know about them is the abstract class Animal, so when deserializing, you'll target to Animal and the ObjectMapper will return the actual instance as you can see in the following test:",
+            "A simple way to enable polymorphic serialization / deserialization via Jackson library is to globally configure the Jackson object mapper -LRB- jackson.databind.ObjectMapper -RRB- to add information, such as the concrete class type, for certain kinds of classes, such as abstract classes.",
+            "So, if you create a JSON directly -LRB- without serialization -RRB- remember to add the meta-property'' @class'' with the desired class name for correct deserialization."
+        ]
+    },
+    "https://github.com/FasterXML/jackson-databind/issues/1538": {
+        "hurried": [
+            "This results in a com.fasterxml.jackson.databind.JsonMappingException exception as the default class is not a subclass of the property's type.",
+            "My example worked for me ( the types were as expected ), I'm using Jackson Annotations 2.8 and core 2.8.7.",
+            "We have a protocol where all JSON objects contain a _ type field that indicates what the JSON represents.",
+            "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+            "Your technique of overriding the annotations in each of the child classes makes sense now that I understand that.",
+            "I didn't post this to StackOverflow as it seemed like buggy behavior and there were a few other tickets related to defaultImpl like you mentioned."
+        ]
+    },
+    "https://medium.com/@david.truong510/jackson-polymorphic-deserialization-91426e39b96a": {
+        "lexrank": [
+            "Jackson Polymorphic DeserializationHow to Use Jackson to Deserialize Json Fields into Polymorphic TypesDavid TruongJan 9, 2019 \u00b7 2 min readPhoto by Markus Spiske on UnsplashJackson deserialization/serialization works out of the box most of the time.",
+            "How to Use Jackson to Deserialize Json Fields into Polymorphic TypesDavid TruongJan 9, 2019 \u00b7 2 min read"
+        ]
+    }
+}

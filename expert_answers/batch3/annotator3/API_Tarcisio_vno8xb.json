@@ -1,0 +1,60 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Table 1 shows\nwhich versions of Android support allowlisting apps by user.",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "A DPC must allowlist apps before they can be used in lock task mode.",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Call\nActivityOptions.setLockTaskEnabled() and supply these\noptions when starting the activity.",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "The following snippet shows one way you can\ndo this:",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "In Android versions before 9.0, an app starts its own activities in lock task\nmode by calling Activity.startLockTask().",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "You can call KeyguardManager methods to\nfind out if the device is locked and use an Activity lifecycle\ncallback (such as onResume() that's called after unlocking) to\nstart lock task mode.",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-43",
+      "tag": "SPAN",
+      "text": "In Android 9.0 or higher when lock task mode is enabled, your DPC can enable\ncertain system UI features on the device—useful to developers creating a custom\nlauncher.",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "The system disables any features you don’t include in the flags argument.",
+      "href": "Lock task mode  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "Table 2 describes the UI features you can customize.",
+      "href": "Lock task mode  |  Android Developers"
+    }
+  ]
+}

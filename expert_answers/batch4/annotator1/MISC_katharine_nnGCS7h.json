@@ -1,0 +1,90 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-70",
+            "tag": "SPAN",
+            "text": "The solution to open PDF is solved by the introduction of the class PdfRenderer in Android-Lollipop (API 21).",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-71",
+            "tag": "SPAN",
+            "text": "Now let\u2019s create the PDFRenderer instance using the ParcleFileDescriptor obtained above :",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-58",
+            "tag": "SPAN",
+            "text": "Let\u2019s create the Bitmap instance with the required dimensions:",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-78",
+            "tag": "SPAN",
+            "text": "Lastly, render the page to bitmap created in step 3:",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-89",
+            "tag": "SPAN",
+            "text": "Close the page and renderer once you are done",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-35",
+            "tag": "SPAN",
+            "text": "The solution to open PDF is solved by the introduction of the class PdfRenderer in Android-Lollipop (API 21).",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-67",
+            "tag": "SPAN",
+            "text": "Now let\u2019s create the PDFRenderer instance using the ParcleFileDescriptor obtained above :",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-80",
+            "tag": "SPAN",
+            "text": "Not get the page to render using PdfRenderer.Page by just passing the index of the page",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-75",
+            "tag": "SPAN",
+            "text": "Lastly, render the page to bitmap created in step 3:",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-91",
+            "tag": "SPAN",
+            "text": "Close the page and renderer once you are done",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "Get a seekable file descriptor from our pdf document :",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-58",
+            "tag": "SPAN",
+            "text": "Get a seekable file descriptor from our pdf document :",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "Get a seekable file descriptor from our pdf document :",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-79",
+            "tag": "SPAN",
+            "text": "Get a seekable file descriptor from our pdf document :",
+            "href": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+        }
+    ]
+}

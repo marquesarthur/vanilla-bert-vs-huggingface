@@ -1,0 +1,102 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-374",
+      "tag": "SPAN",
+      "text": "The FragmentPagerAdapter stores the fragments in memory as long as the user can navigate between them.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-375",
+      "tag": "SPAN",
+      "text": "When a fragment is not visible, the PagerAdapter will detach it, but not destroy it, so the fragment instance remains alive in the FragmentManager.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-377",
+      "tag": "SPAN",
+      "text": "This can make the transition between pages fast and smooth, but it could cause memory issues in your app if you need many fragments.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-378",
+      "tag": "SPAN",
+      "text": "The FragmentStatePagerAdapter makes sure to destroy all the fragments the user does not see and only keep their saved states in the FragmentManager, hence the name.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-87",
+      "tag": "SPAN",
+      "text": "The FragmentStatePagerAdapter will stop creating new fragments when the current index reaches the number of objects returned by getCount(), so you need to change the method to return a fairly large number that the users are not very likely to reach by continuously swiping in the same direction.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-89",
+      "tag": "SPAN",
+      "text": "Open MoviesPagerAdapter.kt and create a new constant representing the large number by adding this line at the top of the file above the class definition:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-95",
+      "tag": "SPAN",
+      "text": "Replace the code inside getItem(position: Int) with this line:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-97",
+      "tag": "SPAN",
+      "text": "Right now the infinite scrolling works only when the user navigates forward through the array (swipes left).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-98",
+      "tag": "SPAN",
+      "text": "That is because, when your app starts, the ViewPager displays the movie at index 0.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-99",
+      "tag": "SPAN",
+      "text": "To fix this issue, open MainActivity.kt and add the following line inside onCreate() below the line where you connect the PageAdapter to the ViewPager: ",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-102",
+      "tag": "SPAN",
+      "text": "To ensure that the movie displayed at the beginning will still be the first one in your list, set MAX_VALUE to be an even number (in this case 200 works fine).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-103",
+      "tag": "SPAN",
+      "text": "This way, after you divide pagerAdapter.count by 2, pagerAdapter.count % movies.size = 0 (which is the first index that the ViewPager asks for when the app starts).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-112",
+      "tag": "SPAN",
+      "text": "Luckily, there is a third party library called RecyclerTabLayout that solves this problem.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-123",
+      "tag": "SPAN",
+      "text": "Add this block of code inside onCreate(), above the line where you set viewPager.currentItem:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-126",
+      "tag": "SPAN",
+      "text": "Open MoviesPagerAdapter.kt and add the following method inside the class:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-128",
+      "tag": "SPAN",
+      "text": "It returns the title of the movie that corresponds with the fragment created inside getItem(position: Int).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    }
+  ]
+}

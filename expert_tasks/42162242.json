@@ -1,0 +1,394 @@
+{
+    "task": "Android - Jackson JSON parser returns null value in &#39;release&#39; builds",
+    "description": "I'm using the Jackson JSON library within my Android app to parse JSON from a REST API.\nEverything works fine other than a couple of instances where I'm using ObjectMapper.readValue and ObjectMapper.treeToValue to deserialise the JSON to objects.\nIt works fine every time when running the ` debug' build variant, but when running the ` release' build it fails to create the object and just returns null instead.\nI've read a lot about ensuring that the Proguard settings are configured properly, but I'm not using Proguard and have removed all references to Proguard in my app.\nIs there anything else that might be causing the issue with the ` release' build ?",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/42162242",
+    "question_id": "42162242",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/reference/android/util/JsonReader",
+                "type": "android",
+                "content": [
+                    "public final class JsonReader extends Object implements Closeable",
+                    "Reads a JSON ( RFC 4627 ) encoded value as a stream of tokens.",
+                    "This stream includes both literal values ( strings, numbers, booleans, and nulls ) as well as the begin and end delimiters of objects and arrays.",
+                    "The tokens are traversed in depth-first order, the same order that they appear in the JSON document.",
+                    "Within JSON objects, name/value pairs are represented by a single token.",
+                    "Next, create handler methods for each structure in your JSON text.",
+                    "You'll need a method for each object type and for each array type.",
+                    "When a nested object or array is encountered, delegate to the corresponding handler method.",
+                    "When an unknown name is encountered, strict parsers should fail with an exception.",
+                    "Lenient parsers should call skipValue ( ) to recursively skip the value's nested tokens, which may otherwise conflict.",
+                    "If a value may be null, you should first check using peek ( ).",
+                    "Null literals can be consumed using either nextNull ( ) or skipValue ( ).",
+                    "Each JsonReader may be used to read a single JSON stream.",
+                    "Instances of this class are not thread safe.",
+                    "Creates a new instance that reads a JSON-encoded stream from in.",
+                    "Consumes the next token from the JSON stream and asserts that it is the beginning of a new array.",
+                    "Consumes the next token from the JSON stream and asserts that it is the beginning of a new object.",
+                    "Closes this JSON reader and the underlying Reader.",
+                    "Consumes the next token from the JSON stream and asserts that it is the end of the current array.",
+                    "Consumes the next token from the JSON stream and asserts that it is the end of the current object.",
+                    "Returns true if the current array or object has another element.",
+                    "Returns true if this parser is liberal in what it accepts.",
+                    "Returns the boolean value of the next token, consuming it.",
+                    "Returns the double value of the next token, consuming it.",
+                    "Returns the int value of the next token, consuming it.",
+                    "Returns the long value of the next token, consuming it.",
+                    "Returns the next token, a property name, and consumes it.",
+                    "Consumes the next token from the JSON stream and asserts that it is a literal null.",
+                    "Returns the string value of the next token, consuming it.",
+                    "Returns the type of the next token without consuming it.",
+                    "Configure this parser to be be liberal in what it accepts.",
+                    "Skips the next value recursively.",
+                    "Returns a string representation of the object.",
+                    "If the next token is a string, this method will attempt to parse it as a double using Double #parseDouble ( String ).",
+                    "If the next token is a string, this method will attempt to parse it as an int.",
+                    "If the next token's numeric value can not be exactly represented by a Java int, this method throws.",
+                    "If the next token is a string, this method will attempt to parse it as a long.",
+                    "If the next token's numeric value can not be exactly represented by a Java long, this method throws.",
+                    "If the next token is a number, this method will return its string form.",
+                    "By default, this parser is strict and only accepts JSON as specified by RFC 4627.",
+                    "Setting the parser to lenient causes it to ignore the following syntax errors:",
+                    "If it is an object or array, all nested elements are skipped.",
+                    "This method is intended for use when the JSON token stream contains unrecognized or unhandled values.",
+                    "In general, the toString method returns a string that `` textually represents'' this object.",
+                    "The result should be a concise but informative representation that is easy for a person to read.",
+                    "It is recommended that all subclasses override this method.",
+                    "The toString method for class Object returns a string consisting of the name of the class of which the object is an instance, the at-sign character ` @', and the unsigned hexadecimal representation of the hash code of the object.",
+                    "In other words, this method returns a string equal to the value of:",
+                    "Within array handling methods, first call beginArray ( ) to consume the array's opening bracket.",
+                    "Then create a while loop that accumulates values, terminating when hasNext ( ) is false.",
+                    "Finally, read the array's closing bracket by calling endArray ( ).",
+                    "Within object handling methods, first call beginObject ( ) to consume the object's opening brace.",
+                    "Then create a while loop that assigns values to local variables based on their name.",
+                    "This loop should terminate when hasNext ( ) is false.",
+                    "Finally, read the object's closing brace by calling endObject ( ).",
+                    "End of line comments starting with / / or # and ending with a newline character.",
+                    "C-style comments starting with / * and ending with * /.",
+                    "Such comments may not be nested.",
+                    "Names that are unquoted or ` single quoted'.",
+                    "Strings that are unquoted or ` single quoted'.",
+                    "Array elements separated by ; instead of,.",
+                    "These are interpreted as if null was the omitted value.",
+                    "Names and values separated by = or = > instead of:.",
+                    "Name/value pairs separated by ; instead of,.",
+                    ""
+                ],
+                "title": "JsonReader \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/quarkusio/quarkus/issues/3954",
+                "content": [
+                    "Using Jackson support for Kotlin fails in native mode.",
+                    "\u00b7 Issue # 3954 \u00b7 quarkusio/quarkus \u00b7 GitHub",
+                    "When using the Jackson Kotlin module with a Kotlin data class, it fails in native mode with the following:",
+                    "The example code is pretty straight forward:",
+                    "( Describe the expected behavior clearly and concisely. )",
+                    "If I run this in JVM mode, aka mvn compile quarkus: dev, or as a runnable jar it works just fine.",
+                    "( Describe the actual behavior clearly and concisely. )",
+                    "Steps to reproduce the behavior:",
+                    "( If applicable, add screenshots to help explain your problem. )",
+                    "Environment ( please complete the following information ):",
+                    "Output of uname - a or ver:",
+                    "GraalVM version ( if different from Java ):",
+                    "Quarkus version or git rev:",
+                    "( Add any other context about the problem here. )",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "For a short-term work-around the following working:",
+                    "I think this is a legit issue.",
+                    "As a parameter of a REST method, the Address type should be registered for reflection automatically.",
+                    "There's something wrong going on.",
+                    "@geoand any chance you could have a look to this one ?",
+                    "This doesn't appear to be a Quarkus issue.",
+                    "class does get registered for reflection correctly when I tested.",
+                    "In order to confirm this, @rdifrango can you please use your workaround without the @RegisterForReflection annotation ?",
+                    "If I am correct, it should still work.",
+                    "In that case you'll need to go read up on what the proper way to use Kotlin data classes and Jackson.",
+                    "@geoand you're correct, it still works if I remove @RegisterForReflection.",
+                    "I also tested by swap back to val from var but with default values and that's when it fails again, so working:",
+                    "Thanks for confirming and looking into it.",
+                    "It certainly looks like it's an issue with how Kotlin and Jackson interact.",
+                    "So I will go ahead and close this since it doesn't appear to be a Quarkus issue.",
+                    "If you feel that is not correct, please reopen and provide an update.",
+                    "@geoand I still think this is an issue as the NOT WORKING case, works just fine in JVM mode, it only fails in NATIVE mode.",
+                    "Native Mode: Performance test socket: too many open files",
+                    "@rdifrango a small reproducer then where I can see the exact error you are getting ?",
+                    "The code above is exactly what I used, nothing more nothing less: )",
+                    "To build it we issue:",
+                    "If you could upload it to github or something, so I don't make any mistakes while trying to reproduce that would be great: )",
+                    "@geoand, I'll see what I can do, sadly uploading to GH is non-trivial at the office: )",
+                    "Here's the maven POM file:",
+                    "I'll try and reproduce it.",
+                    "One last thing, do you have a curl command for POSTing to the endpoint ?",
+                    "Thanks, I'll try it and let you know",
+                    "I was able to reproduce the problem.",
+                    "It doesn't look like a regular Quarkus problem ( since the class is registered for reflection ), but more some kind of weird interop issue.",
+                    "I am guessing it will take a lot more digging than I can do at the moment, so let's leave it open and I'll take a look when I have som extra time.",
+                    "Actually what we are seeing seems consistent with the Kotlin module not being applied in native mode.",
+                    "So if anyone wants to explore more, that would be great.",
+                    "I will of course eventually get to this but frankly since we have workable workarounds and the root cause it probably hidden deep, I wouldn't consider it very high priority: )",
+                    "This issue has been automatically marked as stale because it has not had recent activity.",
+                    "It will be closed if no further activity occurs.",
+                    "We are doing this automatically to ensure out-of-date issues does not stay around indefinitely.",
+                    "If you believe this issue is still relevant please put a comment on it on why and if it truly needs to stay request or add ` pinned' label.",
+                    "Would be nice to have this fixed.",
+                    "Nobody is going to yell at anyone, we are as super friendly community: )",
+                    "The problem is that the behavior is different between JVM and native mode.",
+                    "With the no-arg plugin, in JVM the defaults are used which unfortunately is not the case in native mode.",
+                    "Add documentation for kotlin dataclass mongodb",
+                    "I am running into this same issue, except I get the error",
+                    "I tried adding kotlin.Metadata to the reflection-config file, and now am also getting",
+                    "java.lang.AssertionError: Built-in class kotlin.Any is not found",
+                    "I tried debugging by doing Class.forName ( Any:: class.java.name ), which I was able to do when I added java.lang.Object to the reflection-config file, but I still get Built-in class kotlin.Any is not found when jackson tries to read a value.",
+                    "Yeah this seems to require a chat with the Kotlin folks to see how to proceed.",
+                    "Unfortunately I haven't had the time to do that: (",
+                    "hi @geoand - have you been able to get in touch with the kotlin/graalvm folks ?",
+                    "With all the stuff that needed to be done for 1.3, I didn't follow up after not being able to reach them the first time.",
+                    "I'll try again this week I hope.",
+                    "Just as an indicator ( I haven't isolated this into a barebones example ), in case it helps, I am running into this problem for a data class which does not have any default values ( but all properties are val, and obviously I have registered the Kotlin Jackson module on the mapper ).",
+                    "However I do have several enum parameters for which there are default enum values ( @JsonEnumDefaultValue ) and I have activated the READ_UNKNOWN_ENUM_VALUES_USING_DEFAULT_VALUE on the mapper.",
+                    "I was able to get around this problem by explicitly adding Jackson annotations.",
+                    "So, this code works in JVM mode but doesn't in native mode",
+                    "but this code works in both JVM and native modes and keeps the class immutable.",
+                    "However, it pollutes my class and I expect to write code without any Jackson annotations as in the first example.",
+                    "@miron4dev is that class part of a jax-rs method ( I assume it's the payload of a POST request ) ?",
+                    "@geoand yes, it's the payload of a POST request.",
+                    "I want to give something a try soon.",
+                    "I'll come back when I have something to report.",
+                    "I went through various scenaria to try and reproduce the problems with Kotlin Data classes and Jackson deserialization in native but I failed to uncover any ...",
+                    "Here is where I recorded what I did: https://github.com/geoand/kotlin-jackson-demo",
+                    "If folks have concrete reproducible examples of issues I would love to know about them.",
+                    "I need to do a little more testing.",
+                    "I wondered if it was because you had extracted the data classes out into their own files, rather than inside of the GreetingResource.kt file itself, so I tested with my previous 1.1.1.",
+                    "Final code.",
+                    "I need to upgrade Graal to test with 1.3.2, so this will take me a little longer.",
+                    "Will report back when I can.",
+                    "Feel free to ping me when you have results: )",
+                    "I have tried a number of different configurations ( slow testing cycle due to the 15minute native compile ! )",
+                    ".",
+                    "Upgrading to Quarkus 1.3.2, and GraalVM 20.x, did not initially make any difference.",
+                    "I then changed the POM to reflect your POM and it worked.",
+                    "I then individually started removing the POM configurations back to my original and the key ( single ) element that has made this work is in the Kotlin maven plugin configuration.",
+                    "So, as long as the latest POM creation through the maven archetypes generate the above setting ( which appears to be the case ), then this bug can be closed.",
+                    "For anyone who is not creating a new project, they simply need to add the parameter to the `` configuration'' of the kotlin-maven-plugin, as linked to above.",
+                    "Thanks a lot for the thorough check @codemwnci !",
+                    "Indeed the project generation now includes",
+                    "I'll close this issue as per both our findings",
+                    "If anyone is having troubles with Kotlin in native mode, check the configuration resources linked here: oracle/graal # 2306",
+                    "Kotlin reflection fails in native build in some cases that Java reflection success",
+                    "Using asSequence.chunked ( ... ) causes native mode to fail",
+                    "I have some experiences to add on this one.",
+                    "I use an IntelliJ plug-in to convert JSON to Kotlin data classes for me ( large structure ! )",
+                    "Everything worked fine in JVM mode, Jackson-Kotlin-module clearly enabled for the mapper.readValue ( jsonBody ).",
+                    "However, a straight native-image version failed, with similar errors above.",
+                    "I experimented a lot with the issue, looked at the optional fields, default values and so on.",
+                    "The JSON structure was quite complex, with multiple levels and even an array.",
+                    "What was interested was when I moved to using mapper.readTree for the json and picked out the specific parts I wanted in the hierarchy and then did a mapper.readValue ( myNode ), it worked fine.",
+                    "The Jackson-Kotlin-module in native-image clearly prefers a simpler denormalised-like structure, than many levels ( why ? )",
+                    "I still had a few levels in the JSON, i.e. moving from about 5 nodes down to 2.",
+                    "When I started using mapper.readTree I also started getting different errors, the Jackson parser was giving me more specific object it was struggling to convert, rather than the blanket error ( as above ) that it can't construct the root data class ).",
+                    "Thus the error you get from the Jackson conversion can be a little misleading and in a hierarchy of objects it could be a leaf node that it is struggling to convert, yet reports an issue at the root node ( exception probably bubbles up in the code ).",
+                    "So, my recommendation for anyone having these issues, is to use mapper.readTree when using native-image, pull out the bits you want from the JSON-nodes and use mapper.readValue on that, rather than relying on a large tree to object conversion.",
+                    "More like using a SAX parser for XML than DOM, was the logic.",
+                    "I'm looking forward to using Java-records in the future in this scenario, and I believe Kotlin will map the internals of data-classes to records so it will look the same to the JVM ( ? )",
+                    "No not keen on using Lombok here as a replacement for my Kotlin data classes.",
+                    "JSON source was from Yahoo Finance: https://query1.finance.yahoo.com/v8/finance/chart/AMZN",
+                    "( what I could not convert with native-image using the entire tree, yet works when you pick more specific nodes of interest )",
+                    "An addendum, I've been able to get it working with the entire object tree for native-image ( fiddling with JSON to Kotlin data-class IntelliJ plugin options ), generating val with nullable type and default of null, along with the Jackson field name,.",
+                    "i.e.:",
+                    "Add Jackson pointers with Kotlin and cleanup the example Gradle build scripts",
+                    "@geoand, you asked for reproducible examples of issues.",
+                    "I ran into this issue last week and had a hard time figuring out why your example worked and my code didn't.",
+                    "In the end, I found out that the issue seemed to be data classes that have non-primitive members, e.g. a data class containing a List or another data class.",
+                    "I'm not sure if I should open a new issue as this one has been closed for a while.",
+                    "I have extended your example project and will shortly post two pull requests - one for the additional examples that break for me, and one to update to the latest Quarkus version.",
+                    "I hope this helps to track down the issue.",
+                    "This was referenced Mar 22, 2021",
+                    "add endpoints and HTTP requests to show that Jackson deserialization ...",
+                    "I'll try to take a look later on this week,",
+                    "@geoand This is the same issue I described above ( complex structures ) and why I added troubleshooting notes to the Kotlin documentation.",
+                    "Using the field annotation does overcome it, but may be considered a workaround.",
+                    "Ah, thanks @oztimpower, I had forgot !",
+                    "I run into the same issue today ( I suppose ).",
+                    "Initially I used the following data class to de-serialize a",
+                    "json resource ( via rest client ):",
+                    "It worked without any problem in the non-native mode but as soon as I deployed the application in native mode, the de-serialization failed.",
+                    "After some time, I figured out, that it works if I annotate the stations field with a @JsonProperty annotation:",
+                    "There is a bunch of log messages though that remained even after I added the annotation:",
+                    "Ensure that Kotlin Data classes with default values work in native with JAX-RS",
+                    ""
+                ],
+                "title": "Using Jackson support for Kotlin fails in native mode."
+            }
+        ],
+        "qa": [
+            {
+                "uid": "11064244",
+                "link": "https://stackoverflow.com/questions/11064244",
+                "title": "JSON Parsing works on Android 4.0 but not on Android &lt; 4.0",
+                "answers": [
+                    {
+                        "uid": 11086005,
+                        "score": 3,
+                        "text": [
+                            "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+                            "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+                            "I would suggest that you write your downloaded JSON out to a file and compare it with your original to see if there is a problem with the download logic.",
+                            "UPDATE",
+                            "I can not reproduce your problem.",
+                            "Loading that JSON off of external storage works perfectly fine on Android 4.0.3.",
+                            ", 2.3.3, 2.2, and 2.1, using the following activity -LRB- note: I was lazy and hard-wired in the path to external storage -RRB-:"
+                        ]
+                    },
+                    {
+                        "uid": 11088378,
+                        "score": 2,
+                        "text": [
+                            "Usually these are the following steps to create json object through the Http connection in android.",
+                            "I think you missed to convert String Buffer -LRB- sb -RRB- into json array object.",
+                            "Instead of that you directly create the json object from string buffer.",
+                            "I dont know how its was worked in android 4.0.",
+                            "The modified code is",
+                            "And you can get the json object by passing index value like,",
+                            "jObj.getJSONObject -LRB- i -RRB- ; / * i is a integer, index value * /"
+                        ]
+                    },
+                    {
+                        "uid": 11096821,
+                        "score": 1,
+                        "text": [
+                            "I am not very sure why you are getting this error.",
+                            "But I too had come across a similar problem and it was solved by changing the charSet.",
+                            "Try using iso-8859-1 instead of UTF-8."
+                        ]
+                    },
+                    {
+                        "uid": 11104548,
+                        "score": 1,
+                        "text": [
+                            "Have you tried Jackson ?",
+                            "I've used it on every version of android and it works quite nicely.",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 11104627,
+                        "score": 1,
+                        "text": [
+                            "Have you tried the JSONParser ?",
+                            "here is a example wich i use:"
+                        ]
+                    },
+                    {
+                        "uid": 11109972,
+                        "score": 1,
+                        "text": [
+                            "I copied your code and used LINK as the input to your getJSONFromUrl -LRB- String url -RRB- method.",
+                            "Interestingly, I was not able to reproduce your issue -LRB- with several combinations of AVD and/or target API of 15, 10, or 7 -RRB-.",
+                            "Some things I do notice:",
+                            "InputStream is, String json, JSONObject jObj are declared externally to your getJSONFromUrl -LRB- -RRB- method and there is a possibility that they are somehow affected differently by some other part of your code when running on one API compared to another.",
+                            "Looking at the exception that you got, it is likely that it is thrown due to the fact that the input String to the JSONObject constructor is an empty string -LRB-'''' -RRB-.",
+                            "Is it possible that somehow your server supplied a different data to your older Android ?",
+                            "Here's my suggestions:",
+                            "Add the following lines to the top of your getJSONFromUrl -LRB- -RRB- method:",
+                            "Add a line of debug code to print out the downloaded string between the last 2 try-catch blocks, like this:",
+                            "I think we will know more about your issue after you make either one or both of the above changes: -RRB-"
+                        ]
+                    },
+                    {
+                        "uid": 11143302,
+                        "score": 2,
+                        "text": [
+                            "Hello i used the following code and i did not get any errors in 2.2, 2.3.3 code is very simple.",
+                            "Hope it helps."
+                        ]
+                    },
+                    {
+                        "uid": 11149544,
+                        "score": 1,
+                        "text": [
+                            "Jackson or GSON.",
+                            "could be the german extra characters in there and an internationalization -LRB- i18n -RRB- or utf-8 issue.",
+                            "I would restart Eclipse, do a clean build and try again."
+                        ]
+                    },
+                    {
+                        "uid": 11155869,
+                        "score": 0,
+                        "text": [
+                            "Surely this will work.",
+                            "In 4.0 android version we have to create asynctask to avoid exception i.e NetworkOnMainThreadException ll get.",
+                            "Its working fine for me.",
+                            "enjoy.",
+                            "."
+                        ]
+                    },
+                    {
+                        "uid": 11156292,
+                        "score": 2,
+                        "text": [
+                            "I used following code for json, for me it support all android version.",
+                            "I hope this will help you."
+                        ]
+                    },
+                    {
+                        "uid": 11186569,
+                        "score": 1,
+                        "text": [
+                            "What is the type of the variable called json in the line: json = sb.toString -LRB- -RRB- ;",
+                            "Is it a String ?",
+                            "If it is a JSONObject, change its type to String and your code will work perfectly.",
+                            "Another remark is the handling of exceptions: It seems that if an exception is thrown in the first block when you building your String, the JSONObject initialization will be attempted with some faulty data.",
+                            "Anyway try this -LRB- I suspect your download method is buggy -RRB-:"
+                        ]
+                    },
+                    {
+                        "uid": 12775209,
+                        "score": 2,
+                        "text": [
+                            "the solution here will solve your problem it's because of the utf-8 encoding coming back from the server.",
+                            "LINK"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "json",
+                    "parsing"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://dzone.com/articles/processing-json-with-jackson",
+                "type": "misc",
+                "content": [
+                    "Thanks for visiting DZone today,",
+                    "How to Post to DZone",
+                    "Over 2 million developers have joined DZone.",
+                    "DZone > Java Zone > Processing JSON With Jackson",
+                    "JSON is a text-based data interchange format that is lightweight, language independent, and easy for humans to read and write.",
+                    "In the current enterprise, JSON is used for enterprise messaging, communicating with RESTful web services, and AJAX-based communications.",
+                    "Join the DZone community and get the full member experience.",
+                    "The preceding JSON is composed of several JSON objects with name-value pairs and a phoneNumbers array.",
+                    "Based on the JSON data, we'll create two POJOs: Address and Employee.",
+                    "The Employee object will be composed of Address and will contain properties with getter and setter method corresponding to the JSON constructs.",
+                    "With the POJOs ready to be populated with JSON data, let's use ObjectMapper of Jackson to perform the binding.",
+                    "The output on running the test is this.",
+                    "Published at DZone with permission of John Thompson, DZone MVB.",
+                    "See the original article here.",
+                    "Opinions expressed by DZone contributors are their own.",
+                    "Get started with Java serverless functions",
+                    "From Architecture to an AWS Serverless POC: Architect's Journey",
+                    ""
+                ],
+                "title": "Processing JSON With Jackson - DZone Java"
+            }
+        ]
+    },
+    "parsed": true
+}

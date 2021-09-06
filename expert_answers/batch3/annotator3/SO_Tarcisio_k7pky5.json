@@ -1,0 +1,78 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "The use of application icon plus title as a standard layout is\n  discouraged on API 21 devices and newer.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-24",
+            "tag": "SPAN",
+            "text": "If you would like an application icon (but I discourage it), you can use the method setLogo().",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "Something like this:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-29",
+            "tag": "SPAN",
+            "text": "A Toolbar is a generalization of action bars for use within application layouts.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-32",
+            "tag": "SPAN",
+            "text": "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "uid-1124",
+            "tag": "PRE",
+            "text": "    ActionBar ab =getSupportActionBar(); \n    ab.setDisplayShowHomeEnabled(true);\n    ab.setIcon(R.drawable.launcher_icon);\n",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "uid-1192",
+            "tag": "PRE",
+            "text": "import android.support.v7.app.ActionBar; //or the v4, haven't tried with that though\n",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "uid-1198",
+            "tag": "PRE",
+            "text": "ActionBar actionBar;\nactionBar = getSupportActionBar();\n",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "uid-1204",
+            "tag": "PRE",
+            "text": "if (actionBar != null) {\n        // enabling action bar app icon and behaving it as toggle button           \n        actionBar.setDisplayHomeAsUpEnabled(true);\n        actionBar.setIcon(R.drawable.your_icon);\n        actionBar.setHomeButtonEnabled(true);\n        actionBar.setDisplayShowHomeEnabled(true);\n    }\n",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "This issue comes when you use support library revised 21.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-41",
+            "tag": "SPAN",
+            "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-20",
+            "tag": "SPAN",
+            "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        }
+    ]
+}

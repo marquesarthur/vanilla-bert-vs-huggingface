@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "Reads a JSON (RFC 4627)\n encoded value as a stream of tokens.",
+      "href": "JsonReader  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "This stream includes both literal\n values (strings, numbers, booleans, and nulls) as well as the begin and\n end delimiters of objects and arrays.",
+      "href": "JsonReader  |  Android Developers"
+    }
+  ]
+}

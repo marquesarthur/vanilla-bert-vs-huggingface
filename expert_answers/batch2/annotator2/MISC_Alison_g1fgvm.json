@@ -1,0 +1,54 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "subscribe() is single-threaded by design and there is no way around it.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Each UUID is loaded sequentially.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "You might have heard about this subscribeOn() operator and how it enables concurrency.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "Indeed, but you have to be very careful when applying it.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "The following sample is (again) wrong:",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "subscribeOn() (and observeOn() for that matter) barely switch execution to a different worker (thread) without introducing any concurrency.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "The flatMap() operator enables concurrency by splitting a stream of events into a stream of sub-streams.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-62",
+      "tag": "SPAN",
+      "text": "Well, subscribeOn() on the outer stream level basically said that all events should be processed sequentially, within this stream, on a different thread.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    }
+  ]
+}

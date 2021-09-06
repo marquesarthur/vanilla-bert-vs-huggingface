@@ -1,0 +1,54 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-7",
+            "tag": "SPAN",
+            "text": "Have a look at View.setVisibility(View.GONE / View.VISIBLE / View.INVISIBLE).",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-8",
+            "tag": "SPAN",
+            "text": "From the API docs:",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-87",
+            "tag": "SPAN",
+            "text": "Note that LinearLayout is a ViewGroup which in turn is a View.",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-92",
+            "tag": "SPAN",
+            "text": "That is, you may very well call, for instance, myLinearLayout.setVisibility(View.VISIBLE).",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-95",
+            "tag": "SPAN",
+            "text": "Note that LinearLayout is a ViewGroup which in turn is a View.",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-96",
+            "tag": "SPAN",
+            "text": "That is, you may very well call, for instance, myLinearLayout.setVisibility(View.VISIBLE).",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-33",
+            "tag": "SPAN",
+            "text": "Note that LinearLayout is a ViewGroup which in turn is a View.",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "That is, you may very well call, for instance, myLinearLayout.setVisibility(View.VISIBLE).",
+            "href": "android - How to change visibility of layout programmatically - Stack Overflow"
+        }
+    ]
+}

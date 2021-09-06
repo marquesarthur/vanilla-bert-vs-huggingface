@@ -1,0 +1,42 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-1166",
+      "tag": "H2",
+      "text": "Using a ScaleGestureDetector",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "We use a ScaleGestureDetector on the activity to listen to touch events.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "When a scale (ie, pinch) gesture is detected, then the scale factor is used to resize the ImageView.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-321",
+      "tag": "SPAN",
+      "text": "Although the activity had the gesture detector in the example above, it could have also been set on the image view itself.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-322",
+      "tag": "SPAN",
+      "text": "You can limit the size of the scaling with something like \n\nmScaleFactor = Math.max(0.1f, Math.min(mScaleFactor, 5.0f));\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "You can limit the size of the scaling with something like ",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    }
+  ]
+}

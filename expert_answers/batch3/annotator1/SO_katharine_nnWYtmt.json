@@ -1,0 +1,54 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-72",
+            "tag": "SPAN",
+            "text": "A Toolbar is a generalization of action bars for use within application layouts.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "A Toolbar is a generalization of action bars for use within application layouts.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-11",
+            "tag": "SPAN",
+            "text": "This issue comes when you use support library revised 21.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-79",
+            "tag": "SPAN",
+            "text": "A Toolbar is a generalization of action bars for use within application layouts.",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-59",
+            "tag": "SPAN",
+            "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-39",
+            "tag": "SPAN",
+            "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-45",
+            "tag": "SPAN",
+            "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-81",
+            "tag": "SPAN",
+            "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+            "href": "android - The application icon does not show on action bar - Stack Overflow"
+        }
+    ]
+}

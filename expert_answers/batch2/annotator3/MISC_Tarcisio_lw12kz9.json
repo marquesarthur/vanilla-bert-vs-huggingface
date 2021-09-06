@@ -1,0 +1,60 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "d1b0",
+      "tag": "H2",
+      "text": "Step One: Just Respond to Application Requests",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Well we can put some kind of encryption into our requests, for example using RSA we can have a private key, put it into the application, and encrypt the requests.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "Of course there are some obfuscating approaches, like ProGuard that you should use, but they wouldn’t stop a determined hacker to find our private key in our code.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "c236",
+      "tag": "H2",
+      "text": "Step two: Use Native Code",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "In android you can write some or all of your code in c/c++ languages using NDK. The important thing is you have to know when to use it.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "cad8",
+      "tag": "H2",
+      "text": "Step three: Use Other Factors",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-149",
+      "tag": "SPAN",
+      "text": "First: They don’t have access to our private key so if they want to create requests they have to use our library.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-150",
+      "tag": "SPAN",
+      "text": "Second: They can’t see or manipulate our native code and logic.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "This will take the power of machine from it and make it more like a normal person who is trying to register many times.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    }
+  ]
+}

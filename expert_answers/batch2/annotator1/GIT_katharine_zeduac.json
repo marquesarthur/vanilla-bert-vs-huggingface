@@ -1,0 +1,13 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+  
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Following you can find a failing test 👀",
+      "href": "MockWebServer tests got stuck after updating from 3.9.1 to 3.10.0 · Issue #3898 · square/okhttp"
+    }
+  ]
+}

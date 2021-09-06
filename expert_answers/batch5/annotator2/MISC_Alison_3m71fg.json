@@ -1,0 +1,72 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-1",
+            "tag": "SPAN",
+            "text": "A fragment is a reusable class implementing a portion of an activity.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-93",
+            "tag": "SPAN",
+            "text": "In many of the examples above, we call transaction.replace(...) to load a dynamic fragment which first removes the existing fragment from the activity invoking onStop and onDestroy for that fragment before adding the new fragment to the container.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-94",
+            "tag": "SPAN",
+            "text": "This can be good because this will release memory and make the UI snappier.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-95",
+            "tag": "SPAN",
+            "text": "However, in many cases, we may want to keep both fragments around in the container and simply toggle their visibility.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-97",
+            "tag": "SPAN",
+            "text": "To do this, we might modify this code:",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-98",
+            "tag": "SPAN",
+            "text": "to this approach instead leveraging add, show, and hide in the FragmentTransaction:",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "uid-1842",
+            "tag": "CODE",
+            "text": "show",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-99",
+            "tag": "SPAN",
+            "text": "Using this approach, all three fragments will remain in the container once added initially and then we are simply revealing the desired fragment and hiding the others within the container.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-40",
+            "tag": "SPAN",
+            "text": "A fragment, like an activity, has an XML layout file and a Java class that represents the Fragment controller.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-1",
+            "tag": "SPAN",
+            "text": "A Fragment is a combination of an XML layout file and a java class much like an Activity.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-87",
+            "tag": "SPAN",
+            "text": "A fragment, like an activity, has an XML layout file and a Java class that represents the Fragment controller.",
+            "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+        }
+    ]
+}

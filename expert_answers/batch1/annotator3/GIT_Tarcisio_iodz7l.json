@@ -1,0 +1,48 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-176",
+      "tag": "SPAN",
+      "text": "\n          Expected Behaviour:\nIf permissions are not granted, the callback should be called, with the error field being non-null/undefined.\n    Contacts.getAll((err, contacts) => {\n        // err should be defined\n    })\n\n    \n      \n    \n\n      \n    \n\n    \n  \nActual Behaviour:\nApp crashes completely.\nReact Native does not even have the chance to catch the error.\nMy code:\nasync function requestPermissions() {\n  let status = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_CONTACTS)\n  console.log('status', status)\n}\n\nasync function contactsGetAll(): Promise<Contact[]> {\n  await requestPermissions()\n  console.log('permissions')\n  return new Promise((res, rej) => {\n    Contacts.getAll((err, contacts) => {\n      console.log('err', err)\n      if (err) {  rej(err) } \n     else { res(contacts) }\n    })\n  })\n}\n\ncontacts: Contact[] = await contactsGetAll()\n    \n      \n    \n\n      \n    \n\n    \n  \nconsole.log output:\nstatus: never_ask_again\npermissions\n// crashes\n    \n      \n    \n\n      \n    \n\n    \n  \nWorkaround fix:\nCheck permissions before calling Contacts.getAll()\n  let status = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_CONTACTS)\n  if (status === 'denied' || status === 'never_ask_again') {\n    throw Error('Permissions not granted to access Contacts')\n  }\nContacts.getAll((err, contacts) => {})\n    \n      \n    \n\n      \n    \n\n    \n  \n      ",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Check permissions before calling Contacts.getAll()",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "I'm not sure if there's anything we can/should do about this.",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Checking for permissions before performing privileged actions seems fine to me.",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-181",
+      "tag": "SPAN",
+      "text": "\n          I solved it by the using the below piece of \"try catch\" code logic:\nThe app will not crash, since all the  cases are handled .\ntry {\n        const andoidContactPermission = await PermissionsAndroid.request(\n          PermissionsAndroid.PERMISSIONS.READ_CONTACTS,\n          {\n            title: \"Contacts Permission\",\n            message:\n              \"This app would like to view your contacts.\",\n            buttonNeutral: \"Ask Me Later\",\n            buttonNegative: \"Cancel\",\n            buttonPositive: \"OK\"\n          }\n        );\n        if (andoidContactPermission === PermissionsAndroid.RESULTS.GRANTED) {\n          console.log(\"Contacts Permission granted\");\n          Contacts.getAll((andoidContactPermission, contacts) => {\n              console.log(contacts);\n          });\n        } else {\n          console.log(\"Contacts permission denied\");\n        }\n      } catch (err) {\n        console.log(err);\n }\n    \n    \n    \n      \n    \n\n      \n    \n\n    \n  \nHope this helps 👍\n      ",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "The app will not crash, since all the  cases are handled .",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    },
+    {
+      "id": "uid-1778",
+      "tag": "CODE",
+      "text": "WRITE_CONTACTS",
+      "href": "Contacts.getAll() crashes Android app when permissions are not granted · Issue #516 · morenoh149/react-native-contacts · GitHub"
+    }
+  ]
+}

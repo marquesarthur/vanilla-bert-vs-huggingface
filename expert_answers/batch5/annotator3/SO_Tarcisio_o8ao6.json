@@ -1,0 +1,84 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-935",
+      "tag": "PRE",
+      "text": "@Override\npublic boolean onTouch(View v, MotionEvent event) {\n    // TODO Auto-generated method stub\n\n    ImageView view = (ImageView) v;\n    dumpEvent(event);\n\n    // Handle touch events here...\n    switch (event.getAction() & MotionEvent.ACTION_MASK) {\n    case MotionEvent.ACTION_DOWN:\n        savedMatrix.set(matrix);\n        start.set(event.getX(), event.getY());\n        Log.d(TAG, \"mode=DRAG\");\n        mode = DRAG;\n        break;\n    case MotionEvent.ACTION_POINTER_DOWN:\n        oldDist = spacing(event);\n        Log.d(TAG, \"oldDist=\" + oldDist);\n        if (oldDist > 10f) {\n            savedMatrix.set(matrix);\n            midPoint(mid, event);\n            mode = ZOOM;\n            Log.d(TAG, \"mode=ZOOM\");\n        }\n        break;\n    case MotionEvent.ACTION_UP:\n    case MotionEvent.ACTION_POINTER_UP:\n        mode = NONE;\n        Log.d(TAG, \"mode=NONE\");\n        break;\n    case MotionEvent.ACTION_MOVE:\n        if (mode == DRAG) {\n            // ...\n            matrix.set(savedMatrix);\n            matrix.postTranslate(event.getX() - start.x, event.getY()\n                    - start.y);\n        } else if (mode == ZOOM) {\n            float newDist = spacing(event);\n            Log.d(TAG, \"newDist=\" + newDist);\n            if (newDist > 10f) {\n                matrix.set(savedMatrix);\n                float scale = newDist / oldDist;\n                matrix.postScale(scale, scale, mid.x, mid.y);\n            }\n        }\n        break;\n    }\n\n    view.setImageMatrix(matrix);\n    return true;\n}\n\nprivate void dumpEvent(MotionEvent event) {\n    String names[] = { \"DOWN\", \"UP\", \"MOVE\", \"CANCEL\", \"OUTSIDE\",\n            \"POINTER_DOWN\", \"POINTER_UP\", \"7?\", \"8?\", \"9?\" };\n    StringBuilder sb = new StringBuilder();\n    int action = event.getAction();\n    int actionCode = action & MotionEvent.ACTION_MASK;\n    sb.append(\"event ACTION_\").append(names[actionCode]);\n    if (actionCode == MotionEvent.ACTION_POINTER_DOWN\n            || actionCode == MotionEvent.ACTION_POINTER_UP) {\n        sb.append(\"(pid \").append(\n                action >> MotionEvent.ACTION_POINTER_ID_SHIFT);\n        sb.append(\")\");\n    }\n    sb.append(\"[\");\n    for (int i = 0; i < event.getPointerCount(); i++) {\n        sb.append(\"#\").append(i);\n        sb.append(\"(pid \").append(event.getPointerId(i));\n        sb.append(\")=\").append((int) event.getX(i));\n        sb.append(\",\").append((int) event.getY(i));\n        if (i + 1 < event.getPointerCount())\n            sb.append(\";\");\n    }\n    sb.append(\"]\");\n    Log.d(TAG, sb.toString());\n}\n\n/** Determine the space between the first two fingers */\nprivate float spacing(MotionEvent event) {\n    float x = event.getX(0) - event.getX(1);\n    float y = event.getY(0) - event.getY(1);\n    return FloatMath.sqrt(x * x + y * y);\n}\n\n/** Calculate the mid point of the first two fingers */\nprivate void midPoint(PointF point, MotionEvent event) {\n    float x = event.getX(0) + event.getX(1);\n    float y = event.getY(0) + event.getY(1);\n    point.set(x / 2, y / 2);\n}\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "and dont forget to set scaleType property to matrix of ImageView tag like:",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "and the variables used are:",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "We use a ScaleGestureDetector on the activity to listen to touch events.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "uid-1185",
+      "tag": "CODE",
+      "text": "ScaleGestureDetector",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "When a scale (ie, pinch) gesture is detected, then the scale factor is used to resize the ImageView.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "uid-1187",
+      "tag": "PRE",
+      "text": "public class MainActivity extends AppCompatActivity {\n\n    private ScaleGestureDetector mScaleGestureDetector;\n    private float mScaleFactor = 1.0f;\n    private ImageView mImageView;\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_main);\n\n        // initialize the view and the gesture detector\n        mImageView = findViewById(R.id.imageView);\n        mScaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());\n    }\n\n    // this redirects all touch events in the activity to the gesture detector\n    @Override\n    public boolean onTouchEvent(MotionEvent event) {\n        return mScaleGestureDetector.onTouchEvent(event);\n    }\n\n    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {\n\n        // when a scale gesture is detected, use it to resize the image\n        @Override\n        public boolean onScale(ScaleGestureDetector scaleGestureDetector){\n            mScaleFactor *= scaleGestureDetector.getScaleFactor();\n            mImageView.setScaleX(mScaleFactor);\n            mImageView.setScaleY(mScaleFactor);\n            return true;\n        }\n    }\n}\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-321",
+      "tag": "SPAN",
+      "text": "Although the activity had the gesture detector in the example above, it could have also been set on the image view itself.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-322",
+      "tag": "SPAN",
+      "text": "You can limit the size of the scaling with something like \n\nmScaleFactor = Math.max(0.1f, Math.min(mScaleFactor, 5.0f));\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "You can limit the size of the scaling with something like ",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-323",
+      "tag": "SPAN",
+      "text": "Thanks again to Pinch-to-zoom with multi-touch gestures In Android",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Thanks again to Pinch-to-zoom with multi-touch gestures In Android",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "You can develop these things yourself, but if you would like to use a pre-made custom view, copy TouchImageView.java into your project and use it like a normal ImageView.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    }
+  ]
+}

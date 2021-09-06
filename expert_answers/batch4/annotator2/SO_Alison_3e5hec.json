@@ -1,0 +1,12 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "You actually need to send the next sms after the previous one is sent, for this you need to check the status of the sms sent, please see this tutorial, it says:",
+      "href": "sms - Sending text messages programmatically in android - Stack Overflow"
+    }
+  ]
+}

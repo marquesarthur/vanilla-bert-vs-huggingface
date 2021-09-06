@@ -1,0 +1,222 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "Adding a ViewPager to the UI will allow the users to move forward or backward through the movies by swiping across the screen.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-457",
+      "tag": "SPAN",
+      "text": "Adding the ViewPager\n",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-458",
+      "tag": "SPAN",
+      "text": "Creating an Adapter for the ViewPager\n",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-459",
+      "tag": "SPAN",
+      "text": "Wiring up the ViewPager and the Adapter\n",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-43",
+      "tag": "SPAN",
+      "text": "Step one completed! You now have a ViewPager that doesn’t do anything particularly interesting without an Adapter that tells it what to display.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "The ViewPager usually displays the “pages” using fragment instances, but it can also work with simple views such as ImageView if you want to display static content.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": "You will connect your Fragment instances with the ViewPager using a PagerAdapter, which is an object that sits between the ViewPager and the data set containing the information you want the ViewPager to display (in this case the movies array).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "The PagerAdapter will create each Fragment, add the corresponding movie data to it and return it to the ViewPager.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "uid-1388",
+      "tag": "CODE",
+      "text": "ViewPager",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "PagerAdapter is an abstract class, so you will have an instance of one of its subclasses (FragmentPagerAdapter and FragmentStatePagerAdapter) rather than an instance of the PagerAdapter itself.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "There are two types of standard PagerAdapters that manage the lifecycle of each fragment: FragmentPagerAdapter and FragmentStatePagerAdapter.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-460",
+      "tag": "SPAN",
+      "text": "The FragmentPagerAdapter stores the fragments in memory as long as the user can navigate between them.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-464",
+      "tag": "SPAN",
+      "text": "The FragmentStatePagerAdapter makes sure to destroy all the fragments the user does not see and only keep their saved states in the FragmentManager, hence the name.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-467",
+      "tag": "SPAN",
+      "text": "Your new class extends FragmentStatePagerAdapter.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-468",
+      "tag": "SPAN",
+      "text": "The constructor of the superclass requires a FragmentManager, thus your custom PagerAdapter needs it as well.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-470",
+      "tag": "SPAN",
+      "text": "Return the fragment associated with the object located at the specified position.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-471",
+      "tag": "SPAN",
+      "text": "Return the number of objects in the array.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-67",
+      "tag": "SPAN",
+      "text": "When the ViewPager needs to display a fragment, it initiates a chat with the PagerAdapter.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-68",
+      "tag": "SPAN",
+      "text": "First, the ViewPager asks the PagerAdapter how many movies are in the array by calling getCount().",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-69",
+      "tag": "SPAN",
+      "text": "Then it will call getItem(int position) whenever a new page is about to be visible.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-70",
+      "tag": "SPAN",
+      "text": "Within this method, the PagerAdapter creates a new fragment that displays the information about the movie at the correct position in the array. ",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-88",
+      "tag": "SPAN",
+      "text": "The FragmentStatePagerAdapter will stop creating new fragments when the current index reaches the number of objects returned by getCount(), so you need to change the method to return a fairly large number that the users are not very likely to reach by continuously swiping in the same direction.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-89",
+      "tag": "SPAN",
+      "text": "That way the PagerAdapter will keep creating pages until the page index reaches the value returned by getCount().",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-90",
+      "tag": "SPAN",
+      "text": "Open MoviesPagerAdapter.kt and create a new constant representing the large number by adding this line at the top of the file above the class definition:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-91",
+      "tag": "SPAN",
+      "text": "Now replace the return movies.size line inside getCount() with this:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-92",
+      "tag": "SPAN",
+      "text": "By multiplying the length of the array with MAX_VALUE, the swipe limit will grow proportionally to the number of movies in your list.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-93",
+      "tag": "SPAN",
+      "text": "This way you don’t have to worry about getCount() returning a number that is less than the number of movies as your movie list grows.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-94",
+      "tag": "SPAN",
+      "text": "The only problem you now have is inside the Adapter’s getItem(position: Int) method.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-95",
+      "tag": "SPAN",
+      "text": "Since getCount() now returns a number larger than the size of the list, the ViewPager will try to access the movie at an index greater than the array size when the user swipes past the last movie.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-96",
+      "tag": "SPAN",
+      "text": "Replace the code inside getItem(position: Int) with this line:",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-97",
+      "tag": "SPAN",
+      "text": "This will ensure that the ViewPager doesn’t request the element at an index larger than movies.size because the remainder after you divide the position by movies.size will always be greater than or equal to 0 and less than movies.size.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-98",
+      "tag": "SPAN",
+      "text": "Right now the infinite scrolling works only when the user navigates forward through the array (swipes left).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-99",
+      "tag": "SPAN",
+      "text": "That is because, when your app starts, the ViewPager displays the movie at index 0.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-100",
+      "tag": "SPAN",
+      "text": "To fix this issue, open MainActivity.kt and add the following line inside onCreate() below the line where you connect the PageAdapter to the ViewPager: ",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-101",
+      "tag": "SPAN",
+      "text": "This tells the ViewPager to display the movie found in the middle of the array.",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-103",
+      "tag": "SPAN",
+      "text": "To ensure that the movie displayed at the beginning will still be the first one in your list, set MAX_VALUE to be an even number (in this case 200 works fine).",
+      "href": "ViewPager Tutorial: Getting Started in Kotlin | raywenderlich.com"
+    }
+  ]
+}

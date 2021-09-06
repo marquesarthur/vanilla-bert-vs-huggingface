@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "\n the second step is to translate the view up and left by half the  width and half the height.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "that is done because rotation is around the  top left point (the origin) of the view.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "it  is very simple: “matrix.postrotate (rotation)”.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "\n once the bitmap is rotated, it needs  to have its location translated to the place where it should display in  the view.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "that is specified in the offsetx and offsety values.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "\n you can download the source code for this demo from  the wglxy.com website.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    }
+  ]
+}

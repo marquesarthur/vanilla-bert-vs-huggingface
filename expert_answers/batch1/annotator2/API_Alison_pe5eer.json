@@ -1,0 +1,84 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-1",
+            "tag": "SPAN",
+            "text": "Back navigation is how users move backward through the history of screens they\npreviously visited.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2",
+            "tag": "SPAN",
+            "text": "All Android devices provide a Back button for this type of\nnavigation, so you should not add a Back button to your app\u2019s UI.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-9",
+            "tag": "SPAN",
+            "text": "The OnBackPressedDispatcher controls how Back button events are dispatched\nto one or more OnBackPressedCallback\nobjects.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-10",
+            "tag": "SPAN",
+            "text": "The constructor for OnBackPressedCallback takes a boolean for the\ninitial enabled state.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-11",
+            "tag": "SPAN",
+            "text": "Only when a callback is enabled (i.e.,\nisEnabled()\nreturns true) will the dispatcher call the callback's\nhandleOnBackPressed()\nto handle the Back button event.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": "Callbacks are added via the addCallback methods.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": "It is strongly recommended to\nuse the addCallback()\nmethod which takes a LifecycleOwner.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "This ensures that the OnBackPressedCallback is only added when the LifecycleOwner is\nLifecycle.State.STARTED.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "The activity also removes registered callbacks when their associated\nLifecycleOwner is destroyed, which prevents memory leaks and makes it suitable\nfor use in fragments or other lifecycle owners that have a shorter lifetime\nthan the activity.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "Here's an example callback implementation:",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-101",
+            "tag": "SPAN",
+            "text": "You can provide multiple callbacks via addCallback().",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-31",
+            "tag": "SPAN",
+            "text": "For example, if you added three callbacks named\none, two and three in order, they would be invoked in the order of\nthree, two, and one, respectively.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-71",
+            "tag": "SPAN",
+            "text": "When doing so, the callbacks are invoked in the reverse order in which they are\nadded - the callback added last is the first given a chance to handle the\nBack button event.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        }
+    ]
+}

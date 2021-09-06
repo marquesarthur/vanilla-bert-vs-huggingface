@@ -1,0 +1,42 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "An example of polymorphic deserialization is if you want your JSON object to deserialize into a java subclass.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "If you have a JSON object for “Vehicle”, it could be a “Car” or “Plane”, each with its own fields, some unique to the other.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "During deserialization, you would want Jackson to deserialize the “Vehicle” JSON object to the appropriate “Car” or “Plane” class.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "We can do that using the @JsonTypeInfo and @JsonSubTypes annotations.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "The @JsonTypeInfo includes a few configuration fields to indicate how Jackson should find the classes to deserialize the JSON to.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "The @JsonSubTypes tells Jackson which classes it should deserialize to.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    }
+  ]
+}

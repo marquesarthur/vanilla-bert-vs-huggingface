@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Just make a GET Request to",
+      "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
+      "href": "java - Google reCAPTCHA: How to get user response and validate in the server side? - Stack Overflow"
+    }
+  ]
+}

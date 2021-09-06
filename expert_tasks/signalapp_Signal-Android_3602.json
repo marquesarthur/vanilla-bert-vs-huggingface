@@ -1,0 +1,246 @@
+{
+    "task": "Different actions from contact info depending on whether hitting back key or back arrow in top left",
+    "description": "1. open message thread\n2. tap on contact name at the top\n\nNote two different behaviors:\n\n3a. return to thread by hitting back arrow for android device\n3b. see cool animation moxie0 made\n\nOR\n\n3a. return to thread by hitting back arrow in the top left corner\n3b. note missing cool animation\n3c. sob uncontrollably\n",
+    "type": "GIT",
+    "link": "https://github.com/signalapp/Signal-Android/issues/3602",
+    "question_id": "3602",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/guide/navigation/navigation-custom-back",
+                "type": "android",
+                "content": [
+                    "Back navigation is how users move backward through the history of screens they previously visited.",
+                    "All Android devices provide a Back button for this type of navigation, so you should not add a Back button to your app's UI.",
+                    "Depending on the user's Android device, this button might be a physical button or a software button.",
+                    "Android maintains a back stack of destinations as the user navigates throughout your application.",
+                    "This usually allows Android to properly navigate to previous destinations when the Back button is pressed.",
+                    "However, there are a few cases where your app might need to implement its own Back behavior in order to provide the best possible user experience.",
+                    "For example, when using a WebView, you might want to override the default Back button behavior to allow the user to navigate back through their web browsing history instead of the previous screens in your app.",
+                    "ComponentActivity, the base class for FragmentActivity and AppCompatActivity, allows you to control the behavior of the Back button by using its OnBackPressedDispatcher, which you can retrieve by calling getOnBackPressedDispatcher ( ).",
+                    "The OnBackPressedDispatcher controls how Back button events are dispatched to one or more OnBackPressedCallback objects.",
+                    "The constructor for OnBackPressedCallback takes a boolean for the initial enabled state.",
+                    "Only when a callback is enabled ( i.e., isEnabled ( ) returns true ) will the dispatcher call the callback's handleOnBackPressed ( ) to handle the Back button event.",
+                    "You can change the enabled state by calling setEnabled ( ).",
+                    "Callbacks are added via the addCallback methods.",
+                    "It is strongly recommended to use the addCallback ( ) method which takes a LifecycleOwner.",
+                    "This ensures that the OnBackPressedCallback is only added when the LifecycleOwner is Lifecycle.State.STARTED.",
+                    "The activity also removes registered callbacks when their associated LifecycleOwner is destroyed, which prevents memory leaks and makes it suitable for use in fragments or other lifecycle owners that have a shorter lifetime than the activity.",
+                    "Here's an example callback implementation:",
+                    "You can provide multiple callbacks via addCallback ( ).",
+                    "When doing so, the callbacks are invoked in the reverse order in which they are added - the callback added last is the first given a chance to handle the Back button event.",
+                    "For example, if you added three callbacks named one, two and three in order, they would be invoked in the order of three, two, and one, respectively.",
+                    "Callbacks follow the Chain of Responsibility pattern.",
+                    "Each callback in the chain is invoked only if the preceding callback was not enabled.",
+                    "This means that in the preceding example, callback two would be invoked only if callback three was not enabled.",
+                    "Callback one would only be invoked if callback two was not enabled, and so on.",
+                    "Note that when added via addCallback ( ), the callback is not added to the chain of responsibility until the LifecycleOwner enters the Lifecycle.State.STARTED state.",
+                    "Changing the enabled state on the OnBackPressedCallback is strongly recommended for temporary changes as it maintains the ordering described above, which is particularly important if you have callbacks registered on multiple different nested lifecycle owners.",
+                    "However, in cases where you want to remove the OnBackPressedCallback entirely, you should call remove ( ).",
+                    "This is usually not necessary, however, because callbacks are automatically removed when their associated LifecycleOwner is destroyed.",
+                    "If you are using onBackPressed ( ) to handle Back button events, we recommend using a OnBackPressedCallback instead.",
+                    "However, if you are unable to make this change, the following rules apply:",
+                    "All callbacks registered via addCallback are evaluated when you call super.onBackPressed ( ).",
+                    "onBackPressed is always called, regardless of any registered instances of OnBackPressedCallback.",
+                    ""
+                ],
+                "title": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/ReactTraining/react-router/issues/1200",
+                "content": [
+                    "state.action === ` pop' on clicking browser back button and forward button.",
+                    "\u00b7 Issue # 1200 \u00b7 ReactTraining/react-router \u00b7 GitHub",
+                    "I need to apply different slide transitions when user moves forward and backward using navigation buttons in the browser.",
+                    "On clicking forward as well as backward button, the state.action is `` pop''.",
+                    "So, How can I distinguish between these two ?",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "@melwinVincent if you don't need in/out effects based on ReactCSSTransitionGroup, you can add animation classes on components ; they will be active when components will mount.",
+                    "i use this aproach here",
+                    "@cmnstmntmn On clicking the back button inside application, I'm changing the transitionName to `` slideBack''.",
+                    "I need the same effect on clicking the browser back button also.",
+                    "For that, I'm using the below piece of code.",
+                    "Now on clicking the browser back button as well as application back button the page slides from left to right.",
+                    "But on clicking the browser forward button the sliding effect is from left to right, which is the sliding effect expected on clicking the back button.This is because the state.action is ` pop' on clicking back button as well as forward button of the browser and I'm calling an action to change the transitionName in the store when state.action is ` pop'.",
+                    "I hope you understood the problem.",
+                    "Can you please suggest a possible solution for this.",
+                    "I was working on something that would enable this ( # 843 ), but it seemed impossible to get 100 % right due to browser API restrictions and inconsistencies, e.g. anchor ( hash ) navigation or refresh button would break it, at least on some major browsers.",
+                    "I guess we could still try to make it happen and document all edge cases if there's a high demand.",
+                    "Edit: Btw, it's not a bug that clicking the browser forward button results in a `` pop'' action.",
+                    "The wording is based on the History API's popstateevent, which is triggered whenever the current history item changes, unless replaceState or pushState was used.",
+                    "Preserve input value states with history",
+                    "Unfortunately we can't tell you reliably whether the forward or back button was clicked due to browser API limitations.",
+                    "As @taurose mentioned, the word pop is used for both events intentionally.",
+                    "push and replace are reserved for pushing a new entry onto the history stack and replacing the current item, respectively.",
+                    "In version 1.0 of the API ( current beta ) you can attach properties to location.state based on a link/button click.",
+                    "This could help you determine which type of animation to do, for example.",
+                    "But you'd still want to have a default in place in case the user navigates using the back/forward buttons.",
+                    "Thats what me and @melwinVincent",
+                    "We keep a copy of history in store and listen to pop action and set URL in store by comparing previous URLs.",
+                    "AppActions.nextRoute ( state.path ) will just push the coming url into store by comparing with previous values.",
+                    "and AppActions.setNextTransition ( state.path ) ; contains algorith to detect forward or backward button is pressed.This seems to work for our usecase.",
+                    "I'm having this same issue and using v2 .0 what is the best recommendation ?",
+                    "It seems like this is a pretty core issue for transitions.",
+                    "If I could ask the router where they came from it would be really helpful",
+                    "In V2 Router.run is deprecated.",
+                    "I'm doing something like this in my top level component constructor:",
+                    "And to get access to the router in your react component:",
+                    "Expose action to <Match\u00a0/> component in 4.0",
+                    "I was able to achieve this by keeping track of location.keys whenever they changed.",
+                    "We know a pop action is back if the second to last key in the tracked history state is equal to the new key: ReactTraining/history # 334 ( comment )",
+                    "I could be missing some edge cases though.",
+                    "Is there a standardized way of tracking state this that is documented for React Router ?",
+                    "locked as resolved and limited conversation to collaborators",
+                    "to subscribe to this conversation on GitHub.",
+                    ""
+                ],
+                "title": "state.action === ` pop' on clicking browser back button and forward button."
+            }
+        ],
+        "qa": [
+            {
+                "uid": "10108774",
+                "link": "https://stackoverflow.com/questions/10108774",
+                "title": "How to implement the Android ActionBar back button?",
+                "answers": [
+                    {
+                        "uid": 11710118,
+                        "score": 170,
+                        "text": [
+                            "Make sure your the ActionBar Home Button is enabled in the Activity:",
+                            "Example MainActivity that extends ActionBarActivity:",
+                            "This way all the activities you want can have the backpress.",
+                            "LINK",
+                            "AndroidManifest.xml:",
+                            "Example MainActivity that extends ActionBarActivity:"
+                        ]
+                    },
+                    {
+                        "uid": 13471504,
+                        "score": 272,
+                        "text": [
+                            "Selvin already posted the right answer.",
+                            "Here, the solution in pretty code:",
+                            "The function NavUtils.navigateUpFromSameTask -LRB- this -RRB- requires you to define the parent activity in the AndroidManifest.xml file",
+                            "See LINK for further reading."
+                        ]
+                    },
+                    {
+                        "uid": 24881596,
+                        "score": 7,
+                        "text": [
+                            "Source: LINK"
+                        ]
+                    },
+                    {
+                        "uid": 25101096,
+                        "score": 19,
+                        "text": [
+                            "To enable the ActionBar back button you obviously need an ActionBar in your Activity.",
+                            "This is set by the theme you are using.",
+                            "You can set the theme for your Activity in the AndroidManfiest.xml.",
+                            "If you are using e.g the @android: style/Theme.",
+                            "NoTitleBar theme, you don't have an ActionBar.",
+                            "In this case the call to getActionBar -LRB- -RRB- will return null.",
+                            "So make sure you have an ActionBar first.",
+                            "The next step is to set the android: parentActivityName to the activity you want to navigate if you press the back button.",
+                            "This should be done in the AndroidManifest.xml too.",
+                            "Now you can enable the back button in the onCreate method of your `` child'' activity.",
+                            "Now you should implement the logic for the back button.",
+                            "You simply override the onOptionsItemSelected method in your `` child'' activity and check for the id of the back button which is android.R.id.home.",
+                            "Now you can fire the method NavUtils.navigateUpFromSameTask -LRB- this -RRB- ; BUT if you don't have specified the android: parentActivityName in you AndroidManifest.xml this will crash your app.",
+                            "Sometimes this is what you want because it is reminding you that you forgot `` something''.",
+                            "So if you want to prevent this, you can check if your activity has a parent using the getParentActivityIntent -LRB- -RRB- method.",
+                            "If this returns null, you don't have specified the parent.",
+                            "In this case you can fire the onBackPressed -LRB- -RRB- method that does basically the same as if the user would press the back button on the device.",
+                            "A good implementation that never crashes your app would be:",
+                            "Please notice that the animation that the user sees is different between NavUtils.navigateUpFromSameTask -LRB- this -RRB- ; and onBackPressed -LRB- -RRB-.",
+                            "It is up to you which road you take, but I found the solution helpful, especially if you use a base class for all of your activities."
+                        ]
+                    },
+                    {
+                        "uid": 29692945,
+                        "score": 10,
+                        "text": [
+                            "AndroidManifest file:",
+                            "add in DetailsActivity:",
+                            "it's work: -RSB-"
+                        ]
+                    },
+                    {
+                        "uid": 37185408,
+                        "score": 4,
+                        "text": [
+                            "I think onSupportNavigateUp -LRB- -RRB- is simplest and best way to do so",
+                            "check the code in this link LINK"
+                        ]
+                    },
+                    {
+                        "uid": 46903978,
+                        "score": 3,
+                        "text": [
+                            "LINK",
+                            "To achieved this, there are simply two steps,",
+                            "Step 1: Go to AndroidManifest.xml and in the add the parameter in tag - android: parentActivityName =''.",
+                            "home.HomeActivity''",
+                            "example:",
+                            "Step 2: in ActivityDetail add your action for previous page/activity",
+                            "example:"
+                        ]
+                    },
+                    {
+                        "uid": 49747797,
+                        "score": 1,
+                        "text": [
+                            "Following Steps are much enough to back button:",
+                            "Step 1: This code should be in Manifest.xml",
+                            "Step 2: You won't give",
+                            "in your Parent Activity while starting Child Activity.",
+                            "Step 3: If you need to come back to Parent Activity from Child Activity, Then you just give this code for Child Activity."
+                        ]
+                    },
+                    {
+                        "uid": 54097886,
+                        "score": 1,
+                        "text": [
+                            "in onCreated method for the new apis."
+                        ]
+                    },
+                    {
+                        "uid": 54963388,
+                        "score": 4,
+                        "text": [
+                            "In the OnCreate method add this:",
+                            "Then add this method:"
+                        ]
+                    },
+                    {
+                        "uid": 57015820,
+                        "score": 1,
+                        "text": [
+                            "If you are using Toolbar, I was facing the same issue.",
+                            "I solved by following these two steps"
+                        ]
+                    },
+                    {
+                        "uid": 59606711,
+                        "score": 0,
+                        "text": [
+                            "Building on Jared's answer, I had to enable and implement the action bar back button behavior in several activities and created this helper class to reduce code duplication.",
+                            "Usage in an activity:"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "android",
+                    "android-3.0-honeycomb"
+                ]
+            }
+        ],
+        "other": []
+    },
+    "parsed": true
+}

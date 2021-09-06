@@ -1,0 +1,42 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-250",
+      "tag": "SPAN",
+      "text": "\n          Hi, this should not be too difficult todo this.\nhttps://github.com/SundeepK/CompactCalendarView/blob/master/library/src/main/java/com/github/sundeepk/compactcalendarview/CompactCalendarController.java#L774\nThat line draws a single event.\nYou can remove the if conditions because you only want to draw one icon right?\nSo really you want to replace:\nif (eventsList.size() >= 3) {\n    drawEventsWithPlus(canvas, xPosition, yPosition, eventsList);\n} else if (eventsList.size() == 2) {\n    drawTwoEvents(canvas, xPosition, yPosition, eventsList);\n} else if (eventsList.size() == 1) {\n    drawSingleEvent(canvas, xPosition, yPosition, eventsList);\n}\n    \n      \n    \n\n      \n    \n\n    \n  \nwith some custome code which simply draws a drawable icon.\nSomething like canvas.drawBitmap:\nhttps://developer.android.com/reference/android/graphics/Canvas.html#drawBitmap(android.graphics.Bitmap,%20float,%20float,%20android.graphics.Paint)\nSince you want to offset the icon to the top right, you will need to offset the (x, y) position slightly, but make sure you use dp because if you simply offset the (x,y) by some amount it willnot translate to different devices.\nThere is a simple method call in android to go from pixels to dp.\nIt should be a few lines of code to achieve what you want.\nLet me know if you need more help.\nAlso if you have more than one event for a given day, you only need to draw the icon once, then exit.\nThis will save some cpu cycles.\n      ",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "So really you want to replace:",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "with some custome code which simply draws a drawable icon.",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Something like canvas.drawBitmap:",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView"
+    },
+    {
+      "id": "eye-gazing-tag-254",
+      "tag": "SPAN",
+      "text": "\n          Hi, if you are looking for this functionality.\nI spent some time thinking about it.\nI uploaded some sample code in a branch here:\nhttps://github.com/SundeepK/CompactCalendarView/tree/%40help/%23181_darw_icons\nBasically you need to load a bitmap and pass to each event you want to draw.\nBitmap  icon = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_info_outline_white_18dp);`\nEvent ev1 = new Event(Color.argb(255, 169, 68, 65), timeInMillis, \"Event at \" + new Date(timeInMillis), icon)\n    \n      \n    \n\n      \n    \n\n    \n  \nStudy the CompactCalendarTab class in the sample code to see how to use it.\nYou can tweak the code on how you want to draw the icons:\nhttps://github.com/SundeepK/CompactCalendarView/blob/%40help/%23181_darw_icons/library/src/main/java/com/github/sundeepk/compactcalendarview/CompactCalendarController.java#L792\nThat line controls where it's drawn.\nThis is an example of how to get this done.\nAgain you can import the code as mentioned above.\n      ",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "Basically you need to load a bitmap and pass to each event you want to draw.",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView"
+    }
+  ]
+}

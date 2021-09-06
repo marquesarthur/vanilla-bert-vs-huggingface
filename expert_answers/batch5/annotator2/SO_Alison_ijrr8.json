@@ -1,0 +1,30 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-12",
+            "tag": "SPAN",
+            "text": "Try adding this piece of code before loading your viewPager",
+            "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": "Use android:fillViewport=\"true\" in ScrollView",
+            "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-70",
+            "tag": "SPAN",
+            "text": "To overcome this, I have created a custom ViewPager (based on this article) that calculates it's height in the required manner.",
+            "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-27",
+            "tag": "SPAN",
+            "text": "To overcome this, I have created a custom ViewPager (based on this article) that calculates it's height in the required manner.",
+            "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+        }
+    ]
+}

@@ -1,0 +1,175 @@
+{
+    "task": "polymorphic deserialization of JSON with jackson, property type becomes &quot;null&quot;",
+    "description": "I am using Jackson to convert a big Json string into various classes and subclasses.\nI have a list of objects, each containing a node object, a last result object and a children array.\nThe children array contains a list of objects with exactly the same setup.\nThis goes on for 3 or 4 layers.\nEach layers' node is of a different subclass, which all extend from a node superclass.\nI have annotated the superclass node with following annotations:\nThis seems to work, since all subclasses get mapped.\nHowever, this somehow results in the `` type'' property being set to null.\nAny ideas as to why this happens ?",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/28983806",
+    "question_id": "28983806",
+    "resources": {
+        "api": [],
+        "git": [
+            {
+                "link": "https://github.com/FasterXML/jackson-databind/issues/1538",
+                "content": [
+                    "Polymorphic deserialization fails when defaultImpl is specified and a subtype contains a subtype property that is set to null",
+                    "We have a protocol where all JSON objects contain a _ type field that indicates what the JSON represents.",
+                    "In some cases, protocol objects contain other protocol objects as properties.",
+                    "We are currently using Jackson 2.8.7 for serialization and deserialization.",
+                    "If we define a defaultImpl class as a catch-all for unknown types, deserialization fails for any protocol objects that contain other protocol objects if the reference to those objects is null.",
+                    "It appears that Jackson attempts to substitute the null with an instance of the default class.",
+                    "This results in a com.fasterxml.jackson.databind.JsonMappingException exception as the default class is not a subclass of the property's type.",
+                    "The following code illustrates the problem:",
+                    "Running this code produces the exception",
+                    "If you comment out the defaultImpl portion of the annotation, the application runs as expected without an exception.",
+                    "My general expectation would be that the deserializer would simply set the property to null.",
+                    "However, I'm somewhat new to Jackson, so perhaps I'm missing something here.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "I believe I had a similar problem.",
+                    "I'm guessing that the author might say that this is a question for Stack Overflow however I think that it relates to Issue # 955.",
+                    "If nothing else the documentation could possibly be a little clearer.",
+                    "In the meantime I think that you will need to annotate your child classes with @JsonTypeInfo and @JsonSubTypes to override the inherited annotations.",
+                    "However I might have misunderstood your use case.",
+                    "Also I'm new to Jackson, so it might be a case of the blind leading the blind.",
+                    "Is the following any use to you ?",
+                    "I gave your suggestion a try, and it does seem to address the issue.",
+                    "I really appreciate the insight.",
+                    "I didn't post this to StackOverflow as it seemed like buggy behavior and there were a few other tickets related to defaultImpl like you mentioned.",
+                    "I think the key piece of information I was missing is that the annotations are inherited by the child classes, which makes the default class apply to all of the subclasses and not just the base class.",
+                    "Your technique of overriding the annotations in each of the child classes makes sense now that I understand that.",
+                    "Thanks again for the help.",
+                    "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+                    "Your example code prints the correct type value strings, but the deserialized object types are all instances of the Default class.",
+                    "In other words, the annotations should look something like",
+                    "When I updated your sample with these annotations, Jackson correctly deserialized each object to the expected subclass.",
+                    "Thanks again for your help.",
+                    "My example worked for me ( the types were as expected ), I'm using Jackson Annotations 2.8 and core 2.8.7.",
+                    "I suspect the version of Jackson are you using explains the difference.",
+                    "Issue # 1565 seems to imply that the behaviour has changed between versions.",
+                    "Thank that resolved my probleme !",
+                    ""
+                ],
+                "description": "We have a protocol where all JSON objects contain a `_type` field that indicates what the JSON represents. In some cases, protocol objects contain other protocol objects as properties. We are currently using Jackson 2.8.7 for serialization and deserialization.\r\n\r\nIf we define a `defaultImpl` class as a catch-all for unknown types, deserialization fails for any protocol objects that contain other protocol objects if the reference to those objects is `null`. It appears that Jackson attempts to substitute the `null` with an instance of the default class. This results in a `com.fasterxml.jackson.databind.JsonMappingException` exception as the default class is not a subclass of the property's type.\r\n\r\nThe following code illustrates the problem:\r\n\r\n```java\r\npackage com.example.test;\r\n\r\nimport com.fasterxml.jackson.annotation.JsonAnyGetter;\r\nimport com.fasterxml.jackson.annotation.JsonAnySetter;\r\nimport com.fasterxml.jackson.annotation.JsonGetter;\r\nimport com.fasterxml.jackson.annotation.JsonSetter;\r\nimport com.fasterxml.jackson.annotation.JsonSubTypes;\r\nimport com.fasterxml.jackson.annotation.JsonSubTypes.Type;\r\nimport com.fasterxml.jackson.annotation.JsonTypeInfo;\r\nimport com.fasterxml.jackson.core.JsonProcessingException;\r\nimport com.fasterxml.jackson.databind.JsonNode;\r\nimport com.fasterxml.jackson.databind.ObjectMapper;\r\n\r\nimport java.util.LinkedHashMap;\r\nimport java.util.Map;\r\n\r\npublic class JacksonTest {\r\n\r\n    @JsonTypeInfo(\r\n        use = JsonTypeInfo.Id.NAME,\r\n        include = JsonTypeInfo.As.PROPERTY,\r\n        property = \"_type\",\r\n        visible = true,\r\n        defaultImpl = Default.class)\r\n        //visible = true)\r\n    @JsonSubTypes({\r\n        @Type(value = Inner.class, name = Inner._TYPE),\r\n        @Type(value = Outer.class, name = Outer._TYPE)\r\n    })\r\n    public static class Base {\r\n        private String type;\r\n\r\n        @JsonGetter(\"_type\")\r\n        public String type() {\r\n            return this.type;\r\n        }\r\n\r\n        @JsonSetter(\"_type\")\r\n        public void setType(String type) {\r\n            this.type = type;\r\n        }\r\n\r\n        protected Base(String type) {\r\n            this.type = type;\r\n        }\r\n    }\r\n\r\n    public static class Inner extends Base {\r\n        public static final String _TYPE = \"inner\";\r\n\r\n        public Inner() {\r\n            super(_TYPE);\r\n        }\r\n    }\r\n\r\n    public static class Outer extends Base {\r\n        public static final String _TYPE = \"outer\";\r\n\r\n        private Inner inner;\r\n\r\n        public Outer() {\r\n            super(_TYPE);\r\n        }\r\n\r\n        @JsonGetter(\"inner\")\r\n        public Inner inner() {\r\n            return this.inner;\r\n        }\r\n\r\n        @JsonSetter(\"inner\")\r\n        public void setInner(Inner inner) {\r\n            this.inner = inner;\r\n        }\r\n    }\r\n\r\n    public static class Default extends Base {\r\n        private Map<String, Object> properties = new LinkedHashMap<String, Object>();\r\n\r\n        public Default() {\r\n            super(\"default\");\r\n        }\r\n\r\n        @JsonAnySetter\r\n        public void set(String name, Object value) {\r\n            this.properties.put(name, value);\r\n        }\r\n\r\n        @JsonAnyGetter\r\n        public Map<String, Object> properties() {\r\n            return this.properties;\r\n        }\r\n    }\r\n\r\n    public static void main(String[] args) {\r\n        ObjectMapper mapper = new ObjectMapper();\r\n\r\n        // leave 'inner' as null\r\n        Outer originalOuter = new Outer();\r\n        try {\r\n            JsonNode tree = mapper.valueToTree(originalOuter);\r\n            Base base = mapper.treeToValue(tree, Base.class);\r\n            System.out.println(base.type());\r\n        } catch (JsonProcessingException e) {\r\n            e.printStackTrace();\r\n        }\r\n    }\r\n}\r\n```\r\n\r\nRunning this code produces the exception\r\n\r\n    com.fasterxml.jackson.databind.JsonMappingException: Class com.example.test.JacksonTest$Default not subtype of [simple type, class com.example.test.JacksonTest$Inner]\r\n     at [Source: N/A; line: -1, column: -1]\r\n        at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:305)\r\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:268)\r\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCacheValueDeserializer(DeserializerCache.java:244)\r\n        at com.fasterxml.jackson.databind.deser.DeserializerCache.findValueDeserializer(DeserializerCache.java:142)\r\n        at com.fasterxml.jackson.databind.DeserializationContext.findContextualValueDeserializer(DeserializationContext.java:443)\r\n        at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:188)\r\n        at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer._deserializeTypedForId(AsPropertyTypeDeserializer.java:112)\r\n        at com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer.deserializeTypedFromObject(AsPropertyTypeDeserializer.java:97)\r\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeWithType(BeanDeserializerBase.java:1089)\r\n        at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:63)\r\n        at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:3770)\r\n        at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2099)\r\n        at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:2596)\r\n        at com.example.test.JacksonTest.main(JacksonTest.java:101)\r\n    Caused by: java.lang.IllegalArgumentException: Class com.example.test.JacksonTest$Default not subtype of [simple type, class com.example.test.JacksonTest$Inner]\r\n        at com.fasterxml.jackson.databind.type.TypeFactory.constructSpecializedType(TypeFactory.java:359)\r\n        at com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder.buildTypeDeserializer(StdTypeResolverBuilder.java:128)\r\n        at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findTypeDeserializer(BasicDeserializerFactory.java:1373)\r\n        at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.findPropertyTypeDeserializer(BasicDeserializerFactory.java:1508)\r\n        at com.fasterxml.jackson.databind.deser.BasicDeserializerFactory.resolveMemberAndTypeAnnotations(BasicDeserializerFactory.java:1857)\r\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.constructSettableProperty(BeanDeserializerFactory.java:728)\r\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.addBeanProps(BeanDeserializerFactory.java:516)\r\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.buildBeanDeserializer(BeanDeserializerFactory.java:226)\r\n        at com.fasterxml.jackson.databind.deser.BeanDeserializerFactory.createBeanDeserializer(BeanDeserializerFactory.java:141)\r\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer2(DeserializerCache.java:403)\r\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createDeserializer(DeserializerCache.java:349)\r\n        at com.fasterxml.jackson.databind.deser.DeserializerCache._createAndCache2(DeserializerCache.java:264)\r\n        ... 12 more\r\n\r\nIf you comment out the `defaultImpl` portion of the annotation, the application runs as expected without an exception.\r\n\r\nMy general expectation would be that the deserializer would simply set the property to `null`. However, I'm somewhat new to Jackson, so perhaps I'm missing something here.",
+                "title": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "30362446",
+                "link": "https://stackoverflow.com/questions/30362446",
+                "title": "Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error",
+                "answers": [
+                    {
+                        "uid": 30386694,
+                        "score": 147,
+                        "text": [
+                            "As promised, I'm putting an example for how to use annotations to serialize/deserialize polymorphic objects, I based this example in the Animal class from the tutorial you were reading.",
+                            "First of all your Animal class with the Json Annotations for the subclasses.",
+                            "Then your subclasses, Dog and Cat.",
+                            "As you can see, there is nothing special for Cat and Dog, the only one that know about them is the abstract class Animal, so when deserializing, you'll target to Animal and the ObjectMapper will return the actual instance as you can see in the following test:",
+                            "Output after running the Test class:",
+                            "-LCB-'' @type'': `` Dog'', `` name'': `` ruffus'', `` breed'': `` english shepherd'' -RCB-",
+                            "Deserialized dogJson Class: Dog",
+                            "-LCB-'' @type'': `` Cat'', `` name'': `` goya'', `` favoriteToy'': `` mice'' -RCB-",
+                            "Deserialized catJson Class: Cat",
+                            "Hope this helps,",
+                            "Jose Luis"
+                        ]
+                    },
+                    {
+                        "uid": 39032335,
+                        "score": -1,
+                        "text": [
+                            "If using the fasterxml then,",
+                            "these changes might be needed",
+                            "in main method --",
+                            "use",
+                            "instead of",
+                            "and in Animal deserialize -LRB- -RRB- function, make below changes",
+                            "This works for fasterxml.jackson.",
+                            "If it still complains of the class fields.",
+                            "Use the same format as in the json for the field names -LRB- with'' _'' - underscore -RRB-.",
+                            "as this / / mapper.setPropertyNamingStrategy -LRB- new CamelCaseNamingStrategy -LRB- -RRB- -RRB- ; might not be supported."
+                        ]
+                    },
+                    {
+                        "uid": 41982776,
+                        "score": 3,
+                        "text": [
+                            "A simple way to enable polymorphic serialization / deserialization via Jackson library is to globally configure the Jackson object mapper -LRB- jackson.databind.ObjectMapper -RRB- to add information, such as the concrete class type, for certain kinds of classes, such as abstract classes.",
+                            "To do that, just make sure your mapper is configured correctly.",
+                            "For example:",
+                            "Option 1: Support polymorphic serialization / deserialization for abstract classes -LRB- and Object typed classes -RRB-",
+                            "Option 2: Support polymorphic serialization / deserialization for abstract classes -LRB- and Object typed classes -RRB-, and arrays of those types.",
+                            "Reference: LINK"
+                        ]
+                    },
+                    {
+                        "uid": 57686619,
+                        "score": 14,
+                        "text": [
+                            "You need only one line before the declaration of the class Animal for correct polymorphic serialization/deserialization:",
+                            "This line means: add a meta-property on serialization or read a meta-property on deserialization -LRB- include = JsonTypeInfo.As.PROPERTY -RRB- called'' @class'' -LRB- property ='' @class'' -RRB- that holds the fully-qualified Java class name -LRB- use = JsonTypeInfo.Id.CLASS -RRB-.",
+                            "So, if you create a JSON directly -LRB- without serialization -RRB- remember to add the meta-property'' @class'' with the desired class name for correct deserialization.",
+                            "More information LINK"
+                        ]
+                    },
+                    {
+                        "uid": 65389932,
+                        "score": 0,
+                        "text": [
+                            "Handling polymorphism is either model-bound or requires lots of code with various custom deserializers.",
+                            "I'm a co-author of a LINK that allows for model-independent json deserialization library.",
+                            "The solution to OP's problem can be found below.",
+                            "Note that the rules are declared in a very brief manner.",
+                            "Maven depenendency for pretius-jddl -LRB- check newest version at LINK:"
+                        ]
+                    },
+                    {
+                        "uid": 65685243,
+                        "score": 3,
+                        "text": [
+                            "Whereas @jbarrueta answer is perfect, in the 2.12 version of Jackson was introduced a new long-awaited type for the @JsonTypeInfo annotation, DEDUCTION.",
+                            "It is useful for the cases when you have no way to change the incoming json or must not do so.",
+                            "I'd still recommend to use use = JsonTypeInfo.Id.NAME, as the new way LINK in complex cases when it has no way to determine which subtype to use.",
+                            "Now you can simply write",
+                            "And it will produce -LCB- `` name'': `` ruffus'', `` breed'': `` english shepherd'' -RCB- and -LCB- `` name'': `` goya'', `` favoriteToy'': `` mice'' -RCB-",
+                            "Once again, it's safer to use NAME if some of the fields may be not present, like breed or favoriteToy."
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "json",
+                    "compiler-errors",
+                    "polymorphism",
+                    "jackson"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://medium.com/@david.truong510/jackson-polymorphic-deserialization-91426e39b96a",
+                "type": "misc",
+                "content": [
+                    "Jackson Polymorphic DeserializationHow to Use Jackson to Deserialize Json Fields into Polymorphic TypesDavid TruongJan 9, 2019 \u00b7 2 min readPhoto by Markus Spiske on UnsplashJackson deserialization/serialization works out of the box most of the time.",
+                    "Unless your JSON structure is complicated, you won't have to deal with deserializing your JSON into a polymorphic data type.An example of polymorphic deserialization is if you want your JSON object to deserialize into a java subclass.",
+                    "Consider the following below: If you have a JSON object for `` Vehicle'', it could be a `` Car'' or `` Plane'', each with its own fields, some unique to the other.",
+                    "During deserialization, you would want Jackson to deserialize the `` Vehicle'' JSON object to the appropriate `` Car'' or `` Plane'' class.",
+                    "We can do that using the @JsonTypeInfo and @JsonSubTypes annotations.",
+                    "The above classes should be: The @JsonTypeInfo includes a few configuration fields to indicate how Jackson should find the classes to deserialize the JSON to.",
+                    "In this case, we are telling Jackson to use the classname to find the appropriate class to deserialize to.",
+                    "The @JsonSubTypes tells Jackson which classes it should deserialize to.The above should be able to deserialize the following JSON objects into the appropriate objects:",
+                    "Jackson Polymorphic DeserializationHow to Use Jackson to Deserialize Json Fields into Polymorphic TypesDavid TruongJan 9, 2019 \u00b7 2 min read",
+                    "How to Use Jackson to Deserialize Json Fields into Polymorphic TypesDavid TruongJan 9, 2019 \u00b7 2 min read",
+                    "David TruongJan 9, 2019 \u00b7 2 min read",
+                    "Photo by Markus Spiske on Unsplash",
+                    "Jackson deserialization/serialization works out of the box most of the time.",
+                    "Unless your JSON structure is complicated, you won't have to deal with deserializing your JSON into a polymorphic data type.",
+                    "An example of polymorphic deserialization is if you want your JSON object to deserialize into a java subclass.",
+                    ""
+                ],
+                "title": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+            }
+        ]
+    },
+    "parsed": true
+}

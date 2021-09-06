@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "During deserialization, you would want Jackson to deserialize the “Vehicle” JSON object to the appropriate “Car” or “Plane” class.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "We can do that using the @JsonTypeInfo and @JsonSubTypes annotations.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "The above classes should be:",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    }
+  ]
+}

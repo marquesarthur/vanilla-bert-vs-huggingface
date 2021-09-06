@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "Now lets see the test ! Nothing much happening here before starting the test we create the server and start it at port 8080.",
+      "href": "Instrumentation testing with MockWebServer and Dagger2 | by Mohak Puri | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "Once the test is done we shutdown the server.",
+      "href": "Instrumentation testing with MockWebServer and Dagger2 | by Mohak Puri | MindOrks | Medium"
+    }
+  ]
+}

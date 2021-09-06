@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Users can use the system settings to choose the level of detail visible\nin lock screen notifications, including the option to disable all lock screen\nnotifications.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": " Starting with Android 8.0, users can choose to\ndisable or enable lock screen notifications for each notification\nchannel.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-90",
+      "tag": "SPAN",
+      "text": "An app can also\ncreate notification channels in response to choices made by users of your app.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-91",
+      "tag": "SPAN",
+      "text": "For example, you may set up separate notification channels for each\nconversation group created by a user in a messaging app.",
+      "href": "Notifications Overview  |  Android Developers"
+    }
+  ]
+}

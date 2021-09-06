@@ -1,0 +1,30 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-86",
+            "tag": "SPAN",
+            "text": "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-9",
+            "tag": "SPAN",
+            "text": "Unless you are importing the wrong BuildConfig class.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-99",
+            "tag": "SPAN",
+            "text": "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "Unless you are importing the wrong BuildConfig class.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        }
+    ]
+}

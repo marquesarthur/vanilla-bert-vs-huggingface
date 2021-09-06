@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2855",
+      "tag": "SPAN",
+      "text": "Specify a URL and receive a raw string in response.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2858",
+      "tag": "SPAN",
+      "text": "Specify a URL and get a JSON object or array (respectively) in\n  response.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "If your expected response is one of these types, you probably don't have to implement a\ncustom request.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "For example, this\nsnippet fetches a JSON feed and displays it as text in the UI:",
+      "href": "Make a standard request  |  Android Developers"
+    }
+  ]
+}

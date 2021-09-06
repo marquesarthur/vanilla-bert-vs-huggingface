@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+      "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "In you case, you first want to check if you such file exist before creating one.",
+      "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+    }
+  ]
+}

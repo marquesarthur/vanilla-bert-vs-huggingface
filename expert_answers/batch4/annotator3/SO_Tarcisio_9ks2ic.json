@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Read about java.awt.event.KeyListener",
+      "href": "eclipse - How to detect a key press in Java - Stack Overflow"
+    },
+    {
+      "id": "uid-875",
+      "tag": "CODE",
+      "text": "java.awt.event.KeyListener",
+      "href": "eclipse - How to detect a key press in Java - Stack Overflow"
+    },
+    {
+      "id": "uid-877",
+      "tag": "PRE",
+      "text": "    f.addKeyListener(new KeyListener() {\n        @Override\n        public void keyTyped(KeyEvent e) {\n        }\n\n        @Override\n        public void keyPressed(KeyEvent e) {\n            System.out.println(\"Key pressed code=\" + e.getKeyCode() + \", char=\" + e.getKeyChar());\n        }\n\n        @Override\n        public void keyReleased(KeyEvent e) {\n        }\n    });\n",
+      "href": "eclipse - How to detect a key press in Java - Stack Overflow"
+    },
+    {
+      "id": "uid-878",
+      "tag": "CODE",
+      "text": "    f.addKeyListener(new KeyListener() {\n        @Override\n        public void keyTyped(KeyEvent e) {\n        }\n\n        @Override\n        public void keyPressed(KeyEvent e) {\n            System.out.println(\"Key pressed code=\" + e.getKeyCode() + \", char=\" + e.getKeyChar());\n        }\n\n        @Override\n        public void keyReleased(KeyEvent e) {\n        }\n    });\n",
+      "href": "eclipse - How to detect a key press in Java - Stack Overflow"
+    }
+  ]
+}

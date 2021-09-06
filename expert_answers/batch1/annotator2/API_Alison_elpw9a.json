@@ -1,0 +1,66 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "In cases where you need Hilt to provide different implementations of the same\ntype as dependencies, you must provide Hilt with multiple bindings.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "A qualifier is an annotation that you use to identify a specific binding for a\ntype when that type has multiple bindings defined.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-61",
+      "tag": "SPAN",
+      "text": "First, define the qualifiers that you will use to annotate the @Binds or\n@Provides methods:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-62",
+      "tag": "SPAN",
+      "text": "Then, Hilt needs to know how to provide an instance of the type that corresponds\nwith each qualifier.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "In this case, you could use a Hilt module with @Provides.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "uid-8016",
+      "tag": "CODE",
+      "text": "@Provides",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-64",
+      "tag": "SPAN",
+      "text": "Both methods have the same return type, but the qualifiers label them as two\ndifferent bindings:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-65",
+      "tag": "SPAN",
+      "text": "You can inject the specific type that you need by annotating the field or\nparameter with the corresponding qualifier:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-66",
+      "tag": "SPAN",
+      "text": "As a best practice, if you add a qualifier to a type, add qualifiers to all the\npossible ways to provide that dependency.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-67",
+      "tag": "SPAN",
+      "text": "Leaving the base or common\nimplementation without a qualifier is error-prone and could result in Hilt\ninjecting the wrong dependency.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    }
+  ]
+}

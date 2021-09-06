@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "Gson makes what you're trying to do relatively easy.",
+      "href": "java - Parse JSON string to Dictionary<String, Integer> with Gson - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": " Following is a working example.",
+      "href": "java - Parse JSON string to Dictionary<String, Integer> with Gson - Stack Overflow"
+    }
+  ]
+}

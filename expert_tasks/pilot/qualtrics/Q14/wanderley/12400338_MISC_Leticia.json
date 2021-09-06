@@ -1,0 +1,132 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-1292",
+      "tag": "PRE",
+      "text": "//1\noverride fun getCount(): Int {\n  return dataSource.size\n}\n\n//2\noverride fun getItem(position: Int): Any {\n  return dataSource[position]\n}\n\n//3\noverride fun getItemId(position: Int): Long {\n  return position.toLong()\n}\n\n//4\noverride fun getView(position: Int, convertView: View?, parent: ViewGroup): View {\n  // Get view for row item\n  val rowView = inflater.inflate(R.layout.list_item_recipe, parent, false)\n    \n  return rowView\n}\n",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-408",
+      "tag": "SPAN",
+      "text": "Finally, getView() creates a view to be used as a row in the list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-409",
+      "tag": "SPAN",
+      "text": "Here you define what information shows and where it sits within the ListView.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-410",
+      "tag": "SPAN",
+      "text": "You also inflate a custom view from the XML layout defined in res/layout/list_item_recipe.xml — more on this in the next section.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-421",
+      "tag": "SPAN",
+      "text": "\nparent: The view where the selection happens — in your case, it’s the ListView",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-422",
+      "tag": "SPAN",
+      "text": "\nview: The selected view (row) within the ListView",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-135",
+      "tag": "SPAN",
+      "text": "Whenever you scroll the ListView, its adapter’s getView() method is called in order to create a row and display it on screen.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-136",
+      "tag": "SPAN",
+      "text": "Now, if you look in your getView() method, you’ll notice that each time this method is called, it performs a lookup for each of the row view’s elements by using a call to the findViewById() method.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-137",
+      "tag": "SPAN",
+      "text": "These repeated calls can seriously harm the ListView’s performance, especially if your app is running on limited resources and/or you have a very large list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-138",
+      "tag": "SPAN",
+      "text": "You can avoid this problem by using the View Holder Pattern.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-139",
+      "tag": "SPAN",
+      "text": "To implement the ViewHolder pattern, open RecipeAdapter and add the following after the getView() method definition:",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-140",
+      "tag": "SPAN",
+      "text": "As you can see, you create a class to hold your exact set of component views for each row view.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-141",
+      "tag": "SPAN",
+      "text": "The ViewHolder class stores each of the row’s subviews, and in turn is stored inside the tag field of the layout.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-142",
+      "tag": "SPAN",
+      "text": "This means you can immediately access the row’s subviews without the need to look them up repeatedly.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-432",
+      "tag": "SPAN",
+      "text": "Check if the view already exists.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-433",
+      "tag": "SPAN",
+      "text": "If it does, there’s no need to inflate from the layout and call findViewById() again.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-434",
+      "tag": "SPAN",
+      "text": "If the view doesn’t exist, you inflate the custom row layout from your XML.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-435",
+      "tag": "SPAN",
+      "text": "Create a new ViewHolder with subviews initialized by using findViewById().",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-436",
+      "tag": "SPAN",
+      "text": "Hang onto this holder for future recycling by using setTag() to set the tag property of the view that the holder belongs to.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-437",
+      "tag": "SPAN",
+      "text": "Skip all the expensive inflation steps and just get the holder you already made.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-438",
+      "tag": "SPAN",
+      "text": "Get relevant subviews of the row view.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    }
+  ]
+}

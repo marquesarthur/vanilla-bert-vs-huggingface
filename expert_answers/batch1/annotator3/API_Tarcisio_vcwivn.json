@@ -1,0 +1,186 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2958",
+      "tag": "SPAN",
+      "text": "In your app's manifest file, declare the\npermissions that your app might need to\nrequest.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2959",
+      "tag": "SPAN",
+      "text": "Design your app's UX so that specific actions in your app are associated with\nspecific runtime permissions.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2960",
+      "tag": "SPAN",
+      "text": "Users should know which actions might require them\nto grant permission for your app to access private user data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2961",
+      "tag": "SPAN",
+      "text": "Wait for the user to invoke the task or action in your app\nthat requires access to specific private user data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2962",
+      "tag": "SPAN",
+      "text": "At that time, your app can\nrequest the runtime permission that's required for accessing that data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Check whether the user has already granted the runtime\npermission that your app requires.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "If so, your app can access\nthe private user data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "If not, continue to the next step.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "You must check whether you have that permission every time you perform an\noperation that requires that permission.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2965",
+      "tag": "SPAN",
+      "text": "Request the runtime permission that your app requires\nin order to access the private user data.\nThe system displays a runtime\npermission prompt, such as the one shown on the permissions overview\npage.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "Request the runtime permission that your app requires\nin order to access the private user data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "The system displays a runtime\npermission prompt, such as the one shown on the permissions overview\npage.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2966",
+      "tag": "SPAN",
+      "text": "Check the user's response, whether they chose to grant or deny the runtime\npermission.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Check the user's response, whether they chose to grant or deny the runtime\npermission.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "If the user granted the permission to your app, you can access the private\nuser data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "If the user denied the permission instead, gracefully degrade your\napp experience so that it provides functionality to the user,\neven without the information that's protected by that permission.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "To allow the system to manage the request code that's associated with a\npermissions request, add dependencies on the following libraries in your\nmodule's build.gradle file:",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "You can then use one of the following classes:",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2972",
+      "tag": "SPAN",
+      "text": "In your activity or fragment's initialization logic, pass in an implementation\nof ActivityResultCallback\ninto a call to\nregisterForActivityResult().\nThe ActivityResultCallback defines how your app handles the user's response to\nthe permission request.\n\nKeep a reference to the return value of registerForActivityResult(), which\nis of type\nActivityResultLauncher.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-39",
+      "tag": "SPAN",
+      "text": "In your activity or fragment's initialization logic, pass in an implementation\nof ActivityResultCallback\ninto a call to\nregisterForActivityResult().",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "The ActivityResultCallback defines how your app handles the user's response to\nthe permission request.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "Keep a reference to the return value of registerForActivityResult(), which\nis of type\nActivityResultLauncher.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2973",
+      "tag": "SPAN",
+      "text": "To display the system permissions dialog when necessary, call the\nlaunch()\nmethod on the instance of ActivityResultLauncher that you saved in the\nprevious step.\n\nAfter launch() is called, the system permissions dialog appears.\nWhen the\nuser makes a choice, the system asynchronously invokes your implementation\nof ActivityResultCallback, which you defined in the previous step.\n\n\n  Note: Your app cannot customize the dialog that appears\n  when you call launch().\nTo provide more information or\n  context to the user, change your app's UI so that it's easier for users to\n  understand why a feature in your app needs a particular permission.\nFor\n  example, you might change the text in the button that enables the\n  feature.\n\n  Also, the text in the system permission dialog references the\n  permission\n  group associated with the permission that you requested.\nThis\n  permission grouping is designed for system ease-of-use, and your app\n  shouldn't rely on permissions being within or outside of a specific\n  permission group.\n",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "To display the system permissions dialog when necessary, call the\nlaunch()\nmethod on the instance of ActivityResultLauncher that you saved in the\nprevious step.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "The following code snippet shows how to handle the permissions response:",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "And this code snippet demonstrates the recommended process of checking for\na permission, and requesting a permission from the user when necessary:",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-53",
+      "tag": "SPAN",
+      "text": "To do so, include the request code in a call to\nrequestPermissions().",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "The following code snippet demonstrates how to request a permission using a\nrequest code:",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-55",
+      "tag": "SPAN",
+      "text": "After the user responds to the system permissions dialog, the system then\ninvokes your app's implementation of onRequestPermissionsResult().",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "The system passes in the user\nresponse to the permission dialog, as well as the request code that you defined,\nas shown in the following code snippet:",
+      "href": "Request app permissions  |  Android Developers"
+    }
+  ]
+}

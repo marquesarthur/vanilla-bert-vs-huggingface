@@ -1,0 +1,36 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "In the meantime I think that you will need to annotate your child classes with @JsonTypeInfo and @JsonSubTypes to override the inherited annotations.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Is the following any use to you?",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "Your example code prints the correct type value strings, but the deserialized object types are all instances of the Default class.",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    },
+    {
+      "id": "uid-1707",
+      "tag": "CODE",
+      "text": "Default",
+      "href": "Polymorphic deserialization fails when `defaultImpl` is specified and a subtype contains a subtype property that is set to null · Issue #1538 · FasterXML/jackson-databind · GitHub"
+    }
+  ]
+}

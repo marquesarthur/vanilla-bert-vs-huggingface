@@ -1,0 +1,66 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "I would suggest that you write your downloaded JSON out to a file and compare it with your original to see if there is a problem with the download logic.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Usually these are the following steps to create json object through the Http connection in android.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-446",
+      "tag": "SPAN",
+      "text": "open the connection and get the response.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-447",
+      "tag": "SPAN",
+      "text": "get the content and create a string builder.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-448",
+      "tag": "SPAN",
+      "text": "make the string builder into json array object (this step you have not done)",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-449",
+      "tag": "SPAN",
+      "text": "get json object from the json array object.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "I think you missed to convert String Buffer(sb) into json array object.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Instead of that you directly create the json object from string buffer.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    }
+  ]
+}

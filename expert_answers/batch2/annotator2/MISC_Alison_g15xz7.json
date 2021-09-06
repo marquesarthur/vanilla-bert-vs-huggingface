@@ -1,0 +1,24 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "Stream API can iterate over Collections in a very straightforward manner.",
+      "href": "Iteration Over Java Collections With High Performance - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "But forEach is very different, according to this answer on StackOverFlow and document from Oracle, JVM has to convert forEach to an iterator and call hasNext() with every item.",
+      "href": "Iteration Over Java Collections With High Performance - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "This is why forEach is slower than the C style.",
+      "href": "Iteration Over Java Collections With High Performance - DZone Java"
+    }
+  ]
+}

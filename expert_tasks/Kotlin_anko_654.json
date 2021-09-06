@@ -1,0 +1,116 @@
+{
+    "task": "shouldn't snackbar DSL helpers take CharSequence?",
+    "description": "android.support.design.widget API has\r\n```\r\nclass Snackbar \r\n...\r\n    /**\r\n     * Update the text in this {@link Snackbar}.\r\n     *\r\n     * @param message The new text for this {@link BaseTransientBottomBar}.\r\n     */\r\n    @NonNull\r\n    public Snackbar setText(@NonNull CharSequence message) {\r\n```\r\n\r\nhttps://github.com/Kotlin/anko/blob/4671683423e166a87e08de9f0645e5aed9d3887f/anko/library/static/design/src/main/java/Snackbar.kt#L61",
+    "type": "GIT",
+    "link": "https://github.com/Kotlin/anko/issues/654",
+    "question_id": "654",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar",
+                "type": "android",
+                "content": [
+                    "public class Snackbar extends BaseTransientBottomBar <Snackbar>",
+                    "Snackbars provide lightweight feedback about an operation.",
+                    "They show a brief message at the bottom of the screen on mobile and lower left on larger devices.",
+                    "Snackbars appear above all other elements on screen and only one can be displayed at a time.",
+                    "They automatically disappear after a timeout or after user interaction elsewhere on the screen, particularly after interactions that summon a new surface or activity.",
+                    "Snackbars can be swiped off screen.",
+                    "Snackbars can contain an action which is set via setAction ( CharSequence, android.view.View.OnClickListener ).",
+                    "To be notified when a snackbar has been shown or dismissed, you can provide a Snackbar.Callback via BaseTransientBottomBar.addCallback ( BaseCallback ).",
+                    "Callback class for Snackbar instances.",
+                    "Return whether this BaseTransientBottomBar is currently being shown.",
+                    "Make a Snackbar to display a message",
+                    "Snackbar will try and find a parent view to hold Snackbar's view from the value given to view.",
+                    "Make a Snackbar to display a message.",
+                    "Set the action to be displayed in this BaseTransientBottomBar.",
+                    "Sets the text color of the action specified in setAction ( CharSequence, View.OnClickListener ).",
+                    "Sets the tint color of the background Drawable.",
+                    "Sets the tint color state list of the background Drawable.",
+                    "Use BaseTransientBottomBar.addCallback ( BaseCallback )",
+                    "Sets the max width of the action to be in the same line as the message.",
+                    "Update the text in this Snackbar.",
+                    "Sets the text color of the message specified in setText ( CharSequence ) and setText ( int ).",
+                    "This is for backward compatibility with AppCompat themes.",
+                    "Snackbar will walk up the view tree trying to find a suitable parent, which is defined as a CoordinatorLayout or the window decor's content view, whichever comes first.",
+                    "Having a CoordinatorLayout in your view hierarchy allows Snackbar to enable certain features, such as swipe-to-dismiss and automatically moving of widgets.",
+                    "Set a callback to be called when this the visibility of this Snackbar changes.",
+                    "Note that this method is deprecated and you should use BaseTransientBottomBar.addCallback ( BaseCallback ) to add a callback and BaseTransientBottomBar.removeCallback ( BaseCallback ) to remove a registered callback.",
+                    "If the width is exceeded the action would go to the next line.",
+                    "Snackbars should still work with AppCompat themes, which don't specify a snackbarButtonStyle.",
+                    "This method helps to check if a valid snackbarButtonStyle is set within the current context, so that we know whether we can use the attribute.",
+                    "Content and code samples on this page are subject to the licenses described in the Content License.",
+                    "Java is a registered trademark of Oracle and/or its affiliates.",
+                    "Twitter Follow @AndroidDev on Twitter",
+                    "YouTube Check out Android Developers on YouTube",
+                    "More Android Android Enterprise Security Source",
+                    "Support Report platform bug Report documentation bug Google Play support Join research studies",
+                    "Documentation Developer guides Design guides API reference Samples Android Studio",
+                    "Get news and tips by email Subscribe",
+                    ""
+                ],
+                "title": "Snackbar \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [],
+        "qa": [
+            {
+                "uid": "32305627",
+                "link": "https://stackoverflow.com/questions/32305627",
+                "title": "Snackbar is not working within fragment class",
+                "answers": [
+                    {
+                        "uid": 32306099,
+                        "score": 6,
+                        "text": [
+                            "SnackBar make method takes a view and from that view it trails up the heirarchy until it finds a suitable layout to show, if you had an exception this means that you didn't add CoordinatedLayout to your project"
+                        ]
+                    },
+                    {
+                        "uid": 32309411,
+                        "score": 34,
+                        "text": [
+                            "I have solved this:",
+                            "It is fine if we do not include CoordinatedLayout to my fragment_home.",
+                            "xml",
+                            "Solution:",
+                            "Defined: private RelativeLayout mRoot ;",
+                            "Now initialize in initUI -LRB- View view -RRB-",
+                            "and on Button click event put the following code:",
+                            "Now main thing about this is:",
+                            "just change current theme to Theme.AppCompat.Light.NoActionBar",
+                            "It Done.",
+                            "!!!"
+                        ]
+                    },
+                    {
+                        "uid": 40954946,
+                        "score": 96,
+                        "text": [
+                            "You can also use:",
+                            "like this:",
+                            "See LINK"
+                        ]
+                    },
+                    {
+                        "uid": 63969897,
+                        "score": 0,
+                        "text": [
+                            "For Kotlin language you have to use:",
+                            "For example:"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-fragments",
+                    "android-activity",
+                    "android-design-library",
+                    "android-snackbar"
+                ]
+            }
+        ],
+        "other": []
+    },
+    "parsed": true
+}

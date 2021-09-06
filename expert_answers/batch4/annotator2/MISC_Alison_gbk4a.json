@@ -1,0 +1,96 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-12",
+            "tag": "SPAN",
+            "text": "Go to https://g.co/recaptcha/androidsignup, add a label for your key, provide the package name of your android app and grab the site key and secret key that appear on the next page.",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": "We need to add these dependencies to our build.gradle file (module level)",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "In your activity\u2019s onCreate() method we will create an instance of Google API client as follows:",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "Don\u2019t forget to declare the Google API Client in the activity class like this:",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "Wherever you want to invoke the captcha widget use the following code:",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-20",
+            "tag": "SPAN",
+            "text": "Basically when status is success, it means user successfully completed the captcha challenge, so now it is time to validate result on the server.",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "So as I mentioned before status.isSuccess() == true just means that the user has successfully completed that Captcha challenge and we still need to validate the user\u2019s response token on server to get the final say.",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "So for that, you need to send a post request to URL: https://www.google.com/recaptcha/api/siteverify with following three parameters:",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-42",
+            "tag": "SPAN",
+            "text": "Step 1: Go through reCAPTCHA Terms of Service",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-30",
+            "tag": "SPAN",
+            "text": "Step 2: Register a reCAPTCHA key pair",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-98",
+            "tag": "SPAN",
+            "text": "Step 3: Setting up Google Play services",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-85",
+            "tag": "SPAN",
+            "text": "Step 1: Go through reCAPTCHA Terms of Service",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-45",
+            "tag": "SPAN",
+            "text": "Step 2: Register a reCAPTCHA key pair",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "Step 3: Setting up Google Play services",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "Step 2: Register a reCAPTCHA key pair",
+            "href": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+        }
+    ]
+}

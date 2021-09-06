@@ -1,0 +1,226 @@
+{
+    "task": "Android Gallery with pinch zoom",
+    "description": "I found a sample project of gallery with pinch zoom and made some bug fix.\nYou can download my code at here It supports full screen only.\nIt always center the image to screen height.\nBut I want to put a header view to the top of the screen and make the adjustment to the location of the image.\nThe image location should be:\nI am not so good at using Matrix.\nAnyone has idea of how to make the customized gallery to work in any size ( not just full screen ) ?",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/10268806",
+    "question_id": "10268806",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/gestures/scale",
+                "type": "android",
+                "content": [
+                    "This lesson describes how to use touch gestures to drag and scale on-screen objects, using onTouchEvent ( ) to intercept touch events.",
+                    "Refer to the following related resources:",
+                    "If you are targeting Android 3.0 or higher, you can use the built-in drag-and-drop event listeners with View.OnDragListener, as described in Drag and Drop.",
+                    "A common operation for a touch gesture is to use it to drag an object across the screen.",
+                    "The following snippet lets the user drag an on-screen image.",
+                    "The following snippet enables a user to drag an object around on the screen.",
+                    "It records the initial position of the active pointer, calculates the distance the pointer traveled, and moves the object to the new position.",
+                    "It correctly manages the possibility of additional pointers, as described above.",
+                    "Notice that the snippet uses the getActionMasked ( ) method.",
+                    "You should always use this method ( or better yet, the compatibility version MotionEventCompat.getActionMasked ( ) ) to retrieve the action of a MotionEvent.",
+                    "Unlike the older getAction ( ) method, getActionMasked ( ) is designed to work with multiple pointers.",
+                    "It returns the masked action being performed, without including the pointer index bits.",
+                    "The previous section showed an example of dragging an object around the screen.",
+                    "Another common scenario is panning, which is when a user's dragging motion causes scrolling in both the x and y axes.",
+                    "The above snippet directly intercepted the MotionEvent actions to implement dragging.",
+                    "The snippet in this section takes advantage of the platform's built-in support for common gestures.",
+                    "It overrides onScroll ( ) in GestureDetector.SimpleOnGestureListener.",
+                    "To provide a little more context, onScroll ( ) is called when a user is dragging a finger to pan the content.",
+                    "onScroll ( ) is only called when a finger is down ; as soon as the finger is lifted from the screen, the gesture either ends, or a fling gesture is started ( if the finger was moving with some speed just before it was lifted ).",
+                    "For more discussion of scrolling vs. flinging, see Animating a Scroll Gesture.",
+                    "Here is the snippet for onScroll ( ):",
+                    "The implementation of onScroll ( ) scrolls the viewport in response to the touch gesture:",
+                    "As discussed in Detecting Common Gestures, GestureDetector helps you detect common gestures used by Android such as scrolling, flinging, and long press.",
+                    "For scaling, Android provides ScaleGestureDetector.",
+                    "GestureDetector and ScaleGestureDetector can be used together when you want a view to recognize additional gestures.",
+                    "To report detected gesture events, gesture detectors use listener objects passed to their constructors.",
+                    "Android provides ScaleGestureDetector.SimpleOnScaleGestureListener as a helper class that you can extend if you don't care about all of the reported events.",
+                    "Here is a snippet that illustrates the basic ingredients involved in scaling.",
+                    "Here is a more complex example from the InteractiveChart sample provided with this class.",
+                    "The InteractiveChart sample supports both scrolling ( panning ) and scaling with multiple fingers, using the ScaleGestureDetector `` span'' ( getCurrentSpanX/Y ) and `` focus'' ( getFocusX/Y ) features:",
+                    "In a drag ( or scroll ) operation, the app has to keep track of the original pointer ( finger ), even if additional fingers get placed on the screen.",
+                    "For example, imagine that while dragging the image around, the user places a second finger on the touch screen and lifts the first finger.",
+                    "If your app is just tracking individual pointers, it will regard the second pointer as the default and move the image to that location.",
+                    "To prevent this from happening, your app needs to distinguish between the original pointer and any follow-on pointers.",
+                    "To do this, it tracks the ACTION_POINTER_DOWN and ACTION_POINTER_UP events described in Handling Multi-Touch Gestures.",
+                    "ACTION_POINTER_DOWN and ACTION_POINTER_UP are passed to the onTouchEvent ( ) callback whenever a secondary pointer goes down or up.",
+                    "In the ACTION_POINTER_UP case, the example extracts this index and ensures that the active pointer ID is not referring to a pointer that is no longer touching the screen.",
+                    "If it is, the app selects a different pointer to be active and saves its current X and Y position.",
+                    "Since this saved position is used in the ACTION_MOVE case to calculate the distance to move the onscreen object, the app will always calculate the distance to move using data from the correct pointer.",
+                    ""
+                ],
+                "title": "Drag and scale \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [],
+        "qa": [
+            {
+                "uid": "10630373",
+                "link": "https://stackoverflow.com/questions/10630373",
+                "title": "Android Image View Pinch Zooming",
+                "answers": [
+                    {
+                        "uid": 10632396,
+                        "score": 85,
+                        "text": [
+                            "and dont forget to set scaleType property to matrix of ImageView tag like:",
+                            "and the variables used are:"
+                        ]
+                    },
+                    {
+                        "uid": 16878135,
+                        "score": 16,
+                        "text": [
+                            "I made my own custom imageview with pinch to zoom.",
+                            "There is no limits/borders on LINKs code, so user can drag the image off the screen.",
+                            "This will fix it.",
+                            "Here is the CustomImageView class:",
+                            "This is how you can use it in your activity:",
+                            "And layout:"
+                        ]
+                    },
+                    {
+                        "uid": 18822360,
+                        "score": 43,
+                        "text": [
+                            "You can use this class: LINK"
+                        ]
+                    },
+                    {
+                        "uid": 43993433,
+                        "score": 15,
+                        "text": [
+                            "Add bellow line in build.gradle:",
+                            "or",
+                            "In Java file:"
+                        ]
+                    },
+                    {
+                        "uid": 52378131,
+                        "score": 17,
+                        "text": [
+                            "When learning a new concept I don't like using libraries or code dumps.",
+                            "I found a good description LINK and in the LINK of how to resize an image by pinching.",
+                            "This answer is a slightly modified summary.",
+                            "You will probably want to add more functionality later, but it will help you get started.",
+                            "The ImageView just uses the app logo since it is already available.",
+                            "You can replace it with any image you like, though.",
+                            "We use a ScaleGestureDetector on the activity to listen to touch events.",
+                            "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView.",
+                            "You can limit the size of the scaling with something like",
+                            "Thanks again to LINK",
+                            "You will probably want to do other things like panning and scaling to some focus point.",
+                            "You can develop these things yourself, but if you would like to use a pre-made custom view, copy LINK into your project and use it like a normal ImageView.",
+                            "It worked well for me and I only ran into one LINK.",
+                            "I plan to further edit the code to remove the warning and the parts that I don't need.",
+                            "You can do the same."
+                        ]
+                    },
+                    {
+                        "uid": 58081883,
+                        "score": 0,
+                        "text": [
+                            "I made code for imageview with pinch to zoom using zoomageview.",
+                            "so user can drag the image off the screen and zoom-In, zoom-out the image.",
+                            "You can follow this link to get the Step By Step Code and also given Output Screenshot.",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 63121501,
+                        "score": 1,
+                        "text": [
+                            "Custom zoom view in Kotlin"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-layout",
+                    "android-intent",
+                    "android-widget"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://medium.com/quick-code/pinch-to-zoom-with-multi-touch-gestures-in-android-d6392e4bf52d",
+                "type": "misc",
+                "content": [
+                    "Sign inQuick Code \ud83d\udcda Top Courses \u270d\ufe0f Submit Article \ud83c\udf10 Web Dev \ud83d\udcf1 Mobile Dev \ud83d\udcbb ProgrammingQuick CodePinch-to-zoom with multi-touch gestures In AndroidTrust OnyekwereFollowFeb 2, 2018 \u00b7 2 min readIn this article, we will demonstrate multi-touch with the common pinch-to-zoom gesture using the SimpleOnScaleGestureListener class.",
+                    "The aim is to give you a head start if you intend to add pinch-to-zoom feature in your project.The following screen-shot shows the icon zoomed in and out using the application created: when zoomed inwhen zoomed outOkay, Let's get started !",
+                    "Create a new project in Android Studio and call it: Pinch2Zoom or whatever you like.",
+                    "Use the default Phone & Tablet options and select Empty Activity when prompted for the Activity Type.We'll use an ImageView with the application icon to provide a visual indication of the pinch-to-zoom.",
+                    "Open activity_main.xml and Replace the existing TextView with the following ImageView: 3.",
+                    "Now open MainActivity.java and add the following global variables to the class: 4.",
+                    "Override onTouchEvent ( ) as follows: 5.",
+                    "Add the following ScaleListener class to the MainActivity class: 6.",
+                    "Add the following code to the existing onCreate ( ) method: 7.",
+                    "we are done, to experiment with the pinch-to-zoom functionality, run the application on a device with a touchscreen.How the code works ... The ScaleGestureDetector does all the work by analyzing the gesture data and reporting the final scale factor through the onScale ( ) callback.",
+                    "We get the actual scale factor by calling getScaleFactor ( ) on ScaleGestureDetector.",
+                    "We use an ImageView with the application icon ( you can use any image of choice ) to provide a visual representation of the scaling by setting the ImageView scale using the scale factor returned from ScaleGestureDetector.",
+                    "To prevent the scaling from becoming too large or too small, we added the following check: mScaleFactor = Math.max ( 0.1 f, Math.min ( mScaleFactor, 10.0 f ) ) ; you can always study the code and edit it for your projects !",
+                    "Let me know your thoughts below in the comment section.Quick CodeFind the best tutorials and courses for the web, mobile ... Follow634 14 Sign up for Developer UpdatesBy Quick CodeReceive weekly updates about new posts on programming, development, data science, web development and more Take a look.Get this newsletterBy signing up, you will create a Medium account if you don't already have one.",
+                    "Review our Privacy Policy for more information about our privacy practices.Check your inboxMedium sent you an email at to complete your subscription.AndroidAndroid App DevelopmentAndroidDev634 claps634 claps14 responsesWritten byTrust OnyekwereFollowI Help Brands Take the Leap Into the World of NLP/Chatbots and Kickstart Digital Transformation @rad5academy @botgenceFollowQuick CodeFollowFind the best tutorials and courses for the web, mobile, chatbot, AR/VR development, database management, data science, web design and cryptocurrency.",
+                    "Practice in JavaScript, Java, Python, R, Android, Swift, Objective-C, React, Node Js, Ember, C++, SQL & more.FollowWritten byTrust OnyekwereFollowI Help Brands Take the Leap Into the World of NLP/Chatbots and Kickstart Digital Transformation @rad5academy @botgenceQuick CodeFollowFind the best tutorials and courses for the web, mobile, chatbot, AR/VR development, database management, data science, web design and cryptocurrency.",
+                    "Practice in JavaScript, Java, Python, R, Android, Swift, Objective-C, React, Node Js, Ember, C++, SQL & more.More From MediumAdvanced Python made easyRavindra Parmar in Quick CodeA Degree in Data Science: Advice from a Harvard Ph.D..",
+                    "StudentMatthew Stewart, PhD Researcher in Quick Code10 Best Database Design PracticesEmily Williamson in Quick Code10 Reasons Why Python Beats PHP for Web DevelopmentmyTectra in Quick CodeTop Technologies That Will Transform The Web Development in 2020Sophia Martin in Quick CodeUploading Files and Serve Directory Listing Using NodeJSBilguun Batbold in Quick CodeJWT Access and Refresh Token with Vapor 3Timur Shafigullin in Quick CodeSet up Analytics on an Angular app via Google Tag ManagerAdriano di Lauro in Quick CodeLearn more.Medium is an open platform where 170 million readers come to find insightful and dynamic thinking.",
+                    "Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface.",
+                    "Learn moreMake Medium yours.Follow the writers, publications, and topics that matter to you, and you'll see them on your homepage and in your inbox.",
+                    "ExploreShare your thinking.If you have a story to tell, knowledge to share, or a perspective to offer -- welcome home.",
+                    "It's easy and free to post your thinking on any topic.",
+                    "Write on MediumAboutHelpLegalGet the Medium app",
+                    "Sign inQuick Code \ud83d\udcda Top Courses \u270d\ufe0f Submit Article \ud83c\udf10 Web Dev \ud83d\udcf1 Mobile Dev \ud83d\udcbb ProgrammingQuick Code",
+                    "Quick Code \ud83d\udcda Top Courses \u270d\ufe0f Submit Article \ud83c\udf10 Web Dev \ud83d\udcf1 Mobile Dev \ud83d\udcbb ProgrammingQuick Code",
+                    "\ud83d\udcda Top Courses \u270d\ufe0f Submit Article \ud83c\udf10 Web Dev \ud83d\udcf1 Mobile Dev \ud83d\udcbb ProgrammingQuick Code",
+                    "Pinch-to-zoom with multi-touch gestures In AndroidTrust OnyekwereFollowFeb 2, 2018 \u00b7 2 min readIn this article, we will demonstrate multi-touch with the common pinch-to-zoom gesture using the SimpleOnScaleGestureListener class.",
+                    "Let me know your thoughts below in the comment section.",
+                    "Pinch-to-zoom with multi-touch gestures In AndroidTrust OnyekwereFollowFeb 2, 2018 \u00b7 2 min read",
+                    "Trust OnyekwereFollowFeb 2, 2018 \u00b7 2 min read",
+                    "In this article, we will demonstrate multi-touch with the common pinch-to-zoom gesture using the SimpleOnScaleGestureListener class.",
+                    "Quick CodeFind the best tutorials and courses for the web, mobile ... Follow634 14",
+                    "Quick CodeFind the best tutorials and courses for the web, mobile ... Follow",
+                    "Find the best tutorials and courses for the web, mobile ...",
+                    "Sign up for Developer UpdatesBy Quick CodeReceive weekly updates about new posts on programming, development, data science, web development and more Take a look.Get this newsletterBy signing up, you will create a Medium account if you don't already have one.",
+                    "StudentMatthew Stewart, PhD Researcher in Quick Code10 Best Database Design PracticesEmily Williamson in Quick Code10 Reasons Why Python Beats PHP for Web DevelopmentmyTectra in Quick CodeTop Technologies That Will Transform The Web Development in 2020Sophia Martin in Quick CodeUploading Files and Serve Directory Listing Using NodeJSBilguun Batbold in Quick CodeJWT Access and Refresh Token with Vapor 3Timur Shafigullin in Quick CodeSet up Analytics on an Angular app via Google Tag ManagerAdriano di Lauro in Quick Code",
+                    "Review our Privacy Policy for more information about our privacy practices.Check your inboxMedium sent you an email at to complete your subscription.AndroidAndroid App DevelopmentAndroidDev634 claps634 claps14 responses",
+                    "Review our Privacy Policy for more information about our privacy practices.Check your inboxMedium sent you an email at to complete your subscription.",
+                    "Sign up for Developer Updates",
+                    "Receive weekly updates about new posts on programming, development, data science, web development and more Take a look.",
+                    "Get this newsletterBy signing up, you will create a Medium account if you don't already have one.",
+                    "Review our Privacy Policy for more information about our privacy practices.",
+                    ""
+                ],
+                "title": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+            },
+            {
+                "link": "https://daveson.medium.com/android-imageview-double-tap-and-pinch-zoom-with-multi-touch-gestures-in-kotlin-1559a5dd4a69",
+                "type": "misc",
+                "content": [
+                    "Get startedOpen in appDavid Sunday31 FollowersAboutSign inGet started31 FollowersAboutGet startedOpen in appAndroid ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in KotlinDavid SundayOct 4, 2020 \u00b7 3 min readAndroid provides many views which we can use to define a user interface for our apps.",
+                    "The imageview which can be used to display images from various sources is one of them.",
+                    "These view provides a high level of functionality to display images in a user interface so that we can concentrate on the images we want to display rather than taking care of rendering.In this article we will be demonstrating how to use OnTouchListener, GestureDetector and OnDoubleTapListener to zoom an image and get proper view of every section in the image.The video below shows an example from a sample project.Sample ProjectOkay Let's get started !",
+                    "Create a new project in android studio and name it what ever you like, Select Empty Activity as Project Template, select programming language as kotlin and leave the default settings for the rest items.Note: Am using android studio Canary.",
+                    "It will work perfectly fine on RC and other android studio.Create New ProjectSelect Project TemplateSelect Language2.",
+                    "Download the image below, right-click on the image in your computer folder and select copy and add it to drawable by right-clicking on drawable under res in project and clicking paste in android studio.Image3.",
+                    "Expand app - > Java - > Project Package ( e.g com.sundaydavid989.zoomexample ) that has MainActivity inside.Right-click on the project package, select new - > Kotlin File/Class.",
+                    "Type a name for your class.",
+                    "I will call mine ZoomClass.Sample Zoom ClassCopy and paste the below code in the ZoomClass and import all classes.zoom class4.",
+                    "Expand the res - > layout and double-click activity_main.xml to open it.",
+                    "Select code view and paste the code below.Run the app in an emulator or physical device and enjoy the zoom feature.Here is a link to the Sample project on GitHub https://github.com/sunday58/ZoomExampleyou can always study the zoom class code and edit it to your preference.",
+                    "Please feel free to leave your thought in the comment section.David SundayAndroid Software DeveloperFollow155 1 155 155 1 ImageviewKotlinAndroidGesturesZoomMore from David SundayFollowAndroid Software DeveloperMore From MediumLearn By Doing Android, Diving into RxJava & RxAndroid ( Concurrency ) Shivam Dhuria in The StartupReact Native and Android Studio: Everything you need to get started in LinuxRomano Fenzo Flores in The StartupExploring Google Play App SigningJoe Birch in Google Developers ExpertsWhen Android had a `` bigger brother'' Kishore MadavanGenerate App Icon and Splash Screen Images for Ionic Framework using CapacitorDale ZakCoroutines & Patterns for work that shouldn't be cancelledManuel Vivo in Android DevelopersSetup Flutter with Android Studio in Linux ?",
+                    "see this TipsFeri LukmansyahHow to inject mock dependencies into Android components using Dagger AndroidInjectorTam\u00e1s Kozm\u00e9r in AndroidPubAboutHelpLegalGet the Medium app",
+                    "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in KotlinDavid SundayOct 4, 2020 \u00b7 3 min readAndroid provides many views which we can use to define a user interface for our apps.",
+                    "Please feel free to leave your thought in the comment section.",
+                    "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in KotlinDavid SundayOct 4, 2020 \u00b7 3 min read",
+                    "David SundayOct 4, 2020 \u00b7 3 min read",
+                    ""
+                ],
+                "title": "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in Kotlin | by David Sunday | Medium"
+            }
+        ]
+    },
+    "parsed": true
+}

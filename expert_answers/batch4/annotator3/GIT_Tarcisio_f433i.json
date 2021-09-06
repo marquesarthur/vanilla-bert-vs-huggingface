@@ -1,0 +1,54 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [    
+    {
+      "id": "eye-gazing-tag-104",
+      "tag": "SPAN",
+      "text": "So, my recommendation for anyone having these issues, is to use mapper.readTree when using native-image, pull out the bits you want from the JSON-nodes and use mapper.readValue on that, rather than relying on a large tree to object conversion. More like using a SAX parser for XML than DOM, was the logic.",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-107",
+      "tag": "SPAN",
+      "text": "JSON source was from Yahoo Finance: https://query1.finance.yahoo.com/v8/finance/chart/AMZN\n(what I could not convert with native-image using the entire tree, yet works when you pick more specific nodes of interest)",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-111",
+      "tag": "SPAN",
+      "text": "In the end, I found out that the issue seemed to be data classes that have non-primitive members, e.g. a data class containing a List or another data class.",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-117",
+      "tag": "SPAN",
+      "text": "@geoand This is the same issue I described above (complex structures) and why I added troubleshooting notes to the Kotlin documentation.",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-118",
+      "tag": "SPAN",
+      "text": "Using the field annotation does overcome it, but may be considered a workaround.",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-379",
+      "tag": "SPAN",
+      "text": "\n          I run into the same issue today (I suppose).",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-379",
+      "tag": "SPAN",
+      "text": "Initially I used the following data class to de-serialize a  json resource (via rest client):\n@JsonIgnoreProperties(ignoreUnknown = true)\ndata class EnvSnapshot(\n    val stations: List<EnvAwareStationConfig>\n)\n\n    \n      \n    \n\n      \n    \n\n    \n  \n",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-123",
+      "tag": "SPAN",
+      "text": "After some time, I figured out, that it works if I annotate the stations field with a @JsonProperty annotation:",
+      "href": "Using Jackson support for Kotlin fails in native mode. · Issue #3954 · quarkusio/quarkus · GitHub"
+    }
+  ]
+}

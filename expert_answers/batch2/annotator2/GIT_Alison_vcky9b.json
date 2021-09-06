@@ -1,0 +1,30 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-119",
+      "tag": "SPAN",
+      "text": "\n          Those recording sources may only be used by system apps.\nThis is designed to prevent apps from eavesdropping on telephone conversations.\nSee here for more information.\nhttps://developer.android.com/reference/android/media/MediaRecorder.AudioSource.html#VOICE_CALL\n      ",
+      "href": "Using oboe to record incoming and outgoing voice/telephony calls · Issue #447 · google/oboe · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Those recording sources may only be used by system apps.",
+      "href": "Using oboe to record incoming and outgoing voice/telephony calls · Issue #447 · google/oboe · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "This is designed to prevent apps from eavesdropping on telephone conversations.",
+      "href": "Using oboe to record incoming and outgoing voice/telephony calls · Issue #447 · google/oboe · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "See here for more information.",
+      "href": "Using oboe to record incoming and outgoing voice/telephony calls · Issue #447 · google/oboe · GitHub"
+    }
+  ]
+}

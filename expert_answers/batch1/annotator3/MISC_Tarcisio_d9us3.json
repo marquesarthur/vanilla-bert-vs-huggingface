@@ -1,0 +1,114 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-8",
+            "tag": "SPAN",
+            "text": "Aside from the compiler not letting you within recent updates, using the UI thread to complete a request has deadly consequences.For example:",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "58ad",
+            "tag": "H2",
+            "text": "Step 1: Using the AsyncTask for Android",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-33",
+            "tag": "SPAN",
+            "text": "This is merely a preference for this tutorial, so you can return any primitive data type or object if you pleased.Passing the String parameters into our extended class should look like so:",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-35",
+            "tag": "SPAN",
+            "text": "If you have the options to left click and \u201cgenerate\u201d its override methods, select \u201cdoInBackground()\u201d and \u201conPostExecute\u201d.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-36",
+            "tag": "SPAN",
+            "text": "If not, look below at what our class should now look like.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-38",
+            "tag": "SPAN",
+            "text": "Lets take a look at an example below:",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "First, we will create an InputStreamReader that reads our request input.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-56",
+            "tag": "SPAN",
+            "text": "Next, we will create a BufferedReader that will allow us to iterate through the response.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "uid-457",
+            "tag": "PRE",
+            "text": "public class HttpGetRequest extends AsyncTask<String, Void, String> {   public static final String REQUEST_METHOD = \"GET\";   public static final int READ_TIMEOUT = 15000;   public static final int CONNECTION_TIMEOUT = 15000;   @Override    protected String doInBackground(String... params){      String stringUrl = params[0];      String result;      String inputLine;      try {         //Create a URL object holding our url         URL myUrl = new URL(stringUrl);         //Create a connection         HttpURLConnection connection =(HttpURLConnection)                     myUrl.openConnection();         //Set methods and timeouts         connection.setRequestMethod(REQUEST_METHOD);         connection.setReadTimeout(READ_TIMEOUT);         connection.setConnectTimeout(CONNECTION_TIMEOUT);               //Connect to our url         connection.connect()         //Create a new InputStreamReader         InputStreamReader streamReader = new              InputStreamReader(connection.getInputStream());         //Create a new buffered reader and String Builder         BufferedReader reader = new BufferedReader(streamReader);         StringBuilder stringBuilder = new StringBuilder();         //Check if the line we are reading is not null         while((inputLine = reader.readLine()) != null){            stringBuilder.append(inputLine);         }         //Close our InputStream and Buffered reader         reader.close();         streamReader.close();         //Set our result equal to our stringBuilder         result = stringBuilder.toString();      }      catch(IOException e){         e.printStackTrace();         result = null;      }      return result;      }   protected void onPostExecute(String result){      super.onPostExecute(result);   }}",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-68",
+            "tag": "SPAN",
+            "text": "Here we caught our IOException, printed the stack trace in order to see more details if/when we have do debug, and set our result to null.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-70",
+            "tag": "SPAN",
+            "text": "We\u2019ve gone through and implemented, step by step, the process of creating an asynchronous HTTP GET request in Java, using Android\u2019s AsyncTask class.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-27",
+            "tag": "SPAN",
+            "text": "After that, extend the class AsyncTask.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "Now, you\u2019ll be bothered because you need to implement AsyncTask\u2019s override methods.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "After instantiating a new instance of this class in another class or activity, we can access these methods to perform some background task in doInBackground() and retrieve the result in onPostExecute().",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-49",
+            "tag": "SPAN",
+            "text": "After that, extend the class AsyncTask.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-45",
+            "tag": "SPAN",
+            "text": "Now, you\u2019ll be bothered because you need to implement AsyncTask\u2019s override methods.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "After that, extend the class AsyncTask.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-28",
+            "tag": "SPAN",
+            "text": "Now, you\u2019ll be bothered because you need to implement AsyncTask\u2019s override methods.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        }
+    ]
+}

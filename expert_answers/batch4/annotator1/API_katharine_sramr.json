@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "Just as an app can send data to other apps, it can also receive data from other apps as well.",
+      "href": "Receiving simple data from other apps  |  Android Developers"
+    }
+  ]
+}

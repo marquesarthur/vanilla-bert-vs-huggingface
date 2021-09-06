@@ -1,0 +1,28 @@
+{
+    "https://developer.android.com/training/gestures/scale": {
+        "apiref": [
+            "onScroll ( ) is only called when a finger is down ; as soon as the finger is lifted from the screen, the gesture either ends, or a fling gesture is started ( if the finger was moving with some speed just before it was lifted ).",
+            "Android provides ScaleGestureDetector.SimpleOnScaleGestureListener as a helper class that you can extend if you don't care about all of the reported events.",
+            "In a drag ( or scroll ) operation, the app has to keep track of the original pointer ( finger ), even if additional fingers get placed on the screen."
+        ]
+    },
+    "https://stackoverflow.com/questions/10630373": {
+        "ansbot": [
+            "and dont forget to set scaleType property to matrix of ImageView tag like:",
+            "I found a good description LINK and in the LINK of how to resize an image by pinching.",
+            "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView."
+        ]
+    },
+    "https://medium.com/quick-code/pinch-to-zoom-with-multi-touch-gestures-in-android-d6392e4bf52d": {
+        "lexrank": [
+            "Let me know your thoughts below in the comment section.Quick CodeFind the best tutorials and courses for the web, mobile ... Follow634 14 Sign up for Developer UpdatesBy Quick CodeReceive weekly updates about new posts on programming, development, data science, web development and more Take a look.Get this newsletterBy signing up, you will create a Medium account if you don't already have one.",
+            "Quick CodeFind the best tutorials and courses for the web, mobile ... Follow634 14"
+        ]
+    },
+    "https://daveson.medium.com/android-imageview-double-tap-and-pinch-zoom-with-multi-touch-gestures-in-kotlin-1559a5dd4a69": {
+        "lexrank": [
+            "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in KotlinDavid SundayOct 4, 2020 \u00b7 3 min read",
+            "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in KotlinDavid SundayOct 4, 2020 \u00b7 3 min readAndroid provides many views which we can use to define a user interface for our apps."
+        ]
+    }
+}

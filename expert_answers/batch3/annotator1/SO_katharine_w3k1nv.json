@@ -1,0 +1,54 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-211",
+      "tag": "SPAN",
+      "text": "Pin down exactly which queries you need to optimize.\nGrab a copy of a typical database and use the REPL to time queries.\nUse this to benchmark any gains as you optimize.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Pin down exactly which queries you need to optimize.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Grab a copy of a typical database and use the REPL to time queries.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Use this to benchmark any gains as you optimize.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-213",
+      "tag": "SPAN",
+      "text": "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.\nUse EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.\nFor large tables, a full table scan is bad and you probably want an index.\nOnly one index will be used on any given query.\nIf you have multiple predicates, then the index that will be used is the one that is expected to reduce the result set the most (based on ANALYZE).\nYou can have indexes that contain multiple columns (to assist queries with multiple predicates).\nIf you have indexes with multiple columns, they are usable only if the predicates fit the index from left to right with no gaps (but unused columns at the end are fine).\nIf you use an ordering predicate (<, <=, > etc) then that needs to be in the last used column of the index.\nUsing both WHERE predicates and ORDER BY both require an index and SQLite can only use one, so that can be a point where performance suffers.\nThe more indexes you have, the slower your INSERTs will be, so you will have to work out the best trade-off for your situation.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-214",
+      "tag": "SPAN",
+      "text": "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+      "href": "SQLite Optimization for Android application - Stack Overflow"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "I wrote two classes that solve this problem on my project.",
+      "href": "Clean way in GWT/Java to wait for multiple asynchronous events to finish - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": " Basically, each individual callback registers with a parent.",
+      "href": "Clean way in GWT/Java to wait for multiple asynchronous events to finish - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": " The parent waits for each child callback to complete, then fires off it's own handleSuccess().",
+      "href": "Clean way in GWT/Java to wait for multiple asynchronous events to finish - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "The client code looks like this:",
+      "href": "Clean way in GWT/Java to wait for multiple asynchronous events to finish - Stack Overflow"
+    }
+  ]
+}

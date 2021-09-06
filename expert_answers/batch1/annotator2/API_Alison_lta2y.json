@@ -1,0 +1,150 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-1",
+            "tag": "SPAN",
+            "text": "Every Android app runs in a limited-access sandbox.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2",
+            "tag": "SPAN",
+            "text": "If your app needs to use\nresources or information outside of its own sandbox, you can declare a\npermission and set up a permission request\nthat provides this access.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-4",
+            "tag": "SPAN",
+            "text": "If you declare any dangerous\npermissions, and if\nyour app is installed on a device that runs Android 6.0 (API level 23) or\nhigher, you must request the dangerous permissions at runtime by following the\nsteps in this guide.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2843",
+            "tag": "SPAN",
+            "text": "Ask for permissions in context, when the user starts to interact with the\nfeature that requires it.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2846",
+            "tag": "SPAN",
+            "text": "If the user denies or revokes a permission that a feature needs, gracefully\ndegrade your app so that the user can continue using your app, possibly by\ndisabling the feature that requires the permission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2847",
+            "tag": "SPAN",
+            "text": "Don't assume any system behavior.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2848",
+            "tag": "SPAN",
+            "text": "For example, don't assume that permissions\nappear in the same permission group.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2850",
+            "tag": "SPAN",
+            "text": "In your app's manifest file, declare the\npermissions that your app might need to\nrequest.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2853",
+            "tag": "SPAN",
+            "text": "Wait for the user to invoke the task or action in your app\nthat requires access to specific private user data.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-10",
+            "tag": "SPAN",
+            "text": "Check whether the user has already granted the runtime\npermission that your app requires.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": "You must check whether you have that permission every time you perform an\noperation that requires that permission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-2858",
+            "tag": "SPAN",
+            "text": "Check the user's response, whether they chose to grant or deny the runtime\npermission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-21",
+            "tag": "SPAN",
+            "text": "Check the user's response, whether they chose to grant or deny the runtime\npermission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "To check if the user has already granted your app a particular permission, pass\nthat permission into the\nContextCompat.checkSelfPermission()\nmethod.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "This method returns either\nPERMISSION_GRANTED\nor PERMISSION_DENIED, depending on whether your app has the permission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-50",
+            "tag": "SPAN",
+            "text": "The following code snippet shows how to handle the permissions response:",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-51",
+            "tag": "SPAN",
+            "text": "And this code snippet demonstrates the recommended process of checking for\na permission, and requesting a permission from the user when necessary:",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-58",
+            "tag": "SPAN",
+            "text": "In particular, your app should make\nusers aware of the features that don't work because of the missing permission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-67",
+            "tag": "SPAN",
+            "text": "In certain situations, the permission might be denied automatically, without the\nuser taking any action.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-68",
+            "tag": "SPAN",
+            "text": "(Similarly, a permission might be granted\nautomatically as well.) It's important to not assume anything about automatic\nbehavior.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-69",
+            "tag": "SPAN",
+            "text": "Each time your app needs to access functionality that requires a\npermission, you should check that your app is still granted that permission.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-39",
+            "tag": "SPAN",
+            "text": "At that time, your app can\nrequest the runtime permission that's required for accessing that data.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-54",
+            "tag": "SPAN",
+            "text": "At that time, your app can\nrequest the runtime permission that's required for accessing that data.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-79",
+            "tag": "SPAN",
+            "text": "At that time, your app can\nrequest the runtime permission that's required for accessing that data.",
+            "href": "Request app permissions \u00a0|\u00a0 Android Developers"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+  "session_uid": "Yoo",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "BestEstimate",
+      "tag": "H2",
+      "text": "Maintain a current best estimate",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "To validate the accuracy of a location that's returned from\ngetLastLocation(), complete steps that include the following:",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2755",
+      "tag": "SPAN",
+      "text": "Check whether the location retrieved is significantly newer than the\n  previously fetched location.",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2756",
+      "tag": "SPAN",
+      "text": "Check whether the accuracy claimed by the location is better or worse\n  than that of the previous estimate.",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2757",
+      "tag": "SPAN",
+      "text": "Check the provider that's associated with the new location.",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2758",
+      "tag": "SPAN",
+      "text": "Decide\n  whether you trust this provider more than the one used in your app's cached\n  location.",
+      "href": "Get the last known location  |  Android Developers"
+    }
+  ]
+}

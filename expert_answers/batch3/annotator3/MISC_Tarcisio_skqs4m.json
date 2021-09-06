@@ -1,0 +1,54 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "Under recyclerview/, create RecyclerViewHolder.java, add the following lines to define how to create a ViewHolder.",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "In this example, itemView is the FrameLayout component from step #3.",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "We need to retrieve and store TextView randomText from FrameLayout.",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "uid-421",
+      "tag": "PRE",
+      "text": "package com.google.firebase.recyclerview;import android.view.View;import android.widget.TextView;import androidx.annotation.NonNull;import androidx.recyclerview.widget.RecyclerView;public class RecyclerViewHolder extends RecyclerView.ViewHolder {    private TextView view;    public RecyclerViewHolder(@NonNull View itemView) {        super(itemView);        view = itemView.findViewById(R.id.randomText);    }    public TextView getView(){        return view;    }}",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "In getItemViewType(), we will provide the layout file which contains the TextView for list item.",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "In onCreateViewHolder(), we take the viewType which is the returned by getItemViewType(). After inflating FrameLayout to get View object, we then can use RecyclerViewHolder created by Step #5 for return value.",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "In onBindViewHolder(), we will bind the RecyclerViewHolder to RecyclerView.",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    },
+    {
+      "id": "uid-454",
+      "tag": "PRE",
+      "text": "package com.google.firebase.recyclerview;import android.view.LayoutInflater;import android.view.View;import android.view.ViewGroup;import androidx.annotation.NonNull;import androidx.recyclerview.widget.RecyclerView;import java.util.Random;public class RandomNumListAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {    private Random random;    public RandomNumListAdapter(int seed) {        this.random = new Random(seed);    }    @Override    public int getItemViewType(final int position) {        return R.layout.frame_textview;    }    @NonNull    @Override    public RecyclerViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {        View view = LayoutInflater.from(parent.getContext()).inflate(viewType, parent, false);        return new RecyclerViewHolder(view);    }    @Override    public void onBindViewHolder(@NonNull RecyclerViewHolder holder, int position) {        holder.getView().setText(String.valueOf(random.nextInt()));    }    @Override    public int getItemCount() {        return 100;    }}",
+      "href": "Create RecyclerView in Android Fragment | The Startup"
+    }
+  ]
+}

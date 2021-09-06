@@ -1,0 +1,36 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "PdfRenderer — This class enables rendering a PDF document.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "This class is not thread safe.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Concept : PdfRenderer will convert your PDF page into image and you can show it on ImageView.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "uid-381",
+      "tag": "PRE",
+      "text": "implementation 'com.android.support:design:27.1.1'// Add this dependency if you want to use butterknife library to // access UI element in Activity/Fragmentimplementation 'com.jakewharton:butterknife:8.8.1'annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Now add the following code in your PdfRenderActivity —",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    }
+  ]
+}

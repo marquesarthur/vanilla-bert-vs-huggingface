@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "First of all your Animal class with the Json Annotations for the subclasses.",
+      "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "Output after running the Test class:",
+      "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "This line means: add a meta-property on serialization or read a meta-property on deserialization (include = JsonTypeInfo.As.PROPERTY) called \"@class\" (property = \"@class\") that holds the fully-qualified Java class name (use = JsonTypeInfo.Id.CLASS).",
+      "href": "java - Deserialize JSON with Jackson into Polymorphic Types - A Complete Example is giving me a compile error - Stack Overflow"
+    }
+  ]
+}

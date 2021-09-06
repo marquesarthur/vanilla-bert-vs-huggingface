@@ -1,0 +1,48 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "It returns View that will be displayed as your list/grid/gallary/any view that use adapter item.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "It triggers when you scroll the view(list for example).",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "After that override getView() method and make sure to return your custom View there.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-183",
+      "tag": "SPAN",
+      "text": "convertView\n\nAs getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "As getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-184",
+      "tag": "SPAN",
+      "text": "parent \n\nA reference to the parent view that this view will be a child of.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "A reference to the parent view that this view will be a child of.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    }
+  ]
+}

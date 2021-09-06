@@ -1,0 +1,24 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Since the version of Retrofit 2.6.0, you can get the annotations in OkHttp Interceptor using the tag field like this:",
+      "href": "android - Retrofit 2 : Custom annotations for custom interceptor - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "Then inside of the interceptor, you can verify if the request is annotated or no.",
+      "href": "android - Retrofit 2 : Custom annotations for custom interceptor - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Retrofit Changelog:",
+      "href": "android - Retrofit 2 : Custom annotations for custom interceptor - Stack Overflow"
+    }
+  ]
+}

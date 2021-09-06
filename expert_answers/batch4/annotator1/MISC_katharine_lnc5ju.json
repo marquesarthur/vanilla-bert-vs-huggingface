@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Now let’s learn how to render a PDF Document in android app itself -",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "We will use android support library PdfRenderer (Added in API level 21).",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "PdfRenderer — This class enables rendering a PDF document.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "If you want to render a PDF, you create a renderer and for every page you want to render, you open the page, render it, and close the page.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Concept : PdfRenderer will convert your PDF page into image and you can show it on ImageView.",
+      "href": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+    }
+  ]
+}

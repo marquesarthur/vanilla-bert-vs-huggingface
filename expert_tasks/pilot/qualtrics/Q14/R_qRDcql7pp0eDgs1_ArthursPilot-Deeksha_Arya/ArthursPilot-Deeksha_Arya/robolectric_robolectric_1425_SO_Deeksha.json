@@ -1,0 +1,72 @@
+{
+  "session_uid": "Deeksha",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "This is happening because FusedLocationProviderApi deprecated in a recent version of google play services.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "The official guide now suggests using FusedLocationProviderClient.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "uid-906",
+      "tag": "PRE",
+      "text": "FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext());\n",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "uid-907",
+      "tag": "CODE",
+      "text": "FusedLocationProviderClient fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireContext());\n",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "uid-909",
+      "tag": "PRE",
+      "text": "fusedLocationClient.getLastLocation().addOnSuccessListener(requireActivity(), location -> {\n        if (location != null) {\n            // Logic to handle location object\n        } else {\n            // Handle null case or Request periodic location update https://developer.android.com/training/location/receive-location-updates\n        }\n    });\n",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "uid-910",
+      "tag": "CODE",
+      "text": "fusedLocationClient.getLastLocation().addOnSuccessListener(requireActivity(), location -> {\n        if (location != null) {\n            // Logic to handle location object\n        } else {\n            // Handle null case or Request periodic location update https://developer.android.com/training/location/receive-location-updates\n        }\n    });\n",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "Using the FusedLocationProviderClient before version 12.0.0 causes the client app to crash when Google Play services is updated on the device.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "\nSo I think we should continue using the deprecated LocationServices.FusedLocationApi until Google resolves the issue.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "The warning is gone now.  Google Play services 11.6 November 6, 2017, release note says :  I think Play Services won't crash when it updates itself in the background.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "So we can use new FusedLocationProviderClient now.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "uid-931",
+      "tag": "CODE",
+      "text": "FusedLocationProviderClient",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    }
+  ]
+}

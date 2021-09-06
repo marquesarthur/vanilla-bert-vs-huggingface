@@ -1,0 +1,153 @@
+{
+    "task": "How to Integrate reCAPTCHA 2.0 in Android",
+    "description": "Is there any way I can integrate reCAPTCHA 2.0 in Android ?\nI found this library and got it working.\nHowever, server side verification of the CAPTCHA is not supported ( it needs me to provide the private key in the code then verify it within the app instead of talking to my own server ).\nIs there a way to integrate reCAPTCHA 2.0 in Android ?\nOr is there a way for me to verify the CAPTCHA on my own server with that library ?",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/34588910",
+    "question_id": "34588910",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/safetynet/recaptcha",
+                "type": "android",
+                "content": [
+                    "The SafetyNet service includes a reCAPTCHA API that you can use to protect your app from malicious traffic.",
+                    "reCAPTCHA is a free service that uses an advanced risk analysis engine to protect your app from spam and other abusive actions.",
+                    "If the service suspects that the user interacting with your app might be a bot instead of a human, it serves a CAPTCHA that a human must solve before your app can continue executing.",
+                    "This document explains how to integrate the reCAPTCHA API from SafetyNet into your app.",
+                    "By accessing or using the reCAPTCHA API, you agree to the Google APIs Terms of Service, and to these Additional Terms.",
+                    "Please read and understand all applicable terms and policies before accessing the APIs.",
+                    "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the reCAPTCHA Android signup site, then complete the following sequence of steps:",
+                    "In the form that appears, provide the following information:",
+                    "Check the Accept the reCAPTCHA Terms of Service checkbox, then click Register.",
+                    "In the Adding reCAPTCHA to your app section on the page that appears next, your public and private keys appear under Site key and Secret key, respectively.",
+                    "You use the site key when you send the verify request, and you use the secret key when you validate the user response token.",
+                    "Before using the reCAPTCHA API, you need to add the SafetyNet API to your project.",
+                    "If you use Android Studio and you want to selectively compile this API into your Gradle dependencies, you should include the build rule that's shown in the following code snippet:",
+                    "For more information, see Set Up Google Play Services.",
+                    "This section describes how to call the reCAPTCHA API to send a CAPTCHA verification request and receive the user response token.",
+                    "To invoke the SafetyNet reCAPTCHA API, you call the verifyWithRecaptcha ( ) method.",
+                    "Usually, this method corresponds to the user's selecting a UI element, such as a button, in your activity.",
+                    "When using the verifyWithRecaptcha ( ) method in your app, you must do the following:",
+                    "The following code snippet shows how to invoke this method:",
+                    "When the reCAPTCHA API executes the onSuccess ( ) method, the user has successfully completed the CAPTCHA challenge.",
+                    "However, this method only indicates that the user has solved the CAPTCHA correctly.",
+                    "You still need to validate the user's response token from your backend server.",
+                    "To learn how to validate the user's response token, see Verifying the user's response.",
+                    "If your app can not communicate with the reCAPTCHA service successfully, it may be because the API is encountering an error.",
+                    "You should add logic in your app to gracefully handle such an error.",
+                    "Also, when the error occurs, your app should display a message to your users explaining why your app can not finish processing their CAPTCHA response.",
+                    "The following list shows the status codes for the most common API errors:",
+                    "The site key is invalid.",
+                    "Check that you've registered an API key successfully and that you've correctly copied the site key as a parameter when calling the API.",
+                    "The type of site key is invalid.",
+                    "Create a new site key by navigating to the reCAPTCHA Android signup site.",
+                    "The calling app's package name doesn't match any of the names that you've associated with the site key.",
+                    "Add the calling app's package name to the site key on the reCAPTCHA Admin Console, or disable package name validation for your site key.",
+                    "The API isn't supported on the device's Android SDK version.",
+                    "Upgrade to a new version of the Android SDK, then try communicating with the API again.",
+                    "The session timed out as the API waited for a response, either because the user didn't interact with the CAPTCHA or because the CAPTCHA loading process itself timed out.",
+                    "Wait for the user to invoke the API again.",
+                    "In the meantime, you can inform the user that they must complete the CAPTCHA to continue using your app.",
+                    "There is no Internet connection.",
+                    "After ensuring connectivity, try communicating with the API again.",
+                    "The operation encountered a general failure.",
+                    "For more details about the status codes that the reCAPTCHA API can return, see the SafetyNetStatusCodes reference.",
+                    "In the form that appears, provide the following information: Label: A unique label for your key.",
+                    "Typically, you use the name of your company or organization.",
+                    "Package Names: Provide the package name of each app that uses this API key.",
+                    "In order for an app to use the API, the package name that you enter must be an exact match of the package name for that app.",
+                    "Enter each package name on its own line.",
+                    "Send alerts to owners: Check this checkbox if you want to receive emails about the reCAPTCHA API.",
+                    "Label: A unique label for your key.",
+                    "Pass in your API site key as a parameter.",
+                    "Override the onSuccess ( ) and onFailure ( ) methods to handle both possible outcomes of the verification request task.",
+                    "In particular, if the API passes an instance of ApiException into onFailure ( ), you need to handle each possible status code that you can retrieve using getStatusCode ( ).",
+                    "For more information, see Handling communication errors.",
+                    ""
+                ],
+                "title": "SafetyNet reCAPTCHA API \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [],
+        "qa": [
+            {
+                "uid": "27297067",
+                "link": "https://stackoverflow.com/questions/27297067",
+                "title": "Google reCAPTCHA: How to get user response and validate in the server side?",
+                "answers": [
+                    {
+                        "uid": 27313658,
+                        "score": 99,
+                        "text": [
+                            "The cool thing about the new Google Recaptcha is that the validation is now completely encapsulated in the widget.",
+                            "That means, that the widget will take care of asking questions, validating responses all the way till it determines that a user is actually a human, only then you get a g-recaptcha-response value.",
+                            "But that does not keep your site safe from HTTP client request forgery.",
+                            "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
+                            "So you have to validate this token.",
+                            "In human speech it would be like,",
+                            "Validating the response is really easy.",
+                            "Just make a GET Request to",
+                            "LINK",
+                            "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
+                            "You will get a JSON Response with a success field.",
+                            "More information here: LINK",
+                            "Edit: It's actually a POST, as per LINK."
+                        ]
+                    },
+                    {
+                        "uid": 30055910,
+                        "score": 4,
+                        "text": [
+                            "Hi curious you can validate your google recaptcha at client side also 100 % work for me to verify your google recaptcha just see below code This code at the html body:",
+                            "This code put at head section on call get_action -LRB- this -RRB- method form button:"
+                        ]
+                    },
+                    {
+                        "uid": 30386335,
+                        "score": 11,
+                        "text": [
+                            "A method I use in my login servlet to verify reCaptcha responses.",
+                            "Uses classes from the java.json package.",
+                            "Returns the API response in a JsonObject.",
+                            "Check the success field for true or false"
+                        ]
+                    },
+                    {
+                        "uid": 59263287,
+                        "score": 3,
+                        "text": [
+                            "Here is complete demo code to understand client side and server side process.",
+                            "you can copy paste it and just replace google site key and google secret key."
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "javascript",
+                    "recaptcha"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://medium.com/android-news/using-googles-recaptcha-with-android-b44097771987",
+                "type": "misc",
+                "content": [
+                    "Using Google's ReCAPTCHA with AndroidRashi KaranpuriaJun 27, 2017 \u00b7 4 min readLast week I needed a service to verify whether my app users were humans or bots so that my bot users don't kill me and take over the world.",
+                    "I researched a bit and found some captcha services that were fun and some that were free * smirk *.",
+                    "I decided to give reCAPTCHA a try.",
+                    "Mostly because I found this particular line on their webpage very appealing.reCAPTCHA makes positive use of this human effort by channeling the time spent solving CAPTCHAs into digitizing text, annotating images, building machine learning datasets.",
+                    "This in turn helps preserve books, improve maps, and solve hard AI problems.Not to mention advanced risk analysis and machine learning that they use to make it a good experience for our beloved human users.",
+                    "Using Google's ReCAPTCHA with AndroidRashi KaranpuriaJun 27, 2017 \u00b7 4 min read",
+                    "Rashi KaranpuriaJun 27, 2017 \u00b7 4 min read",
+                    "Rashi KaranpuriaAuthor of Kotlin Programming Cookbook | Android Developer | www.rashikaranpuria.comFollow156 8",
+                    "Rashi KaranpuriaAuthor of Kotlin Programming Cookbook | Android Developer | www.rashikaranpuria.comFollow",
+                    "Author of Kotlin Programming Cookbook | Android Developer | www.rashikaranpuria.com",
+                    ""
+                ],
+                "title": "Using Google\u2019s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+            }
+        ]
+    },
+    "parsed": true
+}

@@ -1,0 +1,108 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-100",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-34",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-48",
+            "tag": "SPAN",
+            "text": "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-54",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.\noff course it is a little tedious to write raw query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-88",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-79",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.\nyou can search in google for the exact speed improvements.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-28",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-36",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-67",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-5",
+            "tag": "SPAN",
+            "text": "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.\noff course it is a little tedious to write raw query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": "Using of rawQuery() instead of building using ContentValues will fasten up in certain cases.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-6",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.\nyou can search in google for the exact speed improvements.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "If you have a lot of string / text type data, consider creating Virtual tables using full text search (FTS3), which can run faster query.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-60",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-58",
+            "tag": "SPAN",
+            "text": "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+            "href": "SQLite Optimization for Android application - Stack Overflow"
+        }
+    ]
+}

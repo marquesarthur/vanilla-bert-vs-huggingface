@@ -1,0 +1,36 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "An Intent is an object that\n  provides runtime binding between separate components, such as two activities.",
+      "href": "Start another activity  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "In MainActivity, add the EXTRA_MESSAGE constant and the\n  sendMessage() code, as shown:",
+      "href": "Start another activity  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2923",
+      "tag": "SPAN",
+      "text": "The Intent constructor\n    takes two parameters, a\n    Context and a\n    Class.\n    The Context parameter is\n      used first because\n      the Activity class is a\n      subclass of\n      Context.\n    The Class parameter of the app\n      component, to which the system delivers the\n      Intent, is, in this case, the\n      activity to start.\n  ",
+      "href": "Start another activity  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "The Intent constructor\n    takes two parameters, a\n    Context and a\n    Class.",
+      "href": "Start another activity  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2925",
+      "tag": "SPAN",
+      "text": "The\n    startActivity()\n    method starts an instance of the DisplayMessageActivity that's specified by the\n    Intent.",
+      "href": "Start another activity  |  Android Developers"
+    }
+  ]
+}

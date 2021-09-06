@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "The SafetyNet service includes a reCAPTCHA API that you can use to protect your\napp from malicious traffic.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "reCAPTCHA is a free service that uses an advanced risk analysis engine to\nprotect your app from spam and other abusive actions.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the\nreCAPTCHA Android signup site, then\ncomplete the following sequence of steps:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Before using the reCAPTCHA API, you need to add the SafetyNet API to your\nproject.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "use-api",
+      "tag": "H2",
+      "text": "Use the reCAPTCHA API",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    }
+  ]
+}

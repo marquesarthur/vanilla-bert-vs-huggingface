@@ -1,0 +1,66 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "The docs are here:\nhttps://developer.android.com/reference/android/media/session/MediaSession.html",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-2",
+            "tag": "SPAN",
+            "text": "Have you checked RemoteControlClient?",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-73",
+            "tag": "SPAN",
+            "text": "Please check RemoteControlClient",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-72",
+            "tag": "SPAN",
+            "text": "Have you checked RemoteControlClient?",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-3",
+            "tag": "SPAN",
+            "text": "Please check RemoteControlClient",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-70",
+            "tag": "SPAN",
+            "text": "it is used for the Android Music Remote control even if the App is in Lock mode.(same like image you have attached) ",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-67",
+            "tag": "SPAN",
+            "text": "it is used for the Android Music Remote control even if the App is in Lock mode.(same like image you have attached) ",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-75",
+            "tag": "SPAN",
+            "text": "it is used for the Android Music Remote control even if the App is in Lock mode.(same like image you have attached) ",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-65",
+            "tag": "SPAN",
+            "text": "it is used for the Android Music Remote control even if the App is in Lock mode.(same like image you have attached) ",
+            "href": "Media Control on Lock Screen like Google Play Music in android? - Stack Overflow"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode": {
+        "apiref": [
+            "You might use lock task mode if you're developing a kiosk application or a launcher to present a collection of apps.",
+            "You can call KeyguardManager methods to find out if the device is locked and use an Activity lifecycle callback ( such as onResume ( ) that's called after unlocking ) to start lock task mode.",
+            "To have the system automatically run your activity in lock task mode, set the android: lockTaskMode attribute to if_whitelisted as shown in the following example:",
+            "To check if the current app is running in lock task mode, use the methods on ActivityManager as shown in the following example:",
+            "The lock screen ( if set ) is disabled."
+        ]
+    },
+    "https://stackoverflow.com/questions/24652078": {
+        "ansbot": [
+            "Please check LINK"
+        ]
+    },
+    "https://github.com/AntennaPod/AntennaPod/issues/4448": {
+        "hurried": [
+            "( Also the tray icon disappeared but I am not sure if this is maybe intended behavior, because the podcast control moved to another place ).",
+            "May be it is also relevant to mention that most of the time my android is in Do Not Disturb mode, but disabling it did not change anything for me.",
+            "I have used the search function to see if someone else has already submitted the same bug report.",
+            "If I leave a podcast paused for a bit ( unsure exactly how long ), the controls go away and only return when I start playing it again.",
+            "Since I updated to Android 11 the lock screen controls disappear sometimes and won't reappear until I force shut the app and start it again.",
+            "If the bug only to occurs with a certain podcast, I will include the URL of that podcast."
+        ]
+    },
+    "https://medium.com/@shivanshrajpoot/create-a-react-native-app-which-works-on-lock-screen-android-b127f0177455": {
+        "lexrank": [
+            "So, Let's see what are we going to build ... We are going to build an app on react-native which uses FCM background messaging service, service runs while the app is killed or is in background, When a FCM message is received it invokes the activity and shows to the user, no matter if the phone is locked.Where can we use this ?",
+            "just this one, as we need to run a backgroundMessagingService of firebase to receive message.Just use this repo for creating a basic react-native app with all react-native features."
+        ]
+    },
+    "https://www.theverge.com/2019/11/26/20983697/android-lock-screen-notifications-apps-manage-ambient-mode": {
+        "lexrank": [
+            "Select `` Apps & notifications'' > `` Notifications'' Scroll down to the `` Lock screen'' section.",
+            "Choose which apps appear on your lock screen The apps that appear on your lock screen are the same apps that are permitted to send you notifications.",
+            "But while we're waiting, there are ways to at least tweak the way notifications appear on your lock screen so that you get the information you want when you want it."
+        ]
+    }
+}

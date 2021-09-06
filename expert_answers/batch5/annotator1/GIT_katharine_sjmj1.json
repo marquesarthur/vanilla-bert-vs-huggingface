@@ -1,0 +1,54 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-190",
+      "tag": "SPAN",
+      "text": "\n          @2-4601 The only manager that I have allow me to specify if an app can send push notification to the notifications bar (options = Not authorized/Authorized/Notify) also if an app is authorized to startup with android and if an app is allowed l working when the screen is locked(for battery saving).\nI gave all authorizations but the pictures/names/phone numbers stil flickering.\nI tried to disable the huawei phone manager but I'm not allowed.\nI think this is a limitation of this version of EmotionUI/Android jelly bean.\n      ",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "I gave all authorizations but the pictures/names/phone numbers stil flickering.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-191",
+      "tag": "SPAN",
+      "text": "\n          My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.\n      ",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-196",
+      "tag": "SPAN",
+      "text": "\n          @5boro please discuss in english so everybody can understand what you say, not just french speaking people ;)\n\"Apparently the settings I talked about were implemented in version 3.0 of Emotion UI: http://www.anandtech.com/show/8655/the-huawei-ascend-mate-7-review/2 (last part of the article)\nI'm still convinced that there are some security settings in the OS that deny the access to the contacts.\nYou don't use Xprivacy or App Ops?\"\n      ",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "I'm still convinced that there are some security settings in the OS that deny the access to the contacts.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-202",
+      "tag": "SPAN",
+      "text": "\n          If the permission manager is not installed, there is no reason for TSecure not to be able to access your contacts.\nIt has to be present, maybe it's only accessible to root users...\n      ",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "If the permission manager is not installed, there is no reason for TSecure not to be able to access your contacts.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    }
+  ]
+}

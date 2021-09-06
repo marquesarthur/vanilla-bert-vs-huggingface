@@ -1,0 +1,78 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "The Toolbar is defined in activity_main.xml as a custom widget:",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "Also notice the tag",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "This loads the layout that you design in content_main.xml.",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "The two files are automatically merged together when activity_main.xml is loaded. ",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "When the Activity loads onCreate runs and inflates the layout in activity_main.xml and the included content_main.xml.",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "This is enough for the toolbar to display but for it to be used as a toolbar by the system we need to add:",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "All of this code is generated for you automatically and you will find it in the MainActivity.java file in onCreate:",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "If you take a look at the menu_main.xml file you can see the definition of this menu:",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "You can see that this defines a single menu with a single item with the title \"Settings\".",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "By default the system places menu items into the overflow area that is only revealed when the user selects the three dot icon or more generally the action overflow icon.",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-38",
+      "tag": "SPAN",
+      "text": "However for items that you would like to give the user a more direct access to you can set the showAsAction attribute.",
+      "href": "Android Adventures - Menus - The Toolbar"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "As you can see the Settings item in the default action bar is set to never show. ",
+      "href": "Android Adventures - Menus - The Toolbar"
+    }
+  ]
+}

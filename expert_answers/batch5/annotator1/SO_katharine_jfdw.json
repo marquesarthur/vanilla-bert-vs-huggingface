@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Don't mess with the visibility flags of the container - FragmentTransaction.hide/show does that internally for you.",
+      "href": "Show hide fragment in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "So the correct way to do this is:",
+      "href": "Show hide fragment in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "OR if you are using android.support.v4.app.Fragment",
+      "href": "Show hide fragment in android - Stack Overflow"
+    }
+  ]
+}

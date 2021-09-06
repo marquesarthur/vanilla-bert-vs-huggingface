@@ -1,0 +1,30 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "We start the thread which triggers the run method which was a part of the Runnable interface that we\u2019ve implemented.",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        },
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "Inside the run method, we update the progress every second which triggers the onProgressChanged method of the SeekBar listener.",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        },
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "When the user stops scrubbing the SeekBar the onStopTrackingTouch is triggered in which using the seekTo method we update the song position on the MediaPlayer instance.",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        },
+        {
+            "id": "eye-gazing-tag-40",
+            "tag": "SPAN",
+            "text": "seekTo(position) \u2013 This will be used with the SeekBar",
+            "href": "Android Media Player Song With SeekBar - JournalDev"
+        }
+    ]
+}

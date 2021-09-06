@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Java 8 (2014) solves this problem using streams and lambdas in one line of code:",
+      "href": "What is the best way to filter a Java Collection? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "Use Collection#removeIf to modify the collection in place.",
+      "href": "What is the best way to filter a Java Collection? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "lambdaj allows filtering collections without writing loops or inner classes:",
+      "href": "What is the best way to filter a Java Collection? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "Can you imagine something more readable?",
+      "href": "What is the best way to filter a Java Collection? - Stack Overflow"
+    }
+  ]
+}

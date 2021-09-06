@@ -1,0 +1,78 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the\nreCAPTCHA Android signup site, then\ncomplete the following sequence of steps:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2913",
+      "tag": "SPAN",
+      "text": "In the form that appears, provide the following information:\n\n\nLabel: A unique label for your key.\nTypically, you use the name of\nyour company or organization.\nPackage Names: Provide the package name of each app that uses this\nAPI key.\nIn order for an app to use the API, the package name that you\nenter must be an exact match of the package name for that app.\nEnter each\npackage name on its own line.\nSend alerts to owners: Check this checkbox if you want to receive\nemails about the reCAPTCHA API.\n",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "In the form that appears, provide the following information:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2923",
+      "tag": "SPAN",
+      "text": "Check the Accept the reCAPTCHA Terms of Service checkbox, then click\nRegister.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "Check the Accept the reCAPTCHA Terms of Service checkbox, then click\nRegister.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "In the Adding reCAPTCHA to your app section on the page that appears\nnext, your public and private keys appear under Site key and Secret\nkey, respectively.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "You use the site key when you send the verify\nrequest, and you use the secret key when you validate the\nuser response token.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "When using the\nverifyWithRecaptcha()\nmethod in your app, you must do the following:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2925",
+      "tag": "SPAN",
+      "text": "Pass in your API site key as a parameter.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2926",
+      "tag": "SPAN",
+      "text": "Override the onSuccess()\nand onFailure()\nmethods to handle both possible outcomes of the verification request task.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "The following code snippet shows how to invoke this method:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "To learn how to validate the user's response token, see Verifying the user's\nresponse.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    }
+  ]
+}

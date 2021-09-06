@@ -1,0 +1,24 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Both classes are based on the common base class JsonRequest.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "You use them\nfollowing the same basic pattern you use for other types of requests.",
+      "href": "Make a standard request  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "For example, this\nsnippet fetches a JSON feed and displays it as text in the UI:",
+      "href": "Make a standard request  |  Android Developers"
+    }
+  ]
+}

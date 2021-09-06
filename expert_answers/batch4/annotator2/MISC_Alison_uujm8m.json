@@ -1,0 +1,120 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-138",
+      "tag": "SPAN",
+      "text": "getLastLocation(GoogleApiClient) this API should be used when there is no need for continuous access to location from an application.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-141",
+      "tag": "SPAN",
+      "text": "requestLocationUpdates(GoogleApiClient,LocationRequest, LocationListener) this API should be used when there a need for continuous location updates and the location is accessed when the application is active in foreground.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "uid-248",
+      "tag": "CODE",
+      "text": "requestLocationUpdates(GoogleApiClient,LocationRequest, LocationListener)",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-142",
+      "tag": "SPAN",
+      "text": "requestLocationUpdates (GoogleApiClient, LocationRequest, PendingIntent) this API is used to receive location updates in the background even when the application is not active.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "uid-251",
+      "tag": "CODE",
+      "text": "requestLocationUpdates (GoogleApiClient, LocationRequest, PendingIntent)",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "Following is an example Android application that shows how to get the current user location.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "This also continuously updates the location on the move.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "Google Play Services is required.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Remember to give access permissions as shown below.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "You need not give permission for GPS, Network providers.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "Just on android.permission.ACCESS_FINE_LOCATION is enough.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "uid-267",
+      "tag": "CODE",
+      "text": "android.permission.ACCESS_FINE_LOCATION",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "FusedLocationProviderApi requires the GoogleApiClient instance to get the Location and it can be obtained as below.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "The following interfaces should be implemented to get the location update.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-148",
+      "tag": "SPAN",
+      "text": "LocationListener provides call back for location change through onLocationChanged.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-149",
+      "tag": "SPAN",
+      "text": "GoogleApiClient.ConnectionCallbacks provides call back for GoogleApiClient onConnected.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-150",
+      "tag": "SPAN",
+      "text": "GoogleApiClient.OnConnectionFailedListener provides call back for GoogleApiClient onConnectionFailed.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "uid-301",
+      "tag": "CODE",
+      "text": "GoogleApiClient.OnConnectionFailedListener",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Following is the complete class which accesses the Fused Location Provider to get the location continuously in the Android example application.",
+      "href": "Android Location Fused Provider - Javapapers"
+    }
+  ]
+}

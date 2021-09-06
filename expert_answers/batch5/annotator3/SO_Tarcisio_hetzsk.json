@@ -1,0 +1,42 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "Don't mess with the visibility flags of the container - FragmentTransaction.hide/show does that internally for you.",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "So the correct way to do this is:",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "OR if you are using android.support.v4.app.Fragment",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "Hi you do it by using this approach, all fragments will remain in the container once added initially and then we are simply revealing the desired fragment and hiding the others within the container.",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-21",
+            "tag": "SPAN",
+            "text": "Please see https://github.com/codepath/android_guides/wiki/Creating-and-Using-Fragments for more info.",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-32",
+            "tag": "SPAN",
+            "text": "In addittion, you can do in a Fragment (for example when getting server data failed):",
+            "href": "Show hide fragment in android - Stack Overflow"
+        }
+    ]
+}

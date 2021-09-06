@@ -1,0 +1,492 @@
+{
+    "task": "Java: Efficient ArrayList filtering?",
+    "description": "I need to filter an ArrayList and remove found elements.\nBeing relatively new to Java, I'm wondering what the most efficent method is to achieve this ( matters because it runs on mobile devices ).\nCan it be done without temporary objects ?\nMaybe by directly manipulating ( removing ) elements of the list being iterated ?",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/6280722",
+    "question_id": "6280722",
+    "resources": {
+        "api": [            
+            {
+                "link": "https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html",
+                "type": "java",
+                "content": [
+                    "In addition to Stream, which is a stream of object references, there are primitive specializations for IntStream, LongStream, and DoubleStream, all of which are referred to as `` streams'' and conform to the characteristics and restrictions described here.",
+                    "To perform a computation, stream operations are composed into a stream pipeline.",
+                    "A stream pipeline consists of a source ( which might be an array, a collection, a generator function, an I/O channel, etc ), zero or more intermediate operations ( which transform a stream into another stream, such as filter ( Predicate ) ), and a terminal operation ( which produces a result or side-effect, such as count ( ) or forEach ( Consumer ) ).",
+                    "Streams are lazy ; computation on the source data is only performed when the terminal operation is initiated, and source elements are consumed only as needed.",
+                    "Collections and streams, while bearing some superficial similarities, have different goals.",
+                    "Collections are primarily concerned with the efficient management of, and access to, their elements.",
+                    "By contrast, streams do not provide a means to directly access or manipulate their elements, and are instead concerned with declaratively describing their source and the computational operations which will be performed in aggregate on that source.",
+                    "However, if the provided stream operations do not offer the desired functionality, the BaseStream.iterator ( ) and BaseStream.spliterator ( ) operations can be used to perform a controlled traversal.",
+                    "A stream pipeline, like the `` widgets'' example above, can be viewed as a query on the stream source.",
+                    "Unless the source was explicitly designed for concurrent modification ( such as a ConcurrentHashMap ), unpredictable or erroneous behavior may result from modifying the stream source while it is being queried.",
+                    "Most stream operations accept parameters that describe user-specified behavior, such as the lambda expression w - > w.getWeight ( ) passed to mapToInt in the example above.",
+                    "To preserve correct behavior, these behavioral parameters:",
+                    "Such parameters are always instances of a functional interface such as Function, and are often lambda expressions or method references.",
+                    "Unless otherwise specified these parameters must be non-null.",
+                    "A stream should be operated on ( invoking an intermediate or terminal stream operation ) only once.",
+                    "This rules out, for example, `` forked'' streams, where the same source feeds two or more pipelines, or multiple traversals of the same stream.",
+                    "A stream implementation may throw IllegalStateException if it detects that the stream is being reused.",
+                    "However, since some stream operations may return their receiver rather than a new stream object, it may not be possible to detect reuse in all cases.",
+                    "Streams have a BaseStream.close ( ) method and implement AutoCloseable, but nearly all stream instances do not actually need to be closed after use.",
+                    "Generally, only streams whose source is an IO channel ( such as those returned by Files.lines ( Path, Charset ) ) will require closing.",
+                    "Most streams are backed by collections, arrays, or generating functions, which require no special resource management.",
+                    "( If a stream does require closing, it can be declared as a resource in a try-with-resources statement. )",
+                    "Stream pipelines may execute either sequentially or in parallel.",
+                    "This execution mode is a property of the stream.",
+                    "Streams are created with an initial choice of sequential or parallel execution.",
+                    "( For example, Collection.stream ( ) creates a sequential stream, and Collection.parallelStream ( ) creates a parallel one. )",
+                    "This choice of execution mode may be modified by the BaseStream.sequential ( ) or BaseStream.parallel ( ) methods, and may be queried with the BaseStream.isParallel ( ) method.",
+                    "This is an intermediate operation.",
+                    "If orders is a stream of purchase orders, and each purchase order contains a collection of line items, then the following produces a stream containing all the line items in all the orders:",
+                    "If path is the path to a file, then the following produces a stream of the words contained in that file:",
+                    "For ordered streams, the selection of distinct elements is stable ( for duplicated elements, the element appearing first in the encounter order is preserved. )",
+                    "For unordered streams, no stability guarantees are made.",
+                    "This is a stateful intermediate operation.",
+                    "For ordered streams, the sort is stable.",
+                    "For parallel stream pipelines, the action may be called at whatever time and in whatever thread the element is made available by the upstream operation.",
+                    "If the action modifies shared state, it is responsible for providing the required synchronization.",
+                    "This is a short-circuiting stateful intermediate operation.",
+                    "This is a terminal operation.",
+                    "The behavior of this operation is explicitly nondeterministic.",
+                    "For parallel stream pipelines, this operation does not guarantee to respect the encounter order of the stream, as doing so would sacrifice the benefit of parallelism.",
+                    "For any given element, the action may be performed at whatever time and in whatever thread the library chooses.",
+                    "If the action accesses shared state, it is responsible for providing the required synchronization.",
+                    "This operation processes the elements one at a time, in encounter order if one exists.",
+                    "Performing the action for one element happens-before performing the action for subsequent elements, but for any given element, the action may be performed in whatever thread the library chooses.",
+                    "The identity value must be an identity for the accumulator function.",
+                    "This means that for all t, accumulator.apply ( identity, t ) is equal to t.",
+                    "The accumulator function must be an associative function.",
+                    "While this may seem a more roundabout way to perform an aggregation compared to simply mutating a running total in a loop, reduction operations parallelize more gracefully, without needing additional synchronization and with greatly reduced risk of data races.",
+                    "The identity value must be an identity for the combiner function.",
+                    "This means that for all u, combiner ( identity, u ) is equal to u. Additionally, the combiner function must be compatible with the accumulator function ; for all u and t, the following must hold:",
+                    "Like reduce ( Object, BinaryOperator ), collect operations can be parallelized without requiring additional synchronization.",
+                    "The following will take a stream of strings and concatenates them into a single string:",
+                    "If the stream is parallel, and the Collector is concurrent, and either the stream is unordered or the collector is unordered, then a concurrent reduction will be performed ( see Collector for details on concurrent reduction. )",
+                    "When executed in parallel, multiple intermediate results may be instantiated, populated, and merged so as to maintain isolation of mutable data structures.",
+                    "Therefore, even when executed in parallel with non-thread-safe data structures ( such as ArrayList ), no additional synchronization is needed for a parallel reduction.",
+                    "The following will classify Person objects by city:",
+                    "The following will classify Person objects by state and city, cascading two Collectors together:",
+                    "This is a short-circuiting terminal operation.",
+                    "The behavior of this operation is explicitly nondeterministic ; it is free to select any element in the stream.",
+                    "This is to allow for maximal performance in parallel operations ; the cost is that multiple invocations on the same source may not return the same result.",
+                    "( If a stable result is desired, use findFirst ( ) instead. )",
+                    "The first element ( position 0 ) in the Stream will be the provided seed.",
+                    "For n > 0, the element at position n, will be the result of applying the function f to the element at position n - 1.",
+                    ""
+                ],
+                "title": "Stream (Java Platform SE 8 )"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/MobiVM/robovm/issues/236",
+                "content": [
+                    "ArrayList Iterator Remove is very slow compared to normal computer \u00b7 Issue # 236 \u00b7 MobiVM/robovm \u00b7 GitHub",
+                    "ArrayList Iterator Remove is very slow compared to normal computer",
+                    "Please ensure you have given all the following requested information in your report.",
+                    "I had to filter a huge ArrayList on my iPad today.",
+                    "Which I realized via an Iterator with conditional remove call.",
+                    "I noticed, removing 100,000 entries from the list takes about 1100 ms on my Windows-Device.",
+                    "But for some unknown reason it takes about 200,000 ms on the iPad.",
+                    "Please provide detailed step by step instructions that will reproduce this issue",
+                    "Of course this test-code removes all entries from the list which can be done by calling the clear method, but in my case I ran into the situation where I had to remove about 80 % of the lists content.",
+                    "The list was slightly larger too.",
+                    "I was able to help myself by using a different kind of collection but I wonder if there is something wrong with the implementation on IOS side, since it seems unusual slow for such a simple task compared to a Windows machine handling the same in just one second.",
+                    "Please provide the build system, version ( s ), and targets affected.",
+                    "Please provide the version of RoboVM, XCode and JDK used",
+                    "Please provide the build targets this issue is seen on if applicable.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "An ArrayList is a very bad choice if you intend removing elements.",
+                    "Filtering any collection, especially if you expect to end up with a small subset, is best done by creating a new collection and adding the desired elements to it.",
+                    "Removing an element from an ArrayList results in a call to arraycopy ( ) which on RoboVM is",
+                    "implemented as a loop for non-primitive types which is why it's so slow, but since ArrayList it is not intended to be used in that manner, I would see little value in anyone spending time to improve it.",
+                    "I was able to improve it by not using an Arraylist but Instead a LinkedList which improved it a lot.",
+                    "I just reported it because the very same test is so much faster on other devices.",
+                    "I dont really intend to revert it back to an ArrayList because the LinkedList works just fine.",
+                    "So I dont really mind if this one gets closed.",
+                    "But I thought it may be a good idea to take a closer look at it.",
+                    "Well or at least to let people know that they should not do the same as I did.",
+                    "I just couldn't leave this one alone.",
+                    "So, first up, here is a test file and some results.",
+                    "Running on Android, Genymotion simulator on a late model iMac, the times are:",
+                    "Not too shabby, and reasonably consistent between the two ( string is presumably slower because pointers are 64 bit vs ints being 32 bit. )",
+                    "On RoboVM running on an iPad simulator, same host machine:",
+                    "The String case is pretty pathetic, due to the array copy being done by a Java loop.",
+                    "Now with some VM tweaks - same simulator, same host:",
+                    "32 bit iPad 4th Gen - faster on String arrayCopy due to 32 bit pointers.",
+                    "CPU clock speed is similar to the mini:",
+                    "And completing the comparison - reverting back to the original VM on 32 bit iPad gives these numbers:",
+                    "This was referenced Feb 12, 2018",
+                    ""
+                ],
+                "title": "ArrayList Iterator Remove is very slow compared to normal computer \u00b7 Issue # 236 \u00b7 MobiVM/robovm \u00b7 GitHub"
+            }            
+        ],
+        "qa": [            
+            {
+                "uid": "122105",
+                "link": "https://stackoverflow.com/questions/122105",
+                "title": "What is the best way to filter a Java Collection?",
+                "answers": [
+                    {
+                        "uid": 122128,
+                        "score": 92,
+                        "text": [
+                            "Use LINK, from Apache Commons."
+                        ]
+                    },
+                    {
+                        "uid": 122139,
+                        "score": 62,
+                        "text": [
+                            "Consider LINK for an updated Collections framework that supports generics.",
+                            "UPDATE: The google collections library is now deprecated.",
+                            "You should use the latest release of LINK instead.",
+                            "It still has all the same extensions to the collections framework including a mechanism for filtering based on a predicate."
+                        ]
+                    },
+                    {
+                        "uid": 122200,
+                        "score": 7,
+                        "text": [
+                            "Are you sure you want to filter the Collection itself, rather than an iterator ?",
+                            "see LINK",
+                            "or using version 4 of apache commons LINK"
+                        ]
+                    },
+                    {
+                        "uid": 122204,
+                        "score": 7,
+                        "text": [
+                            "The setup:",
+                            "The usage:"
+                        ]
+                    },
+                    {
+                        "uid": 122206,
+                        "score": 67,
+                        "text": [
+                            "`` Best'' way is too wide a request.",
+                            "Is it `` shortest'' ?",
+                            "`` Fastest'' ?",
+                            "`` Readable'' ?",
+                            "Filter in place or into another collection ?",
+                            "Simplest -LRB- but not most readable -RRB- way is to iterate it and use Iterator.remove -LRB- -RRB- method:",
+                            "Now, to make it more readable, you can wrap it into a utility method.",
+                            "Then invent a IPredicate interface, create an anonymous implementation of that interface and do something like:",
+                            "where filterInPlace -LRB- -RRB- iterate the collection and calls Predicate.keepIt -LRB- -RRB- to learn if the instance to be kept in the collection.",
+                            "I don't really see a justification for bringing in a third-party library just for this task."
+                        ]
+                    },
+                    {
+                        "uid": 122207,
+                        "score": 225,
+                        "text": [
+                            "Assuming that you are using LINK, and that you can not add LINK, I would do something very similar to what the Google guys did.",
+                            "This is a slight variation on Jon's comments.",
+                            "First add this interface to your codebase.",
+                            "Its implementers can answer when a certain predicate is true of a certain type.",
+                            "E.g..",
+                            "If T were User and AuthorizedUserPredicate <User> implements IPredicate <T>, then AuthorizedUserPredicate #apply returns whether the passed in User is authorized.",
+                            "Then in some utility class, you could say",
+                            "So, assuming that you have the use of the above might be",
+                            "If performance on the linear check is of concern, then I might want to have a domain object that has the target collection.",
+                            "The domain object that has the target collection would have filtering logic for the methods that initialize, add and set the target collection.",
+                            "UPDATE:",
+                            "In the utility class -LRB- let's say Predicate -RRB-, I have added a select method with an option for default value when the predicate doesn't return the expected value, and also a static property for params to be used inside the new IPredicate.",
+                            "The following example looks for missing objects between collections:",
+                            "The following example, looks for an instance in a collection, and returns the first element of the collection as default value when the instance is not found:",
+                            "UPDATE -LRB- after Java 8 release -RRB-:",
+                            "It's been several years since I -LRB- Alan -RRB- first posted this answer, and I still can not believe I am collecting SO points for this answer.",
+                            "At any rate, now that Java 8 has introduced closures to the language, my answer would now be considerably different, and simpler.",
+                            "With Java 8, there is no need for a distinct static utility class.",
+                            "So if you want to find the 1st element that matches your predicate.",
+                            "The JDK 8 API for optionals has the ability to get -LRB- -RRB-, isPresent -LRB- -RRB-, orElse -LRB- defaultUser -RRB-, orElseGet -LRB- userSupplier -RRB- and orElseThrow -LRB- exceptionSupplier -RRB-, as well as other ` monadic' functions such as map, flatMap and filter.",
+                            "If you want to simply collect all the users which match the predicate, then use the Collectors to terminate the stream in the desired collection.",
+                            "See LINK for more examples on how Java 8 streams work."
+                        ]
+                    },
+                    {
+                        "uid": 122773,
+                        "score": 5,
+                        "text": [
+                            "The LINK method in LINK does just what you're looking for."
+                        ]
+                    },
+                    {
+                        "uid": 337135,
+                        "score": 5,
+                        "text": [
+                            "With the ForEach DSL you may write",
+                            "Given a collection of -LSB- The, quick, brown, fox, jumps, over, the, lazy, dog -RSB- this results in -LSB- quick, brown, jumps, over, lazy -RSB-, ie all strings longer than three characters.",
+                            "All iteration styles supported by the ForEach DSL are",
+                            "For more details, please refer to LINK"
+                        ]
+                    },
+                    {
+                        "uid": 1385698,
+                        "score": 730,
+                        "text": [
+                            "Java 8 -LRB- LINK -RRB- solves this problem using streams and lambdas in one line of code:",
+                            "Here's a LINK.",
+                            "Use LINK to modify the collection in place.",
+                            "-LRB- Notice: In this case, the predicate will remove objects who satisfy the predicate -RRB-:",
+                            "LINK allows filtering collections without writing loops or inner classes:",
+                            "Can you imagine something more readable ?",
+                            "Disclaimer: I am a contributor on lambdaj"
+                        ]
+                    },
+                    {
+                        "uid": 2106948,
+                        "score": 3,
+                        "text": [
+                            "This, combined with the lack of real closures, is my biggest gripe for Java.",
+                            "Honestly, most of the methods mentioned above are pretty easy to read and REALLY efficient ; however, after spending time with.",
+                            "Net, Erlang, etc..",
+                            ".",
+                            "list comprehension integrated at the language level makes everything so much cleaner.",
+                            "Without additions at the language level, Java just cant be as clean as many other languages in this area.",
+                            "If performance is a huge concern, Google collections is the way to go -LRB- or write your own simple predicate utility -RRB-.",
+                            "Lambdaj syntax is more readable for some people, but it is not quite as efficient.",
+                            "And then there is a library I wrote.",
+                            "I will ignore any questions in regard to its efficiency -LRB- yea, its that bad -RRB- ....",
+                            "Yes, i know its clearly reflection based, and no I don't actually use it, but it does work:",
+                            "OR"
+                        ]
+                    },
+                    {
+                        "uid": 2578408,
+                        "score": 2,
+                        "text": [
+                            "I wrote LINK that support applying functional algorithms without copying the collection content.",
+                            "Usage:",
+                            "The code above will actually execute"
+                        ]
+                    },
+                    {
+                        "uid": 10027150,
+                        "score": 2,
+                        "text": [
+                            "JFilter LINK is best suited for your requirement.",
+                            "JFilter is a simple and high performance open source library to query collection of Java beans.",
+                            "Key features"
+                        ]
+                    },
+                    {
+                        "uid": 11713441,
+                        "score": 2,
+                        "text": [
+                            "Use LINK.",
+                            "It is by far the fastest way to do this.",
+                            "See also: LINK"
+                        ]
+                    },
+                    {
+                        "uid": 12573823,
+                        "score": 7,
+                        "text": [
+                            "Let's look at how to filter a built-in JDK List and a LINK using LINK.",
+                            "If you wanted to filter the numbers less than 3, you would expect the following outputs.",
+                            "Here's how you can filter using a Java 8 lambda as the Predicate.",
+                            "Here's how you can filter using an anonymous inner class as the Predicate.",
+                            "Here are some alternatives to filtering JDK lists and LINK MutableLists using the LINK factory.",
+                            "Here is a version that doesn't allocate an object for the predicate, by using the LINK factory instead with the selectWith method that takes a Predicate2.",
+                            "Sometimes you want to filter on a negative condition.",
+                            "There is a special method in Eclipse Collections for that called reject.",
+                            "The method partition will return two collections, containing the elements selected by and rejected by the Predicate.",
+                            "Note: I am a committer for Eclipse Collections."
+                        ]
+                    },
+                    {
+                        "uid": 18508956,
+                        "score": 30,
+                        "text": [
+                            "Wait for Java 8:"
+                        ]
+                    },
+                    {
+                        "uid": 19623934,
+                        "score": 11,
+                        "text": [
+                            "Since the early release of Java 8, you could try something like:",
+                            "For example, if you had a list of integers and you wanted to filter the numbers that are > 10 and then print out those numbers to the console, you could do something like:"
+                        ]
+                    },
+                    {
+                        "uid": 23601384,
+                        "score": 7,
+                        "text": [
+                            "How about some plain and straighforward Java",
+                            "Simple, readable and easy -LRB- and works in Android ! -RRB-",
+                            "But if you're using Java 8 you can do it in a sweet one line:",
+                            "Note that toList -LRB- -RRB- is statically imported"
+                        ]
+                    },
+                    {
+                        "uid": 24561326,
+                        "score": 1,
+                        "text": [
+                            "The simple pre-Java8 solution:",
+                            "Unfortunately this solution isn't fully generic, outputting a list rather than the type of the given collection.",
+                            "Also, bringing in libraries or writing functions that wrap this code seems like overkill to me unless the condition is complex, but then you can write a function for the condition."
+                        ]
+                    },
+                    {
+                        "uid": 24924039,
+                        "score": 11,
+                        "text": [
+                            "I'll throw LINK in the ring, which is also available on LINK.",
+                            "RxJava might not always be the best option, but it will give you more flexibility if you wish add more transformations on your collection or handle errors while filtering.",
+                            "Output:",
+                            "More details on RxJava's filter can be found LINK."
+                        ]
+                    },
+                    {
+                        "uid": 25645013,
+                        "score": 1,
+                        "text": [
+                            "LINK",
+                            "Supports different possibilities,",
+                            "Given collection,",
+                            "of type,",
+                            "Filter",
+                            "Java 7",
+                            "Java 8",
+                            "Also,",
+                            "Sorting -LRB- also available for the Java 7 -RRB-",
+                            "Grouping -LRB- also available for the Java 7 -RRB-",
+                            "Joins -LRB- also available for the Java 7 -RRB-",
+                            "Given,",
+                            "Can be Joined like,",
+                            "Expressions"
+                        ]
+                    },
+                    {
+                        "uid": 27818083,
+                        "score": 2,
+                        "text": [
+                            "Some really great great answers here.",
+                            "Me, I'd like to keep thins as simple and readable as possible:"
+                        ]
+                    },
+                    {
+                        "uid": 29795865,
+                        "score": 1,
+                        "text": [
+                            "My answer builds on that from Kevin Wong, here as a one-liner using CollectionUtils from spring and a Java 8 lambda expression.",
+                            "This is as concise and readable as any alternative I have seen -LRB- without using aspect-based libraries -RRB-",
+                            "Spring LINK is available from spring version 4.0.2.",
+                            "RELEASE, and remember you need JDK 1.8 and language level 8 +."
+                        ]
+                    },
+                    {
+                        "uid": 34245383,
+                        "score": 2,
+                        "text": [
+                            "Using java 8, specifically lambda expression, you can do it simply like the below example:",
+                            "where for each product inside myProducts collection, if prod.price > 10, then add this product to the new filtered list."
+                        ]
+                    },
+                    {
+                        "uid": 41160462,
+                        "score": 0,
+                        "text": [
+                            "With Guava:"
+                        ]
+                    },
+                    {
+                        "uid": 44570130,
+                        "score": 1,
+                        "text": [
+                            "I needed to filter a list depending on the values already present in the list.",
+                            "For example, remove all values following that is less than the current value.",
+                            "-LCB- 2 5 3 4 7 5 -RCB- - > -LCB- 2 5 7 -RCB-.",
+                            "Or for example to remove all duplicates -LCB- 3 5 4 2 3 5 6 -RCB- - > -LCB- 3 5 4 2 6 -RCB-.",
+                            "This will bee used like this."
+                        ]
+                    },
+                    {
+                        "uid": 50511268,
+                        "score": 5,
+                        "text": [
+                            "Since java 9 Collectors.filtering is enabled:",
+                            "Thus filtering should be:",
+                            "Example:"
+                        ]
+                    },
+                    {
+                        "uid": 52875398,
+                        "score": 1,
+                        "text": [
+                            "In Java 8, You can directly use this filter method and then do that."
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "collections",
+                    "filter"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://dzone.com/articles/iteration-over-java-collections-with-high-performa",
+                "type": "misc",
+                "content": [
+                    "Thanks for visiting DZone today,",
+                    "How to Post to DZone",
+                    "Over 2 million developers have joined DZone.",
+                    "DZone > Java Zone > Iteration Over Java Collections With High Performance",
+                    "Iteration Over Java Collections With High Performance",
+                    "Learn more about the forEach loop in Java and how it compares to C style and Stream API in this article on dealing with collections in Java.",
+                    "Jul. 13, 18 \u00b7 Java Zone",
+                    "Join the DZone community and get the full member experience.",
+                    "Introduction Java developers usually deal with collections such as ArrayList and HashSet.",
+                    "Java 8 came with lambda and the streaming API that helps us to easily work with collections.",
+                    "In most cases, we work with a few thousands of items and performance isn't a concern.",
+                    "But, in some extreme situations, when we have to travel over a few millions of items several times, performance will become a pain.",
+                    "I use JMH for checking the running time of each code snippet.",
+                    "forEach vs. C Style vs. Stream API Iteration is a basic feature.",
+                    "All programming languages have simple syntax to allow programmers to run through collections.",
+                    "Stream API can iterate over Collections in a very straightforward manner.",
+                    "The forEach loop is just as simple:",
+                    "C style is more verbose, but still very compact:",
+                    "With C style, JVM simply increases an integer, then reads the value directly from memory.",
+                    "This makes it very fast.",
+                    "But forEach is very different, according to this answer on StackOverFlow and document from Oracle, JVM has to convert forEach to an iterator and call hasNext ( ) with every item.",
+                    "This is why forEach is slower than the C style.",
+                    "Which Is the High-Performance Way to Travelling Over Set ?",
+                    "The Java Set also supports Stream API and forEach loop.",
+                    "According to the previous test, if we convert Set to ArrayList, then travel over ArrayList, maybe the performance improve ?",
+                    "How about a combination of the iterator with the C style for loop ?",
+                    "Or, what about simple travel ?",
+                    "This is a nice idea, but it doesn't work because initializing the new ArrayList also consumes resources.",
+                    "HashMap ( HashSet uses HashMap < E, Object > ) isn't designed for iterating all items.",
+                    "The fastest way to iterate over HashMap is a combination of Iterator and the C style for loop, because JVM doesn't have to call hasNext ( ).",
+                    "Conclusion Foreach and Stream API are convenient to work with Collections.",
+                    "You can write code faster.",
+                    "But, when your system is stable and performance is a major concern, you should think about rewriting your loop.",
+                    "If you enjoyed this article and want to learn more about Java Collections, check out this collection of tutorials and articles on all things Java Collections.",
+                    "java, collection, high performance, c style, foreach loop, stream api",
+                    "Published at DZone with permission of Dang Ngoc Vu.",
+                    "See the original article here.",
+                    "Opinions expressed by DZone contributors are their own.",
+                    "The Biggest Microservices Mistake You Don't Want to Make",
+                    "Open Source Solution for Building Invincible Apps",
+                    "Advice for Someone Moving From SRE to Backend Engineering",
+                    "Eight Questions I Had Every Day As A Dev Team Lead",
+                    "About DZone Send feedback Careers Sitemap",
+                    "Developer Marketing Blog Advertise with DZone +1 (919)\u00a0238-7100",
+                    "Article Submission Guidelines MVB Program Become a Contributor Visit the Writers' Zone",
+                    "Terms of Service Privacy Policy",
+                    "600 Park Offices Drive Suite 150 Research Triangle Park, NC 27709 support@dzone.com +1 (919)\u00a0678-0300",
+                    ""
+                ],
+                "title": "Iteration Over Java Collections With High Performance - DZone Java"
+            }
+        ]
+    },
+    "parsed": true
+}

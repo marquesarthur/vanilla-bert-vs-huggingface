@@ -1,0 +1,120 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "one way could be to encrypt it using a passcode.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Client will use this passcode to encrypt user’s email ID and send to the server.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "Server will, in turn, use the same passcode to decrypt the data received from the client.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "If during the transmission of the data someone gets access to the transmitting data, he/ she wouldn’t be able to make sense of it as it is encrypted.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "This kind of encryption technique is called symmetric encryption.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "What if there was an encryption technique where the algorithm would generate a key pair for you comprising of 2 keys.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "This kind of encryption technique is called asymmetric encryption.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "So now it is clear that you can’t use symmetric encryption because you can’t ship the passcode in your app.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-103",
+      "tag": "SPAN",
+      "text": "Using an asymmetric encryption (say RSA), the server generates a key pair consisting of a public key and a private key.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-104",
+      "tag": "SPAN",
+      "text": "Server saves these keys in a secure location.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-105",
+      "tag": "SPAN",
+      "text": "We take public key and ship it in our app (client).",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-106",
+      "tag": "SPAN",
+      "text": "When we want to transfer some sensitive data to server (at runtime), we generate a passcode (aka secret key) using a symmetric encryption (say AES).",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-107",
+      "tag": "SPAN",
+      "text": "Using this secret key we encrypt our large texts of data quickly.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-108",
+      "tag": "SPAN",
+      "text": "Now we use the public key to encrypt our secret key.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-109",
+      "tag": "SPAN",
+      "text": "We send this encrypted data and encrypted secret key combination to server (using any commonly used way to send combination of data, like JSON)",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-110",
+      "tag": "SPAN",
+      "text": "Server receives this combination, extracts encrypted data and encrypted secret key from it.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-111",
+      "tag": "SPAN",
+      "text": "Server uses private key to decrypt the encrypted secret key.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-112",
+      "tag": "SPAN",
+      "text": "Server uses decrypted secret key (or simply called secret key) to decrypt the encrypted data.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "This technique is called Hybrid Cryptography.",
+      "href": "How to pass large data between server and client (android) securely? | by Mayank Mohan Upadhyay | MindOrks | Medium"
+    }
+  ]
+}

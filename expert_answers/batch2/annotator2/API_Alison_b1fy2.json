@@ -1,0 +1,102 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-8011",
+      "tag": "CODE",
+      "text": "SurfaceView",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Adding camera features to your manifest causes Google Play to prevent your application from\nbeing installed to devices that do not include a camera or do not support the camera features you\nspecify.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3022",
+      "tag": "SPAN",
+      "text": "Create a Preview Class - Create a camera preview class that extends SurfaceView and implements the SurfaceHolder interface.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3023",
+      "tag": "SPAN",
+      "text": "This\nclass previews the live images from the camera.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3024",
+      "tag": "SPAN",
+      "text": "Build a Preview Layout - Once you have the camera preview class, create a\nview layout that incorporates the preview and the user interface controls you want.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "A camera preview class is a SurfaceView that can display the live image\ndata coming from a camera, so users can frame and capture a picture or video.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "uid-8140",
+      "tag": "CODE",
+      "text": "SurfaceView",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": "The following example code demonstrates how to create a basic camera preview class that can be\nincluded in a View layout.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "This class implements SurfaceHolder.Callback in order to capture the callback events\nfor creating and destroying the view, which are needed for assigning the camera preview input.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "If you want to set a specific size for your camera preview, set this in the surfaceChanged() method as noted in the comments above.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "When setting preview size, you\nmust use values from getSupportedPreviewSizes().",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-53",
+      "tag": "SPAN",
+      "text": "Do not set arbitrary values in the setPreviewSize() method.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "On most devices, the default orientation of the camera preview is landscape.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-65",
+      "tag": "SPAN",
+      "text": "For simplicity in rendering a camera preview, you should change your\napplication's preview activity orientation to landscape by adding the following to your\nmanifest.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-67",
+      "tag": "SPAN",
+      "text": "Starting in Android 2.2 (API Level 8), you can use the setDisplayOrientation() method to set the\nrotation of the preview image.",
+      "href": "Camera API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-68",
+      "tag": "SPAN",
+      "text": "In order to change preview orientation as the user re-orients the\nphone, within the surfaceChanged() method of your preview class, first stop the preview with Camera.stopPreview() change the orientation and then\nstart the preview again with Camera.startPreview().",
+      "href": "Camera API  |  Android Developers"
+    }
+  ]
+}

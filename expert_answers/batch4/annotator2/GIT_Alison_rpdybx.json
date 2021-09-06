@@ -1,0 +1,12 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "This check happens before anything else when processing the send command, and the check for whether it's a group message is at the very end of that section, so it's never reached due to the failed recipient check.",
+      "href": "Can't send group messages. · Issue #175 · AsamK/signal-cli · GitHub"
+    }
+  ]
+}

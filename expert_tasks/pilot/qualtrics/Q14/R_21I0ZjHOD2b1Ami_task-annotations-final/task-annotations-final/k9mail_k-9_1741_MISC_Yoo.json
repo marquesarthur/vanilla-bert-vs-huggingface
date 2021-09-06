@@ -1,0 +1,42 @@
+{
+  "session_uid": "Yoo",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "The default message is “Shortcut isn’t available”, but you can override that by using android:shortcutDisabledMessage and providing a string resource.",
+      "href": "Implementing Android App Shortcuts | by Andrew Orobator | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-39",
+      "tag": "SPAN",
+      "text": "Both android:shortcutLongLabel and android:shortcutShortLabel are labels shown to the user displaying the name of the shortcut.",
+      "href": "Implementing Android App Shortcuts | by Andrew Orobator | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "Dynamic Shortcuts",
+      "href": "Implementing Android App Shortcuts | by Andrew Orobator | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "Dynamic shortcuts are the second type of shortcuts, and to interact with them (create/destroy/update) you’ll need to use the ShortcutManager.",
+      "href": "Implementing Android App Shortcuts | by Andrew Orobator | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-69",
+      "tag": "SPAN",
+      "text": "Now that we know how to make both types of shortcuts, let’s talk about turning them on and off.",
+      "href": "Implementing Android App Shortcuts | by Andrew Orobator | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-90",
+      "tag": "SPAN",
+      "text": "When you’re actively developing, you’ll probably be using the updateShortcuts(), setDynamicShortcuts(), and addDynamicShortcuts() methods quite frequently.",
+      "href": "Implementing Android App Shortcuts | by Andrew Orobator | Medium"
+    }
+  ]
+}

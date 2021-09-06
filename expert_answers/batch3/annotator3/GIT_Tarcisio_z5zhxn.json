@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-203",
+      "tag": "SPAN",
+      "text": "\n          I put this code and it can be accessed globally.\nBuildMode buildMode = (() {\n  if (kReleaseMode) {\n    return BuildMode.release;\n  }\n  var result = BuildMode.profile;\n  assert(() {\n    result = BuildMode.debug;\n    return true;\n  }());\n  return result;\n}());\n    \n      \n    \n\n      \n    \n\n    \n  \n      ",
+      "href": "Document how to check if profile/release/debug mode in dart · Issue #11392 · flutter/flutter · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "I put this code and it can be accessed globally.",
+      "href": "Document how to check if profile/release/debug mode in dart · Issue #11392 · flutter/flutter · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-205",
+      "tag": "SPAN",
+      "text": "\n          \nYes, I just added kReleaseMode as a more discoverable public constant (in \"package:flutter/framework.dart\").\n",
+      "href": "Document how to check if profile/release/debug mode in dart · Issue #11392 · flutter/flutter · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-206",
+      "tag": "SPAN",
+      "text": "It proved too difficult to implement the equivalents (as const values, at least) for kDebugMode and kProfileMode in all contexts, so I didn't do that.",
+      "href": "Document how to check if profile/release/debug mode in dart · Issue #11392 · flutter/flutter · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-207",
+      "tag": "SPAN",
+      "text": "They could easily be implemented as getters or functions, but they wouldn't be usable in const contexts.",
+      "href": "Document how to check if profile/release/debug mode in dart · Issue #11392 · flutter/flutter · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "I noticed that kDebugMode and kProfileMode were added at #31696 .",
+      "href": "Document how to check if profile/release/debug mode in dart · Issue #11392 · flutter/flutter · GitHub"
+    }
+  ]
+}

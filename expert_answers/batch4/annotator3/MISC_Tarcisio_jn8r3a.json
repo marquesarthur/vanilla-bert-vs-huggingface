@@ -1,0 +1,60 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "The solution to open PDF is solved by the introduction of the class PdfRenderer in Android-Lollipop (API 21).",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "Get a seekable file descriptor from our pdf document :",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "Now let’s create the PDFRenderer instance using the ParcleFileDescriptor obtained above :",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "Let’s create the Bitmap instance with the required dimensions:",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "Not get the page to render using PdfRenderer.Page by just passing the index of the page",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "Lastly, render the page to bitmap created in step 3:",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "Close the page and renderer once you are done",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "Our example is to render a document which is a bitmap in our case so we need an ImageView, as it displays one page at a time we need two buttons to move to next & previous pages if available.",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-39",
+      "tag": "SPAN",
+      "text": "Now we are done with designing let's move to the coding part it’s nothing but a fragment handling all the steps discussed above",
+      "href": "Rendering PDF Document’s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+    }
+  ]
+}

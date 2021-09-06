@@ -1,0 +1,72 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-282",
+      "tag": "H5",
+      "text": "Step 1. Stop using battery & phone optimizing apps",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "uid-288",
+      "tag": "H5",
+      "text": "Step 2. Don’t kill background processes yourself",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "uid-302",
+      "tag": "H5",
+      "text": "Step 3. Use Power Saver mode wisely",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "uid-310",
+      "tag": "H5",
+      "text": "Step 4. Keep Wi-Fi enabled at all times",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "uid-330",
+      "tag": "H5",
+      "text": "Step 5. Fixing delayed notifications for a particular app",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-128",
+      "tag": "SPAN",
+      "text": "Select the respective app, make sure \"Restrict app background data\" feature is turned off.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-129",
+      "tag": "SPAN",
+      "text": "Go to Apps from the phone Settings and open up the respective app.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-131",
+      "tag": "SPAN",
+      "text": "Tap on\"Clear Cache\" button to flush the cache.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-132",
+      "tag": "SPAN",
+      "text": "You can also tap on‘Clear data\" button to delete all the data of the app.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "Both of these options will be set to 5 minutes, which is perfect as most connections usually timeout after 5 minutes or more.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "Tap on the Apply button to apply this heartbeat interval and you should start receiving notifications in time.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    }
+  ]
+}

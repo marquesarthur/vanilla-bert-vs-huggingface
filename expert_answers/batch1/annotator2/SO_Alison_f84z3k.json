@@ -1,0 +1,48 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-10",
+            "tag": "SPAN",
+            "text": "getView() is the main part of your adapter.",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-11",
+            "tag": "SPAN",
+            "text": "It returns View that will be displayed as your list/grid/gallary/any view that use adapter item.",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": "So the first thing you should do its to create your custom adapter.",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": "You may extend it from BaseAdapter.",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        },
+        {
+            "id": "uid-765",
+            "tag": "CODE",
+            "text": "BaseAdapter",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "After that override getView() method and make sure to return your custom View there.",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "It triggers when you scroll the view(list for example).",
+            "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+        }
+    ]
+}

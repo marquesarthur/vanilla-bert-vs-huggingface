@@ -1,0 +1,54 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-6482",
+            "tag": "SPAN",
+            "text": "\n      \n      get(String name)\n      \n      \n        Returns the value mapped by name, or throws if no such mapping exists.\n        \n    \n\n      \n    ",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-31",
+            "tag": "SPAN",
+            "text": "Returns the value mapped by name, or throws if no such mapping exists.",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-6492",
+            "tag": "SPAN",
+            "text": "\n      \n      getJSONObject(String name)\n      \n      \n        Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.\n        \n    \n\n      \n    ",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-41",
+            "tag": "SPAN",
+            "text": "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "uid-34738",
+            "tag": "PRE",
+            "text": "public JSONObject getJSONObject (String name)",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-184",
+            "tag": "SPAN",
+            "text": "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-6644",
+            "tag": "SPAN",
+            "text": "if the mapping doesn't exist or is not a JSONObject.",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-78",
+            "tag": "SPAN",
+            "text": " Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
+            "href": "JSONObject \u00a0|\u00a0 Android Developers"
+        }
+    ]
+}

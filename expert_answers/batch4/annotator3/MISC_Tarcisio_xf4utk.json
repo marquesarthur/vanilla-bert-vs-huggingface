@@ -1,0 +1,12 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Here is a sample code that creates a file in the internal storage:",
+      "href": "Read and Store Json Files in Internal Storage - AmyZhu's Blog"
+    }
+  ]
+}

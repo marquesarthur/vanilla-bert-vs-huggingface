@@ -1,0 +1,30 @@
+{
+  "session_uid": "Yoo",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "getView(int,%20android.view.View,%20android.view.ViewGroup)",
+      "tag": "H3",
+      "text": "getView",
+      "href": "ArrayAdapter  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-6730",
+      "tag": "SPAN",
+      "text": "convertView",
+      "href": "ArrayAdapter  |  Android Developers"
+    },
+    {
+      "id": "uid-35199",
+      "tag": "CODE",
+      "text": "convertView",
+      "href": "ArrayAdapter  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-6731",
+      "tag": "SPAN",
+      "text": "\n          View: This value may be null.",
+      "href": "ArrayAdapter  |  Android Developers"
+    }
+  ]
+}

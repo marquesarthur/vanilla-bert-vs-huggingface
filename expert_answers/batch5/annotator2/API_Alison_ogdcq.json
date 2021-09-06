@@ -1,0 +1,36 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "To ensure that volume controls adjust\nthe correct stream, you should call\nsetVolumeControlStream()\npassing in the stream type matching your attributes that you can retrieve from\nAudioAttributes.getVolumeControlStream.",
+      "href": "Handling changes in audio output  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "In rare cases, you can set the volume of an audio stream programmatically.",
+      "href": "Handling changes in audio output  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Some devices (like Chromebooks) have volume controls but do not allow apps to use the AudioManager\nmethods described above to change the level of an audio stream.",
+      "href": "Handling changes in audio output  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "These are called\nfixed-volume devices.",
+      "href": "Handling changes in audio output  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "You can discover if your\napp is running on a fixed-volume device by calling isVolumeFixed().",
+      "href": "Handling changes in audio output  |  Android Developers"
+    }
+  ]
+}

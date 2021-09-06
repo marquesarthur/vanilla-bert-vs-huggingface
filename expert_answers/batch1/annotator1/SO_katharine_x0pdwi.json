@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "I'd use one of these solutions:",
+      "href": "Crop a fixed size image in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "EDIT:\nI have introduced a few changes to android-crop and now you can use withFixedSize(int width, int height) to set fixed cropping area in pixels.",
+      "href": "Crop a fixed size image in Android - Stack Overflow"
+    }
+  ]
+}

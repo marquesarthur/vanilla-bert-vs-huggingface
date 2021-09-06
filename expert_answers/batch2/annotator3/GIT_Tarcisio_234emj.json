@@ -1,0 +1,54 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [    
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "I think your DataSource is implemented incorrectly.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-588",
+      "tag": "SPAN",
+      "text": "dataSpec.position is the position within the media that the caller wants to start reading from.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-589",
+      "tag": "SPAN",
+      "text": "dataSpec.length is the length of data that the caller wants to read, or C.LENGTH_UNSET to read to the end of the media.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "This becomes a problem specifically when seeking, because dataSpec.position will not be 0 in this case, yet your implementation will nevertheless read from the start of the media.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "You probably need your implementation to do something more like (untested pseudocode):",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-528",
+      "tag": "SPAN",
+      "text": "The reason why dataSpec.position needs to be included is already explained as clearly as I'm able to explain it in my response above.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "It should hopefully be clear that if dataSpec.position is non-zero, readPosition = mediaPosition + dataSpec.position (correct) is going to end up reading from a different position than readPosition = mediaPosition (incorrect).",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    },
+    {
+      "id": "uid-1557",
+      "tag": "CODE",
+      "text": "dataSpec.position",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer · GitHub"
+    }
+  ]
+}

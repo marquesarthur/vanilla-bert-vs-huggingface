@@ -1,0 +1,188 @@
+{
+    "task": "keyUp called when key is still pressed",
+    "description": "``` javascript\npublic class DesktopLauncher {\n    public static void main(String[] arg) {\n        LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();\n        config.width = 480;\n        config.height = 320;\n        new LwjglApplication(new ApplicationListener() {\n            public void resume() {\n\n            }\n\n            @Override\n            public void resize(int width, int height) {\n\n            }\n\n            @Override\n            public void render() {\n                Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);\n            }\n\n            @Override\n            public void pause() {\n\n            }\n\n            @Override\n            public void dispose() {\n\n            }\n\n            @Override\n            public void create() {\n                Gdx.input.setInputProcessor(new InputProcessor() {\n\n                    @Override\n                    public boolean touchUp(int screenX, int screenY,\n                            int pointer, int button) {\n                        return false;\n                    }\n\n                    @Override\n                    public boolean touchDragged(int screenX, int screenY,\n                            int pointer) {\n                        return false;\n                    }\n\n                    @Override\n                    public boolean touchDown(int screenX, int screenY,\n                            int pointer, int button) {\n                        return false;\n                    }\n\n                    @Override\n                    public boolean scrolled(int amount) {\n                        return false;\n                    }\n\n                    @Override\n                    public boolean mouseMoved(int screenX, int screenY) {\n                        return false;\n                    }\n\n                    @Override\n                    public boolean keyUp(int keycode) {\n                        System.out.println(\"keyup\");\n                        return false;\n                    }\n\n                    @Override\n                    public boolean keyTyped(char character) {\n                        System.out.println(\"keytyped\");\n                        return false;\n                    }\n\n                    @Override\n                    public boolean keyDown(int keycode) {\n                        System.out.println(\"keydown\");\n                        return false;\n                    }\n                });\n            }\n        }, config);\n    }\n}\n```\n\nWhen a key is pressed (not release yet):\n\n``` javascript\nkeydown\nkeytyped\nkeyup\nkeydown\nkeytyped\nkeyup\nkeydown\nkeytyped\nkeyup\nkeydown\nkeytyped\nkeyup\nkeydown\nkeytyped\nkeyup\n....\n```\n\nTested on iMac 2012, libgdx version 1.6.3\n",
+    "type": "GIT",
+    "link": "https://github.com/libgdx/libgdx/issues/3259",
+    "question_id": "3259",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/keyboard-input/commands",
+                "type": "android",
+                "content": [
+                    "When the user gives focus to an editable text view such as an EditText element and the user has a hardware keyboard attached, all input is handled by the system.",
+                    "If, however, you'd like to intercept or directly handle the keyboard input yourself, you can do so by implementing callback methods from the KeyEvent.Callback interface, such as onKeyDown ( ) and onKeyMultiple ( ).",
+                    "Both the Activity and View class implement the KeyEvent.Callback interface, so you should generally override the callback methods in your extension of these classes as appropriate.",
+                    "Note: When handling keyboard events with the KeyEvent class and related APIs, you should expect that such keyboard events come only from a hardware keyboard.",
+                    "You should never rely on receiving key events for any key on a soft input method ( an on-screen keyboard ).",
+                    "To handle an individual key press, implement onKeyDown ( ) or onKeyUp ( ) as appropriate.",
+                    "Usually, you should use onKeyUp ( ) if you want to be sure that you receive only one event.",
+                    "If the user presses and holds the button, then onKeyDown ( ) is called multiple times.",
+                    "For example, this implementation responds to some keyboard keys to control a game:",
+                    "To respond to modifier key events such as when a key is combined with Shift or Control, you can query the KeyEvent that's passed to the callback method.",
+                    "Several methods provide information about modifier keys such as getModifiers ( ) and getMetaState ( ).",
+                    "However, the simplest solution is to check whether the exact modifier key you care about is being pressed with methods such as isShiftPressed ( ) and isCtrlPressed ( ).",
+                    "For example, here's the onKeyUp ( ) implementation again, with some extra handling for when the Shift key is held down with one of the keys:",
+                    ""
+                ],
+                "title": "Handle keyboard actions \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/Samsung/GearVRf/issues/148",
+                "content": [
+                    "onKeyUp is called multiple times when back button is pressed \u00b7 Issue # 148 \u00b7 Samsung/GearVRf \u00b7 GitHub",
+                    "onKeyUp is called multiple times when back button is pressed",
+                    "I want to handle GearVR back button pressing event to cancel showing default Oculus Home dialog.",
+                    "I implement public boolean onKeyUp ( int keyCode, KeyEvent event ) in my Activity class.",
+                    "But onKeyUp method was actually called twice unexpectedly.",
+                    "I suspect that would be wrong key event handling in GVRActivity:: OnKeyEvent.",
+                    "In above code, isDown will be 0 when eventType is not only KEY_EVENT_UP but also KEY_EVENT_SHORT_PRESS, KEY_EVENT_LONG_PRESS or some other values.",
+                    "These events ( KEY_EVENT_SHORT_PRESS or KEY_EVENT_LONG_PRESS ) should not be handled by onKeyUp.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "onKeyUp is called multiple times",
+                    "Hi, I remember the KEY UP event was tested working correctly with the previous Oculus version of 0.5.",
+                    "Can you please let us know a more details, including Ovr version, which key code ( BACK only or other keys ), long press, and test log if you have ?",
+                    "I'm using Oculus Mobile SDK 0.6.0 because I found `` Initial check-in of port to OVR SDK 0.6.0'' commit message.",
+                    "When I push back button shortly - > onKeyUp is called twice.",
+                    "When I push back button long - > onKeyUp is called once.",
+                    "My problem occurs with key code 4 ( android.view.KeyEvent.KEYCODE _ BACK ).",
+                    "This is back button on GearVR near touch pad.",
+                    "I have not tried other keys ( such as gamepad ) because I have no gamepads.",
+                    "dispatchKeyEvent ( ) is also called twice when I use a gamepad.",
+                    "I checked time between clicks to ignore the second click.",
+                    "Hi, thanks for the details.",
+                    "Let me try to reproduce your situation from here and get back to you soon.",
+                    "( I was asking ovr version, as these events are intercepted and delivered from ovr's native side )",
+                    "On my try, it does not happen.",
+                    "I mean, it calls onKeyUp ( ) only once when short pressed.",
+                    "Hi Chao, can you please try on your side, in case I am missing something ?",
+                    "I was testing by adding some log messages in the existing onKeyUp ( ) handler in our gvr video sample:",
+                    "public class VideoActivity extends GVRActivity implements",
+                    "I have tried your code.",
+                    "onKeyUp still called twice when back button is pressed.",
+                    "This log line is printed twice.",
+                    "I tried VrApi and VrAppFramework of OVR 0.6.0 and 0.6.0.1.",
+                    "Both are same behavior.",
+                    "GearVRf is most recent master branch.",
+                    "After many tries using several HMD devices ( pressing the back button on the device, short and long ), I could see the KEY UP event was delivered twice sometimes.",
+                    "It usually happens when the repeat count was not greater than 0 ( short pressed ).",
+                    "It is not easy to reproduce it consistently while wearing the HMD.",
+                    "As said in my previous posting, the Java key up and down handlers were called from OVR native side.",
+                    "Further, the event information including repeat counter is lost in the process and not under tight control of GearVRf.",
+                    "Considering this situation, I would like to recommend you to instead use the KEY DOWN event, i.e., onKeyDown ( ), which is consistently called once.",
+                    "Please let us know if you have any further questions or concerns.",
+                    "Hi Dotan, Do you have the adb log captured to share with me when the dispatch was called twice ?",
+                    "Just wanted to make sure.",
+                    "Subject: Re: -LSB- GearVRf -RSB- onKeyUp is called multiple times when back button is pressed ( # 148 )",
+                    "dispatchKeyEvent ( ) is also called twice when I use a gamepad",
+                    "Reply to this email directly or view it on GitHubhttps: / / github.com//issues/148#issuecomment-118585211.",
+                    ""
+                ],
+                "title": "onKeyUp is called multiple times when back button is pressed \u00b7 Issue # 148 \u00b7 Samsung/GearVRf \u00b7 GitHub"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "21969954",
+                "link": "https://stackoverflow.com/questions/21969954",
+                "title": "How to detect a key press in Java",
+                "answers": [
+                    {
+                        "uid": 21970006,
+                        "score": 13,
+                        "text": [
+                            "Read about java.awt.event.KeyListener",
+                            "A code should look like this:"
+                        ]
+                    },
+                    {
+                        "uid": 21970043,
+                        "score": 1,
+                        "text": [
+                            "I don't see anything in your code which actually listens for key presses or which modifies the position of x and y.",
+                            "The circle will only move if you change x and y and then repaint the screen.",
+                            "You have set up the panel, etc here but not actually added anything to respond to user action.",
+                            "You will probably need to add a KeyListener somewhere to respond to key presses.",
+                            "This is probably either in the tutorial you are doing or in a previous or later tutorial."
+                        ]
+                    },
+                    {
+                        "uid": 21970148,
+                        "score": 6,
+                        "text": [
+                            "So GUI are event driven.",
+                            "Everything that occurs is driven by an event.",
+                            "A key press is an event.",
+                            "A component needs to listen for events, and do something when the event is fired.",
+                            "You can read more about how to write different listeners LINK.",
+                            "Some of the basic listeners are fairly easy to recognize -LRB- by name -RRB- like KeyListener or MouseListener.",
+                            "ActionListener is also pretty common for button presses.",
+                            "You'll want to go through the tutorials and learn the different listeners.",
+                            "Note though that with Swing there are focus issues with using a KeyListener so it is preferred to use key bindings.",
+                            "As stated in the KeyListener tutorial:",
+                            "To define special reactions to particular keys, use key bindings instead of a key listener",
+                            "A tutorial for key bindings can be found LINK and an example can been seen LINK.",
+                            "Here's the gif from the example, showing the movement of rectangle with a key press using key bindings",
+                            "UPDATE just notice.",
+                            "Never call repaint -LRB- -RRB- from inside a paint/paintComponent method",
+                            "Get completely rid of the above code."
+                        ]
+                    },
+                    {
+                        "uid": 21970295,
+                        "score": 1,
+                        "text": [
+                            "KeyListener",
+                            "You should be putting his KeyListener Event within the class you need it not in the Main Method !",
+                            "More on Keys here: LINK",
+                            "Public and Private:",
+                            "Now for Public and Private, there is already an answer on StackOVerflow which I think does the job pretty well !",
+                            "LINK",
+                            "Functions/Methods and Void:",
+                            "As for Void, It is used in functions where you wish to return nothing !",
+                            "I do not know how well you know about functions but let me give you an example:",
+                            "What this does is it adds the two ints given as x and y and then returns the sum as an integer !",
+                            "With void what you can do is:",
+                            "Here you return nothing but it still stores x + y into sum !",
+                            "So in your class:",
+                            "For the void function you do not need to make a variable since it doesnt return a value, rather it sets the value within the function.",
+                            "All you need to do is call it",
+                            "If you need more help just comment !",
+                            ":-RRB- Also I find it awesome that your son is so interested in Java at such a young age.",
+                            "Great Parenting: D"
+                        ]
+                    },
+                    {
+                        "uid": 41780580,
+                        "score": 3,
+                        "text": [
+                            "There's a great library which works smoothly and it listens to global events.",
+                            "It's the only thing which worked without any issues for me: LINK",
+                            "It grabs every event in the system, pretty cool for any development.",
+                            "You can use it like this:"
+                        ]
+                    },
+                    {
+                        "uid": 60443734,
+                        "score": -1,
+                        "text": [
+                            "Suppose you need to detect the key f, use this:",
+                            "Remember to use the string literal, because the getKeyChar -LRB- -RRB- method returns a char."
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "eclipse",
+                    "swing",
+                    "keypress",
+                    "keylistener"
+                ]
+            }
+        ],
+        "other": []
+    },
+    "parsed": true
+}

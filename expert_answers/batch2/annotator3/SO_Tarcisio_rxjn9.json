@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Then in your seekbar event onProgressChanged do the following:",
+      "href": "android - MediaPlayer.seekTo() does not work for unbuffered position - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "With this you guarantee the user can't drag the progress bar to an unbuffered position (and also you see what's buffered).",
+      "href": "android - MediaPlayer.seekTo() does not work for unbuffered position - Stack Overflow"
+    }
+  ]
+}

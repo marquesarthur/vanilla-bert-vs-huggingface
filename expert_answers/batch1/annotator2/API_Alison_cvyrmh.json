@@ -1,0 +1,60 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Layouts query the preferred size of their nodes by invoking the prefWidth(height) and prefHeight(width) methods.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "uid-229",
+      "tag": "CODE",
+      "text": "prefWidth(height)",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "By default, UI controls compute default values for their preferred size that is based on the content of the control.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Typically, the computed size is just big enough for the control and the label to be fully visible.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "UI controls also provide default minimum and maximum sizes that are based on the typical usage of the control.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "You can use the default size constraints of nodes, or you can set them to provide the look that you want.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "Applications often need to directly set the minimum, preferred, and maximum size constraints on controls.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "You can go through the trouble of determining the height and width of each button and then setting the preferred size of each button to the greatest height and width of the buttons in the set.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    },
+    {
+      "id": "eye-gazing-tag-60",
+      "tag": "SPAN",
+      "text": "If you do not want the size of a node to change, set the minimum, maximum, and preferred sizes to the same size.",
+      "href": "2 Tips for Sizing and Aligning Nodes (Release 8)"
+    }
+  ]
+}

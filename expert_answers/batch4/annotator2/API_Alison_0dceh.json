@@ -1,0 +1,78 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "reCAPTCHA is a free service that uses an advanced risk analysis engine to\nprotect your app from spam and other abusive actions.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the\nreCAPTCHA Android signup site, then\ncomplete the following sequence of steps:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Before using the reCAPTCHA API, you need to add the SafetyNet API to your\nproject.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "To invoke the SafetyNet reCAPTCHA API, you call the\nverifyWithRecaptcha()\nmethod.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2906",
+      "tag": "SPAN",
+      "text": "Pass in your API site key as a parameter.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2907",
+      "tag": "SPAN",
+      "text": "Override the onSuccess()\nand onFailure()\nmethods to handle both possible outcomes of the verification request task.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "The following code snippet shows how to invoke this method:",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "When the reCAPTCHA API executes the\nonSuccess()\nmethod, the user has successfully completed the CAPTCHA challenge.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "However, this\nmethod only indicates that the user has solved the CAPTCHA correctly.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "You still\nneed to validate the user's response token from your backend server.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "If your app cannot communicate with the reCAPTCHA service successfully, it may\nbe because the API is encountering an error.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "You should add logic in your app to\ngracefully handle such an error.",
+      "href": "SafetyNet reCAPTCHA API  |  Android Developers"
+    }
+  ]
+}

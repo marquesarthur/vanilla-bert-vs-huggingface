@@ -1,0 +1,36 @@
+{
+    "https://developer.android.com/training/location/retrieve-current": {
+        "apiref": [
+            "The result could be null even if the last location was previously retrieved because disabling location also clears the cache."
+        ]
+    },
+    "https://stackoverflow.com/questions/46481789": {
+        "ansbot": [
+            "This is happening because FusedLocationProviderApi deprecated in a recent version of google play services.",
+            "Please continue using the FusedLocationProviderApi class and don't migrate to the FusedLocationProviderClient class until Google Play services version 12.0.0 is available, which is expected to ship in early 2018.",
+            "LINK So I think we should continue using the deprecated LocationServices.FusedLocationApi until Google resolves the issue."
+        ]
+    },
+    "https://github.com/mcharmas/Android-ReactiveLocation/issues/158": {
+        "hurried": [
+            "If I will close app ( hide, back button ), service steel works and app give me not GPS location."
+        ]
+    },
+    "https://www.toptal.com/android/android-developers-guide-to-google-location-services-api": {
+        "lexrank": [
+            "In this article, we are going to build a simple Android application to determine the user's latitude and longitude using Android's Google Location Services API.",
+            "This callback is fired when Google Play Services is connected, which means by then we should have the last known location.",
+            "Google Location Services API Google Location Services API, also known as FusedLocationProviderApi, is Google's recommended way of getting a user's location.",
+            "Hopefully this tutorial will help you get started with using the Google Location Services API.",
+            "By chaining a series of method calls, we are specifying the callback interface implementation and the Location Service API that we want to use."
+        ]
+    },
+    "https://javapapers.com/android/android-location-fused-provider": {
+        "lexrank": [
+            "If you are looking to just get the latitude and longitude of a location, the refer get current location using Android Fused location provider tutorial.",
+            "This Android tutorial is to explain what a fused location provider is and how to use it to get the location using a sample Android application.",
+            "I have seen Android location access tutorial examples giving all the available permission in the world.",
+            "In this tutorial we will be using the FusedLocationProviderApi which is the latest API and the best among the available possibilities to get location in Android."
+        ]
+    }
+}

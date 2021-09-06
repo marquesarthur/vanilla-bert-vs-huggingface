@@ -1,0 +1,84 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-7",
+            "tag": "SPAN",
+            "text": "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-8",
+            "tag": "SPAN",
+            "text": "This is a boolean value that will be true for a debug build, false otherwise:",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-28",
+            "tag": "SPAN",
+            "text": "BuildConfig.DEBUG",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "BuildConfig.DEBUG",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "BuildConfig.DEBUG",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-34",
+            "tag": "SPAN",
+            "text": "Unless you are importing the wrong BuildConfig class.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-95",
+            "tag": "SPAN",
+            "text": "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-97",
+            "tag": "SPAN",
+            "text": "Unless you are importing the wrong BuildConfig class.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-46",
+            "tag": "SPAN",
+            "text": "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-80",
+            "tag": "SPAN",
+            "text": "Unless you are importing the wrong BuildConfig class.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-74",
+            "tag": "SPAN",
+            "text": "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-5",
+            "tag": "SPAN",
+            "text": "Unless you are importing the wrong BuildConfig class.",
+            "href": "android - How do I detect if I am in release or debug mode? - Stack Overflow"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "The reason this works at all, comes down to the difference between FragmentPagerAdapter and FragmentStatePagerAdapter.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "This version of the pager is more useful when there are a large number of pages, working more like a list view.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    }
+  ]
+}

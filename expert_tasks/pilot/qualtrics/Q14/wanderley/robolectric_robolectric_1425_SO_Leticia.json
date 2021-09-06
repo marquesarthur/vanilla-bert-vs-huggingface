@@ -1,0 +1,18 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "This is happening because FusedLocationProviderApi deprecated in a recent version of google play services.",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "for e.g inside onCreate() or onViewCreated() create a FusedLocationProviderClient instance",
+      "href": "java - Android LocationServices.FusedLocationApi deprecated - Stack Overflow"
+    }
+  ]
+}

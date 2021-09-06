@@ -1,0 +1,66 @@
+{
+  "session_uid": "Deeksha",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "To improve developer experience with location based system services and ease the process of developing location-aware applications, Google introduced a new way of requesting a user’s location using Google Play Services.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Google Location Services API, also known as FusedLocationProviderApi, is Google’s recommended way of getting a user’s location.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "However, we will need to begin by configuring the build script and adding Google Play Services as a dependency for this application.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "To solve this, we need to edit “AndroidManifest.xml” and add the permission we require for this application:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-487",
+      "tag": "PRE",
+      "text": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-488",
+      "tag": "CODE",
+      "text": "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\" />\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "Before accessing features provided by Google Play Services, we must check if the device has Google Play Services installed, and that the version is the one we intend to use (6.5.87).",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-513",
+      "tag": "PRE",
+      "text": "@Override\npublic void onConnected(Bundle bundle) {\n\n\tmLastLocation = LocationServices.FusedLocationApi.getLastLocation(\n\t\tmGoogleApiClient);\n\tif (mLastLocation != null) {\n\n\t\tToast.makeText(this, \"Latitude:\" + mLastLocation.getLatitude()+\", Longitude:\"+mLastLocation.getLongitude(),Toast.LENGTH_LONG).show();\n\n\t}\n\n}\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-514",
+      "tag": "CODE",
+      "text": "@Override\npublic void onConnected(Bundle bundle) {\n\n\tmLastLocation = LocationServices.FusedLocationApi.getLastLocation(\n\t\tmGoogleApiClient);\n\tif (mLastLocation != null) {\n\n\t\tToast.makeText(this, \"Latitude:\" + mLastLocation.getLatitude()+\", Longitude:\"+mLastLocation.getLongitude(),Toast.LENGTH_LONG).show();\n\n\t}\n\n}\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-60",
+      "tag": "SPAN",
+      "text": "This callback is fired when Google Play Services is connected, which means by then we should have the last known location.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    }
+  ]
+}

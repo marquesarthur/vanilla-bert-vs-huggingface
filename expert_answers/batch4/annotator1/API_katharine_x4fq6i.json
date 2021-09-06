@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "To handle an individual key press, implement onKeyDown() or onKeyUp() as appropriate.",
+      "href": "Handle keyboard actions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "Usually, you should\nuse onKeyUp() if you want to be sure that you receive\nonly one event.",
+      "href": "Handle keyboard actions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "If the user presses and holds the button, then onKeyDown() is called multiple times.",
+      "href": "Handle keyboard actions  |  Android Developers"
+    }
+  ]
+}

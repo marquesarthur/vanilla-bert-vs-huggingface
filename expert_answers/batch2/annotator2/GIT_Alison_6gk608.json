@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Inside a flatMap we kick off multiple async calls (you can do computation whereas we do IO) and then merge or zip them together.",
+      "href": "Add a parallel execution function for processing a single emitted item over different parallel fucntions · Issue #627 · ReactiveX/RxJava · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Use merge if you don't care about their ordering or getting them back all at once.",
+      "href": "Add a parallel execution function for processing a single emitted item over different parallel fucntions · Issue #627 · ReactiveX/RxJava · GitHub"
+    }
+  ]
+}

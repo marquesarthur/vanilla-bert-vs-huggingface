@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "I ran into this thread while trying to solve the same problem.",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "Here was my approach to this in kotlin",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "Not sure this is very \"realm\" friendly since I'm new to Android development but I thought this worked actually pretty well.",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    }
+  ]
+}

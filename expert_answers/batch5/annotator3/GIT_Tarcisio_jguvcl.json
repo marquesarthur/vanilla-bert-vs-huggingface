@@ -1,0 +1,48 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "NOTE: AudioCue may not be the best choice for your project if one of the following limitations apply:",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    },
+    {
+      "id": "eye-gazing-tag-357",
+      "tag": "SPAN",
+      "text": "\nAdd in your root build.gradle at the end of repositories:\nallprojects {\n repositories {\n     ...\n     maven { url 'https://jitpack.io' }\n }\n}\n\n    \n      \n    \n\n      \n    \n\n    \n  \n",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "Add in your root build.gradle at the end of repositories:",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    },
+    {
+      "id": "eye-gazing-tag-360",
+      "tag": "SPAN",
+      "text": "\nAdd the dependency\ndependencies {\n compile 'com.github.philfrei:AudioCue:-SNAPSHOT' \n}\n\n    \n      \n    \n\n      \n    \n\n    \n  \n",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Add the dependency",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "AudioCue requires five files:",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    },
+    {
+      "id": "uid-1462",
+      "tag": "PRE",
+      "text": "// Simple case example (\"fire-and-forget\" playback):\n// assumes sound file \"myAudio.wav\" exists in same file folder,\n// we will allow up to four concurrent instances.\n\n// Preparatory steps (do these prior to playback): \nURL url = this.getClass().getResource(\"myAudio.wav\");\nAudioCue myAudioCue = AudioCue.makeStereoCue(url, 4); //allows 4 concurrent\nmyAudioCue.open();  // see API for parameters to override \"sound thread\" configuration defaults\n\n// For playback, normally done on demand:\nmyAudioCue.play();  // see API for parameters to override default vol, pan, pitch \n\n// release resources when sound is no longer needed\nmyAudioCue.close();\n",
+      "href": "GitHub - philfrei/AudioCue: A more powerful, intuitive, and concurrency safe Clip, for Java audio needs."
+    }
+  ]
+}

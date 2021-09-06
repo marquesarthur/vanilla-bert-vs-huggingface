@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Well we can put some kind of encryption into our requests, for example using RSA we can have a private key, put it into the application, and encrypt the requests.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Of course there are some obfuscating approaches, like ProGuard that you should use, but they wouldn’t stop a determined hacker to find our private key in our code.",
+      "href": "How to Send a Semi Secure Request to a Server in Android | by Reza Bigdeli | Medium"
+    }
+  ]
+}

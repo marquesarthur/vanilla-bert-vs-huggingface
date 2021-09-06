@@ -1,0 +1,183 @@
+{
+    "task": "How to record phone calls in Android",
+    "description": "I am developing an application which can record calls in Android.\nI have read a lot of topics where the call recording problem was discussed.\nAnd i know that not all Android phones can record calls.\nBut i am wondering how can record calls the most popular applications on Play Market, such as https://play.google.com/store/apps/details?id=com.appstar.callrecorder or https://play.google.com/store/apps/details?id=polis.app.callrecorder.\nI think that thy are using not on MediaRecorder class to do this job, but also something else.\nBecause i have developed my own application, but i can record only my voice.\nBut these two applications are recording both my voice and the voice of a man to whom i am calling.\nHow they are doing this ?\nI know that we can't get an access to device speaker to record sound from it.\nCould you give me some ideas of how to record voice calls ?\nHere is my code that i am using in my application:",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/31604598",
+    "question_id": "31604598",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/guide/topics/media/mediarecorder",
+                "type": "android",
+                "content": [
+                    "The Android multimedia framework includes support for capturing and encoding a variety of common audio and video formats.",
+                    "You can use the MediaRecorder APIs if supported by the device hardware.",
+                    "This document shows you how to use MediaRecorder to write an application that captures audio from a device microphone, save the audio, and play it back ( with MediaPlayer ).",
+                    "To record video you'll need to use the device's camera along with MediaRecorder.",
+                    "This is described in the Camera guide.",
+                    "Note: The Android Emulator can not record audio.",
+                    "Be sure to test your code on a real device that can record.",
+                    "To be able to record, your app must tell the user that it will access the device's audio input.",
+                    "You must include this permission tag in the app's manifest file:",
+                    "RECORD_AUDIO is considered a `` dangerous'' permission because it may pose a risk to the user's privacy.",
+                    "Starting with Android 6.0 ( API level 23 ) an app that uses a dangerous permission must ask the user for approval at run time.",
+                    "After the user has granted permission, the app should remember and not ask again.",
+                    "The sample code below shows how to implement this behavior using ActivityCompat.requestPermissions ( ).",
+                    "Initialize a new instance of MediaRecorder with the following calls:",
+                    "Note: Most of the audio sources ( including DEFAULT ) apply processing to the audio signal.",
+                    "To record raw audio select UNPROCESSED.",
+                    "Some devices do not support unprocessed input.",
+                    "Call AudioManager.getProperty ( AudioManager.PROPERTY _ SUPPORT_AUDIO_SOURCE_UNPROCESSED ) first to verify it's available.",
+                    "If it is not, try using VOICE_RECOGNITION instead, which does not employ AGC or noise suppression.",
+                    "You can use UNPROCESSED as an audio source even when the property is not supported, but there is no guarantee whether the signal will be unprocessed or not in that case.",
+                    "Start and stop the recorder by calling start ( ) and stop ( ) respectively.",
+                    "When you are done with the MediaRecorder instance free its resources as soon as possible by calling release ( ).",
+                    "Note: On devices running Android 9 ( API level 28 ) or higher, apps running in the background can not access the microphone.",
+                    "Therefore, your app should record audio only when it's in the foreground or when you include an instance of MediaRecorder in a foreground service.",
+                    "Starting with Android 8.0 ( API level 26 ) you can use a MediaMuxer to record multiple simultaneous audio and video streams.",
+                    "In earlier versions of Android you can only record one audio track and/or one video track at a time.",
+                    "Use the addTrack ( ) method to mix multipe tracks together.",
+                    "You can also add one or more metadata tracks with custom information for each frame, but only to MP4 containers.",
+                    "Your app defines the format and content of the metadata.",
+                    "Metadata can be useful for offline processing.",
+                    "For example, data captured from the gyro sensor could be used to perform video stabilization.",
+                    "When you add a metadata track, the track's mime format must start with the prefix application /.",
+                    "Writing metadata is the same as writing video or audio data, except that the data does not come from a MediaCodec.",
+                    "Instead, the app passes a ByteBuffer with an associated timestamp to the writeSampleData ( ) method.",
+                    "The timestamp must be in the same time base as the video and audio tracks.",
+                    "The generated MP4 file uses the TextMetaDataSampleEntry defined in section 12.3.3.2 of the ISO BMFF specification to signal the metadata's mime format.",
+                    "When you use a MediaExtractor to extract a file that contains metadata tracks, the metadata's mime format appears as an instance of MediaFormat.",
+                    "The MediaRecorder sample demonstrates how to make a video recording using MediaRecorder and the Camera API.",
+                    "The example activity below shows how to use MediaRecorder to record an audio file.",
+                    "It Also uses MediaPlayer to play the audio back.",
+                    "These pages cover topics relating to recording, storing, and playing back audio and video.",
+                    "Set the audio source using setAudioSource ( ).",
+                    "Set the output file format using setOutputFormat ( ).",
+                    "Note that starting with Android 8.0 ( API level 26 ) MediaRecorder supports the MPEG2_TS format, which is useful for streaming: Kotlin Java",
+                    "Set the output file name using setOutputFile ( ).",
+                    "You must specify a file descriptor that represents an actual file.",
+                    "Set the audio encoder using setAudioEncoder ( ).",
+                    "Complete the initialization by calling prepare ( ).",
+                    ""
+                ],
+                "title": "MediaRecorder overview \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/google/oboe/issues/447",
+                "content": [
+                    "Using oboe to record incoming and outgoing voice/telephony calls \u00b7 Issue # 447 \u00b7 google/oboe \u00b7 GitHub",
+                    "Using oboe to record incoming and outgoing voice/telephony calls",
+                    "First of all, thanks for such a great effort to provide us with low-latency Android API that we, as developers, can use it in our apps.",
+                    "Currently, I am a bit stuck with Oboe and trying to figure out a way to record incoming/outgoing voice/audio streams using oboe in a telephony audio call.",
+                    "I am able to successfully record my voice in a telephony call but I can not hear other side's voice in the recorded audio.",
+                    "Following is the device log printed when I request opening a recording stream with deviceId = MediaRecorder.AudioSource.VOICE _ CALL ( 4 ) or VOICE_UPLINK ( 2 ) or VOICE_DOWNLINK ( 3 )",
+                    "I/AAudioStream: AudioStream:: open ( ) rate = 48000, channels = 2, format = 1, sharing = SH, dir = INPUT",
+                    "I/AAudioStream: AudioStream:: open ( ) device = 2, perfMode = 12, callback: ON with frames = 0",
+                    "As you guys can see that onAudioDeviceUpdate method is called and now DeviceId is changed to VOICE_RECOGNITION ( 6 ).",
+                    "Is there something I am doing wrong or is the Android system not allowing me to record VOICE_CALL feature ?",
+                    "I have tested on Android Samsung J4 device ( API Level 27 ) & Samsung Note 3 Neo ( Api Level 18 ).",
+                    "On API Level 27, when I set recording device as VOICE_COMMUNICATION ( 7 ) then I get following error in the logcat.",
+                    "W/AAudio: AudioStreamBuilder ( ): EXCLUSIVE sharing mode not supported.",
+                    "I/AAudioStream: AudioStream:: open ( ) device = 7, perfMode = 12, callback: ON with frames = 0",
+                    "E/AudioRecord: Could not get audio input for session 4297, record source 6, sample rate 0, format 0x1, channel mask 0xc, flags 0x5",
+                    "D/AAudioStream: destroying 0x8e750500, state = AAUDIO_STREAM_STATE_CLOSED",
+                    "When I print the Oboe:: Result when opening the recording stream, I get following error statement printed in logcat.",
+                    "Waiting anxiously for your help on this, as I have been struggling with this for more than a week now and I can't seem to figure our the mistake that I am doing.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "Those recording sources may only be used by system apps.",
+                    "This is designed to prevent apps from eavesdropping on telephone conversations.",
+                    "See here for more information.",
+                    ""
+                ],
+                "title": "Using oboe to record incoming and outgoing voice/telephony calls \u00b7 Issue # 447 \u00b7 google/oboe \u00b7 GitHub"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "6688444",
+                "link": "https://stackoverflow.com/questions/6688444",
+                "title": "Android Recording Incoming and Outgoing Calls",
+                "answers": [
+                    {
+                        "uid": 6688569,
+                        "score": 34,
+                        "text": [
+                            "First off, you have to be careful with recording calls as there are legal requirements depending on the country.",
+                            "Here is a LINK on how to record audio using the LINK.",
+                            "I haven't tried recording phone call's but there is a option in LINK for:",
+                            "As long as the audio source options work, you should be good to go."
+                        ]
+                    },
+                    {
+                        "uid": 20159985,
+                        "score": -17,
+                        "text": [
+                            "to record just hit the menu button while in call in android phone it will store conversation in amr format and in root directory of sd card max 20 min conversation."
+                        ]
+                    },
+                    {
+                        "uid": 32095687,
+                        "score": 3,
+                        "text": [
+                            "I am using mic to record calls for better support and compatibility."
+                        ]
+                    },
+                    {
+                        "uid": 63325160,
+                        "score": 0,
+                        "text": [
+                            "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
+                            "after that, you can easily start recording anywhere you want",
+                            "and after finishing recording you can easily also stop the recording"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-phone-call",
+                    "call-recording"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://github.com/ShadowNinja/CallRecorder",
+                "type": "misc",
+                "content": [
+                    "Mobile \u2192 Actions \u2192 Codespaces \u2192 Packages \u2192 Security \u2192 Code review \u2192 Project management \u2192 Integrations \u2192",
+                    "GitHub Sponsors \u2192 Customer stories \u2192",
+                    "Topics \u2192 Collections \u2192 Trending \u2192 Learning Lab \u2192 Open source guides \u2192",
+                    "The ReadME Project \u2192 Events \u2192 Community forum \u2192 GitHub Education \u2192 GitHub Stars program \u2192",
+                    "Compare plans \u2192 Contact Sales \u2192",
+                    "No suggested jump to results",
+                    "forked from riul88/call-recorder-for - android",
+                    "An Android app to automatically record calls.",
+                    "Use Git or checkout with SVN using the web URL.",
+                    "Work fast with our official CLI.",
+                    "Launching GitHub Desktop If nothing happens, download GitHub Desktop and try again.",
+                    "Launching Xcode If nothing happens, download Xcode and try again.",
+                    "Launching Visual Studio If nothing happens, download the GitHub extension for Visual Studio and try again.",
+                    "This branch is 9 commits ahead of riul88: master.",
+                    "Failed to load latest commit information.",
+                    "Type Name Latest commit message Commit time",
+                    "Call Recorder for Android Authors",
+                    "Call Recorder for Android This Android application allows you to record all incoming and outgoing calls from your phone.",
+                    "All your recorded calls are saved in 3gp files and can be sent from the application.",
+                    "You can enable/disable the recording during the call, or leave it enabled to record all the calls.",
+                    "The main application screen contains a list of all calls with details of phone numbers, date and time of a call.",
+                    "Selecting one of the items will provide you with 3 options: play, send, and erase.",
+                    "In order to enable or disable recording, select enable/disable recording from the menu.",
+                    "Your audio files are stored on internal storage, although this can be changed from the settings.",
+                    "The recording does not have a limit of time so be careful not to run out of space after a few long calls.",
+                    "Some devices with Android 4.4.2 and Android 5 + are not able to start recording Note: For some reason Android will not properly clean references to MediaRecorder, that will stop the application to use MediaRecorder again until phone is rebooted.",
+                    "Kobi Krasnoff krasnoff.kobi@gmail.com Raul Robledo riul88@gmail.com ShadowNinja shadowninja@minetest.net",
+                    ""
+                ],
+                "title": "GitHub - ShadowNinja/CallRecorder: An Android app to automatically record calls."
+            }
+        ]
+    },
+    "parsed": true
+}

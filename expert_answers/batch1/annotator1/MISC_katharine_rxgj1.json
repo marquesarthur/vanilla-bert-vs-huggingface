@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "when you press the rotate button, each of the images is rotated  around its center, while maintaining its position in the center of the  region on the screen.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "the code in onclick finds the two views in its layout and sets  properties that control the amount of rotation, size of the bitmap, and x  and y offsets.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "that is done because rotation is around the  top left point (the origin) of the view.",
+      "href": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+    }
+  ]
+}

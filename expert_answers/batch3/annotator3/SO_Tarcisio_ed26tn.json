@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "A variant of your own version works well for me:",
+      "href": "Clean way in GWT/Java to wait for multiple asynchronous events to finish - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "All I did was create a counter for the number of calls I'm going to do, then each async result calls ready() (be sure to do this on the failure methods too, unless you're going to do something different)",
+      "href": "Clean way in GWT/Java to wait for multiple asynchronous events to finish - Stack Overflow"
+    }
+  ]
+}

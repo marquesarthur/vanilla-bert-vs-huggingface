@@ -1,0 +1,54 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "The adapter's role is to convert an object at a position into a list row item to be inserted.",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "However, with a RecyclerView the adapter requires the existence of a \"ViewHolder\" object which describes and provides access to all the views within each item row.",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": " We can create the basic empty adapter and holder together in ContactsAdapter.java as follows:",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "Now that we've defined the basic adapter and ViewHolder, we need to begin filling in our adapter.",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": "Every adapter has three primary methods: onCreateViewHolder to inflate the item layout and create the holder, onBindViewHolder to set the view attributes based on the data and getItemCount to determine the number of items.",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "uid-1177",
+      "tag": "PRE",
+      "text": "public class ContactsAdapter extends\n    RecyclerView.Adapter<ContactsAdapter.ViewHolder> {\n\n    // ... constructor and member variables\n\n    // Usually involves inflating a layout from XML and returning the holder\n    @Override\n    public ContactsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {\n        Context context = parent.getContext();\n        LayoutInflater inflater = LayoutInflater.from(context);\n\n        // Inflate the custom layout\n        View contactView = inflater.inflate(R.layout.item_contact, parent, false);\n\n        // Return a new holder instance\n        ViewHolder viewHolder = new ViewHolder(contactView);\n        return viewHolder;\n    }\n\n    // Involves populating data into the item through holder\n    @Override\n    public void onBindViewHolder(ContactsAdapter.ViewHolder holder, int position) {\n        // Get the data model based on position\n        Contact contact = mContacts.get(position);\n\n        // Set item views based on your views and data model\n        TextView textView = holder.nameTextView;\n        textView.setText(contact.getName());\n        Button button = holder.messageButton;\n        button.setText(contact.isOnline() ? \"Message\" : \"Offline\");\n        button.setEnabled(contact.isOnline());\n    }\n\n    // Returns the total count of items in the list\n    @Override\n    public int getItemCount() {\n        return mContacts.size();\n    }\n}",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "In our activity, we will populate a set of sample users which should be displayed in the RecyclerView.",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "If you create enough items and scroll through the list, the views will be recycled and far smoother by default than the ListView widget:",
+      "href": "Using the RecyclerView | CodePath Android Cliffnotes"
+    }
+  ]
+}

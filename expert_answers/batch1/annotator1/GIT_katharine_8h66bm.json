@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-214",
+      "tag": "SPAN",
+      "text": "\n          Hi @Egorand\nEnums are on our wishlist as well, but there are some challenges involved as one of the primary design goals of Realm is cross-platform compatibility and enums doesn't exist in Objective-C like they do in Java.\n      ",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "Hi @Egorand\nEnums are on our wishlist as well, but there are some challenges involved as one of the primary design goals of Realm is cross-platform compatibility and enums doesn't exist in Objective-C like they do in Java.",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    }
+  ]
+}

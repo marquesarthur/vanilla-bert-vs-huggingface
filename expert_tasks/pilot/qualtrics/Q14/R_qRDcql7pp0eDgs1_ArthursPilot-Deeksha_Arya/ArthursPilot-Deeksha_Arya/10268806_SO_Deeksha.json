@@ -1,0 +1,24 @@
+{
+  "session_uid": "Deeksha",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-783",
+      "tag": "PRE",
+      "text": "ImageView imageView = (ImageView) findViewById(R.id.imgView);\n\nint hMargin = (int) (displayMetrics.widthPixels * .10);\nint vMargin = (int) (displayMetrics.heightPixels * .10);\n\nRelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(displayMetrics.widthPixels - (hMargin * 2), (int)(displayMetrics.heightPixels - btnCamera.getHeight()) - (vMargin * 2));\nparams.leftMargin = hMargin;\nparams.topMargin =  vMargin;\nimageView.setLayoutParams(params);\nimageView.setImageDrawable(drawable);\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "uid-784",
+      "tag": "CODE",
+      "text": "ImageView imageView = (ImageView) findViewById(R.id.imgView);\n\nint hMargin = (int) (displayMetrics.widthPixels * .10);\nint vMargin = (int) (displayMetrics.heightPixels * .10);\n\nRelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(displayMetrics.widthPixels - (hMargin * 2), (int)(displayMetrics.heightPixels - btnCamera.getHeight()) - (vMargin * 2));\nparams.leftMargin = hMargin;\nparams.topMargin =  vMargin;\nimageView.setLayoutParams(params);\nimageView.setImageDrawable(drawable);\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "uid-943",
+      "tag": "PRE",
+      "text": "@Override\npublic boolean onTouch(View v, MotionEvent event) {\n    // TODO Auto-generated method stub\n\n    ImageView view = (ImageView) v;\n    dumpEvent(event);\n\n    // Handle touch events here...\n    switch (event.getAction() & MotionEvent.ACTION_MASK) {\n    case MotionEvent.ACTION_DOWN:\n        savedMatrix.set(matrix);\n        start.set(event.getX(), event.getY());\n        Log.d(TAG, \"mode=DRAG\");\n        mode = DRAG;\n        break;\n    case MotionEvent.ACTION_POINTER_DOWN:\n        oldDist = spacing(event);\n        Log.d(TAG, \"oldDist=\" + oldDist);\n        if (oldDist > 10f) {\n            savedMatrix.set(matrix);\n            midPoint(mid, event);\n            mode = ZOOM;\n            Log.d(TAG, \"mode=ZOOM\");\n        }\n        break;\n    case MotionEvent.ACTION_UP:\n    case MotionEvent.ACTION_POINTER_UP:\n        mode = NONE;\n        Log.d(TAG, \"mode=NONE\");\n        break;\n    case MotionEvent.ACTION_MOVE:\n        if (mode == DRAG) {\n            // ...\n            matrix.set(savedMatrix);\n            matrix.postTranslate(event.getX() - start.x, event.getY()\n                    - start.y);\n        } else if (mode == ZOOM) {\n            float newDist = spacing(event);\n            Log.d(TAG, \"newDist=\" + newDist);\n            if (newDist > 10f) {\n                matrix.set(savedMatrix);\n                float scale = newDist / oldDist;\n                matrix.postScale(scale, scale, mid.x, mid.y);\n            }\n        }\n        break;\n    }\n\n    view.setImageMatrix(matrix);\n    return true;\n}\n\nprivate void dumpEvent(MotionEvent event) {\n    String names[] = { \"DOWN\", \"UP\", \"MOVE\", \"CANCEL\", \"OUTSIDE\",\n            \"POINTER_DOWN\", \"POINTER_UP\", \"7?\", \"8?\", \"9?\" };\n    StringBuilder sb = new StringBuilder();\n    int action = event.getAction();\n    int actionCode = action & MotionEvent.ACTION_MASK;\n    sb.append(\"event ACTION_\").append(names[actionCode]);\n    if (actionCode == MotionEvent.ACTION_POINTER_DOWN\n            || actionCode == MotionEvent.ACTION_POINTER_UP) {\n        sb.append(\"(pid \").append(\n                action >> MotionEvent.ACTION_POINTER_ID_SHIFT);\n        sb.append(\")\");\n    }\n    sb.append(\"[\");\n    for (int i = 0; i < event.getPointerCount(); i++) {\n        sb.append(\"#\").append(i);\n        sb.append(\"(pid \").append(event.getPointerId(i));\n        sb.append(\")=\").append((int) event.getX(i));\n        sb.append(\",\").append((int) event.getY(i));\n        if (i + 1 < event.getPointerCount())\n            sb.append(\";\");\n    }\n    sb.append(\"]\");\n    Log.d(TAG, sb.toString());\n}\n\n/** Determine the space between the first two fingers */\nprivate float spacing(MotionEvent event) {\n    float x = event.getX(0) - event.getX(1);\n    float y = event.getY(0) - event.getY(1);\n    return FloatMath.sqrt(x * x + y * y);\n}\n\n/** Calculate the mid point of the first two fingers */\nprivate void midPoint(PointF point, MotionEvent event) {\n    float x = event.getX(0) + event.getX(1);\n    float y = event.getY(0) + event.getY(1);\n    point.set(x / 2, y / 2);\n}\n",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    }
+  ]
+}

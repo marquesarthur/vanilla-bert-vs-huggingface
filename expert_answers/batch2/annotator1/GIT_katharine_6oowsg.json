@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "Are you looking for something like this?",
+      "href": "Add a parallel execution function for processing a single emitted item over different parallel fucntions · Issue #627 · ReactiveX/RxJava"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "The use of application icon plus title as a standard layout is\n  discouraged on API 21 devices and newer.",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "If you would like an application icon (but I discourage it), you can use the method setLogo().",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Something like this:",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "This issue comes when you use support library revised 21.",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Use:",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "It worked for me or you can use toolbar.",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "A Toolbar is a generalization of action bars for use within application layouts.",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    }
+  ]
+}

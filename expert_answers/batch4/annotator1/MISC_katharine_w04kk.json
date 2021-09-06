@@ -1,0 +1,42 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-5",
+      "tag": "SPAN",
+      "text": "Android provides several ways of dealing with app data within the system or local storage.",
+      "href": "Android — How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "We are going to be dealing with app-specific storage of data in directory available in Internal or External Storage of system.",
+      "href": "Android — How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "We will generate a JSON file, which will be stored in Internal storage of application.",
+      "href": "Android — How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "From android application user will add(WRITE) data, which will be converted into JSON format(JSON Object) and then stored in JSON file.",
+      "href": "Android — How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Java-object will be passed to JsonObject, which will convert the java object into JsonObject which means the value is now associated with a key because JSON works as Key-Value pairs.",
+      "href": "Android — How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+    },
+    {
+      "id": "uid-392",
+      "tag": "PRE",
+      "text": "File file = new File(context.getFilesDir(),FILE_NAME);FileReader fileReader = new FileReader(file);BufferedReader bufferedReader = new BufferedReader(fileReader);StringBuilder stringBuilder = new StringBuilder();String line = bufferedReader.readLine();while (line != null){    stringBuilder.append(line).append(\"\\n\");    line = bufferedReader.readLine();}bufferedReader.close();// This responce will have Json Format StringString responce = stringBuilder.toString();",
+      "href": "Android — How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+    }
+  ]
+}

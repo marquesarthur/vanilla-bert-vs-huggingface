@@ -1,0 +1,78 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-283",
+      "tag": "H4",
+      "text": "How to make a dependency injectable",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "To make an object embeddable in Hilt, you need to tell Hilt how to instantiate that object.",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": " Such instructions are called bindings…",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "There are three ways to define anchor in Hilt.",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-120",
+      "tag": "SPAN",
+      "text": "\nAdd annotation to constructor @Inject\n",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "Add annotation to constructor @Inject",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-121",
+      "tag": "SPAN",
+      "text": "\nUse @Binds in module\n",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Use @Binds in module",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-122",
+      "tag": "SPAN",
+      "text": "\nUse @Provides in module\n",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Use @Provides in module",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "When an instance cannot be constructed directly, a provider can be created.",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": " A provider is a factory function that returns an instance of an object.",
+      "href": "A practical guide to using Hilt with Kotlin - Prog.World"
+    }
+  ]
+}

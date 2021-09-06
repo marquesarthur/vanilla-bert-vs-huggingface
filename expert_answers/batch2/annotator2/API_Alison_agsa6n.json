@@ -1,0 +1,24 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "This document shows you how to use MediaRecorder to write an application that captures audio from a device\nmicrophone, save the audio, and play it back (with MediaPlayer).",
+      "href": "MediaRecorder overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Initialize a new instance of MediaRecorder\nwith the following calls:",
+      "href": "MediaRecorder overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2789",
+      "tag": "SPAN",
+      "text": "Set the audio source using\n        setAudioSource().",
+      "href": "MediaRecorder overview  |  Android Developers"
+    }
+  ]
+}

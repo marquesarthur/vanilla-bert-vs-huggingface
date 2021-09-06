@@ -1,0 +1,42 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-73",
+            "tag": "SPAN",
+            "text": "Use android:fitsSystemWindows=\"true\" in the root view of your layout (LinearLayout in your case).",
+            "href": "android - Toolbar overlapping below status bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-83",
+            "tag": "SPAN",
+            "text": "\nAnd android:fitsSystemWindows is an ",
+            "href": "android - Toolbar overlapping below status bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-77",
+            "tag": "SPAN",
+            "text": "Use android:fitsSystemWindows=\"true\" in the root view of your layout (LinearLayout in your case).",
+            "href": "android - Toolbar overlapping below status bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-96",
+            "tag": "SPAN",
+            "text": "\nAnd android:fitsSystemWindows is an ",
+            "href": "android - Toolbar overlapping below status bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-84",
+            "tag": "SPAN",
+            "text": "Use android:fitsSystemWindows=\"true\" in the root view of your layout (LinearLayout in your case).",
+            "href": "android - Toolbar overlapping below status bar - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-38",
+            "tag": "SPAN",
+            "text": "\nAnd android:fitsSystemWindows is an ",
+            "href": "android - Toolbar overlapping below status bar - Stack Overflow"
+        }
+    ]
+}

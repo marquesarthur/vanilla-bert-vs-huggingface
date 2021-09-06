@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "In this blogpost, we’ll go over its problems, and why that motivates us to use small queries with the Room Persistence and Paging libraries in the Android Architecture Components.",
+      "href": "Large Database Queries on Android | by Chris Craik | Android Developers | Medium"
+    }
+  ]
+}

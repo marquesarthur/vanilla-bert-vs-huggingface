@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-4",
+      "tag": "SPAN",
+      "text": " Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
+      "href": "JSONObject  |  Android Developers"
+    },
+    {
+      "id": "getJSONObject(java.lang.String)",
+      "tag": "H3",
+      "text": "getJSONObject",
+      "href": "JSONObject  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-184",
+      "tag": "SPAN",
+      "text": "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+      "href": "JSONObject  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-193",
+      "tag": "SPAN",
+      "text": "Returns the value mapped by name if it exists, coercing it if\n necessary, or throws if no such mapping exists.",
+      "href": "JSONObject  |  Android Developers"
+    }
+  ]
+}

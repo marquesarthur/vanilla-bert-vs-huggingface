@@ -1,0 +1,66 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Any time you need to display a lot of data and make it easy to navigate, you’ve got a job for Android’s ListView, which handily creates scrollable lists.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-68",
+      "tag": "SPAN",
+      "text": "Your next step is to implement the adapter methods.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-408",
+      "tag": "SPAN",
+      "text": "Finally, getView() creates a view to be used as a row in the list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-409",
+      "tag": "SPAN",
+      "text": "Here you define what information shows and where it sits within the ListView.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-410",
+      "tag": "SPAN",
+      "text": "You also inflate a custom view from the XML layout defined in res/layout/list_item_recipe.xml — more on this in the next section.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-92",
+      "tag": "SPAN",
+      "text": "Open RecipeAdapter.java and go to the getView() method.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-93",
+      "tag": "SPAN",
+      "text": "Just before the return statement, add the following:",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-94",
+      "tag": "SPAN",
+      "text": "In here, you’re assigning a custom font to each of the text views in your rows’ layout.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-95",
+      "tag": "SPAN",
+      "text": "You access the font by creating a Typeface, which specifies the intrinsic style and typeface of the font, by using ResourcesCompat.getFont().",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-96",
+      "tag": "SPAN",
+      "text": "Next you set the typeface for the corresponding TextView to set the custom font.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    }
+  ]
+}

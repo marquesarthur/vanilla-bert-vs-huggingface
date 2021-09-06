@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Android-Lollipop (api 21) introduce a new API : PdfRenderer",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    }
+  ]
+}

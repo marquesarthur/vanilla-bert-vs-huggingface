@@ -1,0 +1,346 @@
+{
+    "task": "how  to set Screenshot frame size",
+    "description": "with default api . i cant set custom screenshot frame size,only a method to set Aspect ratio. if i want custom to set frame s size  .what should I do",
+    "type": "GIT",
+    "link": "https://github.com/edmodo/cropper/issues/144",
+    "question_id": "144",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/guide/topics/media/frame-rate",
+                "type": "android",
+                "content": [
+                    "This guide gives instructions on how to use the frame rate API.",
+                    "This API lets apps inform the Android platform of their intended frame rate and is available on apps that target Android 11 ( API level 30 ) or higher.",
+                    "Traditionally, most devices have supported only a single display refresh rate, typically 60Hz, but this has been changing.",
+                    "Many devices now support additional refresh rates such as 90Hz or 120Hz.",
+                    "The primary purpose of the API is to enable apps to better take advantage of all the supported display refresh rates.",
+                    "For example, an app playing a 24Hz video that calls setFrameRate ( ) may result in the device changing the display refresh rate from 60Hz to 120Hz.",
+                    "This new refresh rate enables smooth, judder-free playback of 24Hz video, with no need for 3:2 pulldown as would be required to play the same video on a 60Hz display.",
+                    "This results in a better user experience.",
+                    "Android exposes several ways to access and control surfaces, so there are several versions of the setFrameRate ( ) API.",
+                    "Each version of the API takes the same parameters and works the same as the others:",
+                    "The app does not need to consider the actual supported display refresh rates, which can be obtained by calling Display.getSupportedModes ( ), in order to safely call setFrameRate ( ).",
+                    "For example, even if the device only supports 60Hz, call setFrameRate ( ) with the frame rate your app prefers.",
+                    "Devices that don't have a better match for the app's frame rate will stay with the current display refresh rate.",
+                    "To see if a call to setFrameRate ( ) results in a change to the display refresh rate, register for display change notifications by calling DisplayManager.registerDisplayListener ( ) or AChoreographer_registerRefreshRateCallback ( ).",
+                    "When calling setFrameRate ( ), it's best to pass in the exact frame rate rather than rounding to an integer.",
+                    "For example, when rendering a video recorded at 29.97 Hz, pass in 29.97 rather than rounding to 30.",
+                    "For video apps, the compatibility param passed to setFrameRate ( ) should be set to Surface.FRAME _ RATE_COMPATIBILITY_FIXED_SOURCE to give an additional hint to the Android platform that the app will use pulldown to adapt to a non-matching display refresh rate ( which will result in judder ).",
+                    "In some scenarios, the video surface will stop submitting frames but will remain visible on the screen for some time.",
+                    "Common scenarios include when playback reaches the end of the video or when the user pauses playback.",
+                    "In these cases, call setFrameRate ( ) with the frame rate param set to 0 to clear the surface's frame rate setting back to the default value.",
+                    "Clearing the frame rate setting like this isn't necessary when destroying the surface, or when the surface is hidden because the user switches to a different app.",
+                    "Clear the frame rate setting only when the surface remains visible without being used.",
+                    "Follow these recommendations for common scenarios.",
+                    "The Android platform is designed to correctly handle scenarios where there are multiple surfaces with different frame rate settings.",
+                    "When your app has multiple surfaces with different frame rates, call setFrameRate ( ) with the correct frame rate for each surface.",
+                    "Even if the device is running multiple apps at once, using split screen or picture-in-picture mode, each app can safely call setFrameRate ( ) for their own surfaces.",
+                    "Even if the device supports the frame rate the app specifies in a call to setFrameRate ( ), there are cases where the device won't switch the display to that refresh rate.",
+                    "For example, a higher priority surface may have a different frame rate setting, or the device may be in battery saver mode ( setting a restriction on the display refresh rate to preserve battery ).",
+                    "The app must still work correctly when the device doesn't switch the display refresh rate to the app's frame rate setting, even if the device does switch under normal circumstances.",
+                    "It's up to the app to decide how to respond when the display refresh rate doesn't match the app frame rate.",
+                    "For video, the frame rate is fixed to that of the source video, and pulldown will be required to show the video content.",
+                    "A game may instead choose to try to run at the display refresh rate rather than staying with its preferred frame rate.",
+                    "The app shouldn't change the value it passes to setFrameRate ( ) based on what the platform does.",
+                    "It should stay set to the app's preferred frame rate, regardless of how the app handles cases where the platform doesn't adjust to match the app's request.",
+                    "That way, if device conditions change to allow additional display refresh rates to be used, the platform has the correct information to switch to the app's preferred frame rate.",
+                    "In cases where the app won't or can't run at the display refresh rate, the app should specify presentation timestamps for each frame, using one of the platform's mechanisms for setting presentation timestamps:",
+                    "Using these timestamps stops the platform from presenting an app frame too early, which would result in unnecessary judder.",
+                    "Correct usage of frame presentation timestamps is a bit tricky.",
+                    "For games, see our frame pacing guide for more info on avoiding judder, and consider using the Android Frame Pacing library.",
+                    "In some cases, the platform may switch to a multiple of the frame rate the app specified in setFrameRate ( ).",
+                    "For example, an app may call setFrameRate ( ) with 60Hz and the device may switch the display to 120Hz.",
+                    "One reason this might happen is if another app has a surface with a frame rate setting of 24Hz.",
+                    "In that case, running the display at 120Hz will allow both the 60Hz surface and 24Hz surface to run with no pulldown required.",
+                    "When the display is running at a multiple of the app's frame rate, the app should specify presentation timestamps for each frame to avoid unnecessary judder.",
+                    "For games, the Android Frame Pacing library is helpful for correctly setting frame presentation timestamps.",
+                    "WindowManager.LayoutParams.preferredDisplayModeId is another way that apps can indicate their frame rate to the platform.",
+                    "Some apps only want to change the display refresh rate rather than changing other display mode settings, like the display resolution.",
+                    "In general, use setFrameRate ( ) instead of preferredDisplayModeId.",
+                    "The setFrameRate ( ) function is easier to use because the app doesn't need to search through the list of display modes to find a mode with a specific frame rate.",
+                    "setFrameRate ( ) gives the platform more opportunities to pick a compatible frame rate in scenarios where there are multiple surfaces that are running at different frame rates.",
+                    "For example, consider a scenario where two apps are running in split-screen mode on a Pixel 4, where one app is playing a 24Hz video and the other is showing the user a scrollable list.",
+                    "Pixel 4 supports two display refresh rates: 60Hz and 90Hz.",
+                    "Using the preferredDisplayModeId API, the video surface is forced to pick either 60Hz or 90Hz.",
+                    "By calling setFrameRate ( ) with 24Hz, the video surface gives the platform more information about the frame rate of the source video, enabling the platform to choose 90Hz for the display refresh rate, which is better than 60Hz in this scenario.",
+                    "However, there are scenarios where preferredDisplayModeId should be used instead of setFrameRate ( ), such as the following:",
+                    "Although the setFrameRate ( ) call isn't very costly in terms of performance, apps should avoid calling setFrameRate ( ) every frame or multiple times per second.",
+                    "Calls to setFrameRate ( ) are likely to result in a change to the display refresh rate, which may result in a frame drop during the transition.",
+                    "You should figure out the correct frame rate ahead of time and call setFrameRate ( ) once.",
+                    "Although video is the primary use case for the setFrameRate ( ) API, it can be used for other apps.",
+                    "For example, a game that intends to not run higher than 60Hz ( to reduce power usage and achieve longer play sessions ) can call Surface.setFrameRate ( 60, Surface.FRAME _ RATE_COMPATIBILITY_DEFAULT ).",
+                    "In this way, a device that runs at 90Hz by default will instead run at 60Hz while the game is active, which will avoid the judder that would otherwise occur if the game ran at 60Hz while the display ran at 90Hz.",
+                    "FRAME_RATE_COMPATIBILITY_FIXED_SOURCE is intended only for video apps.",
+                    "For non-video usage, use FRAME_RATE_COMPATIBILITY_DEFAULT.",
+                    "If the app wants to change the resolution or other display mode settings, use preferredDisplayModeId.",
+                    "The platform will only switch display modes in response to a call to setFrameRate ( ) if the mode switch is lightweight and unlikely to be noticeable to the user.",
+                    "If the app prefers to switch the display refresh rate even if it requires a heavy mode switch ( for example, on an Android TV device ), use preferredDisplayModeId.",
+                    "Apps that can't handle the display running at a multiple of the app's frame rate, which requires setting presentation timestamps on each frame, should use preferredDisplayModeId.",
+                    ""
+                ],
+                "title": "Frame rate \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [],
+        "qa": [
+            {
+                "uid": "2661536",
+                "link": "https://stackoverflow.com/questions/2661536",
+                "title": "How to programmatically take a screenshot on Android?",
+                "answers": [
+                    {
+                        "uid": 3659232,
+                        "score": 12,
+                        "text": [
+                            "You can try the following library: LINK Android Screenshot Library -LRB- ASL -RRB- enables to programmatically capture screenshots from Android devices without requirement of having root access privileges.",
+                            "Instead, ASL utilizes a native service running in the background, started via the Android Debug Bridge -LRB- ADB -RRB- once per device boot."
+                        ]
+                    },
+                    {
+                        "uid": 5206464,
+                        "score": 8,
+                        "text": [
+                            "You can try to do something like this,",
+                            "Getting a bitmap cache from a layout or a view by doing something like First you got ta setDrawingCacheEnabled to a layout -LRB- a linearlayout or relativelayout, or a view -RRB-",
+                            "then",
+                            "Then you do whatever you want with the bitmap.",
+                            "Either turning it into an image file, or send the bitmap's uri to somewhere else."
+                        ]
+                    },
+                    {
+                        "uid": 5651242,
+                        "score": 470,
+                        "text": [
+                            "Here is the code that allowed my screenshot to be stored on an SD card and used later for whatever your needs are:",
+                            "First, you need to add a proper permission to save the file:",
+                            "And this is the code -LRB- running in an Activity -RRB-:",
+                            "And this is how you can open the recently generated image:",
+                            "If you want to use this on fragment view then use:",
+                            "instead of",
+                            "on takeScreenshot -LRB- -RRB- function",
+                            "Note:",
+                            "This solution doesn't work if your dialog contains a surface view.",
+                            "For details please check the answer to the following question:",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 11188635,
+                        "score": 19,
+                        "text": [
+                            "Mualig answer is very good, but I had the same problem Ewoks describes, I'm not getting the background.",
+                            "So sometimes is good enough and sometimes I get black text over black background -LRB- depending on the theme -RRB-.",
+                            "This solution is heavily based in Mualig code and the code I've found in Robotium.",
+                            "I'm discarding the use of drawing cache by calling directly to the draw method.",
+                            "Before that I'll try to get the background drawable from current activity to draw it first."
+                        ]
+                    },
+                    {
+                        "uid": 13837910,
+                        "score": 18,
+                        "text": [
+                            "As a reference, one way to capture the screen -LRB- and not just your app activity -RRB- is to capture the framebuffer -LRB- device / dev/graphics/fb0 -RRB-.",
+                            "To do this you must either have root privileges or your app must be an app with LINK -LRB- `` A permission that the system grants only if the requesting application is signed with the same certificate as the application that declared the permission'' -RRB- - which is very unlikely unless you compiled your own ROM.",
+                            "Each framebuffer capture, from a couple of devices I have tested, contained exactly one screenshot.",
+                            "People have reported it to contain more, I guess it depends on the frame/display size.",
+                            "I tried to read the framebuffer continuously but it seems to return for a fixed amount of bytes read.",
+                            "In my case that is -LRB- 3 410 432 -RRB- bytes, which is enough to store a display frame of 854 * 480 RGBA -LRB- 3 279 360 bytes -RRB-.",
+                            "Yes, the frame, in binary, outputted from fb0 is RGBA in my device.",
+                            "This will most likely depend from device to device.",
+                            "This will be important for you to decode it = -RRB-",
+                            "In my device / dev/graphics/fb0 permissions are so that only root and users from group graphics can read the fb0.",
+                            "graphics is a restricted group so you will probably only access fb0 with a rooted phone using su command.",
+                            "Android apps have the user id -LRB- uid -RRB- = app _ ## and group id -LRB- guid -RRB- = app _ ##.",
+                            "adb shell has uid = shell and guid = shell, which has much more permissions than an app.",
+                            "You can actually check those permissions at / system/permissions/platform.",
+                            "xml",
+                            "This means you will be able to read fb0 in the adb shell without root but you will not read it within the app without root.",
+                            "Also, giving READ_FRAME_BUFFER and/or ACCESS_SURFACE_FLINGER permissions on AndroidManifest.xml will do nothing for a regular app because these will only work for ` signature' apps.",
+                            "Also check this LINK for more details."
+                        ]
+                    },
+                    {
+                        "uid": 15208592,
+                        "score": 43,
+                        "text": [
+                            "Note: works only for rooted phone",
+                            "Programmatically, you can run adb shell / system/bin/screencap - p / sdcard/img.png as below",
+                            "then read img.png as Bitmap and use as your wish."
+                        ]
+                    },
+                    {
+                        "uid": 16109978,
+                        "score": 147,
+                        "text": [
+                            "Call this method, passing in the outer most ViewGroup that you want a screen shot of:"
+                        ]
+                    },
+                    {
+                        "uid": 19008601,
+                        "score": 17,
+                        "text": [
+                            "My solution is:",
+                            "and",
+                            "Images are saved in the external storage folder."
+                        ]
+                    },
+                    {
+                        "uid": 25425857,
+                        "score": 9,
+                        "text": [
+                            "ADD PERMISSION"
+                        ]
+                    },
+                    {
+                        "uid": 25524825,
+                        "score": 20,
+                        "text": [
+                            "Add the permission in the manifest",
+                            "For Supporting Marshmallow or above versions, please add the below code in the activity onCreate method"
+                        ]
+                    },
+                    {
+                        "uid": 26583807,
+                        "score": 7,
+                        "text": [
+                            "I have created a simple library that takes a screenshot from a View and either gives you a Bitmap object or saves it directly to any path you want",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 27919046,
+                        "score": 27,
+                        "text": [
+                            "No root permission or no big coding is required for this method.",
+                            "On adb shell using below command you can take screen shot.",
+                            "This command does not required any root permission so same you can perform from java code of android application also.",
+                            "More about keyevent code in android see LINK",
+                            "Here we have used.",
+                            "KEYCODE_SYSRQ its value is 120 and used for System Request / Print Screen key.",
+                            "As CJBS said, The output picture will be saved in / sdcard/Pictures/Screenshots"
+                        ]
+                    },
+                    {
+                        "uid": 28760867,
+                        "score": -2,
+                        "text": [
+                            "if you want to capture a view or layout like RelativeLayout or LinearLayout etc. just use the code:",
+                            "now you can save this bitmap on device storage by:"
+                        ]
+                    },
+                    {
+                        "uid": 29565822,
+                        "score": 7,
+                        "text": [
+                            "For those who want to capture a GLSurfaceView, the getDrawingCache or drawing to canvas method won't work.",
+                            "You have to read the content of the OpenGL framebuffer after the frame has been rendered.",
+                            "There is a good answer LINK"
+                        ]
+                    },
+                    {
+                        "uid": 30360394,
+                        "score": 12,
+                        "text": [
+                            "Based on the answer of @JustinMorris above and @NiravDangi here LINK we must take the background and foreground of a view and assemble them like this:",
+                            "The quality parameter takes a constant of Bitmap.Config, typically either Bitmap.Config.RGB _ 565 or Bitmap.Config.ARGB _ 8888."
+                        ]
+                    },
+                    {
+                        "uid": 36951548,
+                        "score": 5,
+                        "text": [
+                            "If you want to take screenshot from fragment than follow this:",
+                            "Override onCreateView -LRB- -RRB-:",
+                            "Logic for taking screenshot:",
+                            "method shareScreenShotM -RRB- -LRB- -RRB-:",
+                            "method takeScreenShot -LRB- -RRB-:",
+                            "method savePic -LRB- -RRB-:",
+                            "For activity you can simply use View v1 = getWindow -LRB- -RRB-.",
+                            "getDecorView -LRB- -RRB-.",
+                            "getRootView -LRB- -RRB- ; instead of mView"
+                        ]
+                    },
+                    {
+                        "uid": 45401599,
+                        "score": 5,
+                        "text": [
+                            "Just extending taraloca's answer.",
+                            "You must add followings lines to make it work.",
+                            "I have made the image name static.",
+                            "Please ensure you use taraloca's timestamp variable incase you need dynamic image name.",
+                            "And in the AndroidManifest.xml file following entries are must:"
+                        ]
+                    },
+                    {
+                        "uid": 46704084,
+                        "score": 8,
+                        "text": [
+                            "Short way is"
+                        ]
+                    },
+                    {
+                        "uid": 48098196,
+                        "score": 3,
+                        "text": [
+                            "For system applications only !",
+                            "Note: System applications don't need to run `` su'' to execute this command."
+                        ]
+                    },
+                    {
+                        "uid": 51095559,
+                        "score": 3,
+                        "text": [
+                            "The parameter view is the root layout object."
+                        ]
+                    },
+                    {
+                        "uid": 51875893,
+                        "score": 7,
+                        "text": [
+                            "Most of the answers for this question use the the Canvas drawing method or drawing cache method.",
+                            "However, the LINK.",
+                            "Currently the recommended API for making screenshots is the LINK class available from API 24 -LRB- but the methods which accept Window parameter are available from API 26 == Android 8.0 Oreo -RRB-.",
+                            "Here is a sample Kotlin code for retrieving a Bitmap:"
+                        ]
+                    },
+                    {
+                        "uid": 53647152,
+                        "score": 1,
+                        "text": [
+                            "Take screenshot of a view in android."
+                        ]
+                    },
+                    {
+                        "uid": 54779181,
+                        "score": 4,
+                        "text": [
+                            "For Full Page Scrolling Screenshot",
+                            "If you want to capture a full View screenshot -LRB- Which contains a scrollview or so -RRB- then have a check at this library",
+                            "LINK",
+                            "All you have to do is import the Gradel, and create an object of BigScreenshot",
+                            "BigScreenshot longScreenshot = new BigScreenshot -LRB- this, x, y -RRB- ;",
+                            "A callback will be received with the bitmap of the Screenshots taken while automatically scrolling through the screen view group and at the end assembled together.",
+                            "@Override public void getScreenshot -LRB- Bitmap bitmap -RRB- -LCB- -RCB-",
+                            "Which can be saved to the gallery or whatsoever usage is necessary their after"
+                        ]
+                    },
+                    {
+                        "uid": 63224780,
+                        "score": 1,
+                        "text": [
+                            "From Android 11 -LRB- API level 30 -RRB- you can take screen shot with the accessibility service:",
+                            "LINK - Takes a screenshot of the specified display and returns it via an AccessibilityService.ScreenshotResult."
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "screenshot"
+                ]
+            }
+        ],
+        "other": []
+    },
+    "parsed": true
+}

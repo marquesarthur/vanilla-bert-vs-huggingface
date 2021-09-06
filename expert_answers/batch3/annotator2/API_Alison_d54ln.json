@@ -1,0 +1,48 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "RecyclerView is designed to be very efficient, even with large lists, by reusing, or recycling, the views that have scrolled off the screen.",
+      "href": "Use RecyclerView to display a scrollable list"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "When a list item is scrolled off the screen, RecyclerView reuses that view for the next list item about to be displayed.",
+      "href": "Use RecyclerView to display a scrollable list"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "The strings.xml file should look like this when you're done.",
+      "href": "Use RecyclerView to display a scrollable list"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "Now that you have added string resources, you can reference them in your code as R.string.affirmation1 or R.string.affirmation2.",
+      "href": "Use RecyclerView to display a scrollable list"
+    },
+    {
+      "id": "eye-gazing-tag-43",
+      "tag": "SPAN",
+      "text": "Data displayed in your app may come from different sources (e.g. within your app project or from an external source that requires connecting to the internet to download data).",
+      "href": "Use RecyclerView to display a scrollable list"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "The rest of the app should not concern itself with where the data originates from or in what format it is originally.",
+      "href": "Use RecyclerView to display a scrollable list"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "You can and should hide away this data preparation in a separate Datasource class that prepares the data for the app.",
+      "href": "Use RecyclerView to display a scrollable list"
+    }
+  ]
+}

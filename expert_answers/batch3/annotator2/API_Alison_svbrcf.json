@@ -1,0 +1,60 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": " You may find it helpful to\ncreate a companion class, known as a contract class, which explicitly specifies\nthe layout of your schema in a systematic and self-documenting way.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "A contract class is a container for constants that define names for URIs,\ntables, and columns.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "The contract class allows you to use the same constants\nacross all the other classes in the same package.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Once you have defined how your database looks, you should implement methods\nthat create and maintain the database and tables.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "The SQLiteOpenHelper class contains a useful\nset of APIs for managing your database.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "When you use this class to obtain references to your database, the system\nperforms the potentially\nlong-running operations of creating and updating the database only when\nneeded and not during app startup.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "To read from a database, use the query() method, passing it your selection criteria and desired columns.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "The results\nof the query are returned to you in a Cursor object.",
+      "href": "Save data using SQLite  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "When finished\niterating through results, call close() on the cursor\nto release its resources.",
+      "href": "Save data using SQLite  |  Android Developers"
+    }
+  ]
+}

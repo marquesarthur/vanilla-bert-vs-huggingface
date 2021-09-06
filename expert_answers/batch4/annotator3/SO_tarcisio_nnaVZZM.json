@@ -1,0 +1,48 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-45",
+            "tag": "SPAN",
+            "text": "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-81",
+            "tag": "SPAN",
+            "text": "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-81",
+            "tag": "SPAN",
+            "text": "I would suggest that you write your downloaded JSON out to a file and compare it with your original to see if there is a problem with the download logic.",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-53",
+            "tag": "SPAN",
+            "text": "Usually these are the following steps to create json object through the Http connection in android.",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-88",
+            "tag": "SPAN",
+            "text": "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-57",
+            "tag": "SPAN",
+            "text": "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "Usually these are the following steps to create json object through the Http connection in android.",
+            "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+        }
+    ]
+}

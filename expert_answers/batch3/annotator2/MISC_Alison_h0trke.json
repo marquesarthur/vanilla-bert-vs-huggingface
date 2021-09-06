@@ -1,0 +1,42 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "One of the biggest advantages of using the Toolbar widget is that you can place the view anywhere within your layout.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "Below we place the toolbar at the top of a LinearLayout like the standard ActionBar:",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-20",
+            "tag": "SPAN",
+            "text": "Note: You'll want to add android:fitsSystemWindows=\"true\" (learn more) to the parent layout of the Toolbar to ensure that the height of the activity is calculated correctly.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "uid-277",
+            "tag": "CODE",
+            "text": "android:fitsSystemWindows=\"true\"",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "Note that this means if you are in a RelativeLayout, you need to ensure that all other views are positioned below the toolbar explicitly.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-60",
+            "tag": "SPAN",
+            "text": "Now you need to add a Toolbar to your Activity layout file.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        }
+    ]
+}

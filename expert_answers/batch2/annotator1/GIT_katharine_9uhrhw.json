@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [    
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "It's not clear how you are actually applying the offset and length in or before FileDataSource.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "This is the critical piece of information, since it's highly likely that this is just implemented incorrectly.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "If you have a custom DataSource implementation then you'll need to share it so that we can take a look at what might be wrong.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "The dataSpec argument is not defining the entire media.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer"
+    },
+    {
+      "id": "eye-gazing-tag-38",
+      "tag": "SPAN",
+      "text": "It's defining the part of the media that the caller wants to read for this particular call to open.",
+      "href": "Offset and length audio files specified, unable to seek after playback · Issue #8387 · google/ExoPlayer"
+    }
+  ]
+}

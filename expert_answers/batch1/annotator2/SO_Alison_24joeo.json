@@ -1,0 +1,84 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-12",
+            "tag": "SPAN",
+            "text": "Make sure you add it outside of the application tag.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": " While developing for a target platform of 2.3.3 using Eclipse on Ubuntu, I had permission failures in the log file that indicated I needed this exact line while working on something similar.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": " It wasn't until I moved the *uses-permission...READ_CONTACTS* line to outside the application tag that things worked.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "If the permission you need to add isn't listed under the normal permissions, you'll need to deal with \"Runtime Permissions\".",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "Runtime permissions are permissions that are requested as they are needed while the app is running.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "These permissions will show a dialog to the user, similar to the following one:",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-21",
+            "tag": "SPAN",
+            "text": "The first step when adding a \"Runtime Permission\" is to add it to the AndroidManifest:",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "Next, you'll need to initiate the permission request and handle the result.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-52",
+            "tag": "SPAN",
+            "text": "The following code shows how to do this in the context of an Activity, but this is also possible from within a Fragment.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-81",
+            "tag": "SPAN",
+            "text": "The following code shows how to do this in the context of an Activity, but this is also possible from within a Fragment.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-61",
+            "tag": "SPAN",
+            "text": "with the api 23, permission <uses-permission android:name=\"android.pemission.READ_CONTACTS\"/> dont work, change the api level in the emulator for api 22(lollipop) or lower",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-43",
+            "tag": "SPAN",
+            "text": "Beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-39",
+            "tag": "SPAN",
+            "text": "The following code shows how to do this in the context of an Activity, but this is also possible from within a Fragment.",
+            "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+        }
+    ]
+}

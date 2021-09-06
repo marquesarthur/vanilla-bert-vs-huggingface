@@ -1,0 +1,96 @@
+{
+    "task": "Hide MarkerView when nothing selected",
+    "description": "There is no MarkerView when graph is loaded, but once selected markerview is show and it sticks there. I'd like to hide it when there is no touch.\n",
+    "type": "GIT",
+    "link": "https://github.com/PhilJay/MPAndroidChart/issues/1187",
+    "question_id": "1187",
+    "resources": {
+        "api": [],
+        "git": [
+            {
+                "link": "https://github.com/PhilJay/MPAndroidChart/issues/144",
+                "content": [
+                    "I want add a Listener to the MarkerView, but it don't work",
+                    "public void onClick ( View v ) -LCB-",
+                    "the logcat didn't show the log, also the toast not show",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "How to make the MarkerView clickable ?",
+                    "You are right thats not possible at the moment.",
+                    "It might have something to do with the various touch-events and gestures interacting with each other.",
+                    "I will look into it as soon as I get the time.",
+                    "In the meantime, you will have to wait or try and fix it yourself.",
+                    "I will try to fix it.",
+                    "Did you make any progress on this ?",
+                    "It seems harder than I originally thought O:",
+                    "It also harder than I originally thought",
+                    "I actually managed in a hacky way: you can set an `` onClick'' on the chart without interfering with the touch functions.",
+                    "You know when a marker is shown as refreshContent is called, then when you click the chart, the marker has been shown, and not valuesToHighlight ( ), then the marker has just been closed.",
+                    "My test code with static status and text:",
+                    "It is not perfectly an `` onclick'', as clicking on the bar also closes the marker, and you have to check for reloadings or other events that may hide the marker.",
+                    "Could we at least have setMarkerView accepting a view and not just resource ?",
+                    "You can do something like place Chart and your View in RelativeLayout, set ChartValueSelectedListener, fill your View and translate it's position like in getMarkerViewPosition ( ) from Chart.",
+                    "add button to Markerview doesn't work",
+                    "I made a solution of sorts:",
+                    "has this question bean soluted now ?",
+                    "I have finished my app with clickable marker view.",
+                    "My solution is that we'll create a subclass of LineChart ( or other chart ), then let override onTouchEvent and detect the touch location.",
+                    "Thanks, @thanhzusu your answer helped to handle markerview onclick event.",
+                    "If there is a button inside the marker view, I was wondering if there was any way to handle its onclick event.",
+                    "I think we need to get the coordinates of that button inside markerview.",
+                    "Let's say for example we have marker_view_with_button.xml as below.",
+                    "And we would like to handle the onClick event of that imageButton.",
+                    "How would we update the CustomBarChartWithButton.java file which is currently as follows ?",
+                    "And the ButtonMarkerView.java being as follows:",
+                    "Make button inside markerview clickable",
+                    "You can get the coordinates from MotionEvent and determine whether it's inside viewDetailsButton's frame or not.",
+                    "I am unable to figure out how to check the coordinates from inside viewDetailsButton, keeping in mind the orientation change as well",
+                    ""
+                ],
+                "title": "I want add a Listener to the MarkerView, but it don't work"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "33241952",
+                "link": "https://stackoverflow.com/questions/33241952",
+                "title": "Show value when tapped [MPAndroidChart]",
+                "answers": [
+                    {
+                        "uid": 33264086,
+                        "score": 16,
+                        "text": [
+                            "1 - Enable touch in the chart",
+                            "2 - Create MarkerView",
+                            "3 - Create the tvContent view",
+                            "4.",
+                            "Set the view Marker in the chart",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 49650291,
+                        "score": 9,
+                        "text": [
+                            "Use IMarker Interface -LRB- MarkerView has been deprecated since release 3.0.0 -RRB-",
+                            "1.",
+                            "Create a new class that implements the IMarker interface",
+                            "2.",
+                            "set your marker to the chart",
+                            "Reference: LINK"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "android",
+                    "linechart",
+                    "mpandroidchart"
+                ]
+            }
+        ],
+        "other": [
+           
+        ]
+    },
+    "parsed": true
+}

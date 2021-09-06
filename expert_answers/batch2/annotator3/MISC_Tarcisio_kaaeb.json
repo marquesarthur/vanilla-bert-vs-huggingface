@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-5133",
+      "tag": "PRE",
+      "text": "xpnl_circlebackground.Width = Max(2dip, xpnl_circlebackground.Width)\n'and same for height",
+      "href": "[Solved] How to fix Crashlytics \"width and height must be > 0\" with \"AS Onboarding View\"? | B4X Programming Forum"
+    },
+    {
+      "id": "uid-5134",
+      "tag": "CODE",
+      "text": "xpnl_circlebackground.Width = Max(2dip, xpnl_circlebackground.Width)\n'and same for height",
+      "href": "[Solved] How to fix Crashlytics \"width and height must be > 0\" with \"AS Onboarding View\"? | B4X Programming Forum"
+    }
+  ]
+}

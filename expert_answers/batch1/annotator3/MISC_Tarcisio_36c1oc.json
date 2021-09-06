@@ -1,0 +1,48 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-569",
+      "tag": "H3",
+      "text": "Java 11 HttpClient",
+      "href": "5 ways to make HTTP requests in Java"
+    },
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "This is a synchronous request:",
+      "href": "5 ways to make HTTP requests in Java"
+    },
+    {
+      "id": "eye-gazing-tag-43",
+      "tag": "SPAN",
+      "text": "For an asynchronous request the client and request are made in the same way, then call .sendAsync instead of .send:",
+      "href": "5 ways to make HTTP requests in Java"
+    },
+    {
+      "id": "uid-609",
+      "tag": "H3",
+      "text": "Apache HttpClient",
+      "href": "5 ways to make HTTP requests in Java"
+    },
+    {
+      "id": "eye-gazing-tag-58",
+      "tag": "SPAN",
+      "text": "Apache provides several more examples for sync and async requests.",
+      "href": "5 ways to make HTTP requests in Java"
+    },
+    {
+      "id": "eye-gazing-tag-82",
+      "tag": "SPAN",
+      "text": "There are a lot of choices for HTTP clients in Java - for simple cases I would recommend the built-in java.net.http.HttpClient.",
+      "href": "5 ways to make HTTP requests in Java"
+    },
+    {
+      "id": "eye-gazing-tag-83",
+      "tag": "SPAN",
+      "text": "For more complex use-cases or if you want to have your HTTP APIs abstracted as Java classes as part of a larger application look at Retrofit or Feign.",
+      "href": "5 ways to make HTTP requests in Java"
+    }
+  ]
+}

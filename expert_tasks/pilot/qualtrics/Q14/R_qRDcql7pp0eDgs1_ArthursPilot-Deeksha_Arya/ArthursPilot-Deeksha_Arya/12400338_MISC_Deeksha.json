@@ -1,0 +1,36 @@
+{
+  "session_uid": "Deeksha",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "uid-1270",
+      "tag": "PRE",
+      "text": "//1\noverride fun getCount(): Int {\n  return dataSource.size\n}\n\n//2\noverride fun getItem(position: Int): Any {\n  return dataSource[position]\n}\n\n//3\noverride fun getItemId(position: Int): Long {\n  return position.toLong()\n}\n\n//4\noverride fun getView(position: Int, convertView: View?, parent: ViewGroup): View {\n  // Get view for row item\n  val rowView = inflater.inflate(R.layout.list_item_recipe, parent, false)\n    \n  return rowView\n}\n",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-404",
+      "tag": "SPAN",
+      "text": "Finally, getView() creates a view to be used as a row in the list.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-405",
+      "tag": "SPAN",
+      "text": "Here you define what information shows and where it sits within the ListView.",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-417",
+      "tag": "SPAN",
+      "text": "\nparent: The view where the selection happens — in your case, it’s the ListView",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    },
+    {
+      "id": "uid-1461",
+      "tag": "PRE",
+      "text": "val view: View\nval holder: ViewHolder\n\n// 1\nif (convertView == null) {\n\n  // 2\n  view = inflater.inflate(R.layout.list_item_recipe, parent, false)\n\n  // 3\n  holder = ViewHolder()\n  holder.thumbnailImageView = view.findViewById(R.id.recipe_list_thumbnail) as ImageView\n  holder.titleTextView = view.findViewById(R.id.recipe_list_title) as TextView\n  holder.subtitleTextView = view.findViewById(R.id.recipe_list_subtitle) as TextView\n  holder.detailTextView = view.findViewById(R.id.recipe_list_detail) as TextView\n\n  // 4\n  view.tag = holder\n} else {\n  // 5\n  view = convertView\n  holder = convertView.tag as ViewHolder\n}\n\n// 6\nval titleTextView = holder.titleTextView\nval subtitleTextView = holder.subtitleTextView\nval detailTextView = holder.detailTextView\nval thumbnailImageView = holder.thumbnailImageView\n",
+      "href": "Android ListView Tutorial with Kotlin | raywenderlich.com"
+    }
+  ]
+}

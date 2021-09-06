@@ -1,0 +1,199 @@
+{
+    "task": "Application icon doesn&#39;t show up in Android action bar",
+    "description": "I'm trying to do an application using support libraries, and I tried to add an action bar to it.\nThe action bar works just fine, but it doesn't show the company icon.\nI tried specifying icon and logo, in the manifest and programatically, but still, nothing works.\nIn my code, I have this:\nAnd in the manifest, I have this:",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/27047526",
+    "question_id": "27047526",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/appbar/up-action",
+                "type": "android",
+                "content": [
+                    "Your app should make it easy for users to find their way back to the app's main screen.",
+                    "One simple way to do this is to provide an Up button on the app bar for all activities except the main one.",
+                    "When the user selects the Up button, the app navigates to the parent activity.",
+                    "This lesson shows you how to add an Up button to an activity by declaring the activity's parent in the manifest, and enabling the app bar's Up button.",
+                    "We recommend using the Jetpack Navigation component to handle your app navigation.",
+                    "This component handles navigating up from the current screen in your app when the user taps the Up button.",
+                    "To learn more, see the documentation for the Jetpack Navigation component.",
+                    "To support the up functionality in an activity, you need to declare the activity's parent.",
+                    "You can do this in the app manifest, by setting an android: parentActivityName attribute.",
+                    "The android: parentActivityName attribute was introduced in Android 4.1 ( API level 16 ).",
+                    "To support devices with older versions of Android, define a <meta-data> name-value pair, where the name is `` android.support.PARENT _ ACTIVITY'' and the value is the name of the parent activity.",
+                    "For example, suppose your app has a main activity named MainActivity and a single child activity.",
+                    "The following manifest code declares both activities, and specifies the parent/child relationship:",
+                    "To enable the Up button for an activity that has a parent activity, call the app bar's setDisplayHomeAsUpEnabled ( ) method.",
+                    "Typically, you would do this when the activity is created.",
+                    "For example, the following onCreate ( ) method sets a Toolbar as the app bar for MyChildActivity, then enables that app bar's Up button:",
+                    "You do not need to catch the up action in the activity's onOptionsItemSelected ( ) method.",
+                    "Instead, that method should call its superclass, as shown in Respond to Actions.",
+                    "The superclass method responds to the Up selection by navigating to the parent activity, as specified in the app manifest.",
+                    ""
+                ],
+                "title": "Add an up action \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/NativeScript/NativeScript/issues/881",
+                "content": [
+                    "ActionBar - > ActionItem doesn't respond to visibility binding",
+                    "This doesn't appear to do anything",
+                    "I wanted to have a toggle for favs ... 2 buttons to do 1 task each and just hideshow the appropriate button.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "Unfortunately for the time being there is no property visibility on ActionItem ( it does not derive from View class ).",
+                    "You could try another approach use one ActionItem instead of two:",
+                    "Could you please give it a try and let me know how it works on your end.",
+                    "Okay thats fine, I can do it on one element, thanks !",
+                    "if it doesn't derive from view, how am I to find the element and change it's icon ?",
+                    "Sorry there is a problem with my comment ( sample code is not visible ):",
+                    "I intend to add this code snippet:",
+                    "Can i use expressions with ios.systemIcon and android.systemIcon ?",
+                    "Does actionitem still not working with visibility binding ?",
+                    "This thread has been automatically locked since there has not been any recent activity after it was closed.",
+                    "Please open a new issue for related bugs.",
+                    "locked and limited conversation to collaborators",
+                    "to subscribe to this conversation on GitHub.",
+                    ""
+                ],
+                "title": "ActionBar - > ActionItem doesn't respond to visibility binding"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "26838730",
+                "link": "https://stackoverflow.com/questions/26838730",
+                "title": "The application icon does not show on action bar",
+                "answers": [
+                    {
+                        "uid": 26850864,
+                        "score": 58,
+                        "text": [
+                            "You are using the AppCompat version 21 + and it is normal.",
+                            "The Action Bar follows the material design guidelines and uses a LINK.",
+                            "As you can read LINK:",
+                            "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
+                            "If you would like an application icon -LRB- but I discourage it -RRB-, you can use the method setLogo -LRB- -RRB-.",
+                            "Something like this:"
+                        ]
+                    },
+                    {
+                        "uid": 26866440,
+                        "score": 2,
+                        "text": [
+                            "Attribute logo is only used in API level 11 and higher -LRB- current min is 8 -RRB-, I was also confused about this question, maybe google just don't want the icon to show on material design, when the minimum sdk is set to 14 or higher and under 21, it uses holo theme, it has an icon, but appcompat style is more like material design I think, maybe google just forget to modify the holo theme"
+                        ]
+                    },
+                    {
+                        "uid": 27762435,
+                        "score": 9,
+                        "text": [
+                            "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+                            "Then in the onCreate method insert the following lines:"
+                        ]
+                    },
+                    {
+                        "uid": 27925546,
+                        "score": 48,
+                        "text": [
+                            "This issue comes when you use support library revised 21.",
+                            "Use:",
+                            "It worked for me or you can use toolbar.",
+                            "A Toolbar is a generalization of action bars for use within application layouts.",
+                            "In modern Android UIs developers should lean more on a visually distinct color scheme for toolbars than on their application icon.",
+                            "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
+                            "Reference: LINK"
+                        ]
+                    },
+                    {
+                        "uid": 30567004,
+                        "score": 2,
+                        "text": [
+                            "IN Style.xml",
+                            "In activity add this and try"
+                        ]
+                    },
+                    {
+                        "uid": 32601063,
+                        "score": 4,
+                        "text": [
+                            "This is a common `` problem''.",
+                            "Before you pull your hairs out make sure you are using:",
+                            "and not:",
+                            "and then:",
+                            "instead of:",
+                            "actionBar = getActionBar -LRB- -RRB- ;",
+                            "And finally:"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-actionbar",
+                    "icons",
+                    "android-appcompat",
+                    "material-design"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://guides.codepath.com/android/Defining-The-ActionBar",
+                "type": "misc",
+                "content": [
+                    "The ActionBar can consist of:",
+                    "An application icon An `` upward'' navigation to logical parent An application or activity-specific title Primary action icons for an activity Consistent navigation ( including navigation drawer )",
+                    "Important to note is that prior to 3.0, there was no ActionBar.",
+                    "In 2013, Google announced a support library that provides much better compatibility for older versions and support for tabbed interfaces.",
+                    "Since most of the examples below depend on this support library, make sure to include the AppCompat library.",
+                    "ActionBar Basics Every application unless otherwise specified has an ActionBar by default.",
+                    "The ActionBar by default now has just the title for the current activity.",
+                    "Changing the ActionBar Title The ActionBar title displayed at the top of the screen is governed by the AndroidManifest.xml file within the activity nodes.",
+                    "In the example below, the activity `` FirstActivity'' will have an ActionBar with the string value of the resource identified by @string / activity_name.",
+                    "If the value of that resource is `` Foo,'' the string displayed in the ActionBar for this activity will be `` Foo.''",
+                    "Note that the application node can supply a android: label that acts as the default for activities and components with no other specified label.",
+                    "Change the android: label or android: icon to modify the ActionBar title or icon for a given activity or for the application as a whole.",
+                    "In any Java activity, you can also call getSupportActionBar ( ) to retrieve a reference to the ActionBar and modify or access any properties of the ActionBar at runtime:",
+                    "You can also change many other properties of the ActionBar not covered here.",
+                    "See the Extended ActionBar Guide for more details.",
+                    "Displaying ActionBar Icon In the new Android 5.0 material design guidelines, the style guidelines have changed to discourage the use of the icon in the ActionBar.",
+                    "Although the icon can be added back with:",
+                    "The above code results in:",
+                    "You can read more about this on the material design guidelines which state: `` The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.''",
+                    "Adding Action Items When you want to add primary actions to the ActionBar, you add the items to the activity context menu and if properly specified, they will automatically appear at the top right as icons in the ActionBar.",
+                    "An activity populates the ActionBar from within the onCreateOptionsMenu ( ) method:",
+                    "Entries in the action bar are typically called actions.",
+                    "Use this method to inflate a menu resource that defines all the action items within a res/menu/menu_main.xml file, for example:",
+                    "You also should note that the xmlns: app namespace must be defined in order to leverage the showAsAction option.",
+                    "The reason is that a compatibility library is used to support the showAsAction = `` ifRoom'' option.",
+                    "This option is needed to show the item directly in the action bar as an icon.",
+                    "If there's not enough room for the item in the action bar, it will appear in the action overflow.",
+                    "If withText is specified as well ( as in the second item ), the text will be displayed with the icon.",
+                    "The above code results in two action icons being displayed:",
+                    "Note: The above code refers to the @drawable / ic_compose and @drawable / ic_profile resources which would have to exist for this to compile.",
+                    "To generate ActionBar icons, be sure to use the Asset Studio in Android Studio.",
+                    "To create a new Android icon set, right click on a res/drawable folder and invoke New - > Image Asset.",
+                    "Handling ActionBar Clicks There are two ways to handle the click for an ActionBar item.",
+                    "The first approach is you can use the android: onClick handler in the menu XML, similar to handling button clicks:",
+                    "and then define the method onComposeAction in the parent activity before attempting to run the application or an exception will be thrown for the missing method:",
+                    "The second approach is to use the onOptionsItemSelected ( ) method.",
+                    "Using the MenuItem passed to this method, you can identify the action by calling getItemId ( ).",
+                    "This returns the unique ID provided by the item tag's id attribute so you can perform the appropriate action:",
+                    "and then you can handle all the action buttons in this single method.",
+                    "Understanding ToolBar ToolBar was introduced in Android Lollipop, API 21 release and is the spiritual successor of the ActionBar.",
+                    "It's a ViewGroup that can be placed anywhere in your layout.",
+                    "ToolBar's appearance can be more easily customized than the ActionBar.",
+                    "ToolBar works well with apps targeted to API 21 and above.",
+                    "However, Android has updated the AppCompat support libraries so the ToolBar can be used on lower Android OS devices as well.",
+                    "In AppCompat, ToolBar is implemented in the android.support.v7.widget.Toolbar class.",
+                    "Refer to the ToolBar Guide for more information.",
+                    "Overview The ActionBar, now known as the App Bar, is a consistent navigation element that is standard throughout modern Android applications.",
+                    ""
+                ],
+                "title": "Defining The ActionBar | CodePath Android Cliffnotes"
+            }
+        ]
+    },
+    "parsed": true
+}

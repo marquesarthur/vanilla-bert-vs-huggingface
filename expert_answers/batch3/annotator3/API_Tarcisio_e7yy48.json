@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3031",
+      "tag": "SPAN",
+      "text": "\n    The user clicks the notification, and you called\n    setAutoCancel() when you created the notification.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3033",
+      "tag": "SPAN",
+      "text": "\n    You call cancel() for a\n    specific notification ID.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3034",
+      "tag": "SPAN",
+      "text": "This method also deletes ongoing notifications.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3036",
+      "tag": "SPAN",
+      "text": "\n    You call cancelAll(),\n    which removes all of the notifications you previously issued.",
+      "href": "Create a Notification  |  Android Developers"
+    }
+  ]
+}

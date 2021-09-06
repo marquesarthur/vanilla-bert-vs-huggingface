@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "1- Enable touch in the chart",
+      "href": "java - Show value when tapped [MPAndroidChart] - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "2 - Create MarkerView",
+      "href": "java - Show value when tapped [MPAndroidChart] - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "3 - Create the tvContent view",
+      "href": "java - Show value when tapped [MPAndroidChart] - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "4. Set the view Marker in the chart",
+      "href": "java - Show value when tapped [MPAndroidChart] - Stack Overflow"
+    }
+  ]
+}

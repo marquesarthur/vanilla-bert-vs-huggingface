@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Try to check below FragmentPagerAdapter to get endless viewpager adapter :",
+      "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-112",
+      "tag": "SPAN",
+      "text": "Thanks for support but as I said, I want two directional adapter, means if I am on the 0th position and I do swipe Right to Left then it should be move 0 to last item of viewpager, I have achieved my goal by stackoverflow.com/questions/7766630/… and I set my current position Integer.MAX_VALUE/2 but still looking for something like playstore app.",
+      "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "I created a ViewPager that supports infinite looping effect, smart auto-scroll, compatible with any indicators and easy to use.",
+      "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Github link: https://github.com/kenilt/LoopingViewPager",
+      "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "I simply reorder the fragment list, update the viewPager and move to the new page without animation, the result is an endless loop in both directions:",
+      "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "This is what happens here:\nin this example, we have 4 fragments A-B-C-D\nif the user is on fragment A (first), the new List will become: D-A-B-C\n[remove the last and push as first]\nI update the ViewPager and move (without animation) again to fragment A so index 1.",
+      "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+    }
+  ]
+}

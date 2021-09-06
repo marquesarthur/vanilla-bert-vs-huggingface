@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-55",
+      "tag": "SPAN",
+      "text": "Merely wrapping blocking code in a Flowable doesn't magically add concurrency.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "You have to explicitly use...",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-57",
+      "tag": "SPAN",
+      "text": "subscribeOn():",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-62",
+      "tag": "SPAN",
+      "text": "Well, subscribeOn() on the outer stream level basically said that all events should be processed sequentially, within this stream, on a different thread.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "We didn't say that there should many sub-streams running concurrently.",
+      "href": "RxJava: Idiomatic Concurrency — flatMap() vs. parallel() - DZone Java"
+    }
+  ]
+}

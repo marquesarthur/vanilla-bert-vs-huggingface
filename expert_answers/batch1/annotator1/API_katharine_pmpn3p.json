@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "Hilt is a dependency injection library for Android that reduces the boilerplate\nof doing manual dependency injection in your project.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "Hilt provides a standard way to use DI in your application by providing\ncontainers for every Android class in your project and managing their lifecycles\nautomatically.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "You also\ncannot constructor-inject a type that you do not own, such as a class from an\nexternal library.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "Dependencies that you provide in Hilt modules are available in all generated\ncomponents that are associated with the Android class where you install the\nHilt module.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "Constructor injection is also not possible if you don't own the class because it\ncomes from an external library (classes like\nRetrofit,\nOkHttpClient,\nor Room databases), or if instances must\nbe created with the builder\npattern.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    }
+  ]
+}

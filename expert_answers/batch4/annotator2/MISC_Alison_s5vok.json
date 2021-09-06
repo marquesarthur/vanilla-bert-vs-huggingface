@@ -1,0 +1,60 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Google Location Services API, also known as FusedLocationProviderApi, is Google’s recommended way of getting a user’s location.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "To access Google APIs, we just need to perform one more step: create an instance of GoogleApiClient.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-57",
+      "tag": "SPAN",
+      "text": "After adding this code, our “MainActivity” should look like this:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-58",
+      "tag": "SPAN",
+      "text": "Then in our “onStart” method we call the “connect” method and wait for “onConnected” callback method be invoked:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-59",
+      "tag": "SPAN",
+      "text": "The “onConnected” method will look like this:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "After you invoke “getLastLocation”, you might want to request periodic updates from the Fused Location Provider.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-68",
+      "tag": "SPAN",
+      "text": "We instantiate a new LocationRequest object.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-73",
+      "tag": "SPAN",
+      "text": "Once you have built the request, you are ready to start listening on location updates after “onConnected()” method has been fired:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-74",
+      "tag": "SPAN",
+      "text": "All that remains now is to implement the callback method to satisfy the LocationListener interface:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    }
+  ]
+}

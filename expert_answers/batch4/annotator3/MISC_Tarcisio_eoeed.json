@@ -1,0 +1,126 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "uid-372",
+            "tag": "PRE",
+            "text": "JSONObject jsonObject = new JSONObject();jsonObject.put(\"Name\", Name);jsonObject.put(\"Enroll_No\", Enrollment Number);jsonObject.put(\"Mobile\", Mobile);jsonObject.put(\"Address\", Address);jsonObject.put(\"Branch\", Branch);return jsonObject;",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "uid-380",
+            "tag": "PRE",
+            "text": "// Convert JsonObject to String FormatString userString = JsonObject.toString();// Define the File Path and its NameFile file = new File(context.getFilesDir(),FILE_NAME);FileWriter fileWriter = new FileWriter(file);BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);bufferedWriter.write(userString);bufferedWriter.close();",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "How can I see where the data is transferred into Android Studio \u2192 Device File Explorer.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "Now we have to access the data which is available in JSON file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "uid-406",
+            "tag": "PRE",
+            "text": "File file = new File(context.getFilesDir(),FILE_NAME);FileReader fileReader = new FileReader(file);BufferedReader bufferedReader = new BufferedReader(fileReader);StringBuilder stringBuilder = new StringBuilder();String line = bufferedReader.readLine();while (line != null){    stringBuilder.append(line).append(\"\\n\");    line = bufferedReader.readLine();}bufferedReader.close();// This responce will have Json Format StringString responce = stringBuilder.toString();",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-24",
+            "tag": "SPAN",
+            "text": "So we have to get the data available in responce(String) using Key and assign those value to our Java Object.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "uid-418",
+            "tag": "PRE",
+            "text": "JSONObject jsonObject  = new JSONObject(responce);//Java Object JavaObject javaObject = new JavaObject(jsonObject.get(\"name\").toString(),        jsonObject.get(\"enroll_no\").toString(),        jsonObject.get(\"mobile\").toString(),        jsonObject.get(\"address\").toString(),        jsonObject.get(\"branch\").toString());return javaObject;",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-46",
+            "tag": "SPAN",
+            "text": "Internal Storage : Sensitive data, No other application access it.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-100",
+            "tag": "SPAN",
+            "text": "Java-object will be passed to JsonObject, which will convert the java object into JsonObject which means the value is now associated with a key because JSON works as Key-Value pairs.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "Now This updated Java Object again perform WRITE operation(repeat step 1) on JSON file and Edited data will be displayed when we read(repeat step 2) the JSON object from file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-35",
+            "tag": "SPAN",
+            "text": "DELETE will remove the current object and perform the step 1 and step 2 procedure.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "Java-object will be passed to JsonObject, which will convert the java object into JsonObject which means the value is now associated with a key because JSON works as Key-Value pairs.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-20",
+            "tag": "SPAN",
+            "text": "Internal Storage : Sensitive data, No other application access it.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-101",
+            "tag": "SPAN",
+            "text": "Java-object will be passed to JsonObject, which will convert the java object into JsonObject which means the value is now associated with a key because JSON works as Key-Value pairs.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "Now we will store this JsonObject to our JSON File available at Internal Storage, For this we need to define the path and then we will store the JSON object as a String into .Json file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-99",
+            "tag": "SPAN",
+            "text": "This responce is available in String Json Format,but we have to access it in Java Object form so that we can apply it wherever we want in our application.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-4",
+            "tag": "SPAN",
+            "text": "Now We can access this javaObject and have value which was stored in JSON file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "Now We can access this javaObject and have value which was stored in JSON file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "Now We can access this javaObject and have value which was stored in JSON file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-93",
+            "tag": "SPAN",
+            "text": "Now We can access this javaObject and have value which was stored in JSON file.",
+            "href": "Android \u2014 How to Read and Write (Parse) data from JSON File ? | by Nayan Tala | Medium"
+        }
+    ]
+}

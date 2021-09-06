@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "To find out which View the user is currently looking at, you need to install Visibility Listeners.",
+      "href": "How and why to use Android Visibility Listeners"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "This does not guarantee that the window your View is in is visible to the user, as it may be obscured by another window.",
+      "href": "How and why to use Android Visibility Listeners"
+    }
+  ]
+}

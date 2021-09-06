@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "Using api is correct here.",
+      "href": "Suggestion needed for using Hilt in library modules · Issue #1991 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "In essence, because Hilt aggregates your modules into your root app Gradle project where Dagger generates the component implementation and because such code generated references all of your binding types in other modules, then the root app Gradle project must have visibility in its classpath to all of those other Gradle modules where you define Dagger modules along with its dependencies if they are used in those Dagger modules.",
+      "href": "Suggestion needed for using Hilt in library modules · Issue #1991 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "Instead of changing implementation to api (Not Recommended), you can add dependencies of missing libraries in app's build.gradle and rebuild the project.",
+      "href": "Suggestion needed for using Hilt in library modules · Issue #1991 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "In your case, you can add Retrofit and OkHttp dependency in app's build.gradle.",
+      "href": "Suggestion needed for using Hilt in library modules · Issue #1991 · google/dagger · GitHub"
+    }
+  ]
+}

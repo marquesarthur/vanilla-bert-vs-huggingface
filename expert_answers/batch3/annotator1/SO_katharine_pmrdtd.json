@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Call this method, passing in the outer most ViewGroup that you want a screen shot of:",
+      "href": "How to programmatically take a screenshot on Android? - Stack Overflow"
+    }
+  ]
+}

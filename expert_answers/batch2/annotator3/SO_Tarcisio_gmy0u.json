@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "The easiest way to simulate network issues with MockWebServer is by setting the SocketPolicy to SocketPolicy.DISCONNECT_AT_START, SocketPolicy.NO_RESPONSE or etc:",
+      "href": "android - Simulate no network using Retrofit and MockWebServer - Stack Overflow"
+    },
+    {
+      "id": "uid-1011",
+      "tag": "PRE",
+      "text": "MockWebServer server = new MockWebServer();\n\nMockResponse response = new MockResponse()\n  .setSocketPolicy(SocketPolicy.DISCONNECT_AT_START);\n\nserver.enqueue(response);\n",
+      "href": "android - Simulate no network using Retrofit and MockWebServer - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "This way you can simulate network errors like connection prematurely closed before response or Timeout exceptions",
+      "href": "android - Simulate no network using Retrofit and MockWebServer - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "I don't know if it's useful, but you can simulate a timeout with MockWebServer:",
+      "href": "android - Simulate no network using Retrofit and MockWebServer - Stack Overflow"
+    },
+    {
+      "id": "uid-1074",
+      "tag": "PRE",
+      "text": "String contentType = \"Content-type: application/json\";\nMockResponse response = MockResponse().setResponseCode(statusCode).setBody(responseBody).addHeader(contentType);\nMockWebServer proxy = new MockWebServer();\nproxy.enqueue(response);\nproxy.setBodyDelayTimeMs(timeoutDelay));\nproxy.play(10000); //Number port - Important!!!\n",
+      "href": "android - Simulate no network using Retrofit and MockWebServer - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "Note: Please, set HttpClient of your code (e.g. AsyncHttpClient) with that number port for testing purpose.",
+      "href": "android - Simulate no network using Retrofit and MockWebServer - Stack Overflow"
+    }
+  ]
+}

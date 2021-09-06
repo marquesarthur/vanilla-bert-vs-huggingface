@@ -1,0 +1,60 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "Back navigation is how users move backward through the history of screens they\npreviously visited.",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "All Android devices provide a Back button for this type of\nnavigation, so you should not add a Back button to your app’s UI.",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "However, there are a few\ncases where your app might need to implement its own Back behavior in order to\nprovide the best possible user experience.",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "For example, when using a WebView,\nyou might want to override the default Back button behavior to allow the user to\nnavigate back through their web browsing history instead of the previous screens\nin your app.",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "ComponentActivity, the base\nclass for FragmentActivity\nand AppCompatActivity,\nallows you to control the behavior of the Back button by using its\nOnBackPressedDispatcher,\nwhich you can retrieve by calling getOnBackPressedDispatcher().",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Here's an example callback implementation:",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "You can provide multiple callbacks via addCallback().",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "When doing so, the callbacks are invoked in the reverse order in which they are\nadded - the callback added last is the first given a chance to handle the\nBack button event.",
+      "href": "Provide custom back navigation  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "For example, if you added three callbacks named\none, two and three in order, they would be invoked in the order of\nthree, two, and one, respectively.",
+      "href": "Provide custom back navigation  |  Android Developers"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+    "https://developer.android.com/codelabs/advanced-kotlin-coroutines#7": {
+        "apiref": [
+            "Now if the filter button is pressed ( and only GrowZone 9 plants are displayed ), the Sunflower disappears from the list since its GrowZone is not 9.",
+            "It will fallback to an empty list if there's a network error, so that our app can still display data even if the sorting order isn't fetched.",
+            "Now if you run the app, the custom sorted plant list should appear:",
+            "The coroutine starts execution when it is observed, and is cancelled when the coroutine successfully finishes or if either the database or network call fails.",
+            "Similar to plants LiveData above, the coroutine starts execution when it is observed and is terminated either on completion or if either the database or network call fails.",
+            "This is important if the flow performed expensive work like making a network request.",
+            "This is important if the Flow performs expensive work, such as making a network request.",
+            "This step is optional for now, but if you clear your cache and don't add this call, you will not see any data in the app.",
+            "It will combine the flows in a `` fair'' manner, which means that they'll all get a chance to produce a value ( even if one of them is produced by a tight loop ).",
+            "So if all we were doing was calling suspend functions in Retrofit and and using Room flows, we wouldn't need to complicate this code with main-safety concerns.",
+            "As each result from the database is returned, we'll get the cached sort order -- and if it's not ready yet, it will wait on the async network request.",
+            "This is OK because we're caching it correctly in plantsListSortOrderCache, but if that started a new network request this implementation would make a lot of unnecessary network requests.",
+            "Then, if a new value is emitted by the growZoneChannel before the previous coroutine completes, it'll cancel it before starting a new one.",
+            "Refer to this module if you run into issues."
+        ]
+    },
+    "https://stackoverflow.com/questions/35357919": {
+        "ansbot": [
+            "I think you should verify this scenario.",
+            "Zipping a list of observables is also possible, either directly:",
+            "I had similar problem, I needed to fetch search items from rest call while also integrate saved suggestions from a RecentSearchProvider.AUTHORITY and combine them together to one unified list.",
+            "However, in both of these cases, the zip function can only accept a single Object -LSB- -RSB- parameter since the types of the observables in the list are not known in advance as well as their number.",
+            "I want to observe a list of observables to be completed and in the meantime giving me an update with the progress and latest result."
+        ]
+    },
+    "https://github.com/ReactiveX/RxJava/issues/627": {
+        "hurried": [
+            "If we can perform them in parallel, we can significantly reduce our users's perceived execution time.",
+            "Inside a flatMap we kick off multiple async calls ( you can do computation whereas we do IO ) and then merge or zip them together.",
+            "However in my case the functions themselves are quite complex and touch a lot of integration points.",
+            "Add a parallel execution function for processing a single emitted item over different parallel fucntions \u00b7 Issue # 627 \u00b7 ReactiveX/RxJava \u00b7 GitHub"
+        ]
+    },
+    "https://dzone.com/articles/rxjava-idiomatic-concurrency-flatmap-vs-parallel": {
+        "lexrank": [
+            "DZone > Java Zone > RxJava: Idiomatic Concurrency -- flatMap ( ) vs. parallel ( )",
+            "flatMap ( ) Operator to the Rescue The flatMap ( ) operator enables concurrency by splitting a stream of events into a stream of sub-streams.",
+            "java, rxjava, concurrency, parallel, flatmap, tutorial",
+            "RxJava: Idiomatic Concurrency -- flatMap ( ) vs. parallel ( )",
+            "When it comes to concurrent programming using the RxJava library, here's a breakdown of flatMap ( ) and parallel ( ) and some guidance as to which is the most helpful."
+        ]
+    },
+    "https://proandroiddev.com/rxjava-mistakes-not-so-parallel-execution-of-blocking-tasks-dcb392a12d03": {
+        "lexrank": [
+            "The scheduler won't be applied to each of the completables but only to completable returned by merge.Corrected versionTo both tasks work in parallel subscribeOn should be called on each of the completables that would be merged.And the output finally is correct, both tasks run in parallel on the separate thread from the io pool.What about other operators?The same rule applies not only to the merge operator but also to zip operator which you can use to run a code from two Singles or Observables in parallel and combine their results.Code for parallel execution of two zipped Singles which emit some Strings would look like this: My other posts about RxJava: Unit Testing asynchronous RxJava code ( in Kotlin ) Display progress of multipart request with Retrofit and RxJavaProAndroidDevThe latest posts from Android Professionals and Google ... Follow916 9 RxjavaAndroidAndroid App DevelopmentMobile App DevelopmentAndroidDev916 claps916 claps9 responsesWritten byPaulina SadowskaFollowAndroid DeveloperFollowProAndroidDevFollowThe latest posts from Android Professionals and Google Developer Experts.FollowWritten byPaulina SadowskaFollowAndroid DeveloperProAndroidDevFollowThe latest posts from Android Professionals and Google Developer Experts.More From MediumKotlin.",
+            "The scheduler won't be applied to each of the completables but only to completable returned by merge.Corrected versionTo both tasks work in parallel subscribeOn should be called on each of the completables that would be merged.And the output finally is correct, both tasks run in parallel on the separate thread from the io pool.What about other operators?The same rule applies not only to the merge operator but also to zip operator which you can use to run a code from two Singles or Observables in parallel and combine their results.Code for parallel execution of two zipped Singles which emit some Strings would look like this: My other posts about RxJava: Unit Testing asynchronous RxJava code ( in Kotlin ) Display progress of multipart request with Retrofit and RxJava"
+        ]
+    }
+}

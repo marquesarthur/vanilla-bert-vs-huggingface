@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-173",
+      "tag": "SPAN",
+      "text": "\n          I'm adding the support for gravity in next release.\nYou could try:\ncompile 'com.nex3z:flow-layout:1.1.1'\n\n    \n      \n    \n\n      \n    \n\n    \n  \n<com.nex3z.flowlayout.FlowLayout\n    android:id=\"@+id/flow\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"300dp\"\n    android:gravity=\"center_vertical\"\n    android:background=\"@android:color/darker_gray\"\n    app:flChildSpacing=\"auto\"\n    app:flRowSpacing=\"8dp\"/>\n    \n      \n    \n\n      \n    \n\n    \n  \nThe layout above will produce:\n\n      ",
+      "href": "Is there a way to set layout's gravity? · Issue #10 · nex3z/FlowLayout · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "You could try:",
+      "href": "Is there a way to set layout's gravity? · Issue #10 · nex3z/FlowLayout · GitHub"
+    }
+  ]
+}

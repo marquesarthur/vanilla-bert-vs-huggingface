@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "Here is a more complex example from the InteractiveChart sample provided with this class.",
+      "href": "Drag and scale  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "The InteractiveChart sample supports both scrolling (panning) and scaling with multiple fingers,\nusing the ScaleGestureDetector \"span\"\n(getCurrentSpanX/Y) and\n\"focus\" (getFocusX/Y) features:",
+      "href": "Drag and scale  |  Android Developers"
+    }
+  ]
+}

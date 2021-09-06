@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "Have you tried Jackson?",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-38",
+      "tag": "SPAN",
+      "text": " I've used it on every version of android and it works quite nicely.",
+      "href": "JSON Parsing works on Android 4.0 but not on Android < 4.0 - Stack Overflow"
+    }
+  ]
+}

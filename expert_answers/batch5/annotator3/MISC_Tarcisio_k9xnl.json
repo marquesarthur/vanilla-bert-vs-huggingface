@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "If you have a JSON object for “Vehicle”, it could be a “Car” or “Plane”, each with its own fields, some unique to the other.",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "The above classes should be:",
+      "href": "Jackson Polymorphic Deserialization | by David Truong | Medium"
+    }
+  ]
+}

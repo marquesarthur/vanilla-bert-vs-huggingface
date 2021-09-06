@@ -1,0 +1,42 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "A notification can offer up to three action buttons that allow the user to\nrespond quickly, such as snooze a reminder or even reply to a text message.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "To add an action button, pass a PendingIntent to the\naddAction()\nmethod.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-107",
+      "tag": "SPAN",
+      "text": "\n  Notifications remain visible until one of the following happens:\n",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2895",
+      "tag": "SPAN",
+      "text": "\n    You call cancel() for a\n    specific notification ID.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2896",
+      "tag": "SPAN",
+      "text": "This method also deletes ongoing notifications.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2898",
+      "tag": "SPAN",
+      "text": "\n    You call cancelAll(),\n    which removes all of the notifications you previously issued.",
+      "href": "Create a Notification  |  Android Developers"
+    }
+  ]
+}

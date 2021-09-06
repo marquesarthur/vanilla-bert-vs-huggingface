@@ -1,0 +1,243 @@
+{
+    "task": "Android: rotate canvas around the center of the screen",
+    "description": "I'm trying to rotate the canvas around the center of the screen, to get the ( 0,0 ) coordinates at the bottom right.\nThis is how I do it:\nIt does rotate correctly, and everything is perfect at the AVD with API level 17.\nBut on the AVD with API level 8 the ( 0,0 ) coordinate appears at the wrong place.\nBefore rotation the picture was fitting the whole screen at this device too, but now it looks like this:\nwhat is causing the problem ?\nThe problem is resolved by rotating the canvas around its own middle point:\nBut still, why doesn't the previous version work with older APIs ?",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/18028369",
+    "question_id": "18028369",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/gestures/scale",
+                "type": "android",
+                "content": [
+                    "This lesson describes how to use touch gestures to drag and scale on-screen objects, using onTouchEvent ( ) to intercept touch events.",
+                    "Refer to the following related resources:",
+                    "If you are targeting Android 3.0 or higher, you can use the built-in drag-and-drop event listeners with View.OnDragListener, as described in Drag and Drop.",
+                    "A common operation for a touch gesture is to use it to drag an object across the screen.",
+                    "The following snippet lets the user drag an on-screen image.",
+                    "The following snippet enables a user to drag an object around on the screen.",
+                    "It records the initial position of the active pointer, calculates the distance the pointer traveled, and moves the object to the new position.",
+                    "It correctly manages the possibility of additional pointers, as described above.",
+                    "Notice that the snippet uses the getActionMasked ( ) method.",
+                    "You should always use this method ( or better yet, the compatibility version MotionEventCompat.getActionMasked ( ) ) to retrieve the action of a MotionEvent.",
+                    "Unlike the older getAction ( ) method, getActionMasked ( ) is designed to work with multiple pointers.",
+                    "It returns the masked action being performed, without including the pointer index bits.",
+                    "The previous section showed an example of dragging an object around the screen.",
+                    "Another common scenario is panning, which is when a user's dragging motion causes scrolling in both the x and y axes.",
+                    "The above snippet directly intercepted the MotionEvent actions to implement dragging.",
+                    "The snippet in this section takes advantage of the platform's built-in support for common gestures.",
+                    "It overrides onScroll ( ) in GestureDetector.SimpleOnGestureListener.",
+                    "To provide a little more context, onScroll ( ) is called when a user is dragging a finger to pan the content.",
+                    "onScroll ( ) is only called when a finger is down ; as soon as the finger is lifted from the screen, the gesture either ends, or a fling gesture is started ( if the finger was moving with some speed just before it was lifted ).",
+                    "For more discussion of scrolling vs. flinging, see Animating a Scroll Gesture.",
+                    "Here is the snippet for onScroll ( ):",
+                    "The implementation of onScroll ( ) scrolls the viewport in response to the touch gesture:",
+                    "As discussed in Detecting Common Gestures, GestureDetector helps you detect common gestures used by Android such as scrolling, flinging, and long press.",
+                    "For scaling, Android provides ScaleGestureDetector.",
+                    "GestureDetector and ScaleGestureDetector can be used together when you want a view to recognize additional gestures.",
+                    "To report detected gesture events, gesture detectors use listener objects passed to their constructors.",
+                    "Android provides ScaleGestureDetector.SimpleOnScaleGestureListener as a helper class that you can extend if you don't care about all of the reported events.",
+                    "Here is a snippet that illustrates the basic ingredients involved in scaling.",
+                    "Here is a more complex example from the InteractiveChart sample provided with this class.",
+                    "The InteractiveChart sample supports both scrolling ( panning ) and scaling with multiple fingers, using the ScaleGestureDetector `` span'' ( getCurrentSpanX/Y ) and `` focus'' ( getFocusX/Y ) features:",
+                    "In a drag ( or scroll ) operation, the app has to keep track of the original pointer ( finger ), even if additional fingers get placed on the screen.",
+                    "For example, imagine that while dragging the image around, the user places a second finger on the touch screen and lifts the first finger.",
+                    "If your app is just tracking individual pointers, it will regard the second pointer as the default and move the image to that location.",
+                    "To prevent this from happening, your app needs to distinguish between the original pointer and any follow-on pointers.",
+                    "To do this, it tracks the ACTION_POINTER_DOWN and ACTION_POINTER_UP events described in Handling Multi-Touch Gestures.",
+                    "ACTION_POINTER_DOWN and ACTION_POINTER_UP are passed to the onTouchEvent ( ) callback whenever a secondary pointer goes down or up.",
+                    "In the ACTION_POINTER_UP case, the example extracts this index and ensures that the active pointer ID is not referring to a pointer that is no longer touching the screen.",
+                    "If it is, the app selects a different pointer to be active and saves its current X and Y position.",
+                    "Since this saved position is used in the ACTION_MOVE case to calculate the distance to move the onscreen object, the app will always calculate the distance to move using data from the correct pointer.",
+                    ""
+                ],
+                "title": "Drag and scale \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/xamarin/Xamarin.Forms/issues/9802",
+                "content": [
+                    "-LSB- Bug -RSB- After using rotation on button it disappears \u00b7 Issue # 9802 \u00b7 xamarin/Xamarin.",
+                    "Forms \u00b7 GitHub",
+                    "-LSB- Bug -RSB- After using rotation on button it disappears",
+                    "Usage of Rotation property or RotateTo extension method on circle button causes that button disappears partially.",
+                    "This bug happens only on Android 7 and Android 8.",
+                    "In Code Behind create method PlusButton_OnClicked with this implementation:",
+                    "After opening app/rotating button by click you can see only part of button.",
+                    "Button is fully visible on screen",
+                    "Version with issue: Xamarin Forms 4.5.0.356, 4.4 has this problem too.",
+                    "Last known good version: Xamarin Forms 4.2, maybe 4.3 works too.",
+                    "IDE: Visual Studio 2019 Enterprise",
+                    "Android: Android SDK 29 with Android SDK Tools 26.1.1.",
+                    "Android Support Library Version: 28.0.0.3",
+                    "Nuget Packages: Xamarin Forms 4.5.0.356, Prism.Forms 7.0.0.396",
+                    "Affected Devices: Any device with Android 7.0 / 7.1 / 8.0 / 8.1",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "added this to To do",
+                    "in Android Ready For Work",
+                    "Workaround for this fix is to disable Draw ( ) method in",
+                    "And same method in MaterialButtonRenderer",
+                    "This bug was introduced in Xamarin.Forms",
+                    "4.4.0.991440 as a solution to fix some clipping issues: )",
+                    "@yurkinh Thank you for your answer !",
+                    "Could you explain wider how to disable this method ?",
+                    "Overriding in custom renderer does not give any effect: (",
+                    "Actually you should just remove this method form both renderers not override.",
+                    "I can make custom nugets for you to test it on your project or you can install",
+                    "-LSB- Bug -RSB- Animation broken again in Android.",
+                    "Fixed in 4.5.0.530 ( update: older Android only.",
+                    "@mdbill Sorry but I can not agree.",
+                    "I confimed it happenes in version 4.5.0.530 ( SR3 ) for example on Android 8.1",
+                    "@Skirtek Ah, good thing you spoke up.",
+                    "My problem was added to this as a duplicate -- which we now know it was not since my problem went away.",
+                    "Maybe 617 will work for you ?",
+                    "I found that thisclipping problem also exists in XF 4.4.0.991265 leaving me with no version of XF that works with rotation ( note: it's not just animation, simply static rotation is enough ).",
+                    "Happens on Android 7.1.2, release builds ( not debug )",
+                    "If I set Opacity to 0.99 ( or less ) all is well.",
+                    "@mdbill I'm glad that you have found solution.",
+                    "I can confirm that works on Android 7 and 8 and it could be ( not dirty ) workaround until Team Xamarin fix this: )",
+                    ""
+                ],
+                "title": "-LSB- Bug -RSB- After using rotation on button it disappears \u00b7 Issue # 9802 \u00b7 xamarin/Xamarin."
+            }
+        ],
+        "qa": [
+            {
+                "uid": "8712652",
+                "link": "https://stackoverflow.com/questions/8712652",
+                "title": "Rotating Image on A canvas in android",
+                "answers": [
+                    {
+                        "uid": 8712718,
+                        "score": 4,
+                        "text": [
+                            "You have to rotate the canvas first and then draw whatever you want.",
+                            "Then the object drawn will be appeared as rotated on screen.",
+                            "try this its good way.",
+                            "Check this tutorial you will get information about how to draw bitmap and how to rotate canvas",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 8712727,
+                        "score": 54,
+                        "text": [
+                            "You can either rotate your bitmap when you draw it by using a matrix:",
+                            "You can also do it by rotating the canvas before drawing:",
+                            "Pick the one that suits you the best."
+                        ]
+                    },
+                    {
+                        "uid": 8712769,
+                        "score": 1,
+                        "text": [
+                            "@Reham: Look at this example code below,",
+                            "you have to use the matrix to rotate image look the lines",
+                            "this will rotate the image to 45 degrees",
+                            "Hope this help you ... thx"
+                        ]
+                    },
+                    {
+                        "uid": 19247660,
+                        "score": 1,
+                        "text": [
+                            "Use following code.",
+                            "it worked for me",
+                            "float rotation = 30.0 f ;"
+                        ]
+                    },
+                    {
+                        "uid": 28293393,
+                        "score": 2,
+                        "text": [
+                            "This is the only one that worked for me with no problem."
+                        ]
+                    },
+                    {
+                        "uid": 55437311,
+                        "score": 1,
+                        "text": [
+                            "Based on @Sakthi's code, but add scaling: -RRB-"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "rotation",
+                    "android-canvas",
+                    "angle"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://dzone.com/articles/android-rotate-and-scale",
+                "type": "misc",
+                "content": [
+                    "Thanks for visiting DZone today,",
+                    "How to Post to DZone",
+                    "Over 2 million developers have joined DZone.",
+                    "DZone > Mobile Zone > Android Rotate and Scale Bitmap Example",
+                    "Android Rotate and Scale Bitmap Example",
+                    "Feb. 24, 14 \u00b7 Mobile Zone",
+                    "Join the DZone community and get the full member experience.",
+                    "i built an android demo app so i could test my understanding of displaying bitmaps on a canvas.",
+                    "i had done scaling of bitmaps, rotation of bitmaps, and translation from one origin to another, but i had not done more than one of those transformations at a time.",
+                    "the demo app is shown in the figures above.",
+                    "there are two images in the center of the screen.",
+                    "each image is scaled to fit within the light blue region.",
+                    "when you press the rotate button, each of the images is rotated around its center, while maintaining its position in the center of the region on the screen.",
+                    "the scale button resizes the images.",
+                    "there are three different sizes.",
+                    "each time you touch scale, it switches to the next size.",
+                    "the offset cycles you through four different offsets.",
+                    "in the app mainactivity, two instances of starshipview are in the layout.",
+                    "in the oncreate method, each view is assigned a bitmap.",
+                    "the onclick method in mainactivity gets called whenever a button is clicked.",
+                    "the code in onclick finds the two views in its layout and sets properties that control the amount of rotation, size of the bitmap, and x and y offsets.",
+                    "inside class starshipview, in the ondraw method, the bitmap assigned to the view is written to the canvas.",
+                    "the code is actually very simple, once you get comfortable with using matrix objects to do the work.",
+                    "here's what goes on in the ondraw method of class starshipview.",
+                    "first, the matrix object is set so it will fit the bitmap into the rectangle for the view.",
+                    "for this demo app, i chose some interesting sizes to test this part of the code.",
+                    "the starship image is 512 x 512.",
+                    "it is scaled to fit into the 96 dp area on the left.",
+                    "the star field image on the right is 96 x 96 is displayed in the 120 dp square on the right.",
+                    "the second step is to translate the view up and left by half the width and half the height.",
+                    "that is done because rotation is around the top left point ( the origin ) of the view.",
+                    "it is very simple: `` matrix.postrotate ( rotation )''.",
+                    "once the bitmap is rotated, it needs to have its location translated to the place where it should display in the view.",
+                    "that is specified in the offsetx and offsety values.",
+                    "so you see one more matrix.posttranslate call in the method.",
+                    "the final action in the ondraw method is the drawing of the bitmap.",
+                    "notice that the drawbitmap method uses the matrix with the various transformations encoded in it.",
+                    "you can download the source code for this demo from the wglxy.com website.",
+                    "click here: download zip file from wglxy.com.",
+                    "the zip is attached at the bottom of that page.",
+                    "after you import the project into eclipse, it's a good idea to use the project -- clean menu item to rebuild the project.",
+                    "this demo app was compiled with android 4.4 ( api 19 ).",
+                    "it works in all api levels from api 10 on up.",
+                    "as with many other problems, i found very good advice on stackoverflow.",
+                    "a stackoverflow post on rotating images around the center of the image helped me.",
+                    "java, mobile, android, tips and tricks, tools & methods, scale, rotate, android games, bitmaps",
+                    "Published at DZone with permission of Bill Lahti.",
+                    "See the original article here.",
+                    "Opinions expressed by DZone contributors are their own.",
+                    "Software Delivery Intelligence: How It Started, How It's Going",
+                    "7 Best Python Libraries You Shouldn't Miss in 2021",
+                    "API Security Weekly: Issue # 124",
+                    "5 of the Weirdest and Hardest Programming Languages",
+                    "About DZone Send feedback Careers",
+                    "Developer Marketing Blog Advertise with DZone +1 (919)\u00a0238-7100",
+                    "MVB Program Become a Contributor Visit the Writers' Zone",
+                    "Terms of Service Privacy Policy",
+                    "600 Park Offices Drive Suite 150 Research Triangle Park, NC 27709 support@dzone.com +1 (919)\u00a0678-0300",
+                    ""
+                ],
+                "title": "Android Rotate and Scale Bitmap Example - DZone Mobile"
+            }
+        ]
+    },
+    "parsed": true
+}

@@ -1,0 +1,42 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "326a",
+      "tag": "H2",
+      "text": "Step 2: Register a reCAPTCHA key pair",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "We need to add these dependencies to our build.gradle file (module level)",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "In your activity’s onCreate() method we will create an instance of Google API client as follows:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Wherever you want to invoke the captcha widget use the following code:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "477d",
+      "tag": "H2",
+      "text": "Step 6: Final step validate the user’s response token on server",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "So for that, you need to send a post request to URL: https://www.google.com/recaptcha/api/siteverify with following three parameters:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    }
+  ]
+}

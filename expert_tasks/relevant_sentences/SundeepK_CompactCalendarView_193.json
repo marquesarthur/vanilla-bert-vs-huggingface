@@ -1,0 +1,29 @@
+{
+    "https://developer.android.com/guide/topics/graphics/drawable-animation": {
+        "apiref": [
+            "This is useful if you want to display a custom loading animation comprised of several images, or if you want one icon to morph into another after a user's action."
+        ]
+    },
+    "https://stackoverflow.com/questions/29038861": {
+        "ansbot": [
+            "with a Material Components Theme -LRB- with a MaterialToolbar for example -RRB-:",
+            "Edit: You can't use a color from your colors.XML or somewhere else, the color must be decalred directly in the Vector's XML file.",
+            "To change the navigation icon you can use:"
+        ]
+    },
+    "https://github.com/SundeepK/CompactCalendarView/issues/181": {
+        "hurried": [
+            "Since you want to offset the icon to the top right, you will need to offset the ( x, y ) position slightly, but make sure you use dp because if you simply offset the ( x, y ) by some amount it willnot translate to different devices.",
+            "Then change CompactCalendarController.java by removing those lines I mentioned and replacing with a call to draw your icon.",
+            "If you have more than one event in the day make sure to just draw once because it's wasteful to draw multiple time in your case.",
+            "Also if you have more than one event for a given day, you only need to draw the icon once, then exit.",
+            "is that possible if i want to change the event icon/adding some small icon like this ?"
+        ]
+    },
+    "https://github.com/jd-alexander/LikeButton": {
+        "lexrank": [
+            "Animation Size To change the size of the dots that also contributes to the size of the overall like button view you can use the animation scale factor attribute via XML or it's Java equivalent XML",
+            "Like Button Table of Contents Gradle Dependency Repository Dependency Basic Usage Like Button XML Attributes Button State XML Java XML Java Like Event Listener Icon Types XML Java Icon Size XML Java Custom Icons XML Java Circle Color Config XML Java Dots Color Config XML Java Animation Size XML Java Inspiration Contribution License"
+        ]
+    }
+}

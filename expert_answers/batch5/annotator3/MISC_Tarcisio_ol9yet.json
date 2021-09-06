@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "Copy and paste the below code in the ZoomClass and import all classes.",
+      "href": "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in Kotlin | by David Sunday | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "Select code view and paste the code below.",
+      "href": "Android ImageView: Double Tap and Pinch Zoom with Multi-Touch Gestures in Kotlin | by David Sunday | Medium"
+    }
+  ]
+}

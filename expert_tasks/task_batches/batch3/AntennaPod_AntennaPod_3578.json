@@ -1,0 +1,202 @@
+{
+    "task": "No lock screen controls ever",
+    "description": "**App version**: 1.73b from Google Play commit  \r\nf9e7e9aeb\r\n\r\n**Android version**: 9 PKQ 1180729001, packaged as MIUI Global 10.3.5 Stable 10.3.5.0(PEAMIXM)\r\n\r\n**Device model**: Mi 8\r\n\r\n**Expected behaviour**: Lock screen controls\r\n\r\n**Current behaviour**: No lock screen controls ever on this phone and never seen them working (or on preceding Huawei P8). Notification controls always work, never had problems. Lock screen controls fine for all other apps without tweaking, same on old P8. I have loosened all notification and lock screen limits, removed power management, etc., but no luck ever. I've also tried setting to use different players, but change in behaviour.\r\n\r\nHopefully this is not a duplicate issue - tried searching github\r\n\r\nBrilliant app - which is why I use it. But this is pushing me away :(\r\n\r\n**First occurred**: Since first install on P8 years ago and ever since replacing with new Mi 8",
+    "type": "GIT",
+    "link": "https://github.com/AntennaPod/AntennaPod/issues/3578",
+    "question_id": "3578",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode",
+                "type": "android",
+                "content": [
+                    "This developer's guide explains how dedicated devices can be locked to a single app or a set of apps.",
+                    "If you're an enterprise mobility management ( EMM ) developer or solutions integrator read this guide to add lock task mode to your solution.",
+                    "Android can run tasks in an immersive, kiosk-like fashion called lock task mode.",
+                    "You might use lock task mode if you're developing a kiosk application or a launcher to present a collection of apps.",
+                    "When the system runs in lock task mode, device users typically can't see notifications, access non-allowlisted apps, or return to the home screen ( unless the home screen is allowlisted ).",
+                    "Only apps that have been allowlisted by a device policy controller ( DPC ) can run when the system is in lock task mode.",
+                    "Apps are allowlisted because the person using the device can't always leave lock task mode.",
+                    "System and privileged apps, however, can run in lock task mode without being allowlisted.",
+                    "How you combine the app allowlisted for lock task mode and the allowlisting DPC will depend on the problem you want to solve.",
+                    "The system can run in lock task mode in Android 5.0 or later.",
+                    "Table 1 shows which versions of Android support allowlisting apps by user.",
+                    "In Android 9.0 or later a DPC can start any app's activity into lock task mode.",
+                    "In earlier versions, the app must already support starting its own activity in lock task mode.",
+                    "A DPC must allowlist apps before they can be used in lock task mode.",
+                    "Call DevicePolicyManager.setLockTaskPackages ( ) to allowlist apps for lock task mode as shown in the following sample:",
+                    "To find out the apps previously allowlisted for lock task mode, a DPC can call DevicePolicyManager.getLockTaskPackages ( ).",
+                    "Other apps can call DevicePolicyManager.isLockTaskPermitted ( ) to confirm that an app package supports lock task mode.",
+                    "In Android 9.0 ( API level 28 ) or higher, you can start another app's activity in lock task mode.",
+                    "If an activity is already running in the foreground or background, you need to relaunch the activity.",
+                    "Call ActivityOptions.setLockTaskEnabled ( ) and supply these options when starting the activity.",
+                    "The following snippet shows one way you can do this:",
+                    "In Android versions before 9.0, an app starts its own activities in lock task mode by calling Activity.startLockTask ( ).",
+                    "To call this method, the activity must be running in the foreground ( see Activity-lifecycle concepts ) so we suggest calling in the onResume ( ) method of an Activity or Fragment.",
+                    "Here's how you can call startLockTask ( ):",
+                    "Don't start lock task mode when the device is locked because the user might not be able to unlock the device.",
+                    "You can call KeyguardManager methods to find out if the device is locked and use an Activity lifecycle callback ( such as onResume ( ) that's called after unlocking ) to start lock task mode.",
+                    "An app in lock task mode can start new activities as long as the activity doesn't start a new task -- except tasks that launch an allowlisted app.",
+                    "To understand how tasks relate to activities, read the guide Understand Tasks and Back Stack.",
+                    "Alternatively, you can declare in your app manifest file how an activity should behave when the system is running in lock task mode.",
+                    "To have the system automatically run your activity in lock task mode, set the android: lockTaskMode attribute to if_whitelisted as shown in the following example:",
+                    "You can learn more about declaring options in the app manifest file, by reading the lockTaskMode reference.",
+                    "A DPC can remotely stop lock task mode by removing the app package from the allowlist.",
+                    "Call DevicePolicyManager.setLockTaskPackages ( ), in Android 6.0 ( API level 23 ) or later, and omit the package name from the allowlist array.",
+                    "When you update the allowlist, the app returns to the previous task in the stack.",
+                    "If an activity previously called startLockTask ( ), then the activity can call Activity.stopLockTask ( ) to stop lock task mode.",
+                    "This method only works for the activity that started lock task mode.",
+                    "Your DPC might find it useful to know when an app ( running in the same user ) enters and exits lock task mode.",
+                    "To receive callbacks, override the following callback methods in your DPC's DeviceAdminReceiver subclass:",
+                    "If you launch another app into lock task mode, you need to track the running status in your own app.",
+                    "To check if the current app is running in lock task mode, use the methods on ActivityManager as shown in the following example:",
+                    "When an app runs in lock task mode, the system user interface ( UI ) changes in the following ways:",
+                    "In Android 9.0 or higher when lock task mode is enabled, your DPC can enable certain system UI features on the device -- useful to developers creating a custom launcher.",
+                    "Call DevicePolicyManager.setLockTaskFeatures ( ) as shown in the following snippet:",
+                    "The system disables any features you don't include in the flags argument.",
+                    "The enabled UI features persist between launches into lock task mode.",
+                    "If the device is already in lock task mode, any changes you make to the lock task features show immediately.",
+                    "Table 2 describes the UI features you can customize.",
+                    "A DPC can call DevicePolicyManager.getLockTaskFeatures ( ) to get the list of features available on a device when lock task mode is enabled.",
+                    "When a device exits lock task mode, the user interface returns to the state mandated by existing device policies.",
+                    "When an app runs in lock task mode, other apps and background services can create new windows that Android displays in front of the app in lock task mode.",
+                    "Apps and services create these windows to show toasts, dialogs, and overlays to the person using the device.",
+                    "Your DPC can prevent these by adding the DISALLOW_CREATE_WINDOWS user restriction.",
+                    "The following example shows how you might do this in the onLockTaskModeEntering ( ) callback:",
+                    "Your DPC can remove the user restriction when the device exits lock task mode.",
+                    "To learn more about dedicated devices, read the following documents:",
+                    "A single app package that combines a kiosk ( to present content ) and a mini DPC ( to allowlist itself for lock task mode ).",
+                    "A DPC that's part of an enterprise mobility management solution, launching the customer's mobile apps in lock task mode.",
+                    "The status bar is blank with notifications and system information hidden.",
+                    "The Home and Overview buttons are hidden.",
+                    "Other apps can't launch new activities.",
+                    "The lock screen ( if set ) is disabled.",
+                    "Dedicated devices cookbook with further examples to restrict the dedicated devices and enhance the user experience.",
+                    "Dedicated devices overview is an overview of dedicated devices.",
+                    "Manage multiple users explains how to share devices between users.",
+                    ""
+                ],
+                "title": "Lock task mode \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/AntennaPod/AntennaPod/issues/4448",
+                "content": [
+                    "Lock screen controls disappear on Android 11 \u00b7 Issue # 4448 \u00b7 AntennaPod/AntennaPod \u00b7 GitHub",
+                    "Lock screen controls disappear on Android 11",
+                    "I have used the search function to see if someone else has already submitted the same bug report.",
+                    "I will describe the problem with as much detail as possible.",
+                    "If the bug only to occurs with a certain podcast, I will include the URL of that podcast.",
+                    "App version: 1.8.1 ( 6e6a64f ) from Google Play Store",
+                    "Device model: Google Pixel 3a",
+                    "Since I updated to Android 11 the lock screen controls disappear sometimes and won't reappear until I force shut the app and start it again.",
+                    "( Also the tray icon disappeared but I am not sure if this is maybe intended behavior, because the podcast control moved to another place ).",
+                    "Play podcasts on Android 11.",
+                    "May be it is also relevant to mention that most of the time my android is in Do Not Disturb mode, but disabling it did not change anything for me.",
+                    "Always show lock screen display and controls",
+                    "Lock screen controls disappear after some time",
+                    "First occurred: After update to Android 11",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "Same issue happening for me.",
+                    "App version: 1.8.3 from FDroid",
+                    "Same here after Android update.",
+                    "I just noticed this too.",
+                    "If I'm actively using antennapod, the controls stay around.",
+                    "If I leave a podcast paused for a bit ( unsure exactly how long ), the controls go away and only return when I start playing it again.",
+                    "Then the controls will stick around, and disappear again.",
+                    "Kinda wondered if it was related to the adaptive battery option ( which is enabled on my phone )",
+                    "App version: 1.8.1 ( From Google Play store )",
+                    "Android version: 11 with October 5 2020 security update",
+                    "I updated my build to 2.0.1",
+                    "Aside from the lock screen controls, the same happens with the media controls in the quick settings drop-down menu.",
+                    "After a while they are gone.",
+                    "I.e. if the sounds/media setting is set to Hide player after session ends.",
+                    "If this option is disabled, old podcast episodes will clutter the media controls but without possibility to dismiss or start playback.",
+                    "This might be another issue though, I'm not sure",
+                    "Doesn't seem to be fixed in 2.02",
+                    "Having the same issue on android 11.",
+                    "Same problem with 2.0.3 on the Pixel 4a.",
+                    "Apparently this is a problem with Android 11 as it affects other media players too.",
+                    "no player controls on lockscreen",
+                    "no episode picture lockscreen background",
+                    "player controls in quick settings only visible after swiping down twice",
+                    "App version: 2.1.2 ( a87cec5 ) ( from Google Play store )",
+                    "Android version: 11 ( 1 January 2021 security update )",
+                    "Device model: Samsung Galaxy S10e",
+                    "The problem seems to have been fixed somewhat fixed with the latest updates at least on my Pixel 4a.",
+                    "no episode picture on lockscreen background",
+                    "player controls on lockscreen seem to vanish sometimes ( e.g. over night ), but are there after you interacted with the podcast application",
+                    "The player controls seem to consistently show up in quick settings after the first down-swipe.",
+                    ""
+                ],
+                "title": "Lock screen controls disappear on Android 11 \u00b7 Issue # 4448 \u00b7 AntennaPod/AntennaPod \u00b7 GitHub"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "24652078",
+                "link": "https://stackoverflow.com/questions/24652078",
+                "title": "Media Control on Lock Screen like Google Play Music in android?",
+                "answers": [
+                    {
+                        "uid": 25617234,
+                        "score": 15,
+                        "text": [
+                            "Have you checked RemoteControlClient ?",
+                            "it is used for the Android Music Remote control even if the App is in Lock mode.",
+                            "-LRB- same like image you have attached -RRB-",
+                            "Please check LINK",
+                            "Just call below method while you receiver command action for Play, Pause, Next and previous of the Song track.",
+                            "MediaButtonHelper Class",
+                            "Please also check this developer app given for how to integrate RemoteControlClient: LINK However UI for the RemoteControlClient defer as per the device you can not updates its UI to your own but you have control to show and display the component and control of the Music app.",
+                            "Above mentioned class is deprecated now.",
+                            "So please check with LINK for that and update accordingly."
+                        ]
+                    },
+                    {
+                        "uid": 39047313,
+                        "score": 2,
+                        "text": [
+                            "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+                            "The docs are here: LINK"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-appwidget",
+                    "lockscreenwidget"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://medium.com/@shivanshrajpoot/create-a-react-native-app-which-works-on-lock-screen-android-b127f0177455",
+                "type": "misc",
+                "content": [
+                    "Create A React Native App | Which works on Lock Screen ( Android ) Shivansh RajpootFeb 18, 2019 \u00b7 7 min readEver created an app on android which provides user interaction even when the screen is locked of your android phone?I think for android developers it's a piece of cake, you create a background service which runs even when the app is killed, then you can invoke an activity even when the the phone is locked, its easy on android right ?",
+                    "But what about react-native, you may think it's a difficult, the answer is no, it's very simple just like the android but the process is somewhat different.",
+                    "So, Let's see what are we going to build ... We are going to build an app on react-native which uses FCM background messaging service, service runs while the app is killed or is in background, When a FCM message is received it invokes the activity and shows to the user, no matter if the phone is locked.Where can we use this ?",
+                    "We can use it when we need to show a calling screen like WhatsApp or whatever you want.Let's have a basic idea about how this works: 1.",
+                    "You create a firebase cloud messaging background service .2.",
+                    "You trigger a message from FCM which does your desired task, for now, we are opening an activity on lock screen.What are we gon na need for this?Hmm ... Let me think ... Basically you just need react-native nothing else ... What libraries are we gon na use for this ?",
+                    "just this one, as we need to run a backgroundMessagingService of firebase to receive message.Just use this repo for creating a basic react-native app with all react-native features.",
+                    "This starter-kit contains everything we need for firebase just follow the instructions of read.me file to get started.Once you clone the repo, run `` npm i'' in the project, you can rename the project by using `` npm run rename''.",
+                    "When you are done with this try to run the app on device by using `` react-native run-android''.",
+                    "But before running the app you will need to add your own google-services.",
+                    "json file to the your_project_name / android/app/google-services.",
+                    "json make sure to do this otherwise you will not be able to build the app.Now, when you run the app you will be able to see the firebase functionalities are enabled but for running backgroundMessagingService we will still need to tweak to our AndroidManifest.xmlAdd this line inside <application> tag:",
+                    "Create A React Native App | Which works on Lock Screen ( Android ) Shivansh RajpootFeb 18, 2019 \u00b7 7 min read",
+                    "Shivansh RajpootFeb 18, 2019 \u00b7 7 min read",
+                    "AndroidManifest.xmlNow as we have updated our manifest file to run the background service, we need to create a background service which listens for fcm messages in background.",
+                    "For this purpose just create a javascript file where ever you want in the root of the project, let's call it bgMessaging.js, add these lines of code:",
+                    "Now we are able to expose our package to Javascript but we still need to write the whole module, for that purpose we need to create a file called ActivityStarterModule.java as we used it in our ActivityStarterReactPackage.java file above, so just create the file in the same folder, and add these lines:",
+                    "Don't think about it too much for now as we are just going to use navigateToExample method for launching the activity, but other methods are also useful for other purposes as we you will need them for user interaction or events.Now we have created our module but navigateToExample uses MyActivity so we need to create an activity first to launch, for that let's create the a file called MyActivity.java in the same folder we created above files and add these lines of code:"
+                ],
+                "title": "Create A React Native App | Which works on Lock Screen (Android) | by Shivansh Rajpoot | Medium"
+            }
+        ]
+    },
+    "parsed": true
+}

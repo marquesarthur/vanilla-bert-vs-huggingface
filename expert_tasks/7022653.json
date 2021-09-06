@@ -1,0 +1,315 @@
+{
+    "task": "How to check programmatically whether app is running in debug mode or not?",
+    "description": "I have to identify at some place in my app that, whether my app is running in debug mode or live mode.\nIs there any function or piece of code available to check that.\nthat returns true/false in either case on/off.\nif so, please help me out.",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/7022653",
+    "question_id": "7022653",
+    "resources": {
+        "api": [                        
+            {
+                "link": "https://developer.android.com/studio/debug/dev-options",
+                "type": "android",
+                "content": [
+                    "The Settings app on Android includes a screen called Developer options that lets you configure system behaviors that help you profile and debug your app performance.",
+                    "For example, you can enable debugging over USB, capture a bug report, enable visual feedback for taps, flash window surfaces when they update, use the GPU for 2D graphics rendering, and more.",
+                    "On Android 4.1 and lower, the Developer options screen is available by default.",
+                    "On Android 4.2 and higher, you must enable this screen.",
+                    "To enable developer options, tap the Build Number option 7 times.",
+                    "You can find this option in one of the following locations, depending on your Android version:",
+                    "At the top of the Developer options screen, you can toggle the options on and off ( figure 1 ).",
+                    "You probably want to keep this on.",
+                    "When off, most options are disabled except those that don't require communication between the device and your development computer.",
+                    "Before you can use the debugger and other tools, you need to enable USB debugging, which allows Android Studio and other SDK tools to recognize your device when connected via USB.",
+                    "To enable USB debugging, toggle the USB debugging option in the Developer Options menu.",
+                    "The rest of this page describes some of the other options available on this screen.",
+                    "On Android 8.0 and higher, you can tap Quick settings developer tiles to add selected developer options to your Quick Settings panel.",
+                    "After you select one or more of the available tiles ( figure 2 ), open the Quick Settings panel and tap the pencil to enter edit mode.",
+                    "Then, drag the developer tiles from the tiles pane onto the Quick settings panel, and tap the pencil again to exit edit mode.",
+                    "Add to Quick Settings panel",
+                    "Other general options include the following:",
+                    "Debugging options provide ways to configure on-device debugging, and to establish communication between the device and your development computer.",
+                    "Enable USB debugging ( figure 3 ) so your Android device can communicate with your development machine through Android Debug Bridge ( adb ).",
+                    "The Wait for Debugger option is unavailable until you use Select debug app to select the app to debug.",
+                    "If you enable Wait for Debugger, the selected app waits for the debugger to attach before it executes.",
+                    "Other debugging options include the following:",
+                    "Networking options provide ways to configure Wi-Fi and DHCP settings.",
+                    "Tap Select USB Configuration to specify how you want the computer to identify the device.",
+                    "As shown in figure 5, you can configure devices for charging only, to transfer files ( MTP ), to transfer pictures ( PTP ), to use your mobile internet on the PC ( RNDIS ), or to transfer audio or MIDI files.",
+                    "Tap Bluetooth AVRCP version and select the profle version you want to use to control all of the Bluetooth A/V equipment to which your device has access.",
+                    "Addiitonally, to fine-tune the audio playback on the device, tap and set the following options:",
+                    "The followng list describes other ways to configure Wi-Fi and DHCP setup:",
+                    "Enable Show taps to display taps when you touch the screen.",
+                    "A circle appears under your finger or stylus and follows you as you move around the screen.",
+                    "A tap works like a pointer when you Record a video on your device.",
+                    "Enable Pointer Location to show the pointer ( tap ) location on the device with cross-hairs.",
+                    "A bar appears across the top of the screen to track the cross-hair coordinates ( figure 6 ).",
+                    "As you move the pointer, the coordinates in the bar track the cross-hair location and the pointer path draws on the screen.",
+                    "Drawing options provide visual cues about the app's user interface and how it operates.",
+                    "Enable Show Layout Bounds to show your app's clip bounds, margins, and other user interface constructions on the device, as shown in figure 7.",
+                    "Other Drawing options include the following:",
+                    "Hardware accelerated rendering options provide ways to optimize your app for its target hardware platforms by leveraging hardware-based options such as the GPU, hardware layers, and multisample anti-aliasing ( MSAA ).",
+                    "Tap Simulate color space to change the color scheme of the entire device UI.",
+                    "The options refer to types of color blindness.",
+                    "Choices are Disabled ( no simulated color scheme ), Monochromacy ( black, white, and gray ), Deuteranomaly ( red-green ), Protanomaly ( red-green ), and Tritanomaly ( blue-yellow ).",
+                    "Protanomaly refers to red-green color blindness with weakness in red colors, and Deuteranomaly ( shown in figure 8 ) refers to red-green color blindness with weakness in green colors.",
+                    "If you take screenshots in a simulated color space, they appear normal as if you hadn't changed the color scheme.",
+                    "Some other ways to leverage hardware-based options are the following:",
+                    "Set Disable USB audio routing on to disable automatic routing to external audio devices connected to a computer through a USB port.",
+                    "Automatic routing can interfere with apps that are USB-aware.",
+                    "In Android 11 and later, when an application without RECORD_AUDIO permission uses UsbManager to request direct access to a USB audio device with audio capture capability ( such as a USB headset ), a warning message appears asking the user to confirm permission to use the device.",
+                    "The system ignores any `` always use'' option, so the user must acknowledge the warning and grant permission every time an app requests access.",
+                    "To avoid this behavior, your app should request the RECORD_AUDIO permission.",
+                    "Monitoring options provide visual information about app performance, such as long thread and GPU operations.",
+                    "Tap Profile GPU Rendering and then On screen as bars to display the GPU rendering profile as bars ( figure 9 ).",
+                    "For more information, see Profile GPU rendering.",
+                    "App options help you understand how your app operates on the target device.",
+                    "Tap Background process limit to set the number of processes that can run in the background at one time.",
+                    "Possible settings are shown in figure 10.",
+                    "Tap Reset ShortcutManager rate-limiting during testing so background apps can continue to call shortcut APIs until the rate limit is reached again.",
+                    "For more information about shortcuts and rate limits, see ShortcutManager.",
+                    "Enable Don't keep activities to increase battery life by destroying every activity as soon as the user leaves the activity's main view.",
+                    "Android 9 ( API level 28 ) and higher: Settings > About Phone > Build Number",
+                    "Android 8.0.0 ( API level 26 ) and Android 8.1.0 ( API level 26 ): Settings > System > About Phone > Build Number",
+                    "Android 7.1 ( API level 25 ) and lower: Settings > About Phone > Build Number",
+                    "Android 9 ( API level 28 ) and higher: Settings > System > Advanced > Developer Options > USB debugging",
+                    "Android 8.0.0 ( API level 26 ) and Android 8.1.0 ( API level 26 ): Settings > System > Developer Options > USB debugging",
+                    "Android 7.1 ( API level 25 ) and lower: Settings > Developer Options > USB debugging",
+                    "Memory: ( On Android 8.0 and higher ) Display memory stats, such as average memory usage, memory performance, total memory available, average memory used, how much free memory is available, and how much memory is being used by apps.",
+                    "Take bug report: Get a copy of the current device log files to share with someone.",
+                    "When you get a notification that the bug report is ready, tap the notification to share it.",
+                    "System UI demo mode: Makes it easier to take clean screenshots by displaying a generic, preset notification bar that does not show notifications or low battery warnings.",
+                    "Enable Demo Mode allows you to change the appearance of the status bar using adb demo mode commands.",
+                    "Or you can use Show Demo Mode to hide notifications and display a preset status bar.",
+                    "Note: The adb demo mode commands might not work on all devices because they are not verified during Android certification testing.",
+                    "They're only verified to work on Nexus and Pixel devices.",
+                    "Desktop backup password: Sets a backup password so you can use adb commands to back up and restore device apps and data under password protection.",
+                    "Stay awake: Sets your screen to stay on every time you plug it in.",
+                    "Enable Bluetooth Host Controller Interface ( HCI ) snoop log: Captures all Bluetooth HCI packets in a file stored at / sdcard/btsnoop _ hci.log.",
+                    "You can retrieve the packets, and then use a program like Wireshark to analyze and troubleshoot the information.",
+                    "Store logger data persistently on device: Select the type of log messages you want to store persistently on the device.",
+                    "Options are off, all, all but radio, or kernel only.",
+                    "Select mock location app: Use this option to fake the GPS location of the device to test whether your app behaves the same in other locations.",
+                    "To use this option, download and install a GPS mock location app.",
+                    "Enable view attribute inspection: Saves view attribute information in the mAttributes member variable of a View instance so it can be used for debugging.",
+                    "You can access the attribute information through the Layout Inspector user interface, as shown in Figure 4 ( without this enabled, the `` Attributes'' item is not available ).",
+                    "Enable GPU debug layers: Available on devices running Android 9 ( API level 28 ) and higher, enable this option to allow loading Vulkan validation layers from local device storage.",
+                    "To learn more, read Vulkan validation layers on Android.",
+                    "Bluetooth Audio Codec: Adjust the sound quality ( codec ) of your devices by selecting one of the following codecs: SBC: Transfer data to Bluetooth audio output devices such as headphones and speakers.",
+                    "AAC: Better sound quality from wired devices than MP3 at similar bit rates.",
+                    "aptX: A pure wireless sound in high-quality smartphones, speakers, soundbars, headphones, and tablets.",
+                    "aptX HD: High-resolution streaming to Bluetooth devices.",
+                    "LDAC: Provide high-quality music listening over wireless connections.",
+                    "Enable Optional Codecs and Disable Optional Codecs: If you have additional codec implementations installed, use these options to enable and disable them.",
+                    "SBC: Transfer data to Bluetooth audio output devices such as headphones and speakers.",
+                    "Bluetooth Audio Sample Range: Adjust the number of audio samples per second by selecting an audio codec sample rate.",
+                    "Higher sample rates use more resources.",
+                    "Bluetooth Audio Bits Per sample: Set the number of bits of information in each audio sample.",
+                    "With a higher the bit rate, the sound is better but the sample file is larger.",
+                    "Bluetooth Audio Channel Mode: Select mono or stereo.",
+                    "Bluetooth Audio LDAC Codec: Optimize the sound to increase audio quality, balance audio and connection quality, increase connection quality, or use an adaptive bit rate to balance audio and connection quality.",
+                    "Wireless display certification: Enables advanced configuration controls and settings for Wireless Display certification to the specifications set forth in the Wi-Fi Alliance Wi-Fi Display Specification.",
+                    "The certification applies to Android 4.4 ( API level 19 ) and higher.",
+                    "Enable Wi-Fi verbose logging: Increases the Wi-Fi logging level for each wireless network ( SSID ) you connect to according to its relative received signal strength ( RSSI ).",
+                    "For more information about logs, see Write and view logs with Logcat.",
+                    "Aggressive Wi-Fi to cellular handover: When the signal is low, makes Wi-Fi more efficient in handing over the data connection to a cellular network.",
+                    "Force RTL layout direction: Forces screen layout direction to be from right to left ( RTL ) or from left to right ( default ).",
+                    "Window animation scale: Sets the window animation playback speed so you can check its performance at different speeds.",
+                    "A lower scale results in a faster speed.",
+                    "Transition animation scale: Sets the transition animation playback speed so you can check its performance at different speeds.",
+                    "Simulate secondary displays: Creates a secondary display as an overlay on the device.",
+                    "This is useful when supporting additional displays with the Presentation API.",
+                    "Set GPU renderer: Change the default Open GL graphics engine to the Open GL Skia graphics engine.",
+                    "Force GPU rendering: Forces apps to use the GPU for 2D drawing, if they were written without GPU rendering by default.",
+                    "Show GPU view updates: Displays any onscreen element drawn with the GPU.",
+                    "Debug GPU overdraw: Displays color-coding on your device so you can visualize how how many times the same pixel has been drawn in the same frame.",
+                    "The visualization shows where your app might be doing more rendering than necessary.",
+                    "For more information, see Visualize GPU overdraw.",
+                    "Debug non-rectangular clip operations: Turns off the clipping area on the canvas to create unusual ( non-rectangular ) canvas areas.",
+                    "Normally, the clipping area prevents drawing anything outside the bounds of the circular clipping area.",
+                    "Force 4x MSAA: Enables multisample anti-aliasing ( MSAA ) in Open GL ES 2.0 apps.",
+                    "Disable HW overlays: Using the hardware overlay enables each app that displays something on the screen to use less processing power.",
+                    "Without the overlay, an app shares the video memory and has to constantly check for collision and clipping to render a proper image.",
+                    "The checking uses a lot of processing power.",
+                    ""
+                ],
+                "title": "Configure on-device developer options \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/flutter/flutter/issues/11392",
+                "content": [
+                    "Document how to check if profile/release/debug mode in dart \u00b7 Issue # 11392 \u00b7 flutter/flutter \u00b7 GitHub",
+                    "Document how to check if profile/release/debug mode in dart",
+                    "Please add the option to check what mode ( slow, profile or release ) the Flutter app is running in.",
+                    "Scenario: I want to append the mode to some analytics we collect ( so it has to be exposed to the Dart layer ).",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "If you're in release mode, const bool.fromEnvironment ( `` dart.vm.product'' ) will be true.",
+                    "If you're in profile mode, neither of the above will happen.",
+                    "But we should document that somewhere, or configure a variable accordingly or something.",
+                    "5: Make Hixie proud milestone",
+                    "There is a profile ( ) method in progress here: https://github.com/flutter/flutter/pull/10966/files#diff-fa691172dd6cfc02a53caddd6ead6320",
+                    "A variable / getter sounds reasonable, thanks !",
+                    "Check Flutter mode from Dart code",
+                    "@rock3r won't happen short term as there is a simple workaround.",
+                    "@zoechi looks like there's a hack, yes, but it doesn't really seem great to me that there is no `` is debug'' or `` mode = release/debug/profile'' accessible to users.",
+                    "I'm talking about an actual public API for this rather than some obscure and undocumented hack that relies on side effects.",
+                    "Seems very odd to me that a user friendly framework like flutter has nothing for this very simple and common scenario.",
+                    "I'd even be happy if the API internally used those hacks, as long as it's presented externally as a public API.",
+                    "I got that, but the workaround is easy enough and if you are working with Flutter since a while you might have noticed that a few other features that probably provide value to more developers are also missing ;-) So first things first.",
+                    "Sure, I understand priorities are different.",
+                    "Could think about doing a PR for that if you want though, it's such an easy win.",
+                    "Just point out where you'd like the API to live ; )",
+                    "@rock3r would be a good PR, quite surprised this is not already in there ( explicitly ).",
+                    "For me it makes sense to have this under the flutter package ( https://github.com/flutter/flutter/tree/master/packages/flutter/lib ), but let's wait for @Hixie to confirm this.",
+                    "Meanwhile, quickest way to get this into the repo might be by updating the docs: )",
+                    "- I believe the problem with exposing these as getters is that they didn't tree shake properly",
+                    "If we would provide such getters Dart's tree shaker would not be able to remove the unused code in release mode and you'll end up with larger than necessary binaries.",
+                    "The only way that works reliably has been posted above in # 11392 ( comment ).",
+                    "We use that method extensively within the framework as well.",
+                    "The debug workaround @Hixie provided doesn't seem to work anymore as written.",
+                    "To get it to work, I had to `` call'' the anonymous function as well.",
+                    "/ cc @gspencergoog, who just added affordances for some of this in # 27502.",
+                    "Yes, I just added kReleaseMode as a more discoverable public constant ( in `` package: flutter/framework.",
+                    "dart'' ).",
+                    "It proved too difficult to implement the equivalents ( as const values, at least ) for kDebugMode and kProfileMode in all contexts, so I didn't do that.",
+                    "They could easily be implemented as getters or functions, but they wouldn't be usable in const contexts.",
+                    "The good news is that usually only kReleaseMode needs to be const for most use cases ( e.g. to allow dead code removal, which is mainly only needed in release mode ).",
+                    "I put this code and it can be accessed globally.",
+                    "@mono0926 That will tell you the buildMode but I don't believe it will lead to any dead code being removed from the app",
+                    "I noticed that kDebugMode and kProfileMode were added at # 31696.",
+                    "So, this issue could be closed.",
+                    "This thread has been automatically locked since there has not been any recent activity after it was closed.",
+                    "If you are still experiencing a similar issue, please open a new bug, including the output of flutter doctor - v and a minimal reproduction of the issue.",
+                    "locked and limited conversation to collaborators",
+                    "to subscribe to this conversation on GitHub.",
+                    ""
+                ],
+                "title": "Document how to check if profile/release/debug mode in dart \u00b7 Issue # 11392 \u00b7 flutter/flutter \u00b7 GitHub"
+            }
+        ],
+        "qa": [            
+            {
+                "uid": "23844667",
+                "link": "https://stackoverflow.com/questions/23844667",
+                "title": "How do I detect if I am in release or debug mode?",
+                "answers": [
+                    {
+                        "uid": 23844693,
+                        "score": 65,
+                        "text": [
+                            "Try the following:",
+                            "Kotlin:",
+                            "It is taken from bundells post from LINK"
+                        ]
+                    },
+                    {
+                        "uid": 23844716,
+                        "score": 832,
+                        "text": [
+                            "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
+                            "This is a boolean value that will be true for a debug build, false otherwise:",
+                            "There have been reports that this value is not 100 % reliable from Eclipse-based builds, though I personally have not encountered a problem, so I can not say how much of an issue it really is.",
+                            "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+                            "The solution from Illegal Argument is based on the value of the android: debuggable flag in the manifest.",
+                            "If that is how you wish to distinguish a `` debug'' build from a `` release'' build, then by definition, that's the best solution.",
+                            "However, bear in mind that going forward, the debuggable flag is really an independent concept from what Gradle/Android Studio consider a `` debug'' build to be.",
+                            "Any build type can elect to set the debuggable flag to whatever value that makes sense for that developer and for that build type."
+                        ]
+                    },
+                    {
+                        "uid": 41088622,
+                        "score": 39,
+                        "text": [
+                            "Due to the mixed comments about BuildConfig.DEBUG, I used the following to disable crashlytics -LRB- and analytics -RRB- in debug mode:",
+                            "update / app/build.",
+                            "gradle",
+                            "then, in your code you detect the ENABLE_CRASHLYTICS flag as follows:",
+                            "use the same concept in your app and rename ENABLE_CRASHLYTICS to anything you want.",
+                            "I like this approach because I can see the flag in the configuration and I can control the flag."
+                        ]
+                    },
+                    {
+                        "uid": 42140033,
+                        "score": 61,
+                        "text": [
+                            "Yes, you will have no problems using:",
+                            "Unless you are importing the wrong BuildConfig class.",
+                            "Make sure you are referencing your project's BuildConfig class, not from any of your dependency libraries.",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 43665935,
+                        "score": 13,
+                        "text": [
+                            "Alternatively, you could differentiate using BuildConfig.BUILD _ TYPE ;",
+                            "If you're running debug build BuildConfig.BUILD _ TYPE.equals -LRB- `` debug'' -RRB- ; returns true.",
+                            "And for release build BuildConfig.BUILD _ TYPE.equals -LRB- `` release'' -RRB- ; returns true."
+                        ]
+                    },
+                    {
+                        "uid": 47753941,
+                        "score": 6,
+                        "text": [
+                            "I am using this solution in case to find out that my app is running on debug version."
+                        ]
+                    },
+                    {
+                        "uid": 54752724,
+                        "score": 0,
+                        "text": [
+                            "Make sure that you are importing the correct BuildConfig class And yes, you will have no problems using:"
+                        ]
+                    },
+                    {
+                        "uid": 65696998,
+                        "score": 0,
+                        "text": [
+                            "Build.IS _ DEBUGGABLE could be all right.",
+                            "It comes from `` ro.debuggable''"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-build-type"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://medium.com/mobile-app-development-publication/checking-debug-build-the-right-way-d12da1098120",
+                "type": "misc",
+                "content": [
+                    "Sign inAndroid App DevelopmentiOS App DevelopmentJetpack ComposeKotlinSwiftDaggerAndroid UIChecking DEBUG build the risky way!ElyeFollowAug 11, 2017 \u00b7 2 min readDo you know that using BuildConfig.DEBUG to check for Debug Build is risky ?",
+                    "Although it works, could be wrong sometimes?Why is that not best?Imagine if you partition your App into multiple modules, whereby App is dependent on CommonLibrary.In your CommonLibrary you build your common function, that could be used by other Apps in the future.",
+                    "e.g.The above code seems good, as it suppose to prevent your debug message from showing when in Debug Build.",
+                    "Little did you know that, BuildConfig.DEBUG in App is not the same as BuildConfig.DEBUG in CommonLibrary.",
+                    "And this would risk all your Debug Message shown in actual release build !!",
+                    "What's the remedy?Android has provided an internal flag that is globally available indicating if a build is in Debug or non-Debug mode, regardless of which module you are in.",
+                    "It is ApplicationInfo.FLAG _ DEBUGGABLE.You could use it as below: - There's an article about this flag ( though it didn't post the warning of using BuildConfig.DEBUG ) Android Debug Vs Release Build Check in Running Code - Distinguishing Android Debug Mode Vs Release Mode Your Android application ( App ) will execute in debug mode in you ... tekeye.bizNote: Android will warn if one explicitly hardcode android: debuggable as proposed in the article.I hope you appreciate this post and it's helpful for you.",
+                    "Do share with others.You could check out my other interesting topics here.Follow me on medium, Twitter or Facebook for little tips and learning on Android, Kotlin etc related topics.",
+                    "~ Elye ~ Mobile App Development PublicationSharing Mobile App Development and LearningFollow93 1 AndroidAndroid App DevelopmentMobile App DevelopmentAndroidDev93 claps93 claps1 responseWritten byElyeFollowPassionate about learning, and sharing mobile development and others https://twitter.com/elye_project https://www.facebook.com/elye.projFollowMobile App Development PublicationFollowSharing iOS, Android and relevant Mobile App Development Technology and LearningFollowWritten byElyeFollowPassionate about learning, and sharing mobile development and others https://twitter.com/elye_project https://www.facebook.com/elye.projMobile App Development PublicationFollowSharing iOS, Android and relevant Mobile App Development Technology and LearningMore From MediumHow to Implement RecyclerView in Android App in 15 MinutesDroiduino Blog in The StartupImplementing In-App Updates in Androidashita asati in The StartupA Kotlin-based Introduction to Compound Components on Android -- Part 1Olaore Fouad in Programming GeeksEverything you need in your app for 2019Adrian DevezinCoroutines on Android ( part I ): Getting the backgroundSean McQuillan in Android DevelopersPeculiar LiveData SavedStateHandleElye in The StartupAn introduction to memory management and memory leaks on AndroidConnie Reinholdsson in The StartupAndroid by example: MVVM + Data Binding - > View Model ( Part 3 ) Husayn HakeemLearn more.Medium is an open platform where 170 million readers come to find insightful and dynamic thinking.",
+                    "Here, expert and undiscovered voices alike dive into the heart of any topic and bring new ideas to the surface.",
+                    "Learn moreMake Medium yours.Follow the writers, publications, and topics that matter to you, and you'll see them on your homepage and in your inbox.",
+                    "ExploreShare your thinking.If you have a story to tell, knowledge to share, or a perspective to offer -- welcome home.",
+                    "It's easy and free to post your thinking on any topic.",
+                    "Write on MediumAboutHelpLegalGet the Medium app",
+                    "Checking DEBUG build the risky way!ElyeFollowAug 11, 2017 \u00b7 2 min readDo you know that using BuildConfig.DEBUG to check for Debug Build is risky ?",
+                    "It is ApplicationInfo.FLAG _ DEBUGGABLE.You could use it as below: - There's an article about this flag ( though it didn't post the warning of using BuildConfig.DEBUG ) Android Debug Vs Release Build Check in Running Code - Distinguishing Android Debug Mode Vs Release Mode Your Android application ( App ) will execute in debug mode in you ... tekeye.bizNote: Android will warn if one explicitly hardcode android: debuggable as proposed in the article.",
+                    "Checking DEBUG build the risky way!ElyeFollowAug 11, 2017 \u00b7 2 min read",
+                    "Android Debug Vs Release Build Check in Running Code - Distinguishing Android Debug Mode Vs Release Mode Your Android application ( App ) will execute in debug mode in you ... tekeye.biz",
+                    "Distinguishing Android Debug Mode Vs Release Mode Your Android application ( App ) will execute in debug mode in you ...",
+                    "I hope you appreciate this post and it's helpful for you.",
+                    "Mobile App Development PublicationSharing Mobile App Development and LearningFollow93 1",
+                    "Mobile App Development PublicationSharing Mobile App Development and LearningFollow",
+                    "Sharing Mobile App Development and Learning",
+                    ""
+                ],
+                "title": "Checking DEBUG build the risky way! | by Elye | Mobile App Development Publication | Medium"
+            }
+        ]
+    },
+    "parsed": true
+}

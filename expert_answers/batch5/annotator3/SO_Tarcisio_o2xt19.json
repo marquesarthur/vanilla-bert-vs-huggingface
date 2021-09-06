@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "Try adding this piece of code before loading your viewPager",
+      "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+    },
+    {
+      "id": "uid-816",
+      "tag": "PRE",
+      "text": "NestedScrollView scrollView = (NestedScrollView) findViewById (R.id.nest_scrollview);\nscrollView.setFillViewport (true);  \n",
+      "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+    },
+    {
+      "id": "uid-817",
+      "tag": "CODE",
+      "text": "NestedScrollView scrollView = (NestedScrollView) findViewById (R.id.nest_scrollview);\nscrollView.setFillViewport (true);  \n",
+      "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Use android:fillViewport=\"true\" in ScrollView",
+      "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "To overcome this, I have created a custom ViewPager (based on this article) that calculates it's height in the required manner.",
+      "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Here is full code for my CustomViewPager:",
+      "href": "android - ViewPager inside ScrollView not working - Stack Overflow"
+    }
+  ]
+}

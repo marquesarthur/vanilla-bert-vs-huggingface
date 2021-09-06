@@ -1,0 +1,48 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "System permissions are divided into two groups: “normal” and “dangerous.” Normal permission groups are allowed by default, because they don’t pose a risk to your privacy.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "(e.g., Android allows apps to access the Internet without your permission.) Dangerous permission groups, however, can give apps access to things like your calling history, private messages, location, camera, microphone, and more.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Therefore, Android will always ask you to approve dangerous permissions.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Now Android allows you to decide which permissions to accept on a case-by-case basis — after the app is installed.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "Anyone concerned about their privacy and security should keep an eye out for apps that request access to following nine permission groups.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "Each group contains multiple permissions, and approving a single permission from any group automatically approves all other permissions within that same group.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "Allows apps to read, create, or edit your contact list, as well as access the list of all accounts (e.g., Facebook, Instagram, Twitter, etc.) used on your device.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    }
+  ]
+}

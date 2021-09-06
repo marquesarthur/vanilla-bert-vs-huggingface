@@ -1,0 +1,36 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "The following fails to build:",
+      "href": "Scoped generic class fails to build · Issue #671 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-8",
+      "tag": "SPAN",
+      "text": "However, when adding another @Inject element or removing scoping it succeeds:",
+      "href": "Scoped generic class fails to build · Issue #671 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "The problem in the first case is that Dagger is overeager to use a single static factory instance for generating instances of scoped generic classes.",
+      "href": "Scoped generic class fails to build · Issue #671 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-112",
+      "tag": "SPAN",
+      "text": "\n          I guess all that's really missing in the generated code is a typecast to Provider to achieve erasure bliss.\nDidn't spot it right away.\n      ",
+      "href": "Scoped generic class fails to build · Issue #671 · google/dagger · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "I guess all that's really missing in the generated code is a typecast to Provider to achieve erasure bliss.",
+      "href": "Scoped generic class fails to build · Issue #671 · google/dagger · GitHub"
+    }
+  ]
+}

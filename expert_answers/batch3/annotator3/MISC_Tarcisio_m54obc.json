@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Android has provided an internal flag that is globally available indicating if a build is in Debug or non-Debug mode, regardless of which module you are in.",
+      "href": "Checking DEBUG build the risky way! | by Elye | Mobile App Development Publication | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "It is ApplicationInfo.FLAG_DEBUGGABLE.",
+      "href": "Checking DEBUG build the risky way! | by Elye | Mobile App Development Publication | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "You could use it as below:-",
+      "href": "Checking DEBUG build the risky way! | by Elye | Mobile App Development Publication | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Note: Android will warn if one explicitly hardcode android:debuggable as proposed in the article.",
+      "href": "Checking DEBUG build the risky way! | by Elye | Mobile App Development Publication | Medium"
+    }
+  ]
+}

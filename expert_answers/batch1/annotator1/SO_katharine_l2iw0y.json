@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "There are several appraoches for this.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Although what you are doing is really not appropriate.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "I have used Volley library here.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "If you read the docs then you'll see that Volley runs on background threads.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "So no need to implement your async tasks.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    }
+  ]
+}

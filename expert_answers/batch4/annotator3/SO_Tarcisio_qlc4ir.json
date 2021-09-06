@@ -1,0 +1,72 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Android-Lollipop (api 21) introduce a new API : PdfRenderer",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-277",
+      "tag": "SPAN",
+      "text": "get a seekable file descriptor from your pdf document :\n  ParcelFileDescriptor fd = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY)\n\n",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "get a seekable file descriptor from your pdf document :",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-278",
+      "tag": "SPAN",
+      "text": "create the PdfRenderer\n  PdfRenderer renderer = new PdfRenderer(fd);\n\n",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "create the PdfRenderer",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-279",
+      "tag": "SPAN",
+      "text": "prepare the Bitmap\n  Bitmap bitmap = Bitmap.createBitmap(WIDTH, HEIGHT, Bitmap.Config.ARGB_4444);\n\n",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "prepare the Bitmap",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-280",
+      "tag": "SPAN",
+      "text": "get the PdfRenderer.Page to render\n  PdfRenderer.Page page = renderer.openPage(pageIndex);\n\n",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "get the PdfRenderer.Page to render",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-281",
+      "tag": "SPAN",
+      "text": "render the page on the prepared bitmap\n  page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);\n\n",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "render the page on the prepared bitmap",
+      "href": "java - How to render PDF in Android - Stack Overflow"
+    }
+  ]
+}

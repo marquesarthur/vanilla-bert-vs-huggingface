@@ -1,0 +1,12 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "Without custom methods it is unfortunately slightly cumbersome at the moment, but you can store the string representation instead and convert that to/from the enum.",
+      "href": "java - How to store enums in Realm? - Stack Overflow"
+    }
+  ]
+}

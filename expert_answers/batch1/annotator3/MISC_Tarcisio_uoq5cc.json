@@ -1,0 +1,132 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-4",
+            "tag": "SPAN",
+            "text": "The ArrayAdapter fits in between an ArrayList (data source) and the ListView (visual representation) and configures two aspects:",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "uid-174",
+            "tag": "CODE",
+            "text": "ArrayList",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-11",
+            "tag": "SPAN",
+            "text": "Instead, as the user scrolls through the list, items that leave the screen are kept in memory for later use and then every new row that enters the screen reuses an older row kept around in memory.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "Here is another related diagram on view recycling:",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-32",
+            "tag": "SPAN",
+            "text": "Given a Java object that has certain fields defined such as a User class:",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-33",
+            "tag": "SPAN",
+            "text": "We can create a custom ListView of User objects by subclassing ArrayAdapter to describe how to translate the object into a view within that class and then using it like any other adapter.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-52",
+            "tag": "SPAN",
+            "text": "To improve performance, we should modify the custom adapter by applying the ViewHolder pattern which speeds up the population of the ListView considerably by caching view lookups for smoother, faster item loading:",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": " What the ViewHolder class does is cache the call to findViewById().",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-56",
+            "tag": "SPAN",
+            "text": " Once your ListView has reached the max amount of rows it can display on a screen, Android is smart enough to begin recycling those row Views.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-57",
+            "tag": "SPAN",
+            "text": " We check if a View is recycled with if (convertView == null).",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "uid-1109",
+            "tag": "CODE",
+            "text": "if (convertView == null)",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-58",
+            "tag": "SPAN",
+            "text": " If it is not null then we have a recycled View and can just change its values, otherwise we need to create a new row View.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-59",
+            "tag": "SPAN",
+            "text": " The magic behind this is the setTag() method which lets us attach an arbitrary object onto a View object, which is how we save the already inflated View for future reuse.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-76",
+            "tag": "SPAN",
+            "text": "In Android development, any time we want to show a vertical list of scrollable items we will use a LisView which has data populated using an Adapter.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-34",
+            "tag": "SPAN",
+            "text": "When we want to display a series of items from a list using a custom representation of the items, we need to use our own custom XML layout for each item.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-12",
+            "tag": "SPAN",
+            "text": "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-83",
+            "tag": "SPAN",
+            "text": "To do this, we need to create our own custom ArrayAdapter class.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-66",
+            "tag": "SPAN",
+            "text": "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-20",
+            "tag": "SPAN",
+            "text": "To do this, we need to create our own custom ArrayAdapter class.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-39",
+            "tag": "SPAN",
+            "text": "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+            "href": "Using an ArrayAdapter with ListView | CodePath Android Cliffnotes"
+        }
+    ]
+}

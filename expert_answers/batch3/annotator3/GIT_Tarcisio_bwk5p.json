@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-114",
+      "tag": "SPAN",
+      "text": "\n          No but there are some possible ways: What you can do is create a version of retrofit where you modify the parser that it accepts both retrofit annotations and jax rs annotations which might be the best way or you add the retrofit annotations to your jax rs interfaces on the server side (which I wouldn't recommend;)\n      ",
+      "href": "Why custom annotations instead of JAX-RS (JSR-311) ones? · Issue #573 · square/retrofit · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "No but there are some possible ways: What you can do is create a version of retrofit where you modify the parser that it accepts both retrofit annotations and jax rs annotations which might be the best way or you add the retrofit annotations to your jax rs interfaces on the server side (which I wouldn't recommend;)",
+      "href": "Why custom annotations instead of JAX-RS (JSR-311) ones? · Issue #573 · square/retrofit · GitHub"
+    }
+  ]
+}

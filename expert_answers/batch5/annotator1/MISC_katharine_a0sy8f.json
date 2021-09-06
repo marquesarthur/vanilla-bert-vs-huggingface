@@ -1,0 +1,72 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "A fragment is a reusable class implementing a portion of an activity.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-157",
+      "tag": "SPAN",
+      "text": "A Fragment is a combination of an XML layout file and a java class much like an Activity.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-159",
+      "tag": "SPAN",
+      "text": "Fragments encapsulate views and logic so that it is easier to reuse within activities.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "A fragment, like an activity, has an XML layout file and a Java class that represents the Fragment controller.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "The important thing to keep in mind is that fragments should not directly communicate with each other and should generally only communicate with their parent activity.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "The fragments allow their parent activity to respond to intents and callbacks in most cases.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-69",
+      "tag": "SPAN",
+      "text": "If a fragment needs to communicate events to the activity, the fragment should define an interface as an inner type and require that the activity must implement this interface:",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-82",
+      "tag": "SPAN",
+      "text": "Clicks can be handled using onClick property as usual or more typically in this case, using the onOptionsItemSelected method in the fragment:",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-95",
+      "tag": "SPAN",
+      "text": "However, in many cases, we may want to keep both fragments around in the container and simply toggle their visibility.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-99",
+      "tag": "SPAN",
+      "text": "Using this approach, all three fragments will remain in the container once added initially and then we are simply revealing the desired fragment and hiding the others within the container.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-100",
+      "tag": "SPAN",
+      "text": "Check out this stackoverflow for a discussion on deciding when to replace vs hide and show.",
+      "href": "Creating and Using Fragments | CodePath Android Cliffnotes"
+    }
+  ]
+}

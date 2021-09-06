@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "They show a brief message at the\n bottom of the screen on mobile and lower left on larger devices.",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "uid-3174",
+      "tag": "CODE",
+      "text": "\n      make(View view, CharSequence text, int duration)\n      ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "Make a Snackbar to display a message\n\n ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-702",
+      "tag": "SPAN",
+      "text": "\n      \n      setText(CharSequence message)\n      \n      \n        Update the text in this Snackbar.\n        \n    \n\n      \n    ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "uid-3296",
+      "tag": "CODE",
+      "text": "\n      setText(CharSequence message)\n      ",
+      "href": "Snackbar  |  Android Developers"
+    }
+  ]
+}

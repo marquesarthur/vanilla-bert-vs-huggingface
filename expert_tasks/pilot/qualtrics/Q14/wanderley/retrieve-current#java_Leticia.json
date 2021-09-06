@@ -1,0 +1,30 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "In your activity's onCreate() method,\n  create an instance of the Fused Location Provider Client as the following code snippet shows.",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "When your app is\n  connected to these you can use the fused location provider's\n  getLastLocation()\n  method to retrieve the device location.",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "The following code snippet illustrates the request and a simple handling of the\n  response:",
+      "href": "Get the last known location  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "The\n  getLastLocation()\n    method returns a Task\n  that you can use to get a\n  Location\n  object with the latitude and longitude coordinates of a\n    geographic location.",
+      "href": "Get the last known location  |  Android Developers"
+    }
+  ]
+}

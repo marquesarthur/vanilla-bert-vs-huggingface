@@ -1,0 +1,30 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "In the new Android 5.0 material design guidelines, the style guidelines have changed to discourage the use of the icon in the ActionBar.",
+      "href": "Defining The ActionBar | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Although the icon can be added back with:",
+      "href": "Defining The ActionBar | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "uid-269",
+      "tag": "PRE",
+      "text": "getSupportActionBar().setDisplayShowHomeEnabled(true);\ngetSupportActionBar().setLogo(R.mipmap.ic_launcher);\ngetSupportActionBar().setDisplayUseLogoEnabled(true);",
+      "href": "Defining The ActionBar | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "You can read more about this on the material design guidelines which state: \"The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.\" ",
+      "href": "Defining The ActionBar | CodePath Android Cliffnotes"
+    }
+  ]
+}

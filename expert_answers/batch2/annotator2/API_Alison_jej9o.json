@@ -1,0 +1,36 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-96",
+      "tag": "SPAN",
+      "text": "You can also control concurrency, which means coordinating the execution of several coroutines declaratively with Flow.",
+      "href": "Learn advanced coroutines with Kotlin Flow and LiveData"
+    },
+    {
+      "id": "eye-gazing-tag-99",
+      "tag": "SPAN",
+      "text": "Flow produces values one at a time (instead of all at once) that can generate values from async operations like network requests, database calls, or other async code.",
+      "href": "Learn advanced coroutines with Kotlin Flow and LiveData"
+    },
+    {
+      "id": "eye-gazing-tag-111",
+      "tag": "SPAN",
+      "text": "Every time the flow builder calls  emit, it suspends until the element is completely processed.",
+      "href": "Learn advanced coroutines with Kotlin Flow and LiveData"
+    },
+    {
+      "id": "eye-gazing-tag-112",
+      "tag": "SPAN",
+      "text": "Then, when another value is requested from the flow, it resumes from where it left off until it calls emit again.",
+      "href": "Learn advanced coroutines with Kotlin Flow and LiveData"
+    },
+    {
+      "id": "eye-gazing-tag-113",
+      "tag": "SPAN",
+      "text": "When the flow builder completes, collect can now finish and the calling block prints \"flow is completed.\"",
+      "href": "Learn advanced coroutines with Kotlin Flow and LiveData"
+    }
+  ]
+}

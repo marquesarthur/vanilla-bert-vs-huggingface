@@ -1,0 +1,268 @@
+{
+    "task": "Want to add drawable icons insteadof colorful dots",
+    "description": "I want to add some drawable icons instead of colorful dots to represent an event. \r\n\r\nIs this possible ?\r\n\r\nI tries this, but it didn't worked \r\n\r\n    new Event(R.drawable.ic_checked, timeInMillis, \"Event at \" + new Date(timeInMillis)),\r\n",
+    "type": "GIT",
+    "link": "https://github.com/SundeepK/CompactCalendarView/issues/193",
+    "question_id": "193",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/guide/topics/graphics/drawable-animation",
+                "type": "android",
+                "content": [
+                    "In some situations, images need to be animated on screen.",
+                    "This is useful if you want to display a custom loading animation comprised of several images, or if you want one icon to morph into another after a user's action.",
+                    "Android provides a couple options for animating drawables.",
+                    "The first option is to use an Animation Drawable.",
+                    "This allows you to specify several static drawable files that will be displayed one at a time to create an animation.",
+                    "The second option is to use an Animated Vector Drawable, which lets you animate the properties of a vector drawable.",
+                    "One way to animate Drawables is to load a series of Drawable resources one after another to create an animation.",
+                    "This is a traditional animation in the sense that it is created with a sequence of different images, played in order, like a roll of film.",
+                    "The AnimationDrawable class is the basis for Drawable animations.",
+                    "While you can define the frames of an animation in your code, using the AnimationDrawable class API, it's more simply accomplished with a single XML file that lists the frames that compose the animation.",
+                    "The XML file for this kind of animation belongs in the res/drawable / directory of your Android project.",
+                    "In this case, the instructions are the order and duration for each frame of the animation.",
+                    "The XML file consists of an <animation-list> element as the root node and a series of child <item> nodes that each define a frame: a drawable resource for the frame and the frame duration.",
+                    "Here's an example XML file for a Drawable animation:",
+                    "This animation runs for just three frames.",
+                    "By setting the android: oneshot attribute of the list to true, it will cycle just once then stop and hold on the last frame.",
+                    "If it is set false then the animation will loop.",
+                    "With this XML saved as rocket_thrust.xml in the res/drawable / directory of the project, it can be added as the background image to a View and then called to play.",
+                    "Here's an example Activity, in which the animation is added to an ImageView and then animated when the screen is touched:",
+                    "It's important to note that the start ( ) method called on the AnimationDrawable can not be called during the onCreate ( ) method of your Activity, because the AnimationDrawable is not yet fully attached to the window.",
+                    "If you want to play the animation immediately, without requiring interaction, then you might want to call it from the onStart ( ) method in your Activity, which will get called when Android makes the view visible on screen.",
+                    "For more information on the XML syntax, available tags and attributes, see Animation Resources.",
+                    "A vector drawable is a type of drawable that is scalable without getting pixelated or blurry.",
+                    "The AnimatedVectorDrawable class ( and AnimatedVectorDrawableCompat for backward-compatibility ) lets you animate the properties of a vector drawable, such as rotating it or changing the path data to morph it into a different image.",
+                    "You normally define animated vector drawables in three XML files:",
+                    "Animated vector drawables can animate the attributes of the <group> and <path> elements.",
+                    "The <group> elements defines a set of paths or subgroups, and the <path> element defines paths to be drawn.",
+                    "When you define a vector drawable that you want to animate, use the android: name attribute to assign a unique name to groups and paths, so you can refer to them from your animator definitions.",
+                    "The animated vector drawable definition refers to the groups and paths in the vector drawable by their names:",
+                    "The animation definitions represent ObjectAnimator or AnimatorSet objects.",
+                    "The first animator in this example rotates the target group 360 degrees:",
+                    "The second animator in this example morphs the vector drawable's path from one shape to another.",
+                    "Both paths must be compatible for morphing: they must have the same number of commands and the same number of parameters for each command.",
+                    "Here is the resulting AnimatedVectorDrawable:",
+                    "For more information, see the API reference for AnimatedVectorDrawable.",
+                    "A vector drawable with the <vector> element in res/drawable /",
+                    "An animated vector drawable with the <animated-vector> element in res/drawable /",
+                    "One or more object animators with the <objectAnimator> element in res/animator /",
+                    ""
+                ],
+                "title": "Animate drawable graphics \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [
+            {
+                "link": "https://github.com/SundeepK/CompactCalendarView/issues/181",
+                "content": [
+                    "custom event icon/add small icon to event \u00b7 Issue # 181 \u00b7 SundeepK/CompactCalendarView \u00b7 GitHub",
+                    "custom event icon/add small icon to event",
+                    "is that possible if i want to change the event icon/adding some small icon like this ?",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "Hi, this should not be too difficult todo this.",
+                    "That line draws a single event.",
+                    "You can remove the if conditions because you only want to draw one icon right ?",
+                    "So really you want to replace:",
+                    "with some custome code which simply draws a drawable icon.",
+                    "Since you want to offset the icon to the top right, you will need to offset the ( x, y ) position slightly, but make sure you use dp because if you simply offset the ( x, y ) by some amount it willnot translate to different devices.",
+                    "There is a simple method call in android to go from pixels to dp.",
+                    "It should be a few lines of code to achieve what you want.",
+                    "Let me know if you need more help.",
+                    "Also if you have more than one event for a given day, you only need to draw the icon once, then exit.",
+                    "This will save some cpu cycles.",
+                    "how can i modify the CompactCalendarController.java ?",
+                    "It is simple - you can copy source folder to your project source )",
+                    "As @airstep mentioned, it's simple.",
+                    "Download the source locally and import as a android using android-studios.",
+                    "You may need to change your gradle file to import it as a library project but there are many resources showing how todo this.",
+                    "Here are just 2 stack overflow answers:",
+                    "Delete the sample android application project ( under sample directory ) since it's not required, you only want the library.",
+                    "Then change CompactCalendarController.java by removing those lines I mentioned and replacing with a call to draw your icon.",
+                    "You will need to load your icon probably in the init ( ) method of that class and draw using the that bitmap method.",
+                    "If you have more than one event in the day make sure to just draw once because it's wasteful to draw multiple time in your case.",
+                    "Want to add drawable icons insteadof colorful dots",
+                    "Hi, if you are looking for this functionality.",
+                    "I spent some time thinking about it.",
+                    "I uploaded some sample code in a branch here:",
+                    "Basically you need to load a bitmap and pass to each event you want to draw.",
+                    "Study the CompactCalendarTab class in the sample code to see how to use it.",
+                    "You can tweak the code on how you want to draw the icons:",
+                    "That line controls where it's drawn.",
+                    "This is an example of how to get this done.",
+                    "Again you can import the code as mentioned above.",
+                    ""
+                ],
+                "title": "custom event icon/add small icon to event \u00b7 Issue # 181 \u00b7 SundeepK/CompactCalendarView \u00b7 GitHub"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "29038861",
+                "link": "https://stackoverflow.com/questions/29038861",
+                "title": "How to change Toolbar Navigation and Overflow Menu icons (appcompat v7)?",
+                "answers": [
+                    {
+                        "uid": 29040409,
+                        "score": 131,
+                        "text": [
+                            "To change the navigation icon you can use:",
+                            "To change the overflow icon you can use the method:",
+                            "If you would like to change the color of the icons you can use:",
+                            "with a Material Components Theme -LRB- with a MaterialToolbar for example -RRB-:",
+                            "With an AppCompat Theme:",
+                            "You can also change the overflow icon overriding in the app theme the actionOverflowButtonStyle attribute:",
+                            "With a Material Components Theme:",
+                            "With an AppCompat theme:"
+                        ]
+                    },
+                    {
+                        "uid": 36022594,
+                        "score": 1,
+                        "text": [
+                            "All the above solutions worked for me in API 21 or greater, but did not in API 19 -LRB- KitKat -RRB-.",
+                            "Making a small change did the trick for me in the earlier versions.",
+                            "Notice Widget.Holo instead of Widget.AppCompat"
+                        ]
+                    },
+                    {
+                        "uid": 36499186,
+                        "score": 4,
+                        "text": [
+                            "There is a simple, easy and better approach, if we need to change only the color of hamburger/back icon.",
+                            "It is better as it changes color only of desired icon, whereas colorControlNormal and android: textColorSecondary might affect other childviews of toolbar as well."
+                        ]
+                    },
+                    {
+                        "uid": 36672897,
+                        "score": -1,
+                        "text": [
+                            "In order to show the icon, use getSupportActionBar -LRB- -RRB-.",
+                            "setIcon -LRB- R.xxx.xxx -RRB-",
+                            "In my case the code is: -",
+                            "getSupportActionBar -LRB- -RRB-.",
+                            "setIcon -LRB- R.mipmap.ic _ launcher -RRB- ;"
+                        ]
+                    },
+                    {
+                        "uid": 45807156,
+                        "score": 6,
+                        "text": [
+                            "For right menu you can do it:",
+                            "And in your activity",
+                            "This is the result:",
+                            "LINK"
+                        ]
+                    },
+                    {
+                        "uid": 46359377,
+                        "score": 1,
+                        "text": [
+                            "add your default theme this line ;"
+                        ]
+                    },
+                    {
+                        "uid": 48112514,
+                        "score": 3,
+                        "text": [
+                            "if you want to change your icons to a Vector, create a new one.",
+                            "and then in your Activity.java:",
+                            "To change Vector icon Color, go to your Vector XML file.",
+                            ".",
+                            "in this case it will be your_icon.xml, it will look like this:",
+                            "Note that we used these attributes to set the Vector's color:",
+                            "Edit: You can't use a color from your colors.XML or somewhere else, the color must be decalred directly in the Vector's XML file.",
+                            ".",
+                            "so it will look like this:"
+                        ]
+                    },
+                    {
+                        "uid": 50114482,
+                        "score": 1,
+                        "text": [
+                            "if you want to change menu item icons, arrow icon -LRB- back/up -RRB-, and 3 dots icon you can use android: tint"
+                        ]
+                    },
+                    {
+                        "uid": 50135416,
+                        "score": 0,
+                        "text": [
+                            "which theme you have used in activity add below one line code",
+                            "for white",
+                            "for black"
+                        ]
+                    },
+                    {
+                        "uid": 57414411,
+                        "score": 0,
+                        "text": [
+                            "To change color for options menu items you can"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "android-layout",
+                    "material-design",
+                    "android-appcompat",
+                    "android-toolbar"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://github.com/jd-alexander/LikeButton",
+                "type": "misc",
+                "content": [
+                    "Mobile \u2192 Actions \u2192 Codespaces \u2192 Packages \u2192 Security \u2192 Code review \u2192 Project management \u2192 Integrations \u2192",
+                    "GitHub Sponsors \u2192 Customer stories \u2192",
+                    "Topics \u2192 Collections \u2192 Trending \u2192 Learning Lab \u2192 Open source guides \u2192",
+                    "The ReadME Project \u2192 Events \u2192 Community forum \u2192 GitHub Education \u2192 GitHub Stars program \u2192",
+                    "Compare plans \u2192 Contact Sales \u2192",
+                    "No suggested jump to results",
+                    "Twitter's heart animation for Android",
+                    "Use Git or checkout with SVN using the web URL.",
+                    "Work fast with our official CLI.",
+                    "Launching GitHub Desktop If nothing happens, download GitHub Desktop and try again.",
+                    "Launching Xcode If nothing happens, download Xcode and try again.",
+                    "Launching Visual Studio If nothing happens, download the GitHub extension for Visual Studio and try again.",
+                    "Failed to load latest commit information.",
+                    "Type Name Latest commit message Commit time",
+                    "Like Button Table of Contents Gradle Dependency Repository Dependency Basic Usage Like Button XML Attributes Button State XML Java XML Java Like Event Listener Icon Types XML Java Icon Size XML Java Custom Icons XML Java Circle Color Config XML Java Dots Color Config XML Java Animation Size XML Java Inspiration Contribution License",
+                    "Like Button is a library that allows you to create a button with animation effects similar to Twitter's heart when you like something.",
+                    "Button State Like Event Listener Icon Types Icon Size Custom Icons Circle Color Config Dots Color Config Animation Size Inspiration Contribution License",
+                    "Gradle Dependency Repository Add this in your root build.gradle file ( not your module build.gradle file ):",
+                    "Dependency Add this to your module's build.gradle file:",
+                    "Basic Usage Like Button XML To use this like button in your layout simply copy and paste the xml below.",
+                    "This provides the default heart button.",
+                    "Attributes There are several other attributes that can be used to configure the button's behaviour and appearance.",
+                    "They are shown below and will be explained in the sections that follow long with their java counterparts.",
+                    "Button State To set the inital liked state of the button you simply use the setLiked functionality via XML or Java.",
+                    "This will show the button in the liked state with the drawable that you selected.",
+                    "You can also set if the button is to be enabled or disabled.",
+                    "Once disabled, the animation, listener or any other functionality of the button won't be triggered.",
+                    "Like Event Listener To listen to events from your like button, simply implement the listener that's triggered once the button is tapped.",
+                    "Icon Types The libary is bundled with three icons that you can use.",
+                    "A heart, thumb and a star.",
+                    "XML To set the respective icon via xml simply use the word in the icon type attribute.",
+                    "Java If you would like to set the icon via Java then simply call the set icon method on the button.",
+                    "Icon Size XML To set the icon size via xml simply use this attribute",
+                    "Java If you are doing it programmatically you can set it with either the method for pixels or dp.",
+                    "Note, it's very important that the size of the button is set even if you are planning to use custom drawables as described below as the library uses this value to determine the width and height of the effects that occur when the button is tapped.",
+                    "Custom Icons XML In order to use custom icons instead of the ones bundled with the library you simply set the drawables that represent the liked and unliked state of the button.",
+                    "Circle Color Config If you watch the animation closely you will notice that there's a circle that begins from the center of the icon and and then it animates away from the center before the exploding dots animate.",
+                    "These colours can be changed to suit the theme of your icon.",
+                    "Dots Color Config The dots that represent the outer animation can be coloured also.",
+                    "Animation Size To change the size of the dots that also contributes to the size of the overall like button view you can use the animation scale factor attribute via XML or it's Java equivalent XML",
+                    "Inspiration This library was made by possible based on code and design inspiration from these sources: https://github.com/frogermcs/LikeAnimation https://github.com/lightsmeki/android_twitter_heart_animation_button https://dribbble.com/shots/2416983-Twitter-Heart-Animation Contribution Please fork repository and contribute using pull requests.",
+                    "Any contributions, large or small, major features, bug fixes, additional language translations, unit/integration tests are welcomed and appreciated but will be thoroughly reviewed and discussed.",
+                    "Twitter's heart animation for Android Topics",
+                    ""
+                ],
+                "title": "GitHub - jd-alexander/LikeButton: Twitter's heart animation for Android"
+            }
+        ]
+    },
+    "parsed": true
+}

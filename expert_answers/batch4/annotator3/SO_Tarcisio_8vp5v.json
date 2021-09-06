@@ -1,0 +1,102 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "(The answer is, a subscope can receive dependencies from its superscope, and a subscope exists as long as the component does.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "And that you need to specify the scopes on your modules, and you need to specify your component dependencies to subscope one superscope.)",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Unscoped - when no annotation declared.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Unscoped dependency will have simple Provider generated without any caching and any instance of that dependency created in component will be new for every new injection (as in constructor, or in module provision method, or just as a field).",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Custom scope e.g. @ActivityScope annotation defined with @javax.inject.Scope annotation - Dependencies declared with that scope with have caching Provider with double-check lock generated and only single instance will be created for it within component declared with the same scope and its creation will be thread safe.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "Note that for every instance of component itself new instance of that dependency will be created.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "Reusable scope - declared with @dagger.Reusable annotation - Dependencies declared with that scope may be shared between different components through common parent component and will have caching Provider with single-check lock generated.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "It is useful when dependency does not necessarily need to have single instance but may be shared for increased performance (less allocations) in single component or between components.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "For more info on how scopes work refer to user's guide and Dagger's generated code.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "Define your scopes by the semantics of using them.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-38",
+      "tag": "SPAN",
+      "text": "You may also find useful this answer and these examples.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "It is worth noting that apparently Dagger2 creates a single instance per scoped provider in a module per component.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "So in order to get a scoped provider in a module, you need to specify the scope for your module's provider method.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "EDIT START: though generally, you don't need to instantiate your own implementations inside your modules, so you can actually just do this:",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "Afterwards, refer to Kirill's  answer; essentially a \"scope\" by itself only determines that it is a different scope from the other one.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "Using component dependencies (or subcomponents) creates a subscope.",
+      "href": "android - Dagger2 Custom Scopes : How do custom-scopes (@ActivityScope) actually work? - Stack Overflow"
+    }
+  ]
+}

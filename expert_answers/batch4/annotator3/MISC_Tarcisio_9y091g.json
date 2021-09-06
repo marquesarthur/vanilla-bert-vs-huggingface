@@ -1,0 +1,150 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-160",
+      "tag": "SPAN",
+      "text": "\n    Simplicity: Unlike the previous API, you no longer have to deal with multiple providers.\nInstead, you specify high-level needs, such as “high accuracy” or “low power”, and it will take a suitable approach.\n  ",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "However, we will need to begin by configuring the build script and adding Google Play Services as a dependency for this application.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-38",
+      "tag": "SPAN",
+      "text": "This can be done by modifying the “build.gradle” file as follows:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "To solve this, we need to edit “AndroidManifest.xml” and add the permission we require for this application:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "While we are at it, we should also define the version of Google Play Services we are using for this application:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "Before accessing features provided by Google Play Services, we must check if the device has Google Play Services installed, and that the version is the one we intend to use (6.5.87).",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-504",
+      "tag": "PRE",
+      "text": "private boolean checkGooglePlayServices(){\n\tint checkGooglePlayServices = GooglePlayServicesUtil\n\t\t.isGooglePlayServicesAvailable(mContext);\n\tif (checkGooglePlayServices != ConnectionResult.SUCCESS) {\n\t\t/*\n\t\t* Google Play Services is missing or update is required\n\t\t*  return code could be\n\t\t* SUCCESS,\n\t\t* SERVICE_MISSING, SERVICE_VERSION_UPDATE_REQUIRED,\n\t\t* SERVICE_DISABLED, SERVICE_INVALID.\n\t\t*/\n\t\tGooglePlayServicesUtil.getErrorDialog(checkGooglePlayServices,\n\t\tmContext, REQUEST_CODE_RECOVER_PLAY_SERVICES).show();\n\n\t\treturn false;\n\t}\n\n\treturn true;\n}\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-505",
+      "tag": "CODE",
+      "text": "private boolean checkGooglePlayServices(){\n\tint checkGooglePlayServices = GooglePlayServicesUtil\n\t\t.isGooglePlayServicesAvailable(mContext);\n\tif (checkGooglePlayServices != ConnectionResult.SUCCESS) {\n\t\t/*\n\t\t* Google Play Services is missing or update is required\n\t\t*  return code could be\n\t\t* SUCCESS,\n\t\t* SERVICE_MISSING, SERVICE_VERSION_UPDATE_REQUIRED,\n\t\t* SERVICE_DISABLED, SERVICE_INVALID.\n\t\t*/\n\t\tGooglePlayServicesUtil.getErrorDialog(checkGooglePlayServices,\n\t\tmContext, REQUEST_CODE_RECOVER_PLAY_SERVICES).show();\n\n\t\treturn false;\n\t}\n\n\treturn true;\n}\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-50",
+      "tag": "SPAN",
+      "text": "After the user completes the resolution provided by “GooglePlayServicesUtil.getErrorDialog()”, a callback method “onActivityResult()” is fired, so we have to implement some logic to handle that call:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-53",
+      "tag": "SPAN",
+      "text": "Our first step here is to initiate the connection.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "I usually call this code from “onCreate” method of the activity:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-515",
+      "tag": "PRE",
+      "text": "protected synchronized void buildGoogleApiClient() {\n\tmGoogleApiClient = new GoogleApiClient.Builder(this)\n\t\t.addConnectionCallbacks(this)\n\t\t.addOnConnectionFailedListener(this)\n\t\t.addApi(LocationServices.API)\n\t\t.build();\n}\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "uid-516",
+      "tag": "CODE",
+      "text": "protected synchronized void buildGoogleApiClient() {\n\tmGoogleApiClient = new GoogleApiClient.Builder(this)\n\t\t.addConnectionCallbacks(this)\n\t\t.addOnConnectionFailedListener(this)\n\t\t.addApi(LocationServices.API)\n\t\t.build();\n}\n",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-57",
+      "tag": "SPAN",
+      "text": "After adding this code, our “MainActivity” should look like this:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-58",
+      "tag": "SPAN",
+      "text": "Then in our “onStart” method we call the “connect” method and wait for “onConnected” callback method be invoked:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-59",
+      "tag": "SPAN",
+      "text": "The “onConnected” method will look like this:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "After you invoke “getLastLocation”, you might want to request periodic updates from the Fused Location Provider.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-68",
+      "tag": "SPAN",
+      "text": "We instantiate a new LocationRequest object.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-69",
+      "tag": "SPAN",
+      "text": "Set the interval to 20 seconds (20000 milliseconds).",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-71",
+      "tag": "SPAN",
+      "text": "This tells the API to provide updates every 20 seconds (preferably), but if there is a change available within a 5 second period, it should provide that too.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-72",
+      "tag": "SPAN",
+      "text": "Finally, we set the priority to “PRIORITY_HIGH_ACCURACY”, among the other available priority options: PRIORITY_BALANCED_POWER_ACCURACY, PRIORITY_LOW_POWER, PRIORITY_NO_POWER.",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-74",
+      "tag": "SPAN",
+      "text": "All that remains now is to implement the callback method to satisfy the LocationListener interface:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-78",
+      "tag": "SPAN",
+      "text": "The following method should be invoked from within “onPause” callback:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    },
+    {
+      "id": "eye-gazing-tag-79",
+      "tag": "SPAN",
+      "text": "… and disconnecting Google API:",
+      "href": "Building Location Aware Applications with Google's Location Services API | Toptal"
+    }
+  ]
+}

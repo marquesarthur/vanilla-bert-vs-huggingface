@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "You are using the AppCompat version 21+ and it is normal.",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "As you can read here:",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "The use of application icon plus title as a standard layout is\n  discouraged on API 21 devices and newer.",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "If you would like an application icon (but I discourage it), you can use the method setLogo().",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "Something like this:",
+      "href": "android - The application icon does not show on action bar - Stack Overflow"
+    }
+  ]
+}

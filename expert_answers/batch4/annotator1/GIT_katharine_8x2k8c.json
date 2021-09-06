@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-191",
+      "tag": "SPAN",
+      "text": "\n          This has been fixed in 2.13.5 version of the SDK.\nclosing the issue.\n      ",
+      "href": "TransferUtility does not update the TransferListener when the preferred network type is not available · Issue #958 · aws-amplify/aws-sdk-android"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "This has been fixed in 2.13.5 version of the SDK.",
+      "href": "TransferUtility does not update the TransferListener when the preferred network type is not available · Issue #958 · aws-amplify/aws-sdk-android"
+    }
+  ]
+}

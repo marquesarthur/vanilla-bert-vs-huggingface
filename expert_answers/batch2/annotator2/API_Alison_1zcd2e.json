@@ -1,0 +1,25 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "\n A Rectangle object's width and\n height are public fields.",
+      "href": "Rectangle (Java Platform SE 7 )"
+    },
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "The constructors\n that create a Rectangle, and the methods that can modify\n one, do not prevent setting a negative value for width or height.",
+      "href": "Rectangle (Java Platform SE 7 )"
+    },
+    {
+      "id": "eye-gazing-tag-4",
+      "tag": "SPAN",
+      "text": "\n \n A Rectangle whose width or height is exactly zero has location\n along those axes with zero dimension, but is otherwise considered empty.",
+      "href": "Rectangle (Java Platform SE 7 )"
+    }
+  ]
+}

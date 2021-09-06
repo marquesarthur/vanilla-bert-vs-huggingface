@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "(e.g., Android allows apps to access the Internet without your permission.) Dangerous permission groups, however, can give apps access to things like your calling history, private messages, location, camera, microphone, and more.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Therefore, Android will always ask you to approve dangerous permissions.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Now Android allows you to decide which permissions to accept on a case-by-case basis — after the app is installed.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    }
+  ]
+}

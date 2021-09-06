@@ -1,0 +1,66 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "e35f",
+      "tag": "H2",
+      "text": "Step 1: Go through reCAPTCHA Terms of Service",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "326a",
+      "tag": "H2",
+      "text": "Step 2: Register a reCAPTCHA key pair",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "ff96",
+      "tag": "H2",
+      "text": "Step 3: Setting up Google Play services",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "uid-326",
+      "tag": "PRE",
+      "text": "apply plugin: 'com.android.application'...dependencies {    compile 'com.google.android.gms:play-services-base:11.0.1'    compile 'com.google.android.gms:play-services-basement:11.0.1'    compile 'com.google.android.gms:play-services-safetynet:11.0.1'    compile 'com.google.android.gms:play-services-tasks:11.0.1'}",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "In your activity’s onCreate() method we will create an instance of Google API client as follows:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Don’t forget to declare the Google API Client in the activity class like this:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Wherever you want to invoke the captcha widget use the following code:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "That is what I do in call mPresenter.verifyCaptchaOnServer(result.getTokenResult());",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "So for that, you need to send a post request to URL: https://www.google.com/recaptcha/api/siteverify with following three parameters:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Using Retrofit, the request looks like this:",
+      "href": "Using Google’s ReCAPTCHA with Android | by Rashi Karanpuria | AndroidPub | Medium"
+    }
+  ]
+}

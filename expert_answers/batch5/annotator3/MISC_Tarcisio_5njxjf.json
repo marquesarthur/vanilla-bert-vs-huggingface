@@ -1,0 +1,36 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "onvisibilitychanged",
+      "tag": "H4",
+      "text": "onVisibilityChanged",
+      "href": "How and why to use Android Visibility Listeners"
+    },
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "This method is triggered when the visibility of the view or of an ancestor of the view has changed.",
+      "href": "How and why to use Android Visibility Listeners"
+    },
+    {
+      "id": "onwindowvisibilitychanged",
+      "tag": "H4",
+      "text": "onWindowVisibilityChanged",
+      "href": "How and why to use Android Visibility Listeners"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "This method is triggered when the containing window of our View has changed its visibility.",
+      "href": "How and why to use Android Visibility Listeners"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "When we run the application and press the button we get:",
+      "href": "How and why to use Android Visibility Listeners"
+    }
+  ]
+}

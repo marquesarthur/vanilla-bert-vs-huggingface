@@ -1,0 +1,42 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "You need to have implement a BroadcastReceiver and declare it in the AndroidManifest.xml.",
+            "href": "android - Push Notifications when app is closed - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-23",
+            "tag": "SPAN",
+            "text": "Please refer to the following code snippet.",
+            "href": "android - Push Notifications when app is closed - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-28",
+            "tag": "SPAN",
+            "text": "Refer to the Official Android Page for the same: https://developer.android.com/google/gcm/client.html",
+            "href": "android - Push Notifications when app is closed - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-98",
+            "tag": "SPAN",
+            "text": "When GCM delivers a message to your device, BroadcastReceiver will receive the message and call the onReceive() function, wherein you may start a service to actually perform the intended task for you.",
+            "href": "android - Push Notifications when app is closed - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-72",
+            "tag": "SPAN",
+            "text": "Force stopping an application by the user puts the application in a stopped state and none of its code is run, including any broadcast receivers declared in manifest.",
+            "href": "android - Push Notifications when app is closed - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "Only when the user explicitly launches the app it is put in a state where the receivers get fired.",
+            "href": "android - Push Notifications when app is closed - Stack Overflow"
+        }
+    ]
+}

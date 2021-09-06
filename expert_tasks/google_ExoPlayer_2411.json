@@ -1,0 +1,127 @@
+{
+    "task": "SeekTo Position of cutted song not working",
+    "description": "Hi, \r\nI just made the transition from the Android Media Player to ExoPlayer and I noticed a bug in SeekTo Method.\r\n\r\nIf i try to seek to a position using seekbar while reproducing a cutted song (i removed the end of the song for example), ExoPlayer re-start reproducing from the Default Position (from the beginning) instead of the position i choosed.\r\nWhile if i try to seek to a position of a song not cutted it work correctly.\r\n\r\nI've tried with some other MusicPlayer but not happen even with Android media player in my old implementation did not happen, also i tried to put on my phone the same song but NOT cutted and the seekto method work correctly!\r\n\r\nI'm using ExoPlayer r2.2.0 on Samsung Galaxy S6 (Reproduced also on other device).\r\n\r\nWhen this happen there aren't exception or other error it simply re-start reproducing the song.\r\n",
+    "type": "GIT",
+    "link": "https://github.com/google/ExoPlayer/issues/2411",
+    "question_id": "2411",
+    "resources": {
+        "api": [],
+        "git": [
+            {
+                "link": "https://github.com/google/ExoPlayer/issues/8387",
+                "content": [
+                    "Offset and length audio files specified, unable to seek after playback \u00b7 Issue # 8387 \u00b7 google/ExoPlayer \u00b7 GitHub",
+                    "Offset and length audio files specified, unable to seek after playback",
+                    "The Audio dies after you call seekTo ( position )",
+                    "Android device: Pixel 4 XL",
+                    "code of media source creation:",
+                    "Media is contained in a file, so dataSpec in FileDataSource specifies offset and length.",
+                    "In most cases, it can play normally, but seekTo ( position ) is called, and the sound disappears, accompanied by the following log:",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "Audio file has sent from mail.",
+                    "audio content length after offset: 47413829",
+                    "It's not clear how you are actually applying the offset and length in or before FileDataSource.",
+                    "This is the critical piece of information, since it's highly likely that this is just implemented incorrectly.",
+                    "If you have a custom DataSource implementation then you'll need to share it so that we can take a look at what might be wrong.",
+                    "Thanks your reply at first: )",
+                    "One thing to note about this issue is that media can safely play without calling seek",
+                    "Here is how I apply offset and length.",
+                    "This is the contents of the file, which means the offset is correct, as well as the fact that it can be played",
+                    "I think your DataSource is implemented incorrectly.",
+                    "The dataSpec argument is not defining the entire media.",
+                    "It's defining the part of the media that the caller wants to read for this particular call to open.",
+                    "dataSpec.position is the position within the media that the caller wants to start reading from.",
+                    "dataSpec.length is the length of data that the caller wants to read, or C.LENGTH _ UNSET to read to the end of the media.",
+                    "Your implementation is currently ignoring these parameters.",
+                    "This becomes a problem specifically when seeking, because dataSpec.position will not be 0 in this case, yet your implementation will nevertheless read from the start of the media.",
+                    "You probably need your implementation to do something more like ( untested pseudocode ):",
+                    "It looks work for me, the difference for me is readPosition = mediaPosition + dataSpec.position and newDataSpec = dataSpec.buildUpon ( ) ...",
+                    "But I dont understand what difference they made ?",
+                    "It should hopefully be clear that if dataSpec.position is non-zero, readPosition = mediaPosition + dataSpec.position ( correct ) is going to end up reading from a different position than readPosition = mediaPosition ( incorrect ).",
+                    "The reason why dataSpec.position needs to be included is already explained as clearly as I'm able to explain it in my response above.",
+                    "locked and limited conversation to collaborators",
+                    "to subscribe to this conversation on GitHub.",
+                    ""
+                ],
+                "title": "Offset and length audio files specified, unable to seek after playback \u00b7 Issue # 8387 \u00b7 google/ExoPlayer \u00b7 GitHub"
+            }
+        ],
+        "qa": [
+            {
+                "uid": "3212688",
+                "link": "https://stackoverflow.com/questions/3212688",
+                "title": "MediaPlayer.seekTo() does not work for unbuffered position",
+                "answers": [
+                    {
+                        "uid": 3213133,
+                        "score": 1,
+                        "text": [
+                            "It's probably related to the bug that's -LRB- referring to one of the comments -RRB- eventually fixed in 2.2 LINK"
+                        ]
+                    },
+                    {
+                        "uid": 3513149,
+                        "score": 3,
+                        "text": [
+                            "It has been fixed in Android 2.2 in some devices only as far as I know.",
+                            "However Android 2.2 messes up with seeking to buffered posistion.",
+                            "Although a position is already buffered MediaPlayer sends a request to a server."
+                        ]
+                    },
+                    {
+                        "uid": 3723171,
+                        "score": 4,
+                        "text": [
+                            "I found a workaround for this problem:",
+                            "First you create an OnBufferingUpdateListener:",
+                            "Then in your seekbar event onProgressChanged do the following:",
+                            "With this you guarantee the user can't drag the progress bar to an unbuffered position -LRB- and also you see what's buffered -RRB-."
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "media-player"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://www.journaldev.com/22203/android-media-player-song-with-seekbar",
+                "type": "misc",
+                "content": [
+                    "keyboard_arrow_left Previous Next keyboard_arrow_right Share on Facebook Share on Twitter Share on WhatsApp Share on Reddit Share on LinkedIn Share on Email search search",
+                    "Share on Facebook Share on Twitter Share on WhatsApp Share on Reddit Share on LinkedIn Share on Email",
+                    "Android Media Player Song With SeekBar 3 Comments Filed Under: AndroidHome'' Android'' Android Media Player Song With SeekBar",
+                    "Android Media Player Song With SeekBar 3 Comments Filed Under: Android",
+                    "Android Media Player Song With SeekBar 3 Comments",
+                    "Home'' Android'' Android Media Player Song With SeekBar",
+                    "Android Passing Data between Fragments8.",
+                    "Android Location API GPS Tracking15.",
+                    "Android Location Google Play Services16.",
+                    "Android Increase Gradle Build Speed17.",
+                    "Android Shared Element Transition Animation72.",
+                    "Android Google Maps Example Tutorial78.",
+                    "Android Google Maps Current Location80.",
+                    "Android Google Map Route Drawing81.",
+                    "Anupam Chugh He loves learning new stuff in Android and iOS.",
+                    "Comments Bala says: April 28, 2020 at 9:27 amI think it is not allowed to update the UI -- update seekbar progress from within another threadReply uJ1mX6oY3v says: February 9, 2021 at 1:21 pmit is possible, just use runOnUiThreadReply Manish says: August 31, 2019 at 4:31 amHow can i add music from mobile ... on button click.",
+                    "please help meReplyLeave a Reply Cancel replyYour email address will not be published.",
+                    "Required fields are marked * CommentName * Email *",
+                    "Bala says: April 28, 2020 at 9:27 amI think it is not allowed to update the UI -- update seekbar progress from within another threadReply",
+                    "uJ1mX6oY3v says: February 9, 2021 at 1:21 pmit is possible, just use runOnUiThreadReply",
+                    "Manish says: August 31, 2019 at 4:31 amHow can i add music from mobile ... on button click.",
+                    "Leave a Reply Cancel replyYour email address will not be published.",
+                    "Newsletter for YouDon't miss out!Subscribe To Newsletter We promise not to spam you.",
+                    "Unsubscribe at any time.Invalid email addressThanks for subscribing !",
+                    "Don't miss out!Subscribe To Newsletter We promise not to spam you.",
+                    "Unsubscribe at any time.Invalid email address",
+                    "We promise not to spam you.",
+                    ""
+                ],
+                "title": "Android Media Player Song With SeekBar - JournalDev"
+            }
+        ]
+    },
+    "parsed": true
+}

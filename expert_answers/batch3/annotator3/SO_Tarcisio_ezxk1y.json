@@ -1,0 +1,54 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "uid-714",
+            "tag": "PRE",
+            "text": "public class RetItem\n{\n    public String _itemName;\n    public String _itemQty;\n    public String _itemPcode;\n    public String _itemPlant;\n}\n\npublic class SelectItemAdapter extends RecyclerView.Adapter<SelectItemAdapter.ItemHolder> {\n\n    private List<RetItem> _retData;\n     public SelectItemAdapter(Context context, String[] mDataset) {\n        layoutInflater = LayoutInflater.from(context);\n        _retData = new ArrayList<RetItem>(mDataset.length);\n        this.mDataset = mDataset;\n    }\n\n      @Override\n    public void onBindViewHolder(SelectItemAdapter.ItemHolder holder, final int position) {\n        holder.setItemName(itemsName.get(position));\n        holder.setItemName.addTextChangedListener(new TextWatcher() {\n\n           public void afterTextChanged(Editable s) {}\n\n           public void beforeTextChanged(CharSequence s, int start,\n             int count, int after) {\n           }\n\n           public void onTextChanged(CharSequence s, int start, int before, int count) {\n             _retData.get(position)._itemName = s.toString();\n           }\n          });\n\n        holder.setItemQty(itemsQty.get(position));\n        holder.setItemQty.addTextChangedListener(new TextWatcher() {\n\n           public void afterTextChanged(Editable s) {}\n\n           public void beforeTextChanged(CharSequence s, int start,\n             int count, int after) {\n           }\n\n           public void onTextChanged(CharSequence s, int start, int before, int count) {\n             _retData.get(position)._itemQty = s.toString();\n           }\n          });\n\n        holder.setItemPCode(itemsPCode.get(position));\n        holder.setItemPCode.addTextChangedListener(new TextWatcher() {\n\n           public void afterTextChanged(Editable s) {}\n\n           public void beforeTextChanged(CharSequence s, int start,\n             int count, int after) {\n           }\n\n           public void onTextChanged(CharSequence s, int start, int before, int count) {\n             _retData.get(position)._itemPcode = s.toString();\n           }\n          });       \n        holder.setItemPlant(itemPlant.get(position));\n        holder.setItemPlant.addTextChangedListener(new TextWatcher() {\n\n           public void afterTextChanged(Editable s) {}\n\n           public void beforeTextChanged(CharSequence s, int start,\n             int count, int after) {\n           }\n\n           public void onTextChanged(CharSequence s, int start, int before, int count) {\n             _retData.get(position)._itemPlant = s.toString();\n           }\n          });\n    }\n\n    public List<RetItem> retrieveData()\n    {\n        return _retData;\n    }\n}\n",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-98",
+            "tag": "SPAN",
+            "text": "while using addTextChangedListener on each of the editTexts, the text will be in s CharSequence, this text will be saved in _retData structure as you can see.",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "1) Add save Button in each row of RecyclerView\n  on this Button click (onClick)  ",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "uid-823",
+            "tag": "PRE",
+            "text": " @Override\n        public void onClick(View v) {\n           String ans = holher.numPicker.getText().toString();\n           // save ans to sharedpreferences or Database\n        }\n",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-18",
+            "tag": "SPAN",
+            "text": "2) Add onTextChangedListener to EditText",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "uid-826",
+            "tag": "PRE",
+            "text": "holher.mumPicker.addTextChangedListener(new TextWatcher() {\n\n   public void afterTextChanged(Editable s) {}\n\n   public void beforeTextChanged(CharSequence s, int start,\n     int count, int after) {\n   }\n\n   public void onTextChanged(CharSequence s, int start,\n     int before, int count) {\n      String ans = holher.numPicker.getText().toString();\n           // save ans to sharedpreferences or Database\n   }\n  });\n",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-26",
+            "tag": "SPAN",
+            "text": "My Adapter code:",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-59",
+            "tag": "SPAN",
+            "text": "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
+            "href": "android - How to get data from Edit Text in a RecyclerView? - Stack Overflow"
+        }
+    ]
+}

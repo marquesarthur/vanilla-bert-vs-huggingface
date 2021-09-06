@@ -1,0 +1,42 @@
+{
+    "https://developer.android.com/reference/android/widget/ArrayAdapter": {
+        "apiref": [
+            "Note: If you are considering using array adapter with a ListView, consider using RecyclerView instead.",
+            "It should only be set ( i.e., non-null if the values do not represent PII ( Personally Identifiable Information - sensitive data such as email addresses, credit card numbers, passwords, etc..",
+            "A good rule of thumb is that if the adapter data comes from static resources, such data is not PII - see ViewStructure.setDataIsSensitive ( boolean ) for more info."
+        ]
+    },
+    "https://stackoverflow.com/questions/6442054": {
+        "ansbot": [
+            "In your case it should be a Layout with ImageView and TextView -LRB- and dont forget to fill them -RRB-.",
+            "So the first thing you should do its to create your custom adapter."
+        ]
+    },
+    "https://github.com/nostra13/Android-Universal-Image-Loader/issues/462": {
+        "hurried": [
+            "The system wasn't instructed that you have two different layouts and won't separate them out into pools and may give you back the wrong layout at times.",
+            "I want two type of list items ( left align and right alined, just as message thread ).",
+            "I think that's a common mistake when using different layouts for rows but not implementing Adapter.getItemViewType ( ) and getViewTypeCount ( ) correctly."
+        ]
+    },
+    "https://www.raywenderlich.com/155-android-listview-tutorial-with-kotlin": {
+        "lexrank": [
+            "In this tutorial, you'll learn how to use Android's ListView to easily create scrollable lists, by creating a simple recipe list app using Kotlin.",
+            "By working through this tutorial, you'll become familiar with ListView, and you'll do so by creating a recipe list app.",
+            "Android ListView Tutorial with Kotlin In this tutorial, you'll learn how to use Android's ListView to easily create scrollable lists, by creating a simple recipe list app using Kotlin.",
+            "Adapters: Servants of the ListView Your recipe app is starting to look functional, but not all that appetizing ... yet.",
+            "If you want to know more about the inner workings of the ListView and performance details, check out this article on performance tips for Android ListViews.",
+            "Adapters not only exist for ListViews, but for other kinds of views as well ; ListView is a subclass of AdapterView, so you can populate it by binding it to an adapter.",
+            "Defining the Layout of the ListView's Rows You probably noticed that the starter project comes with the file res/layout/list_item_recipe.xml that describes how each row in the ListView should look and be laid out.",
+            "Android ListView Tutorial with Kotlin",
+            "Add a ListView to MainActivity by inserting the following code snippet inside the ConstraintLayout tag:",
+            "view: The selected view ( row ) within the ListView"
+        ]
+    },
+    "https://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView": {
+        "lexrank": [
+            "We can create a custom ListView of User objects by subclassing ArrayAdapter to describe how to translate the object into a view within that class and then using it like any other adapter.",
+            "Improving Performance with the ViewHolder Pattern To improve performance, we should modify the custom adapter by applying the ViewHolder pattern which speeds up the population of the ListView considerably by caching view lookups for smoother, faster item loading:"
+        ]
+    }
+}

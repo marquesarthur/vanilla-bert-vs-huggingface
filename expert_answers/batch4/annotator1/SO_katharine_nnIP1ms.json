@@ -1,0 +1,30 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "Try to check below FragmentPagerAdapter to get endless viewpager adapter :",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-61",
+            "tag": "SPAN",
+            "text": "Try to check below FragmentPagerAdapter to get endless viewpager adapter :",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-61",
+            "tag": "SPAN",
+            "text": "I created a ViewPager that supports infinite looping effect, smart auto-scroll, compatible with any indicators and easy to use.",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-86",
+            "tag": "SPAN",
+            "text": "Try to check below FragmentPagerAdapter to get endless viewpager adapter :",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        }
+    ]
+}

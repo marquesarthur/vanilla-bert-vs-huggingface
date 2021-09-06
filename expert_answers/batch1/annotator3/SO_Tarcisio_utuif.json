@@ -1,0 +1,120 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "There are several appraoches for this.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Although what you are doing is really not appropriate.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-324",
+      "tag": "SPAN",
+      "text": "AsyncTask \n\n\nThe thread pooling here is done internally,so you do not need to bother with that\nIts a more cleaner approach to your problem instead of spawning individual threads.\nIf your user changes the screen during your API call ,you can also cancel the call.\nYou would have to enable notifyDatasetChanged()\nYou need to override very few functions to achieve the functionality that you want.\n",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-330",
+      "tag": "SPAN",
+      "text": "AsyncTaskLoader\n\n\nIt gives you more control but you lose out on several implicitly defined functions\nYou need more knowledge to use this and should be well versed with classes like LoaderManager,Loader.\nchange is self trigerring\nSay if you were to change your underlying dataset,the changes would automatically trigger and provide a change to your UI.\n",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-334",
+      "tag": "SPAN",
+      "text": "Handlers and Threads\n\n\nThis is one stpe above your current appraoch but provide way more benifits\nYou can abstract the thread creation and provide a handler which would handle the call for all your ids.\nYou could queue the threads and the messages delivered.\nif the screen changes,you could remove callbacks and messages.\n",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "PS:the common point in all these approaches is,",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "The best advice that I could give you is to fetch the data beforehand.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "Pull the data, update the ArrayList that your Adapter is connected to, then call adapter.notifyDataSetChanged().",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "Pull the data all at once - not in small parts.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "This is the best and most reasonable way to do this.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "I have used Volley library here.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "If you read the docs then you'll see that Volley runs on background threads.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "Since others have already covered the issues in using Threads I will not talk about those.",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-339",
+      "tag": "SPAN",
+      "text": "Create an interface: WebInfoUpdateReceiver.java\n\npublic interface WebInfoUpdateReceiver {\n\n    public void receive(Foo [] fooItems);\n\n}\n",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "Create an interface: WebInfoUpdateReceiver.java",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-340",
+      "tag": "SPAN",
+      "text": "Create a class to download stuff: Downloader.java\n\npublic class Downloader {\n    private Context mContext;\n    private WebInfoUpdateReceiver mReceiver;\n\n    public Downloader(WebInfoUpdateReceiver receiver) {\n       mReceiver = receiver;\n    }\n\n    public void downloadStuff() {\n    MyStringRequest request = new MyStringRequest(Request.Method.GET,requestUrl, new Response.Listener<String>() {\n    @Override\n    public void onResponse(String response) {\n       // parse the response into Foo[]\n\n        mReceiver.update(foo);\n            }\n        }\n    }\n}, new Response.ErrorListener() {\n    @Override\n    public void onErrorResponse(VolleyError error) {\n\n    }\n});\nRequestQueue queue = Volley.newRequestQueue(mContext);\nqueue.add(request);\n    }\n\n}\n",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "Create a class to download stuff: Downloader.java",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-341",
+      "tag": "SPAN",
+      "text": "Now make your activity implement the interface:\n\npublic class Activity extends Activity implements WebInfoUpdateReceiver {\n\npublic void receive(Foo [] fooItems) {\n     // convert the array  into arrayList\n    adapter.insert(arraylist);\n    adapter.notifyDataSetChanged();\n}\n  }\n",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-53",
+      "tag": "SPAN",
+      "text": "Now make your activity implement the interface:",
+      "href": "multithreading - Android: best practice to perform asynchronous operations in getView() - Stack Overflow"
+    }
+  ]
+}

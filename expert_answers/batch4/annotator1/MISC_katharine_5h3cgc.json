@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-43",
+      "tag": "SPAN",
+      "text": "In the case that your transfer was paused due to loss of network connectivity, it will automatically resume when the network is available again.",
+      "href": "Introducing the Transfer Utility for the AWS SDK for Android | Front-End Web & Mobile"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": " Overall, we have built the Transfer Utility as an improvement and simplification over the Transfer Manager.",
+      "href": "Introducing the Transfer Utility for the AWS SDK for Android | Front-End Web & Mobile"
+    }
+  ]
+}

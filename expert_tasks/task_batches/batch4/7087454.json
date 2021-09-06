@@ -1,0 +1,249 @@
+{
+    "task": "Android PDF Rendering",
+    "description": "I would like to render/open PDF file ( stored in SDCard ) in Android without using in-build application or viewer.\n1 ) We have tried MuPDF open source library but rendering using this library is very slow.\n2 ) Can we use iText library for rendering PDF files in Android ( i.e. iText as a PDF Viewer ).\nIs there any other PDF library ( open source ) that can be used in Android Or suggest basic guideline for developing PDF viewer for Android.",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/7087454",
+    "question_id": "7087454",
+    "resources": {
+        "api": [            
+            {
+                "link": "https://developer.android.com/reference/android/graphics/pdf/PdfRenderer",
+                "type": "android",
+                "content": [
+                    "public final class PdfRenderer extends Object implements AutoCloseable",
+                    "This class enables rendering a PDF document.",
+                    "This class is not thread safe.",
+                    "If you want to render a PDF, you create a renderer and for every page you want to render, you open the page, render it, and close the page.",
+                    "After you are done with rendering, you close the renderer.",
+                    "After the renderer is closed it should not be used anymore.",
+                    "Note that the pages are rendered one by one, i.e. you can have only a single page opened at any given time.",
+                    "A typical use of the APIs to render a PDF looks like this:",
+                    "If you are using this class to rasterize a PDF for printing or show a print preview, it is recommended that you respect the following contract in order to provide a consistent user experience when seeing a preview and printing, i.e. the user sees a preview that is the same as the printout.",
+                    "This class represents a PDF document page for rendering.",
+                    "Gets the number of pages in the document.",
+                    "Opens a page for rendering.",
+                    "Gets whether the document prefers to be scaled for printing.",
+                    "Called by the garbage collector on an object when garbage collection determines that there are no more references to the object.",
+                    "Note: The provided file descriptor must be seekable, i.e. its data being randomly accessed, e.g. pointing to a file.",
+                    "Note: This class takes ownership of the passed in file descriptor and is responsible for closing it when the renderer is closed.",
+                    "If the file is from an untrusted source it is recommended to run the renderer in a separate, isolated process with minimal permissions to limit the impact of security exploits.",
+                    "You should not use this instance after this method is called.",
+                    "You should take this info account if the document is rendered for printing and the target media size differs from the page size.",
+                    "A subclass overrides the finalize method to dispose of system resources or to perform other cleanup.",
+                    "The general contract of finalize is that it is invoked if and when the Java \u2122 virtual machine has determined that there is no longer any means by which this object can be accessed by any thread that has not yet died, except as a result of an action taken by the finalization of some other object or class which is ready to be finalized.",
+                    "The finalize method may take any action, including making this object available again to other threads ; the usual purpose of finalize, however, is to perform cleanup actions before the object is irrevocably discarded.",
+                    "For example, the finalize method for an object that represents an input/output connection might perform explicit I/O transactions to break the connection before the object is permanently discarded.",
+                    "The finalize method of class Object performs no special action ; it simply returns normally.",
+                    "Subclasses of Object may override this definition.",
+                    "The Java programming language does not guarantee which thread will invoke the finalize method for any given object.",
+                    "It is guaranteed, however, that the thread that invokes finalize will not be holding any user-visible synchronization locks when finalize is invoked.",
+                    "If an uncaught exception is thrown by the finalize method, the exception is ignored and finalization of that object terminates.",
+                    "After the finalize method has been invoked for an object, no further action is taken until the Java virtual machine has again determined that there is no longer any means by which this object can be accessed by any thread that has not yet died, including possible actions by other objects or classes which are ready to be finalized, at which point the object may be discarded.",
+                    "The finalize method is never invoked more than once by a Java virtual machine for any given object.",
+                    "Any exception thrown by the finalize method causes the finalization of this object to be halted, but is otherwise ignored.",
+                    "Content and code samples on this page are subject to the licenses described in the Content License.",
+                    "Java is a registered trademark of Oracle and/or its affiliates.",
+                    "Respect the property whether the document would like to be scaled for printing as per shouldScaleForPrinting ( ).",
+                    "When scaling a document for printing the aspect ratio should be preserved.",
+                    "Do not inset the content with any margins from the PrintAttributes as the application is responsible to render it such that the margins are respected.",
+                    "If document page size is greater than the printed media size the content should be anchored to the upper left corner of the page for left-to-right locales and top right corner for right-to-left locales.",
+                    "Twitter Follow @AndroidDev on Twitter",
+                    "YouTube Check out Android Developers on YouTube",
+                    "More Android Android Enterprise Security Source",
+                    "Support Report platform bug Report documentation bug Google Play support Join research studies",
+                    "Documentation Developer guides Design guides API reference Samples Android Studio",
+                    "Get news and tips by email Subscribe",
+                    ""
+                ],
+                "title": "PdfRenderer \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [            
+            {
+                "link": "https://github.com/voghDev/PdfViewPager/issues/33",
+                "content": [
+                    "Crash when rendering some pdfs.",
+                    "I downloaded the pdf from https://tools.ietf.org/pdf/rfc7519.pdf.",
+                    "Then replace adobe.pdf with rfc7519.pdf.",
+                    "It is very slow when rendering rfc7519.pdf.",
+                    "And crashed after a while.",
+                    "But other pdfs is fine, witch is evan larger than rfc7519.pdf.",
+                    "You can reproduce it with the rfc7519.pdf.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "This one is the same.",
+                    "I've reproduced the issue in my phone, with your PDF.",
+                    "It also crashes in my phone.",
+                    "We will have a look to see if we can fix the issue in any way.",
+                    "I found a similar issue about this, googlearchive/android-PdfRendererBasic # 1",
+                    "Are you reading your pdf files directly from assets.",
+                    "I suggest you to copy the files in your own SD card",
+                    "No difference \uff0c from assets or SD card, all crash.",
+                    "But i found it not crash in some phones.",
+                    "I count not find the cause.",
+                    "When it crash, here is the log:",
+                    "es.voghdev.pdfviewpager A/libc: Fatal signal 11 ( SIGSEGV ), code 1, fault addr 0x0 in tid 16545 ( ev.pdfviewpager )",
+                    "it look like it is missing'.",
+                    "so' libs.",
+                    "it looks like an internal error of PdfRenderer class.",
+                    "If the original PdfRenderer can't render your PDF file, I guess this library can't do anything about it, as it is mounted on top of it, sorry about that: - /",
+                    "I suggest you to stay tuned on the issue that @josearmandoam linked, and let me know if they find a solution.",
+                    "I'll update the library with any changes that may be necessary",
+                    ""
+                ],
+                "title": "Crash when rendering some pdfs."
+            }
+        ],
+        "qa": [
+            {
+                "uid": "2883355",
+                "link": "https://stackoverflow.com/questions/2883355",
+                "title": "How to render PDF in Android",
+                "answers": [
+                    {
+                        "uid": 2885744,
+                        "score": 115,
+                        "text": [
+                            "Some phones -LRB- like the Nexus One -RRB- come with a version of LINK pre-installed so it may be as easy as sending the appropriate Intent once you've saved the file to the SD card."
+                        ]
+                    },
+                    {
+                        "uid": 10861494,
+                        "score": 16,
+                        "text": [
+                            "LINK."
+                        ]
+                    },
+                    {
+                        "uid": 23872202,
+                        "score": 3,
+                        "text": [
+                            "For the local pdf files, you can render them through the third party libraries.",
+                            "for example, use the LINK, its supported file types include PDF, PNG and JPEG.",
+                            "One shortcoming of MuPDF is that it uses native library to fulfill the target, so it won't be easy to port the application on BlackBerry platform later."
+                        ]
+                    },
+                    {
+                        "uid": 26815873,
+                        "score": 9,
+                        "text": [
+                            "Android-Lollipop -LRB- api 21 -RRB- introduce a new API: LINK",
+                            "This API allows you to create a Bitmap from a page in a PDF document.",
+                            "Shortly:",
+                            "get a seekable file descriptor from your pdf document:",
+                            "create the PdfRenderer",
+                            "prepare the Bitmap",
+                            "get the LINK to render",
+                            "render the page on the prepared bitmap",
+                            "now you can do what you want with the bitmap.",
+                            "note that the 2 null args may allow you to clip some portion in the page and perform a transformation -LRB- using a LINK -RRB- of the clip",
+                            "there is another rendering mode: LINK.",
+                            "If you need this mode there are some guidelines to use it properly: here are LINK."
+                        ]
+                    },
+                    {
+                        "uid": 26927588,
+                        "score": 5,
+                        "text": [
+                            "This library is simple and works well: LINK LINK",
+                            "Old Reply ...",
+                            "I think that Joan Zapata give us the better and simple solution:",
+                            "LINK",
+                            "I assure you that it works !",
+                            "LINK: LINK"
+                        ]
+                    },
+                    {
+                        "uid": 27057753,
+                        "score": 0,
+                        "text": [
+                            "To open a pdf from a byte array, you can use RadaeePDF, you can do the following into your activity:"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "java",
+                    "android",
+                    "pdf"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://medium.com/android-dev-hacks/rendering-pdf-documents-in-android-using-pdfrenderer-f6d4f730b18",
+                "type": "misc",
+                "content": [
+                    "Rendering PDF Document's in Android using PdfRendererHow to make use of Android PdfRendererSatya Pavan KantamaniFollowJul 26, 2020 \u00b7 4 min readPhoto by Vikas Pawar on UnsplashIntroductionDuring development until unless we encounter a challenge or a problem most of us are not aware of many things in the system that we can benefit from.",
+                    "We are habituated in such a way that until unless a thing is needed we don't explore the stuff available.So it's always a good habit to explore a few resources that make our work easier when the time comes and for this, we need to keep on exploring the things in the platform we choose.",
+                    "One such thing in Android is dealing with PDF documents.",
+                    "In this post let's check different ways how we can open PDF documents.ProblemDealing with PDF documents is one of the basic things that most of us are not aware of because we haven't got a chance to work on that.",
+                    "It's not that easy at the starting phase in Android to open PDF's because there were no renderer's or components that can handle them.",
+                    "Then we started using browsers or WebViews to handle PDF's as followingBut there is a problem of using this, it was not able to load large-sized PDF documents.",
+                    "In my experience to say it shows an error while trying to open docs with more than 10 MB in size.Though there are many libraries available it was always not an easy task to customize the library.",
+                    "Then we used to fire PDF viewer intent which leads the user to leave our application and navigate to any other application that can handle this PDF content.This was not a preferable solution too.SolutionThe solution to open PDF is solved by the introduction of the class PdfRenderer in Android-Lollipop ( API 21 ).",
+                    "Let's explore how can we use that in our apps.What is PdfRenderer?The PdfRenderer allows us to create a Bitmap from a page in a PDF document so that we can display it on the screen.",
+                    "PdfRenderer class is not thread-safe.",
+                    "If we want to render a PDF, we first need to get a ParcelFileDescriptorfrom the file and then create a renderer instance.Later for every page, we want to render, we open the page, render it, and close the page.",
+                    "After we are done with rendering, we close the renderer.",
+                    "After the renderer is closed it should not be used anymore.Using this PdfRenderer we are responsible for the handling of closing the renderer and each page we open.",
+                    "Here we can only have one page opened at a time.",
+                    "Before closing, renderer we need to close the currently opened page.",
+                    "Let's these step-by-step with an example.How to use PdfRenderer?Initially, let's check basic steps before going through the codeStep1: Get a seekable file descriptor from our pdf document: Step 2: Now let's create the PDFRenderer instance using the ParcleFileDescriptor obtained above: Step 3: Let's create the Bitmap instance with the required dimensions: Step 4: Not get the page to render using PdfRenderer.Page by just passing the index of the pageStep 5: Lastly, render the page to bitmap created in step 3: Step 6: Close the page and renderer once you are doneExampleLet's check how to open the pdf document in fragment providing Uri as an argument to it.",
+                    "It's just a part of the storage-sample from Android docs.Our example is to render a document which is a bitmap in our case so we need an ImageView, as it displays one page at a time we need two buttons to move to next & previous pages if available.",
+                    "Let's design the XMLNow we are done with designing let's move to the coding part it's nothing but a fragment handling all the steps discussed aboveSummaryNow that you should have a basic idea of opening the PDF documents.",
+                    "You can find the complete code of the example of opening a PDF document using PDF renderer on GitHub.",
+                    "To learn more about Kotlin check out my postsKotlin Guide for Beginners -- Explains the basics of variable declarations & Why to learn KotlinKotlin Advanced Programming -- This post is regarding basics related to functions & types of functions in KotlinKotlin Advanced Programming Part 2 -- This post is regarding Functional Programming in KotlinKotlin Advanced Programming Part 3 -- This post is regarding scope functions in KotlinKotlin Advanced Programming Part 4 -- This post is regarding inline functions & reified types in KotlinKotlin Delegates -- This post explains about inline functions & reified types in KotlinResourcesPdfRendererPlease let me know your suggestions and comments.You can find me on Medium and LinkedIn ... Thanks for reading ...",
+                    "In this post let's check different ways how we can open PDF documents.",
+                    "Rendering PDF Document's in Android using PdfRenderer",
+                    "How to make use of Android PdfRendererSatya Pavan KantamaniFollowJul 26, 2020 \u00b7 4 min read",
+                    "Satya Pavan KantamaniFollowJul 26, 2020 \u00b7 4 min read",
+                    "ProblemDealing with PDF documents is one of the basic things that most of us are not aware of because we haven't got a chance to work on that.",
+                    "Then we used to fire PDF viewer intent which leads the user to leave our application and navigate to any other application that can handle this PDF content.This was not a preferable solution too.",
+                    "SolutionThe solution to open PDF is solved by the introduction of the class PdfRenderer in Android-Lollipop ( API 21 ).",
+                    "Let's explore how can we use that in our apps.",
+                    "What is PdfRenderer?The PdfRenderer allows us to create a Bitmap from a page in a PDF document so that we can display it on the screen.",
+                    "Let's these step-by-step with an example.",
+                    "How to use PdfRenderer?Initially, let's check basic steps before going through the codeStep1: Get a seekable file descriptor from our pdf document: Step 2: Now let's create the PDFRenderer instance using the ParcleFileDescriptor obtained above: Step 3: Let's create the Bitmap instance with the required dimensions: Step 4: Not get the page to render using PdfRenderer.Page by just passing the index of the pageStep 5: Lastly, render the page to bitmap created in step 3: Step 6: Close the page and renderer once you are done",
+                    "ExampleLet's check how to open the pdf document in fragment providing Uri as an argument to it.",
+                    "Let's design the XMLNow we are done with designing let's move to the coding part it's nothing but a fragment handling all the steps discussed above",
+                    "SummaryNow that you should have a basic idea of opening the PDF documents.",
+                    "To learn more about Kotlin check out my postsKotlin Guide for Beginners -- Explains the basics of variable declarations & Why to learn KotlinKotlin Advanced Programming -- This post is regarding basics related to functions & types of functions in KotlinKotlin Advanced Programming Part 2 -- This post is regarding Functional Programming in KotlinKotlin Advanced Programming Part 3 -- This post is regarding scope functions in KotlinKotlin Advanced Programming Part 4 -- This post is regarding inline functions & reified types in KotlinKotlin Delegates -- This post explains about inline functions & reified types in KotlinResourcesPdfRenderer",
+                    "Please let me know your suggestions and comments.You can find me on Medium and LinkedIn ... Thanks for reading ...",
+                    ""
+                ],
+                "title": "Rendering PDF Document\u2019s in Android using PdfRenderer | by Satya Pavan Kantamani | Programming Geeks | Medium"
+            },
+            {
+                "link": "https://medium.com/@chahat.jain0/rendering-a-pdf-document-in-android-activity-fragment-using-pdfrenderer-442462cb8f9a",
+                "type": "misc",
+                "content": [
+                    "Get startedOpen in appChahat Jain74 FollowersAboutFollowSign inGet startedFollow74 FollowersAboutGet startedOpen in appRendering a PDF Document in Android Activity/Fragment ( Using PdfRenderer ) Chahat JainJun 26, 2018 \u00b7 4 min readWhen we want to render a PDF Document we always have a easy way.",
+                    "We use intent ( android support library ) in Android & open a PDF Viewer of Android.",
+                    "But what if we want to render a PDF Document in our app itself.",
+                    "Then we think it will be very hard.",
+                    "Is it possible to render a PDF Document in android app ?",
+                    "Let's first go through easy way using android support library Intent: This will open a PDF Viewer of Android.",
+                    "You can read your PDF Document.Now let's learn how to render a PDF Document in android app itself - We will use android support library PdfRenderer ( Added in API level 21 ).",
+                    "PdfRenderer -- This class enables rendering a PDF document.",
+                    "This class is not thread safe.If you want to render a PDF, you create a renderer and for every page you want to render, you open the page, render it, and close the page.",
+                    "After you are done with rendering, you close the renderer.",
+                    "After the renderer is closed it should not be used anymore.",
+                    "Note that the pages are rendered one by one, i.e. you can have only a single page opened at any given time.Concept: PdfRenderer will convert your PDF page into image and you can show it on ImageView.Let's learn how to use PdfRenderer library: Create a simple android project named as PdfRenderName your Activity as PdfRenderActivity ( The activity where we want to render a PDF Document ) Create a assets folder ( res \u2192 New \u2192 Folder \u2192 Assets Folder ) and put your PDF Document inside it.If you want to use FloatingActionButton for navigating through multiple pages of PDF Document then you have to add design library in build.gradle ( Module: app ) file .5.",
+                    "Add following code in your layout file.",
+                    "In my case it is activity_pdf_render.",
+                    "Now add the following code in your PdfRenderActivity -- 7.",
+                    "Now Run your app & you will see your PDF Document will render in android app itself.Wowww ... ... ... That's it ... Thanks ....",
+                    "Chahat JainAndroid DeveloperFollow360 10\u00a0360\u00a0360 10 AndroidPdfrendererPdfAndroid Support LibraryMore from Chahat JainFollowAndroid DeveloperMore From MediumLet's Create: Portfolio App With Next.js, Strapi Headless CMS and Bootstrap 5Stephan Bakkelund Valois in The StartupSecurity Best Practices in AngularAshish KumarWebdriverIO with CucumberJSAdarsh Kumar GM in The StartupThis in JavaScriptBeribey in The StartupSetting Prettier on a React Typescript project ( 2021 ) Andr\u00e9 Borba Netto AssisCreating a Catching Game Using PhaserClaudia Sinowato in The StartupKeeping env variables private in React AppParam Singh in The StartupFunctional Programming for the Web: Monads and Basic DOM Manipulation in PureScriptKevin B. GreeneAboutHelpLegalGet the Medium app",
+                    "Rendering a PDF Document in Android Activity/Fragment ( Using PdfRenderer ) Chahat JainJun 26, 2018 \u00b7 4 min readWhen we want to render a PDF Document we always have a easy way.",
+                    "Rendering a PDF Document in Android Activity/Fragment ( Using PdfRenderer ) Chahat JainJun 26, 2018 \u00b7 4 min read",
+                    "Chahat JainJun 26, 2018 \u00b7 4 min read",
+                    "When we want to render a PDF Document we always have a easy way.",
+                    "You can read your PDF Document.",
+                    "Now let's learn how to render a PDF Document in android app itself - We will use android support library PdfRenderer ( Added in API level 21 ).",
+                    ""
+                ],
+                "title": "Rendering a PDF Document in Android Activity/Fragment (Using PdfRenderer) | by Chahat Jain | Medium"
+            }
+        ]
+    },
+    "parsed": true
+}

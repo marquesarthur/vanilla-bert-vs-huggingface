@@ -1,0 +1,72 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "If you are using Android Studio and Gradle, you should have the following dependencies added in build.gradle file",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "ACCESS_COARSE_LOCATION permission is for approximate location access using cell towers and Wi-Fi. ACCESS_FINE_LOCATION is for precise location access using GPS or cell towers and Wi-Fi. Choose the one that is appropriate for you and do not give both.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "FusedLocationProviderApi can be accessed via LocationServices as below,",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "FusedLocationProviderApi requires the GoogleApiClient instance to get the Location and it can be obtained as below.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Following is the complete class which accesses the Fused Location Provider to get the location continuously in the Android example application.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "In Eclipse, Open DDMS perspective (Window -> Open Perspective) ",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-151",
+      "tag": "SPAN",
+      "text": "Select your emulator device ",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-152",
+      "tag": "SPAN",
+      "text": "Select the tab named emulator control ",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-153",
+      "tag": "SPAN",
+      "text": "In ‘Location Controls’ panel, ‘Manual’ tab, give the Longitude and Latitude as input and ‘Send’.",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "In Android Studio, open Android Device Monitor",
+      "href": "Android Location Fused Provider - Javapapers"
+    },
+    {
+      "id": "eye-gazing-tag-155",
+      "tag": "SPAN",
+      "text": "The below screen shot will help,\n",
+      "href": "Android Location Fused Provider - Javapapers"
+    }
+  ]
+}

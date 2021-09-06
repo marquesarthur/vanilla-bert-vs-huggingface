@@ -1,0 +1,60 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "The CompletionStage API lets programmers define pipelines of asynchronous operations for data, and handles the asynchronous behaviour for you.",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "The .createAsync() method returns a Future.",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "Similar to promises in other languages, Futures are objects that will contain a result when it's ready.",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "The work is being done in a background thread, and when you need the result you can call a method on the Furture to get the result.",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "From version 8.0.0 of the Twilio Helper Library, the type of future returned is now a CompletableFuture which has a .join() method for getting its result.",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-33",
+      "tag": "SPAN",
+      "text": "So your code might look like this:",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "So far, so good - but what makes the CompletionStage API special is that you can build up pipelines of code where each stage will be executed when it is ready, without you having to code the nuts and bolts of the asynchronous behaviour yourself.",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "If you want to run some code after the API call has completed, use .thenApply().",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "You can schedule code to run after multiple CompletionStages have finished using CompletableFuture.allOf().",
+      "href": "How to make asynchronous API requests in Java using CompletableFutures"
+    }
+  ]
+}

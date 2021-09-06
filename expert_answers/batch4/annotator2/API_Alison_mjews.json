@@ -1,0 +1,48 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "\n    A content provider manages access to a central repository of data.",
+      "href": "Creating a content provider  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "One of your classes implements a subclass\n    ContentProvider, which is the interface between your provider and\n    other applications.",
+      "href": "Creating a content provider  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-4",
+      "tag": "SPAN",
+      "text": "Although content providers are meant to make data available to other\n    applications, you may of course have activities in your application that allow the user\n    to query and modify the data managed by your provider.",
+      "href": "Creating a content provider  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3064",
+      "tag": "SPAN",
+      "text": "\n        Design the raw storage for your data.",
+      "href": "Creating a content provider  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3075",
+      "tag": "SPAN",
+      "text": "\n        Define a concrete implementation of the ContentProvider class and\n        its required methods.",
+      "href": "Creating a content provider  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3079",
+      "tag": "SPAN",
+      "text": "\n        Define the provider's authority string, its content URIs, and column names.",
+      "href": "Creating a content provider  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3086",
+      "tag": "SPAN",
+      "text": "\n        Add other optional pieces, such as sample data or an implementation\n        of AbstractThreadedSyncAdapter that can synchronize data between\n        the provider and cloud-based data.",
+      "href": "Creating a content provider  |  Android Developers"
+    }
+  ]
+}

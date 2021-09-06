@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-3",
+      "tag": "SPAN",
+      "text": "\n This class enables rendering a PDF document.",
+      "href": "PdfRenderer  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "\n If you want to render a PDF, you create a renderer and for every page you want\n to render, you open the page, render it, and close the page.",
+      "href": "PdfRenderer  |  Android Developers"
+    }
+  ]
+}

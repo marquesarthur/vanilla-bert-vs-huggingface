@@ -1,0 +1,12 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [    
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "Describe the bug\nWhen using the following method  public TransferObserver upload(String bucket, String key, File file, ObjectMetadata metadata, CannedAccessControlList cannedAcl, TransferListener listener)  in airplane mode, TransferStatusUpdater won't notify any listener because is not added by the time TransferRecord.checkPreferredNetworkAvailability has been called.",
+      "href": "TransferUtility does not update the TransferListener when the preferred network type is not available · Issue #958 · aws-amplify/aws-sdk-android · GitHub"
+    }
+  ]
+}

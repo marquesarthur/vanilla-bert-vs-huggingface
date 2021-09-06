@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "Beginning with Android 5.0, notifications can appear on the lock screen.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "You can programmatically set the level of detail visible in\nnotifications posted by your app on a secure lock screen, or even whether the\nnotification will show on the lock screen at all.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Users can use the system settings to choose the level of detail visible\nin lock screen notifications, including the option to disable all lock screen\nnotifications.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": " Starting with Android 8.0, users can choose to\ndisable or enable lock screen notifications for each notification\nchannel.",
+      "href": "Notifications Overview  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3030",
+      "tag": "SPAN",
+      "text": "Methods added to API set whether or not a notification is displayed on the\nlock screen (setVisibility()) and for specifying “public” version of the notification text.",
+      "href": "Notifications Overview  |  Android Developers"
+    }
+  ]
+}

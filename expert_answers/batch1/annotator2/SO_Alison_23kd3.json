@@ -1,0 +1,36 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "To find duplicate dependencies or its required dependencies, you can visualize library dependencies in tree.",
+      "href": "android - gradle - library duplicates in dependencies - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Execute gradle command as below.",
+      "href": "android - gradle - library duplicates in dependencies - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "The command result will show you human-readable tree hierarchy of all dependencies as below.",
+      "href": "android - gradle - library duplicates in dependencies - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "To avoid duplicates, you can add exclude clauses in each project build.gradle file.",
+      "href": "android - gradle - library duplicates in dependencies - Stack Overflow"
+    },
+    {
+      "id": "uid-779",
+      "tag": "CODE",
+      "text": "exclude",
+      "href": "android - gradle - library duplicates in dependencies - Stack Overflow"
+    }
+  ]
+}

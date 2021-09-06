@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-131",
+      "tag": "SPAN",
+      "text": "\n          You should check your holder here\nelse{\n        vh = (ViewHolder) convertView.getTag();\n\n    }\n\n    \n      \n    \n\n      \n    \n\n    \n  \nIf the holder holds the view you want, you can reuse it.\nIf not you should instantiate a new one.\nHope this could help :)\n      ",
+      "href": "long list show incorrect list items on custom listview with images from android universal image loader · Issue #462 · nostra13/Android-Universal-Image-Loader · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "You should check your holder here",
+      "href": "long list show incorrect list items on custom listview with images from android universal image loader · Issue #462 · nostra13/Android-Universal-Image-Loader · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "If the holder holds the view you want, you can reuse it.",
+      "href": "long list show incorrect list items on custom listview with images from android universal image loader · Issue #462 · nostra13/Android-Universal-Image-Loader · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "If not you should instantiate a new one.",
+      "href": "long list show incorrect list items on custom listview with images from android universal image loader · Issue #462 · nostra13/Android-Universal-Image-Loader · GitHub"
+    }
+  ]
+}

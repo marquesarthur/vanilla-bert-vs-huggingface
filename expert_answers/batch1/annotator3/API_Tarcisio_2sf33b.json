@@ -1,0 +1,48 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-8",
+            "tag": "SPAN",
+            "text": "ComponentActivity, the base\nclass for FragmentActivity\nand AppCompatActivity,\nallows you to control the behavior of the Back button by using its\nOnBackPressedDispatcher,\nwhich you can retrieve by calling getOnBackPressedDispatcher().",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-14",
+            "tag": "SPAN",
+            "text": "It is strongly recommended to\nuse the addCallback()\nmethod which takes a LifecycleOwner.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "Here's an example callback implementation:",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-29",
+            "tag": "SPAN",
+            "text": "If you are using\nonBackPressed()\nto handle Back button events, we recommend using a\nOnBackPressedCallback instead.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-87",
+            "tag": "SPAN",
+            "text": "When doing so, the callbacks are invoked in the reverse order in which they are\nadded - the callback added last is the first given a chance to handle the\nBack button event.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "You can provide multiple callbacks via addCallback().",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        },
+        {
+            "id": "eye-gazing-tag-77",
+            "tag": "SPAN",
+            "text": "For example, if you added three callbacks named\none, two and three in order, they would be invoked in the order of\nthree, two, and one, respectively.",
+            "href": "Provide custom back navigation \u00a0|\u00a0 Android Developers"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "You can use setPictureSize() on the camera parameters object to configure the size of the capture:",
+      "href": "Android Camera Image Size - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "Generally speaking first you should call getSupportedPictureSizes() to make sure you're asking for a resolution that the hardware supports, but sounds like you already know the sizes.",
+      "href": "Android Camera Image Size - Stack Overflow"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-227",
+      "tag": "SPAN",
+      "text": "\n          I don't know if it can help anybody, but here is what I use as a workaround :\npublic enum CampaignStatus {\n    LIVE,\n    UPCOMING\n}\n\n@SerializedName(\"status\")\nprivate String statusRaw;\n@Ignore\nprivate transient CampaignStatus status;\n\npublic CampaignStatus getStatus() {\n    return CampaignStatus.valueOf(getStatusRaw().toUpperCase());\n}\n\npublic void setStatus(CampaignStatus status) {\n    setStatusRaw(status.name());\n}\n    \n      \n    \n\n      \n    \n\n    \n  \n      ",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "I don't know if it can help anybody, but here is what I use as a workaround :",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "Here was my approach to this in kotlin",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
+      "href": "Enums support · Issue #776 · realm/realm-java · GitHub"
+    }
+  ]
+}

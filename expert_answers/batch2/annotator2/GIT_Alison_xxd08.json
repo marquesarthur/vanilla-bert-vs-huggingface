@@ -1,0 +1,18 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "An ArrayList is a very bad choice if you intend removing elements.",
+      "href": "ArrayList Iterator Remove is very slow compared to normal computer · Issue #236 · MobiVM/robovm · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Filtering any collection, especially if you expect to end up with a small subset, is best done by creating a new collection and adding the desired elements to it.",
+      "href": "ArrayList Iterator Remove is very slow compared to normal computer · Issue #236 · MobiVM/robovm · GitHub"
+    }
+  ]
+}

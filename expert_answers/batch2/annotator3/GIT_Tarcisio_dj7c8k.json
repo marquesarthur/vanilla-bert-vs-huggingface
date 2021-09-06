@@ -1,0 +1,61 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "That line draws a single event.",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "You can remove the if conditions because you only want to draw one icon right?",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "So really you want to replace:",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "with some custome code which simply draws a drawable icon.",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Something like canvas.drawBitmap:",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "Since you want to offset the icon to the top right, you will need to offset the (x, y) position slightly, but make sure you use dp because if you simply offset the (x,y) by some amount it willnot translate to different devices.",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "There is a simple method call in android to go from pixels to dp.",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "I uploaded some sample code in a branch here:",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "https://github.com/SundeepK/CompactCalendarView/tree/%40help/%23181_darw_icons",
+      "href": "custom event icon/add small icon to event · Issue #181 · SundeepK/CompactCalendarView · GitHub"
+    }
+  ]
+}

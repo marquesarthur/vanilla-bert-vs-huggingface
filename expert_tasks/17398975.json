@@ -1,0 +1,220 @@
+{
+    "task": "RelativeLayout refresh after view.setVisibility(View.GONE) and view.setVisibility(View.VISIBLE)",
+    "description": "Please look at the following image to understand the problem:\nAs you can see, there is a RelativeLayout which holds a custom View and a LinearLayout.\nBetween them, there is also another View, which Visibility is set to GONE.\nNow, when I press the Button, I would like to change the visibility of that GONE View to VISIBLE, and rearrange the RelativeLayout, so that the third View gets between custom View and LinearLayout.\nWhen I press another button, I would like to make third view GONE again.\nHow can I achieve that ?\nIf I only setVisibility of the third view in OnClick ( ) method, it will appear above LinearLayout and it will overlay the custom View ( I tried it before ).\nIn other words, it will not move RelativeLayout up.",
+    "type": "SO",
+    "link": "https://stackoverflow.com/questions/17398975",
+    "question_id": "17398975",
+    "resources": {
+        "api": [
+            {
+                "link": "https://developer.android.com/training/animation/reveal-or-hide-view",
+                "type": "android",
+                "content": [
+                    "As your app is used, new information will need to be shown on the screen while old information is removed.",
+                    "Immediately switching what's shown can look jarring or users can easily miss the new content on the screen.",
+                    "Utilizing animations can slow down the changes and draw the user's eye with notion so the updates are more apparent.",
+                    "There are three common animations to use when showing or hiding a view.",
+                    "You can use the circular reveal animation, a crossfade animation, or a cardflip animation.",
+                    "Crossfade animations ( also known as dissolve ) gradually fade out one View or ViewGroup while simultaneously fading in another.",
+                    "This animation is useful for situations where you want to switch content or views in your app.",
+                    "The crossfade animation shown here uses ViewPropertyAnimator, which is available for Android 3.1 ( API level 12 ) and higher.",
+                    "Here's an example of a crossfade from a progress indicator to some text content.",
+                    "First, you need to create the two views that you want to crossfade.",
+                    "The following example creates a progress indicator and a scrollable text view:",
+                    "To set up the crossfade animation:",
+                    "Here's an example using the layout from the previous code snippet as the activity content view:",
+                    "Now that the views are properly set up, crossfade them by doing the following:",
+                    "The following method shows an example of how to do this:",
+                    "Card flips animate between views of content by showing an animation that emulates a card flipping over.",
+                    "The card flip animation shown here uses FragmentTransaction, which is available for Android 3.0 ( API level 11 ) and higher.",
+                    "Here's what a card flip looks like:",
+                    "In order to create the card flip animation, you need a total of four animators.",
+                    "Two animators for when the front of the card animates out and to the left and in and from the left.",
+                    "You also need two animators for when the back of the card animates in and from the right and out and to the right.",
+                    "Each side of the `` card'' is a separate layout that can contain any content you want, such as two text views, two images, or any combination of views to flip between.",
+                    "You'll then use the two layouts in the fragments that you'll later animate.",
+                    "The following layouts create one side of a card that shows text:",
+                    "And the other side of the card that displays an ImageView:",
+                    "Create fragment classes for the front and back of the card.",
+                    "These classes return the layouts that you created previously in the onCreateView ( ) method of each fragment.",
+                    "You can then create instances of this fragment in the parent activity where you want to show the card.",
+                    "The following example shows nested fragment classes inside of the parent activity that uses them:",
+                    "Now, you'll need to display the fragments inside of a parent activity.",
+                    "To do this, first create the layout for your activity.",
+                    "The following example creates a FrameLayout that you can add fragments to at runtime:",
+                    "In the activity code, set the content view to be the layout that you just created.",
+                    "It's also a good idea to show a default fragment when the activity is created, so the following example activity shows you how to display the front of the card by default:",
+                    "Now that you have the front of the card showing, you can show the back of the card with the flip animation at an appropriate time.",
+                    "Create a method to show the other side of the card that does the following things:",
+                    "Reveal animations provide users visual continuity when you show or hide a group of UI elements.",
+                    "The ViewAnimationUtils.createCircularReveal ( ) method enables you to animate a clipping circle to reveal or hide a view.",
+                    "This animation is provided in the ViewAnimationUtils class, which is available for Android 5.0 ( API level 21 ) and higher.",
+                    "Here is an example showing how to reveal a previously invisible view:",
+                    "The ViewAnimationUtils.createCircularReveal ( ) animation takes five parameters.",
+                    "The first parameter is the view that you want to either hide or show on screen.",
+                    "The next two parameters are the x and y coordinates for the center of the clipping circle.",
+                    "Typically this will be the center of the view, but you can also use the point the user touched so the animation starts where they selected.",
+                    "The fourth parameter is the starting radius of the clipping circle.",
+                    "In the above example, the initial radius is set to 0 so the view to be displayed will be hidden by the circle.",
+                    "The last parameter is the final radius of the circle.",
+                    "When displaying a view make sure the final radius is larger than the view itself so the view can be fully revealed before the animation finishes.",
+                    "To hide a previously visible view:",
+                    "In this case the initial radius of the clipping circle is set to be as large as the view so the view will be visible before the animation starts.",
+                    "The final radius is set to 0 so the view will be hidden when the animation finishes.",
+                    "It's important to add a listener to the animation so the view's visibility can be set to INVISIBLE when the animation completes.",
+                    "Create member variables for the views that you want to crossfade.",
+                    "You need these references later when modifying the views during the animation.",
+                    "For the view that is being faded in, set its visibility to GONE.",
+                    "This prevents the view from taking up layout space and omits it from layout calculations, speeding up processing.",
+                    "Cache the config_shortAnimTime system property in a member variable.",
+                    "This property defines a standard `` short'' duration for the animation.",
+                    "This duration is ideal for subtle animations or animations that occur very frequently.",
+                    "config_longAnimTime and config_mediumAnimTime are also available if you wish to use them.",
+                    "For the view that is fading in, set the alpha value to 0 and the visibility to VISIBLE.",
+                    "( Remember that it was initially set to GONE. )",
+                    "This makes the view visible but completely transparent.",
+                    "For the view that is fading in, animate its alpha value from 0 to 1.",
+                    "For the view that is fading out, animate the alpha value from 1 to 0.",
+                    "Using onAnimationEnd ( ) in an Animator.AnimatorListener, set the visibility of the view that was fading out to GONE.",
+                    "Even though the alpha value is 0, setting the view's visibility to GONE prevents the view from taking up layout space and omits it from layout calculations, speeding up processing.",
+                    "Sets the custom animations that you created earlier for the fragment transitions.",
+                    "Replaces the currently displayed fragment with a new fragment and animates this event with the custom animations that you created.",
+                    "Adds the previously displayed fragment to the fragment back stack so when the user presses the Back button, the card flips back over.",
+                    ""
+                ],
+                "title": "Reveal or hide a view using animation \u00a0|\u00a0 Android Developers"
+            }
+        ],
+        "git": [            
+            {
+                "link": "https://github.com/google/flexbox-layout/issues/283",
+                "content": [
+                    "Layout is invisible if first item is gone \u00b7 Issue # 283 \u00b7 google/flexbox-layout \u00b7 GitHub",
+                    "Layout is invisible if first item is gone",
+                    "I have a layout with multiple children and when I set the first item to View.GONE the whole layout is invisible.",
+                    "If I only set the second item to gone the layout works fine.",
+                    "There seems to be a problem with calculating flexLine.mItemCount, in this line -LSB- 0 -RSB- it's always 1 when the first item is gone.",
+                    "The text was updated successfully, but these errors were encountered:",
+                    "It's likely a bug with FlexboxLayout",
+                    "I tried to reproduce it on my end, but couldn't reproduce it so far.",
+                    "I changed visibility of the first item in the fragment_flexboxlayout.xml as gone, but the whole layout was still visible in the demo-playground app.",
+                    "Is it possible to share your reproducible code ?",
+                    "I changed the visibility programmatically from visible to gone on the first item, maybe that could be the problem.",
+                    "I change the visibility programmatically but the same result.",
+                    "I changed the OnClickListener in the FlexboxLayoutFragment",
+                    "in line 82 as follows ( changing the first item's visibility as GONE at the bottom ).",
+                    "Here is a layout where the first item is set to GONE and the last item also disappears.",
+                    "Maybe the disappearing of the whole layout is related to this bug.",
+                    "Fixes the case where the first view's visibility is gone and the second",
+                    "Fixes the case where the first view's visibility is gone and the second view is in the second line.",
+                    "Thanks for pasting the example layout.",
+                    "The issue happened in the case where the first view's visibility is gone and the second view's layout_wrapBefore is set to true.",
+                    "In that case, the second view's position is misplaced.",
+                    "Sent # 300 to fix this.",
+                    "The fix will be submitted to the dev_recyclerview it will be fixed in the master once the dev_recyclerview branch is merged to master.",
+                    "Fixes the case where the first view's visibility is gone and the seco ...",
+                    "Should be fixed by # 300",
+                    "Item with flex_grow not visible",
+                    "Thank you for the fix.",
+                    "I found another issue that seems to be related.",
+                    "I created a new ticket # 303",
+                    ""
+                ],
+                "title": "Layout is invisible if first item is gone \u00b7 Issue # 283 \u00b7 google/flexbox-layout \u00b7 GitHub"
+            }
+        ],
+        "qa": [            
+            {
+                "uid": "3465841",
+                "link": "https://stackoverflow.com/questions/3465841",
+                "title": "How to change visibility of layout programmatically",
+                "answers": [
+                    {
+                        "uid": 3465853,
+                        "score": 109,
+                        "text": [
+                            "Have a look at View.setVisibility -LRB- View.GONE / View.VISIBLE / View.INVISIBLE -RRB-.",
+                            "From the LINK:",
+                            "public void setVisibility -LRB- int visibility -RRB-",
+                            "Since: API Level 1",
+                            "Set the enabled state of this view.",
+                            "Related XML Attributes: android: visibility",
+                            "Parameters: visibility One of VISIBLE, INVISIBLE, or GONE.",
+                            "Note that LINK is a LINK which in turn is a LINK.",
+                            "That is, you may very well call, for instance, myLinearLayout.setVisibility -LRB- View.VISIBLE -RRB-.",
+                            "This makes sense.",
+                            "If you have any experience with AWT/Swing, you'll recognize it from the relation between Container and Component.",
+                            "-LRB- A Container is a Component. -RRB-"
+                        ]
+                    },
+                    {
+                        "uid": 3465894,
+                        "score": 2,
+                        "text": [
+                            "You can change layout visibility just in the same way as for regular view.",
+                            "Use setVisibility -LRB- View.GONE -RRB- etc..",
+                            "All layouts are just Views, they have View as their parent."
+                        ]
+                    },
+                    {
+                        "uid": 40630925,
+                        "score": 8,
+                        "text": [
+                            "Use this Layout in your xml file",
+                            "Define your layout in.",
+                            "class file",
+                            "Now if you want to display this layout just write",
+                            "and if you want to hide layout just write"
+                        ]
+                    },
+                    {
+                        "uid": 52216724,
+                        "score": 2,
+                        "text": [
+                            "this is a programatical approach:"
+                        ]
+                    }
+                ],
+                "tags": [
+                    "android",
+                    "layout",
+                    "visibility"
+                ]
+            }
+        ],
+        "other": [
+            {
+                "link": "https://www.freecodecamp.org/news/how-and-why-to-use-android-visibility-listeners-971e3b6511ec",
+                "type": "misc",
+                "content": [
+                    "Learn to code -- free 3,000-hour curriculum",
+                    "How and why to use Android Visibility Listeners",
+                    "The Android UI is built up from Views, and in a regular application, there are usually several of them.",
+                    "To find out which View the user is currently looking at, you need to install Visibility Listeners.Read below to find out about the different options you have to identify the visibility status of a View.How To Become VisibleIn order for our listeners to work, we must first make sure our View is found in the layout hierarchy.",
+                    "There are two ways this happens: Your View is already part of your layout as it is defined in an XML fileYou created a View dynamically, and you need to add it using the addView methodchild is the View you want to add and LayoutParams are the layout parameters ( I.E. width, and height ) A View's visibility status is of Integer type and can have one of three options: VISIBLE ( 0 ) - The View is visible to the userINVISIBLE ( 4 ) - The View is invisible to the user, but still takes up space in the layoutGONE ( 8 ) - The View is invisible, and it does not take up space in the layoutOnce inside our layout hierarchy, there are a few native options to help us know when our View's visibility has changed.onVisibilityChangedThis method is triggered when the visibility of the view or of an ancestor of the view has changed.",
+                    "The status of the visibility is found inside the visibility parameter.onWindowVisibilityChangedThis method is triggered when the containing window of our View has changed its visibility.",
+                    "This does not guarantee that the window your View is in is visible to the user, as it may be obscured by another window.Visibility Listeners In ActionTo see these two listeners in action, let us create a simple project.",
+                    "We will have a LinearLayout with a TextView and a button.",
+                    "We'll make the button's on click action add our custom view to the layout.Our custom view: And finally, the code in our MainActivity: We attach an OnClick Listener to the buttonWhen we run the application and press the button we get: https://giphy.com/gifs/8JZA6Djt7DmYpEXj2h/html5You can get the sample project here.ViewTreeObserverThis is a native object that has a wide range of listeners that are notified of various visibility changes to the view tree.",
+                    "Some prominent ones to take notice of are: OnGlobalLayoutListenerOnWindowAttachListenerOnWindowFocusChangeListenerTo attach a ViewTreeObserver, you need to do the following: removeOnGlobalLayoutListener requires API > 15The line linearLayout.getViewTreeObserver ( ).",
+                    "removeOnGlobalLayoutListener ( this ) makes sure that the listener will only get called once.",
+                    "If you want to continue listening in on changes, remove it.If you have any comments or suggestions, feel free to let me know.",
+                    "Tomer Ben Rachel Read more posts by this author.",
+                    "If this article was helpful, tweet it.",
+                    "Learn to code for free.",
+                    "freeCodeCamp's open source curriculum has helped more than 40,000 people get jobs as developers.",
+                    "freeCodeCamp is a donor-supported tax-exempt 501 ( c ) ( 3 ) nonprofit organization ( United States Federal Tax Identification Number: 82-0779546 )",
+                    "Our mission: to help people learn to code for free.",
+                    "We accomplish this by creating thousands of videos, articles, and interactive coding lessons - all freely available to the public.",
+                    "We also have thousands of freeCodeCamp study groups around the world.",
+                    "Donations to freeCodeCamp go toward our education initiatives, and help pay for servers, services, and staff.",
+                    "You can make a tax-deductible donation here.",
+                    "About Alumni Network Open Source Shop Support Sponsors Academic Honesty Code of Conduct Privacy Policy Terms of Service Copyright Policy",
+                    ""
+                ],
+                "title": "How and why to use Android Visibility Listeners"
+            }
+        ]
+    },
+    "parsed": true
+}

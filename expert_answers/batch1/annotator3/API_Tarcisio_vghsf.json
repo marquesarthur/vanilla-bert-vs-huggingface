@@ -1,0 +1,84 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-40",
+      "tag": "SPAN",
+      "text": "Unlike Dagger modules,\nyou must annotate Hilt modules with @InstallIn to tell Hilt which Android\nclass each module will be used or installed in.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "If you don't directly own the AnalyticsService\nclass, you can tell Hilt how to provide instances of this type by creating a\nfunction inside a Hilt module and annotating that function with @Provides.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-55",
+      "tag": "SPAN",
+      "text": "You can\ndefine multiple bindings for the same type with qualifiers.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "A qualifier is an annotation that you use to identify a specific binding for a\ntype when that type has multiple bindings defined.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-60",
+      "tag": "SPAN",
+      "text": "In that\ncase, you need to tell Hilt how to provide two different implementations of\nOkHttpClient.",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-61",
+      "tag": "SPAN",
+      "text": "First, define the qualifiers that you will use to annotate the @Binds or\n@Provides methods:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "uid-8323",
+      "tag": "PRE",
+      "text": "@Qualifier@Retention(RetentionPolicy.RUNTIME)private @interface AuthInterceptorOkHttpClient {}@Qualifier@Retention(RetentionPolicy.RUNTIME)private @interface OtherInterceptorOkHttpClient {}",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-64",
+      "tag": "SPAN",
+      "text": "Both methods have the same return type, but the qualifiers label them as two\ndifferent bindings:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "uid-8331",
+      "tag": "PRE",
+      "text": "@Module@InstallIn(ActivityComponent.class)public class NetworkModule {  @AuthInterceptorOkHttpClient  @Provides  public static OkHttpClient provideAuthInterceptorOkHttpClient(    AuthInterceptor authInterceptor  ) {      return new OkHttpClient.Builder()                   .addInterceptor(authInterceptor)                   .build();  }  @OtherInterceptorOkHttpClient  @Provides  public static OkHttpClient provideOtherInterceptorOkHttpClient(    OtherInterceptor otherInterceptor  ) {      return new OkHttpClient.Builder()                   .addInterceptor(otherInterceptor)                   .build();  }}",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-65",
+      "tag": "SPAN",
+      "text": "You can inject the specific type that you need by annotating the field or\nparameter with the corresponding qualifier:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-89",
+      "tag": "SPAN",
+      "text": "A binding's scope must match the scope of the component where it is\ninstalled, so in this example you must install AnalyticsService in\nSingletonComponent instead of ActivityComponent:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "uid-8576",
+      "tag": "PRE",
+      "text": "// If AnalyticsService is an interface.@Module@InstallIn(SingletonComponent.class)public abstract class AnalyticsModule {  @Singleton  @Binds  public abstract AnalyticsService bindAnalyticsService(    AnalyticsServiceImpl analyticsServiceImpl  );}// If you don't own AnalyticsService.@Module@InstallIn(SingletonComponent.class)public class AnalyticsModule {  @Singleton  @Provides  public static AnalyticsService provideAnalyticsService() {      return new Retrofit.Builder()               .baseUrl(\"https://example.com\")               .build()               .create(AnalyticsService.class);  }}",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-91",
+      "tag": "SPAN",
+      "text": "Installing a module into a component allows its bindings to be accessed as a\ndependency of other bindings in that component or in any child component below\nit in the component hierarchy:",
+      "href": "Dependency injection with Hilt  |  Android Developers"
+    }
+  ]
+}

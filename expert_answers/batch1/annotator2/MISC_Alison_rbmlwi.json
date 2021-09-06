@@ -1,0 +1,102 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "It introduced the concept of runtime permissions.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "These are permissions that are requested while the app is running (instead of before the app is installed).",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "When you need to add a new permission, first check this page to see if the permission is considered a PROTECTION_NORMAL permission.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "In Marshmallow, Google has designated certain permissions to be \"safe\" and called these \"Normal Permissions\".",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "Normal permissions are automatically granted at install time and never prompt the user asking for permission.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "Important: Normal Permissions must be added to the AndroidManifest:",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-37",
+      "tag": "SPAN",
+      "text": "If the permission you need to add isn't listed under the normal permissions, you'll need to deal with \"Runtime Permissions\".",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-38",
+      "tag": "SPAN",
+      "text": "Runtime permissions are permissions that are requested as they are needed while the app is running.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-39",
+      "tag": "SPAN",
+      "text": "These permissions will show a dialog to the user, similar to the following one:",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "The first step when adding a \"Runtime Permission\" is to add it to the AndroidManifest:",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "uid-244",
+      "tag": "CODE",
+      "text": "AndroidManifest",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "Next, you'll need to initiate the permission request and handle the result.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "Permission Groups avoids spamming the user with a lot of permission requests while allowing the app developer to only request the minimal amount of permissions needed at any point in time.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "When an app requests a permission that belongs to a particular permission group (i.e. READ_CONTACTS), Android asks the user about the higher level group instead (CONTACTS).",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "This way when the app later needs the WRITE_CONTACTS permission, Android can automatically grant this itself without prompting the user.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    },
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": "In most of your interaction with the permission API's you'll be working with the individual permissions and not the permission groups, but pay close attention to what the API expects as both permissions and permission groups are Strings.",
+      "href": "Understanding App Permissions | CodePath Android Cliffnotes"
+    }
+  ]
+}

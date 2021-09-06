@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-113",
+      "tag": "SPAN",
+      "text": "\n          I wait for it too! 💃 good library man :)\n      ",
+      "href": "The ability to set a minimum \\ maximum height/width · Issue #22 · ArthurHub/Android-Image-Cropper · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "I wait for it too! 💃 good library man :)",
+      "href": "The ability to set a minimum \\ maximum height/width · Issue #22 · ArthurHub/Android-Image-Cropper · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-170",
+      "tag": "SPAN",
+      "text": "Add min limit config on cropping window width/height in the UI (cropMinCropWindowWidth, cropMinCropWindowHeight)",
+      "href": "The ability to set a minimum \\ maximum height/width · Issue #22 · ArthurHub/Android-Image-Cropper · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-171",
+      "tag": "SPAN",
+      "text": "Add min/max config on cropping image result width/height (cropMinCropResultWidthPX, cropMinCropResultHeightPX, cropMaxCropResultWidthPX , cropMaxCropResultHeightPX)",
+      "href": "The ability to set a minimum \\ maximum height/width · Issue #22 · ArthurHub/Android-Image-Cropper · GitHub"
+    }
+  ]
+}

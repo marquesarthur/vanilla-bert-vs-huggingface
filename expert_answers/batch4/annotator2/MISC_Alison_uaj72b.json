@@ -1,0 +1,24 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "one is the internal storage, which is located at: data/data/app_name/",
+      "href": "Read and Store Json Files in Internal Storage - AmyZhu's Blog"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "another one is the external user storage, which is located at: sdcard/",
+      "href": "Read and Store Json Files in Internal Storage - AmyZhu's Blog"
+    },
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Here is a sample code that creates a file in the internal storage:",
+      "href": "Read and Store Json Files in Internal Storage - AmyZhu's Blog"
+    }
+  ]
+}

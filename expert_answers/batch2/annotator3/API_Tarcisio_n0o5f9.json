@@ -1,0 +1,54 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-676",
+      "tag": "SPAN",
+      "text": "\n      \n      make(View view, CharSequence text, int duration)\n      \n      \n        Make a Snackbar to display a message\n\n Snackbar will try and find a parent view to hold Snackbar's view from the value given to\n view.\n        \n    \n\n      \n    ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "uid-3174",
+      "tag": "CODE",
+      "text": "\n      make(View view, CharSequence text, int duration)\n      ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-31",
+      "tag": "SPAN",
+      "text": "Make a Snackbar to display a message\n\n ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "Snackbar will try and find a parent view to hold Snackbar's view from the value given to\n view.",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-678",
+      "tag": "SPAN",
+      "text": "\n      \n      make(Context context, View view, CharSequence text, int duration)\n      \n      \n        Make a Snackbar to display a message\n\n Snackbar will try and find a parent view to hold Snackbar's view from the value given to\n view.\n        \n    \n\n      \n    ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "uid-3184",
+      "tag": "CODE",
+      "text": "\n      make(Context context, View view, CharSequence text, int duration)\n      ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "Make a Snackbar to display a message\n\n ",
+      "href": "Snackbar  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "Snackbar will try and find a parent view to hold Snackbar's view from the value given to\n view.",
+      "href": "Snackbar  |  Android Developers"
+    }
+  ]
+}

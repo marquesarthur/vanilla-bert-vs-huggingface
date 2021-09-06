@@ -1,0 +1,84 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "There are a few different ways of using it, so let's look at an example.",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "Say we have a few simple observables of different types:",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "uid-866",
+      "tag": "PRE",
+      "text": "Observable<Integer> obs1 = Observable.just(1);\nObservable<String> obs2 = Observable.just(\"Blah\");\nObservable<Boolean> obs3 = Observable.just(true);\n",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "The simplest way to wait for them all is something like this:",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Note that in the zip function, the parameters have concrete types that correspond to the types of the observables being zipped.",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "Zipping a list of observables is also possible, either directly:",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "...or by wrapping the list into an Observable<Observable<?>>:",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "uid-876",
+      "tag": "CODE",
+      "text": "Observable<Observable<?>>",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "However, in both of these cases, the zip function can only accept a single Object[] parameter since the types of the observables in the list are not known in advance as well as their number.",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "This means that that the zip function would have to check the number of parameters and cast them accordingly.",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "EDIT: When using Zip, make sure that the Observables being zipped all emit the same number of items.",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "In the above examples all three observables emitted a single item.",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    },
+    {
+      "id": "uid-887",
+      "tag": "CODE",
+      "text": "Observable<Integer> obs1 = Observable.from(new Integer[]{1,2,3}); //Emits three items\nObservable<String> obs2 = Observable.from(new String[]{\"Blah\",\"Hello\"}); //Emits two items\nObservable<Boolean> obs3 = Observable.from(new Boolean[]{true,true}); //Emits two items\n",
+      "href": "java - Combine a list of Observables and wait until all completed - Stack Overflow"
+    }
+  ]
+}

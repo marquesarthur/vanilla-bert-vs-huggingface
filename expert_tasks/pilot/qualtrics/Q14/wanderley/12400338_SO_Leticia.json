@@ -1,0 +1,30 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "convertView",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-26",
+      "tag": "SPAN",
+      "text": "As getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "parent ",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "A reference to the parent view that this view will be a child of.",
+      "href": "android - How does ArrayAdapter getView() method works? - Stack Overflow"
+    }
+  ]
+}

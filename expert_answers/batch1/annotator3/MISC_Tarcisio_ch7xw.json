@@ -1,0 +1,24 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "In earlier versions of Android, accepting potentially dangerous permission groups was an all-or-nothing affair.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "You either allowed all permissions an app needed to function — before installation — or you declined them all, which meant you couldn’t install the app.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "Now Android allows you to decide which permissions to accept on a case-by-case basis — after the app is installed.",
+      "href": "Guide to Android App Permissions & How to Use Them Smartly | AVG"
+    }
+  ]
+}

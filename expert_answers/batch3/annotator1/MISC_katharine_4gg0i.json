@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "Note: You'll want to add android:fitsSystemWindows=\"true\" (learn more) to the parent layout of the Toolbar to ensure that the height of the activity is calculated correctly.",
+      "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+    }
+  ]
+}

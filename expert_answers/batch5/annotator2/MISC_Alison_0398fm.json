@@ -1,0 +1,42 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Most phone and battery optimizing apps close all the background processes to free up RAM and put less load on the phone.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "This may boost your phone speed, but it will lead to delayed or no notifications from your apps.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-12",
+      "tag": "SPAN",
+      "text": "A lot of these background processes sync data and deliver notifications.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Once they are disabled, you would not be able to receive any updates from the installed apps unless you open them or they have a feature to automatically turn on.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "You should also refrain from task-killing apps that promise to completely shut down the app when you close an app using them.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "However, Power Saver mode disables an important feature of the phone i.e. data syncing.",
+      "href": "How to Fix Android Delayed Notifications - Hongkiat"
+    }
+  ]
+}

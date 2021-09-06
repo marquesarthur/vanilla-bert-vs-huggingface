@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Beginning in Android 6.0 (API level 23), users grant permissions to apps while the app is running, not when they install the app.",
+      "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "If the permission you need to add isn't listed under the normal permissions, you'll need to deal with \"Runtime Permissions\".",
+      "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Next, you'll need to initiate the permission request and handle the result.",
+      "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "The following code shows how to do this in the context of an Activity, but this is also possible from within a Fragment.",
+      "href": "permissions - java.lang.SecurityException trying to read from Android Contacts URI - Stack Overflow"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "session_uid": "Yoo",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "We use an ImageView with the application icon(you can use any image of choice) to provide a visual representation of the scaling by setting the ImageView scale using the scale factor returned from ScaleGestureDetector .",
+      "href": "Pinch-to-zoom with multi-touch gestures In Android | by Trust Onyekwere | Quick Code | Medium"
+    }
+  ]
+}

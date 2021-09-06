@@ -1,0 +1,78 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "A mock web server is a program that mocks the behavior of an actual remote server but doesn’t make calls over the internet.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "This makes it easy to test different scenarios without internet access and without having to make changes to your remote server.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-53",
+      "tag": "SPAN",
+      "text": "When you create a test with a mock server, the app shouldn’t use the real URL.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-54",
+      "tag": "SPAN",
+      "text": "Instead, it should use the mock server’s URL.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-55",
+      "tag": "SPAN",
+      "text": "To set this up, you’ll need a mechanism to tell the app to use the real URL normally, but the mock URL when you run tests.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-57",
+      "tag": "SPAN",
+      "text": "A test runner makes this possible.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-60",
+      "tag": "SPAN",
+      "text": "Do this by creating a file named PotterTestApp.kt in the androidTest folder and add the following code to it:",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-61",
+      "tag": "SPAN",
+      "text": "Here, http://127.0.0.1 is the local URL of your computer and 8080 is the port MockWebServer will use.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-64",
+      "tag": "SPAN",
+      "text": "Now, you need to provide a test runner that uses PotterTestApp instead of PotterApp when running a test.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-65",
+      "tag": "SPAN",
+      "text": "Create a file named MockTestRunner.kt in the androidTest folder and add the following code to it:",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-66",
+      "tag": "SPAN",
+      "text": "The newApplication method provides the application instance you’ll use in the test.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-67",
+      "tag": "SPAN",
+      "text": "You can see that it returns an application instance using PotterTestApp instead of PotterApp.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    }
+  ]
+}

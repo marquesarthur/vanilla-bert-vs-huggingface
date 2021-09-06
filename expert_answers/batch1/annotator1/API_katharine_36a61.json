@@ -1,0 +1,48 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "If your app needs to use\nresources or information outside of its own sandbox, you can declare a\npermission and set up a permission request\nthat provides this access.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-4",
+      "tag": "SPAN",
+      "text": "If you declare any dangerous\npermissions, and if\nyour app is installed on a device that runs Android 6.0 (API level 23) or\nhigher, you must request the dangerous permissions at runtime by following the\nsteps in this guide.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2851",
+      "tag": "SPAN",
+      "text": "Ask for permissions in context, when the user starts to interact with the\nfeature that requires it.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2858",
+      "tag": "SPAN",
+      "text": "In your app's manifest file, declare the\npermissions that your app might need to\nrequest.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2862",
+      "tag": "SPAN",
+      "text": "At that time, your app can\nrequest the runtime permission that's required for accessing that data.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "Check whether the user has already granted the runtime\npermission that your app requires.",
+      "href": "Request app permissions  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-11",
+      "tag": "SPAN",
+      "text": "If so, your app can access\nthe private user data.",
+      "href": "Request app permissions  |  Android Developers"
+    }
+  ]
+}

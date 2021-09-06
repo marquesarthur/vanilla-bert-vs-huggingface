@@ -1,0 +1,18 @@
+{
+    "session_uid": "Katharine",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-37",
+            "tag": "SPAN",
+            "text": "One of the biggest advantages of using the Toolbar widget is that you can place the view anywhere within your layout.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        },
+        {
+            "id": "eye-gazing-tag-79",
+            "tag": "SPAN",
+            "text": "Now you need to add a Toolbar to your Activity layout file.",
+            "href": "Using the App Toolbar | CodePath Android Cliffnotes"
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6457",
+      "tag": "SPAN",
+      "text": "\n      \n      getView(int position, View convertView, ViewGroup parent)\n      \n      \n        Get a View that displays the data at the specified position in the data set.\n        \n    \n\n      \n    ",
+      "href": "ArrayAdapter  |  Desenvolvedores Android  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-56",
+      "tag": "SPAN",
+      "text": "Get a View that displays the data at the specified position in the data set.",
+      "href": "ArrayAdapter  |  Desenvolvedores Android  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-247",
+      "tag": "SPAN",
+      "text": "When the View is inflated, the\n parent View (GridView, ListView...) will apply default layout parameters unless you use\n LayoutInflater.inflate(int, android.view.ViewGroup, boolean)\n to specify a root view and to prevent attachment to the root.",
+      "href": "ArrayAdapter  |  Desenvolvedores Android  |  Android Developers"
+    }
+  ]
+}

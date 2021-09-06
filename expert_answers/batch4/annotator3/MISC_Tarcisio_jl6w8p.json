@@ -1,0 +1,48 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": "The other type is simple data binding where you read JSON into built-in Java types, such as Map and List and also wrapper types, such as String, Boolean, and Number.",
+      "href": "Processing JSON With Jackson - DZone Java"
+    },
+    {
+      "id": "uid-793",
+      "tag": "H3",
+      "text": "ObjectMapperToMapDemo.java",
+      "href": "Processing JSON With Jackson - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-61",
+      "tag": "SPAN",
+      "text": "In the JSON Tree Model, each node in the tree is of the JsonNode type, and represents a piece of JSON data.",
+      "href": "Processing JSON With Jackson - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-62",
+      "tag": "SPAN",
+      "text": "In the Tree Model, you can randomly access nodes with the different methods that JsonNode provides.",
+      "href": "Processing JSON With Jackson - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-231",
+      "tag": "SPAN",
+      "text": "JsonNode",
+      "href": "Processing JSON With Jackson - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-63",
+      "tag": "SPAN",
+      "text": "The code to generate a Tree Model of the employee.json file is this.",
+      "href": "Processing JSON With Jackson - DZone Java"
+    },
+    {
+      "id": "eye-gazing-tag-234",
+      "tag": "SPAN",
+      "text": "employee.json",
+      "href": "Processing JSON With Jackson - DZone Java"
+    }
+  ]
+}

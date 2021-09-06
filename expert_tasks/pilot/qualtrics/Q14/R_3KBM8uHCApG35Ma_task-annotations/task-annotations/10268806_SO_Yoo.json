@@ -1,0 +1,30 @@
+{
+  "session_uid": "Yoo",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "On ScaleListener I added ScaleGestureDetector.getFocusX() and getFocusY()for content to zoom about the focal point of the gesture.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "uid-774",
+      "tag": "CODE",
+      "text": "ScaleGestureDetector.getFocusX() and getFocusY()",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "and dont forget to set scaleType property to matrix of ImageView tag like:",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "and the variables used are:",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    }
+  ]
+}

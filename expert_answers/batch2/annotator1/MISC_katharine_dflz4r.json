@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-5",
+      "tag": "SPAN",
+      "text": "MockWebServer makes it possible to easily test how your apps behave when making HTTP/HTTPS calls.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-91",
+      "tag": "SPAN",
+      "text": "Next, you’ll create an instance of MockWebServer.",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-92",
+      "tag": "SPAN",
+      "text": "Add the following line before setup() in the MainActivityTest file:",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-95",
+      "tag": "SPAN",
+      "text": "You can do this by modifying setup() as follows:",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    },
+    {
+      "id": "eye-gazing-tag-97",
+      "tag": "SPAN",
+      "text": "Next, modify teardown() to stop the server:",
+      "href": "Testing REST APIs Using MockWebServer | raywenderlich.com"
+    }
+  ]
+}

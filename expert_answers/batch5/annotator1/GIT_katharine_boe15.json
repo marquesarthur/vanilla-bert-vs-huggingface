@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-285",
+      "tag": "SPAN",
+      "text": "\n          I have turned off battery optimization for Wire on my device, and the messages usually get through.\nHowever, a few of my contacts will often tell me that they never saw my messages.\nIn at least two cases, I have double-checked and their phones are using a version of Android that didn't include the \"battery optimization\" feature.\nAt least one contact has suggested (God forbid) that we switch to using Whatsapp ..\nwhich seems to imply that she gets Whatsapp message notifications no problem (though I do not, probably because I allow Whatsapp to be \"battery optimized\").\n      ",
+      "href": "Not always receiving message notifications when phone is idle - perhaps Doze related? · Issue #254 · wireapp/wire-android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-57",
+      "tag": "SPAN",
+      "text": "I have turned off battery optimization for Wire on my device, and the messages usually get through.",
+      "href": "Not always receiving message notifications when phone is idle - perhaps Doze related? · Issue #254 · wireapp/wire-android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-111",
+      "tag": "SPAN",
+      "text": "it is also important to disable battery savings for the Wire app, otherwise the app gets in a sleep state shortly after standby and messages won't be received either.",
+      "href": "Not always receiving message notifications when phone is idle - perhaps Doze related? · Issue #254 · wireapp/wire-android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-112",
+      "tag": "SPAN",
+      "text": "There is an option under Battery/Akku almost hidden, where you can set apps to be \"not optimized\" for battery savings - wire needs to be \"not optimized\" to work.\nThis might lead to a battery drain issue (see #853) because wire seems to be really bad optimized for some devices/OS if it uses websockets.",
+      "href": "Not always receiving message notifications when phone is idle - perhaps Doze related? · Issue #254 · wireapp/wire-android · GitHub"
+    }
+  ]
+}

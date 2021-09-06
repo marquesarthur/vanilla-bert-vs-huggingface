@@ -1,0 +1,36 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "Due to the specifics of Android threading, we cannot run network tasks on the same thread as the UI thread.",
+      "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "After that, extend the class AsyncTask.",
+      "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "Now, you’ll be bothered because you need to implement AsyncTask’s override methods.",
+      "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "If you have the options to left click and “generate” its override methods, select “doInBackground()” and “onPostExecute”.",
+      "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "If not, look below at what our class should now look like.",
+      "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+    }
+  ]
+}

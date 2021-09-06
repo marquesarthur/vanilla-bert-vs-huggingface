@@ -1,0 +1,24 @@
+{
+  "session_uid": "Leticia",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-200",
+      "tag": "SPAN",
+      "text": "\n          Great.\nConsider using requestLocationUpdates(LocationRequest locationRequest, PendingIntent intent).\nIt may be better for the batter live and performance for your users.\nCorresponding method from GMS: https://developers.google.com/android/reference/com/google/android/gms/location/FusedLocationProviderApi.html#requestLocationUpdates(com.google.android.gms.common.api.GoogleApiClient, com.google.android.gms.location.LocationRequest, android.app.PendingIntent)\n      ",
+      "href": "Use GPS in background service · Issue #158 · mcharmas/Android-ReactiveLocation"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "Consider using requestLocationUpdates(LocationRequest locationRequest, PendingIntent intent).",
+      "href": "Use GPS in background service · Issue #158 · mcharmas/Android-ReactiveLocation"
+    },
+    {
+      "id": "uid-1083",
+      "tag": "CODE",
+      "text": "requestLocationUpdates(LocationRequest locationRequest, PendingIntent intent)",
+      "href": "Use GPS in background service · Issue #158 · mcharmas/Android-ReactiveLocation"
+    }
+  ]
+}

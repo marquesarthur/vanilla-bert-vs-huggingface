@@ -1,0 +1,24 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-42",
+      "tag": "SPAN",
+      "text": "A notification can offer up to three action buttons that allow the user to\nrespond quickly, such as snooze a reminder or even reply to a text message.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-43",
+      "tag": "SPAN",
+      "text": "But these action buttons should not duplicate the action performed when the user\ntaps the notification.",
+      "href": "Create a Notification  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "To add an action button, pass a PendingIntent to the\naddAction()\nmethod.",
+      "href": "Create a Notification  |  Android Developers"
+    }
+  ]
+}

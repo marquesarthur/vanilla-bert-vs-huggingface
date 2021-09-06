@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": "Java 8 (2014) solves this problem using streams and lambdas in one line of code:",
+      "href": "What is the best way to filter a Java Collection? - Stack Overflow"
+    }
+  ]
+}

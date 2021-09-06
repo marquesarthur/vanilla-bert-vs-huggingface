@@ -1,0 +1,12 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-5",
+      "tag": "SPAN",
+      "text": "Ever created an app on android which provides user interaction even when the screen is locked of your android phone?I think for android developers it’s a piece of cake, you create a background service which runs even when the app is killed, then you can invoke an activity even when the the phone is locked, its easy on android right?",
+      "href": "Create A React Native App | Which works on Lock Screen (Android) | by Shivansh Rajpoot | Medium"
+    }
+  ]
+}

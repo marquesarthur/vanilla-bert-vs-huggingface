@@ -1,0 +1,12 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "Java developers usually deal with collections such as ArrayList and HashSet. Java 8 came with lambda and the streaming API that helps us to easily work with collections.",
+      "href": "Iteration Over Java Collections With High Performance - DZone Java"
+    }
+  ]
+}

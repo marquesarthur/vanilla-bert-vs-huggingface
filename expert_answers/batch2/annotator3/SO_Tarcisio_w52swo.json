@@ -1,0 +1,54 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-10",
+            "tag": "SPAN",
+            "text": "Here is a blog post on how to record audio using the MediaRecorder.",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-12",
+            "tag": "SPAN",
+            "text": "I haven't tried recording phone call's but there is a option in MediaRecorder AudioSource for:",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-221",
+            "tag": "SPAN",
+            "text": "VOICE_CALL - Voice call uplink + downlink audio source",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-222",
+            "tag": "SPAN",
+            "text": "VOICE_DOWNLINK - Voice call downlink (Rx) audio source",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-223",
+            "tag": "SPAN",
+            "text": "VOICE_UPLINK - Voice call uplink (Tx) audio source",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-46",
+            "tag": "SPAN",
+            "text": "I am using mic to record calls for better support and compatibility.",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-22",
+            "tag": "SPAN",
+            "text": "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
+            "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+        }
+    ]
+}

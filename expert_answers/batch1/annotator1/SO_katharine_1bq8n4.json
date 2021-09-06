@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-9",
+      "tag": "SPAN",
+      "text": "You can either rotate your bitmap when you draw it by using a matrix:",
+      "href": "rotation - Rotating Image on A canvas in android - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-10",
+      "tag": "SPAN",
+      "text": "You can also do it by rotating the canvas before drawing:",
+      "href": "rotation - Rotating Image on A canvas in android - Stack Overflow"
+    }
+  ]
+}

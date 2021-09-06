@@ -1,0 +1,24 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-11",
+            "tag": "SPAN",
+            "text": "Try to check below FragmentPagerAdapter to get endless viewpager adapter :",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "The proposed solutions are correct but to achieve the result you need to set the initial value of your viewpager to Integer.MAX_VALUE/2.",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-72",
+            "tag": "SPAN",
+            "text": "I created a ViewPager that supports infinite looping effect, smart auto-scroll, compatible with any indicators and easy to use.",
+            "href": "Android : Implementation of two way Endless Viewpager - Stack Overflow"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "The Dagger basics page explained how Dagger can help you automate dependency\ninjection in your app.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3049",
+      "tag": "SPAN",
+      "text": "Use constructor injection with @Inject to add types to the Dagger\ngraph whenever it's possible.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-3054",
+      "tag": "SPAN",
+      "text": "Name the scope annotations depending on the lifetime where the\nannotation is used.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-7",
+      "tag": "SPAN",
+      "text": "In Android, you usually create a Dagger graph that lives in your application\nclass because you want an instance of the graph to be in memory as long as the\napp is running.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Because the interface that generates the graph is annotated with @Component,\nyou can call it ApplicationComponent or ApplicationGraph.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-45",
+      "tag": "SPAN",
+      "text": "Apart from the @Inject annotation, there's another way to tell Dagger how to\nprovide an instance of a class: the information inside Dagger modules.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-46",
+      "tag": "SPAN",
+      "text": "A Dagger\nmodule is a class that is annotated with @Module.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "There, you can define\ndependencies with the @Provides annotation.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "Modules are a way to semantically encapsulate information on how to provide\nobjects.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-90",
+      "tag": "SPAN",
+      "text": "Subcomponents are components that inherit and extend the object graph of a\nparent component.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-91",
+      "tag": "SPAN",
+      "text": "Thus, all objects provided in the parent component are\nprovided in the subcomponent too.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-92",
+      "tag": "SPAN",
+      "text": "In this way, an object from a subcomponent\ncan depend on an object provided by the parent component.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-93",
+      "tag": "SPAN",
+      "text": "To create instances of subcomponents, you need an instance of the parent\ncomponent.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-94",
+      "tag": "SPAN",
+      "text": "Therefore, the objects provided by the parent component to the\nsubcomponent are still scoped to the parent component.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    }
+  ]
+}

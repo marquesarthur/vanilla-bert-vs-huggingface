@@ -1,0 +1,18 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "It's common to use scroller objects\nin conjunction with a fling gesture, but they\ncan be used in pretty much any context where you want the UI to display\nscrolling in response to a touch event.",
+      "href": "Animate a scroll gesture  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "For example, you could override\nonTouchEvent() to process touch\nevents directly, and produce a scrolling effect or a \"snapping to page\" animation\nin response to those touch events.",
+      "href": "Animate a scroll gesture  |  Android Developers"
+    }
+  ]
+}

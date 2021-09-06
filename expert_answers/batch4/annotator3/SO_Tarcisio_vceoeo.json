@@ -1,0 +1,60 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "uid-710",
+            "tag": "PRE",
+            "text": "  private String read(Context context, String fileName) {\n    try {\n        FileInputStream fis = context.openFileInput(fileName);\n        InputStreamReader isr = new InputStreamReader(fis);\n        BufferedReader bufferedReader = new BufferedReader(isr);\n        StringBuilder sb = new StringBuilder();\n        String line;\n        while ((line = bufferedReader.readLine()) != null) {\n            sb.append(line);\n        }\n        return sb.toString();\n    } catch (FileNotFoundException fileNotFound) {\n        return null;\n    } catch (IOException ioException) {\n        return null;\n    }\n}\n\nprivate boolean create(Context context, String fileName, String jsonString){\n    String FILENAME = \"storage.json\";\n    try {\n        FileOutputStream fos = context.openFileOutput(fileName,Context.MODE_PRIVATE);\n        if (jsonString != null) {\n            fos.write(jsonString.getBytes());\n        }\n        fos.close();\n        return true;\n    } catch (FileNotFoundException fileNotFound) {\n        return false;\n    } catch (IOException ioException) {\n        return false;\n    }\n\n}\n\npublic boolean isFilePresent(Context context, String fileName) {\n    String path = context.getFilesDir().getAbsolutePath() + \"/\" + fileName;\n    File file = new File(path);\n    return file.exists();\n}\n",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-15",
+            "tag": "SPAN",
+            "text": "onCreate of the Activity, you can use do the following",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "uid-713",
+            "tag": "PRE",
+            "text": "boolean isFilePresent = isFilePresent(getActivity(), \"storage.json\");\nif(isFilePresent) {\n   String jsonString = read(getActivity(), \"storage.json\");\n   //do the json parsing here and do the rest of functionality of app\n} else {\n   boolean isFileCreated = create(getActivity, \"storage.json\", \"{}\");\n   if(isFileCreated) {\n     //proceed with storing the first todo  or show ui\n   } else {\n     //show error or try again.\n   }\n}\n",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-96",
+            "tag": "SPAN",
+            "text": "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-87",
+            "tag": "SPAN",
+            "text": "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-67",
+            "tag": "SPAN",
+            "text": "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-53",
+            "tag": "SPAN",
+            "text": "In you case, you first want to check if you such file exist before creating one.",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-84",
+            "tag": "SPAN",
+            "text": "In you case, you first want to check if you such file exist before creating one.",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-41",
+            "tag": "SPAN",
+            "text": "In you case, you first want to check if you such file exist before creating one.",
+            "href": "ANDROID: How to save JSON data in a file and retrieve it? - Stack Overflow"
+        }
+    ]
+}

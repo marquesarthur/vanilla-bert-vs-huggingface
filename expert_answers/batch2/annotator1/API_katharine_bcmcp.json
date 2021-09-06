@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-385",
+      "tag": "SPAN",
+      "text": " The following example illustrates an aggregate operation using\n Stream and IntStream:\n\n \n     int sum = widgets.stream()\n                      .filter(w -> w.getColor() == RED)\n                      .mapToInt(w -> w.getWeight())\n                      .sum();\n \n\n In this example, widgets is a Collection<Widget>.",
+      "href": "Stream (Java Platform SE 8 )"
+    },
+    {
+      "id": "eye-gazing-tag-386",
+      "tag": "SPAN",
+      "text": " We create\n a stream of Widget objects via Collection.stream(),\n filter it to produce a stream containing only the red widgets, and then\n transform it into a stream of int values representing the weight of\n each red widget.",
+      "href": "Stream (Java Platform SE 8 )"
+    }
+  ]
+}

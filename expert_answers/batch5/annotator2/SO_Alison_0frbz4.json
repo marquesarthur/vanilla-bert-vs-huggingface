@@ -1,0 +1,42 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "Don't mess with the visibility flags of the container - FragmentTransaction.hide/show does that internally for you.",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-17",
+            "tag": "SPAN",
+            "text": "So the correct way to do this is:",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-19",
+            "tag": "SPAN",
+            "text": "In addittion, you can do in a Fragment (for example when getting server data failed):",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-87",
+            "tag": "SPAN",
+            "text": "OR if you are using android.support.v4.app.Fragment",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-64",
+            "tag": "SPAN",
+            "text": "OR if you are using android.support.v4.app.Fragment",
+            "href": "Show hide fragment in android - Stack Overflow"
+        },
+        {
+            "id": "eye-gazing-tag-2",
+            "tag": "SPAN",
+            "text": "OR if you are using android.support.v4.app.Fragment",
+            "href": "Show hide fragment in android - Stack Overflow"
+        }
+    ]
+}

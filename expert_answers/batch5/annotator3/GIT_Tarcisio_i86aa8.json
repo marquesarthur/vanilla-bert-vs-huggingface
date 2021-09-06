@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-188",
+      "tag": "SPAN",
+      "text": "\n          Sounds like #3275.\n      ",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "Sounds like #3275.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "@2-4601 The only manager that I have allow me to specify if an app can send push notification to the notifications bar (options = Not authorized/Authorized/Notify) also if an app is authorized to startup with android and if an app is allowed l working when the screen is locked(for battery saving).",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "I gave all authorizations but the pictures/names/phone numbers stil flickering.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-191",
+      "tag": "SPAN",
+      "text": "\n          My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.\n      ",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.",
+      "href": "TS shows number instead of contacts names in the main screen · Issue #3376 · signalapp/Signal-Android · GitHub"
+    }
+  ]
+}

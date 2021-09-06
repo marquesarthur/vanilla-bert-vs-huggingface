@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "You can use this adapter to provide views for an AdapterView,\n Returns a view for each object in a collection of data objects you\n provide, and can be used with list-based user interface widgets such as\n ListView or Spinner.",
+      "href": "ArrayAdapter  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-6",
+      "tag": "SPAN",
+      "text": " To customize what type of view is used for the data object,\n override getView(int, android.view.View, android.view.ViewGroup)\n and inflate a view resource.",
+      "href": "ArrayAdapter  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-245",
+      "tag": "SPAN",
+      "text": "Get a View that displays the data at the specified position in the data set.",
+      "href": "ArrayAdapter  |  Android Developers"
+    }
+  ]
+}

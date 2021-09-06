@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "Using kotlin coroutines’ async-await, I made the API call and loaded the ad in parallel.",
+      "href": "Multiple Concurrent Asynchronous calls using Kotlin coroutines (async-await and suspendCoroutine) | by Priya Sindkar | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "Code using kotlin coroutines:",
+      "href": "Multiple Concurrent Asynchronous calls using Kotlin coroutines (async-await and suspendCoroutine) | by Priya Sindkar | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "In the block- GlobalScope, I launch two coroutines in parallel using async to perform initalizeAndLoadAd() and fetchDataFromAPI().",
+      "href": "Multiple Concurrent Asynchronous calls using Kotlin coroutines (async-await and suspendCoroutine) | by Priya Sindkar | MindOrks | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "Once I start the coroutines performing these two tasks, I call await() on each of them and in the if condition I compare the results obtained from each of the above methods to decide the further flow of the application.",
+      "href": "Multiple Concurrent Asynchronous calls using Kotlin coroutines (async-await and suspendCoroutine) | by Priya Sindkar | MindOrks | Medium"
+    }
+  ]
+}

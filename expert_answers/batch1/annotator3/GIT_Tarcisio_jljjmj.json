@@ -1,0 +1,54 @@
+{
+    "session_uid": "Tarcisio",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-114",
+            "tag": "SPAN",
+            "text": "\n          See 1.2.0\n\nAdd min limit config on cropping window width/height in the UI (cropMinCropWindowWidth, cropMinCropWindowHeight)\nAdd min/max config on cropping image result width/height (cropMinCropResultWidthPX, cropMinCropResultHeightPX, cropMaxCropResultWidthPX , cropMaxCropResultHeightPX)\n\nNote the cropping image result min/max is in pixels and can effect the usability of the cropping UI if set to low values for large images.\nI wasn't sure on the best way to approach it so let me know what your use case is.\n      ",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-12",
+            "tag": "SPAN",
+            "text": "See 1.2.0",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-170",
+            "tag": "SPAN",
+            "text": "Add min limit config on cropping window width/height in the UI (cropMinCropWindowWidth, cropMinCropWindowHeight)",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-13",
+            "tag": "SPAN",
+            "text": "Note the cropping image result min/max is in pixels and can effect the usability of the cropping UI if set to low values for large images.\nI wasn't sure on the best way to approach it so let me know what your use case is.",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-29",
+            "tag": "SPAN",
+            "text": "Add min/max config on cropping image result width/height (cropMinCropResultWidthPX, cropMinCropResultHeightPX, cropMaxCropResultWidthPX , cropMaxCropResultHeightPX)",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-92",
+            "tag": "SPAN",
+            "text": "Add min/max config on cropping image result width/height (cropMinCropResultWidthPX, cropMinCropResultHeightPX, cropMaxCropResultWidthPX , cropMaxCropResultHeightPX)",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-101",
+            "tag": "SPAN",
+            "text": "Add min/max config on cropping image result width/height (cropMinCropResultWidthPX, cropMinCropResultHeightPX, cropMaxCropResultWidthPX , cropMaxCropResultHeightPX)",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        },
+        {
+            "id": "eye-gazing-tag-16",
+            "tag": "SPAN",
+            "text": "Add min/max config on cropping image result width/height (cropMinCropResultWidthPX, cropMinCropResultHeightPX, cropMaxCropResultWidthPX , cropMaxCropResultHeightPX)",
+            "href": "The ability to set a minimum \\ maximum height/width \u00b7 Issue #22 \u00b7 ArthurHub/Android-Image-Cropper \u00b7 GitHub"
+        }
+    ]
+}

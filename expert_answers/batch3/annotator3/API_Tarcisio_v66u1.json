@@ -1,0 +1,102 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-13",
+      "tag": "SPAN",
+      "text": "To send a task to a thread pool, use the\nExecutorService\ninterface.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "Note that ExecutorService has nothing to do with\nServices, the\nAndroid application component.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "First, let's take a look at our Repository class and see how it's making\nthe network request:",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "Let's create another function called makeLoginRequest() that moves the\nexecution to the background thread and ignores the response for now:",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "Internally, the ExecutorService\nmanages the Runnable and executes it in an available thread.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-44",
+      "tag": "SPAN",
+      "text": "The function makeLoginRequest() should take a callback as a parameter\nso that it can return a value asynchronously.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-48",
+      "tag": "SPAN",
+      "text": "The ViewModel needs to implement the callback now.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-49",
+      "tag": "SPAN",
+      "text": "It can perform different\nlogic depending on the result:",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-52",
+      "tag": "SPAN",
+      "text": "You can use a Handler to enqueue an\naction to be performed on a different thread.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-58",
+      "tag": "SPAN",
+      "text": "As this is\nsomething you might do quite often, you can also save an instance of\nthe Handler in the same place you saved the ExecutorService:",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-62",
+      "tag": "SPAN",
+      "text": "Alternatively, if you want more flexibility, you can pass in a Handler to\neach function:",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-66",
+      "tag": "SPAN",
+      "text": "Alternatively, if you want to customize the details of the thread\npool, you can create an instance using\nThreadPoolExecutor\ndirectly.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2939",
+      "tag": "SPAN",
+      "text": "Initial and maximum pool size.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2940",
+      "tag": "SPAN",
+      "text": "Keep alive time and time unit.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2942",
+      "tag": "SPAN",
+      "text": "An input queue that holds Runnable tasks.",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    },
+    {
+      "id": "uid-8208",
+      "tag": "PRE",
+      "text": "public class MyApplication extends Application {    /*     * Gets the number of available cores     * (not always the same as the maximum number of cores)     */    private static int NUMBER_OF_CORES = Runtime.getRuntime().availableProcessors();    // Instantiates the queue of Runnables as a LinkedBlockingQueue    private final BlockingQueue<Runnable> workQueue = new LinkedBlockingQueue<Runnable>();    // Sets the amount of time an idle thread waits before terminating    private static final int KEEP_ALIVE_TIME = 1;    // Sets the Time Unit to seconds    private static final TimeUnit KEEP_ALIVE_TIME_UNIT = TimeUnit.SECONDS;    // Creates a thread pool manager    ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(            NUMBER_OF_CORES,       // Initial pool size            NUMBER_OF_CORES,       // Max pool size            KEEP_ALIVE_TIME,            KEEP_ALIVE_TIME_UNIT,            workQueue    );    ...}",
+      "href": "Running Android tasks in background threads  |  Android Developers"
+    }
+  ]
+}

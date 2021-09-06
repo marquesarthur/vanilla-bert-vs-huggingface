@@ -1,0 +1,186 @@
+{
+    "session_uid": "Alison",
+    "type": "FROM_PARTICIPANT",
+    "items": [
+        {
+            "id": "eye-gazing-tag-6",
+            "tag": "SPAN",
+            "text": "Due to the specifics of Android threading, we cannot run network tasks on the same thread as the UI thread.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-8",
+            "tag": "SPAN",
+            "text": "Lets say we implement a GET request on our UI thread, and our API (for some reason) cannot process it.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-9",
+            "tag": "SPAN",
+            "text": "If we do not have catches for timeout exceptions or other exceptions that might have been raised, our thread is now blocked.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-25",
+            "tag": "SPAN",
+            "text": "To summarize, what do we want?We want a method that is performed asynchronously with our UI thread, that cleanly performs a GET, POST, PUT or DELETE request, and handles any exceptions.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-29",
+            "tag": "SPAN",
+            "text": "After that, extend the class AsyncTask.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-31",
+            "tag": "SPAN",
+            "text": "The ones we\u2019ll be using are doInBackground() and onPostExecute, and the type we want to return is String.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-33",
+            "tag": "SPAN",
+            "text": "Now, you\u2019ll be bothered because you need to implement AsyncTask\u2019s override methods.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-36",
+            "tag": "SPAN",
+            "text": "After instantiating a new instance of this class in another class or activity, we can access these methods to perform some background task in doInBackground() and retrieve the result in onPostExecute().",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-37",
+            "tag": "SPAN",
+            "text": "Lets take a look at an example below:",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-117",
+            "tag": "SPAN",
+            "text": "Create a connection to our url",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-118",
+            "tag": "SPAN",
+            "text": "Set our method types (GET, POST, etc\u2026)",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-119",
+            "tag": "SPAN",
+            "text": "Create an InputStream to read our results",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-120",
+            "tag": "SPAN",
+            "text": "Catch our exceptions",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-46",
+            "tag": "SPAN",
+            "text": "The next steps will all be wrapped in this try-catch block as we will need to catch certain exceptions that may occur during the GET request.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-47",
+            "tag": "SPAN",
+            "text": "As you can see we are casting our myUrl.openConnection() to a HttpURLConnection type.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-49",
+            "tag": "SPAN",
+            "text": "Next, we will be setting our request method, read and connection timeouts.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-51",
+            "tag": "SPAN",
+            "text": "For good practice, I\u2019ll make these constants as well.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-52",
+            "tag": "SPAN",
+            "text": "Now that we have set our timeouts, request method, and connected (attempted anyway), we are going to create a Stringbuilder and InputStreamReader to read our input from the API.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-54",
+            "tag": "SPAN",
+            "text": "First, we will create an InputStreamReader that reads our request input.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-55",
+            "tag": "SPAN",
+            "text": "Next, we will create a BufferedReader that will allow us to iterate through the response.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-56",
+            "tag": "SPAN",
+            "text": "We will then iterate through each line of our response and append it to our StringBuilder.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-57",
+            "tag": "SPAN",
+            "text": "We will also create a new variable of type String called inputLine by the other two String we created in doInBackground().",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-59",
+            "tag": "SPAN",
+            "text": "We are just reading our input, parsing through each line, appending it to a StringBuilder, and converting it to our String result afterwards.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-61",
+            "tag": "SPAN",
+            "text": "In the case of a GET request, we only need to catch IOException.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-65",
+            "tag": "SPAN",
+            "text": "We\u2019ll be setting our result to null here, so it is VERY important to check for a null response in the other classes that you are using this with.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-66",
+            "tag": "SPAN",
+            "text": "If you want to play it safe and avoid a null pointer exception, you can always return an empty String (\u201c\u201d).",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-67",
+            "tag": "SPAN",
+            "text": "Here we caught our IOException, printed the stack trace in order to see more details if/when we have do debug, and set our result to null.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-94",
+            "tag": "SPAN",
+            "text": "If you have the options to left click and \u201cgenerate\u201d its override methods, select \u201cdoInBackground()\u201d and \u201conPostExecute\u201d.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-69",
+            "tag": "SPAN",
+            "text": "If you have the options to left click and \u201cgenerate\u201d its override methods, select \u201cdoInBackground()\u201d and \u201conPostExecute\u201d.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        },
+        {
+            "id": "eye-gazing-tag-65",
+            "tag": "SPAN",
+            "text": "If you have the options to left click and \u201cgenerate\u201d its override methods, select \u201cdoInBackground()\u201d and \u201conPostExecute\u201d.",
+            "href": "Android AsyncTask HTTP GET request Tutorial | by Jason Cromer | Medium"
+        }
+    ]
+}

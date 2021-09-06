@@ -1,0 +1,24 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "To execute the tasks on a separate thread it’s convenient to use subscribeOn function which allows specifying Scheduler on which a Completable will operate.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "I passed Schedulers.io() scheduler so both actions will be executed on the thread from the IO pool.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "To both tasks work in parallel subscribeOn should be called on each of the completables that would be merged.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    }
+  ]
+}

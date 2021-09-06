@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-120",
+      "tag": "SPAN",
+      "text": "These AudioSources need CAPTURE_AUDIO_OUTPUT permission.",
+      "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-121",
+      "tag": "SPAN",
+      "text": "Which is only granted to system applications.",
+      "href": "Android Recording Incoming and Outgoing Calls - Stack Overflow"
+    }
+  ]
+}

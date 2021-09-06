@@ -1,0 +1,30 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-302",
+      "tag": "SPAN",
+      "text": "\n          Same here after Android update.\nAndroid version: 11\nAntennaPod version: 1.8.0-RC8\nModel: Pixel 2\nDevice: walleye\n      ",
+      "href": "Lock screen controls disappear on Android 11 · Issue #4448 · AntennaPod/AntennaPod"
+    },
+    {
+      "id": "eye-gazing-tag-32",
+      "tag": "SPAN",
+      "text": "Same here after Android update.",
+      "href": "Lock screen controls disappear on Android 11 · Issue #4448 · AntennaPod/AntennaPod"
+    },
+    {
+      "id": "eye-gazing-tag-86",
+      "tag": "SPAN",
+      "text": "Apparently this is a problem with Android 11 as it affects other media players too.",
+      "href": "Lock screen controls disappear on Android 11 · Issue #4448 · AntennaPod/AntennaPod"
+    },
+    {
+      "id": "eye-gazing-tag-88",
+      "tag": "SPAN",
+      "text": "Known symptoms are:",
+      "href": "Lock screen controls disappear on Android 11 · Issue #4448 · AntennaPod/AntennaPod"
+    }
+  ]
+}

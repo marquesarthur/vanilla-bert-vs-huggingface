@@ -1,0 +1,18 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "In Android, scrolling is typically achieved by using the\nScrollView\nclass.",
+      "href": "Animate a scroll gesture  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "Any standard layout that might extend beyond the bounds of its container should be\nnested in a ScrollView to provide a scrollable view that's\nmanaged by the framework.",
+      "href": "Animate a scroll gesture  |  Android Developers"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "https://developer.android.com/guide/background/threading": {
+        "apiref": [
+            "For example, if your app makes a network request from the main thread, your app's UI is frozen until it receives the network response.",
+            "Alternatively, if you want more flexibility, you can pass in a Handler to each function:",
+            "Alternatively, if you want to customize the details of the thread pool, you can create an instance using ThreadPoolExecutor directly."
+        ]
+    },
+    "https://stackoverflow.com/questions/2993085": {
+        "ansbot": [
+            "/ / Ideally it will be client side only, so you should be able to make it / / more frequent -LRB- within reason -RRB- without worrying too much about performance scheduleRepeating -LRB- 500 -RRB- ; -RCB- public void run -LCB- / / check to see if all your callbacks have been completed if -LRB- notFinished -RRB- return ;",
+            "I wrote a post explaining it here: LINK.",
+            "The parent waits for each child callback to complete, then fires off it's own handleSuccess -LRB- -RRB-.",
+            "Basically, each individual callback registers with a parent.",
+            "The implementation for these two classes is linked from that post -LRB- sorry, can't give links here because I'm a newbie user - not enough karma to include more than one link ! -RRB-"
+        ]
+    },
+    "https://www.twilio.com/blog/asynchronous-api-requests-java-completablefutures": {
+        "lexrank": [
+            "Synchronous and Asynchronous code If you're calling the Twilio API to send an SMS, your code might look like this:",
+            "One Java 8 API which sometimes gets overlooked is the CompletionStage API, usually accessed through the CompletableFuture class."
+        ]
+    },
+    "https://medium.com/mindorks/multiple-concurrent-asynchronous-calls-using-kotlin-coroutines-async-await-and-suspendcoroutine-26371fa49781": {
+        "lexrank": [
+            "",
+            "Simplest Introduction To The BlockchainAmit Shekhar in MindOrksDo it Asynchronously but Intelligently !!!"
+        ]
+    }
+}

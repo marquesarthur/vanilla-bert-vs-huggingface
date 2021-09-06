@@ -1,0 +1,42 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "The resulting code is really simple and looks like this:",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-18",
+      "tag": "SPAN",
+      "text": "If you run that code with some prints you’ll see that both tasks are executed on the thread from IO pool but they’re both executed on the same thread.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "The scheduler won’t be applied to each of the completables but only to completable returned by merge.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "To both tasks work in parallel subscribeOn should be called on each of the completables that would be merged.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-23",
+      "tag": "SPAN",
+      "text": "The same rule applies not only to the merge operator but also to zip operator which you can use to run a code from two Singles or Observables in parallel and combine their results.",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "Code for parallel execution of two zipped Singles which emit some Strings would look like this:",
+      "href": "RxJava mistakes: (not so) parallel execution of blocking tasks | by Paulina Sadowska | ProAndroidDev"
+    }
+  ]
+}

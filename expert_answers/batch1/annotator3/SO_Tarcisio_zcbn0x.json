@@ -1,0 +1,48 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-27",
+      "tag": "SPAN",
+      "text": "Now you can enable the back button in the onCreate method of your \"child\" activity.",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    },
+    {
+      "id": "uid-1265",
+      "tag": "PRE",
+      "text": "@Override\nprotected void onCreate(Bundle savedInstanceState) {\n    super.onCreate(savedInstanceState);\n    getActionBar().setDisplayHomeAsUpEnabled(true);\n}\n",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "Now you should implement the logic for the back button.",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "You simply override the onOptionsItemSelected method in your \"child\" activity and check for the id of the back button which is android.R.id.home.",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-30",
+      "tag": "SPAN",
+      "text": "Now you can fire the method NavUtils.navigateUpFromSameTask(this); BUT if you don't have specified the android:parentActivityName in you AndroidManifest.xml this will crash your app.",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "A good implementation that never crashes your app would be:",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-36",
+      "tag": "SPAN",
+      "text": "Please notice that the animation that the user sees is different between NavUtils.navigateUpFromSameTask(this); and onBackPressed().",
+      "href": "java - How to implement the Android ActionBar back button? - Stack Overflow"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "session_uid": "Alison",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-14",
+      "tag": "SPAN",
+      "text": "and dont forget to set scaleType property to matrix of ImageView tag like:",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "and the variables used are:",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "We use a ScaleGestureDetector on the activity to listen to touch events.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-25",
+      "tag": "SPAN",
+      "text": "When a scale (ie, pinch) gesture is detected, then the scale factor is used to resize the ImageView.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-28",
+      "tag": "SPAN",
+      "text": "You will probably want to do other things like panning and scaling to some focus point.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    },
+    {
+      "id": "eye-gazing-tag-29",
+      "tag": "SPAN",
+      "text": "You can develop these things yourself, but if you would like to use a pre-made custom view, copy TouchImageView.java into your project and use it like a normal ImageView.",
+      "href": "Android Image View Pinch Zooming - Stack Overflow"
+    }
+  ]
+}

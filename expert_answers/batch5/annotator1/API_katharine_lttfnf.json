@@ -1,0 +1,48 @@
+{
+  "session_uid": "katharine",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-1",
+      "tag": "SPAN",
+      "text": "The Dagger basics page explained how Dagger can help you automate dependency\ninjection in your app.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-2",
+      "tag": "SPAN",
+      "text": "With Dagger, you don't have to write tedious and\nerror-prone boilerplate code.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-15",
+      "tag": "SPAN",
+      "text": "Because certain Android framework classes such as activities and fragments are\ninstantiated by the system, Dagger can't create them for you.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-16",
+      "tag": "SPAN",
+      "text": "For activities\nspecifically, any initialization code needs to go into the onCreate() method.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-17",
+      "tag": "SPAN",
+      "text": "That means you cannot use the @Inject annotation in the constructor of the\nclass (constructor injection) as you did in the previous examples.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-19",
+      "tag": "SPAN",
+      "text": "Instead of creating the dependencies an activity requires in the onCreate()\nmethod, you want Dagger to populate those dependencies for you.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    },
+    {
+      "id": "eye-gazing-tag-20",
+      "tag": "SPAN",
+      "text": "For field\ninjection, you instead apply the @Inject annotation to the fields that you\nwant to get from the Dagger graph.",
+      "href": "Using Dagger in Android apps  |  Android Developers"
+    }
+  ]
+}

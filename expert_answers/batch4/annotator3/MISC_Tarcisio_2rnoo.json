@@ -1,0 +1,66 @@
+{
+  "session_uid": "Tarcisio",
+  "type": "FROM_PARTICIPANT",
+  "items": [
+    {
+      "id": "eye-gazing-tag-21",
+      "tag": "SPAN",
+      "text": "Lastly, there is an other option to reuse fragments from the array.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-22",
+      "tag": "SPAN",
+      "text": "By converting the FragmentPagerAdapter to a FragmentStatePagerAdapter, you may actually be able to reuse a Fragment.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-24",
+      "tag": "SPAN",
+      "text": "The only issue is, that this will only work if you have at least 4 fragments.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-34",
+      "tag": "SPAN",
+      "text": "This will only solve the problem of showing too many bullets, you also need to change the code, so that when you set the current item, you mod it with the real count.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-35",
+      "tag": "SPAN",
+      "text": "Finally, everywhere you see mCurrentPage or mSnapPage, mod it with real count.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-41",
+      "tag": "SPAN",
+      "text": "Also, you can now set getCount() in your Adapter to Integer.MAX_INT without any problem since it’s not being used to draw the indicators any more.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-47",
+      "tag": "SPAN",
+      "text": "What I learned from digging through ViewPagerIndicators code is that they are all basically just CustomViews that attach a OnPageChangeListener to your ViewPager and just draw the components.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-51",
+      "tag": "SPAN",
+      "text": "I created a drawable with a default state and one with a selected state.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "uid-456",
+      "tag": "PRE",
+      "text": "<selector xmlns:android=\"http://schemas.android.com/apk/res/android\">    <item android:state_selected=\"true\">        <shape android:shape=\"oval\">            <solid android:color=\"@android:color/white\" />            <stroke android:width=\"1dp\" android:color=\"@android:color/white\" />        </shape>    </item>    <item>        <shape android:shape=\"oval\">            <stroke android:width=\"1dp\" android:color=\"@android:color/white\" />        </shape>    </item></selector>",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    },
+    {
+      "id": "eye-gazing-tag-67",
+      "tag": "SPAN",
+      "text": "It constantly moves items from the front of the array to the back and vice versa as you move.",
+      "href": "Looping/infinite ViewPager with page indicator in Android | by Ali Muzaffar | Medium"
+    }
+  ]
+}
