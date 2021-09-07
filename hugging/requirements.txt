@@ -1,6 +1,6 @@
-tensorflow-gpu==2.4.1+computecanada
+tensorflow-gpu
 transformers
-scikit-learn
+scikit-learn==0.23.0
 tqdm
 pandas
 python-Levenshtein
