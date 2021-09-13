@@ -1,4 +1,4 @@
-tensorflow-gpu
+tensorflow-gpu==2.3.0
 transformers
 scikit-learn==0.23.0
 tqdm
@@ -6,3 +6,4 @@ pandas
 python-Levenshtein
 path
 colorama
+pipdeptree
