@@ -1,109 +1,127 @@
 {
     "0": {
-        "run_cnt": 1,
+        "run_cnt": 2,
         "overall": {
             "precision": [
-                0.5697825539779107
+                0.5697825539779107,
+                0.5691908239827989
             ],
             "recall": [
-                0.5772936877859318
+                0.5772936877859318,
+                0.5723577268393417
             ],
             "fscore": [
-                0.49549511729956197
+                0.49549511729956197,
+                0.48497085916598504
             ]
         },
         "api": {
             "precision": [
-                0.5607820850283162
+                0.5607820850283162,
+                0.5589520970028066
             ],
             "recall": [
-                0.5398361359389992
+                0.5398361359389992,
+                0.5175225975862243
             ],
             "fscore": [
-                0.38633048968575284
+                0.38633048968575284,
+                0.37050437469442676
             ]
         },
         "so": {
             "precision": [
-                0.6100198412698413
+                0.6100198412698413,
+                0.6105263157894737
             ],
             "recall": [
-                0.6272342995169082
+                0.6272342995169082,
+                0.6318840579710144
             ],
             "fscore": [
-                0.5622574955908289
+                0.5622574955908289,
+                0.5631944444444446
             ]
         },
         "git": {
             "precision": [
-                0.5299019607843137
+                0.5299019607843137,
+                0.5287878787878788
             ],
             "recall": [
-                0.525
+                0.525,
+                0.51875
             ],
             "fscore": [
-                0.4794262987927783
+                0.4794262987927783,
+                0.4752611747646406
             ]
         },
         "misc": {
             "precision": [
-                0.5583076851832062
+                0.5583076851832062,
+                0.5578292584476993
             ],
             "recall": [
-                0.5921340098223313
+                0.5921340098223313,
+                0.5915110862342915
             ],
             "fscore": [
-                0.5205849959832545
+                0.5205849959832545,
+                0.49181165012119865
             ]
         }
     },
     "venn_diagram_set": [
-        "So ideally we also would have an easy way of processing an array of businesses into an ArrayList of Business objects.",
-        "If you create enough items and scroll through the list, the views will be recycled and far smoother by default than the ListView widget:",
-        "Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
-        "However, in the API response, we actually get a collection of business JSON in an array.",
-        "Returns the value mapped by name if it exists, coercing it if necessary, or throws if no such mapping exists.",
-        "Set the view Marker in the chart",
-        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or throws otherwise.",
-        "Returns the value mapped by name if it exists and is a JSONArray, or throws otherwise.",
-        "There is a simple method call in android to go from pixels to dp.",
-        "However, with a RecyclerView the adapter requires the existence of a `` ViewHolder'' object which describes and provides access to all the views within each item row.",
-        "Returns the value mapped by name if it exists, coercing it if necessary, or the empty string if no such mapping exists.",
-        "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
-        "With this method in place, we could take a single business JSON dictionary such as:",
-        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or false otherwise.",
-        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or fallback otherwise.",
-        "Returns the value mapped by name if it exists and is a JSONObject, or null otherwise.",
-        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or throws otherwise.",
-        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or throws otherwise.",
-        "Basically you need to load a bitmap and pass to each event you want to draw.",
-        "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
-        "Returns the value mapped by name if it exists, coercing it if necessary, or fallback if no such mapping exists.",
-        "2 - Create MarkerView",
-        "Unless you are importing the wrong BuildConfig class.",
-        "Make sure you are referencing your project's BuildConfig class, not from any of your dependency libraries.",
-        "That line draws a single event.",
-        "This is a boolean value that will be true for a debug build, false otherwise:",
-        "When a list item is scrolled off the screen, RecyclerView reuses that view for the next list item about to be displayed.",
-        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or 0 otherwise.",
-        "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
-        "Since you want to offset the icon to the top right, you will need to offset the ( x, y ) position slightly, but make sure you use dp because if you simply offset the ( x, y ) by some amount it willnot translate to different devices.",
-        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or 0 otherwise.",
         "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or throws otherwise.",
-        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or fallback otherwise.",
-        "So really you want to replace:",
-        "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
-        "Returns the value mapped by name if it exists and is a JSONArray, or null otherwise.",
-        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or fallback otherwise.",
-        "Next, we need to add method that would manage the deserialization of a JSON dictionary into a populated Business object:",
+        "So ideally we also would have an easy way of processing an array of businesses into an ArrayList of Business objects.",
+        "and successfully create a Business with Business.fromJson ( json ).",
+        "That line draws a single event.",
         "RecyclerView is designed to be very efficient, even with large lists, by reusing, or recycling, the views that have scrolled off the screen.",
-        "Binding the Adapter to the RecyclerView In our activity, we will populate a set of sample users which should be displayed in the RecyclerView.",
-        "With that in place, we can now pass an JSONArray of business json data and process that easily into a nice ArrayList object for easy use in our application with Business.fromJson ( myJsonArray ).",
-        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or fallback otherwise.",
-        "Returns the value mapped by name, or null if no such mapping exists.",
-        "Returns the value mapped by name, or throws if no such mapping exists.",
+        "Every adapter has three primary methods: onCreateViewHolder to inflate the item layout and create the holder, onBindViewHolder to set the view attributes based on the data and getItemCount to determine the number of items.",
+        "Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
         "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or NaN otherwise.",
+        "There is a simple method call in android to go from pixels to dp.",
+        "1 -RRB- Add save Button in each row of RecyclerView on this Button click -LRB- onClick -RRB-",
+        "Basically you need to load a bitmap and pass to each event you want to draw.",
+        "With that in place, we can now pass an JSONArray of business json data and process that easily into a nice ArrayList object for easy use in our application with Business.fromJson ( myJsonArray ).",
+        "With this method in place, we could take a single business JSON dictionary such as:",
+        "Returns the value mapped by name if it exists and is a JSONArray, or null otherwise.",
+        "2 - Create MarkerView",
+        "This is a boolean value that will be true for a debug build, false otherwise:",
+        "Returns the value mapped by name, or null if no such mapping exists.",
+        "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+        "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
+        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or fallback otherwise.",
+        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or fallback otherwise.",
+        "Next, we need to add method that would manage the deserialization of a JSON dictionary into a populated Business object:",
+        "Returns the value mapped by name, or throws if no such mapping exists.",
+        "Since you want to offset the icon to the top right, you will need to offset the ( x, y ) position slightly, but make sure you use dp because if you simply offset the ( x, y ) by some amount it willnot translate to different devices.",
+        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or fallback otherwise.",
+        "If you create enough items and scroll through the list, the views will be recycled and far smoother by default than the ListView widget:",
+        "Returns the value mapped by name if it exists and is a JSONArray, or throws otherwise.",
+        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or fallback otherwise.",
+        "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
+        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or throws otherwise.",
+        "Returns the value mapped by name if it exists, coercing it if necessary, or fallback if no such mapping exists.",
+        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or throws otherwise.",
+        "Binding the Adapter to the RecyclerView In our activity, we will populate a set of sample users which should be displayed in the RecyclerView.",
         "with some custome code which simply draws a drawable icon.",
-        "You can remove the if conditions because you only want to draw one icon right ?"
+        "Make sure you are referencing your project's BuildConfig class, not from any of your dependency libraries.",
+        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or throws otherwise.",
+        "Returns the value mapped by name if it exists and is a JSONObject, or null otherwise.",
+        "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or 0 otherwise.",
+        "Returns the value mapped by name if it exists, coercing it if necessary, or the empty string if no such mapping exists.",
+        "Returns the value mapped by name if it exists, coercing it if necessary, or throws if no such mapping exists.",
+        "However, in the API response, we actually get a collection of business JSON in an array.",
+        "When a list item is scrolled off the screen, RecyclerView reuses that view for the next list item about to be displayed.",
+        "So really you want to replace:",
+        "You can remove the if conditions because you only want to draw one icon right ?",
+        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or 0 otherwise.",
+        "However, with a RecyclerView the adapter requires the existence of a `` ViewHolder'' object which describes and provides access to all the views within each item row.",
+        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or false otherwise.",
+        "Unless you are importing the wrong BuildConfig class.",
+        "Set the view Marker in the chart"
     ]
 }
