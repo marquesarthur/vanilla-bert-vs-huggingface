@@ -3,296 +3,291 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.527746419678518
+                0.4756510989010989
             ],
             "recall": [
-                0.590335012759275
+                0.5603517797552836
             ],
             "fscore": [
-                0.4385673051481008
+                0.49643962656532026
             ]
         },
         "api": {
             "precision": [
-                0.45386064030131823
+                0.415
             ],
             "recall": [
-                0.4171737660581474
+                0.47701149425287354
             ],
             "fscore": [
-                0.40256296950950066
+                0.44385026737967914
             ]
         },
         "so": {
             "precision": [
-                0.5491681521093286
+                0.44591346153846156
             ],
             "recall": [
-                0.6666666666666667
+                0.46354166666666663
             ],
             "fscore": [
-                0.430952380952381
+                0.454375
             ]
         },
         "git": {
             "precision": [
-                0.5758513931888545
+                0.42857142857142855
             ],
             "recall": [
-                0.6580645161290323
+                0.4838709677419355
             ],
             "fscore": [
-                0.5
+                0.4545454545454545
             ]
         },
         "misc": {
             "precision": [
-                0.5106837606837606
+                0.6428571428571428
             ],
             "recall": [
-                0.5431034482758621
+                0.9137931034482758
             ],
             "fscore": [
-                0.4283687943262411
+                0.6750524109014675
             ]
         }
     },
     "venn_diagram_set": [
-        "We check if a View is recycled with if ( convertView == null ).",
-        "The FragmentStatePagerAdapter will stop creating new fragments when the current index reaches the number of objects returned by getCount ( ), so you need to change the method to return a fairly large number that the users are not very likely to reach by continuously swiping in the same direction.",
-        "And this code snippet demonstrates the recommended process of checking for a permission, and requesting a permission from the user when necessary:",
-        "it is used for the Android Music Remote control even if the App is in Lock mode.",
-        "Returns the value mapped by name if it exists and is a JSONArray, or throws otherwise.",
-        "Android-Lollipop -LRB- api 21 -RRB- introduce a new API: LINK",
-        "All Android devices provide a Back button for this type of navigation, so you should not add a Back button to your app's UI.",
-        "Returns the value mapped by name if it exists and is a JSONArray, or null otherwise.",
-        "Call this method, passing in the outer most ViewGroup that you want a screen shot of:",
-        "get a seekable file descriptor from your pdf document:",
-        "First of all your Animal class with the Json Annotations for the subclasses.",
-        "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
-        "If you want to render a PDF, you create a renderer and for every page you want to render, you open the page, render it, and close the page.",
-        "In your app's manifest file, declare the permissions that your app might need to request.",
-        "If the permission you need to add isn't listed under the normal permissions, you'll need to deal with `` Runtime Permissions''.",
-        "Javac annotation processor uses rounds instead of defining processors order.",
-        "But the easiest option is to generate java code directly and your generated java classes will be picked up by javac automatically, launching second round of annotation processing, where dagger will process them.",
-        "That is because, when your app starts, the ViewPager displays the movie at index 0.",
-        "To be able to record, your app must tell the user that it will access the device's audio input.",
-        "you should try this:",
-        "Using a Custom ArrayAdapter When we want to display a series of items from a list using a custom representation of the items, we need to use our own custom XML layout for each item.",
-        "to this approach instead leveraging add, show, and hide in the FragmentTransaction:",
-        "Now Android allows you to decide which permissions to accept on a case-by-case basis -- after the app is installed.",
-        "It is worth noting that apparently Dagger2 creates a single instance per scoped provider in a module per component.",
-        "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView.",
-        "This is a boolean value that will be true for a debug build, false otherwise:",
-        "This tells the ViewPager to display the movie found in the middle of the array.",
-        "The cool thing about the new Google Recaptcha is that the validation is now completely encapsulated in the widget.",
-        "Replace the code inside getItem ( position: Int ) with this line:",
-        "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
-        "If so, your app can access the private user data.",
-        "Don't mess with the visibility flags of the container - FragmentTransaction.hide / show does that internally for you.",
-        "The following code snippet shows how to handle the permissions response:",
-        "Returns the value mapped by name if it exists and is a JSONObject, or null otherwise.",
-        "The following example code demonstrates how to create a basic camera preview class that can be included in a View layout.",
-        "inject.Scope annotation - Dependencies declared with that scope with have caching Provider with double-check lock generated and only single instance will be created for it within component declared with the same scope and its creation will be thread safe.",
-        "Create a Preview Class - Create a camera preview class that extends SurfaceView and implements the SurfaceHolder interface.",
-        "SolutionThe solution to open PDF is solved by the introduction of the class PdfRenderer in Android-Lollipop ( API 21 ).",
-        "If you want to set a specific size for your camera preview, set this in the surfaceChanged ( ) method as noted in the comments above.",
-        "Here you define what information shows and where it sits within the ListView.",
-        "ComponentActivity, the base class for FragmentActivity and AppCompatActivity, allows you to control the behavior of the Back button by using its OnBackPressedDispatcher, which you can retrieve by calling getOnBackPressedDispatcher ( ).",
-        "But these action buttons should not duplicate the action performed when the user taps the notification.",
-        "Using this approach, all three fragments will remain in the container once added initially and then we are simply revealing the desired fragment and hiding the others within the container.",
-        "To fix this issue, open MainActivity.kt and add the following line inside onCreate ( ) below the line where you connect the PageAdapter to the ViewPager:",
-        "A typical use of the APIs to render a PDF looks like this:",
-        "You also inflate a custom view from the XML layout defined in res/layout/list_item_recipe.xml -- more on this in the next section.",
-        "The Dagger basics page explained how Dagger can help you automate dependency injection in your app.",
-        "If you have a lot of string / text type data, consider creating Virtual tables using full text search -LRB- FTS3 -RRB-, which can run faster query.",
-        "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
-        "You can either rotate your bitmap when you draw it by using a matrix:",
-        "Beginning in Android 6.0 -LRB- API level 23 -RRB-, users grant permissions to apps while the app is running, not when they install the app.",
-        "Ask for permissions in context, when the user starts to interact with the feature that requires it.",
-        "Normally, the Android OS prohibits apps from accessing each other's files -LRB- i.e. databases, preference files, regular files stored in the app's private directory -RRB- through proven Linux file permissions.",
-        "To handle an individual key press, implement onKeyDown ( ) or onKeyUp ( ) as appropriate.",
-        "Therefore, Android will always ask you to approve dangerous permissions.",
-        "These are permissions that are requested while the app is running ( instead of before the app is installed ).",
-        "Gets a View that displays in the drop down popup the data at the specified position in the data set.",
-        "Next, you'll need to initiate the permission request and handle the result.",
-        "That means, that the widget will take care of asking questions, validating responses all the way till it determines that a user is actually a human, only then you get a g-recaptcha-response value.",
-        "that is done because rotation is around the top left point ( the origin ) of the view.",
-        "Since you want to offset the icon to the top right, you will need to offset the ( x, y ) position slightly, but make sure you use dp because if you simply offset the ( x, y ) by some amount it willnot translate to different devices.",
-        "Since getCount ( ) now returns a number larger than the size of the list, the ViewPager will try to access the movie at an index greater than the array size when the user swipes past the last movie.",
-        "You set this text view a width of `` wrap_content'' it means, what ever the text is, the view take the size of the text.",
-        "Back navigation is how users move backward through the history of screens they previously visited.",
-        "So in order to get a scoped provider in a module, you need to specify the scope for your module's provider method.",
-        "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
-        "Check the user's response, whether they chose to grant or deny the runtime permission.",
-        "The magic behind this is the setTag ( ) method which lets us attach an arbitrary object onto a View object, which is how we save the already inflated View for future reuse.",
-        "Do not inset the content with any margins from the PrintAttributes as the application is responsible to render it such that the margins are respected.",
-        "You can develop these things yourself, but if you would like to use a pre-made custom view, copy LINK into your project and use it like a normal ImageView.",
-        "First, we will create an InputStreamReader that reads our request input.",
-        "You can avoid this problem by using the View Holder Pattern.",
-        "layout_gravity is the way the TextView will align itself in its parent, in your case in the vertical LinearLayout",
-        "Consider the following below: If you have a JSON object for `` Vehicle'', it could be a `` Car'' or `` Plane'', each with its own fields, some unique to the other.",
-        "Dangerous permission groups, however, can give apps access to things like your calling history, private messages, location, camera, microphone, and more.",
-        "Unscoped dependency will have simple Provider generated without any caching and any instance of that dependency created in component will be new for every new injection -LRB- as in constructor, or in module provision method, or just as a field -RRB-.",
-        "We can create a custom ListView of User objects by subclassing ArrayAdapter to describe how to translate the object into a view within that class and then using it like any other adapter.",
-        "If you would like an application icon -LRB- but I discourage it -RRB-, you can use the method setLogo -LRB- -RRB-.",
-        "As getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
-        "We use a ScaleGestureDetector on the activity to listen to touch events.",
-        "Note that in the zip function, the parameters have concrete types that correspond to the types of the observables being zipped.",
-        "gravity is the way the text will align itself in the TextView.",
-        "To read from a database, use the query ( ) method, passing it your selection criteria and desired columns.",
-        "Pin down exactly which queries you need to optimize.",
-        "Starting in Android 2.2 ( API Level 8 ), you can use the setDisplayOrientation ( ) method to set the rotation of the preview image.",
-        "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
-        "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
-        "Usually these are the following steps to create json object through the Http connection in android.",
-        "The following code snippet demonstrates how to request a permission using a request code:",
-        "If you declare any dangerous permissions, and if your app is installed on a device that runs Android 6.0 ( API level 23 ) or higher, you must request the dangerous permissions at runtime by following the steps in this guide.",
-        "The important thing to keep in mind is that fragments should not directly communicate with each other and should generally only communicate with their parent activity.",
-        "Listening for Location Updates After you invoke `` getLastLocation'', you might want to request periodic updates from the Fused Location Provider.",
-        "A Toolbar is a generalization of action bars for use within application layouts.",
-        "At that time, your app can request the runtime permission that's required for accessing that data.",
-        "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
-        "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
-        "Nothing much happening here before starting the test we create the server and start it at port 8080.",
-        "Now you need to add a Toolbar to your Activity layout file.",
-        "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
-        "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
-        "This line means: add a meta-property on serialization or read a meta-property on deserialization -LRB- include = JsonTypeInfo.As.PROPERTY -RRB- called'' @class'' -LRB- property ='' @class'' -RRB- that holds the fully-qualified Java class name -LRB- use = JsonTypeInfo.Id.CLASS -RRB-.",
-        "If you are using this class to rasterize a PDF for printing or show a print preview, it is recommended that you respect the following contract in order to provide a consistent user experience when seeing a preview and printing, i.e. the user sees a preview that is the same as the printout.",
-        "Continuous Location Access Activity Following is the complete class which accesses the Fused Location Provider to get the location continuously in the Android example application.",
-        "Open MoviesPagerAdapter.kt and create a new constant representing the large number by adding this line at the top of the file above the class definition:",
-        "You can also do it by rotating the canvas before drawing:",
-        "Next, we will create a BufferedReader that will allow us to iterate through the response.",
-        "You use them following the same basic pattern you use for other types of requests.",
-        "To do this, we need to create our own custom ArrayAdapter class.",
-        "However, in many cases, we may want to keep both fragments around in the container and simply toggle their visibility.",
-        "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the reCAPTCHA Android signup site, then complete the following sequence of steps:",
-        "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
-        "Here's a bit of code to get EXPLAIN QUERY PLAN results into Android logcat from a running Android app.",
-        "with some custome code which simply draws a drawable icon.",
-        "Then inside of the interceptor, you can verify if the request is annotated or no.",
-        "I haven't tried recording phone call's but there is a option in LINK for:",
-        "You need to have implement a LINK and declare it in the AndroidManifest.xml.",
-        "Although what you are doing is really not appropriate.",
-        "Below we place the toolbar at the top of a LinearLayout like the standard ActionBar:",
-        "If document page size is greater than the printed media size the content should be anchored to the upper left corner of the page for left-to-right locales and top right corner for right-to-left locales.",
-        "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
-        "Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
-        "If you don't declare any dangerous permissions, or if your app is installed on a device that runs Android 5.1 ( API level 22 ) or lower, the permissions are automatically granted, and you don't need to complete any of the remaining steps on this page.",
-        "The TextView being in wrap_content this does nothing, as the TextView is exactly the size of the text.",
-        "During deserialization, you would want Jackson to deserialize the `` Vehicle'' JSON object to the appropriate `` Car'' or `` Plane'' class.",
-        "and in the LinearLayout, the default gravity -LRB- used here -RRB- is ` center'",
-        "If the user granted the permission to your app, you can access the private user data.",
-        "Check whether the user has already granted the runtime permission that your app requires.",
-        "However, in the API response, we actually get a collection of business JSON in an array.",
-        "with the api 23, permission <uses-permission\u00a0android:name=\"android.pemission.READ_CONTACTS\"/> dont work, change the api level in the emulator for api 22 -LRB- lollipop -RRB- or lower",
-        "When doing so, the callbacks are invoked in the reverse order in which they are added - the callback added last is the first given a chance to handle the Back button event.",
-        "That way the PagerAdapter will keep creating pages until the page index reaches the value returned by getCount ( ).",
-        "It wasn't until I moved the * uses-permission ... READ_CONTACTS * line to outside the application tag that things worked.",
-        "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
-        "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
-        "This class implements SurfaceHolder.Callback in order to capture the callback events for creating and destroying the view, which are needed for assigning the camera preview input.",
-        "A notification can offer up to three action buttons that allow the user to respond quickly, such as snooze a reminder or even reply to a text message.",
-        "While developing for a target platform of 2.3.3 using Eclipse on Ubuntu, I had permission failures in the log file that indicated I needed this exact line while working on something similar.",
-        "Fragment Hiding vs Replace In many of the examples above, we call transaction.replace ( ... ) to load a dynamic fragment which first removes the existing fragment from the activity invoking onStop and onDestroy for that fragment before adding the new fragment to the container.",
-        "In order to change preview orientation as the user re-orients the phone, within the surfaceChanged ( ) method of your preview class, first stop the preview with Camera.stopPreview ( ) change the orientation and then start the preview again with Camera.startPreview ( ).",
-        "It is strongly recommended to use the addCallback ( ) method which takes a LifecycleOwner.",
-        "After that override getView -LRB- -RRB- method and make sure to return your custom View there.",
-        "This class enables rendering a PDF document.",
-        "The results of the query are returned to you in a Cursor object.",
-        "So really you want to replace:",
-        "This bug incorrectly sets the drawable bounds to 0 -LRB- or negative in the case of an inset drawable -RRB-.",
-        "If the user presses and holds the button, then onKeyDown ( ) is called multiple times.",
-        "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
-        "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
-        "Here is a LINK on how to record audio using the LINK.",
-        "That line draws a single event.",
-        "I'm still convinced that there are some security settings in the OS that deny the access to the contacts.",
-        "reCAPTCHA is a free service that uses an advanced risk analysis engine to protect your app from spam and other abusive actions.",
-        "Wait for the user to invoke the task or action in your app that requires access to specific private user data.",
-        "Get the data item associated with the specified position in the data set.",
-        "If it is not null then we have a recycled View and can just change its values, otherwise we need to create a new row View.",
-        "This document shows you how to use MediaRecorder to write an application that captures audio from a device microphone, save the audio, and play it back ( with MediaPlayer ).",
-        "For simplicity in rendering a camera preview, you should change your application's preview activity orientation to landscape by adding the following to your manifest.",
-        "Since the version of Retrofit 2.6.0, you can get the annotations in OkHttp Interceptor using the tag field like this:",
-        "Due to the specifics of Android threading, we can not run network tasks on the same thread as the UI thread.",
-        "Get a View that displays the data at the specified position in the data set.",
-        "I am using mic to record calls for better support and compatibility.",
-        "When scaling a document for printing the aspect ratio should be preserved.",
-        "For example, if you added three callbacks named one, two and three in order, they would be invoked in the order of three, two, and one, respectively.",
-        "You must check whether you have that permission every time you perform an operation that requires that permission.",
-        "So the correct way to do this is:",
-        "The first step when adding a `` Runtime Permission'' is to add it to the AndroidManifest:",
-        "A camera preview class is a SurfaceView that can display the live image data coming from a camera, so users can frame and capture a picture or video.",
-        "If your app needs to use resources or information outside of its own sandbox, you can declare a permission and set up a permission request that provides this access.",
-        "GoogleApiClient FusedLocationProviderApi requires the GoogleApiClient instance to get the Location and it can be obtained as below.",
-        "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
-        "I would suggest that you write your downloaded JSON out to a file and compare it with your original to see if there is a problem with the download logic.",
-        "Before using the reCAPTCHA API, you need to add the SafetyNet API to your project.",
-        "Usually, you should use onKeyUp ( ) if you want to be sure that you receive only one event.",
-        "We can do that using the @JsonTypeInfo and @JsonSubTypes annotations.",
-        "Finally, getView ( ) creates a view to be used as a row in the list.",
-        "When GCM delivers a message to your device, BroadcastReceiver will receive the message and call the onReceive -LRB- -RRB- function, wherein you may start a service to actually perform the intended task for you.",
-        "How to make a dependency injectable To make an object embeddable in Hilt, you need to tell Hilt how to instantiate that object.",
+        "Respect the property whether the document would like to be scaled for printing as per shouldScaleForPrinting ( ).",
+        "You can read more about this on the material design guidelines which state: `` The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.''",
         "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
-        "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime."
+        "In order to change preview orientation as the user re-orients the phone, within the surfaceChanged ( ) method of your preview class, first stop the preview with Camera.stopPreview ( ) change the orientation and then start the preview again with Camera.startPreview ( ).",
+        "In addittion, you can do in a Fragment -LRB- for example when getting server data failed -RRB-:",
+        "Next, you'll need to initiate the permission request and handle the result.",
+        "If you would like an application icon -LRB- but I discourage it -RRB-, you can use the method setLogo -LRB- -RRB-.",
+        "To read from a database, use the query ( ) method, passing it your selection criteria and desired columns.",
+        "Here is a LINK on how to record audio using the LINK.",
+        "When setting preview size, you must use values from getSupportedPreviewSizes ( ).",
+        "The cool thing about the new Google Recaptcha is that the validation is now completely encapsulated in the widget.",
+        "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+        "Set the audio encoder using setAudioEncoder ( ).",
+        "Now Android allows you to decide which permissions to accept on a case-by-case basis -- after the app is installed.",
+        "If you declare any dangerous permissions, and if your app is installed on a device that runs Android 6.0 ( API level 23 ) or higher, you must request the dangerous permissions at runtime by following the steps in this guide.",
+        "I am using mic to record calls for better support and compatibility.",
+        "If you don't declare any dangerous permissions, or if your app is installed on a device that runs Android 5.1 ( API level 22 ) or lower, the permissions are automatically granted, and you don't need to complete any of the remaining steps on this page.",
+        "Unscoped dependency will have simple Provider generated without any caching and any instance of that dependency created in component will be new for every new injection -LRB- as in constructor, or in module provision method, or just as a field -RRB-.",
+        "You can develop these things yourself, but if you would like to use a pre-made custom view, copy LINK into your project and use it like a normal ImageView.",
+        "That is because, when your app starts, the ViewPager displays the movie at index 0.",
+        "Wait for the user to invoke the task or action in your app that requires access to specific private user data.",
+        "The naive approach to this ( without any view caching ) looks like the following:",
+        "You can either rotate your bitmap when you draw it by using a matrix:",
+        "get a seekable file descriptor from your pdf document:",
+        "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+        "Make a Snackbar to display a message.",
+        "Beginning in Android 6.0 -LRB- API level 23 -RRB-, users grant permissions to apps while the app is running, not when they install the app.",
+        "The important thing to keep in mind is that fragments should not directly communicate with each other and should generally only communicate with their parent activity.",
+        "In Android development, any time we want to show a vertical list of scrollable items we will use a ListView which has data populated using an Adapter.",
+        "If so, your app can access the private user data.",
+        "At that time, your app can request the runtime permission that's required for accessing that data.",
+        "dataSpec.length is the length of data that the caller wants to read, or C.LENGTH _ UNSET to read to the end of the media.",
+        "Get the data item associated with the specified position in the data set.",
+        "The first step when adding a `` Runtime Permission'' is to add it to the AndroidManifest:",
+        "Set the audio source using setAudioSource ( ).",
+        "This becomes a problem specifically when seeking, because dataSpec.position will not be 0 in this case, yet your implementation will nevertheless read from the start of the media.",
+        "How to make a dependency injectable To make an object embeddable in Hilt, you need to tell Hilt how to instantiate that object.",
+        "If you are using this class to rasterize a PDF for printing or show a print preview, it is recommended that you respect the following contract in order to provide a consistent user experience when seeing a preview and printing, i.e. the user sees a preview that is the same as the printout.",
+        "Do not inset the content with any margins from the PrintAttributes as the application is responsible to render it such that the margins are respected.",
+        "Before using the reCAPTCHA API, you need to add the SafetyNet API to your project.",
+        "A Toolbar is a generalization of action bars for use within application layouts.",
+        "Here you define what information shows and where it sits within the ListView.",
+        "Pin down exactly which queries you need to optimize.",
+        "Use android: fitsSystemWindows = `` true'' in the root view of your layout -LRB- LinearLayout in your case -RRB-.",
+        "Something like this:",
+        "In your app's manifest file, declare the permissions that your app might need to request.",
+        "If the user granted the permission to your app, you can access the private user data.",
+        "Call this method, passing in the outer most ViewGroup that you want a screen shot of:",
+        "This line means: add a meta-property on serialization or read a meta-property on deserialization -LRB- include = JsonTypeInfo.As.PROPERTY -RRB- called'' @class'' -LRB- property ='' @class'' -RRB- that holds the fully-qualified Java class name -LRB- use = JsonTypeInfo.Id.CLASS -RRB-.",
+        "The following code snippet demonstrates how to request a permission using a request code:",
+        "We can do that using the @JsonTypeInfo and @JsonSubTypes annotations.",
+        "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
+        "It wasn't until I moved the * uses-permission ... READ_CONTACTS * line to outside the application tag that things worked.",
+        "Improving Performance with the ViewHolder Pattern To improve performance, we should modify the custom adapter by applying the ViewHolder pattern which speeds up the population of the ListView considerably by caching view lookups for smoother, faster item loading:",
+        "If the user presses and holds the button, then onKeyDown ( ) is called multiple times.",
+        "While developing for a target platform of 2.3.3 using Eclipse on Ubuntu, I had permission failures in the log file that indicated I needed this exact line while working on something similar.",
+        "It should hopefully be clear that if dataSpec.position is non-zero, readPosition = mediaPosition + dataSpec.position ( correct ) is going to end up reading from a different position than readPosition = mediaPosition ( incorrect ).",
+        "To be able to record, your app must tell the user that it will access the device's audio input.",
+        "Check the user's response, whether they chose to grant or deny the runtime permission.",
+        "Users can use the system settings to choose the level of detail visible in lock screen notifications, including the option to disable all lock screen notifications.",
+        "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+        "A camera preview class is a SurfaceView that can display the live image data coming from a camera, so users can frame and capture a picture or video.",
+        "I created a ViewPager that supports infinite looping effect, smart auto-scroll, compatible with any indicators and easy to use.",
+        "As getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
+        "to this approach instead leveraging add, show, and hide in the FragmentTransaction:",
+        "Finally, getView ( ) creates a view to be used as a row in the list.",
+        "layout_gravity is the way the TextView will align itself in its parent, in your case in the vertical LinearLayout",
+        "If it is not null then we have a recycled View and can just change its values, otherwise we need to create a new row View.",
+        "Then inside of the interceptor, you can verify if the request is annotated or no.",
+        "First of all your Animal class with the Json Annotations for the subclasses.",
+        "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView.",
+        "If you have a lot of string / text type data, consider creating Virtual tables using full text search -LRB- FTS3 -RRB-, which can run faster query.",
+        "We use a ScaleGestureDetector on the activity to listen to touch events.",
+        "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+        "Therefore, Android will always ask you to approve dangerous permissions.",
+        "Check out this stackoverflow for a discussion on deciding when to replace vs hide and show.",
+        "Try to check below FragmentPagerAdapter to get endless viewpager adapter:",
+        "This is designed to prevent apps from eavesdropping on telephone conversations.",
+        "Java 8 -LRB- LINK -RRB- solves this problem using streams and lambdas in one line of code:",
+        "But the easiest option is to generate java code directly and your generated java classes will be picked up by javac automatically, launching second round of annotation processing, where dagger will process them.",
+        "Here's a bit of code to get EXPLAIN QUERY PLAN results into Android logcat from a running Android app.",
+        "It is worth noting that apparently Dagger2 creates a single instance per scoped provider in a module per component.",
+        "The CompletionStage API lets programmers define pipelines of asynchronous operations for data, and handles the asynchronous behaviour for you.",
+        "I haven't tried recording phone call's but there is a option in LINK for:",
+        "To handle an individual key press, implement onKeyDown ( ) or onKeyUp ( ) as appropriate.",
+        "You may extend it from BaseAdapter.",
+        "This bug incorrectly sets the drawable bounds to 0 -LRB- or negative in the case of an inset drawable -RRB-.",
+        "If document page size is greater than the printed media size the content should be anchored to the upper left corner of the page for left-to-right locales and top right corner for right-to-left locales.",
+        "And this code snippet demonstrates the recommended process of checking for a permission, and requesting a permission from the user when necessary:",
+        "We instantiate a new LocationRequest object.",
+        "Although the icon can be added back with:",
+        "Using of rawQuery -LRB- -RRB- instead of building using ContentValues will fasten up in certain cases.",
+        "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+        "These repeated calls can seriously harm the ListView's performance, especially if your app is running on limited resources and/or you have a very large list.",
+        "The TextView being in wrap_content this does nothing, as the TextView is exactly the size of the text.",
+        "reCAPTCHA is a free service that uses an advanced risk analysis engine to protect your app from spam and other abusive actions.",
+        "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+        "with the api 23, permission <uses-permission\u00a0android:name=\"android.pemission.READ_CONTACTS\"/> dont work, change the api level in the emulator for api 22 -LRB- lollipop -RRB- or lower",
+        "You can also do it by rotating the canvas before drawing:",
+        "you should try this:",
+        "So the correct way to do this is:",
+        "GoogleApiClient FusedLocationProviderApi requires the GoogleApiClient instance to get the Location and it can be obtained as below.",
+        "PdfRenderer -- This class enables rendering a PDF document.",
+        "Javac annotation processor uses rounds instead of defining processors order.",
+        "This document shows you how to use MediaRecorder to write an application that captures audio from a device microphone, save the audio, and play it back ( with MediaPlayer ).",
+        "You can avoid this problem by using the View Holder Pattern.",
+        "Don't mess with the visibility flags of the container - FragmentTransaction.hide / show does that internally for you.",
+        "In the meantime I think that you will need to annotate your child classes with @JsonTypeInfo and @JsonSubTypes to override the inherited annotations.",
+        "Listening for Location Updates After you invoke `` getLastLocation'', you might want to request periodic updates from the Fused Location Provider.",
+        "Continuous Location Access Activity Following is the complete class which accesses the Fused Location Provider to get the location continuously in the Android example application.",
+        "it is used for the Android Music Remote control even if the App is in Lock mode.",
+        "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
+        "These are permissions that are requested while the app is running ( instead of before the app is installed ).",
+        "and in the LinearLayout, the default gravity -LRB- used here -RRB- is ` center'",
+        "That means, that the widget will take care of asking questions, validating responses all the way till it determines that a user is actually a human, only then you get a g-recaptcha-response value.",
+        "The results of the query are returned to you in a Cursor object.",
+        "When scaling a document for printing the aspect ratio should be preserved.",
+        "inject.Scope annotation - Dependencies declared with that scope with have caching Provider with double-check lock generated and only single instance will be created for it within component declared with the same scope and its creation will be thread safe.",
+        "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the reCAPTCHA Android signup site, then complete the following sequence of steps:",
+        "I would suggest that you write your downloaded JSON out to a file and compare it with your original to see if there is a problem with the download logic.",
+        "After that override getView -LRB- -RRB- method and make sure to return your custom View there.",
+        "However, in many cases, we may want to keep both fragments around in the container and simply toggle their visibility.",
+        "Consider the following below: If you have a JSON object for `` Vehicle'', it could be a `` Car'' or `` Plane'', each with its own fields, some unique to the other.",
+        "Starting with Android 8.0, users can choose to disable or enable lock screen notifications for each notification channel.",
+        "It returns View that will be displayed as your list/grid/gallary / any view that use adapter item.",
+        "Now add the following code in your PdfRenderActivity -- 7.",
+        "The following code snippet shows how to handle the permissions response:",
+        "You set this text view a width of `` wrap_content'' it means, what ever the text is, the view take the size of the text.",
+        "Check whether the user has already granted the runtime permission that your app requires.",
+        "To fix this issue, open MainActivity.kt and add the following line inside onCreate ( ) below the line where you connect the PageAdapter to the ViewPager:",
+        "Usually these are the following steps to create json object through the Http connection in android.",
+        "This class enables rendering a PDF document.",
+        "If you want to render a PDF, you create a renderer and for every page you want to render, you open the page, render it, and close the page.",
+        "Gets a View that displays in the drop down popup the data at the specified position in the data set.",
+        "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+        "The Dagger basics page explained how Dagger can help you automate dependency injection in your app.",
+        "The dataSpec argument is not defining the entire media.",
+        "This may boost your phone speed, but it will lead to delayed or no notifications from your apps.",
+        "You also inflate a custom view from the XML layout defined in res/layout/list_item_recipe.xml -- more on this in the next section.",
+        "This tells the ViewPager to display the movie found in the middle of the array.",
+        "that is done because rotation is around the top left point ( the origin ) of the view.",
+        "The magic behind this is the setTag ( ) method which lets us attach an arbitrary object onto a View object, which is how we save the already inflated View for future reuse.",
+        "gravity is the way the text will align itself in the TextView.",
+        "A typical use of the APIs to render a PDF looks like this:",
+        "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+        "So normally the simplified algorithm is like that:",
+        "To do this, we need to create our own custom ArrayAdapter class.",
+        "If your app needs to use resources or information outside of its own sandbox, you can declare a permission and set up a permission request that provides this access.",
+        "Make a Snackbar to display a message",
+        "The more indexes you have, the slower your INSERTs will be, so you will have to work out the best trade-off for your situation.",
+        "During deserialization, you would want Jackson to deserialize the `` Vehicle'' JSON object to the appropriate `` Car'' or `` Plane'' class.",
+        "You must check whether you have that permission every time you perform an operation that requires that permission.",
+        "Since the version of Retrofit 2.6.0, you can get the annotations in OkHttp Interceptor using the tag field like this:",
+        "We can create a custom ListView of User objects by subclassing ArrayAdapter to describe how to translate the object into a view within that class and then using it like any other adapter.",
+        "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
+        "So in order to get a scoped provider in a module, you need to specify the scope for your module's provider method.",
+        "It triggers when you scroll the view -LRB- list for example -RRB-.",
+        "We check if a View is recycled with if ( convertView == null ).",
+        "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
+        "So ideally we also would have an easy way of processing an array of businesses into an ArrayList of Business objects.",
+        "Those recording sources may only be used by system apps.",
+        "Dangerous permission groups, however, can give apps access to things like your calling history, private messages, location, camera, microphone, and more.",
+        "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
+        "However, in the API response, we actually get a collection of business JSON in an array.",
+        "Fragment Hiding vs Replace In many of the examples above, we call transaction.replace ( ... ) to load a dynamic fragment which first removes the existing fragment from the activity invoking onStop and onDestroy for that fragment before adding the new fragment to the container.",
+        "As you can see, there is nothing special for Cat and Dog, the only one that know about them is the abstract class Animal, so when deserializing, you'll target to Animal and the ObjectMapper will return the actual instance as you can see in the following test:",
+        "Get a View that displays the data at the specified position in the data set.",
+        "Using this approach, all three fragments will remain in the container once added initially and then we are simply revealing the desired fragment and hiding the others within the container.",
+        "Ask for permissions in context, when the user starts to interact with the feature that requires it.",
+        "It works kind of like this: The ListView asks the adapter what it should display, and the adapter jumps into action:",
+        "Starting in Android 2.2 ( API Level 8 ), you can use the setDisplayOrientation ( ) method to set the rotation of the preview image.",
+        "A reference to the parent view that this view will be a child of.",
+        "In you case, you first want to check if you such file exist before creating one.",
+        "Using a Custom ArrayAdapter When we want to display a series of items from a list using a custom representation of the items, we need to use our own custom XML layout for each item."
     ],
     "1": {
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.6174625302506146
+                0.6468614368088053
             ],
             "recall": [
-                0.6588918026418027
+                0.7061001253648312
             ],
             "fscore": [
-                0.5072412249649034
+                0.5334192177538725
             ]
         },
         "api": {
             "precision": [
-                0.6283643892339544
+                0.6666666666666666
             ],
             "recall": [
-                0.7152777777777778
+                0.7777777777777778
             ],
             "fscore": [
-                0.5766836445953594
+                0.6071428571428572
             ]
         },
         "so": {
             "precision": [
-                0.6726190476190477
+                0.7109193438140806
             ],
             "recall": [
-                0.6877622377622378
+                0.7458791208791209
             ],
             "fscore": [
-                0.5850560175560175
+                0.6471245389651462
             ]
         },
         "git": {
             "precision": [
-                0.5208333333333334
+                0.5769230769230769
             ],
             "recall": [
-                0.5882352941176471
+                0.8382352941176471
             ],
             "fscore": [
-                0.46798029556650245
+                0.536842105263158
             ]
         },
         "misc": {
             "precision": [
-                0.5541107806145401
+                0.5568093018093018
             ],
             "recall": [
-                0.6155312552371376
+                0.5718641924524277
             ],
             "fscore": [
-                0.36748940723569534
+                0.31819484010232624
             ]
         }
     },
@@ -300,35 +295,35 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.572125865756351
+                0.5490407763532764
             ],
             "recall": [
-                0.6152719493305243
+                0.5753404368863976
             ],
             "fscore": [
-                0.4844626649255369
+                0.4822285341423965
             ]
         },
         "api": {
             "precision": [
-                0.6078643578643579
+                0.5727658266035459
             ],
             "recall": [
-                0.6839114832535884
+                0.643723418394471
             ],
             "fscore": [
-                0.522709824670609
+                0.5097400033931042
             ]
         },
         "so": {
             "precision": [
-                0.6252747252747253
+                0.5848290598290599
             ],
             "recall": [
-                0.6112310308738881
+                0.5453296703296704
             ],
             "fscore": [
-                0.5871332371332372
+                0.5492424242424242
             ]
         },
         "git": {
@@ -344,13 +339,13 @@
         },
         "misc": {
             "precision": [
-                0.5054603520365653
+                0.5044057760587366
             ],
             "recall": [
-                0.5668229877307033
+                0.5465612756728879
             ],
             "fscore": [
-                0.37877436596095776
+                0.411334514629345
             ]
         }
     },
@@ -358,35 +353,35 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.5090880125931759
+                0.49923085301808584
             ],
             "recall": [
-                0.5388875487860566
+                0.5162761747371604
             ],
             "fscore": [
-                0.39308714795828203
+                0.47963271095603127
             ]
         },
         "api": {
             "precision": [
-                0.4906494435808227
+                0.48367051924203025
             ],
             "recall": [
-                0.578941053656102
+                0.5122292030097542
             ],
             "fscore": [
-                0.3351274462308082
+                0.4813604833006897
             ]
         },
         "so": {
             "precision": [
-                0.5691720779220779
+                0.5652573529411764
             ],
             "recall": [
-                0.5593774395003903
+                0.5832032266458496
             ],
             "fscore": [
-                0.5267985850309169
+                0.5733333333333333
             ]
         },
         "git": {
@@ -402,13 +397,13 @@
         },
         "misc": {
             "precision": [
-                0.4442355889724311
+                0.4565448537590787
             ],
             "recall": [
-                0.37774725274725274
+                0.4554195804195804
             ],
             "fscore": [
-                0.2995433789954338
+                0.38334043006174157
             ]
         }
     },
@@ -416,13 +411,13 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.6066948392402113
+                0.6213109243697479
             ],
             "recall": [
-                0.6355114736538541
+                0.689880937667367
             ],
             "fscore": [
-                0.4758137940490882
+                0.5594814676848575
             ]
         },
         "api": {
@@ -438,35 +433,35 @@
         },
         "so": {
             "precision": [
-                0.7454545454545455
+                0.7625
             ],
             "recall": [
-                0.6833333333333333
+                0.7333333333333334
             ],
             "fscore": [
-                0.567002442002442
+                0.6347222222222222
             ]
         },
         "git": {
             "precision": [
-                0.5126618629908104
+                0.5260714285714285
             ],
             "recall": [
-                0.5261350059737157
+                0.5603345280764636
             ],
             "fscore": [
-                0.43541083099906636
+                0.5262036692121438
             ]
         },
         "misc": {
             "precision": [
-                0.5172413793103449
+                0.5294117647058824
             ],
             "recall": [
-                0.7586206896551724
+                0.8620689655172413
             ],
             "fscore": [
-                0.37424242424242427
+                0.4755555555555556
             ]
         }
     },
@@ -474,35 +469,35 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.5085745640908285
+                0.5075504813169287
             ],
             "recall": [
-                0.5047587941062206
+                0.6291498768796564
             ],
             "fscore": [
-                0.4764704334931448
+                0.4344795323668349
             ]
         },
         "api": {
             "precision": [
-                0.5124001128425907
+                0.48393806485911756
             ],
             "recall": [
-                0.4888425925925926
+                0.6608796296296297
             ],
             "fscore": [
-                0.4717060226922511
+                0.40120431897893677
             ]
         },
         "so": {
             "precision": [
-                0.4927803577571379
+                0.5348484848484848
             ],
             "recall": [
-                0.4899081310846017
+                0.6710452945747063
             ],
             "fscore": [
-                0.46810130194399857
+                0.47087617482985006
             ]
         },
         "git": {
@@ -518,13 +513,13 @@
         },
         "misc": {
             "precision": [
-                0.5265275504637207
+                0.5020221007063113
             ],
             "recall": [
-                0.5509090909090909
+                0.5187121212121212
             ],
             "fscore": [
-                0.4961707470182046
+                0.42979738875415935
             ]
         }
     },
@@ -532,35 +527,35 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.5349104108987971
+                0.548874266796188
             ],
             "recall": [
-                0.6576444796904507
+                0.634054426980272
             ],
             "fscore": [
-                0.49867750641276015
+                0.38053128651537893
             ]
         },
         "api": {
             "precision": [
-                0.5341911764705882
+                0.5227564102564102
             ],
             "recall": [
-                0.7729895104895105
+                0.6471153846153846
             ],
             "fscore": [
-                0.4143838491083116
+                0.2687151139638636
             ]
         },
         "so": {
             "precision": [
-                0.5389108045501907
+                0.5681640636052402
             ],
             "recall": [
-                0.6545493859193912
+                0.6460344231101885
             ],
             "fscore": [
-                0.5339632562559392
+                0.42474692558083715
             ]
         },
         "git": {
@@ -576,13 +571,13 @@
         },
         "misc": {
             "precision": [
-                0.5287225777652802
+                0.5267676313133357
             ],
             "recall": [
-                0.5859062821095103
+                0.5910434790203682
             ],
             "fscore": [
-                0.4960636948770942
+                0.3818083614032487
             ]
         }
     },
@@ -590,57 +585,57 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.5856617917135186
+                0.5901598401598401
             ],
             "recall": [
-                0.5998523709156862
+                0.6360699457639746
             ],
             "fscore": [
-                0.5221013735782278
+                0.5013614745019985
             ]
         },
         "api": {
             "precision": [
-                0.5231798919124825
+                0.5402930402930404
             ],
             "recall": [
-                0.5045940170940171
+                0.5822649572649573
             ],
             "fscore": [
-                0.48454045956239095
+                0.4675480769230769
             ]
         },
         "so": {
             "precision": [
-                0.6726190476190476
+                0.6587301587301587
             ],
             "recall": [
-                0.6076923076923078
+                0.5743589743589743
             ],
             "fscore": [
-                0.5703262786596119
+                0.5310405643738977
             ]
         },
         "git": {
             "precision": [
-                NaN
+                0.5666666666666667
             ],
             "recall": [
-                NaN
+                0.6904761904761905
             ],
             "fscore": [
-                NaN
+                0.3935091277890467
             ]
         },
         "misc": {
             "precision": [
-                0.5177078076562612
+                0.5489177489177489
             ],
             "recall": [
-                0.6833508195724234
+                0.7552382690143843
             ],
             "fscore": [
-                0.48732492997198873
+                0.5445824106295476
             ]
         }
     },
@@ -648,13 +643,13 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.5119978495129396
+                0.5945048309178744
             ],
             "recall": [
-                0.524610678531702
+                0.7943455750029026
             ],
             "fscore": [
-                0.38825386545125273
+                0.5827830499922516
             ]
         },
         "api": {
@@ -670,35 +665,35 @@
         },
         "so": {
             "precision": [
-                0.5506063432835822
+                0.5744047619047619
             ],
             "recall": [
-                0.7212643678160919
+                0.8719087425983978
             ],
             "fscore": [
-                0.38907808737530103
+                0.5487190177398845
             ]
         },
         "git": {
             "precision": [
-                0.47619047619047616
+                0.6150793650793651
             ],
             "recall": [
-                0.3225806451612903
+                0.7148148148148148
             ],
             "fscore": [
-                0.3846153846153846
+                0.5883040935672514
             ]
         },
         "misc": {
             "precision": [
-                0.47058823529411764
+                0.6141304347826086
             ],
             "recall": [
-                0.3333333333333333
+                0.71875
             ],
             "fscore": [
-                0.39024390243902435
+                0.6453900709219859
             ]
         }
     },
@@ -706,35 +701,35 @@
         "run_cnt": 1,
         "overall": {
             "precision": [
-                0.5190354631768589
+                0.5290421108380234
             ],
             "recall": [
-                0.530193341845084
+                0.5550192614276314
             ],
             "fscore": [
-                0.424992315841535
+                0.4439281516732732
             ]
         },
         "api": {
             "precision": [
-                0.4951298701298701
+                0.49760765550239233
             ],
             "recall": [
-                0.4739070604424685
+                0.478299989414629
             ],
             "fscore": [
-                0.33125625625625627
+                0.3371670939632105
             ]
         },
         "so": {
             "precision": [
-                0.562296799061505
+                0.5754419191919191
             ],
             "recall": [
-                0.6519667943805875
+                0.6495579133510168
             ],
             "fscore": [
-                0.506704458341142
+                0.5021624034229076
             ]
         },
         "git": {
@@ -750,13 +745,13 @@
         },
         "misc": {
             "precision": [
-                0.47804905239687845
+                0.4908768536428111
             ],
             "recall": [
-                0.4038194444444444
+                0.48993055555555554
             ],
             "fscore": [
-                0.39616016167740303
+                0.4633378317588843
             ]
         }
     }
