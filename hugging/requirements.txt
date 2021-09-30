@@ -1,8 +1,11 @@
-tensorflow-gpu
+tensorflow-gpu==2.3.0
 transformers
 scikit-learn==0.23.0
 tqdm
-pandas
+pandas==1.0.3
 python-Levenshtein
 path
 colorama
+pipdeptree
+matplotlib
+seaborn
