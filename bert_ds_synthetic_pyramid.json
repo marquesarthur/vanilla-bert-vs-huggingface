@@ -1,0 +1,1147 @@
+{
+    "0": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5476986967182789
+            ],
+            "recall": [
+                0.561985315161719
+            ],
+            "fscore": [
+                0.43575631183352304
+            ]
+        },
+        "api": {
+            "precision": [
+                0.5516650986365605
+            ],
+            "recall": [
+                0.4804196333888805
+            ],
+            "fscore": [
+                0.27162536692557593
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5932539682539683
+            ],
+            "recall": [
+                0.5971014492753624
+            ],
+            "fscore": [
+                0.5606615606615607
+            ]
+        },
+        "git": {
+            "precision": [
+                0.514823717948718
+            ],
+            "recall": [
+                0.6140151515151515
+            ],
+            "fscore": [
+                0.48281648712179304
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5082743662660238
+            ],
+            "recall": [
+                0.5388469594106602
+            ],
+            "fscore": [
+                0.36546920821114365
+            ]
+        }
+    },
+    "venn_diagram_set": [
+        "",
+        "Stop using battery & phone optimizing apps Most phone and battery optimizing apps close all the background processes to free up RAM and put less load on the phone.",
+        "Use the addTrack ( ) method to mix multipe tracks together.",
+        "Such instructions are called bindings ...",
+        "Defining the Adapter Next, we need to define the adapter to describe the process of converting the Java object to a View ( in the getView method ).",
+        "The ActivityResultCallback defines how your app handles the user's response to the permission request.",
+        "If the user granted the permission to your app, you can access the private user data.",
+        "2 - Create MarkerView",
+        "The TextView being in wrap_content this does nothing, as the TextView is exactly the size of the text.",
+        "If the device is running Android 6.0 or higher, and your app's target SDK is 23 or higher: The app has to list the permissions in the manifest, and it must request each dangerous permission it needs while the app is running.",
+        "Continuous Location Access Activity Following is the complete class which accesses the Fused Location Provider to get the location continuously in the Android example application.",
+        "3 - Create the tvContent view",
+        "To overcome this, I have created a custom ViewPager -LRB- based on LINK -RRB- that calculates it's height in the required manner.",
+        "If you don't directly own the AnalyticsService class, you can tell Hilt how to provide instances of this type by creating a function inside a Hilt module and annotating that function with @Provides.",
+        "The constructor of the superclass requires a FragmentManager, thus your custom PagerAdapter needs it as well.",
+        "Merely wrapping blocking code in a Flowable doesn't magically add concurrency.",
+        "Instead of that you directly create the json object from string buffer.",
+        "Table 2 describes the UI features you can customize.",
+        "The FragmentManager class and the FragmentTransaction class allow you to add, remove and replace fragments in the layout of your activity at runtime.",
+        "and successfully create a Business with Business.fromJson ( json ).",
+        "Check whether the location retrieved is significantly newer than the previously fetched location.",
+        "Returns the value mapped by name if it exists and is a JSONArray, or throws otherwise.",
+        "Set the interval to 20 seconds ( 20000 milliseconds ).",
+        "Our first step here is to initiate the connection.",
+        "Users can use the system settings to choose the level of detail visible in lock screen notifications, including the option to disable all lock screen notifications.",
+        "We use a ScaleGestureDetector on the activity to listen to touch events.",
+        "Returns the value mapped by name, or throws if no such mapping exists.",
+        "All Android devices provide a Back button for this type of navigation, so you should not add a Back button to your app's UI.",
+        "The following code sample shows a typical use, with an XML layout and code to modify the contents of the text view:",
+        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or fallback otherwise.",
+        "For good practice, I'll make these constants as well.Now that we have set our timeouts, request method, and connected ( attempted anyway ), we are going to create a Stringbuilder and InputStreamReader to read our input from the API.",
+        "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView.",
+        "We can create a custom ListView of User objects by subclassing ArrayAdapter to describe how to translate the object into a view within that class and then using it like any other adapter.",
+        "Summary There are a lot of choices for HTTP clients in Java - for simple cases I would recommend the built-in java.net.http.HttpClient.",
+        "When setting preview size, you must use values from getSupportedPreviewSizes ( ).",
+        "LocationListener provides call back for location change through onLocationChanged.",
+        "A notification can offer up to three action buttons that allow the user to respond quickly, such as snooze a reminder or even reply to a text message.",
+        "The only real way of securing your data is by asking your user for a password, besides doing all the work I wrote about above.",
+        "Because the interface that generates the graph is annotated with @Component, you can call it ApplicationComponent or ApplicationGraph.",
+        "One of your classes implements a subclass ContentProvider, which is the interface between your provider and other applications.",
+        "For simplicity in rendering a camera preview, you should change your application's preview activity orientation to landscape by adding the following to your manifest.",
+        "In your app's manifest file, declare the permissions that your app might need to request.",
+        "In the case of a GET request, we only need to catch IOException.",
+        "A DPC must allowlist apps before they can be used in lock task mode.",
+        "@ 2-4601 The only manager that I have allow me to specify if an app can send push notification to the notifications bar ( options = Not authorized/Authorized/Notify ) also if an app is authorized to startup with android and if an app is allowed l working when the screen is locked ( for battery saving ).",
+        "Skip all the expensive inflation steps and just get the holder you already made.",
+        "You need not give permission for GPS, Network providers.",
+        "Use this to benchmark any gains as you optimize.",
+        "I usually call this code from `` onCreate'' method of the activity:",
+        "Starting with Android 8.0 ( API level 26 ) you can use a MediaMuxer to record multiple simultaneous audio and video streams.",
+        "Hilt provides a standard way to use DI in your application by providing containers for every Android class in your project and managing their lifecycles automatically.",
+        "and dont forget to set scaleType property to matrix of ImageView tag like:",
+        "Those recording sources may only be used by system apps.",
+        "Your new class extends FragmentStatePagerAdapter.",
+        "You have to rotate the canvas first and then draw whatever you want.",
+        "To fix this issue, open MainActivity.kt and add the following line inside onCreate ( ) below the line where you connect the PageAdapter to the ViewPager:",
+        "A Dagger module is a class that is annotated with @Module.",
+        "To allow the system to manage the request code that's associated with a permissions request, add dependencies on the following libraries in your module's build.gradle file:",
+        "If we need two different objects of the same return type, we can use the @Named qualifier annotation.",
+        "Methods added to API set whether or not a notification is displayed on the lock screen ( setVisibility ( ) ) and for specifying `` public'' version of the notification text.",
+        "You also can not constructor-inject a type that you do not own, such as a class from an external library.",
+        "I'm still convinced that there are some security settings in the OS that deny the access to the contacts.",
+        "Android uses this pattern in their Contacts-App.",
+        "To create instances of subcomponents, you need an instance of the parent component.",
+        "Use android: fillViewport = `` true'' in ScrollView",
+        "Check the Accept the reCAPTCHA Terms of Service checkbox, then click Register.",
+        "EXAMPLE:",
+        "Returns the value mapped by name if it exists, coercing it if necessary, or throws if no such mapping exists.",
+        "Instead, it should use the mock server's URL.",
+        "The ArrayAdapter fits in between an ArrayList ( data source ) and the ListView ( visual representation ) and configures two aspects:",
+        "If you would like an application icon -LRB- but I discourage it -RRB-, you can use the method setLogo -LRB- -RRB-.",
+        "Dependencies that you provide in Hilt modules are available in all generated components that are associated with the Android class where you install the Hilt module.",
+        "I have used Volley library here.",
+        "Beginning in Android 6.0 -LRB- API level 23 -RRB-, users grant permissions to apps while the app is running, not when they install the app.",
+        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or 0 otherwise.",
+        "When a list item is scrolled off the screen, RecyclerView reuses that view for the next list item about to be displayed.",
+        "The problem in the first case is that Dagger is overeager to use a single static factory instance for generating instances of scoped generic classes.",
+        "The first step when adding a `` Runtime Permission'' is to add it to the AndroidManifest:",
+        "Normal Permissions When you need to add a new permission, first check this page to see if the permission is considered a PROTECTION_NORMAL permission.",
+        "You simply override the onOptionsItemSelected method in your `` child'' activity and check for the id of the back button which is android.R.id.home.",
+        "Checking for permissions before performing privileged actions seems fine to me.",
+        "Although content providers are meant to make data available to other applications, you may of course have activities in your application that allow the user to query and modify the data managed by your provider.",
+        "If the user denies or revokes a permission that a feature needs, gracefully degrade your app so that the user can continue using your app, possibly by disabling the feature that requires the permission.",
+        "As you can read LINK:",
+        "You can call KeyguardManager methods to find out if the device is locked and use an Activity lifecycle callback ( such as onResume ( ) that's called after unlocking ) to start lock task mode.",
+        "Kapt LINK to run annotation processors.",
+        "It introduced the concept of runtime permissions.",
+        "Usually, you should use onKeyUp ( ) if you want to be sure that you receive only one event.",
+        "Note that the activities, services, or fragments that are allowed to request the dependencies declared by the modules ( by means of the @Inject annotation ) should be declared in this class with individual inject ( ) methods:",
+        "Note: Please, set HttpClient of your code -LRB- e.g. AsyncHttpClient -RRB- with that number port for testing purpose.",
+        "A provider is a factory function that returns an instance of an object.",
+        "This way when the app later needs the WRITE_CONTACTS permission, Android can automatically grant this itself without prompting the user.",
+        "Now you can fire the method NavUtils.navigateUpFromSameTask -LRB- this -RRB- ; BUT if you don't have specified the android: parentActivityName in you AndroidManifest.xml this will crash your app.",
+        "Unlike Dagger modules, you must annotate Hilt modules with @InstallIn to tell Hilt which Android class each module will be used or installed in.",
+        "Can you imagine something more readable ?",
+        "If you are using onBackPressed ( ) to handle Back button events, we recommend using a OnBackPressedCallback instead.",
+        "Dependent components require the parent component to explicitly list out what dependencies can be injected downstream, while subcomponents do not.",
+        "While developing for a target platform of 2.3.3 using Eclipse on Ubuntu, I had permission failures in the log file that indicated I needed this exact line while working on something similar.",
+        "The easiest way to simulate network issues with MockWebServer is by setting the SocketPolicy to SocketPolicy.DISCONNECT _ AT_START, SocketPolicy.NO _ RESPONSE or etc:",
+        "Example Android Application to Get Location Download Following is an example Android application that shows how to get the current user location.",
+        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or fallback otherwise.",
+        "Using of rawQuery -LRB- -RRB- instead of building using ContentValues will fasten up in certain cases.",
+        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or false otherwise.",
+        "Each group contains multiple permissions, and approving a single permission from any group automatically approves all other permissions within that same group.",
+        "Modules are a way to semantically encapsulate information on how to provide objects.",
+        "Both methods have the same return type, but the qualifiers label them as two different bindings:",
+        "That is because, when your app starts, the ViewPager displays the movie at index 0.",
+        "Users should know which actions might require them to grant permission for your app to access private user data.",
+        "After that, extend the class AsyncTask.",
+        "On most devices, the default orientation of the camera preview is landscape.",
+        "This class previews the live images from the camera.",
+        "Client will use this passcode to encrypt user's email ID and send to the server.",
+        "So in order to get a scoped provider in a module, you need to specify the scope for your module's provider method.",
+        "As Toolbar is just a ViewGroup and can be styled and positioned like any other view.",
+        "Any standard layout that might extend beyond the bounds of its container should be nested in a ScrollView to provide a scrollable view that's managed by the framework.",
+        "java",
+        "If the user denied the permission instead, gracefully degrade your app experience so that it provides functionality to the user, even without the information that's protected by that permission.",
+        "I gave all authorizations but the pictures/names/phone numbers stil flickering.",
+        "With this method in place, we could take a single business JSON dictionary such as:",
+        "Beginning with Android 5.0, notifications can appear on the lock screen.",
+        "Of course there are some obfuscating approaches, like ProGuard that you should use, but they wouldn't stop a determined hacker to find our private key in our code.",
+        "All I did was create a counter for the number of calls I'm going to do, then each async result calls ready -LRB- -RRB- -LRB- be sure to do this on the failure methods too, unless you're going to do something different -RRB-",
+        "it is very simple: `` matrix.postrotate ( rotation )''.",
+        "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+        "Specifically, use the fused location provider to retrieve the device's last known location.",
+        "To check if the user has already granted your app a particular permission, pass that permission into the ContextCompat.checkSelfPermission ( ) method.",
+        "EDIT: When using Zip, make sure that the Observables being zipped all emit the same number of items.",
+        "If it finds one, it assigns the references to the respective fields.",
+        "Javac annotation processor uses rounds instead of defining processors order.",
+        "There are two types of standard PagerAdapters that manage the lifecycle of each fragment: FragmentPagerAdapter and FragmentStatePagerAdapter.",
+        "A good implementation that never crashes your app would be:",
+        "In most of your interaction with the permission API's you'll be working with the individual permissions and not the permission groups, but pay close attention to what the API expects as both permissions and permission groups are Strings.",
+        "However, we will need to begin by configuring the build script and adding Google Play Services as a dependency for this application.",
+        "Note: With the introduction of the Multi-Window feature in Android 7.0 ( API level 24 ) and higher, you can no longer assume the aspect ratio of the preview is the same as your activity even after calling setDisplayOrientation ( ).",
+        "createAsync ( ) method returns a Future.",
+        "If during the transmission of the data someone gets access to the transmitting data, he / she wouldn't be able to make sense of it as it is encrypted.",
+        "Instead, as the user scrolls through the list, items that leave the screen are kept in memory for later use and then every new row that enters the screen reuses an older row kept around in memory.",
+        "The system disables any features you don't include in the flags argument.",
+        "it is used for the Android Music Remote control even if the App is in Lock mode.",
+        "PagerAdapter is an abstract class, so you will have an instance of one of its subclasses ( FragmentPagerAdapter and FragmentStatePagerAdapter ) rather than an instance of the PagerAdapter itself.",
+        "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
+        "when you press the rotate button, each of the images is rotated around its center, while maintaining its position in the center of the region on the screen.",
+        "Returns the value mapped by name, or null if no such mapping exists.",
+        "They are not mutually exclusive: in many cases, a class is both injectable and has dependencies.",
+        "Contacts Allows apps to read, create, or edit your contact list, as well as access the list of all accounts ( e.g., Facebook, Instagram, Twitter, etc. ) used on your device.",
+        "It wasn't until I moved the * uses-permission ... READ_CONTACTS * line to outside the application tag that things worked.",
+        "Make a Snackbar to display a message.",
+        "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
+        "Layouts query the preferred size of their nodes by invoking the prefWidth ( height ) and prefHeight ( width ) methods.",
+        "Due to the specifics of Android threading, we can not run network tasks on the same thread as the UI thread.",
+        "Here's a bit of code to get EXPLAIN QUERY PLAN results into Android logcat from a running Android app.",
+        "Location Interface Implementations for Callbacks The following interfaces should be implemented to get the location update.",
+        "The system displays a runtime permission prompt, such as the one shown on the permissions overview page.",
+        "Permission Groups Permission Groups avoids spamming the user with a lot of permission requests while allowing the app developer to only request the minimal amount of permissions needed at any point in time.",
+        "In order to change preview orientation as the user re-orients the phone, within the surfaceChanged ( ) method of your preview class, first stop the preview with Camera.stopPreview ( ) change the orientation and then start the preview again with Camera.startPreview ( ).",
+        "We can do that using the @JsonTypeInfo and @JsonSubTypes annotations.",
+        "Every time the flow builder calls emit, it suspends until the element is completely processed.",
+        "Then in our `` onStart'' method we call the `` connect'' method and wait for `` onConnected'' callback method be invoked:",
+        "To request one of the many permissions, simply specify it in the AndroidManifest.xml: For example, an application that needs to read the user's contacts would add the following to it's AndroidManifest.xml:",
+        "Right now the infinite scrolling works only when the user navigates forward through the array ( swipes left ).",
+        "Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
+        "Build a Preview Layout - Once you have the camera preview class, create a view layout that incorporates the preview and the user interface controls you want.",
+        "For activities specifically, any initialization code needs to go into the onCreate ( ) method.",
+        "I am using mic to record calls for better support and compatibility.",
+        "If your app needs to use resources or information outside of its own sandbox, you can declare a permission and set up a permission request that provides this access.",
+        "Since the version of Retrofit 2.6.0, you can get the annotations in OkHttp Interceptor using the tag field like this:",
+        "This can make the transition between pages fast and smooth, but it could cause memory issues in your app if you need many fragments.",
+        "The InteractiveChart sample supports both scrolling ( panning ) and scaling with multiple fingers, using the ScaleGestureDetector `` span'' ( getCurrentSpanX/Y ) and `` focus'' ( getFocusX/Y ) features:",
+        "Now Android allows you to decide which permissions to accept on a case-by-case basis -- after the app is installed.",
+        "The following code snippet shows how to handle the permissions response:",
+        "You use them following the same basic pattern you use for other types of requests.",
+        "1 - Enable touch in the chart",
+        "In Android 9.0 or higher when lock task mode is enabled, your DPC can enable certain system UI features on the device -- useful to developers creating a custom launcher.",
+        "A binding's scope must match the scope of the component where it is installed, so in this example you must install AnalyticsService in SingletonComponent instead of ActivityComponent:",
+        "If so, your app can access the private user data.",
+        "If you use an ordering predicate -LRB- <, < =, > etc -RRB- then that needs to be in the last used column of the index.",
+        "Now you can enable the back button in the onCreate method of your `` child'' activity.",
+        "Make a Snackbar to display a message",
+        "Accessing Google APIs To access Google APIs, we just need to perform one more step: create an instance of GoogleApiClient.",
+        "The Intent constructor takes two parameters, a Context and a Class.",
+        "and then you can use the FragmentManager to create a FragmentTransaction which allows us to add fragments to the FrameLayout at runtime:",
+        "First, the ViewPager asks the PagerAdapter how many movies are in the array by calling getCount ( ).",
+        "Getting a bitmap cache from a layout or a view by doing something like First you got ta setDrawingCacheEnabled to a layout -LRB- a linearlayout or relativelayout, or a view -RRB-",
+        "A Toolbar is a generalization of action bars for use within application layouts.",
+        "By default, UI controls compute default values for their preferred size that is based on the content of the control.",
+        "So ideally we also would have an easy way of processing an array of businesses into an ArrayList of Business objects.",
+        "Sets the horizontal alignment of the text and the vertical gravity that will be used when there is extra space in the TextView beyond what is required for the text itself.",
+        "In your case, you can add Retrofit and OkHttp dependency in app's build.gradle.",
+        "You might have heard about this subscribeOn ( ) operator and how it enables concurrency.",
+        "Returns the value mapped by name if it exists and is an int or can be coerced to an int, or throws otherwise.",
+        "Capture and Save Files - Setup the code for capturing pictures or videos and saving the output.",
+        "First, we will create an InputStreamReader that reads our request input.",
+        "Potentially dangerous permissions to look out for Anyone concerned about their privacy and security should keep an eye out for apps that request access to following nine permission groups.",
+        "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+        "This method returns either PERMISSION_GRANTED or PERMISSION_DENIED, depending on whether your app has the permission.",
+        "Server will, in turn, use the same passcode to decrypt the data received from the client.",
+        "Grab a copy of a typical database and use the REPL to time queries.",
+        "Instead of changing implementation to api ( Not Recommended ), you can add dependencies of missing libraries in app's build.gradle and rebuild the project.",
+        "When using the verifyWithRecaptcha ( ) method in your app, you must do the following:",
+        "You can either rotate your bitmap when you draw it by using a matrix:",
+        "This is designed to prevent apps from eavesdropping on telephone conversations.",
+        "Set the view Marker in the chart",
+        "For each row, you can read a column's value by calling one of the Cursor get methods, such as getString ( ) or getLong ( ).",
+        "When the ViewPager needs to display a fragment, it initiates a chat with the PagerAdapter.",
+        "Make sure you add it outside of the application tag.",
+        "In rare cases, you can set the volume of an audio stream programmatically.",
+        "The ViewPager usually displays the `` pages'' using fragment instances, but it can also work with simple views such as ImageView if you want to display static content.",
+        "So normally the simplified algorithm is like that:",
+        "This way, after you divide pagerAdapter.count by 2, pagerAdapter.count % movies.size = 0 ( which is the first index that the ViewPager asks for when the app starts ).",
+        "Since getCount ( ) now returns a number larger than the size of the list, the ViewPager will try to access the movie at an index greater than the array size when the user swipes past the last movie.",
+        "You are using the AppCompat version 21 + and it is normal.",
+        "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+        "This will ensure that the ViewPager doesn't request the element at an index larger than movies.size because the remainder after you divide the position by movies.size will always be greater than or equal to 0 and less than movies.size.",
+        "All that remains now is to implement the callback method to satisfy the LocationListener interface:",
+        "Injection will also require these named annotations too:",
+        "Zipping a list of observables is also possible, either directly:",
+        "In Android, scrolling is typically achieved by using the ScrollView class.",
+        "Next, modify teardown ( ) to stop the server:",
+        "Back navigation is how users move backward through the history of screens they previously visited.",
+        "To be able to record, your app must tell the user that it will access the device's audio input.",
+        "You can and should hide away this data preparation in a separate Datasource class that prepares the data for the app.",
+        "By default the system places menu items into the overflow area that is only revealed when the user selects the three dot icon or more generally the action overflow icon.",
+        "To do so, include the request code in a call to requestPermissions ( ).",
+        "The following code snippet illustrates the request and a simple handling of the response:",
+        "The fused location provider is one of the location APIs in Google Play services.",
+        "In the meantime I think that you will need to annotate your child classes with @JsonTypeInfo and @JsonSubTypes to override the inherited annotations.",
+        "This also continuously updates the location on the move.",
+        "However, Power Saver mode disables an important feature of the phone i.e. data syncing.",
+        "Well we can put some kind of encryption into our requests, for example using RSA we can have a private key, put it into the application, and encrypt the requests.",
+        "When the reCAPTCHA API executes the onSuccess ( ) method, the user has successfully completed the CAPTCHA challenge.",
+        "However, in the API response, we actually get a collection of business JSON in an array.",
+        "The user can grant or deny each permission, and the app can continue to run with limited capabilities even if the user denies a permission request.",
+        "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
+        "This may boost your phone speed, but it will lead to delayed or no notifications from your apps.",
+        "This code sample demonstrates how to modify the contents of the text view defined in the previous XML layout:",
+        "The results of the query are returned to you in a Cursor object.",
+        "For example, don't assume that permissions appear in the same permission group.",
+        "Next, you'll create an instance of MockWebServer.",
+        "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+        "GoogleApiClient FusedLocationProviderApi requires the GoogleApiClient instance to get the Location and it can be obtained as below.",
+        "MockWebServer makes it possible to easily test how your apps behave when making HTTP/HTTPS calls.",
+        "Check the user's response, whether they chose to grant or deny the runtime permission.",
+        "Calling inject ( ) will cause Dagger 2 to locate the singletons in the dependency graph to try to find a matching return type.",
+        "Tap on the Apply button to apply this heartbeat interval and you should start receiving notifications in time.",
+        "Finally, we set the priority to `` PRIORITY_HIGH_ACCURACY'', among the other available priority options: PRIORITY_BALANCED_POWER_ACCURACY, PRIORITY_LOW_POWER, PRIORITY_NO_POWER.",
+        "the code in onclick finds the two views in its layout and sets properties that control the amount of rotation, size of the bitmap, and x and y offsets.",
+        "Therefore, Android will always ask you to approve dangerous permissions.",
+        "Depending on the window size and aspect ratio, you may may have to fit a wide camera preview into a portrait-orientated layout, or vice versa, using a letterbox layout.",
+        "with the api 23, permission <uses-permission\u00a0android:name=\"android.pemission.READ_CONTACTS\"/> dont work, change the api level in the emulator for api 22 -LRB- lollipop -RRB- or lower",
+        "Create a Preview Class - Create a camera preview class that extends SurfaceView and implements the SurfaceHolder interface.",
+        "Pass in your API site key as a parameter.",
+        "Returns the value mapped by name if it exists, coercing it if necessary, or the empty string if no such mapping exists.",
+        "The two files are automatically merged together when activity_main.xml is loaded.",
+        "The second method is more useful if you are also doing plain HTTP requests, where everyone can see the parameters being sent.",
+        "With that in place, we can now pass an JSONArray of business json data and process that easily into a nice ArrayList object for easy use in our application with Business.fromJson ( myJsonArray ).",
+        "Fragments should be modular, standalone and reusable components.",
+        "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
+        "You can also do it by rotating the canvas before drawing:",
+        "The contract class allows you to use the same constants across all the other classes in the same package.",
+        "that is done because rotation is around the top left point ( the origin ) of the view.",
+        "Once you have defined how your database looks, you should implement methods that create and maintain the database and tables.",
+        "Now replace the return movies.size line inside getCount ( ) with this:",
+        "The ViewModel needs to implement the callback now.",
+        "The SQLiteOpenHelper class contains a useful set of APIs for managing your database.",
+        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or 0 otherwise.",
+        "You can define any number of custom scope annotations in your application by declaring them as a public @interface:",
+        "For developing a customized camera feature, check out the Building a Camera App section.",
+        "It's common to use scroller objects in conjunction with a fling gesture, but they can be used in pretty much any context where you want the UI to display scrolling in response to a touch event.",
+        "The parent waits for each child callback to complete, then fires off it's own handleSuccess -LRB- -RRB-.",
+        "You may find it helpful to create a companion class, known as a contract class, which explicitly specifies the layout of your schema in a systematic and self-documenting way.",
+        "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+        "Hilt is a dependency injection library for Android that reduces the boilerplate of doing manual dependency injection in your project.",
+        "Request the runtime permission that your app requires in order to access the private user data.",
+        "Fragment Listener If a fragment needs to communicate events to the activity, the fragment should define an interface as an inner type and require that the activity must implement this interface:",
+        "This is a stateful intermediate operation.",
+        "Therefore, the objects provided by the parent component to the subcomponent are still scoped to the parent component.",
+        "For each of the get methods, you must pass the index position of the column you desire, which you can get by calling getColumnIndex ( ) or getColumnIndexOrThrow ( ).",
+        "My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.",
+        "Using both WHERE predicates and ORDER BY both require an index and SQLite can only use one, so that can be a point where performance suffers.",
+        "Specify a URL and receive a raw string in response.",
+        "Using the field annotation does overcome it, but may be considered a workaround.",
+        "reCAPTCHA is a free service that uses an advanced risk analysis engine to protect your app from spam and other abusive actions.",
+        "In essence, because Hilt aggregates your modules into your root app Gradle project where Dagger generates the component implementation and because such code generated references all of your binding types in other modules, then the root app Gradle project must have visibility in its classpath to all of those other Gradle modules where you define Dagger modules along with its dependencies if they are used in those Dagger modules.",
+        "with some custome code which simply draws a drawable icon.",
+        "What if there was an encryption technique where the algorithm would generate a key pair for you comprising of 2 keys.",
+        "If we define a defaultImpl class as a catch-all for unknown types, deserialization fails for any protocol objects that contain other protocol objects if the reference to those objects is null.",
+        "Applications often need to directly set the minimum, preferred, and maximum size constraints on controls.",
+        "A content provider manages access to a central repository of data.",
+        "Returns the value mapped by name if it exists and is a long or can be coerced to a long, or throws otherwise.",
+        "There, you can define dependencies with the @Provides annotation.",
+        "If the user presses and holds the button, then onKeyDown ( ) is called multiple times.",
+        "You can inject the specific type that you need by annotating the field or parameter with the corresponding qualifier:",
+        "Introducing the ViewPager Adding a ViewPager to the UI will allow the users to move forward or backward through the movies by swiping across the screen.",
+        "We can create the basic empty adapter and holder together in ContactsAdapter.java as follows:",
+        "Next, you'll need to initiate the permission request and handle the result.",
+        "Have you checked RemoteControlClient ?",
+        "So no need to implement your async tasks.",
+        "Use:",
+        "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+        "Instantiating the component We should do all this work within a specialization of the Application class since these instances should be declared only once throughout the entire lifespan of the application:",
+        "and in the LinearLayout, the default gravity -LRB- used here -RRB- is ` center'",
+        "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+        "You can also control concurrency, which means coordinating the execution of several coroutines declaratively with Flow.",
+        "In this case, you want to add a `` placeholder'' container ( usually a FrameLayout ) to your activity where the fragment is inserted at runtime:",
+        "To invoke the SafetyNet reCAPTCHA API, you call the verifyWithRecaptcha ( ) method.",
+        "Not sure this is very `` realm'' friendly since I'm new to Android development but I thought this worked actually pretty well.",
+        "Currently the recommended API for making screenshots is the LINK class available from API 24 -LRB- but the methods which accept Window parameter are available from API 26 == Android 8.0 Oreo -RRB-.",
+        "That means you can not use the @Inject annotation in the constructor of the class ( constructor injection ) as you did in the previous examples.",
+        "A lot of these background processes sync data and deliver notifications.",
+        "To ensure that volume controls adjust the correct stream, you should call setVolumeControlStream ( ) passing in the stream type matching your attributes that you can retrieve from AudioAttributes.getVolumeControlStream.",
+        "So in a nutshell, when you run your test MockWebServer intercepts your network call providing you with the data you mock data.Why?So it comes down to this.",
+        "The following code snippet demonstrates how to request a permission using a request code:",
+        "The system passes in the user response to the permission dialog, as well as the request code that you defined, as shown in the following code snippet:",
+        "Select the respective app, make sure `` Restrict app background data'' feature is turned off.",
+        "So really you want to replace:",
+        "You will connect your Fragment instances with the ViewPager using a PagerAdapter, which is an object that sits between the ViewPager and the data set containing the information you want the ViewPager to display ( in this case the movies array ).",
+        "Once they are disabled, you would not be able to receive any updates from the installed apps unless you open them or they have a feature to automatically turn on.",
+        "If you do not want the size of a node to change, set the minimum, maximum, and preferred sizes to the same size.",
+        "Note that in the zip function, the parameters have concrete types that correspond to the types of the observables being zipped.",
+        "Use LINK to modify the collection in place.",
+        "Starting in Android 2.2 ( API Level 8 ), you can use the setDisplayOrientation ( ) method to set the rotation of the preview image.",
+        "I don't know if it's useful, but you can simulate a timeout with MockWebServer:",
+        "If you have a lot of string / text type data, consider creating Virtual tables using full text search -LRB- FTS3 -RRB-, which can run faster query.",
+        "If you don't declare any dangerous permissions, or if your app is installed on a device that runs Android 5.1 ( API level 22 ) or lower, the permissions are automatically granted, and you don't need to complete any of the remaining steps on this page.",
+        "The `` onConnected'' method will look like this:",
+        "If your app can not communicate with the reCAPTCHA service successfully, it may be because the API is encountering an error.",
+        "Pin down exactly which queries you need to optimize.",
+        "If you create enough items and scroll through the list, the views will be recycled and far smoother by default than the ListView widget:",
+        "The full implementation to our HTTP GET request is complete.Step 3: SummarizeWe've gone through and implemented, step by step, the process of creating an asynchronous HTTP GET request in Java, using Android's AsyncTask class.",
+        "-LSB- full code on GitHub -RSB- Apache provides several more examples for sync and async requests.",
+        "It works kind of like this: The ListView asks the adapter what it should display, and the adapter jumps into action:",
+        "So the first thing you should do its to create your custom adapter.",
+        "Leaving the base or common implementation without a qualifier is error-prone and could result in Hilt injecting the wrong dependency.",
+        "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the reCAPTCHA Android signup site, then complete the following sequence of steps:",
+        "Returns the value mapped by name if it exists, coercing it if necessary, or fallback if no such mapping exists.",
+        "Check whether the user has already granted the runtime permission that your app requires.",
+        "Java",
+        "However, there are a few cases where your app might need to implement its own Back behavior in order to provide the best possible user experience.",
+        "Next, we will be setting our request method, read and connection timeouts.",
+        "Ask for permissions in context, when the user starts to interact with the feature that requires it.",
+        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or throws otherwise.",
+        "This method also deletes ongoing notifications.",
+        "Fragments communicate through their parent activity allowing the activity to manage the inputs and outputs of data from that fragment coordinating with other fragments or activities.",
+        "Only when the user explicitly launches the app it is put in a state where the receivers get fired.",
+        "If your expected response is one of these types, you probably don't have to implement a custom request.",
+        "-LSB- full code on GitHub -RSB- Handling Errors in CompletionStages If any exceptions are thrown in your asynchronous code, the CompletionStage API will catch them and let you handle them in a few different ways.",
+        "Before Marshmallow, permissions were handled at install-time and specified in the AndroidManifest.xml within the project.",
+        "If the permission you need to add isn't listed under the normal permissions, you'll need to deal with `` Runtime Permissions''.",
+        "Here, http://127.0.0.1 is the local URL of your computer and 8080 is the port MockWebServer will use.",
+        "For scaling, Android provides ScaleGestureDetector.",
+        "Normally, the Android OS prohibits apps from accessing each other's files -LRB- i.e. databases, preference files, regular files stored in the app's private directory -RRB- through proven Linux file permissions.",
+        "In particular, your app should make users aware of the features that don't work because of the missing permission.",
+        "Stream API can iterate over Collections in a very straightforward manner.",
+        "Create a file named MockTestRunner.kt in the androidTest folder and add the following code to it:",
+        "If you forget to add this line, you will likely see an error about an injection target missing.",
+        "To find duplicate dependencies or its required dependencies, you can visualize library dependencies in tree.",
+        "In Marshmallow, Google has designated certain permissions to be `` safe'' and called these `` Normal Permissions''.",
+        "A camera preview class is a SurfaceView that can display the live image data coming from a camera, so users can frame and capture a picture or video.",
+        "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+        "Check permissions before calling Contacts.getAll ( )",
+        "The newApplication method provides the application instance you'll use in the test.",
+        "The following example code demonstrates how to create a basic camera preview class that can be included in a View layout.",
+        "An adapter loads the information to be displayed from a data source, such as an array or database query, and creates a view for each item.",
+        "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
+        "These permission can then be allowed or denied by the user.",
+        "For more complex use-cases or if you want to have your HTTP APIs abstracted as Java classes as part of a larger application look at Retrofit or Feign.",
+        "getLastLocation ( GoogleApiClient ) this API should be used when there is no need for continuous access to location from an application.",
+        "This is happening because FusedLocationProviderApi deprecated in a recent version of google play services.",
+        "Wait for the user to invoke the task or action in your app that requires access to specific private user data.",
+        "layout_gravity is the way the TextView will align itself in its parent, in your case in the vertical LinearLayout",
+        "Returns the value mapped by name if it exists and is a JSONObject, or null otherwise.",
+        "The important thing to keep in mind is that fragments should not directly communicate with each other and should generally only communicate with their parent activity.",
+        "You should also refrain from task-killing apps that promise to completely shut down the app when you close an app using them.",
+        "In addittion, you can do in a Fragment -LRB- for example when getting server data failed -RRB-:",
+        "I created a ViewPager that supports infinite looping effect, smart auto-scroll, compatible with any indicators and easy to use.",
+        "Since the cursor starts at position -1, calling moveToNext ( ) places the `` read position'' on the first entry in the results and returns whether or not the cursor is already past the last entry in the result set.",
+        "This made it easy for developers to deal with permissions, but wasn't the best user experience.",
+        "This tells the API to provide updates every 20 seconds ( preferably ), but if there is a change available within a 5 second period, it should provide that too.",
+        "Call this method, passing in the outer most ViewGroup that you want a screen shot of:",
+        "Then inside of the interceptor, you can verify if the request is annotated or no.",
+        "It fully relies on the adapter to tell it what to display and how to display it.",
+        "In certain situations, the permission might be denied automatically, without the user taking any action.",
+        "But forEach is very different, according to this answer on StackOverFlow and document from Oracle, JVM has to convert forEach to an iterator and call hasNext ( ) with every item.",
+        "In cases where you need Hilt to provide different implementations of the same type as dependencies, you must provide Hilt with multiple bindings.",
+        "Your next step is to implement the adapter methods.",
+        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or NaN otherwise.",
+        "To look at a row in the cursor, use one of the Cursor move methods, which you must always call before you begin reading values.",
+        "The user had no way of changing permissions, even after installing the app.",
+        "Runtime permissions are permissions that are requested as they are needed while the app is running.",
+        "To solve this, we need to edit `` AndroidManifest.xml'' and add the permission we require for this application:",
+        "You will define it both where you provide the singletons ( @Provides annotation ), and where you inject them ( @Inject annotations ):",
+        "An Intent is an object that provides runtime binding between separate components, such as two activities.",
+        "This will take the power of machine from it and make it more like a normal person who is trying to register many times.",
+        "If the permission manager is not installed, there is no reason for TSecure not to be able to access your contacts.",
+        "one way could be to encrypt it using a passcode.",
+        "Volley provides the following classes for JSON requests:",
+        "While we are at it, we should also define the version of Google Play Services we are using for this application:",
+        "This restriction is imposed because of reasons described here.",
+        "In earlier versions of Android, accepting potentially dangerous permission groups was an all-or-nothing affair.",
+        "In the Adding reCAPTCHA to your app section on the page that appears next, your public and private keys appear under Site key and Secret key, respectively.",
+        "Adding camera features to your manifest causes Google Play to prevent your application from being installed to devices that do not include a camera or do not support the camera features you specify.",
+        "Next, we need to add method that would manage the deserialization of a JSON dictionary into a populated Business object:",
+        "But these action buttons should not duplicate the action performed when the user taps the notification.",
+        "First of all your Animal class with the Json Annotations for the subclasses.",
+        "Retrofit Changelog:",
+        "Specify a URL and get a JSON object or array ( respectively ) in response.",
+        "Once your ListView has reached the max amount of rows it can display on a screen, Android is smart enough to begin recycling those row Views.",
+        "If you have multiple predicates, then the index that will be used is the one that is expected to reduce the result set the most -LRB- based on ANALYZE -RRB-.",
+        "One of the biggest advantages of using the Toolbar widget is that you can place the view anywhere within your layout.",
+        "When the Activity loads onCreate runs and inflates the layout in activity_main.xml and the included content_main.xml.",
+        "A typical use of the APIs to render a PDF looks like this:",
+        "The following method should be invoked from within `` onPause'' callback:",
+        "requestLocationUpdates ( GoogleApiClient, LocationRequest, PendingIntent ) this API is used to receive location updates in the background even when the application is not active.",
+        "There are three ways to define anchor in Hilt.",
+        "One possible option is to move your generated classes into a separate module like it's LINK.",
+        "Communicating with Fragments Fragments should generally only communicate with their direct parent activity.",
+        "Dangerous permission groups, however, can give apps access to things like your calling history, private messages, location, camera, microphone, and more.",
+        "It can perform different logic depending on the result:",
+        "Some devices ( like Chromebooks ) have volume controls but do not allow apps to use the AudioManager methods described above to change the level of an audio stream.",
+        "Similar to how private/public variables are managed, using a parent component allows more explicit control and better encapsulation, but using subcomponents makes dependency injection easier to manage at the expense of less encapsulation.",
+        "Check whether the accuracy claimed by the location is better or worse than that of the previous estimate.",
+        "Creating an Adapter for the ViewPager",
+        "We have a protocol where all JSON objects contain a _ type field that indicates what the JSON represents.",
+        "Swipe views allow you to navigate between sibling screens, such as tabs, with a horizontal finger gesture, or swipe.",
+        "Subcomponents are components that inherit and extend the object graph of a parent component.",
+        "This tells the ViewPager to display the movie found in the middle of the array.",
+        "You can use the default size constraints of nodes, or you can set them to provide the look that you want.",
+        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or throws otherwise.",
+        "These permissions will show a dialog to the user, similar to the following one:",
+        "This is a short-circuiting stateful intermediate operation.",
+        "the second step is to translate the view up and left by half the width and half the height.",
+        "Using this approach, all three fragments will remain in the container once added initially and then we are simply revealing the desired fragment and hiding the others within the container.",
+        "Another major difference is that subcomponents simply need to be declared in the parent component.",
+        "That means, that the widget will take care of asking questions, validating responses all the way till it determines that a user is actually a human, only then you get a g-recaptcha-response value.",
+        "1 -RRB- Add save Button in each row of RecyclerView on this Button click -LRB- onClick -RRB-",
+        "Force stopping an application by the user puts the application in a stopped state and none of its code is run, including any broadcast receivers declared in manifest.",
+        "If this isn't the case, see the backwards compatibility section to understand how permissions will behave on your configuration.",
+        "To insert child views that represent each page, you need to hook this layout to a FragmentStateAdapter.",
+        "Binding the Adapter to the RecyclerView In our activity, we will populate a set of sample users which should be displayed in the RecyclerView.",
+        "Important: Normal Permissions must be added to the AndroidManifest:",
+        "For example, you could override onTouchEvent ( ) to process touch events directly, and produce a scrolling effect or a `` snapping to page'' animation in response to those touch events.",
+        "Installing a module into a component allows its bindings to be accessed as a dependency of other bindings in that component or in any child component below it in the component hierarchy:",
+        "Returns the value mapped by name if it exists and is a JSONArray, or null otherwise.",
+        "Both of these options will be set to 5 minutes, which is perfect as most connections usually timeout after 5 minutes or more.",
+        "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
+        "The cool thing about the new Google Recaptcha is that the validation is now completely encapsulated in the widget.",
+        "These are permissions that are requested while the app is running ( instead of before the app is installed ).",
+        "To display the system permissions dialog when necessary, call the launch ( ) method on the instance of ActivityResultLauncher that you saved in the previous step.",
+        "This class implements SurfaceHolder.Callback in order to capture the callback events for creating and destroying the view, which are needed for assigning the camera preview input.",
+        "At that time, your app can request the runtime permission that's required for accessing that data.",
+        "To set this up, you'll need a mechanism to tell the app to use the real URL normally, but the mock URL when you run tests.",
+        "For field injection, you instead apply the @Inject annotation to the fields that you want to get from the Dagger graph.",
+        "The app will not crash, since all the",
+        "To handle an individual key press, implement onKeyDown ( ) or onKeyUp ( ) as appropriate.",
+        "Snackbar will try and find a parent view to hold Snackbar's view from the value given to view.",
+        "This means that that the zip function would have to check the number of parameters and cast them accordingly.",
+        "JsonArrayRequest -- A request for retrieving a JSONArray response body at a given URL.",
+        "Dagger 2 analyzes these dependencies for you and generates code to help wire them together.",
+        "To read from a database, use the query ( ) method, passing it your selection criteria and desired columns.",
+        "Then it will call getItem ( int position ) whenever a new page is about to be visible.",
+        "Connecting the PagerAdapter and the ViewPager",
+        "Returns the value mapped by name if it exists and is a double or can be coerced to a double, or fallback otherwise.",
+        "requestLocationUpdates ( GoogleApiClient, LocationRequest, LocationListener ) this API should be used when there a need for continuous location updates and the location is accessed when the application is active in foreground.",
+        "When we want to transfer some sensitive data to server ( at runtime ), we generate a passcode ( aka secret key ) using a symmetric encryption ( say AES ).",
+        "... and disconnecting Google API:",
+        "And this code snippet demonstrates the recommended process of checking for a permission, and requesting a permission from the user when necessary:",
+        "Initialize a new instance of MediaRecorder with the following calls:",
+        "If you are using Android Studio and Gradle, you should have the following dependencies added in build.gradle file",
+        "When you use this class to obtain references to your database, the system performs the potentially long-running operations of creating and updating the database only when needed and not during app startup.",
+        "In Android development, any time we want to show a vertical list of scrollable items we will use a ListView which has data populated using an Adapter.",
+        "Every Android app runs in a limited-access sandbox.",
+        "In this way, an object from a subcomponent can depend on an object provided by the parent component.",
+        "Now you should implement the logic for the back button.",
+        "Open RecipeAdapter.java and go to the getView ( ) method.",
+        "In Android Studio, open Android Device Monitor The below screen shot will help,",
+        "As you can see, there is nothing special for Cat and Dog, the only one that know about them is the abstract class Animal, so when deserializing, you'll target to Animal and the ObjectMapper will return the actual instance as you can see in the following test:",
+        "Try adding this piece of code before loading your viewPager",
+        "When the app needs to use any of the protected features of the device ( sending network requests, accessing the camera, sending an SMS, etc ) it must obtain the appropriate permission from the user to do so.",
+        "The following code snippet shows how to invoke this method:",
+        "The PagerAdapter will create each Fragment, add the corresponding movie data to it and return it to the ViewPager.",
+        "The SafetyNet service includes a reCAPTCHA API that you can use to protect your app from malicious traffic.",
+        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or fallback otherwise.",
+        "By contrast, streams do not provide a means to directly access or manipulate their elements, and are instead concerned with declaratively describing their source and the computational operations which will be performed in aggregate on that source.",
+        "Fragment Hiding vs Replace In many of the examples above, we call transaction.replace ( ... ) to load a dynamic fragment which first removes the existing fragment from the activity invoking onStop and onDestroy for that fragment before adding the new fragment to the container.",
+        "Creating a Test Runner Now, you need to provide a test runner that uses PotterTestApp instead of PotterApp when running a test.",
+        "This is why forEach is slower than the C style.",
+        "Basically you need to load a bitmap and pass to each event you want to draw.",
+        "Dependency Definition and Injection When writing code that uses Dependency Injection, there are two main components to consider:",
+        "Enums are on our wishlist as well, but there are some challenges involved as one of the primary design goals of Realm is cross-platform compatibility and enums doesn't exist in Objective-C like they do in Java.",
+        "You now have a ViewPager that doesn't do anything particularly interesting without an Adapter that tells it what to display.",
+        "A contract class is a container for constants that define names for URIs, tables, and columns.",
+        "Understanding the FragmentManager The FragmentManager is responsible for all runtime management of fragments including adding, removing, hiding, showing, or otherwise navigating between fragments.",
+        "You can also tap on ` Clear data'' button to delete all the data of the app.",
+        "I simply reorder the fragment list, update the viewPager and move to the new page without animation, the result is an endless loop in both directions:",
+        "If you want to set a specific size for your camera preview, set this in the surfaceChanged ( ) method as noted in the comments above.",
+        "RecyclerView is designed to be very efficient, even with large lists, by reusing, or recycling, the views that have scrolled off the screen.",
+        "After adding this code, our `` MainActivity'' should look like this:",
+        "This is just wonderful!This kind of encryption technique is called asymmetric encryption.",
+        "Your example code prints the correct type value strings, but the deserialized object types are all instances of the Default class.",
+        "For an asynchronous request the client and request are made in the same way, then call.",
+        "To request the last known location, call the getLastLocation ( ) method.",
+        "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+        "The fragments allow their parent activity to respond to intents and callbacks in most cases.",
+        "Java 8 -LRB- LINK -RRB- solves this problem using streams and lambdas in one line of code:",
+        "The FragmentStatePagerAdapter makes sure to destroy all the fragments the user does not see and only keep their saved states in the FragmentManager, hence the name.",
+        "However, in both of these cases, the zip function can only accept a single Object -LSB- -RSB- parameter since the types of the observables in the list are not known in advance as well as their number.",
+        "Add this block of code inside onCreate ( ), above the line where you set viewPager.currentItem:",
+        "Open MoviesPagerAdapter.kt and add the following method inside the class:",
+        "Design your app's UX so that specific actions in your app are associated with specific runtime permissions.",
+        "To add an action button, pass a PendingIntent to the addAction ( ) method.",
+        "Runtime Permissions If the permission you need to add isn't listed under the normal permissions, you'll need to deal with `` Runtime Permissions''.",
+        "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+        "Thus, all objects provided in the parent component are provided in the subcomponent too.",
+        "First, define the qualifiers that you will use to annotate the @Binds or @Provides methods:",
+        "If the fragment should always be within the activity, use XML to statically add the fragment but in more complex cases be sure to use the Java-based approach.",
+        "Normal permissions are automatically granted at install time and never prompt the user asking for permission.",
+        "LINK allows filtering collections without writing loops or inner classes:",
+        "UI controls also provide default minimum and maximum sizes that are based on the typical usage of the control.",
+        "For example, you may set up separate notification channels for each conversation group created by a user in a messaging app.",
+        "Wiring up the ViewPager and the Adapter",
+        "When an app requests a permission that belongs to a particular permission group ( i.e. READ_CONTACTS ), Android asks the user about the higher level group instead ( CONTACTS ).",
+        "Keep in mind that your targetSdkVersion must be > = 23 and your emulator / device must be running Marshmallow to see the new permissions model.",
+        "Constructor injection is also not possible if you don't own the class because it comes from an external library ( classes like Retrofit, OkHttpClient, or Room databases ), or if instances must be created with the builder pattern.",
+        "Then, Hilt needs to know how to provide an instance of the type that corresponds with each qualifier.",
+        "Every adapter has three primary methods: onCreateViewHolder to inflate the item layout and create the holder, onBindViewHolder to set the view attributes based on the data and getItemCount to determine the number of items.",
+        "A qualifier is an annotation that you use to identify a specific binding for a type when that type has multiple bindings defined.",
+        "In Android versions before 9.0, an app starts its own activities in lock task mode by calling Activity.startLockTask ( ).",
+        "You can develop these things yourself, but if you would like to use a pre-made custom view, copy LINK into your project and use it like a normal ImageView.",
+        "You either allowed all permissions an app needed to function -- before installation -- or you declined them all, which meant you couldn't install the app.",
+        "After Marshmallow, permissions must now be requested at runtime before being used.",
+        "once the bitmap is rotated, it needs to have its location translated to the place where it should display in the view.",
+        "You must check whether you have that permission every time you perform an operation that requires that permission.",
+        "When you create a test with a mock server, the app shouldn't use the real URL.",
+        "Each time your app needs to access functionality that requires a permission, you should check that your app is still granted that permission.",
+        "However, on rooted devices an application can obtain root access and read everything.",
+        "Normal permission groups are allowed by default, because they don't pose a risk to your privacy.",
+        "Before using the reCAPTCHA API, you need to add the SafetyNet API to your project.",
+        "I think the key piece of information I was missing is that the annotations are inherited by the child classes, which makes the default class apply to all of the subclasses and not just the base class.",
+        "Google Location Services API Google Location Services API, also known as FusedLocationProviderApi, is Google's recommended way of getting a user's location.",
+        "In the end, I found out that the issue seemed to be data classes that have non-primitive members, e.g. a data class containing a List or another data class.",
+        "If you declare any dangerous permissions, and if your app is installed on a device that runs Android 6.0 ( API level 23 ) or higher, you must request the dangerous permissions at runtime by following the steps in this guide.",
+        "The proposed solutions are correct but to achieve the result you need to set the initial value of your viewpager to Integer.MAX _ VALUE/2.",
+        "Open MoviesPagerAdapter.kt and create a new constant representing the large number by adding this line at the top of the file above the class definition:",
+        "After the user responds to the system permissions dialog, the system then invokes your app's implementation of onRequestPermissionsResult ( ).",
+        "When your ListView is connected to an adapter, the adapter will instantiate rows until the ListView has been fully populated with enough items to fill the full height of the screen.",
+        "An app can also create notification channels in response to choices made by users of your app.",
+        "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
+        "Every application on Android runs in a secure sandbox environment, so other processes on the system can not access your code or private data without proper handshake.",
+        "This means there are a couple more things to consider when working with permissions for a Marshmallow app.",
+        "As a best practice, if you add a qualifier to a type, add qualifiers to all the possible ways to provide that dependency.",
+        "Within our activity, we simply need to get access to these components and call inject ( ).",
+        "Starting with Android 8.0, users can choose to disable or enable lock screen notifications for each notification channel.",
+        "You can find the detailed guide LINK.",
+        "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
+        "Must be one or more ( separated by' |' ) of the following constant values.",
+        "-LRB- In my case it looks like the problem is too many queries rather than poor use of indexing ; but maybe this will help someone else ... -RRB-",
+        "However, with a RecyclerView the adapter requires the existence of a `` ViewHolder'' object which describes and provides access to all the views within each item row.",
+        "The toolbar is not given any special treatment as a view.",
+        "You can programmatically set the level of detail visible in notifications posted by your app on a secure lock screen, or even whether the notification will show on the lock screen at all.",
+        "The function makeLoginRequest ( ) should take a callback as a parameter so that it can return a value asynchronously.",
+        "Try to check below FragmentPagerAdapter to get endless viewpager adapter:",
+        "The official guide now suggests using LINK.",
+        "Go to Apps from the phone Settings and open up the respective app."
+    ],
+    "1": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.47281870626869327
+            ],
+            "recall": [
+                0.5088148319325346
+            ],
+            "fscore": [
+                0.4512885377334767
+            ]
+        },
+        "api": {
+            "precision": [
+                0.48145878702597616
+            ],
+            "recall": [
+                0.4540999825090734
+            ],
+            "fscore": [
+                0.4124323956407114
+            ]
+        },
+        "so": {
+            "precision": [
+                0.46700757575757573
+            ],
+            "recall": [
+                0.5342776057791537
+            ],
+            "fscore": [
+                0.4517940731355366
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5555555555555556
+            ],
+            "recall": [
+                0.5692307692307692
+            ],
+            "fscore": [
+                0.5324675324675324
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.4462848932676519
+            ],
+            "recall": [
+                0.5009530791788855
+            ],
+            "fscore": [
+                0.4622424559114567
+            ]
+        }
+    },
+    "2": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.570700512449706
+            ],
+            "recall": [
+                0.5898576298175098
+            ],
+            "fscore": [
+                0.48830735594039965
+            ]
+        },
+        "api": {
+            "precision": [
+                0.581113006980734
+            ],
+            "recall": [
+                0.58473116779143
+            ],
+            "fscore": [
+                0.458862793174707
+            ]
+        },
+        "so": {
+            "precision": [
+                0.6118443477818477
+            ],
+            "recall": [
+                0.6196547928918024
+            ],
+            "fscore": [
+                0.5879138817733736
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5456140350877193
+            ],
+            "recall": [
+                0.6083333333333334
+            ],
+            "fscore": [
+                0.4415458937198068
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5344727440315675
+            ],
+            "recall": [
+                0.5664259282757745
+            ],
+            "fscore": [
+                0.4415300779306932
+            ]
+        }
+    },
+    "3": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5008663325724846
+            ],
+            "recall": [
+                0.5249432230233113
+            ],
+            "fscore": [
+                0.425242265541958
+            ]
+        },
+        "api": {
+            "precision": [
+                0.5180887860798888
+            ],
+            "recall": [
+                0.5558280606994358
+            ],
+            "fscore": [
+                0.40021860146752325
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5124819624819624
+            ],
+            "recall": [
+                0.49889652830829295
+            ],
+            "fscore": [
+                0.491968954248366
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.4489979806934594
+            ],
+            "recall": [
+                0.5022435897435897
+            ],
+            "fscore": [
+                0.3751995606312153
+            ]
+        }
+    },
+    "4": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5465142213665376
+            ],
+            "recall": [
+                0.5821204078448355
+            ],
+            "fscore": [
+                0.4427306748498315
+            ]
+        },
+        "api": {
+            "precision": [
+                0.46757945588609207
+            ],
+            "recall": [
+                0.448440065681445
+            ],
+            "fscore": [
+                0.303317384370016
+            ]
+        },
+        "so": {
+            "precision": [
+                0.6243589743589744
+            ],
+            "recall": [
+                0.638095238095238
+            ],
+            "fscore": [
+                0.5215277777777778
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5467436974789917
+            ],
+            "recall": [
+                0.6506410256410255
+            ],
+            "fscore": [
+                0.5019678389243607
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.548235294117647
+            ],
+            "recall": [
+                0.6004901960784313
+            ],
+            "fscore": [
+                0.44548872180451127
+            ]
+        }
+    },
+    "5": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5331570156717721
+            ],
+            "recall": [
+                0.5778820419816145
+            ],
+            "fscore": [
+                0.3954345186714161
+            ]
+        },
+        "api": {
+            "precision": [
+                0.4954560089033774
+            ],
+            "recall": [
+                0.49495694908027577
+            ],
+            "fscore": [
+                0.32247445088795457
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5574607288700468
+            ],
+            "recall": [
+                0.6320617629563222
+            ],
+            "fscore": [
+                0.44924485377415324
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5635870760213966
+            ],
+            "recall": [
+                0.6438509021842355
+            ],
+            "fscore": [
+                0.44528751817353607
+            ]
+        }
+    },
+    "6": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.47745335263877764
+            ],
+            "recall": [
+                0.49138996821009295
+            ],
+            "fscore": [
+                0.4336381974683534
+            ]
+        },
+        "api": {
+            "precision": [
+                0.472901914213971
+            ],
+            "recall": [
+                0.4777425226288863
+            ],
+            "fscore": [
+                0.3996850769961546
+            ]
+        },
+        "so": {
+            "precision": [
+                0.41765328353563647
+            ],
+            "recall": [
+                0.45176482873851304
+            ],
+            "fscore": [
+                0.3964547776616742
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5224833076527992
+            ],
+            "recall": [
+                0.5303225727592943
+            ],
+            "fscore": [
+                0.5101511458941178
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.51296631178839
+            ],
+            "recall": [
+                0.5158440123008761
+            ],
+            "fscore": [
+                0.44528572050289333
+            ]
+        }
+    },
+    "7": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.49832249868178136
+            ],
+            "recall": [
+                0.5444099760246784
+            ],
+            "fscore": [
+                0.3878199097461918
+            ]
+        },
+        "api": {
+            "precision": [
+                0.4392885451254381
+            ],
+            "recall": [
+                0.49185899117055687
+            ],
+            "fscore": [
+                0.26903770541655253
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5189935064935065
+            ],
+            "recall": [
+                0.5619047619047619
+            ],
+            "fscore": [
+                0.4590232525015133
+            ]
+        },
+        "git": {
+            "precision": [
+                0.6116071428571428
+            ],
+            "recall": [
+                0.7083333333333333
+            ],
+            "fscore": [
+                0.6166666666666667
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.518406068083337
+            ],
+            "recall": [
+                0.5325606953184272
+            ],
+            "fscore": [
+                0.3685542544345898
+            ]
+        }
+    },
+    "8": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.528452666556622
+            ],
+            "recall": [
+                0.5387936752963348
+            ],
+            "fscore": [
+                0.4870768318819322
+            ]
+        },
+        "api": {
+            "precision": [
+                0.6049430199430199
+            ],
+            "recall": [
+                0.5872474747474747
+            ],
+            "fscore": [
+                0.5520690545721835
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5559513515272477
+            ],
+            "recall": [
+                0.62740668757956
+            ],
+            "fscore": [
+                0.5154169259529819
+            ]
+        },
+        "git": {
+            "precision": [
+                0.375
+            ],
+            "recall": [
+                0.2777777777777778
+            ],
+            "fscore": [
+                0.3191489361702128
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.4464285714285714
+            ],
+            "recall": [
+                0.4370629370629371
+            ],
+            "fscore": [
+                0.43999999999999995
+            ]
+        }
+    },
+    "9": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5535142634701458
+            ],
+            "recall": [
+                0.6151421057490574
+            ],
+            "fscore": [
+                0.4259703894707818
+            ]
+        },
+        "api": {
+            "precision": [
+                0.4998833109127227
+            ],
+            "recall": [
+                0.5186620879120879
+            ],
+            "fscore": [
+                0.2642928498358428
+            ]
+        },
+        "so": {
+            "precision": [
+                0.578659188034188
+            ],
+            "recall": [
+                0.6162008281573499
+            ],
+            "fscore": [
+                0.48890503869548074
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5510714285714285
+            ],
+            "recall": [
+                0.7321428571428572
+            ],
+            "fscore": [
+                0.5169821104485351
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.556555944055944
+            ],
+            "recall": [
+                0.6390502372980471
+            ],
+            "fscore": [
+                0.4195053099352248
+            ]
+        }
+    }
+}
