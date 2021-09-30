@@ -272,10 +272,10 @@ class TFBertForTaskTextClassification(ABC):
 
     def get_evaluation_metrics(self):
         return self.metrics.prediction_metrics, \
-            self.metrics.prediction_metrics.api_metrics, \
-            self.metrics.prediction_metrics.so_metrics, \
-            self.metrics.prediction_metrics.git_metrics, \
-            self.metrics.prediction_metrics.misc_metrics
+            self.metrics.api_metrics, \
+            self.metrics.so_metrics, \
+            self.metrics.git_metrics, \
+            self.metrics.misc_metrics
 
 
 class TFBertForAndroidTaskTextClassification(TFBertForTaskTextClassification):

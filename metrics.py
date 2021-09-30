@@ -1,5 +1,6 @@
 
 import logging
+import random
 from collections import defaultdict
 
 import numpy as np
@@ -175,24 +176,13 @@ class MetricsAggregator(object):
         store_at[idx_split]['misc']['fscore'].append(_f1score)
 
     @staticmethod
-    def get_full_exec_results(fold_results):
+    def get_full_exec_results(fold_results, result_type='overall'):
         __precision, __recall, __fscore = [], [], []
 
         for key_i, value in fold_results.items():
             if isinstance(value, dict):
                 for key_j, __data in value.items():
-                    if key_j == 'overall':
-                        logger.info(Fore.YELLOW + f"{key_i}" + Style.RESET_ALL)
-                        logger.info("precision: " + Fore.RED +
-                                    "{:.3f}".format(np.mean(__data['precision'])) + Style.RESET_ALL +
-                                    f" {str([round(x, 2) for x in __data['precision']])}")
-                        logger.info("recall:    " + Fore.RED +
-                                    "{:.3f}".format(np.mean(__data['recall'])) + Style.RESET_ALL +
-                                    f" {str([round(x, 2) for x in __data['recall']])}")
-                        logger.info("f1-score:  " +
-                                    Fore.RED + "{:.3f}".format(np.mean(__data['fscore'])) + Style.RESET_ALL +
-                                    f" {str([round(x, 2) for x in __data['fscore']])}")
-
+                    if key_j == result_type:
                         __precision += __data['precision']
                         __recall += __data['recall']
                         __fscore += __data['fscore']
@@ -206,6 +196,7 @@ class MetricsAggregator(object):
     def examples_per_source_type(self, source_type='misc', n_samples=None) -> None:
 
         _sources = list(set([x[0] for x in self.log_examples_lst]))
+        _sources = sorted(_sources, key=lambda k: random.random())
 
         _template = "[w={}]" + Fore.RED + "[y={}]" + \
             Fore.YELLOW + "[p={:.4f}]" + Style.RESET_ALL + " {}"
@@ -217,28 +208,37 @@ class MetricsAggregator(object):
                 examples_in_source = list(
                     filter(lambda k: k[0] == s, self.log_examples_lst))
                 task_title = examples_in_source[0][1]
-                idx += 1
             elif source_type == 'so' and ('stackoverflow.com' in s):
                 examples_in_source = list(
                     filter(lambda k: k[0] == s, self.log_examples_lst))
                 task_title = examples_in_source[0][1]
-                idx += 1
             elif source_type == 'git' and ('github.com' in s):
                 examples_in_source = list(
                     filter(lambda k: k[0] == s, self.log_examples_lst))
                 task_title = examples_in_source[0][1]
-                idx += 1
             elif source_type == 'misc' and 'github.com' not in s and 'docs.oracle' not in s and 'developer.android' not in s and 'stackoverflow.com' not in s:
                 examples_in_source = list(
                     filter(lambda k: k[0] == s, self.log_examples_lst))
                 task_title = examples_in_source[0][1]
-                idx += 1
             if not examples_in_source:
                 continue
             logger.info('')
             logger.info(Fore.RED + f"{task_title}" + Style.RESET_ALL)
             logger.info(s)
             logger.info('')
+            
+            
+            relevant_cnt = [pweights for _, _, pweights, _, _, _ in examples_in_source]
+            relevant_cnt = list(filter(lambda k: k >= 1, relevant_cnt))
+            
+            if not relevant_cnt:
+                continue
+                
+            if len(relevant_cnt) < 3:
+                continue
+            
+            
+            idx += 1
 
             for _, _, pweights, y_predict, y_probs, text in examples_in_source:
                 logger.info(_template.format(
