@@ -4,7 +4,6 @@ from abc import ABC, abstractmethod
 from collections import Counter, defaultdict
 
 
-
 import numpy as np
 import pandas as pd
 import tensorflow as tf
@@ -34,7 +33,6 @@ os.environ['TF_KERAS'] = '1'
 
 
 logger = logging.getLogger()
-
 
 
 class TFBertForTaskTextClassification(ABC):
@@ -87,7 +85,7 @@ class TFBertForTaskTextClassification(ABC):
         pweights = df_source['weights'].tolist()
 
         # Encode X_test
-        test_encodings = self.__encode(df_source)
+        test_encodings = self.encode(df_source)
         test_labels = df_source['category_index'].tolist()
 
         test_dataset = tf.data.Dataset.from_tensor_slices((
@@ -156,7 +154,7 @@ class TFBertForTaskTextClassification(ABC):
 
         return y_predict, y_probs
 
-    def build_model(self, train_dataset, val_dataset, weights, checkpoint_filepath='/home/msarthur/scratch/best_model', cache_dir='/home/msarthur/scratch', local_files_only=True):
+    def build(self, train_dataset, val_dataset, weights, checkpoint_filepath='/home/msarthur/scratch/best_model', cache_dir='/home/msarthur/scratch', local_files_only=True):
         if self.model_id == 'distilbert-base-uncased':
             model = TFDistilBertForSequenceClassification.from_pretrained(
                 self.model_id, cache_dir=cache_dir, local_files_only=local_files_only
@@ -213,7 +211,7 @@ class TFBertForTaskTextClassification(ABC):
 
         return model
 
-    def __encode(self, dataframe):
+    def encode(self, dataframe):
 
         seq_a = dataframe['text'].tolist()
         seq_b = dataframe['question'].tolist()
@@ -272,54 +270,57 @@ class TFBertForTaskTextClassification(ABC):
 
         return y_true_prime, y_predict_prime
 
+    def get_evaluation_metrics(self):
+        return self.metrics.prediction_metrics, \
+            self.metrics.prediction_metrics.api_metrics, \
+            self.metrics.prediction_metrics.so_metrics, \
+            self.metrics.prediction_metrics.git_metrics, \
+            self.metrics.prediction_metrics.misc_metrics
 
 
 class TFBertForAndroidTaskTextClassification(TFBertForTaskTextClassification):
 
-    
     def get_train_val_test(self, corpus, task_uid, size=0.9):
         if not isinstance(task_uid, list):
             task_uid = [task_uid]
-        
+
         train_data_raw = defaultdict(list)
         test_data_raw = defaultdict(list)
-        
+
         for _data in tqdm(corpus):
             if _data['question'] in task_uid:
-                add_raw_data(test_data_raw, _data, use_pyramid=self.use_pyramid)
+                add_raw_data(test_data_raw, _data,
+                             use_pyramid=self.use_pyramid)
             else:
-                add_raw_data(train_data_raw, _data, use_pyramid=self.use_pyramid)
-        
+                add_raw_data(train_data_raw, _data,
+                             use_pyramid=self.use_pyramid)
+
         train_val = pd.DataFrame.from_dict(train_data_raw)
         test = pd.DataFrame.from_dict(test_data_raw)
-        
+
         # https://stackoverflow.com/questions/29576430/shuffle-dataframe-rows
-        #  randomize rows....    
+        #  randomize rows....
         train_val = train_val.sample(frac=1).reset_index(drop=True)
         test = test.sample(frac=1).reset_index(drop=True)
-        
+
         if self.undersampling:
             train_val = undersample_df(train_val, n_times=self.n_undersampling)
             train_val = train_val.sample(frac=1).reset_index(drop=True)
-        
+
         weights = get_class_weights(train_val['category_index'].tolist())
-        
+
         # split data for training and validation. stratifies splitting based on y labels
         train, val = train_test_split(
-            train_val, 
-            stratify=train_val['category_index'].tolist(), 
+            train_val,
+            stratify=train_val['category_index'].tolist(),
             train_size=size
         )
-        
-        return train, val, test, weights 
+
+        return train, val, test, weights
 
 
-class TFBertForSyntheticTaskTextClassification(TFBertForTaskTextClassification):    
+class TFBertForSyntheticTaskTextClassification(TFBertForTaskTextClassification):
 
     @abstractmethod
     def get_train_val_test(self, corpus, task_uid, size=0.9):
         pass
-
-
-
-

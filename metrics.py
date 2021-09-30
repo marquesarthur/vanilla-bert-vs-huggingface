@@ -203,7 +203,7 @@ class MetricsAggregator(object):
 
         return __precision, __recall, __fscore
 
-    def get_full_exec_examples(self, source_type='misc', n_samples=None) -> None:
+    def examples_per_source_type(self, source_type='misc', n_samples=None) -> None:
 
         _sources = list(set([x[0] for x in self.log_examples_lst]))
 
