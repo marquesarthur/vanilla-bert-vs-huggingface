@@ -1,1 +1,710 @@
-{}
+{
+    "0": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5235931413663797
+            ],
+            "recall": [
+                0.508607739536304
+            ],
+            "fscore": [
+                0.4362586139719046
+            ]
+        },
+        "api": {
+            "precision": [
+                0.3931784107946027
+            ],
+            "recall": [
+                0.3073022312373225
+            ],
+            "fscore": [
+                0.30145363408521303
+            ]
+        },
+        "so": {
+            "precision": [
+                0.6310416666666667
+            ],
+            "recall": [
+                0.5989583333333334
+            ],
+            "fscore": [
+                0.6119260204081634
+            ]
+        },
+        "git": {
+            "precision": [
+                0.42424242424242425
+            ],
+            "recall": [
+                0.45161290322580644
+            ],
+            "fscore": [
+                0.4375
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5384615384615384
+            ],
+            "recall": [
+                0.5862068965517242
+            ],
+            "fscore": [
+                0.2184873949579832
+            ]
+        }
+    },
+    "venn_diagram_set": [
+        "So ideally we also would have an easy way of processing an array of businesses into an ArrayList of Business objects.",
+        "For example, this snippet fetches a JSON feed and displays it as text in the UI:",
+        "RemoteControlClient was what you were looking for, but now it's deprecated and has been replaced with MediaSession.",
+        "Pin down exactly which queries you need to optimize.",
+        "Finally, getView ( ) creates a view to be used as a row in the list.",
+        "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
+        "A camera preview class is a SurfaceView that can display the live image data coming from a camera, so users can frame and capture a picture or video.",
+        "In Android development, any time we want to show a vertical list of scrollable items we will use a ListView which has data populated using an Adapter.",
+        "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
+        "Have you checked RemoteControlClient ?",
+        "Create a Preview Class - Create a camera preview class that extends SurfaceView and implements the SurfaceHolder interface.",
+        "Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
+        "We can create a custom ListView of User objects by subclassing ArrayAdapter to describe how to translate the object into a view within that class and then using it like any other adapter.",
+        "The `` onConnected'' method will look like this:",
+        "The following code shows how to do this in the context of an Activity, but this is also possible from within a Fragment.",
+        "If you want to set a specific size for your camera preview, set this in the surfaceChanged ( ) method as noted in the comments above.",
+        "Then in our `` onStart'' method we call the `` connect'' method and wait for `` onConnected'' callback method be invoked:",
+        "Usually these are the following steps to create json object through the Http connection in android.",
+        "The first step when adding a `` Runtime Permission'' is to add it to the AndroidManifest:",
+        "Returns the value mapped by name if it exists and is a boolean or can be coerced to a boolean, or throws otherwise.",
+        "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+        "The more indexes you have, the slower your INSERTs will be, so you will have to work out the best trade-off for your situation.",
+        "Validating the response is really easy.",
+        "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+        "Although the icon can be added back with:",
+        "that is done because rotation is around the top left point ( the origin ) of the view.",
+        "It is worth noting that apparently Dagger2 creates a single instance per scoped provider in a module per component.",
+        "However, in the API response, we actually get a collection of business JSON in an array.",
+        "It returns View that will be displayed as your list/grid/gallary / any view that use adapter item.",
+        "After adding this code, our `` MainActivity'' should look like this:",
+        "The results of the query are returned to you in a Cursor object.",
+        "Get the data item associated with the specified position in the data set.",
+        "This code sample demonstrates how to modify the contents of the text view defined in the previous XML layout:",
+        "This class previews the live images from the camera.",
+        "I gave all authorizations but the pictures/names/phone numbers stil flickering.",
+        "You can inject the specific type that you need by annotating the field or parameter with the corresponding qualifier:",
+        "You can read more about this on the material design guidelines which state: `` The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.''",
+        "So normally the simplified algorithm is like that:",
+        "Once your ListView has reached the max amount of rows it can display on a screen, Android is smart enough to begin recycling those row Views.",
+        "The simplest adapter to use is called an ArrayAdapter because the adapter converts an ArrayList of objects into View items loaded into the ListView container.",
+        "Displaying ActionBar Icon In the new Android 5.0 material design guidelines, the style guidelines have changed to discourage the use of the icon in the ActionBar.",
+        "Using of rawQuery -LRB- -RRB- instead of building using ContentValues will fasten up in certain cases.",
+        "You can avoid this problem by using the View Holder Pattern.",
+        "So in order to get a scoped provider in a module, you need to specify the scope for your module's provider method.",
+        "First, we will create an InputStreamReader that reads our request input.",
+        "Improving Performance with the ViewHolder Pattern To improve performance, we should modify the custom adapter by applying the ViewHolder pattern which speeds up the population of the ListView considerably by caching view lookups for smoother, faster item loading:",
+        "Using a Custom ArrayAdapter When we want to display a series of items from a list using a custom representation of the items, we need to use our own custom XML layout for each item.",
+        "But these action buttons should not duplicate the action performed when the user taps the notification.",
+        "If you would like an application icon -LRB- but I discourage it -RRB-, you can use the method setLogo -LRB- -RRB-.",
+        "Call this method, passing in the outer most ViewGroup that you want a screen shot of:",
+        "These are permissions that are requested while the app is running ( instead of before the app is installed ).",
+        "If you read the docs then you'll see that Volley runs on background threads.",
+        "The following example code demonstrates how to create a basic camera preview class that can be included in a View layout.",
+        "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
+        "Open MoviesPagerAdapter.kt and create a new constant representing the large number by adding this line at the top of the file above the class definition:",
+        "Unscoped dependency will have simple Provider generated without any caching and any instance of that dependency created in component will be new for every new injection -LRB- as in constructor, or in module provision method, or just as a field -RRB-.",
+        "But that does not keep your site safe from HTTP client request forgery.",
+        "The FragmentStatePagerAdapter will stop creating new fragments when the current index reaches the number of objects returned by getCount ( ), so you need to change the method to return a fairly large number that the users are not very likely to reach by continuously swiping in the same direction.",
+        "A Toolbar is a generalization of action bars for use within application layouts.",
+        "The magic behind this is the setTag ( ) method which lets us attach an arbitrary object onto a View object, which is how we save the already inflated View for future reuse.",
+        "In human speech it would be like,",
+        "This class implements SurfaceHolder.Callback in order to capture the callback events for creating and destroying the view, which are needed for assigning the camera preview input.",
+        "You also inflate a custom view from the XML layout defined in res/layout/list_item_recipe.xml -- more on this in the next section.",
+        "Both methods have the same return type, but the qualifiers label them as two different bindings:",
+        "These repeated calls can seriously harm the ListView's performance, especially if your app is running on limited resources and/or you have a very large list.",
+        "I would suggest that you write your downloaded JSON out to a file and compare it with your original to see if there is a problem with the download logic.",
+        "For simplicity in rendering a camera preview, you should change your application's preview activity orientation to landscape by adding the following to your manifest.",
+        "Next, we will create a BufferedReader that will allow us to iterate through the response.",
+        "But the easiest option is to generate java code directly and your generated java classes will be picked up by javac automatically, launching second round of annotation processing, where dagger will process them.",
+        "Override the onSuccess ( ) and onFailure ( ) methods to handle both possible outcomes of the verification request task.",
+        "To be able to record, your app must tell the user that it will access the device's audio input.",
+        "inject.Scope annotation - Dependencies declared with that scope with have caching Provider with double-check lock generated and only single instance will be created for it within component declared with the same scope and its creation will be thread safe.",
+        "Starting in Android 2.2 ( API Level 8 ), you can use the setDisplayOrientation ( ) method to set the rotation of the preview image.",
+        "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+        "Returns the value mapped by name if it exists and is a JSONArray, or throws otherwise.",
+        "The following code sample shows a typical use, with an XML layout and code to modify the contents of the text view:",
+        "After that, extend the class AsyncTask.",
+        "It triggers when you scroll the view -LRB- list for example -RRB-.",
+        "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+        "Such instructions are called bindings ...",
+        "A notification can offer up to three action buttons that allow the user to respond quickly, such as snooze a reminder or even reply to a text message.",
+        "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
+        "As getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
+        "To overcome this, I have created a custom ViewPager -LRB- based on LINK -RRB- that calculates it's height in the required manner.",
+        "My Friend was able to get it all working, if I remember well the problematic settings were in Security > Privacy for the contacts and in battery for GCM.",
+        "Due to the specifics of Android threading, we can not run network tasks on the same thread as the UI thread.",
+        "To read from a database, use the query ( ) method, passing it your selection criteria and desired columns.",
+        "Since the version of Retrofit 2.6.0, you can get the annotations in OkHttp Interceptor using the tag field like this:",
+        "The ActionBar by default now has just the title for the current activity.",
+        "In order to change preview orientation as the user re-orients the phone, within the surfaceChanged ( ) method of your preview class, first stop the preview with Camera.stopPreview ( ) change the orientation and then start the preview again with Camera.startPreview ( ).",
+        "It is strongly recommended to use the addCallback ( ) method which takes a LifecycleOwner.",
+        "You can either rotate your bitmap when you draw it by using a matrix:",
+        "You may extend it from BaseAdapter.",
+        "Here you define what information shows and where it sits within the ListView.",
+        "However, on rooted devices an application can obtain root access and read everything.",
+        "The Dagger basics page explained how Dagger can help you automate dependency injection in your app.",
+        "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
+        "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+        "After that override getView -LRB- -RRB- method and make sure to return your custom View there.",
+        "You can develop these things yourself, but if you would like to use a pre-made custom view, copy LINK into your project and use it like a normal ImageView.",
+        "Normally, the Android OS prohibits apps from accessing each other's files -LRB- i.e. databases, preference files, regular files stored in the app's private directory -RRB- through proven Linux file permissions.",
+        "Gets a View that displays in the drop down popup the data at the specified position in the data set.",
+        "Then inside of the interceptor, you can verify if the request is annotated or no.",
+        "You can also do it by rotating the canvas before drawing:",
+        "We check if a View is recycled with if ( convertView == null ).",
+        "You use them following the same basic pattern you use for other types of requests.",
+        "How to make a dependency injectable To make an object embeddable in Hilt, you need to tell Hilt how to instantiate that object.",
+        "It works kind of like this: The ListView asks the adapter what it should display, and the adapter jumps into action:",
+        "Javac annotation processor uses rounds instead of defining processors order.",
+        "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+        "I'm still convinced that there are some security settings in the OS that deny the access to the contacts.",
+        "If you have a lot of string / text type data, consider creating Virtual tables using full text search -LRB- FTS3 -RRB-, which can run faster query.",
+        "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+        "it is used for the Android Music Remote control even if the App is in Lock mode.",
+        "That way the PagerAdapter will keep creating pages until the page index reaches the value returned by getCount ( ).",
+        "When GCM delivers a message to your device, BroadcastReceiver will receive the message and call the onReceive -LRB- -RRB- function, wherein you may start a service to actually perform the intended task for you.",
+        "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView.",
+        "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+        "In addittion, you can do in a Fragment -LRB- for example when getting server data failed -RRB-:",
+        "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+        "Any time you need to display a lot of data and make it easy to navigate, you've got a job for Android's ListView, which handily creates scrollable lists.",
+        "To register a key pair for use with the SafetyNet reCAPTCHA API, navigate to the reCAPTCHA Android signup site, then complete the following sequence of steps:",
+        "When setting preview size, you must use values from getSupportedPreviewSizes ( ).",
+        "To do this, we need to create our own custom ArrayAdapter class.",
+        "Get a View that displays the data at the specified position in the data set.",
+        "Here's a bit of code to get EXPLAIN QUERY PLAN results into Android logcat from a running Android app."
+    ],
+    "1": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.4113363392898318
+            ],
+            "recall": [
+                0.4244139030903737
+            ],
+            "fscore": [
+                0.40357735910556364
+            ]
+        },
+        "api": {
+            "precision": [
+                0.35714285714285715
+            ],
+            "recall": [
+                0.2777777777777778
+            ],
+            "fscore": [
+                0.31250000000000006
+            ]
+        },
+        "so": {
+            "precision": [
+                0.38539838539838545
+            ],
+            "recall": [
+                0.4223526473526474
+            ],
+            "fscore": [
+                0.3947892988284666
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5208333333333334
+            ],
+            "recall": [
+                0.5882352941176471
+            ],
+            "fscore": [
+                0.46798029556650245
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.4361317584767335
+            ],
+            "recall": [
+                0.4221209074150251
+            ],
+            "fscore": [
+                0.42711560044893376
+            ]
+        }
+    },
+    "2": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.4874728824476272
+            ],
+            "recall": [
+                0.4743685735363094
+            ],
+            "fscore": [
+                0.4583114547780182
+            ]
+        },
+        "api": {
+            "precision": [
+                0.40893719806763285
+            ],
+            "recall": [
+                0.3493155236576289
+            ],
+            "fscore": [
+                0.3579288025889968
+            ]
+        },
+        "so": {
+            "precision": [
+                0.543489190548014
+            ],
+            "recall": [
+                0.5412742019884876
+            ],
+            "fscore": [
+                0.5331623931623932
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.504362414657333
+            ],
+            "recall": [
+                0.5179791396061861
+            ],
+            "fscore": [
+                0.47746024013150323
+            ]
+        }
+    },
+    "3": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.534577695835304
+            ],
+            "recall": [
+                0.5910483035697132
+            ],
+            "fscore": [
+                0.3689358578309149
+            ]
+        },
+        "api": {
+            "precision": [
+                0.5367753495573816
+            ],
+            "recall": [
+                0.6406523981477091
+            ],
+            "fscore": [
+                0.2998907393507766
+            ]
+        },
+        "so": {
+            "precision": [
+                0.54291205118411
+            ],
+            "recall": [
+                0.5504976580796254
+            ],
+            "fscore": [
+                0.5044515749988702
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5229468599033816
+            ],
+            "recall": [
+                0.5571928071928072
+            ],
+            "fscore": [
+                0.3369878183831672
+            ]
+        }
+    },
+    "4": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5763290598290599
+            ],
+            "recall": [
+                0.6736247064639723
+            ],
+            "fscore": [
+                0.43030444189470785
+            ]
+        },
+        "api": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "so": {
+            "precision": [
+                0.6634615384615384
+            ],
+            "recall": [
+                0.7229166666666667
+            ],
+            "fscore": [
+                0.5309041835357625
+            ]
+        },
+        "git": {
+            "precision": [
+                0.5204166666666667
+            ],
+            "recall": [
+                0.6120071684587813
+            ],
+            "fscore": [
+                0.3893680990455184
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5138888888888888
+            ],
+            "recall": [
+                0.6982758620689655
+            ],
+            "fscore": [
+                0.31097764431097763
+            ]
+        }
+    },
+    "5": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.50780125297734
+            ],
+            "recall": [
+                0.47622507598610536
+            ],
+            "fscore": [
+                0.4785213543463155
+            ]
+        },
+        "api": {
+            "precision": [
+                0.5338276973669976
+            ],
+            "recall": [
+                0.4956481481481481
+            ],
+            "fscore": [
+                0.494290216825428
+            ]
+        },
+        "so": {
+            "precision": [
+                0.4787567084078712
+            ],
+            "recall": [
+                0.43625508478449654
+            ],
+            "fscore": [
+                0.4451790374662716
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5123284032470568
+            ],
+            "recall": [
+                0.5070454545454546
+            ],
+            "fscore": [
+                0.5048815359477125
+            ]
+        }
+    },
+    "6": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5268355030091405
+            ],
+            "recall": [
+                0.6099350695151297
+            ],
+            "fscore": [
+                0.3723511913942211
+            ]
+        },
+        "api": {
+            "precision": [
+                0.5202743902439024
+            ],
+            "recall": [
+                0.5807983682983684
+            ],
+            "fscore": [
+                0.1770260564387251
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5325980665398824
+            ],
+            "recall": [
+                0.6174333407467814
+            ],
+            "fscore": [
+                0.43913922827169155
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.5189902069475241
+            ],
+            "recall": [
+                0.6203260926527617
+            ],
+            "fscore": [
+                0.40070623415604123
+            ]
+        }
+    },
+    "7": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.449941005860997
+            ],
+            "recall": [
+                0.5301595026138293
+            ],
+            "fscore": [
+                0.4307294914747698
+            ]
+        },
+        "api": {
+            "precision": [
+                0.48941570881226054
+            ],
+            "recall": [
+                0.6118589743589744
+            ],
+            "fscore": [
+                0.39329639049296045
+            ]
+        },
+        "so": {
+            "precision": [
+                0.38544973544973543
+            ],
+            "recall": [
+                0.5094017094017094
+            ],
+            "fscore": [
+                0.4227513227513228
+            ]
+        },
+        "git": {
+            "precision": [
+                0.4523809523809524
+            ],
+            "recall": [
+                0.4523809523809524
+            ],
+            "fscore": [
+                0.4523809523809524
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.505983235266648
+            ],
+            "recall": [
+                0.5184859958033026
+            ],
+            "fscore": [
+                0.46930411508865844
+            ]
+        }
+    },
+    "8": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.513216011042098
+            ],
+            "recall": [
+                0.5574171919416635
+            ],
+            "fscore": [
+                0.44942135159526464
+            ]
+        },
+        "api": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5502415458937198
+            ],
+            "recall": [
+                0.7452107279693487
+            ],
+            "fscore": [
+                0.4843127886606148
+            ]
+        },
+        "git": {
+            "precision": [
+                0.47619047619047616
+            ],
+            "recall": [
+                0.3225806451612903
+            ],
+            "fscore": [
+                0.3846153846153846
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.47619047619047616
+            ],
+            "recall": [
+                0.4166666666666667
+            ],
+            "fscore": [
+                0.4444444444444445
+            ]
+        }
+    },
+    "9": {
+        "run_cnt": 1,
+        "overall": {
+            "precision": [
+                0.5240775824644791
+            ],
+            "recall": [
+                0.5196649372915374
+            ],
+            "fscore": [
+                0.314354662694205
+            ]
+        },
+        "api": {
+            "precision": [
+                0.48525013918714704
+            ],
+            "recall": [
+                0.45560760029639036
+            ],
+            "fscore": [
+                0.16191166593060713
+            ]
+        },
+        "so": {
+            "precision": [
+                0.5731955258929675
+            ],
+            "recall": [
+                0.6266371942234011
+            ],
+            "fscore": [
+                0.38424895935444453
+            ]
+        },
+        "git": {
+            "precision": [
+                NaN
+            ],
+            "recall": [
+                NaN
+            ],
+            "fscore": [
+                NaN
+            ]
+        },
+        "misc": {
+            "precision": [
+                0.48922811059907834
+            ],
+            "recall": [
+                0.4232638888888889
+            ],
+            "fscore": [
+                0.3619562144674435
+            ]
+        }
+    }
+}
