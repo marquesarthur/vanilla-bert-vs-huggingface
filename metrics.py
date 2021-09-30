@@ -222,14 +222,10 @@ class MetricsAggregator(object):
                 task_title = examples_in_source[0][1]
             if not examples_in_source:
                 continue
-            logger.info('')
-            logger.info(Fore.RED + f"{task_title}" + Style.RESET_ALL)
-            logger.info(s)
-            logger.info('')
             
             
             relevant_cnt = [pweights for _, _, pweights, _, _, _ in examples_in_source]
-            relevant_cnt = list(filter(lambda k: k >= 1, relevant_cnt))
+            relevant_cnt = list(filter(lambda k: k >= 2, relevant_cnt))
             
             if not relevant_cnt:
                 continue
@@ -237,7 +233,10 @@ class MetricsAggregator(object):
             if len(relevant_cnt) < 3:
                 continue
             
-            
+            logger.info('')
+            logger.info(Fore.RED + f"{task_title}" + Style.RESET_ALL)
+            logger.info(s)
+            logger.info('')
             idx += 1
 
             for _, _, pweights, y_predict, y_probs, text in examples_in_source:

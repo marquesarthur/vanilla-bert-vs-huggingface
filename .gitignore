@@ -2,3 +2,9 @@ uncased_L-12_H-768_A-12/
 uncased_L-12_H-768_A-12.zip
 .ipynb_checkpoints/
 __pycache__/
+
+dump2018crokagereplicationpackage.backup
+SO_vectors_200.bin
+SO_fasttext_vectors_200.bin
+SO_fasttext_vectors_200_small.bin
+

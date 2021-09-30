@@ -16,7 +16,7 @@ def undersample_df(df, n_times=3):
     undersampled_df = pd.concat([df_0, c1],axis=0)
     return undersampled_df
 
-def get_ds_synthetic_data(min_w=3):
+def get_ds_synthetic_data(undersample_n=3, min_w=3):
     short_task = {
       "bugzilla": """How to query bugs using the custom fields with the Bugzilla REST API?""",
       "databases": """Which technology should be adopted for the database layer abstraction: Object/Relational Mapping (ORM) or a Java Database Connectivity API (JDBC)?""",
@@ -39,7 +39,7 @@ def get_ds_synthetic_data(min_w=3):
             raw_data['weights'].append(d['weight'] if d['weight'] > min_w else 0)
  
         data = pd.DataFrame.from_dict(raw_data)
-        data = undersample_df(data, n_times=1)
+        data = undersample_df(data, n_times=undersample_n)
         data = data.sample(frac=1).reset_index(drop=True)
       
     return data

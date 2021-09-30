@@ -321,6 +321,35 @@ class TFBertForAndroidTaskTextClassification(TFBertForTaskTextClassification):
 
 class TFBertForSyntheticTaskTextClassification(TFBertForTaskTextClassification):
 
-    @abstractmethod
     def get_train_val_test(self, corpus, task_uid, size=0.9):
-        pass
+        if not isinstance(task_uid, list):
+            task_uid = [task_uid]
+
+        train_data_raw = defaultdict(list)
+        test_data_raw = defaultdict(list)
+
+        for _data in tqdm(corpus):
+            if _data['question'] in task_uid:
+                add_raw_data(test_data_raw, _data, use_pyramid=self.use_pyramid)
+        
+    
+        train_val = get_ds_synthetic_data(undersample_n=self.n_undersampling, min_w=self.min_w)
+        test = pd.DataFrame.from_dict(test_data_raw)
+
+        
+        # https://stackoverflow.com/questions/29576430/shuffle-dataframe-rows
+        #  randomize rows....
+        train_val = train_val.sample(frac=1).reset_index(drop=True)
+        test = test.sample(frac=1).reset_index(drop=True)
+
+        weights = get_class_weights(train_val['category_index'].tolist())
+
+        # split data for training and validation. stratifies splitting based on y labels
+        train, val = train_test_split(
+            train_val,
+            stratify=train_val['category_index'].tolist(),
+            train_size=size
+        )
+
+        return train, val, test, weights    
+    
