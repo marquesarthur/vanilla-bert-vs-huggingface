@@ -3,12 +3,12 @@ from flask import Flask, request, jsonify
 print("Loading stopwords")
 
 import nltk
-from util import clean_text
+from w2v_api.util import clean_text
 
 nltk.download('stopwords')
 nltk.download('punkt')
 
-from embedding import Word2Vec, SOWord2Vec
+from w2v_api.embedding import Word2Vec, SOWord2Vec
 
 print("Loading StackOverflow word2vec")
 w2v = SOWord2Vec()
