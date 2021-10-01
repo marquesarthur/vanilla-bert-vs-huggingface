@@ -144,7 +144,7 @@ class TFBertForTaskTextClassification(ABC):
         y_predict, y_probs = res.argmax(axis=-1), res[:, 1]
         aux = [(idx, prob) for idx, prob in enumerate(y_probs)]
 
-        max_pred_values = max(int(len(y_predict) * 0.15), self.target_output)
+        max_pred_values = self.target_output
 
         cnt = 0
         for idx, prob in sorted(aux, key=lambda k: k[1], reverse=True):
