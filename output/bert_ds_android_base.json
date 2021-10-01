@@ -1,0 +1,850 @@
+{
+    "0": {
+        "api": {
+            "fscore": [
+                0.5105381624718641,
+                0.5105381624718641
+            ],
+            "precision": [
+                0.5202127659574468,
+                0.5202127659574468
+            ],
+            "recall": [
+                0.5128465179175118,
+                0.5128465179175118
+            ]
+        },
+        "git": {
+            "fscore": [
+                0.4837027379400261,
+                0.5775749674054759
+            ],
+            "precision": [
+                0.5115384615384616,
+                0.5807692307692308
+            ],
+            "recall": [
+                0.5303030303030303,
+                0.7121212121212122
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.37999999999999995,
+                0.37999999999999995
+            ],
+            "precision": [
+                0.4523809523809524,
+                0.4523809523809524
+            ],
+            "recall": [
+                0.3275862068965517,
+                0.3275862068965517
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5087106139448119,
+                0.5193552267080687
+            ],
+            "precision": [
+                0.5379375470864833,
+                0.5494027485516847
+            ],
+            "recall": [
+                0.5887304843567521,
+                0.6188441207203885
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5846560846560847,
+                0.5643315018315018
+            ],
+            "precision": [
+                0.6027777777777779,
+                0.5968253968253968
+            ],
+            "recall": [
+                0.7864583333333334,
+                0.7708333333333334
+            ]
+        }
+    },
+    "1": {
+        "api": {
+            "fscore": [
+                0.5809523809523809,
+                0.7206349206349207
+            ],
+            "precision": [
+                0.5764705882352941,
+                0.7058823529411764
+            ],
+            "recall": [
+                0.5902777777777778,
+                0.7430555555555556
+            ]
+        },
+        "git": {
+            "fscore": [
+                0.47058823529411764,
+                0.5
+            ],
+            "precision": [
+                0.47058823529411764,
+                0.5307692307692308
+            ],
+            "recall": [
+                0.47058823529411764,
+                0.6176470588235294
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.4271636708345569,
+                0.437959892157094
+            ],
+            "precision": [
+                0.4451406731570331,
+                0.4891577671741271
+            ],
+            "recall": [
+                0.41524216524216523,
+                0.46225071225071224
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5019018909371462,
+                0.5093564799865916
+            ],
+            "precision": [
+                0.5195933223952892,
+                0.5307458218566121
+            ],
+            "recall": [
+                0.5159739361945245,
+                0.5639645893322365
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5371974561242586,
+                0.5118100405519428
+            ],
+            "precision": [
+                0.5626904761904761,
+                0.5206666666666667
+            ],
+            "recall": [
+                0.5706293706293706,
+                0.5784382284382283
+            ]
+        }
+    },
+    "2": {
+        "api": {
+            "fscore": [
+                0.4599080125877511,
+                0.5734734181039461
+            ],
+            "precision": [
+                0.42638735080595547,
+                0.5638400814871404
+            ],
+            "recall": [
+                0.5,
+                0.5939659755449229
+            ]
+        },
+        "git": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.49242904668794363,
+                0.5417953225500899
+            ],
+            "precision": [
+                0.4851937012263099,
+                0.5377240459383053
+            ],
+            "recall": [
+                0.5,
+                0.6030112237801778
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.45945382637307147,
+                0.5447516428340126
+            ],
+            "precision": [
+                0.4301248627314121,
+                0.5423117122868826
+            ],
+            "recall": [
+                0.5,
+                0.5779990702446218
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.4150326797385621,
+                0.5199716279426424
+            ],
+            "precision": [
+                0.36043725666367177,
+                0.5269002315513943
+            ],
+            "recall": [
+                0.5,
+                0.5286826268969126
+            ]
+        }
+    },
+    "3": {
+        "api": {
+            "fscore": [
+                0.4787057190002155,
+                0.4373550073479003
+            ],
+            "precision": [
+                0.5090277777777777,
+                0.4906224655312246
+            ],
+            "recall": [
+                0.618446481619184,
+                0.4653298295990547
+            ]
+        },
+        "git": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.4914119716952224,
+                0.4914119716952224
+            ],
+            "precision": [
+                0.49965091299677766,
+                0.49965091299677766
+            ],
+            "recall": [
+                0.5038086913086912,
+                0.5038086913086912
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5118372826696053,
+                0.5055511578305766
+            ],
+            "precision": [
+                0.529328471534433,
+                0.5298820390131829
+            ],
+            "recall": [
+                0.5752887657702752,
+                0.5286954465204305
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5819599391480731,
+                0.621984569689945
+            ],
+            "precision": [
+                0.5894570707070708,
+                0.6190025252525253
+            ],
+            "recall": [
+                0.582032266458496,
+                0.6486306271142337
+            ]
+        }
+    },
+    "4": {
+        "api": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "git": {
+            "fscore": [
+                0.5066041860596316,
+                0.6078445747800587
+            ],
+            "precision": [
+                0.5284921369102683,
+                0.6035426267281105
+            ],
+            "recall": [
+                0.5940860215053764,
+                0.6123058542413381
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.5488530161427357,
+                0.4636363636363636
+            ],
+            "precision": [
+                0.55,
+                0.49038461538461536
+            ],
+            "recall": [
+                0.9224137931034483,
+                0.4396551724137931
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5497652188288704,
+                0.5391232480027047
+            ],
+            "precision": [
+                0.574174632541885,
+                0.5295289388031323
+            ],
+            "recall": [
+                0.7029505005561736,
+                0.5628533761792938
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5933823529411765,
+                0.5081453634085213
+            ],
+            "precision": [
+                0.6319444444444444,
+                0.4750874125874126
+            ],
+            "recall": [
+                0.7020833333333334,
+                0.575
+            ]
+        }
+    },
+    "5": {
+        "api": {
+            "fscore": [
+                0.5179232804232804,
+                0.49621173954050135
+            ],
+            "precision": [
+                0.5254262574595056,
+                0.48277808924156174
+            ],
+            "recall": [
+                0.5132407407407408,
+                0.5843043785310734
+            ]
+        },
+        "git": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.486540271200037,
+                0.4623069743763788
+            ],
+            "precision": [
+                0.5010702475645724,
+                0.4745732415765484
+            ],
+            "recall": [
+                0.4738636363636364,
+                0.45151515151515154
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5168811802118338,
+                0.5016257655167207
+            ],
+            "precision": [
+                0.5275603449463941,
+                0.4998165367707342
+            ],
+            "recall": [
+                0.5837321604049546,
+                0.5569819968997437
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5360663526749185,
+                0.5350569942452412
+            ],
+            "precision": [
+                0.5473544973544974,
+                0.5393633302724212
+            ],
+            "recall": [
+                0.7274692627633804,
+                0.5908633849810321
+            ]
+        }
+    },
+    "6": {
+        "api": {
+            "fscore": [
+                0.5419274513762703,
+                0.5419274513762703
+            ],
+            "precision": [
+                0.5418991572217379,
+                0.5418991572217379
+            ],
+            "recall": [
+                0.6083916083916083,
+                0.6083916083916083
+            ]
+        },
+        "git": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.4605851210121012,
+                0.5164563331333133
+            ],
+            "precision": [
+                0.4550690425423901,
+                0.5152731241750432
+            ],
+            "recall": [
+                0.4669747667959333,
+                0.5192797313349404
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5043297305439604,
+                0.531790078837642
+            ],
+            "precision": [
+                0.5047239270334319,
+                0.5349941393312113
+            ],
+            "recall": [
+                0.5480067495584291,
+                0.5948559655176604
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5067884860237801,
+                0.5338686281039222
+            ],
+            "precision": [
+                0.5097157887545263,
+                0.5401205382374679
+            ],
+            "recall": [
+                0.5562655991301555,
+                0.6196722020411694
+            ]
+        }
+    },
+    "7": {
+        "api": {
+            "fscore": [
+                0.4967672413793104,
+                0.538433908045977
+            ],
+            "precision": [
+                0.5046822742474917,
+                0.536092530657748
+            ],
+            "recall": [
+                0.5071581196581196,
+                0.5752136752136752
+            ]
+        },
+        "git": {
+            "fscore": [
+                0.5490196078431373,
+                NaN
+            ],
+            "precision": [
+                0.6,
+                NaN
+            ],
+            "recall": [
+                0.8095238095238095,
+                NaN
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.543710040685847,
+                0.5588305262156247
+            ],
+            "precision": [
+                0.5357231213276983,
+                0.5527957309999669
+            ],
+            "recall": [
+                0.6235592859532281,
+                0.632408843475352
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5324805377304478,
+                0.5556964555527891
+            ],
+            "precision": [
+                0.5807610711160197,
+                0.6307537890450614
+            ],
+            "recall": [
+                0.624414699388185,
+                0.6318481921529088
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5432900432900433,
+                0.5651154401154401
+            ],
+            "precision": [
+                0.6550925925925926,
+                0.7458333333333332
+            ],
+            "recall": [
+                0.6414529914529914,
+                0.6692307692307692
+            ]
+        }
+    },
+    "8": {
+        "api": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "git": {
+            "fscore": [
+                0.39622641509433965,
+                0.39622641509433965
+            ],
+            "precision": [
+                0.4772727272727273,
+                0.4772727272727273
+            ],
+            "recall": [
+                0.3387096774193548,
+                0.3387096774193548
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.45054945054945056,
+                0.43181818181818177
+            ],
+            "precision": [
+                0.47674418604651164,
+                0.475
+            ],
+            "recall": [
+                0.4270833333333333,
+                0.3958333333333333
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.470821549067942,
+                0.4661387318851248
+            ],
+            "precision": [
+                0.5064335212591027,
+                0.5059974747474747
+            ],
+            "recall": [
+                0.4776725647745531,
+                0.4698600647745531
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5182551653139889,
+                0.5182551653139889
+            ],
+            "precision": [
+                0.5358585858585858,
+                0.5358585858585858
+            ],
+            "recall": [
+                0.5724486241727621,
+                0.5724486241727621
+            ]
+        }
+    },
+    "9": {
+        "api": {
+            "fscore": [
+                0.4635093167701863,
+                0.4635093167701863
+            ],
+            "precision": [
+                0.48411801632140616,
+                0.48411801632140616
+            ],
+            "recall": [
+                0.44495607071027843,
+                0.44495607071027843
+            ]
+        },
+        "git": {
+            "fscore": [
+                NaN,
+                NaN
+            ],
+            "precision": [
+                NaN,
+                NaN
+            ],
+            "recall": [
+                NaN,
+                NaN
+            ]
+        },
+        "misc": {
+            "fscore": [
+                0.4893715615325459,
+                0.47755123056327875
+            ],
+            "precision": [
+                0.5009725400457665,
+                0.49993734335839596
+            ],
+            "recall": [
+                0.5125,
+                0.4916666666666667
+            ]
+        },
+        "overall": {
+            "fscore": [
+                0.5267867303775166,
+                0.49798869978738225
+            ],
+            "precision": [
+                0.5396532024403102,
+                0.5172921973709418
+            ],
+            "recall": [
+                0.5661987661925793,
+                0.52165390492358
+            ]
+        },
+        "run_cnt": 2,
+        "so": {
+            "fscore": [
+                0.5939151186790506,
+                0.5345999346149152
+            ],
+            "precision": [
+                0.602463768115942,
+                0.5509782207456626
+            ],
+            "recall": [
+                0.6828264073091659,
+                0.5927772865703901
+            ]
+        }
+    },
+    "venn_diagram_set": [
+        "First, we will create an InputStreamReader that reads our request input.",
+        "To overcome this, I have created a custom ViewPager -LRB- based on LINK -RRB- that calculates it's height in the required manner.",
+        "Try to check below FragmentPagerAdapter to get endless viewpager adapter:",
+        "So in order to get a scoped provider in a module, you need to specify the scope for your module's provider method.",
+        "I am using mic to record phone audio and also use the Telephony manager to find the calling state.",
+        "This bug incorrectly sets the drawable bounds to 0 -LRB- or negative in the case of an inset drawable -RRB-.",
+        "Finally, getView ( ) creates a view to be used as a row in the list.",
+        "You can provide multiple callbacks via addCallback ( ).",
+        "Use android: fillViewport = `` true'' in ScrollView",
+        "Here is a LINK on how to record audio using the LINK.",
+        "These are permissions that are requested while the app is running ( instead of before the app is installed ).",
+        "Make a Snackbar to display a message.",
+        "Do not inset the content with any margins from the PrintAttributes as the application is responsible to render it such that the margins are respected.",
+        "So really you want to replace:",
+        "with the api 23, permission <uses-permission\u00a0android:name=\"android.pemission.READ_CONTACTS\"/> dont work, change the api level in the emulator for api 22 -LRB- lollipop -RRB- or lower",
+        "it is used for the Android Music Remote control even if the App is in Lock mode.",
+        "You set this text view a width of `` wrap_content'' it means, what ever the text is, the view take the size of the text.",
+        "To be able to record, your app must tell the user that it will access the device's audio input.",
+        "It is worth noting that apparently Dagger2 creates a single instance per scoped provider in a module per component.",
+        "Listening for Location Updates After you invoke `` getLastLocation'', you might want to request periodic updates from the Fused Location Provider.",
+        "Now Android allows you to decide which permissions to accept on a case-by-case basis -- after the app is installed.",
+        "A typical use of the APIs to render a PDF looks like this:",
+        "Although what you are doing is really not appropriate.",
+        "Make a Snackbar to display a message",
+        "Pin down exactly which queries you need to optimize.",
+        "Unscoped dependency will have simple Provider generated without any caching and any instance of that dependency created in component will be new for every new injection -LRB- as in constructor, or in module provision method, or just as a field -RRB-.",
+        "The cool thing about the new Google Recaptcha is that the validation is now completely encapsulated in the widget.",
+        "For SELECTs and UPDATEs, indexes can things up, but only if the indexes you create can actually be used by the queries that you need speeding up.",
+        "inject.Scope annotation - Dependencies declared with that scope with have caching Provider with double-check lock generated and only single instance will be created for it within component declared with the same scope and its creation will be thread safe.",
+        "gravity is the way the text will align itself in the TextView.",
+        "And replace the response_string with the value that you earlier got by the g-recaptcha-response field.",
+        "I haven't tried recording phone call's but there is a option in LINK for:",
+        "Get a View that displays the data at the specified position in the data set.",
+        "This is designed to prevent apps from eavesdropping on telephone conversations.",
+        "Use ANALYZE to allow SQLite's query planner to work more efficiently.",
+        "Use EXPLAIN QUERY PLAN on your queries to see which index would be used or if the query requires a full table scan.",
+        "Using a Custom ArrayAdapter When we want to display a series of items from a list using a custom representation of the items, we need to use our own custom XML layout for each item.",
+        "When a scale -LRB- ie, pinch -RRB- gesture is detected, then the scale factor is used to resize the ImageView.",
+        "basically I used a private string property taken as a string to construct a computed property with that enum correspondance.",
+        "You can develop these things yourself, but if you would like to use a pre-made custom view, copy LINK into your project and use it like a normal ImageView.",
+        "You need to have implement a LINK and declare it in the AndroidManifest.xml.",
+        "We use a ScaleGestureDetector on the activity to listen to touch events.",
+        "But these action buttons should not duplicate the action performed when the user taps the notification.",
+        "As getView is call many times inflating a new view every time is expensive so list view provides you one of the previously created view to re-use.",
+        "Here's a bit of code to get EXPLAIN QUERY PLAN results into Android logcat from a running Android app.",
+        "When doing so, the callbacks are invoked in the reverse order in which they are added - the callback added last is the first given a chance to handle the Back button event.",
+        "I am using mic to record calls for better support and compatibility.",
+        "A Toolbar is a generalization of action bars for use within application layouts.",
+        "This class enables rendering a PDF document.",
+        "you should try this:",
+        "If the user presses and holds the button, then onKeyDown ( ) is called multiple times.",
+        "I'm still convinced that there are some security settings in the OS that deny the access to the contacts.",
+        "Normally, the Android OS prohibits apps from accessing each other's files -LRB- i.e. databases, preference files, regular files stored in the app's private directory -RRB- through proven Linux file permissions.",
+        "This is a boolean value that will be true for a debug build, false otherwise:",
+        "The use of application icon plus title as a standard layout is discouraged on API 21 devices and newer.",
+        "Those recording sources may only be used by system apps.",
+        "with some custome code which simply draws a drawable icon.",
+        "You use them following the same basic pattern you use for other types of requests.",
+        "Dangerous permission groups, however, can give apps access to things like your calling history, private messages, location, camera, microphone, and more.",
+        "While developing for a target platform of 2.3.3 using Eclipse on Ubuntu, I had permission failures in the log file that indicated I needed this exact line while working on something similar.",
+        "But the easiest option is to generate java code directly and your generated java classes will be picked up by javac automatically, launching second round of annotation processing, where dagger will process them.",
+        "ComponentActivity, the base class for FragmentActivity and AppCompatActivity, allows you to control the behavior of the Back button by using its OnBackPressedDispatcher, which you can retrieve by calling getOnBackPressedDispatcher ( ).",
+        "How to make a dependency injectable To make an object embeddable in Hilt, you need to tell Hilt how to instantiate that object.",
+        "For example, if you added three callbacks named one, two and three in order, they would be invoked in the order of three, two, and one, respectively.",
+        "A notification can offer up to three action buttons that allow the user to respond quickly, such as snooze a reminder or even reply to a text message.",
+        "Returns the value mapped by name if it exists and is a JSONObject, or throws otherwise.",
+        "When GCM delivers a message to your device, BroadcastReceiver will receive the message and call the onReceive -LRB- -RRB- function, wherein you may start a service to actually perform the intended task for you.",
+        "To handle an individual key press, implement onKeyDown ( ) or onKeyUp ( ) as appropriate.",
+        "Every android app has its own internal storage only that app can access, you can read from there or write to it.",
+        "That means, that the widget will take care of asking questions, validating responses all the way till it determines that a user is actually a human, only then you get a g-recaptcha-response value.",
+        "Anyone with HTTP POST knowledge could put random data inside of the g-recaptcha-response form field, and foll your site to make it think that this field was provided by the google widget.",
+        "Use android: fitsSystemWindows = `` true'' in the root view of your layout -LRB- LinearLayout in your case -RRB-.",
+        "You can either rotate your bitmap when you draw it by using a matrix:",
+        "After that override getView -LRB- -RRB- method and make sure to return your custom View there.",
+        "Get the data item associated with the specified position in the data set.",
+        "You don't need to use so many lists, just create a class that will contain all the data of single item, there is no need for buttons, use just text change listener instead.",
+        "Make sure you have the icon set in the manifest.xml file, in the application tag as:",
+        "reCAPTCHA is a free service that uses an advanced risk analysis engine to protect your app from spam and other abusive actions.",
+        "You can also do it by rotating the canvas before drawing:",
+        "Returns the value mapped by name if it exists and is a JSONObject, or null otherwise.",
+        "I created a ViewPager that supports infinite looping effect, smart auto-scroll, compatible with any indicators and easy to use.",
+        "During deserialization, you would want Jackson to deserialize the `` Vehicle'' JSON object to the appropriate `` Car'' or `` Plane'' class.",
+        "Beginning in Android 6.0 -LRB- API level 23 -RRB-, users grant permissions to apps while the app is running, not when they install the app.",
+        "To fix this issue, open MainActivity.kt and add the following line inside onCreate ( ) below the line where you connect the PageAdapter to the ViewPager:",
+        "First of all your Animal class with the Json Annotations for the subclasses.",
+        "The TextView being in wrap_content this does nothing, as the TextView is exactly the size of the text.",
+        "One thing that I ran across when I applied this approach to my production code is that you still need to keep the @JsonSubtypes annotation as part of the Base class.",
+        "Try adding this piece of code before loading your viewPager",
+        "Due to the specifics of Android threading, we can not run network tasks on the same thread as the UI thread.",
+        "get a seekable file descriptor from your pdf document:",
+        "that is done because rotation is around the top left point ( the origin ) of the view.",
+        "Javac annotation processor uses rounds instead of defining processors order.",
+        "layout_gravity is the way the TextView will align itself in its parent, in your case in the vertical LinearLayout",
+        "GoogleApiClient FusedLocationProviderApi requires the GoogleApiClient instance to get the Location and it can be obtained as below.",
+        "The following example code demonstrates how to create a basic camera preview class that can be included in a View layout.",
+        "Before using the reCAPTCHA API, you need to add the SafetyNet API to your project.",
+        "The error message you are getting appears to be due to dubiously-legal JSON, particularly on the receiving side:",
+        "If you want to render a PDF, you create a renderer and for every page you want to render, you open the page, render it, and close the page.",
+        "If you would like an application icon -LRB- but I discourage it -RRB-, you can use the method setLogo -LRB- -RRB-.",
+        "Consider the following below: If you have a JSON object for `` Vehicle'', it could be a `` Car'' or `` Plane'', each with its own fields, some unique to the other.",
+        "Then inside of the interceptor, you can verify if the request is annotated or no.",
+        "Values may be any mix of JSONObjects, JSONArrays, Strings, Booleans, Integers, Longs, Doubles or NULL.",
+        "Displaying ActionBar Icon In the new Android 5.0 material design guidelines, the style guidelines have changed to discourage the use of the icon in the ActionBar.",
+        "Java 8 -LRB- LINK -RRB- solves this problem using streams and lambdas in one line of code:",
+        "If you are using Android Studio, or if you are using Gradle from the command line, you can add your own stuff to BuildConfig or otherwise tweak the debug and release build types to help distinguish these situations at runtime.",
+        "In Android development, any time we want to show a vertical list of scrollable items we will use a ListView which has data populated using an Adapter.",
+        "Therefore, Android will always ask you to approve dangerous permissions.",
+        "If you have more complex queries that can't make use of any indexes that you might create, you can de-normalize your schema, structuring your data in such a way that the queries are simpler and can be answered using indexes.",
+        "If you are using this class to rasterize a PDF for printing or show a print preview, it is recommended that you respect the following contract in order to provide a consistent user experience when seeing a preview and printing, i.e. the user sees a preview that is the same as the printout.",
+        "Since the version of Retrofit 2.6.0, you can get the annotations in OkHttp Interceptor using the tag field like this:",
+        "and in the LinearLayout, the default gravity -LRB- used here -RRB- is ` center'",
+        "This document shows you how to use MediaRecorder to write an application that captures audio from a device microphone, save the audio, and play it back ( with MediaPlayer ).",
+        "The simplest, and best long-term solution, is to use BuildConfig.DEBUG.",
+        "It is possible that the JSONObject parser has been made more lenient in newer Android releases.",
+        "When scaling a document for printing the aspect ratio should be preserved.",
+        "Note that in the zip function, the parameters have concrete types that correspond to the types of the observables being zipped."
+    ]
+}
