@@ -1,0 +1,8 @@
+numpy
+gensim
+nltk
+flask
+scikit-learn
+Werkzeug
+gunicorn
+requests
