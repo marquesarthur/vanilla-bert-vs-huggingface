@@ -6,6 +6,12 @@ import numpy as np
 import pandas as pd
 import logging
 import sys
+from numpy import mean
+from numpy import var
+from math import sqrt
+import scipy
+import scipy.stats
+
 
 logger = logging.getLogger()
 
@@ -39,6 +45,56 @@ class ReportAnalysis(object):
 
 
         return np.mean(self.filter_nan(__precision)), np.mean(self.filter_nan(__recall)), np.mean(self.filter_nan(__fscore))
+    
+    def get_ir_metrics(self, input_file, type='overall'):
+        __precision, __recall, __fscore = [], [], []
+        with open(input_file) as input_file:
+            fold_results = json.load(input_file)
+
+        for key_i, value in fold_results.items():
+            if isinstance(value, dict):
+                if key_i == type:
+                    __precision += value['precision']
+                    __recall += value['recall']
+                    __fscore  += value['fscore']
+
+
+        return np.mean(self.filter_nan(__precision)), np.mean(self.filter_nan(__recall)), np.mean(self.filter_nan(__fscore))
+    
+    
+    def get_fold_metrics_to_list(self, input_file, type='overall'):
+        fold_results = dict()
+        __precision, __recall, __fscore = [], [], []
+
+        with open(input_file) as input_file:
+            fold_results = json.load(input_file)
+
+        for key_i, value in fold_results.items():
+            if isinstance(value, dict):
+                for key_j, _data in value.items():
+                    if key_j == type:
+                        __precision.append(np.mean(self.filter_nan(_data['precision'])))
+                        __recall.append(np.mean(self.filter_nan(_data['recall'])))
+                        __fscore.append(np.mean(self.filter_nan(_data['fscore'])))
+
+
+        return self.filter_nan(__precision), self.filter_nan(__recall), self.filter_nan(__fscore)
+    
+    
+    def get_ir_metrics_to_list(self, input_file, type='overall'):
+        __precision, __recall, __fscore = [], [], []
+        with open(input_file) as input_file:
+            fold_results = json.load(input_file)
+
+        for key_i, value in fold_results.items():
+            if isinstance(value, dict):
+                if key_i == type:
+                    __precision += value['precision']
+                    __recall += value['recall']
+                    __fscore  += value['fscore']
+
+
+        return self.filter_nan(__precision), self.filter_nan(__recall), self.filter_nan(__fscore)
     
     
     def report_BERT_metrics(self, pattern, source_type='overall', verbose=False):
@@ -91,3 +147,71 @@ class ReportAnalysis(object):
             logger.info("precision: " + Fore.RED + "{:.3f}".format(bert_precision) + Style.RESET_ALL)
             logger.info("recall:    " + Fore.RED + "{:.3f}".format(bert_recall) + Style.RESET_ALL)
             logger.info("f1-score:  " + Fore.RED + "{:.3f}".format(bert_f1score) + Style.RESET_ALL)
+            
+            
+    def report_IR_metrics(self, pattern, source_type='overall', verbose=False, has_filters=False):
+        bert_file = pattern + '_base.json'
+        bert_file_A = pattern + '_fe.json' # for frame-elements filter
+        bert_file_B = pattern + '_fa.json' # for frame-association filters   
+
+
+        # <-------------------------------------------------------------------------------------- BERT    
+        bert_precision, bert_recall, bert_f1score = self.get_ir_metrics(bert_file, type=source_type)
+
+        self.pandas_table["technique"].append(bert_file.replace("output/", "").replace("_base.json", ""))
+        self.pandas_table["precision"].append(bert_precision)
+        self.pandas_table["recall"].append(bert_recall)    
+        self.pandas_table["f1-score"].append(bert_f1score)
+
+        if verbose:
+            logger.info("")
+            logger.info(f"BERT " + Fore.RED + source_type.upper() + Style.RESET_ALL + " metrics")
+            logger.info("precision: " + Fore.RED + "{:.3f}".format(bert_precision) + Style.RESET_ALL)
+            logger.info("recall:    " + Fore.RED + "{:.3f}".format(bert_recall) + Style.RESET_ALL)
+            logger.info("f1-score:  " + Fore.RED + "{:.3f}".format(bert_f1score) + Style.RESET_ALL)
+            
+        if has_filters:
+
+            # <-------------------------------------------------------------------------------------- BERT    
+            bert_precision, bert_recall, bert_f1score = self.get_ir_metrics(bert_file_A, type=source_type)
+
+            self.pandas_table["technique"].append(bert_file_A.replace("output/", "").replace("_fe.json", " w/ frame-elements"))
+            self.pandas_table["precision"].append(bert_precision)
+            self.pandas_table["recall"].append(bert_recall)    
+            self.pandas_table["f1-score"].append(bert_f1score)
+
+            if verbose:
+                logger.info("")
+                logger.info(Fore.RED + "frame-elements" + Style.RESET_ALL + " metrics")
+                logger.info("precision: " + Fore.RED + "{:.3f}".format(bert_precision) + Style.RESET_ALL)
+                logger.info("recall:    " + Fore.RED + "{:.3f}".format(bert_recall) + Style.RESET_ALL)
+                logger.info("f1-score:  " + Fore.RED + "{:.3f}".format(bert_f1score) + Style.RESET_ALL)
+
+            # <-------------------------------------------------------------------------------------- BERT    
+            bert_precision, bert_recall, bert_f1score = self.get_ir_metrics(bert_file_B, type=source_type)
+
+            self.pandas_table["technique"].append(bert_file_B.replace("output/", "").replace("_fa.json", " w/ frame-associations"))
+            self.pandas_table["precision"].append(bert_precision)
+            self.pandas_table["recall"].append(bert_recall)    
+            self.pandas_table["f1-score"].append(bert_f1score)
+
+            if verbose:
+                logger.info("")
+                logger.info(Fore.RED + "frame-associations" + Style.RESET_ALL + " metrics")
+                logger.info("precision: " + Fore.RED + "{:.3f}".format(bert_precision) + Style.RESET_ALL)
+                logger.info("recall:    " + Fore.RED + "{:.3f}".format(bert_recall) + Style.RESET_ALL)
+                logger.info("f1-score:  " + Fore.RED + "{:.3f}".format(bert_f1score) + Style.RESET_ALL)            
+            
+
+            
+    def cohend(self, d1, d2):
+        # calculate the size of samples
+        n1, n2 = len(d1), len(d2)
+        # calculate the variance of the samples
+        s1, s2 = var(d1, ddof=1), var(d2, ddof=1)
+        # calculate the pooled standard deviation
+        s = sqrt(((n1 - 1) * s1 + (n2 - 1) * s2) / (n1 + n2 - 2))
+        # calculate the means of the samples
+        u1, u2 = mean(d1), mean(d2)
+        # calculate the effect size
+        return (u1 - u2) / s
