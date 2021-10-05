@@ -4,6 +4,8 @@ from collections import defaultdict
 from colorama import Fore, Style
 import numpy as np
 import pandas as pd
+import scipy
+import scipy.stats
 import logging
 import sys
 from numpy import mean
@@ -200,8 +202,154 @@ class ReportAnalysis(object):
                 logger.info(Fore.RED + "frame-associations" + Style.RESET_ALL + " metrics")
                 logger.info("precision: " + Fore.RED + "{:.3f}".format(bert_precision) + Style.RESET_ALL)
                 logger.info("recall:    " + Fore.RED + "{:.3f}".format(bert_recall) + Style.RESET_ALL)
-                logger.info("f1-score:  " + Fore.RED + "{:.3f}".format(bert_f1score) + Style.RESET_ALL)            
+                logger.info("f1-score:  " + Fore.RED + "{:.3f}".format(bert_f1score) + Style.RESET_ALL)
+                
+
+    def compare_BERT_to_answer_bot(self, ansbot, pattern, source_type='so', verbose=False, has_filters=False, aplha=0.1):
+        bert_file = pattern + '_base.json'
+        bert_file_A = pattern + '_fe.json' # for frame-elements filter
+        bert_file_B = pattern + '_fa.json' # for frame-association filters   
+        
+        
+        answerbot_precision, answerbot_recall, _ = self.get_ir_metrics_to_list(ansbot, type='so')
+        
+
+
+        # <-------------------------------------------------------------------------------------- BERT
+        _id = bert_file.replace("output/", "").replace("_base.json", "")
+        _precision, _recall, _f1score = self.get_fold_metrics_to_list(bert_file, type=source_type)
+        
+        
+        _r = scipy.stats.mannwhitneyu(answerbot_precision, _precision, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_precision, _precision)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [PRECISION]")
             
+        _r = scipy.stats.mannwhitneyu(answerbot_recall, _recall, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_recall, _recall)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [RECALL]")
+            
+            
+        # <-------------------------------------------------------------------------------------- BERT  
+        logger.info("")
+        _id = bert_file_A.replace("output/", "").replace("_fe.json", " w/ frame-elements")            
+        _precision, _recall, _f1score = self.get_fold_metrics_to_list(bert_file_A, type=source_type)
+        
+        
+        _r = scipy.stats.mannwhitneyu(answerbot_precision, _precision, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_precision, _precision)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [PRECISION]")
+            
+        _r = scipy.stats.mannwhitneyu(answerbot_recall, _recall, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_recall, _recall)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [RECALL]")
+            
+
+        # <-------------------------------------------------------------------------------------- BERT            
+        logger.info("")
+        _id = bert_file_B.replace("output/", "").replace("_fa.json", " w/ frame-associations")
+        _precision, _recall, _f1score = self.get_fold_metrics_to_list(bert_file_B, type=source_type)
+        
+        
+        _r = scipy.stats.mannwhitneyu(answerbot_precision, _precision, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_precision, _precision)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [PRECISION]")
+            
+        _r = scipy.stats.mannwhitneyu(answerbot_recall, _recall, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_recall, _recall)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [RECALL]")
+            
+            
+
+    def compare_IR_to_answer_bot(self, ansbot, pattern, source_type='so', verbose=False, has_filters=False, aplha=0.1):
+        bert_file = pattern + '_base.json'
+        bert_file_A = pattern + '_fe.json' # for frame-elements filter
+        bert_file_B = pattern + '_fa.json' # for frame-association filters   
+        
+        
+        answerbot_precision, answerbot_recall, _ = self.get_ir_metrics_to_list(ansbot, type='so')
+        
+
+
+        # <-------------------------------------------------------------------------------------- BERT
+        _id = bert_file.replace("output/", "").replace("_base.json", "")
+        _precision, _recall, _f1score = self.get_ir_metrics_to_list(bert_file, type=source_type)
+        
+        
+        _r = scipy.stats.mannwhitneyu(answerbot_precision, _precision, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_precision, _precision)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [PRECISION]")
+            
+        _r = scipy.stats.mannwhitneyu(answerbot_recall, _recall, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_recall, _recall)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [RECALL]")
+            
+            
+        # <-------------------------------------------------------------------------------------- BERT  
+        logger.info("")
+        _id = bert_file_A.replace("output/", "").replace("_fe.json", " w/ frame-elements")            
+        _precision, _recall, _f1score = self.get_ir_metrics_to_list(bert_file_A, type=source_type)
+        
+        
+        _r = scipy.stats.mannwhitneyu(answerbot_precision, _precision, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_precision, _precision)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [PRECISION]")
+            
+        _r = scipy.stats.mannwhitneyu(answerbot_recall, _recall, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_recall, _recall)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [RECALL]")
+            
+
+        # <-------------------------------------------------------------------------------------- BERT            
+        logger.info("")
+        _id = bert_file_B.replace("output/", "").replace("_fa.json", " w/ frame-associations")
+        _precision, _recall, _f1score = self.get_ir_metrics_to_list(bert_file_B, type=source_type)
+        
+        
+        _r = scipy.stats.mannwhitneyu(answerbot_precision, _precision, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_precision, _precision)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [PRECISION]")
+            
+        _r = scipy.stats.mannwhitneyu(answerbot_recall, _recall, alternative='two-sided')
+        if _r.pvalue <= aplha:
+            effect_size = self.cohend(answerbot_recall, _recall)
+            logger.info("p-value=" +Fore.RED +  "{:.3f} ".format(_r.pvalue) + Style.RESET_ALL +\
+                        "effect-size=" +Fore.RED +  "{:.3f} ".format(effect_size) + Style.RESET_ALL +\
+                        " for " + Fore.RED +  f"{_id}" + Style.RESET_ALL + " [RECALL]")            
+            
+        
 
             
     def cohend(self, d1, d2):
