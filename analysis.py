@@ -211,7 +211,7 @@ class ReportAnalysis(object):
         bert_file_B = pattern + '_fa.json' # for frame-association filters   
         
         
-        answerbot_precision, answerbot_recall, _ = self.get_ir_metrics_to_list(ansbot, type='so')
+        answerbot_precision, answerbot_recall, _ = self.get_ir_metrics_to_list(ansbot, type=source_type)
         
 
 
@@ -284,7 +284,7 @@ class ReportAnalysis(object):
         bert_file_B = pattern + '_fa.json' # for frame-association filters   
         
         
-        answerbot_precision, answerbot_recall, _ = self.get_ir_metrics_to_list(ansbot, type='so')
+        answerbot_precision, answerbot_recall, _ = self.get_ir_metrics_to_list(ansbot, type=source_type)
         
 
 
