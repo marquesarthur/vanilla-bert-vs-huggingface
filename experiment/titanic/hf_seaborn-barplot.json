@@ -1,0 +1,1256 @@
+[
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Menu Menu HOME COURSES BLOG STUDENT LOGIN"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Menu HOME COURSES BLOG STUDENT LOGIN"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "HOME COURSES BLOG STUDENT LOGIN"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "How to Make a Seaborn Barplot July 23, 2021December 30, 2019 by Joshua Ebner This tutorial will show you how to make a Seaborn barplot."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The tutorial explains the syntax of sns.barplot, and shows step-by-step examples of how to create bar charts with Seaborn."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The tutorial is divided up into several sections."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "You can click on any of the following links to take you to the appropriate section ( if you need something specific )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Table of Contents: Introduction to Seaborn A quick review of Bar Charts A quick introduction to the Seaborn Barplot The syntax of sns.barplot ( ) Seaborn barplot examples Seaborn barplot FAQ But if you're new to Seaborn or new to data visualization in Python, you should probably read the full tutorial."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "A quick review of bar plots Let's quickly review bar charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "According to Wikipedia, bar charts ( AKA, bar plots ) are: a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "So typically, the different bars represent different categories from a categorical variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "And the length of each bar represents some value of some metric for those categories."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "When to use the bar chart Typically, we use bar charts when we have at least one categorical variable and one numeric variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "We use the bar chart to analyze the differences between the categories."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Bar charts are a simple yet powerful data visualization technique that we can use to analyze data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "But in spite of their relative simplicity, they are not entirely easy to create in Python."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Having said that, let's talk about creating bar charts in Python, and in Seaborn."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "A quick introduction Seaborn Before we talk about bar charts in Seaborn, let me quickly introduce Seaborn."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you're not familiar with it, Seaborn is a data visualization package for the Python programing language."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Source: https://seaborn.pydata.org/ It provides functions to create a variety of statistical data visualizations."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Seaborn is one of the best packages for data visualization Python has a variety of data visualization packages."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "There are some old ones, like matplotlib."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "And there are some newer ones like Plotly, Bokeh, and others."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "With all of the options, why use Seaborn ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The short answer is that it's much easier to use than many of the other options."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Now, this sort of depends on what you're trying to do."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you're trying to create a highly unique, customized visualization, Seaborn is probably not the best choice."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "But if you want to easily create beautiful looking statistical visualizations ( like bar charts, line charts, etc ), then Seaborn is currently the best option."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "There are a few reasons for this."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Seaborn works well with DataFrames Perhaps the biggest reasons to use Seaborn is that the syntax was largely designed to work well with Pandas DataFrames."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "This is in contrast to many other Python data visualization packages, matplotlib in particular."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Notably, matplotlib does not work well with DataFrames."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you're used to using DataFrames, and you `` think about visualization'' in terms of plotting columns in a DataFrame, then you'll struggle with matplotlib."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Seaborn, on the other hand, works well with DataFrames, for the most part."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "It's easy to specify that you want to plot columns in a particular DataFrame with fairly simple syntax."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "( In this regard, Seaborn is somewhat akin to ggplot2 in R. ) Seaborn is better for multivariate visualization Seaborn is also better at creating multivariate data visualizations."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Again, this is in contrast to matplotlib."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "For example, matplotlib has a function to create very simple bar charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "But if you want to use multiple categorical variables in your bar chart, things get substantially more complicated."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "For example, `` dodged'' bar charts are somewhat difficult to create with matplotlib."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "On the other hand, multivariate visualizations are easy to create with Seaborn."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The syntax is simple and intuitive."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Creating something like a `` dodged'' bar chart is fairly easy in Seaborn ( I'll show you how in example 6 of this tutorial )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "An introduction to the Seaborn barplot Seaborn makes it easy to create bar charts ( AKA, bar plots ) in Python."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The tool that you use to create bar plots with Seaborn is the sns.barplot ( ) function."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To be clear, there is a a similar function in Seaborn called sns.countplot ( )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The main difference between sns.barplot and sns.countplot is that the countplot ( ) function counts the records, and the length of each bar corresponds to the count of records for that particular category."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "However, the sns.barplot function is different."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The sns.barplot function calculates the mean The sns.barplot function calculates a summary statistic for each category."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, it calculates the mean."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The length of each bar corresponds to the value of that statistic."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "So when you use sns.barplot, by default, the length of the bar corresponds to the mean of the data for that category."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Having said that, it is possible to change how sns.barplot summarizes the data by using the estimator parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Moreover, if you know how to wrangle your data using Pandas, you can calculate even more complicated statistics."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Now that you now a little about the sns.barplot function, let's take a look at its syntax."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The syntax of sns.barplot The syntax for sns.barplot ( ) is fairly simple."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "In the simplest case, you simply call the function as sns.barplot ( )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Then inside of the parenthesis, you can specify the DataFrame that you want to plot, as well as the variables that you want to put on the x and y axes."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "That's generally the type of syntax that you'll use to create a simple bar chart ( which I'll show you in example 1 )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "However, the syntax can get more complicated if you use some of the optional parameters of sns.boxplot."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Let's take a look at some of those parameters."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The parameters of sns.barplot The sns.barplot function has well over a dozen parameters that you can use to control how the function works."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "In the interest of brevity, however, we'll only talk about a few of the most common: data x y color hue ci estimator Let's talk more specifically about each of these data The data parameter enables you to specify the DataFrame that holds the data that you want to plot."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Technically, this parameter will also recognize an array or a list of arrays, but it's most common to pass a Pandas DataFrame as the argument to the data parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "x The x parameter enables you to specify the variable that you want to map to the x axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you're creating a vertical bar chart, then you'll typically pass a categorical variable to this parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you create a horizontal bar chart, it will be a numeric variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "( I'll show you examples of these in the examples section. )"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "y The y parameter is similar to the x parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The y parameter enables you to specify the variable that you want to map to the y axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The type of variable that you pass to y depends on what type of bar chart you want to create."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you're creating a vertical bar chart, then you'll typically pass a numeric variable to this parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you create a horizontal bar chart, it will be a categorical variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "color The color parameter enables you to specify the color of the bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you don't provide a value to this parameter, Seaborn will choose the color of the bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, it will make each bar a different color."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "I recommend that you not use the default."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Typically, you should change the color of the bars so they are all the same color."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To be clear: when you use the color parameter, all of the bars will have the same color."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "hue The hue parameter also changes the color of the bars, but it works differently than the color parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Normally, you'll map a categorical variable to the hue parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "When you do this, the sns.barplot function will create new bars for the categories of the variable you map to hue."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Essentially, when you use the hue parameter, sns.barplot will create a `` dodged'' bar chart, where the color of the bars is set according to the hue variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "I'll show you an example of this in example 6 to help you understand."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "ci The ci parameter enables you to modify the error bars of the bar chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Error bars are very common in academic settings, but not as common in business settings."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, this is set to ci = 95, but you can change this to `` sd'', in which case it will use the bars to denote the standard deviation of the data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "You can also set ci = None, in which case, the function will remove the error bars entirely."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "estimator The estimator enable you to specify what statistical function to use for calculating the length of the bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, this is set to `` mean'' ... so sns.barplot will compute the mean for each category, and the length of the bar will correspond to the mean."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "But, you can change this to other statistics, like `` min'', `` max'', `` median'', etc.."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Examples: How to make bar charts with Seaborn Ok, now that you've learned about the syntax of sns.barplot, let's take a look at some examples."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Examples: Create a simple bar chart Change the bar colors Remove the error bars Create a horizontal bar chart Calculate a different summary statistic Create a `` dodged'' bar chart Run this code first Before you run any of the examples, you'll need to run some preliminary code first."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "You'll need to import some packages, set the formatting, and create the dataset we're going to use."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Install packages First, you need to import some Python packages."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Specifically, you need to import Pandas, Numpy, and Seaborn."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "You can do that with this code: We'll use Pandas and Numpy to create our dataset, and we'll use Seaborn ( obviously ) to create our bar charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Set Seaborn formatting Next, we're going to set the formatting for our charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, ( depending on how your defaults are set up ), your charts may be formatted like Matplotlib charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Frankly, the matplotlib defaults are a little ugly, so we're going to use Seaborn's chart formatting."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To do this, we can use the sns.set ( ) function: Create data frame Finally, we're going to create a dataframe that contains some `` dummy'' data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The final DataFrame will contain dummy test `` scores'' for a set of students."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "There will be three variables in the DataFrame: score, class, and gender."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To create this data, we'll use the numpy.random.normal function to create normally distributed data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Those normally distributed datasets are named with the prefix score_array _ in the code below."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Those normally distributed arrays are then turned into DataFrames with the help of the pandas.DataFrame function."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "When we create those dataframes, we're adding the variables `` class'' and `` gender ``, with the appropriate values."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "In the last step, we concatenate everything together into one dataframe with the pd.concat function."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "You can run the following code to create the data: And let's print out a few rows: OUT: So the score_data dataset has three variables with data about the class, gender, and score for a group of 600 students."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Now that we have our dataset, let's make some bar charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "EXAMPLE 1: Create a simple bar chart First, we'll create a simple bar chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To do this, we'll call the sns.barplot function, and specify the data, as well as the x and y variables."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "We're specifying that we want to plot data in the score_data DataFrame with the code data = score_data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "We're specifying that we want to put the ` class' variable on the x axis and the ` score' variable on the y axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Let's run the code: And here's the output: I'll start off by saying that this works, but it's a little imperfect."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Each different category of the class variable has it's own bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Those bars are placed at different positions on the x axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "That corresponds to the code x = ` class'."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The length of each bar corresponds to the mean score for each class."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "That corresponds to the code y = ` score'."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "( Remember, by default, the sns.boxplot function calculates the mean of each category. )"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Again, this works, but there are imperfections."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The bars are all different colors, which I think is bad design."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The categories are already separated by position on the x axis, so they don't need to be different colors."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "We'll fix this in a later example."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Also, I don't really like the error bars in this chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Error bars are necessary for some tasks ( e.g., academic papers ) but we often don't use them in business environments."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "I'll show you how to remove them in example 3."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "EXAMPLE 2: Change the bar colors Next, we'll change the bar colors."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "As I mentioned in example 1, all of the bars are different color by default."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "I typically like my bars to all be the same color, unless we're using color as a way to differentiate the bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Keep in mind that the bars themselves are already differentiated by position so we don't need to differentiate them by color."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To change the bar color, we're going to use the color parameter."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Here, we're going to set color = ` cyan'."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "OUT: I think that cyan looks good, so I tend to use it for charts."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Having said that, Python understands a variety of color names, like ` red', ` blue', ` darkred', etc.."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Play around a little and find some colors you like."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "EXAMPLE 3: Remove the error bars One thing I don't like about the previous two charts is the error bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, Seaborn adds error bars to the bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you want to remove them, you can set the ci parameter to ci = None."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "OUT: As you can see, by setting ci = None, the black error bars have been removed."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "EXAMPLE 4: Create a horizontal bar chart Next, we'll `` flip'' the bar chart on its side and create a horizontal bar chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "This is fairly easy to do."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "All we need to do is change the variables we pass to the x and y parameters."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Here, we'll map score to the x axis and class to the y axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Not that this is a reversal of how we mapped those variables in the previous examples."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "OUT: As you can see, the categories of the class variable are now arranged along the y axis ( instead of the x axis, as before )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "And the mean score is being measured by the x axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "EXAMPLE 5: Calculate a different summary statistic Here, we're going to calculate a different summary statistic."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, sns.barplot calculates the mean of the metric that we're measuring."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "By default, the length of the bars corresponds to the means for those categories."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "But, it is possible to have the barplot function compute different metrics."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "For example, you can have the length of the bars correspond to the minimum, instead of the mean."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Here, we're going to set the estimator parameter to estimator = min."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "OUT: Take a close look."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The length of the bars now corresponds to the minimum value of each category, instead of the mean."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "( You can confirm this with a little data analysis on the DataFrame. )"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "EXAMPLE 6: Create a `` dodged'' bar chart Finally, let's create a `` dodged'' bar chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "A dodged bar chart is a bar chart with multiple bars within each x-axis category ( if we're making a vertical bar chart )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "It's essentially a multi-variate bar chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "To do this, we'll set the hue parameter to hue = ` gender'."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "And here's the chart: Notice the structure of the chart."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The different categories of the class variable are still arranged along the x axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "But there are two bars within each category: one bar for Male and one bar for Female."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The bars for Male and Female have different colors."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "That's because we set hue = ` gender'."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The color of the bars ( AKA, the hue ) is being set according to the different unique values of the gender variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Dodged bar charts like this can be very useful for analyzing categories within categories, and comparing across complex multi-variate groups."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Leave your other questions in the comments below Do you have questions about creating bar plots with Seaborn ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Is there something that we didn't cover here that you need to understand ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Write your question in the comments section at the bottom of the page."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Join our course to learn more about Seaborn The examples you've seen in this tutorial should be enough to get you started, but if you're serious about learning Seaborn, you should enroll in our premium course called Seaborn Mastery."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "There's a lot more to learn about Seaborn, and Seaborn Mastery will teach you everything, including: How to create essential data visualizations in Python How to add titles and axis labels Techniques for formatting your charts How to create multi-variate visualizations How to think about data visualization in Python and more ... Moreover, it will help you completely master the syntax within a few weeks."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "You'll discover how to become `` fluent'' in writing Seaborn code."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Find out more here: Learn More About Seaborn Mastery Joshua Ebner Joshua Ebner is the founder and Chief Content Officer of Sharp Sight."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Prior to founding the company, Josh worked as a Data Scientist at Apple."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "He has a degree in Physics from Cornell University."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "8 thoughts on `` How to Make a Seaborn Barplot'' suresh Mundru September 17, 2020 at 7:15 AM is it display the count on the bar graph ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply Sharp Sight September 23, 2020 at 8:48 PM It's not clear what you're asking."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply Agsy January 14, 2021 at 9:53 AM Hi !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "thanks for this tutorial, it's very straight-forward."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "The removal of the error bar comes in handy for me !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply Joshua Ebner January 21, 2021 at 7:02 PM Great to hear that it was useful to you."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "If you like it, share it !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply SAMARA SILVA SANTOS September 24, 2021 at 10:30 AM What a great tutorial !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply Joshua Ebner September 24, 2021 at 8:02 PM Many thanks Reply Raji October 18, 2021 at 11:10 PM Was very helpful to understand, Thankyou !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply Joshua Ebner October 19, 2021 at 12:57 PM \ud83d\udc4d Reply Leave a Comment Cancel replyCommentName Email Website \u0394 Get our FREEPython Data Science Crash CourseIn the Crash Course, you'll learn: -- Why Python is better than R for data science -- A step-by-step learning plan -- The five modules that you need to master -- The 2 skills you should focus on first -- How to become `` fluent'' in Python -- The real prerequisite for machine learning -- And more ... Enter your email and get the Crash Course NOW: Send me the Crash Course !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Check your email to confirm your subscription"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Reply Joshua Ebner October 19, 2021 at 12:57 PM \ud83d\udc4d Reply Leave a Comment Cancel replyCommentName Email Website \u0394"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "This tutorial will show you how to make a Seaborn barplot."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Find out more here: Learn More About Seaborn Mastery"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Joshua Ebner Joshua Ebner is the founder and Chief Content Officer of Sharp Sight."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Joshua Ebner is the founder and Chief Content Officer of Sharp Sight."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "suresh Mundru September 17, 2020 at 7:15 AM"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "is it display the count on the bar graph ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Sharp Sight September 23, 2020 at 8:48 PM"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "It's not clear what you're asking."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Joshua Ebner January 21, 2021 at 7:02 PM"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Great to hear that it was useful to you."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "SAMARA SILVA SANTOS September 24, 2021 at 10:30 AM"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "What a great tutorial !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Joshua Ebner September 24, 2021 at 8:02 PM"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Was very helpful to understand, Thankyou !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Joshua Ebner October 19, 2021 at 12:57 PM"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Leave a Comment Cancel replyCommentName Email Website \u0394"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Get our FREEPython Data Science Crash CourseIn the Crash Course, you'll learn: -- Why Python is better than R for data science -- A step-by-step learning plan -- The five modules that you need to master -- The 2 skills you should focus on first -- How to become `` fluent'' in Python -- The real prerequisite for machine learning -- And more ... Enter your email and get the Crash Course NOW: Send me the Crash Course !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Get our FREEPython Data Science Crash CourseIn the Crash Course, you'll learn: -- Why Python is better than R for data science -- A step-by-step learning plan -- The five modules that you need to master -- The 2 skills you should focus on first -- How to become `` fluent'' in Python -- The real prerequisite for machine learning -- And more ... Enter your email and get the Crash Course NOW:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "Send me the Crash Course !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How to Make a Seaborn Barplot - Sharp Sight",
+        "text": "\u00a9 2022 Sharp Sight \u2022 Built with GeneratePress"
+    }
+]

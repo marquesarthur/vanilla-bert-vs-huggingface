@@ -1,0 +1,530 @@
+[
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "What kind of data does pandas handle ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I read and write tabular data ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I select a subset of a"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to create plots in pandas ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to create new columns derived from existing columns ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to calculate summary statistics ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to reshape the layout of tables ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to combine data from multiple tables ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to handle time series data with ease ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How to manipulate textual data ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Comparison with R / R libraries"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I select specific columns from a"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I filter specific rows from a"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I select specific rows and columns from a"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Data used for this tutorial:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "This tutorial uses the Titanic data set, stored as CSV."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The data consists of the following data columns:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "PassengerId: Id of every passenger."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Survived: This feature have value 0 and 1."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "0 for not survived and 1 for survived."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Pclass: There are 3 classes: Class 1, Class 2 and Class 3."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "SibSp: Indication that passenger have siblings and spouse."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Parch: Whether a passenger is alone or have family."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Ticket: Ticket number of passenger."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Cabin: The cabin of passenger."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I select a subset of a DataFrame ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I select specific columns from a DataFrame ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I'm interested in the age of the Titanic passengers."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To select a single column, use square brackets -LSB- -RSB- with the column name of the column of interest."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Each column in a DataFrame is a Series."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "As a single column is selected, the returned object is a pandas Series."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "We can verify this by checking the type of the output:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "And have a look at the shape of the output:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "DataFrame.shape is an attribute ( remember tutorial on reading and writing, do not use parentheses for attributes ) of a pandas Series and DataFrame containing the number of rows and columns: ( nrows, ncolumns )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "A pandas Series is 1-dimensional and only the number of rows is returned."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I'm interested in the age and sex of the Titanic passengers."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To select multiple columns, use a list of column names within the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Note The inner square brackets define a Python list with column names, whereas the outer brackets are used to select the data from a pandas DataFrame as seen in the previous example."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The returned data type is a pandas DataFrame:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The selection returned a DataFrame with 891 rows and 2 columns."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Remember, a DataFrame is 2-dimensional with both a row and column dimension."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To user guideFor basic information on indexing, see the user guide section on indexing and selecting data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I filter specific rows from a DataFrame ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I'm interested in the passengers older than 35 years."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To select rows based on a conditional expression, use a condition inside the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The condition inside the selection brackets titanic -LSB- `` Age'' -RSB- > 35 checks for which rows the Age column has a value larger than 35:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The output of the conditional expression ( >, but also ==, !"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "=, <, < =, ... would work ) is actually a pandas Series of boolean values ( either True or False ) with the same number of rows as the original DataFrame."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Such a Series of boolean values can be used to filter the DataFrame by putting it in between the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Only rows for which the value is True will be selected."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "We know from before that the original Titanic DataFrame consists of 891 rows."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Let's have a look at the number of rows which satisfy the condition by checking the shape attribute of the resulting DataFrame above_35:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I'm interested in the Titanic passengers from cabin class 2 and 3."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Similar to the conditional expression, the isin ( ) conditional function returns a True for each row the values are in the provided list."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To filter the rows based on such a function, use the conditional function inside the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "In this case, the condition inside the selection brackets titanic -LSB- `` Pclass'' -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "isin ( -LSB- 2, 3 -RSB- ) checks for which rows the Pclass column is either 2 or 3."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The above is equivalent to filtering by rows for which the class is either 2 or 3 and combining the two statements with an | ( or ) operator:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Note When combining multiple conditional statements, each condition must be surrounded by parentheses ( )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Moreover, you can not use or/and but need to use the or operator | and the and operator &."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To user guideSee the dedicated section in the user guide about boolean indexing or about the isin function."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I want to work with passenger data for which the age is known."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The notna ( ) conditional function returns a True for each row the values are not an Null value."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "As such, this can be combined with the selection brackets -LSB- -RSB- to filter the data table."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "You might wonder what actually changed, as the first 5 lines are still the same values."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "One way to verify is to check if the shape has changed:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To user guideFor more dedicated functions on missing values, see the user guide section about handling missing data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "How do I select specific rows and columns from a DataFrame ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I'm interested in the names of the passengers older than 35 years."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "In this case, a subset of both rows and columns is made in one go and just using selection brackets -LSB- -RSB- is not sufficient anymore."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "The loc/iloc operators are required in front of the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "When using loc/iloc, the part before the comma is the rows you want, and the part after the comma is the columns you want to select."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "When using the column names, row labels or a condition expression, use the loc operator in front of the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "For both the part before and after the comma, you can use a single label, a list of labels, a slice of labels, a conditional expression or a colon."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Using a colon specifies you want to select all rows or columns."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "I'm interested in rows 10 till 25 and columns 3 to 5."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Again, a subset of both rows and columns is made in one go and just using selection brackets -LSB- -RSB- is not sufficient anymore."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "When specifically interested in certain rows and/or columns based on their position in the table, use the iloc operator in front of the selection brackets -LSB- -RSB-."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "When selecting specific rows and/or columns with loc or iloc, new values can be assigned to the selected data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "For example, to assign the name anonymous to the first 3 elements of the third column:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To user guideSee the user guide section on different choices for indexing to get more insight in the usage of loc and iloc."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "REMEMBER When selecting subsets of data, square brackets -LSB- -RSB- are used."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Inside these brackets, you can use a single column/row label, a list of column/row labels, a slice of labels, a conditional expression or a colon."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "Select specific rows and/or columns using loc when using the row and column names Select specific rows and/or columns using iloc when using the positions in the table You can assign new values to a selection based on loc/iloc."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "To user guideA full overview of indexing is provided in the user guide pages on indexing and selecting data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "previous How do I read and write tabular data ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "next How to create plots in pandas ?"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "How do I select a subset of a DataFrame? \u2014 pandas 1.3.5 documentation",
+        "text": "\u00a9 Copyright 2008-2021, the pandas development team."
+    }
+]

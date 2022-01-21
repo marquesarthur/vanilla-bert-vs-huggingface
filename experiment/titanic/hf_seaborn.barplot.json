@@ -1,0 +1,362 @@
+[
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Show point estimates and confidence intervals as rectangular bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "A bar plot represents an estimate of central tendency for a numeric variable with the height of each rectangle and provides some indication of the uncertainty around that estimate using error bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Bar plots include 0 in the quantitative axis range, and they are a good choice when 0 is a meaningful value for the quantitative variable, and you want to make comparisons against it."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "For datasets where 0 is not a meaningful value, a point plot will allow you to focus on differences between levels of one or more categorical variables."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "It is also important to keep in mind that a bar plot shows only the mean ( or other estimator ) value, but in many cases it may be more informative to show the distribution of values at each level of the categorical variables."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "In that case, other approaches such as a box or violin plot may be more appropriate."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Input data can be passed in a variety of formats, including:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Vectors of data represented as lists, numpy arrays, or pandas Series objects passed directly to the x, y, and/or hue parameters."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "A `` long-form'' DataFrame, in which case the x, y, and hue variables will determine how the data are plotted."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "A `` wide-form'' DataFrame, such that each numeric column will be plotted."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "An array or list of vectors."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "In most cases, it is possible to use numpy or Python objects, but pandas objects are preferable because the associated names will be used to annotate the axes."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Additionally, you can use Categorical types for the grouping variables to control the order of plot elements."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "This function always treats one of the variables as categorical and draws data at ordinal positions ( 0, 1, ... n ) on the relevant axis, even when the data has a numeric or date type."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "See the tutorial for more information."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "x, y, huenames of variables in data or vector data, optionalInputs for plotting long-form data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "dataDataFrame, array, or list of arrays, optionalDataset for plotting."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "If x and y are absent, this is interpreted as wide-form."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Otherwise it is expected to be long-form."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "order, hue_orderlists of strings, optionalOrder to plot the categorical levels in, otherwise the levels are inferred from the data objects."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "estimatorcallable that maps vector - > scalar, optionalStatistical function to estimate within each categorical bin."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "cifloat or `` sd'' or None, optionalSize of confidence intervals to draw around estimated values."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "If `` sd'', skip bootstrapping and draw the standard deviation of the observations."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "If None, no bootstrapping will be performed, and error bars will not be drawn."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "n_bootint, optionalNumber of bootstrap iterations to use when computing confidence intervals."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "unitsname of variable in data or vector data, optionalIdentifier of sampling units, which will be used to perform a multilevel bootstrap and account for repeated measures design."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "seedint, numpy.random.Generator, or numpy.random.RandomState, optionalSeed or random number generator for reproducible bootstrapping."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "orient `` v'' | `` h'', optionalOrientation of the plot ( vertical or horizontal )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "This is usually inferred based on the type of the input variables, but it can be used to resolve ambiguity when both x and y are numeric or when plotting wide-form data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "colormatplotlib color, optionalColor for all of the elements, or seed for a gradient palette."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "palettepalette name, list, or dictColors to use for the different levels of the hue variable."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Should be something that can be interpreted by color_palette ( ), or a dictionary mapping hue levels to matplotlib colors."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "saturationfloat, optionalProportion of the original saturation to draw colors at."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Large patches often look better with slightly desaturated colors, but set this to 1 if you want the plot colors to perfectly match the input color spec."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "errcolormatplotlib colorColor for the lines that represent the confidence interval."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "errwidthfloat, optionalThickness of error bar lines ( and caps )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "capsizefloat, optionalWidth of the `` caps'' on error bars."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "dodgebool, optionalWhen hue nesting is used, whether elements should be shifted along the categorical axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "axmatplotlib Axes, optionalAxes object to draw the plot onto, otherwise uses the current Axes."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "kwargskey, value mappingsOther keyword arguments are passed through to matplotlib.axes.Axes.bar ( )."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "axmatplotlib AxesReturns the Axes object with the plot drawn onto it."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "countplotShow the counts of observations in each categorical bin."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "pointplotShow point estimates and confidence intervals using scatterplot glyphs."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "catplotCombine a categorical plot with a FacetGrid."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Examples Draw a set of vertical bar plots grouped by a categorical variable:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Draw a set of vertical bars with nested grouping by a two variables:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Draw a set of horizontal bars:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Control bar order by passing an explicit order:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Use median as the estimate of central tendency:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Show the standard error of the mean with the error bars:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Show standard deviation of observations instead of a confidence interval:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Add `` caps'' to the error bars:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Use a different color palette for the bars:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Use hue without changing bar position or width:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Plot all bars in a single color:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Use matplotlib.axes.Axes.bar ( ) parameters to control the style."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Use catplot ( ) to combine a barplot ( ) and a FacetGrid."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "This allows grouping within additional categorical variables."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "Using catplot ( ) is safer than using FacetGrid directly, as it ensures synchronization of variable order across facets:"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "seaborn.barplot \u2014 seaborn 0.11.2 documentation",
+        "text": "\u00a9 Copyright 2012-2021, Michael Waskom."
+    }
+]

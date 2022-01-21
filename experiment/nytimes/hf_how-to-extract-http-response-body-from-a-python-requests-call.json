@@ -1,0 +1,518 @@
+[
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Stack Overflow Public questions & answers"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Stack Overflow for Teams Where developers & technologists share private knowledge with coworkers"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Jobs Programming & related technical career opportunities"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Talent Recruit tech talent & build your employer brand"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Advertising Reach developers & technologists worldwide"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Sign up or log in to customize your list."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Join Stack Overflow to learn, share knowledge, and build your career."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Sign up with email Sign up"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Stack Overflow for Teams -- Collaborate and share knowledge with a private group."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Create a free Team What is Teams ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Collectives on Stack Overflow Find centralized, trusted content and collaborate around the technologies you use most."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Teams Q&A for work Connect and share knowledge within a single location that is structured and easy to search."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "How to extract HTTP response body from a Python requests call ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Asked 9 years, 11 months ago"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "This question shows research effort ; it is useful and clear"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "This question does not show any research effort ; it is unclear or not useful"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Show activity on this post."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "I'm using the Python requests library."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "I'm trying to figure out how to extract the actual HTML body from a response."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "The code looks a bit like this:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "This should indeed print lots of content, but instead prints nothing."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Maybe I've misunderstood how requests.get ( ) works ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "ShareShare a link to this question Copy linkCC BY-SA 3.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Follow Follow this question to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "This answer is not useful"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "And it returned plenty of content."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "ShareShare a link to this answer Copy linkCC BY-SA 4.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Follow Follow this answer to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "I must be misunderstanding what I should expect from the particular page I'm working with."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "You can do it either way."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "You can try this method:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Thanks for contributing an answer to Stack Overflow!Please be sure to answer the question."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Provide details and share your research!But avoid ... Asking for help, clarification, or responding to other answers.Making statements based on opinion ; back them up with references or personal experience.To learn more, see our tips on writing great answers."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Sign up or log in"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Sign up using Email and Password"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Email Required, but never shown"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "By clicking `` Post Your Answer'', you agree to our terms of service, privacy policy and cookie policy"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Not the answer you're looking for ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Browse other questions tagged http-request python-requests or ask your own question."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Podcast 406: Making Agile work for data science"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "We've made changes to our Terms of Service & Privacy Policy - January 2022"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "New post summary designs on greatest hits now, everywhere else eventually"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "2021: a year in moderation"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Sunsetting Jobs & Developer Story"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Looking for a job ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Senior Software Engineer - Full Stack C2FO Leawood, KS $ 110k - $ 150kRemote restreactjs dismiss this job Senior Software Developer, Full-Stack Alloy, Inc.."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Vancouver, BC, Canada C$ 110 - C$ 165k typescriptreactjs dismiss this job Backend Software Engineer - SDVI Rally Core SDVI No office location Remote pythonpostgresql dismiss this job Senior Software Engineers Lightmatter No office location $ 90k - $ 140kRemote next.jsdjango dismiss this job Backend Engineer, Markets TradeBlock New York, NY $ 100k - $ 200kRemote tradingbanking dismiss this job Senior Python Engineer Huxley Banking & Financial Services Boston, MA Remote pythonreactjs dismiss this job Software Engineers Lightmatter No office location $ 65k - $ 90kRemote pythondjango dismiss this job Cloud Data Engineer - Remote USA only Hewlett Packard Enterprise No office location $ 138k - $ 170kRemote cloudpostgresql dismiss this job View more jobs on Stack Overflow Linked"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "how to get response data from a python post request"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Using headers with the Python requests library's get method"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Proxies with Python ` Requests' module"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Getting HEAD content with Python Requests"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "How to POST JSON data with Python Requests ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Correct way to try/except using Python requests module ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Download large file in python with requests"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "How to upload file with python requests ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "converting curl call to python requests"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Main character has amnesia, family members of royalty are for and against him"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Could Centaurs wear Dresses ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "How to tighten / connect these pipes under the bathroom sink ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Did Oppenheimer quote the Bhagavad Gita after the Trinity test ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Would building a large asphalt square painted dark black create a `` thermal generator'' ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Guilt about quitting PhD as first student of the lab"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Did Rudolf Steiner prove the contagiousness of varicella in 1875 ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "How to learn statistics for medical research ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "how did Caesar pronounce latin overlined vowels ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Does Doc Brown sabotage himself in Back to the Future 2 ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Split a restaurant bill, including tip"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Floor plan for J.T. Kirk's apartment in `` Star Trek II: The Wrath of Khan'' and `` Star Trek III: The Search for Spock''"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "What would be a good explanation for why Trolls eat Elves ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "How can I prevent the backup camera from turning off in a Volkswagen Passat 2014 when going backward at over ~ 30 km/h ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Circle of Fifths ( Added Sharps and Flats )"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "What is a Dumb Terminal ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "What Ethernet twisted pair cable is best with a particular Ethernet switch"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Go mad with this one-dimensional jigsaw"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Automatic payment * after * payment due date: why ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Does `` Cross -LSB- FIX -RSB- at 250 knots'' mean I have to maintain 250 knots after the fix ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "1 Timothy 4:10 ; is the Will of the Father to save all Human beings ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "What happens after the Clone spell activates ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Applying for work when on `` personal development plan'' ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Question feed To subscribe to this RSS feed, copy and paste this URL into your RSS reader."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Share a link to this question Copy linkCC BY-SA 3.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Share a link to this question"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Follow this question to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Share a link to this answer Copy linkCC BY-SA 4.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Share a link to this answer"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "How to extract HTTP response body from a Python requests call? - Stack Overflow",
+        "text": "Follow this answer to receive notifications"
+    }
+]

@@ -1,0 +1,704 @@
+[
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Stack Overflow Public questions & answers"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Stack Overflow for Teams Where developers & technologists share private knowledge with coworkers"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Jobs Programming & related technical career opportunities"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Talent Recruit tech talent & build your employer brand"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Advertising Reach developers & technologists worldwide"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Sign up or log in to customize your list."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Join Stack Overflow to learn, share knowledge, and build your career."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Sign up with email Sign up"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Stack Overflow for Teams -- Collaborate and share knowledge with a private group."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Create a free Team What is Teams ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Collectives on Stack Overflow Find centralized, trusted content and collaborate around the technologies you use most."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Teams Q&A for work Connect and share knowledge within a single location that is structured and easy to search."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to find children of nodes using BeautifulSoup"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Asked 10 years, 7 months ago"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "This question shows research effort ; it is useful and clear"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "This question does not show any research effort ; it is unclear or not useful"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Show activity on this post."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "I want to get all the <a> tags which are children of <li>:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "I know how to find element with particular class like this:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "But I don't know how to find all <a> which are children of <li\u00a0class=test> but not any others."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Like I want to select:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "ShareShare a link to this question Copy linkCC BY-SA 4.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Follow Follow this question to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "This answer is not useful"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "ShareShare a link to this answer Copy linkCC BY-SA 4.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Follow Follow this answer to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Or, to just extract the expression that describes what we want: soup.find ( ` li', -LCB- ` class': ` text' -RCB- )."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "but how to get frist <a> tag only not after wards."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "something like find ( li )."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Thanks for the `` recursive'' kwarg: )"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "from bs4 site: `` findChildren, findChild: These methods are left over from the Beautiful Soup 2 API."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "They've been deprecated since 2006, and should not be used at all:''"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "There's a super small section in the DOCs that shows how to find/find _ all direct children."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "https://www.crummy.com/software/BeautifulSoup/bs4/doc/#the-recursive-argument In your case as you want link1 which is first direct child:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "If you want all direct children:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Perhaps you want to do"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "ShareShare a link to this answer Copy linkCC BY-SA 3.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "i think it will find <a> link2 </a> as well but i don't want that"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "This answers the question how to select <a> link1 </a> in the HTML given in the question, but this will FAIL when the first <li\u00a0class=\"test\"> will contain no <a> elements and there are other li elements with test class that contains <a>."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "This does not answer the question, but it was what I was looking for."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "other reminders: The find method only gets the first occurring child element."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "The find_all method gets all descendant elements and are stored in a list."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Questioner wants none of two options above."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "He wants all links which are only direct child."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "`` How to find all a which are children of <li\u00a0class=test> but not any others ?''"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Given the HTML below ( I added another <a> to show te difference between select and select_one ):"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "The solution is to use child combinator ( > ) that is placed between two CSS selectors:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "In case you want to find only the first child:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "This is the one i was looking for."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "I was supplying it to the wrong method."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Forgot > is a CSS selector."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Yet another method - create a filter function that returns True for all desired tags:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Then just call find_all with the argument:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Just came across this answer and checked the documentation to see that soup.findChildren is deprecated ( BS 4.9 )."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "You can use soup.children instead, which only considers an element's direct children, not its descendants."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Thanks for contributing an answer to Stack Overflow!Please be sure to answer the question."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Provide details and share your research!But avoid ... Asking for help, clarification, or responding to other answers.Making statements based on opinion ; back them up with references or personal experience.To learn more, see our tips on writing great answers."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Sign up or log in"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Sign up using Email and Password"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Email Required, but never shown"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "By clicking `` Post Your Answer'', you agree to our terms of service, privacy policy and cookie policy"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Not the answer you're looking for ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Browse other questions tagged python html beautifulsoup or ask your own question."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Podcast 406: Making Agile work for data science"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "We've made changes to our Terms of Service & Privacy Policy - January 2022"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "New post summary designs on greatest hits now, everywhere else eventually"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "2021: a year in moderation"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Sunsetting Jobs & Developer Story"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Looking for a job ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Senior Software Developer, Full-Stack Alloy, Inc.."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Vancouver, BC, Canada C$ 110 - C$ 165k typescriptreactjs dismiss this job VP Engineering at sustainable start-up ( m/f/x ) - Brazil/Latin America ( Remote ) FINN M\u00fcnchen, Germany $ 100k - $ 125kRemoteRelocation pythonnode.js dismiss this job Senior Python Engineer Huxley Banking & Financial Services Boston, MA Remote pythonreactjs dismiss this job Python Back End Developer ( FastAPI, Django, Celery ) Daupler, Inc.."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Kansas City, MO Remote pythondjango dismiss this job ( Senior ) Backend Engineer at sustainable start-up ( m/f/x ) - Munich or Remote FINN M\u00fcnchen, Germany $ 60k - $ 80kRemoteRelocation pythonserverless dismiss this job Women in Tech - all levels - at sustainable start-up ( f/x ) - Munich or Remote FINN No office location $ 60k - $ 80kRemote pythonreactjs dismiss this job Tech Lead Engineering at sustainable start-up ( m/f/x ) - Munich/New York/Remote FINN M\u00fcnchen, Germany $ 80k - $ 110kRemoteRelocation pythontypescript dismiss this job Lead Frontend Engineer ( all genders ) - Remote or Relocation Goodgame Studios Hamburg, Deutschland $ 60k - $ 85kRemoteRelocation vue.jsreactjs dismiss this job View more jobs on Stack Overflow Linked"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to get only full li tags in beautifulsoup ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Terminal won't show print response using BeautifulSoup"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Regex to capture html elements with their class name"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "BeautifulSoup loop isn't iterating through other nodes"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Find tag <a> and tag <img> when using bs4"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to find this generic tag inside a HTML code with BS4 ( beautiful soup )"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to grab first child of its kind"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Python parse all elements in a specific tag"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How do I merge two dictionaries in a single expression ( take union of dictionaries ) ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How do I check whether a file exists without exceptions ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to horizontally center an element"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Getting the class name of an instance ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How can I know which radio button is selected via jQuery ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to remove an element from a list by index"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How do I check whether a checkbox is checked in jQuery ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Iterating over dictionaries using ` for' loops"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Relative imports in Python 3"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How can I prevent the backup camera from turning off in a Volkswagen Passat 2014 when going backward at over ~ 30 km/h ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Make change operations on substring only"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Is there any point in space that the James Webb Space Telescope would be unable to image ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How can we enable a centaur to climb between different floors ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Bijective proof for a partition identity"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Did CNN alter Joe Rogan's appearance in their coverage regarding his Covid-19 infection in late 2021 ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Why is tar archive so much bigger than text file, 10240 bytes ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How do the Republicans' recent laws make it harder for Democratic voters to vote ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Is there a reason to believe that our universe obeys internally consistent rules ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Employer wants to increase my notice period - however I feel I am underpaid for this to happen"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Go mad with this one-dimensional jigsaw"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Can you correct this `` old English'' quote ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "How to tighten / connect these pipes under the bathroom sink ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "What is a Dumb Terminal ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "What does it mean for a proto-neutron star to be opaque to neutrinos ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "jcenter.bintray.com is down Error: 502 Bad Gateway"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Expand a Rubik's Cube Commutator"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Why did Ant-Man appear in the Broadway musical ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Does Peter give an imperative in 1 Peter 2:2 ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Modifying a real vaccine card with fake info"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Question feed To subscribe to this RSS feed, copy and paste this URL into your RSS reader."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Share a link to this question Copy linkCC BY-SA 4.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Share a link to this question"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Follow this question to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Share a link to this answer Copy linkCC BY-SA 4.0"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Share a link to this answer"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Follow this answer to receive notifications"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "python - How to find children of nodes using BeautifulSoup - Stack Overflow",
+        "text": "Share a link to this answer Copy linkCC BY-SA 3.0"
+    }
+]
