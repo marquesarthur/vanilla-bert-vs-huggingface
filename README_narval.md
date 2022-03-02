@@ -6,11 +6,6 @@
 
 
 
-
-
-
-
-
 #### Huggingface
 
 
@@ -42,6 +37,8 @@ I need at least tensorflow 2.3 to use transformers
 
 
 
+salloc --time=00:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=rrg-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
+
 
 
 ## Exec
@@ -49,14 +46,13 @@ I need at least tensorflow 2.3 to use transformers
 ```
 cd projects/def-mageed/msarthur/cp6-highlights
 module load  ipython-kernel/3.7
-
-source ~/hface/bin/activate
-salloc --time=01:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
+source ~/hface_gpu/bin/activate
+salloc --time=00:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
 
 
 -- faster allocation
+salloc --time=01:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
 
-salloc --time=00:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
 ```
 
 
@@ -78,7 +74,9 @@ squeue -u $USER
 
 scancel -u $USER
 
-sshuttle --dns -Nr msarthur@narval.computecanada.ca
+sshuttle --dns -Nr msarthur@graham.computecanada.ca
+
+ sshuttle --dns -Nr msarthur@graham.computecanada.ca -x 199.241.166.2 
 ```
 
 
@@ -97,6 +95,15 @@ def get_available_gpus():
 
 get_available_gpus()
 
+```
+
+
+If the output is....:
+
 
 ```
 
+```
+
+
+192.168.0.1
