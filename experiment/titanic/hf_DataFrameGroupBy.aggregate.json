@@ -1,0 +1,200 @@
+[
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Aggregate using one or more operations over the specified axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "funcfunction, str, list or dictFunction to use for aggregating the data."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "If a function, must either work when passed a DataFrame or when passed to DataFrame.apply."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "function string function name list of functions and/or function names, e.g. -LSB- np.sum, ` mean' -RSB- dict of axis labels - > functions, function names or list of such."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Can also accept a Numba JIT function with engine = ` numba' specified."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Only passing a single function is supported with this engine."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "If the ` numba' engine is chosen, the function must be a user defined function with values and index as the first and second arguments respectively in the function signature."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Each group's index will be passed to the user defined function and optionally available for use."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "* argsPositional arguments to pass to func."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "enginestr, default None ` cython': Runs the function through C-extensions from cython."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "` numba': Runs the function through JIT compiled code from numba."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "None: Defaults to ` cython' or globally setting compute.use _ numba"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "engine_kwargsdict, default None For ` cython' engine, there are no accepted engine_kwargs For ` numba' engine, the engine can accept nopython, nogil and parallel dictionary keys."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "The values must either be True or False."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "The default engine_kwargs for the ` numba' engine is -LCB- ` nopython': True, ` nogil': False, ` parallel': False -RCB- and will be applied to the function"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "** kwargsKeyword arguments to be passed into func."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "DataFrame.groupby.applyApply function func group-wise and combine the results together."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "DataFrame.groupby.transformAggregate using one or more operations over the specified axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "DataFrame.aggregateTransforms the Series on each group based on the given function."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Notes When using engine = ` numba', there will be no `` fall back'' behavior internally."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "The group data and group index will be passed as numpy arrays to the JITed user defined function, and no alternative execution attempts will be tried."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Functions that mutate the passed object can produce unexpected behavior or errors and are not supported."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "See Mutating with User Defined Function ( UDF ) methods for more details."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Changed in version 1.3.0: The resulting dtype will reflect the return value of the passed func, see the examples below."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "The aggregation is for each column."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Select a column for aggregation"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "To control the output names with different aggregations per column, pandas supports `` named aggregation''"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "The keywords are the output column names The values are tuples whose first element is the column to select and the second element is the aggregation to apply to that column."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Pandas provides the pandas.NamedAgg namedtuple with the fields -LSB- ` column', ` aggfunc' -RSB- to make it clearer what the arguments are."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "As usual, the aggregation can be a callable or a string alias."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "See Named aggregation for more."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "Changed in version 1.3.0: The resulting dtype will reflect the return value of the aggregating function."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.core.groupby.DataFrameGroupBy.aggregate \u2014 pandas 1.3.5 documentation",
+        "text": "\u00a9 Copyright 2008-2021, the pandas development team."
+    }
+]

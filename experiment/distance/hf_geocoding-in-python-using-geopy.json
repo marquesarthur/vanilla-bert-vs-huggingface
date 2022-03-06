@@ -1,0 +1,422 @@
+[
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Home Blog About Us Contact"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Geocoding in Python Using Geopy"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "IntroductionGeocodingReverse GeocodingGeopyInstallationSyntaxGeocoding ( forward geocoding ) using geopyReverse Geocoding using geopyDistance between two coordinatesConclusionReferences Introduction"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Have you ever come across a dataset having addresses like below ?"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "How do you handle the address column ?"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "If the dataset is large and if you try to encode the address column, it will result in high cardinality issue."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "As part of the feature engineering, you can handle this in many ways."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "For example, you can extract country, city, and area from the given addresses and use them as features."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Another way is to geocode the addresses into geographical coordinates ( latitude and longitudes ) and use them as features."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Some of the popular packages that are used for geocoding and reverse geocoding in Python are geopy, geocoder, opencage, etc.."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "In this article, you will first understand what geocoding and reverse geocoding are, and then explore the geopy package to convert addresses into latitudes and longitudes and vice versa."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "And finally, we will see how to calculate the distance between the two addresses."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Geocoding is the process of converting addresses into geographic coordinates ( i.e. latitude and longitude )."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Reverse Geocoding is the process of converting geographic coordinates ( latitude & longitude ) into a human-readable address."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Geocoding and reverse geocoding are provided by different service providers such as OpenStreetMap, Bing, Google, AzureMaps, etc.."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "These services provide APIs which can be used by anyone."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "However, each of these incurs costs for using their services and comes with limitations of their own."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "The geopy package is not geocoding service provider."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "It just provides an interface to connect to several services under a single package."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Below is the list of all the services that are implemented in geopy."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "You can use any of these geocoder services but keep in mind that each service comes with its own terms of conditions, pricing, API keys, etc.."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "The OpenStreetMap service is free so we'll be using the Nominatim service in this article."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "If you don't want to use geopy, then you can directly use the API provided by the above services."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "For example, you can use Google Geocoding API directly instead of geopy."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Geocoding ( forward geocoding ) using geopy"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Let's look at an example for the address Georgia Aquarium, Atlanta, USA."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "First, we need to create a Nominatim geolocator object called geolocator."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "As mentioned earlier, you can use any other geolocator of your choice."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "But we will stick to Nominatim throughout this post as it is free to use without any API keys, etc.."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Next, you need to pass the address for which you want to get latitude and longitude."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Then the result is stored in the location object using which we can get the required details such as longitude and latitude as below."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "In the above example, from the address, we got latitude and longitude."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Let's now apply reverse geocoding to get the address from the given geographic coordinates ( latitude and longitude )."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "For reverse geocoding, you need to call the reverse ( ) method on the geolocator object by passing latitude and longitude as parameters."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Then you can get the address and a lot of other details as you can see below."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Note that other geolocators such as Bing, Google API may require additional parameters."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "So, keep an eye on these additional parameters."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Geocode has other parameters such as timeout, limit, language, geometry, etc.."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "You can explore these additional parameters to control the geocoder output."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Sometimes you may want to calculate the distance between two addresses given latitude and longitude."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "For this, geopy provides two ways to calculate the distances: geodesic distance or great-circle distance."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Let's consider below two coordinates for calculating the distance between them."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Coordinate 1 refers to Georgia Aquarium and coordinate 2 refers to Stone Mountains park."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Coordinate 1: 33.76326745, -84.39511726814364 ( 225 Baker St NW, Atlanta, GA 30313, USA -- Georgia Aquarium )"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Coordinate 2: 33.804504, -84.1587461 ( 1000 Robert E Lee Blvd, Stone Mountain, GA 30083, United States -- Stone Mountain Park )"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Distance between coordinates using the geodesic method:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Distance between coordinates using the great-circle method:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "In this article, you have understood geocoding and reverse geocoding, how to use geopy package for geocoding and reverse geocoding, and then we saw how to calculate the distance between two coordinates."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "I hope you found this article useful."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "A Software Engineer & Team Lead with over 10 + years of IT experience, a Technical Blogger with a passion for cutting edge technology."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Currently working in the field of Python, Machine Learning & Data Science."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Chetan Ambi holds a Bachelor of Engineering Degree in Computer Science."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "2 thoughts on `` Geocoding in Python Using Geopy''"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Hello: Nice blog & very informative."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "I want to know how to extract data like building, school, hospital residential etc ... based on image and display in dataframe."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Any lead or link is greatly appreciated."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Chetan Ambi August 7, 2021 at 5:01 am"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Hi Jay -- Based on my understanding, I think you are referring from the image you need to extract the details."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Can you give me an example."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Leave a Comment Cancel ReplyYour email address will not be published.Type here."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Name * Email * Website Save my name, email, and website in this browser for the next time I comment."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "How To Handle Large Datasets in Python With Pandas"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "What Are Namedtuples In Python ?"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Beginners Guide to Python Closures"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "PrevPreviousDifference Between sort ( ) and sorted ( ) in Python"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "NextMaking Sense of Python Iterables and IteratorsNext"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Copyright \u00a9 2022 Python Simplified"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Subscribe to our Newsletter !"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Loaded with interesting and short articles on Python, Machine Learning & Data Science !"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Geocoding in Python\u00a0Using Geopy - Python Simplified",
+        "text": "Subscribe to our Monthly Newsletter !"
+    }
+]

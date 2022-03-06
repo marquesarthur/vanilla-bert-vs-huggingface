@@ -1,0 +1,284 @@
+[
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Machine Learning: lin-reg log-reg knn naive bayes trees random forest svm k-means"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Learn Python: Lessons Exercises Visualization Gui Api PIL Turtle Scripting Sqlite"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Visualization Gui Api PIL Turtle Scripting Sqlite"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "lin-reg log-reg knn naive bayes trees random forest svm k-means"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Locations in Python ( Geocoding w/Geopy ) In Intermediate, Python Tutorials"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geocoding is the application when you type 5th Ave. New York, NY, 10010 and you get coordinates like this: ( 40.740200, -73.990586 )."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geocoding process maps open addresses to coordinates consisted of longitude and latitude and vice versa.Since the new millenia started and especially after the first Iphone 2g came out, gps applications have exponentially surged."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Today it's crazy to think that people used to carry big printed foldable maps in the glow compartments of their cars and routinely stop to look up roads and cities and figure out where they are headed.Today, there are so many applications for geocoding and it's making people's lives better every single day."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "We are also witnessing different technologies being blended for an even better optimized service such as Voice Input technology in Google maps.As a developer you might have a specific task at hand or you might just want to learn geo-coding basics thinking you'll probably need it sometime anyway.Let's take a look at how this technology can be implemented in Python."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geopy is a Python library that makes geocoding operations very accessible and practical."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "You can check if you have geopy in your libraries by using this code in Python: help ( `` modules'' ) If you can't see geopy in your library selection, it might be time to have it installed."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "You can do so simply by opening the Anaconda Command Prompt and typing the command below: pip install geopy"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geopy installation using pip ( already installed )"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Supported Geocoders ( Full list )"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geopy supports majority of the major geocoders straight out of the box."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geocoders are a bit like APIs but for coding and they offer more services than a simple API."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "But you can make database calls using their APIs to retrieve data for your app, website, commercial or individual use."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "They usually differ in pricing, accuracy, coverage, technology, daily limits and compatibility.Here is the full list of supported geocoders:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geocoders usually use a technique called address interpolation."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "This technique allows matching street, avenue, door number ( street geographic information ) type of parameters with geographic coordinate space that's included in the map.GPS is another obviously common geocoding process technique and there might be other specialized methods as well.OpenStreetMap ( OSM ) is a collaborative project that offers a great geodata and map of Earth while Nominatim is a cool geocoder that makes use of OSM geodata and it can do both geocoding and reverse geocoding."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Now we will explore Nominatim with Python's geopy library."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Normally, geocoders accept a properly written address with street name and zip code."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "But, let's test Nominatim and OpenStreetMap a little.Ben & Jerry's is a very successful ice cream brand in the Northeastern United States."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "What would happen if we just pass `` Ben & Jerry's'' as the address to Nominatim using geopy ?"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Ice cream at Cafe with strawberry, mint and sorbet"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Interestingly it returns a Ben & Jerry's franchise in Boston, MA."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Let's try `` Ben & Jerry's."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "VT'' and `` Ben & Jerry's NY'' consecutively."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "We get 2 seemingly random stores again."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "The one in Burlington seems pretty cool on Google Maps.So, this is good enough on Nominatim's part."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Without even completing the address we are getting accurate results."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Let's try some other places from the world and see if non-US data is as accurate:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "It even recognizes Denmark's award winning Michelin Restaurant and shows up the address for only typing Noma."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Let's try to run `` latitude'', `` longitude'' and `` raw'' properties for Noma as well."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "It makes more sense to print this one with Python's pretty print library:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "In raw data from geopy we can see bunch of useful information such as type ( shown as restaurant here ), latitude, longitude, class ( shown as amenity ) and importance."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "You can also calculate the distance between two locations or points using geopy.distance module.Let's see the distance between a Department Store with Tesla Supercharger near Orly Airport and Paris' finest ice-cream shop Berthillon."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Geopy has been very successful at reverse geocoding place names to coordinates, let's see if it can identify exact locations with little information again such as name."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "`` Belle Epine'' wasn't being picked up by Geopy by itself so adding the district's name was a good idea."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "It's probably always a good idea to be as explicit as possible with addresses anyways."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "The distance can be expressed in many differeny measurement units other than miles."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Let's take a look at what help ( ) function returns on geopy.distance.distance:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Great, there are tons of options !"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Let's try km, since miles won't make a lot of sense in France."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Recommended PostsPython Packaging: Hosting Code at GithubHow to Use Watermarkd: A Batch Watermarking Library with GUIPython Packaging: Quick Tutorial & ChecklistPython Packaging: Necessary Files ( setup.py, requirements.txt, readme.md, __ init __."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Python Packaging: Hosting Code at GithubHow to Use Watermarkd: A Batch Watermarking Library with GUIPython Packaging: Quick Tutorial & ChecklistPython Packaging: Necessary Files ( setup.py, requirements.txt, readme.md, __ init __."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
+        "text": "Python Packaging: Hosting Code at Github"
+    }
+]

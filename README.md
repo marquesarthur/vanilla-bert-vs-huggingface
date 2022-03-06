@@ -34,6 +34,9 @@ pip install --no-index -r requirements.txt
 
 
 
+salloc --time=00:59:59  --mem-per-cpu=12G --gres=gpu:1 --account=def-mageed --job-name=arthur-cp6 srun $VIRTUAL_ENV/bin/notebook.sh
+
+
 
 ## Exec
 
@@ -70,10 +73,8 @@ Make sure to change the python kernel to `Arthur vanilla`
 cd projects/def-mageed/msarthur/vanilla-bert-vs-huggingface/
 module load  ipython-kernel/3.7
 source ~/hface/bin/activate
-salloc --time=01:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
+salloc --time=00:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
 
-
-salloc --time=01:59:59  --mem-per-cpu=16G --gres=gpu:1 --account=def-mageed --job-name=arthur-ds srun $VIRTUAL_ENV/bin/notebook.sh
 ```
 
 

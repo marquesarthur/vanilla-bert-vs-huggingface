@@ -1,0 +1,194 @@
+[
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Requests: HTTP for Humans \u2122"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Requests is an elegant and simple HTTP library for Python, built for human beings."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Behold, the power of Requests:"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "See similar code, sans Requests."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Requests allows you to send HTTP/1 .1 requests extremely easily."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "There's no need to manually add query strings to your URLs, or to form-encode your POST data."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Keep-alive and HTTP connection pooling are 100 % automatic, thanks to urllib3."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Requests is ready for today's web."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "HTTP ( S ) Proxy Support"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Requests officially supports Python 2.7 & 3.6 +, and runs great on PyPy."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "This part of the documentation, which is mostly prose, begins with some background information about Requests, then focuses on step-by-step instructions for getting the most out of Requests."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "$ python - m pip install requests Get the Source Code"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Make a Request Passing Parameters In URLs Response Content Binary Response Content JSON Response Content Raw Response Content Custom Headers More complicated POST requests POST a Multipart-Encoded File Response Status Codes Response Headers Cookies Redirection and History Timeouts Errors and Exceptions"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Session Objects Request and Response Objects Prepared Requests SSL Cert Verification Client Side Certificates CA Certificates Body Content Workflow Keep-Alive"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Streaming Uploads Chunk-Encoded Requests POST Multiple Multipart-Encoded Files Event Hooks"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Custom Authentication Streaming Requests Proxies Compliance"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Transport Adapters Blocking Or Non-Blocking ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Basic Authentication Digest Authentication OAuth 1 Authentication OAuth 2 and OpenID Connect Authentication Other Authentication New Forms of Authentication"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "This part of the documentation, which is mostly prose, details the Requests ecosystem and community."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "What are `` hostname doesn't match'' errors ?"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Stack Overflow File an Issue Send a Tweet"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Major Releases Minor Releases Hotfix Releases Reasoning"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "The API Documentation / Guide"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "If you are looking for information on a specific function, class, or method, this part of the documentation is for you."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Main Interface Exceptions Request Sessions"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Lower-Level Classes Lower-Lower-Level Classes Authentication Encodings Cookies Status Code Lookup Migrating to 1."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "If you want to contribute to the project, this part of the documentation is for you."
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Get Early Feedback Contribution Suitability Code Contributions"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Steps for Submitting Code Code Review New Contributors Kenneth Reitz's Code Style \u2122"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Documentation Contributions Bug Reports Feature Requests"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "Keepers of the Crystals Previous Keepers of Crystals Patches and Suggestions"
+    },
+    {
+        "task": "New York Times web scrapper",
+        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
+        "source": "Requests: HTTP for Humans\u2122 \u2014 Requests 2.27.1 documentation",
+        "text": "There are no more guides."
+    }
+]

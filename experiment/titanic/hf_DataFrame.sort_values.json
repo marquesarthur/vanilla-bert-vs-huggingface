@@ -1,0 +1,146 @@
+[
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "Sort by the values along either axis."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "bystr or list of strName or list of names to sort by."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "if axis is 0 or ` index' then by may contain index levels and/or column labels."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "if axis is 1 or ` columns' then by may contain column levels and/or index labels."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "axis -LCB- 0 or ` index', 1 or ` columns' -RCB-, default 0Axis to be sorted."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "ascendingbool or list of bool, default TrueSort ascending vs. descending."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "Specify list for multiple sort orders."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "If this is a list of bools, must match the length of the by."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "inplacebool, default FalseIf True, perform operation in-place."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "kind -LCB- ` quicksort', ` mergesort', ` heapsort', ` stable' -RCB-, default ` quicksort' Choice of sorting algorithm."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "See also numpy.sort ( ) for more information."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "mergesort and stable are the only stable algorithms."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "For DataFrames, this option is only applied when sorting on a single column or label."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "na_position -LCB- ` first', ` last' -RCB-, default ` last' Puts NaNs at the beginning if first ; last puts NaNs at the end."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "ignore_indexbool, default FalseIf True, the resulting axis will be labeled 0, 1, ..., n - 1."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "keycallable, optionalApply the key function to the values before sorting."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "This is similar to the key argument in the builtin sorted ( ) function, with the notable difference that this key function should be vectorized."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "It should expect a Series and return a Series with the same shape as the input."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "It will be applied to each column in by independently."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "DataFrame or NoneDataFrame with sorted values or None if inplace = True."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "Series.sort _ valuesSimilar method for a Series."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "Sorting with a key function"
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "Natural sort with the key argument, using the natsort < https://github.com/SethMMorton/natsort > package."
+    },
+    {
+        "task": "Titanic data analysis",
+        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
+        "source": "pandas.DataFrame.sort_values \u2014 pandas 1.3.5 documentation",
+        "text": "\u00a9 Copyright 2008-2021, the pandas development team."
+    }
+]

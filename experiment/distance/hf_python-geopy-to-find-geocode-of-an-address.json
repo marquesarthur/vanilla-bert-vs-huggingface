@@ -1,0 +1,248 @@
+[
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Every point on the surface of Earth can be represented using its latitude and longitude value."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "According to Wikipedia, `` Geocoding is the computational process of transforming a postal address description to a location on the Earth's surface ( spatial representation in numerical coordinates ).''"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "If simply put together, The process of representing text addresses to their corresponding Latitude and Longitude on earth surface is called Geocoding."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "In this article, we will retrieve the geocode of an address using Python's GeoPy library."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "GeoPy is not a Geocoding service but simply a python client for several popular geocoding web services."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "It uses third-party geocoders and other data sources to find geocode of an address."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "The figure below gives some idea about function of GeoPy."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "as seen in the figure above Geocoding is provided by a number of different services."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "These services provide APIs, GeoPy library provides an implementation of these APIs in a single package."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "for a complete list of geocoding service providers implemented by geopy, you can refer this documentation."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Some important points to consider:"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Geocoding services are either paid or free so prior to selecting a service do go through their Terms of Use, quotas, pricing, geodatabase, and so on."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "geopy can not be responsible for any networking issues between your computer and the geocoding service."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "With enough high level idea of what GeoPy does, let's now see how to use it to retrieve geocode of an address."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "There are many Geocoding services available, but I really liked GeocodeAPI."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "They have multiple endpoints to get lat-long from address as well as reverse geocoding."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "One of their advanced features is the address auto-complete API."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "They can even return a complete address from a partial address."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Also, they provide 10,000 free requests per day, which is great if you are just starting to build your application."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "You can get more details from their pricing page."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Each geolocation service i.e. Nominatim, has its own class in geopy.geocoders linking to the service's API."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Geocoders have least a geocode method, for looking up coordinates from a provided string ( address we want to geocode )."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "this class also has an implementation of a reverse method, which is in reverse to the geocode method."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "here we need to provide the coordinates of a point on the earth's surface and the method returns the address associated with the provided lat and lon."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Finding Geocode of an address"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "We'll be using Nominatim geocoding services in this tutorial."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "using the code above we found the coordinates of Taj mahal, Agra, India."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Nominatim class has a geocode method which accepts a string of an address and returns its coordinates from the service provider's database."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "The object returned by using the geocode method has an address method which returns the complete address, a latitude, londitude method to retrieve lat and on of that address."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "the Nominatim geocoder class accepts user_agent as an input argument that acts as a header to send the requests to geocoder API."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Using GeoPy with Pandas Dataframe"
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "The RateLimiter class acts as a wrapper around the geocoder class with which we can delay the time to make requests to the server if we have to process many requests."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "The number of requests to make to a geocoding service provider needs to be taken into account while making multiple requests or it will raise an error."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Let's now apply this to a pandas dataframe having the address for some beautiful nature spots in India."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "The RateLimiter class needs a geocoder class object and min_delay_seconds as input arguments."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "this method makes requests to the server of geocoding service with the specified time delay."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "if the location of the string is not found it automatically returns None."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "apply method we can apply the wrapper to the specified column on our dataframe."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "In this article, we learned what geocoding is and how python's GeoPy library provides us with a simple implementation of Geocoding services APIs."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "We also geocoded an address in text format to get its latitude and longitude coordinates and applied the method on a pandas DataFrame having a column of address."
+    },
+    {
+        "task": "Student's picnic place",
+        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
+        "source": "Python Geopy to find geocode of an Address - AskPython",
+        "text": "Copyright \u00a9 2022 AskPython \u00b7 All Rights Reserved Privacy Policy \u00b7 Terms and Conditions \u00b7 Contact \u00b7 AboutAskPython is part of JournalDev IT Services Private Limited"
+    }
+]

@@ -1,4 +1,5 @@
 import json
+import random
 from collections import Counter, defaultdict
 
 import pandas as pd
@@ -91,5 +92,28 @@ def add_raw_data(result, data, use_pyramid=False):
     result['source'].append(data['source'])
     result['category_index'].append(pyramid)
     result['weights'].append(data['weights'])
-    result['source_type'].append(source_type)    
+    result['source_type'].append(source_type)
+    
+
+# FIXME: simplest change to go from 10-fold to a simple 50% split
+# FIXME: this method prioritizes putting tasks that have SO artifacts for the test set
+def greedy_stack_overflow_selection(raw_data, target_count=0.2):
+    all_tasks = sorted(list(set([d['question'] for d in raw_data])))
+    
+    all_artifact_task_pairs = list(set([(d['question'], d['source']) for d in raw_data]))
+
+    random.seed(20211015)
+    random.shuffle(all_artifact_task_pairs)
+
+    test_tasks_lst = []
+    for task_i, source_j in all_artifact_task_pairs:
+        if 'stackoverflow.com' in source_j:
+            test_tasks_lst.append(task_i)
+
+        if len(test_tasks_lst) == int(target_count * len(all_tasks)):
+            break
+
+    return test_tasks_lst
+
+    
     
