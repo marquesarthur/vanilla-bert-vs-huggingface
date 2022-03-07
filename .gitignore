@@ -8,3 +8,6 @@ SO_vectors_200.bin
 SO_fasttext_vectors_200.bin
 SO_fasttext_vectors_200_small.bin
 
+LOG-bert_ds_android.ans
+best_model*
+checkpoint
