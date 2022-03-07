@@ -154,59 +154,5 @@
         "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
         "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
         "text": "# filter rows with Pandas query"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "How to Filter Rows Based on Column Values with query function in Pandas ?"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "How To Filter Pandas Dataframe By Values of Column ?"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "How to Drop Rows Based on a Column Value in Pandas Dataframe ?"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "How to Select Top N Rows with the Largest Values in a Column ( s ) in Pandas ?"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "Subscribe to Python and R Tips and Learn Data Science"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "Learn Pandas in Python and Tidyverse in R"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "Tags Altair Basic NumPy Book Review Create Directory Data Science Data Science Books Data Science Resources Data Science Roundup Data Visualization Dropbox Dropbox Free Space Dropbox Tips Emacs Emacs Tips ggplot2 Linux Commands Linux Tips Mac Os X Tips Maximum Likelihood Estimation in R MLE in R NumPy Pandas Pandas 101 Pandas Dataframe Pandas Data Frame pandas groupby ( ) Pandas pct_change Pandas select columns Pandas select_dtypes Python Python 3 Python Boxplot Python Tips R rstats R Tips Seaborn Seaborn Boxplot Shell Scripting Sparse Matrix in Python tidy evaluation tidyverse tidyverse 101 Vim Vim Tips"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "Altair Basic NumPy Book Review Create Directory Data Science Data Science Books Data Science Resources Data Science Roundup Data Visualization Dropbox Dropbox Free Space Dropbox Tips Emacs Emacs Tips ggplot2 Linux Commands Linux Tips Mac Os X Tips Maximum Likelihood Estimation in R MLE in R NumPy Pandas Pandas 101 Pandas Dataframe Pandas Data Frame pandas groupby ( ) Pandas pct_change Pandas select columns Pandas select_dtypes Python Python 3 Python Boxplot Python Tips R rstats R Tips Seaborn Seaborn Boxplot Shell Scripting Sparse Matrix in Python tidy evaluation tidyverse tidyverse 101 Vim Vim Tips"
-    },
-    {
-        "task": "Titanic data analysis",
-        "description": "Given a string representing a url for the titanic dataset (in csv format), you must write an algorithm using the pandas and seaborn modules to create a barchart with the aggregate average of the passengers'  fare according to the following constraints",
-        "source": "Pandas query(): How to Filter Rows of Pandas Dataframe? - Python and R Tips",
-        "text": "Copyright \u00a9 2022 \u00b7 Lifestyle Pro on Genesis Framework \u00b7 WordPress \u00b7 Log in"
     }
 ]

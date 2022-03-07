@@ -262,23 +262,5 @@
         "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
         "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
         "text": "Let's try km, since miles won't make a lot of sense in France."
-    },
-    {
-        "task": "Student's picnic place",
-        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
-        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
-        "text": "Recommended PostsPython Packaging: Hosting Code at GithubHow to Use Watermarkd: A Batch Watermarking Library with GUIPython Packaging: Quick Tutorial & ChecklistPython Packaging: Necessary Files ( setup.py, requirements.txt, readme.md, __ init __."
-    },
-    {
-        "task": "Student's picnic place",
-        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
-        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
-        "text": "Python Packaging: Hosting Code at GithubHow to Use Watermarkd: A Batch Watermarking Library with GUIPython Packaging: Quick Tutorial & ChecklistPython Packaging: Necessary Files ( setup.py, requirements.txt, readme.md, __ init __."
-    },
-    {
-        "task": "Student's picnic place",
-        "description": "Given a string representing rendezvous address and a list of suggested picnic addresses you must write an algorithm using the geopy module to find the picnic address with the closest distance to the rendezvous address.",
-        "source": "Locations in Python (Geocoding w/Geopy) - HolyPython.com",
-        "text": "Python Packaging: Hosting Code at Github"
     }
 ]

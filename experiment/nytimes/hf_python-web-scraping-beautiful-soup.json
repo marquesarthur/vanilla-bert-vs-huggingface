@@ -370,59 +370,5 @@
         "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
         "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
         "text": "You might also be interested by our XPath tutorial Happy Scraping, Pierre de Wulf"
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "Pierre de Wulf Pierre is a data engineer who worked in several high-growth startups before co-founding ScrapingBee."
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "He is an expert in data processing and web scraping."
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "Ready to get started ?"
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "Get access to 1,000 free API credits"
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "ScrapingBee API handles headless browsers and rotates proxies for you."
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "Team Blog Rebranding Affiliate Program"
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "Terms of Service Privacy Policy GDPR Compliance Data Processing Agreement"
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "Alternative to Crawlera Alternative to Luminati Alternative to Smartproxy Alternative to Oxylabs Alternative to NetNut Alternatives to ScrapingBee"
-    },
-    {
-        "task": "New York Times web scrapper",
-        "description": "Given a string representing the url for NY Times Today's, you must write a python script using the BeautifulSoup and requests modules to scrap all the headlines of that page.",
-        "source": "BeautifulSoup tutorial: Scraping web pages with Python | ScrapingBee ",
-        "text": "A guide to Web Scraping without getting blocked Web Scraping Tools Best Free Proxies Best Mobile proxies Web Scraping vs Web Crawling Rotating and residential proxies Web Scraping with Python Web Scraping with PHP Web Scraping with Java Web Scraping with Ruby Web Scraping with NodeJS Web Scraping with R Web Scraping with C# Web Scraping with Go"
     }
 ]
