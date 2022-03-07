@@ -7,7 +7,6 @@ from collections import Counter, defaultdict
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-import tensorflow.keras.backend as K
 from sklearn.metrics import (accuracy_score, classification_report,
                              confusion_matrix, f1_score,
                              precision_recall_fscore_support, roc_auc_score,
@@ -161,7 +160,7 @@ class TFBertForTaskTextClassification(ABC):
             )
         else:
             model = TFBertForSequenceClassification.from_pretrained(
-                self.model_id, cache_dir=cache_dir, local_files_only=local_files_only
+                self.model_id, local_files_only=local_files_only
             )
 
         # freeze all the parameters
