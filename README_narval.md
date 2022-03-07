@@ -2,6 +2,16 @@
 
 
 
+module load  ipython-kernel/3.7
+virtualenv --no-download ~/hface_test
+source ~/hface_test/bin/activate
+pip install --no-index --upgrade pip
+
+
+
+https://stackoverflow.com/questions/9232568/identifying-the-dependency-relationship-for-python-packages-installed-with-pip
+
+
 ## Setup 
 
 
